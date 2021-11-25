@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CIPerspectiveTileClass">
+            <connections>
+                <outlet property="m_blpositionXLabel" destination="Bpe-bq-IIF" id="waE-iU-gK2"/>
+                <outlet property="m_blpositionXSlider" destination="f6E-p7-ohW" id="jyB-ts-HEQ"/>
+                <outlet property="m_blpositionYLabel" destination="zmj-Rt-1HL" id="TJD-BG-jOG"/>
+                <outlet property="m_blpositionYSlider" destination="O96-9l-zBK" id="bPF-y8-igM"/>
+                <outlet property="m_brpositionXLabel" destination="trk-sN-xJX" id="dH6-09-N4d"/>
+                <outlet property="m_brpositionXSlider" destination="ZeI-ek-JH3" id="eBs-tj-c5x"/>
+                <outlet property="m_brpositionYLabel" destination="3Tm-16-snf" id="i3E-r4-FsG"/>
+                <outlet property="m_brpositionYSlider" destination="qRH-o3-hjD" id="ZCq-BW-hVJ"/>
+                <outlet property="m_tlpositionXLabel" destination="5am-hi-wmo" id="fkc-fy-klg"/>
+                <outlet property="m_tlpositionXSlider" destination="9Zt-SE-HcZ" id="zXA-XO-kmR"/>
+                <outlet property="m_tlpositionYLabel" destination="ktv-bO-pN2" id="Lav-mI-k1b"/>
+                <outlet property="m_tlpositionYSlider" destination="qrQ-LZ-I70" id="DZQ-HG-emX"/>
+                <outlet property="m_trpositionXLabel" destination="Mtp-Fl-xU7" id="g6T-nz-Ptq"/>
+                <outlet property="m_trpositionXSlider" destination="cri-AG-Njv" id="mjP-xS-bYK"/>
+                <outlet property="m_trpositionYLabel" destination="u5W-an-DD8" id="Mmu-vK-Aat"/>
+                <outlet property="m_trpositionYSlider" destination="JOl-VI-kWX" id="PGQ-Ac-DgP"/>
+                <outlet property="panel" destination="IxJ-G5-ZAz" id="O3Q-s3-oOb"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IxJ-G5-ZAz" customClass="PSWindow">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="139" y="81" width="365" height="453"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <view key="contentView" id="arF-LM-0aW">
+                <rect key="frame" x="0.0" y="0.0" width="365" height="453"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shc-gE-dl2">
+                        <rect key="frame" x="17" y="426" width="331" height="14"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Left top point X:" id="6o8-6o-lEo" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Og6-bu-gQw">
+                        <rect key="frame" x="17" y="381" width="331" height="14"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Left top point Y:" id="jFD-9k-oC0" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JV4-tV-dWI">
+                        <rect key="frame" x="17" y="333" width="331" height="14"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Right top point X:" id="Qye-38-ZZw" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UO0-Lf-d1f">
+                        <rect key="frame" x="17" y="282" width="331" height="14"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Right top point Y:" id="WrI-Jc-RS1" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Aa-EG-xbz">
+                        <rect key="frame" x="17" y="233" width="331" height="14"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Right bottom point X:" id="3h8-LE-LZd" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DXM-zn-rfw">
+                        <rect key="frame" x="17" y="138" width="331" height="14"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Left bottom point X:" id="d2e-qe-TKU" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PLI-EK-HMA">
+                        <rect key="frame" x="17" y="90" width="331" height="14"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Left bottom point Y:" id="xzD-sz-Xxy" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Zt-SE-HcZ">
+                        <rect key="frame" x="32" y="414" width="267" height="17"/>
+                        <sliderCell key="cell" controlSize="small" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="fMV-uc-RfB" customClass="MyCustomedSliderCell"/>
+                        <connections>
+                            <action selector="update:" target="-2" id="ZGg-AG-S2O"/>
+                        </connections>
+                    </slider>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qrQ-LZ-I70">
+                        <rect key="frame" x="32" y="366" width="267" height="17"/>
+                        <sliderCell key="cell" controlSize="small" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="djO-WR-ART" customClass="MyCustomedSliderCell"/>
+                        <connections>
+                            <action selector="update:" target="-2" id="rTp-7c-je9"/>
+                        </connections>
+                    </slider>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cri-AG-Njv">
+                        <rect key="frame" x="32" y="317" width="267" height="17"/>
+                        <sliderCell key="cell" controlSize="small" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="UbV-gG-Mv4" customClass="MyCustomedSliderCell"/>
+                        <connections>
+                            <action selector="update:" target="-2" id="5fr-tv-6tN"/>
+                        </connections>
+                    </slider>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JOl-VI-kWX">
+                        <rect key="frame" x="32" y="268" width="267" height="17"/>
+                        <sliderCell key="cell" controlSize="small" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="LNi-1Y-vnX" customClass="MyCustomedSliderCell"/>
+                        <connections>
+                            <action selector="update:" target="-2" id="0RY-41-313"/>
+                        </connections>
+                    </slider>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZeI-ek-JH3">
+                        <rect key="frame" x="32" y="220" width="267" height="17"/>
+                        <sliderCell key="cell" controlSize="small" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="a76-jN-eec" customClass="MyCustomedSliderCell"/>
+                        <connections>
+                            <action selector="update:" target="-2" id="fhk-ua-ZBS"/>
+                        </connections>
+                    </slider>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRH-o3-hjD">
+                        <rect key="frame" x="32" y="173" width="267" height="17"/>
+                        <sliderCell key="cell" controlSize="small" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="H8H-Qe-mSI" customClass="MyCustomedSliderCell"/>
+                        <connections>
+                            <action selector="update:" target="-2" id="Szu-Kd-Bvk"/>
+                        </connections>
+                    </slider>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f6E-p7-ohW">
+                        <rect key="frame" x="32" y="125" width="267" height="17"/>
+                        <sliderCell key="cell" controlSize="small" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="r7y-K0-Yn7" customClass="MyCustomedSliderCell"/>
+                        <connections>
+                            <action selector="update:" target="-2" id="jbn-jm-msX"/>
+                        </connections>
+                    </slider>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O96-9l-zBK">
+                        <rect key="frame" x="32" y="77" width="267" height="17"/>
+                        <sliderCell key="cell" controlSize="small" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="egh-yB-N3J" customClass="MyCustomedSliderCell"/>
+                        <connections>
+                            <action selector="update:" target="-2" id="Ec7-L1-VUR"/>
+                        </connections>
+                    </slider>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="og1-fR-q6a">
+                        <rect key="frame" x="244" y="17" width="92" height="32"/>
+                        <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="fh2-YF-Ifj" customClass="PSButtonImageCell">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="apply:" target="-2" id="hKz-qT-aVX"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21E-WX-DBh">
+                        <rect key="frame" x="136" y="17" width="92" height="32"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="SfD-ff-iPX" customClass="PSButtonImageCell">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">.</string>
+                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancel:" target="-2" id="H9s-1L-B75"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HMF-gn-JfA">
+                        <rect key="frame" x="17" y="188" width="331" height="14"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Right bottom point Y:" id="FNt-2x-pKh" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5am-hi-wmo">
+                        <rect key="frame" x="306" y="416" width="42" height="14"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="tlx" id="i8m-eF-F6H" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ktv-bO-pN2">
+                        <rect key="frame" x="306" y="368" width="42" height="14"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="tly" id="g5j-Q4-bj4" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mtp-Fl-xU7">
+                        <rect key="frame" x="306" y="319" width="42" height="14"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="trx" id="grY-yj-fyF" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u5W-an-DD8">
+                        <rect key="frame" x="306" y="270" width="42" height="14"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="try" id="VfW-I7-kAr" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="trk-sN-xJX">
+                        <rect key="frame" x="306" y="222" width="42" height="14"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="brx" id="2P8-Iv-BNQ" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zmj-Rt-1HL">
+                        <rect key="frame" x="306" y="79" width="42" height="14"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="bly" id="8AZ-WB-sdV" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Tm-16-snf">
+                        <rect key="frame" x="306" y="175" width="42" height="14"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="bry" id="oyG-Ox-oie" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bpe-bq-IIF">
+                        <rect key="frame" x="306" y="127" width="42" height="14"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="blx" id="pSV-Nq-paM" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="324.5" y="304"/>
+        </window>
+    </objects>
+</document>

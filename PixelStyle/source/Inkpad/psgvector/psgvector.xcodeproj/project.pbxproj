@@ -1,0 +1,1179 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0020AA901B787A20002268EA /* psgvectorapi.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0020AA8E1B787A20002268EA /* psgvectorapi.mm */; };
+		0020AA911B787A20002268EA /* psgvectorapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0020AA8F1B787A20002268EA /* psgvectorapi.h */; };
+		00396B5A1B6AEAF500D50AFF /* UIKitOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 00396B591B6AEAF500D50AFF /* UIKitOS.h */; };
+		00396B5C1B6AF04800D50AFF /* UIKitOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 00396B5B1B6AF04800D50AFF /* UIKitOS.m */; };
+		0087B4361B7A018B0033CA57 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0087B4351B7A018B0033CA57 /* libz.dylib */; };
+		00E3B2211B6A657D00D29DFA /* NSArray+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B15B1B6A657D00D29DFA /* NSArray+Additions.h */; };
+		00E3B2221B6A657D00D29DFA /* NSArray+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B15C1B6A657D00D29DFA /* NSArray+Additions.m */; };
+		00E3B2231B6A657D00D29DFA /* NSData+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B15D1B6A657D00D29DFA /* NSData+Additions.h */; };
+		00E3B2241B6A657D00D29DFA /* NSData+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B15E1B6A657D00D29DFA /* NSData+Additions.m */; };
+		00E3B2251B6A657D00D29DFA /* NSString+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B15F1B6A657D00D29DFA /* NSString+Additions.h */; };
+		00E3B2261B6A657D00D29DFA /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1601B6A657D00D29DFA /* NSString+Additions.m */; };
+		00E3B2271B6A657D00D29DFA /* UIColor+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1611B6A657D00D29DFA /* UIColor+Additions.h */; };
+		00E3B2281B6A657D00D29DFA /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1621B6A657D00D29DFA /* UIColor+Additions.m */; };
+		00E3B2291B6A657D00D29DFA /* UIImage+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1631B6A657D00D29DFA /* UIImage+Additions.h */; };
+		00E3B22A1B6A657D00D29DFA /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1641B6A657D00D29DFA /* UIImage+Additions.m */; };
+		00E3B22B1B6A657D00D29DFA /* UIImage+Resize.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1651B6A657D00D29DFA /* UIImage+Resize.h */; };
+		00E3B22C1B6A657D00D29DFA /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1661B6A657D00D29DFA /* UIImage+Resize.m */; };
+		00E3B22D1B6A657D00D29DFA /* WDDrawingController.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1681B6A657D00D29DFA /* WDDrawingController.h */; };
+		00E3B22E1B6A657D00D29DFA /* WDDrawingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1691B6A657D00D29DFA /* WDDrawingController.m */; };
+		00E3B22F1B6A657D00D29DFA /* WDDynamicGuideController.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B16A1B6A657D00D29DFA /* WDDynamicGuideController.h */; };
+		00E3B2301B6A657D00D29DFA /* WDDynamicGuideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B16B1B6A657D00D29DFA /* WDDynamicGuideController.m */; };
+		00E3B2311B6A657D00D29DFA /* WDPropertyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B16C1B6A657D00D29DFA /* WDPropertyManager.h */; };
+		00E3B2321B6A657D00D29DFA /* WDPropertyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B16D1B6A657D00D29DFA /* WDPropertyManager.m */; };
+		00E3B2331B6A657D00D29DFA /* WDToolManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B16E1B6A657D00D29DFA /* WDToolManager.h */; };
+		00E3B2351B6A657D00D29DFA /* FitCurves.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1711B6A657D00D29DFA /* FitCurves.h */; };
+		00E3B2361B6A657D00D29DFA /* FitCurves.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1721B6A657D00D29DFA /* FitCurves.m */; };
+		00E3B2371B6A657D00D29DFA /* AVL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B19B1B6A657D00D29DFA /* AVL.cpp */; };
+		00E3B2381B6A657D00D29DFA /* AVL.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B19C1B6A657D00D29DFA /* AVL.h */; };
+		00E3B2391B6A657D00D29DFA /* DblLinked.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B19D1B6A657D00D29DFA /* DblLinked.cpp */; };
+		00E3B23A1B6A657D00D29DFA /* DblLinked.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B19E1B6A657D00D29DFA /* DblLinked.h */; };
+		00E3B23B1B6A657D00D29DFA /* LivarotDefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B19F1B6A657D00D29DFA /* LivarotDefs.h */; };
+		00E3B23C1B6A657D00D29DFA /* MyMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1A01B6A657D00D29DFA /* MyMath.h */; };
+		00E3B23D1B6A657D00D29DFA /* Path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1A11B6A657D00D29DFA /* Path.cpp */; };
+		00E3B23E1B6A657D00D29DFA /* Path.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1A21B6A657D00D29DFA /* Path.h */; };
+		00E3B23F1B6A657D00D29DFA /* PathConversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1A31B6A657D00D29DFA /* PathConversion.cpp */; };
+		00E3B2401B6A657D00D29DFA /* Shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1A41B6A657D00D29DFA /* Shape.cpp */; };
+		00E3B2411B6A657D00D29DFA /* Shape.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1A51B6A657D00D29DFA /* Shape.h */; };
+		00E3B2421B6A657D00D29DFA /* ShapeMisc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1A61B6A657D00D29DFA /* ShapeMisc.cpp */; };
+		00E3B2431B6A657D00D29DFA /* ShapeSweep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1A71B6A657D00D29DFA /* ShapeSweep.cpp */; };
+		00E3B2441B6A657D00D29DFA /* ShapeSweepUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1A81B6A657D00D29DFA /* ShapeSweepUtils.cpp */; };
+		00E3B2451B6A657D00D29DFA /* ShapeUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1A91B6A657D00D29DFA /* ShapeUtils.h */; };
+		00E3B2461B6A657D00D29DFA /* WDAbstractPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1AB1B6A657D00D29DFA /* WDAbstractPath.h */; };
+		00E3B2471B6A657D00D29DFA /* WDAbstractPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1AC1B6A657D00D29DFA /* WDAbstractPath.m */; };
+		00E3B2481B6A657D00D29DFA /* WDArrowhead.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1AD1B6A657D00D29DFA /* WDArrowhead.h */; };
+		00E3B2491B6A657D00D29DFA /* WDArrowhead.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1AE1B6A657D00D29DFA /* WDArrowhead.m */; };
+		00E3B24A1B6A657D00D29DFA /* WDBezierNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1AF1B6A657D00D29DFA /* WDBezierNode.h */; };
+		00E3B24B1B6A657D00D29DFA /* WDBezierNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1B01B6A657D00D29DFA /* WDBezierNode.m */; };
+		00E3B24C1B6A657D00D29DFA /* WDBezierSegment.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1B11B6A657D00D29DFA /* WDBezierSegment.h */; };
+		00E3B24D1B6A657D00D29DFA /* WDBezierSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1B21B6A657D00D29DFA /* WDBezierSegment.m */; };
+		00E3B24E1B6A657D00D29DFA /* WDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1B31B6A657D00D29DFA /* WDColor.h */; };
+		00E3B24F1B6A657D00D29DFA /* WDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1B41B6A657D00D29DFA /* WDColor.m */; };
+		00E3B2501B6A657D00D29DFA /* WDCompoundPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1B51B6A657D00D29DFA /* WDCompoundPath.h */; };
+		00E3B2511B6A657D00D29DFA /* WDCompoundPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1B61B6A657D00D29DFA /* WDCompoundPath.m */; };
+		00E3B2521B6A657D00D29DFA /* WDCurveFit.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1B71B6A657D00D29DFA /* WDCurveFit.h */; };
+		00E3B2531B6A657D00D29DFA /* WDCurveFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1B81B6A657D00D29DFA /* WDCurveFit.m */; };
+		00E3B2541B6A657D00D29DFA /* WDDocumentProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1B91B6A657D00D29DFA /* WDDocumentProtocol.h */; };
+		00E3B2551B6A657D00D29DFA /* WDDrawing.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1BA1B6A657D00D29DFA /* WDDrawing.h */; };
+		00E3B2561B6A657D00D29DFA /* WDDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1BB1B6A657D00D29DFA /* WDDrawing.m */; };
+		00E3B2571B6A657D00D29DFA /* WDDynamicGuide.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1BC1B6A657D00D29DFA /* WDDynamicGuide.h */; };
+		00E3B2581B6A657D00D29DFA /* WDDynamicGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1BD1B6A657D00D29DFA /* WDDynamicGuide.m */; };
+		00E3B2591B6A657D00D29DFA /* WDElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1BE1B6A657D00D29DFA /* WDElement.h */; };
+		00E3B25A1B6A657D00D29DFA /* WDElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1BF1B6A657D00D29DFA /* WDElement.m */; };
+		00E3B25B1B6A657D00D29DFA /* WDFillTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1C01B6A657D00D29DFA /* WDFillTransform.h */; };
+		00E3B25C1B6A657D00D29DFA /* WDFillTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1C11B6A657D00D29DFA /* WDFillTransform.m */; };
+		00E3B25D1B6A657D00D29DFA /* WDGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1C21B6A657D00D29DFA /* WDGradient.h */; };
+		00E3B25E1B6A657D00D29DFA /* WDGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1C31B6A657D00D29DFA /* WDGradient.m */; };
+		00E3B25F1B6A657D00D29DFA /* WDGradientStop.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1C41B6A657D00D29DFA /* WDGradientStop.h */; };
+		00E3B2601B6A657D00D29DFA /* WDGradientStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1C51B6A657D00D29DFA /* WDGradientStop.m */; };
+		00E3B2611B6A657D00D29DFA /* WDGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1C61B6A657D00D29DFA /* WDGroup.h */; };
+		00E3B2621B6A657D00D29DFA /* WDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1C71B6A657D00D29DFA /* WDGroup.m */; };
+		00E3B2631B6A657D00D29DFA /* WDImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1C81B6A657D00D29DFA /* WDImage.h */; };
+		00E3B2641B6A657D00D29DFA /* WDImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1C91B6A657D00D29DFA /* WDImage.m */; };
+		00E3B2651B6A657D00D29DFA /* WDImageData.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1CA1B6A657D00D29DFA /* WDImageData.h */; };
+		00E3B2661B6A657D00D29DFA /* WDImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1CB1B6A657D00D29DFA /* WDImageData.m */; };
+		00E3B2671B6A657D00D29DFA /* WDInspectableProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1CC1B6A657D00D29DFA /* WDInspectableProperties.h */; };
+		00E3B2681B6A657D00D29DFA /* WDInspectableProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1CD1B6A657D00D29DFA /* WDInspectableProperties.m */; };
+		00E3B2691B6A657D00D29DFA /* WDLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1CE1B6A657D00D29DFA /* WDLayer.h */; };
+		00E3B26A1B6A657D00D29DFA /* WDLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1CF1B6A657D00D29DFA /* WDLayer.m */; };
+		00E3B26B1B6A657D00D29DFA /* WDPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1D01B6A657D00D29DFA /* WDPath.h */; };
+		00E3B26C1B6A657D00D29DFA /* WDPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1D11B6A657D00D29DFA /* WDPath.m */; };
+		00E3B26D1B6A657D00D29DFA /* WDPathfinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1D21B6A657D00D29DFA /* WDPathfinder.h */; };
+		00E3B26E1B6A657D00D29DFA /* WDPathfinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1D31B6A657D00D29DFA /* WDPathfinder.mm */; };
+		00E3B26F1B6A657D00D29DFA /* WDPathPainter.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1D41B6A657D00D29DFA /* WDPathPainter.h */; };
+		00E3B2701B6A657D00D29DFA /* WDPickResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1D51B6A657D00D29DFA /* WDPickResult.h */; };
+		00E3B2711B6A657D00D29DFA /* WDPickResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1D61B6A657D00D29DFA /* WDPickResult.m */; };
+		00E3B2721B6A657D00D29DFA /* WDRulerUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1D71B6A657D00D29DFA /* WDRulerUnit.h */; };
+		00E3B2731B6A657D00D29DFA /* WDRulerUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1D81B6A657D00D29DFA /* WDRulerUnit.m */; };
+		00E3B2741B6A657D00D29DFA /* WDShadow.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1D91B6A657D00D29DFA /* WDShadow.h */; };
+		00E3B2751B6A657D00D29DFA /* WDShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1DA1B6A657D00D29DFA /* WDShadow.m */; };
+		00E3B2761B6A657D00D29DFA /* WDStrokeStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1DB1B6A657D00D29DFA /* WDStrokeStyle.h */; };
+		00E3B2771B6A657D00D29DFA /* WDStrokeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1DC1B6A657D00D29DFA /* WDStrokeStyle.m */; };
+		00E3B2781B6A657D00D29DFA /* WDStylable.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1DD1B6A657D00D29DFA /* WDStylable.h */; };
+		00E3B2791B6A657D00D29DFA /* WDStylable.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1DE1B6A657D00D29DFA /* WDStylable.m */; };
+		00E3B27A1B6A657D00D29DFA /* WDText.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1DF1B6A657D00D29DFA /* WDText.h */; };
+		00E3B27B1B6A657D00D29DFA /* WDText.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1E01B6A657D00D29DFA /* WDText.m */; };
+		00E3B27C1B6A657D00D29DFA /* WDTextPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1E11B6A657D00D29DFA /* WDTextPath.h */; };
+		00E3B27D1B6A657D00D29DFA /* WDTextPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1E21B6A657D00D29DFA /* WDTextPath.m */; };
+		00E3B27E1B6A657D00D29DFA /* WDTextRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1E31B6A657D00D29DFA /* WDTextRenderer.h */; };
+		00E3B27F1B6A657D00D29DFA /* WDXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1E41B6A657D00D29DFA /* WDXMLElement.h */; };
+		00E3B2801B6A657D00D29DFA /* WDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1E51B6A657D00D29DFA /* WDXMLElement.m */; };
+		00E3B2811B6A657D00D29DFA /* WDParseUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1E91B6A657D00D29DFA /* WDParseUtil.h */; };
+		00E3B2821B6A657D00D29DFA /* WDParseUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1EA1B6A657D00D29DFA /* WDParseUtil.m */; };
+		00E3B2831B6A657D00D29DFA /* WDSVGElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1EB1B6A657D00D29DFA /* WDSVGElement.h */; };
+		00E3B2841B6A657D00D29DFA /* WDSVGElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1EC1B6A657D00D29DFA /* WDSVGElement.m */; };
+		00E3B2851B6A657D00D29DFA /* WDSVGHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1ED1B6A657D00D29DFA /* WDSVGHelper.h */; };
+		00E3B2861B6A657D00D29DFA /* WDSVGHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1EE1B6A657D00D29DFA /* WDSVGHelper.m */; };
+		00E3B2871B6A657D00D29DFA /* WDSVGParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1EF1B6A657D00D29DFA /* WDSVGParser.h */; };
+		00E3B2881B6A657D00D29DFA /* WDSVGParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1F01B6A657D00D29DFA /* WDSVGParser.m */; };
+		00E3B2891B6A657D00D29DFA /* WDSVGParserState.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1F11B6A657D00D29DFA /* WDSVGParserState.h */; };
+		00E3B28A1B6A657D00D29DFA /* WDSVGParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1F21B6A657D00D29DFA /* WDSVGParserState.m */; };
+		00E3B28B1B6A657D00D29DFA /* WDSVGParserStateStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1F31B6A657D00D29DFA /* WDSVGParserStateStack.h */; };
+		00E3B28C1B6A657D00D29DFA /* WDSVGParserStateStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1F41B6A657D00D29DFA /* WDSVGParserStateStack.m */; };
+		00E3B28D1B6A657D00D29DFA /* WDSVGPathParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1F51B6A657D00D29DFA /* WDSVGPathParser.h */; };
+		00E3B28E1B6A657D00D29DFA /* WDSVGPathParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1F61B6A657D00D29DFA /* WDSVGPathParser.m */; };
+		00E3B28F1B6A657D00D29DFA /* WDSVGStyleParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1F71B6A657D00D29DFA /* WDSVGStyleParser.h */; };
+		00E3B2901B6A657D00D29DFA /* WDSVGStyleParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1F81B6A657D00D29DFA /* WDSVGStyleParser.m */; };
+		00E3B2911B6A657D00D29DFA /* WDSVGThumbnailExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1F91B6A657D00D29DFA /* WDSVGThumbnailExtractor.h */; };
+		00E3B2921B6A657D00D29DFA /* WDSVGThumbnailExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1FA1B6A657D00D29DFA /* WDSVGThumbnailExtractor.m */; };
+		00E3B2931B6A657D00D29DFA /* WDSVGTransformParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B1FB1B6A657D00D29DFA /* WDSVGTransformParser.h */; };
+		00E3B2941B6A657D00D29DFA /* WDSVGTransformParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B1FC1B6A657D00D29DFA /* WDSVGTransformParser.m */; };
+		00E3B2B31B6A657D00D29DFA /* WDGLUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B21D1B6A657D00D29DFA /* WDGLUtilities.h */; };
+		00E3B2B41B6A657D00D29DFA /* WDGLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B21E1B6A657D00D29DFA /* WDGLUtilities.m */; };
+		00E3B2B51B6A657D00D29DFA /* WDUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B21F1B6A657D00D29DFA /* WDUtilities.h */; };
+		00E3B2B61B6A657D00D29DFA /* WDUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B2201B6A657D00D29DFA /* WDUtilities.m */; };
+		00F06C9A1B7B485200DC491F /* WDFontManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F06C8B1B7B485200DC491F /* WDFontManager.h */; };
+		00F06C9B1B7B485200DC491F /* WDFontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F06C8C1B7B485200DC491F /* WDFontManager.m */; };
+		00F06C9C1B7B485200DC491F /* WDUserFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F06C8D1B7B485200DC491F /* WDUserFont.h */; };
+		00F06C9D1B7B485200DC491F /* WDUserFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F06C8E1B7B485200DC491F /* WDUserFont.m */; };
+		754A30DB1C0B3EA700333F22 /* WDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 754A30D91C0B3EA700333F22 /* WDTool.m */; };
+		754A30DC1C0B3EA700333F22 /* WDTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 754A30DA1C0B3EA700333F22 /* WDTool.h */; };
+		754A30DF1C0B3FFC00333F22 /* WDShapeTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 754A30DD1C0B3FFC00333F22 /* WDShapeTool.h */; };
+		754A30E01C0B3FFC00333F22 /* WDShapeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 754A30DE1C0B3FFC00333F22 /* WDShapeTool.m */; };
+		ABC9C0961C4128F1008862E0 /* PSPerspectiveTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC9C0951C4128F1008862E0 /* PSPerspectiveTransform.h */; };
+		ABC9C0981C412B10008862E0 /* PSPerspectiveTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC9C0971C412B10008862E0 /* PSPerspectiveTransform.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0020AA8E1B787A20002268EA /* psgvectorapi.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = psgvectorapi.mm; sourceTree = "<group>"; };
+		0020AA8F1B787A20002268EA /* psgvectorapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psgvectorapi.h; sourceTree = "<group>"; };
+		00396B591B6AEAF500D50AFF /* UIKitOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKitOS.h; sourceTree = "<group>"; };
+		00396B5B1B6AF04800D50AFF /* UIKitOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIKitOS.m; sourceTree = "<group>"; };
+		0087B4351B7A018B0033CA57 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		00E3B1521B6A654000D29DFA /* libpsgvector.dylib */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpsgvector.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E3B15B1B6A657D00D29DFA /* NSArray+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Additions.h"; sourceTree = "<group>"; };
+		00E3B15C1B6A657D00D29DFA /* NSArray+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Additions.m"; sourceTree = "<group>"; };
+		00E3B15D1B6A657D00D29DFA /* NSData+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Additions.h"; sourceTree = "<group>"; };
+		00E3B15E1B6A657D00D29DFA /* NSData+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Additions.m"; sourceTree = "<group>"; };
+		00E3B15F1B6A657D00D29DFA /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		00E3B1601B6A657D00D29DFA /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		00E3B1611B6A657D00D29DFA /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		00E3B1621B6A657D00D29DFA /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+		00E3B1631B6A657D00D29DFA /* UIImage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additions.h"; sourceTree = "<group>"; };
+		00E3B1641B6A657D00D29DFA /* UIImage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additions.m"; sourceTree = "<group>"; };
+		00E3B1651B6A657D00D29DFA /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		00E3B1661B6A657D00D29DFA /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		00E3B1681B6A657D00D29DFA /* WDDrawingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDrawingController.h; sourceTree = "<group>"; };
+		00E3B1691B6A657D00D29DFA /* WDDrawingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDrawingController.m; sourceTree = "<group>"; };
+		00E3B16A1B6A657D00D29DFA /* WDDynamicGuideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDynamicGuideController.h; sourceTree = "<group>"; };
+		00E3B16B1B6A657D00D29DFA /* WDDynamicGuideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDynamicGuideController.m; sourceTree = "<group>"; };
+		00E3B16C1B6A657D00D29DFA /* WDPropertyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDPropertyManager.h; sourceTree = "<group>"; };
+		00E3B16D1B6A657D00D29DFA /* WDPropertyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDPropertyManager.m; sourceTree = "<group>"; };
+		00E3B16E1B6A657D00D29DFA /* WDToolManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDToolManager.h; sourceTree = "<group>"; };
+		00E3B1711B6A657D00D29DFA /* FitCurves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitCurves.h; sourceTree = "<group>"; };
+		00E3B1721B6A657D00D29DFA /* FitCurves.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FitCurves.m; sourceTree = "<group>"; };
+		00E3B19B1B6A657D00D29DFA /* AVL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AVL.cpp; sourceTree = "<group>"; };
+		00E3B19C1B6A657D00D29DFA /* AVL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVL.h; sourceTree = "<group>"; };
+		00E3B19D1B6A657D00D29DFA /* DblLinked.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DblLinked.cpp; sourceTree = "<group>"; };
+		00E3B19E1B6A657D00D29DFA /* DblLinked.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DblLinked.h; sourceTree = "<group>"; };
+		00E3B19F1B6A657D00D29DFA /* LivarotDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LivarotDefs.h; sourceTree = "<group>"; };
+		00E3B1A01B6A657D00D29DFA /* MyMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMath.h; sourceTree = "<group>"; };
+		00E3B1A11B6A657D00D29DFA /* Path.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Path.cpp; sourceTree = "<group>"; };
+		00E3B1A21B6A657D00D29DFA /* Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Path.h; sourceTree = "<group>"; };
+		00E3B1A31B6A657D00D29DFA /* PathConversion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PathConversion.cpp; sourceTree = "<group>"; };
+		00E3B1A41B6A657D00D29DFA /* Shape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shape.cpp; sourceTree = "<group>"; };
+		00E3B1A51B6A657D00D29DFA /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		00E3B1A61B6A657D00D29DFA /* ShapeMisc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShapeMisc.cpp; sourceTree = "<group>"; };
+		00E3B1A71B6A657D00D29DFA /* ShapeSweep.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShapeSweep.cpp; sourceTree = "<group>"; };
+		00E3B1A81B6A657D00D29DFA /* ShapeSweepUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShapeSweepUtils.cpp; sourceTree = "<group>"; };
+		00E3B1A91B6A657D00D29DFA /* ShapeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeUtils.h; sourceTree = "<group>"; };
+		00E3B1AB1B6A657D00D29DFA /* WDAbstractPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDAbstractPath.h; sourceTree = "<group>"; };
+		00E3B1AC1B6A657D00D29DFA /* WDAbstractPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDAbstractPath.m; sourceTree = "<group>"; };
+		00E3B1AD1B6A657D00D29DFA /* WDArrowhead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDArrowhead.h; sourceTree = "<group>"; };
+		00E3B1AE1B6A657D00D29DFA /* WDArrowhead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDArrowhead.m; sourceTree = "<group>"; };
+		00E3B1AF1B6A657D00D29DFA /* WDBezierNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDBezierNode.h; sourceTree = "<group>"; };
+		00E3B1B01B6A657D00D29DFA /* WDBezierNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDBezierNode.m; sourceTree = "<group>"; };
+		00E3B1B11B6A657D00D29DFA /* WDBezierSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDBezierSegment.h; sourceTree = "<group>"; };
+		00E3B1B21B6A657D00D29DFA /* WDBezierSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDBezierSegment.m; sourceTree = "<group>"; };
+		00E3B1B31B6A657D00D29DFA /* WDColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDColor.h; sourceTree = "<group>"; };
+		00E3B1B41B6A657D00D29DFA /* WDColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDColor.m; sourceTree = "<group>"; };
+		00E3B1B51B6A657D00D29DFA /* WDCompoundPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDCompoundPath.h; sourceTree = "<group>"; };
+		00E3B1B61B6A657D00D29DFA /* WDCompoundPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDCompoundPath.m; sourceTree = "<group>"; };
+		00E3B1B71B6A657D00D29DFA /* WDCurveFit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDCurveFit.h; sourceTree = "<group>"; };
+		00E3B1B81B6A657D00D29DFA /* WDCurveFit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDCurveFit.m; sourceTree = "<group>"; };
+		00E3B1B91B6A657D00D29DFA /* WDDocumentProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDocumentProtocol.h; sourceTree = "<group>"; };
+		00E3B1BA1B6A657D00D29DFA /* WDDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDrawing.h; sourceTree = "<group>"; };
+		00E3B1BB1B6A657D00D29DFA /* WDDrawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDrawing.m; sourceTree = "<group>"; };
+		00E3B1BC1B6A657D00D29DFA /* WDDynamicGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDynamicGuide.h; sourceTree = "<group>"; };
+		00E3B1BD1B6A657D00D29DFA /* WDDynamicGuide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDynamicGuide.m; sourceTree = "<group>"; };
+		00E3B1BE1B6A657D00D29DFA /* WDElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDElement.h; sourceTree = "<group>"; };
+		00E3B1BF1B6A657D00D29DFA /* WDElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDElement.m; sourceTree = "<group>"; };
+		00E3B1C01B6A657D00D29DFA /* WDFillTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDFillTransform.h; sourceTree = "<group>"; };
+		00E3B1C11B6A657D00D29DFA /* WDFillTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDFillTransform.m; sourceTree = "<group>"; };
+		00E3B1C21B6A657D00D29DFA /* WDGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDGradient.h; sourceTree = "<group>"; };
+		00E3B1C31B6A657D00D29DFA /* WDGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDGradient.m; sourceTree = "<group>"; };
+		00E3B1C41B6A657D00D29DFA /* WDGradientStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDGradientStop.h; sourceTree = "<group>"; };
+		00E3B1C51B6A657D00D29DFA /* WDGradientStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDGradientStop.m; sourceTree = "<group>"; };
+		00E3B1C61B6A657D00D29DFA /* WDGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDGroup.h; sourceTree = "<group>"; };
+		00E3B1C71B6A657D00D29DFA /* WDGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDGroup.m; sourceTree = "<group>"; };
+		00E3B1C81B6A657D00D29DFA /* WDImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDImage.h; sourceTree = "<group>"; };
+		00E3B1C91B6A657D00D29DFA /* WDImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDImage.m; sourceTree = "<group>"; };
+		00E3B1CA1B6A657D00D29DFA /* WDImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDImageData.h; sourceTree = "<group>"; };
+		00E3B1CB1B6A657D00D29DFA /* WDImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDImageData.m; sourceTree = "<group>"; };
+		00E3B1CC1B6A657D00D29DFA /* WDInspectableProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDInspectableProperties.h; sourceTree = "<group>"; };
+		00E3B1CD1B6A657D00D29DFA /* WDInspectableProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDInspectableProperties.m; sourceTree = "<group>"; };
+		00E3B1CE1B6A657D00D29DFA /* WDLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDLayer.h; sourceTree = "<group>"; };
+		00E3B1CF1B6A657D00D29DFA /* WDLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDLayer.m; sourceTree = "<group>"; };
+		00E3B1D01B6A657D00D29DFA /* WDPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDPath.h; sourceTree = "<group>"; };
+		00E3B1D11B6A657D00D29DFA /* WDPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDPath.m; sourceTree = "<group>"; };
+		00E3B1D21B6A657D00D29DFA /* WDPathfinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDPathfinder.h; sourceTree = "<group>"; };
+		00E3B1D31B6A657D00D29DFA /* WDPathfinder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WDPathfinder.mm; sourceTree = "<group>"; };
+		00E3B1D41B6A657D00D29DFA /* WDPathPainter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDPathPainter.h; sourceTree = "<group>"; };
+		00E3B1D51B6A657D00D29DFA /* WDPickResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDPickResult.h; sourceTree = "<group>"; };
+		00E3B1D61B6A657D00D29DFA /* WDPickResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDPickResult.m; sourceTree = "<group>"; };
+		00E3B1D71B6A657D00D29DFA /* WDRulerUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDRulerUnit.h; sourceTree = "<group>"; };
+		00E3B1D81B6A657D00D29DFA /* WDRulerUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDRulerUnit.m; sourceTree = "<group>"; };
+		00E3B1D91B6A657D00D29DFA /* WDShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDShadow.h; sourceTree = "<group>"; };
+		00E3B1DA1B6A657D00D29DFA /* WDShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDShadow.m; sourceTree = "<group>"; };
+		00E3B1DB1B6A657D00D29DFA /* WDStrokeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDStrokeStyle.h; sourceTree = "<group>"; };
+		00E3B1DC1B6A657D00D29DFA /* WDStrokeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDStrokeStyle.m; sourceTree = "<group>"; };
+		00E3B1DD1B6A657D00D29DFA /* WDStylable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDStylable.h; sourceTree = "<group>"; };
+		00E3B1DE1B6A657D00D29DFA /* WDStylable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDStylable.m; sourceTree = "<group>"; };
+		00E3B1DF1B6A657D00D29DFA /* WDText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDText.h; sourceTree = "<group>"; };
+		00E3B1E01B6A657D00D29DFA /* WDText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDText.m; sourceTree = "<group>"; };
+		00E3B1E11B6A657D00D29DFA /* WDTextPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDTextPath.h; sourceTree = "<group>"; };
+		00E3B1E21B6A657D00D29DFA /* WDTextPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDTextPath.m; sourceTree = "<group>"; };
+		00E3B1E31B6A657D00D29DFA /* WDTextRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDTextRenderer.h; sourceTree = "<group>"; };
+		00E3B1E41B6A657D00D29DFA /* WDXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDXMLElement.h; sourceTree = "<group>"; };
+		00E3B1E51B6A657D00D29DFA /* WDXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDXMLElement.m; sourceTree = "<group>"; };
+		00E3B1E71B6A657D00D29DFA /* SVGColors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SVGColors.plist; sourceTree = "<group>"; };
+		00E3B1E91B6A657D00D29DFA /* WDParseUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDParseUtil.h; sourceTree = "<group>"; };
+		00E3B1EA1B6A657D00D29DFA /* WDParseUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDParseUtil.m; sourceTree = "<group>"; };
+		00E3B1EB1B6A657D00D29DFA /* WDSVGElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSVGElement.h; sourceTree = "<group>"; };
+		00E3B1EC1B6A657D00D29DFA /* WDSVGElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSVGElement.m; sourceTree = "<group>"; };
+		00E3B1ED1B6A657D00D29DFA /* WDSVGHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSVGHelper.h; sourceTree = "<group>"; };
+		00E3B1EE1B6A657D00D29DFA /* WDSVGHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSVGHelper.m; sourceTree = "<group>"; };
+		00E3B1EF1B6A657D00D29DFA /* WDSVGParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSVGParser.h; sourceTree = "<group>"; };
+		00E3B1F01B6A657D00D29DFA /* WDSVGParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSVGParser.m; sourceTree = "<group>"; };
+		00E3B1F11B6A657D00D29DFA /* WDSVGParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSVGParserState.h; sourceTree = "<group>"; };
+		00E3B1F21B6A657D00D29DFA /* WDSVGParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSVGParserState.m; sourceTree = "<group>"; };
+		00E3B1F31B6A657D00D29DFA /* WDSVGParserStateStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSVGParserStateStack.h; sourceTree = "<group>"; };
+		00E3B1F41B6A657D00D29DFA /* WDSVGParserStateStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSVGParserStateStack.m; sourceTree = "<group>"; };
+		00E3B1F51B6A657D00D29DFA /* WDSVGPathParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSVGPathParser.h; sourceTree = "<group>"; };
+		00E3B1F61B6A657D00D29DFA /* WDSVGPathParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSVGPathParser.m; sourceTree = "<group>"; };
+		00E3B1F71B6A657D00D29DFA /* WDSVGStyleParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSVGStyleParser.h; sourceTree = "<group>"; };
+		00E3B1F81B6A657D00D29DFA /* WDSVGStyleParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSVGStyleParser.m; sourceTree = "<group>"; };
+		00E3B1F91B6A657D00D29DFA /* WDSVGThumbnailExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSVGThumbnailExtractor.h; sourceTree = "<group>"; };
+		00E3B1FA1B6A657D00D29DFA /* WDSVGThumbnailExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSVGThumbnailExtractor.m; sourceTree = "<group>"; };
+		00E3B1FB1B6A657D00D29DFA /* WDSVGTransformParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSVGTransformParser.h; sourceTree = "<group>"; };
+		00E3B1FC1B6A657D00D29DFA /* WDSVGTransformParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSVGTransformParser.m; sourceTree = "<group>"; };
+		00E3B21D1B6A657D00D29DFA /* WDGLUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDGLUtilities.h; sourceTree = "<group>"; };
+		00E3B21E1B6A657D00D29DFA /* WDGLUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDGLUtilities.m; sourceTree = "<group>"; };
+		00E3B21F1B6A657D00D29DFA /* WDUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDUtilities.h; sourceTree = "<group>"; };
+		00E3B2201B6A657D00D29DFA /* WDUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDUtilities.m; sourceTree = "<group>"; };
+		00F06C0D1B7B478500DC491F /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		00F06C0E1B7B478500DC491F /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		00F06C111B7B478500DC491F /* UIBarButtonItem+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Additions.h"; sourceTree = "<group>"; };
+		00F06C121B7B478500DC491F /* UIBarButtonItem+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Additions.m"; sourceTree = "<group>"; };
+		00F06C1A1B7B47D100DC491F /* WDActivityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDActivityController.h; sourceTree = "<group>"; };
+		00F06C1B1B7B47D100DC491F /* WDActivityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDActivityController.m; sourceTree = "<group>"; };
+		00F06C1C1B7B47D100DC491F /* WDArrowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDArrowController.h; sourceTree = "<group>"; };
+		00F06C1D1B7B47D100DC491F /* WDArrowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDArrowController.m; sourceTree = "<group>"; };
+		00F06C1E1B7B47D100DC491F /* WDBlendModeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDBlendModeController.h; sourceTree = "<group>"; };
+		00F06C1F1B7B47D100DC491F /* WDBlendModeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDBlendModeController.m; sourceTree = "<group>"; };
+		00F06C201B7B47D100DC491F /* WDBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDBrowserController.h; sourceTree = "<group>"; };
+		00F06C211B7B47D100DC491F /* WDBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDBrowserController.m; sourceTree = "<group>"; };
+		00F06C221B7B47D100DC491F /* WDCanvasController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDCanvasController.h; sourceTree = "<group>"; };
+		00F06C231B7B47D100DC491F /* WDCanvasController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDCanvasController.m; sourceTree = "<group>"; };
+		00F06C241B7B47D100DC491F /* WDColorAdjustmentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDColorAdjustmentController.h; sourceTree = "<group>"; };
+		00F06C251B7B47D100DC491F /* WDColorAdjustmentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDColorAdjustmentController.m; sourceTree = "<group>"; };
+		00F06C261B7B47D100DC491F /* WDColorBalanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDColorBalanceController.h; sourceTree = "<group>"; };
+		00F06C271B7B47D100DC491F /* WDColorBalanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDColorBalanceController.m; sourceTree = "<group>"; };
+		00F06C281B7B47D100DC491F /* WDColorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDColorController.h; sourceTree = "<group>"; };
+		00F06C291B7B47D100DC491F /* WDColorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDColorController.m; sourceTree = "<group>"; };
+		00F06C2A1B7B47D100DC491F /* WDExportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDExportController.h; sourceTree = "<group>"; };
+		00F06C2B1B7B47D100DC491F /* WDExportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDExportController.m; sourceTree = "<group>"; };
+		00F06C2C1B7B47D100DC491F /* WDFillController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDFillController.h; sourceTree = "<group>"; };
+		00F06C2D1B7B47D100DC491F /* WDFillController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDFillController.m; sourceTree = "<group>"; };
+		00F06C2E1B7B47D100DC491F /* WDFontController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDFontController.h; sourceTree = "<group>"; };
+		00F06C2F1B7B47D100DC491F /* WDFontController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDFontController.m; sourceTree = "<group>"; };
+		00F06C301B7B47D100DC491F /* WDFontLibraryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDFontLibraryController.h; sourceTree = "<group>"; };
+		00F06C311B7B47D100DC491F /* WDFontLibraryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDFontLibraryController.m; sourceTree = "<group>"; };
+		00F06C321B7B47D100DC491F /* WDGradientController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDGradientController.h; sourceTree = "<group>"; };
+		00F06C331B7B47D100DC491F /* WDGradientController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDGradientController.m; sourceTree = "<group>"; };
+		00F06C341B7B47D100DC491F /* WDHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHelpController.h; sourceTree = "<group>"; };
+		00F06C351B7B47D100DC491F /* WDHelpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHelpController.m; sourceTree = "<group>"; };
+		00F06C361B7B47D100DC491F /* WDHueSaturationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHueSaturationController.h; sourceTree = "<group>"; };
+		00F06C371B7B47D100DC491F /* WDHueSaturationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHueSaturationController.m; sourceTree = "<group>"; };
+		00F06C381B7B47D100DC491F /* WDImportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDImportController.h; sourceTree = "<group>"; };
+		00F06C391B7B47D100DC491F /* WDImportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDImportController.m; sourceTree = "<group>"; };
+		00F06C3A1B7B47D100DC491F /* WDLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDLayerController.h; sourceTree = "<group>"; };
+		00F06C3B1B7B47D100DC491F /* WDLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDLayerController.m; sourceTree = "<group>"; };
+		00F06C3C1B7B47D100DC491F /* WDPageSizeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDPageSizeController.h; sourceTree = "<group>"; };
+		00F06C3D1B7B47D100DC491F /* WDPageSizeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDPageSizeController.m; sourceTree = "<group>"; };
+		00F06C3E1B7B47D100DC491F /* WDSamplesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSamplesController.h; sourceTree = "<group>"; };
+		00F06C3F1B7B47D100DC491F /* WDSamplesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSamplesController.m; sourceTree = "<group>"; };
+		00F06C401B7B47D100DC491F /* WDSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSettingsController.h; sourceTree = "<group>"; };
+		00F06C411B7B47D100DC491F /* WDSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSettingsController.m; sourceTree = "<group>"; };
+		00F06C421B7B47D100DC491F /* WDShadowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDShadowController.h; sourceTree = "<group>"; };
+		00F06C431B7B47D100DC491F /* WDShadowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDShadowController.m; sourceTree = "<group>"; };
+		00F06C441B7B47D100DC491F /* WDStrokeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDStrokeController.h; sourceTree = "<group>"; };
+		00F06C451B7B47D100DC491F /* WDStrokeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDStrokeController.m; sourceTree = "<group>"; };
+		00F06C461B7B47D100DC491F /* WDSwatchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSwatchController.h; sourceTree = "<group>"; };
+		00F06C471B7B47D100DC491F /* WDSwatchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSwatchController.m; sourceTree = "<group>"; };
+		00F06C481B7B47D100DC491F /* WDTextController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDTextController.h; sourceTree = "<group>"; };
+		00F06C491B7B47D100DC491F /* WDTextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDTextController.m; sourceTree = "<group>"; };
+		00F06C4A1B7B47D100DC491F /* WDUnitsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDUnitsController.h; sourceTree = "<group>"; };
+		00F06C4B1B7B47D100DC491F /* WDUnitsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDUnitsController.m; sourceTree = "<group>"; };
+		00F06C801B7B485200DC491F /* WDActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDActivity.h; sourceTree = "<group>"; };
+		00F06C811B7B485200DC491F /* WDActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDActivity.m; sourceTree = "<group>"; };
+		00F06C821B7B485200DC491F /* WDActivityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDActivityManager.h; sourceTree = "<group>"; };
+		00F06C831B7B485200DC491F /* WDActivityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDActivityManager.m; sourceTree = "<group>"; };
+		00F06C841B7B485200DC491F /* WDDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDocument.h; sourceTree = "<group>"; };
+		00F06C851B7B485200DC491F /* WDDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDocument.m; sourceTree = "<group>"; };
+		00F06C861B7B485200DC491F /* WDDocumentProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WDDocumentProtocol.h; path = "../Inkpad-Core/Model/WDDocumentProtocol.h"; sourceTree = "<group>"; };
+		00F06C871B7B485200DC491F /* WDDrawingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDrawingManager.h; sourceTree = "<group>"; };
+		00F06C881B7B485200DC491F /* WDDrawingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDrawingManager.m; sourceTree = "<group>"; };
+		00F06C891B7B485200DC491F /* WDEmail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDEmail.h; sourceTree = "<group>"; };
+		00F06C8A1B7B485200DC491F /* WDEmail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDEmail.m; sourceTree = "<group>"; };
+		00F06C8B1B7B485200DC491F /* WDFontManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDFontManager.h; sourceTree = "<group>"; };
+		00F06C8C1B7B485200DC491F /* WDFontManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDFontManager.m; sourceTree = "<group>"; };
+		00F06C8D1B7B485200DC491F /* WDUserFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDUserFont.h; sourceTree = "<group>"; };
+		00F06C8E1B7B485200DC491F /* WDUserFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDUserFont.m; sourceTree = "<group>"; };
+		00F06C9E1B7B486A00DC491F /* WDAnglePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDAnglePicker.h; sourceTree = "<group>"; };
+		00F06C9F1B7B486A00DC491F /* WDAnglePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDAnglePicker.m; sourceTree = "<group>"; };
+		00F06CA01B7B486A00DC491F /* WDArrowheadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDArrowheadCell.h; sourceTree = "<group>"; };
+		00F06CA11B7B486A00DC491F /* WDArrowheadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDArrowheadCell.m; sourceTree = "<group>"; };
+		00F06CA21B7B486A00DC491F /* WDBlockingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDBlockingView.h; sourceTree = "<group>"; };
+		00F06CA31B7B486A00DC491F /* WDBlockingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDBlockingView.m; sourceTree = "<group>"; };
+		00F06CA41B7B486A00DC491F /* WDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDButton.h; sourceTree = "<group>"; };
+		00F06CA51B7B486A00DC491F /* WDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDButton.m; sourceTree = "<group>"; };
+		00F06CA61B7B486A00DC491F /* WDCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDCanvas.h; sourceTree = "<group>"; };
+		00F06CA71B7B486A00DC491F /* WDCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDCanvas.m; sourceTree = "<group>"; };
+		00F06CA81B7B486A00DC491F /* WDColorIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDColorIndicator.h; sourceTree = "<group>"; };
+		00F06CA91B7B486A00DC491F /* WDColorIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDColorIndicator.m; sourceTree = "<group>"; };
+		00F06CAA1B7B486A00DC491F /* WDColorSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDColorSlider.h; sourceTree = "<group>"; };
+		00F06CAB1B7B486A00DC491F /* WDColorSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDColorSlider.m; sourceTree = "<group>"; };
+		00F06CAC1B7B486A00DC491F /* WDColorWell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDColorWell.h; sourceTree = "<group>"; };
+		00F06CAD1B7B486A00DC491F /* WDColorWell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDColorWell.m; sourceTree = "<group>"; };
+		00F06CAE1B7B486A00DC491F /* WDCoreTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDCoreTextLabel.h; sourceTree = "<group>"; };
+		00F06CAF1B7B486A00DC491F /* WDCoreTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDCoreTextLabel.m; sourceTree = "<group>"; };
+		00F06CB01B7B486A00DC491F /* WDEraserPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDEraserPreviewView.h; sourceTree = "<group>"; };
+		00F06CB11B7B486A00DC491F /* WDEraserPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDEraserPreviewView.m; sourceTree = "<group>"; };
+		00F06CB21B7B486A00DC491F /* WDEtchedLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDEtchedLine.h; sourceTree = "<group>"; };
+		00F06CB31B7B486A00DC491F /* WDEtchedLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDEtchedLine.m; sourceTree = "<group>"; };
+		00F06CB41B7B486A00DC491F /* WDEventForwardingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDEventForwardingView.h; sourceTree = "<group>"; };
+		00F06CB51B7B486A00DC491F /* WDEventForwardingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDEventForwardingView.m; sourceTree = "<group>"; };
+		00F06CB61B7B486A00DC491F /* WDEyedropper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDEyedropper.h; sourceTree = "<group>"; };
+		00F06CB71B7B486A00DC491F /* WDEyedropper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDEyedropper.m; sourceTree = "<group>"; };
+		00F06CB81B7B486A00DC491F /* WDGradientEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDGradientEditor.h; sourceTree = "<group>"; };
+		00F06CB91B7B486A00DC491F /* WDGradientEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDGradientEditor.m; sourceTree = "<group>"; };
+		00F06CBA1B7B486A00DC491F /* WDGradientStopIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDGradientStopIndicator.h; sourceTree = "<group>"; };
+		00F06CBB1B7B486A00DC491F /* WDGradientStopIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDGradientStopIndicator.m; sourceTree = "<group>"; };
+		00F06CBC1B7B486A00DC491F /* WDHueShifter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHueShifter.h; sourceTree = "<group>"; };
+		00F06CBD1B7B486A00DC491F /* WDHueShifter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHueShifter.m; sourceTree = "<group>"; };
+		00F06CBE1B7B486A00DC491F /* WDImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDImageView.h; sourceTree = "<group>"; };
+		00F06CBF1B7B486A00DC491F /* WDImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDImageView.m; sourceTree = "<group>"; };
+		00F06CC01B7B486A00DC491F /* WDLayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDLayerCell.h; sourceTree = "<group>"; };
+		00F06CC11B7B486A00DC491F /* WDLayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDLayerCell.m; sourceTree = "<group>"; };
+		00F06CC21B7B486A00DC491F /* WDLineAttributePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDLineAttributePicker.h; sourceTree = "<group>"; };
+		00F06CC31B7B486A00DC491F /* WDLineAttributePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDLineAttributePicker.m; sourceTree = "<group>"; };
+		00F06CC41B7B486A00DC491F /* WDMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDMenu.h; sourceTree = "<group>"; };
+		00F06CC51B7B486A00DC491F /* WDMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDMenu.m; sourceTree = "<group>"; };
+		00F06CC61B7B486A00DC491F /* WDMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDMenuItem.h; sourceTree = "<group>"; };
+		00F06CC71B7B486A00DC491F /* WDMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDMenuItem.m; sourceTree = "<group>"; };
+		00F06CC81B7B486A00DC491F /* WDModalTitleBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDModalTitleBar.h; sourceTree = "<group>"; };
+		00F06CC91B7B486A00DC491F /* WDModalTitleBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDModalTitleBar.m; sourceTree = "<group>"; };
+		00F06CCA1B7B486A00DC491F /* WDPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDPalette.h; sourceTree = "<group>"; };
+		00F06CCB1B7B486A00DC491F /* WDPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDPalette.m; sourceTree = "<group>"; };
+		00F06CCC1B7B486A00DC491F /* WDPaletteBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDPaletteBackgroundView.h; sourceTree = "<group>"; };
+		00F06CCD1B7B486A00DC491F /* WDPaletteBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDPaletteBackgroundView.m; sourceTree = "<group>"; };
+		00F06CCE1B7B486A00DC491F /* WDProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDProgressView.h; sourceTree = "<group>"; };
+		00F06CCF1B7B486A00DC491F /* WDProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDProgressView.m; sourceTree = "<group>"; };
+		00F06CD01B7B486A00DC491F /* WDRulerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDRulerView.h; sourceTree = "<group>"; };
+		00F06CD11B7B486A00DC491F /* WDRulerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDRulerView.m; sourceTree = "<group>"; };
+		00F06CD21B7B486A00DC491F /* WDSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSelectionView.h; sourceTree = "<group>"; };
+		00F06CD31B7B486A00DC491F /* WDSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSelectionView.m; sourceTree = "<group>"; };
+		00F06CD41B7B486A00DC491F /* WDShadowWell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDShadowWell.h; sourceTree = "<group>"; };
+		00F06CD51B7B486A00DC491F /* WDShadowWell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDShadowWell.m; sourceTree = "<group>"; };
+		00F06CD61B7B486A00DC491F /* WDSimpleColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSimpleColorView.h; sourceTree = "<group>"; };
+		00F06CD71B7B486A00DC491F /* WDSimpleColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSimpleColorView.m; sourceTree = "<group>"; };
+		00F06CD81B7B486A00DC491F /* WDSparkSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSparkSlider.h; sourceTree = "<group>"; };
+		00F06CD91B7B486A00DC491F /* WDSparkSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSparkSlider.m; sourceTree = "<group>"; };
+		00F06CDA1B7B486A00DC491F /* WDSwatchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSwatchCell.h; sourceTree = "<group>"; };
+		00F06CDB1B7B486A00DC491F /* WDSwatchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSwatchCell.m; sourceTree = "<group>"; };
+		00F06CDC1B7B486A00DC491F /* WDThumbnailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDThumbnailView.h; sourceTree = "<group>"; };
+		00F06CDD1B7B486A00DC491F /* WDThumbnailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDThumbnailView.m; sourceTree = "<group>"; };
+		00F06CDE1B7B486A00DC491F /* WDToolButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDToolButton.h; sourceTree = "<group>"; };
+		00F06CDF1B7B486A00DC491F /* WDToolButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDToolButton.m; sourceTree = "<group>"; };
+		00F06CE01B7B486A00DC491F /* WDToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDToolView.h; sourceTree = "<group>"; };
+		00F06CE11B7B486A00DC491F /* WDToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDToolView.m; sourceTree = "<group>"; };
+		754A30D91C0B3EA700333F22 /* WDTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WDTool.m; path = Tools/WDTool.m; sourceTree = "<group>"; };
+		754A30DA1C0B3EA700333F22 /* WDTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WDTool.h; path = Tools/WDTool.h; sourceTree = "<group>"; };
+		754A30DD1C0B3FFC00333F22 /* WDShapeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WDShapeTool.h; path = Tools/WDShapeTool.h; sourceTree = "<group>"; };
+		754A30DE1C0B3FFC00333F22 /* WDShapeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WDShapeTool.m; path = Tools/WDShapeTool.m; sourceTree = "<group>"; };
+		ABC9C0951C4128F1008862E0 /* PSPerspectiveTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPerspectiveTransform.h; sourceTree = "<group>"; };
+		ABC9C0971C412B10008862E0 /* PSPerspectiveTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPerspectiveTransform.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E3B14F1B6A654000D29DFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0087B4361B7A018B0033CA57 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		001317FA1B6CCA3F00AD95C1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				00F06C0C1B7B476A00DC491F /* Additions */,
+				00F06C191B7B47B000DC491F /* Controllers */,
+				00F06C7E1B7B47EB00DC491F /* Model */,
+				00F06C7F1B7B47F400DC491F /* View */,
+			);
+			name = Classes;
+			path = ../Classes;
+			sourceTree = "<group>";
+		};
+		00396B581B6AEAF500D50AFF /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				00396B591B6AEAF500D50AFF /* UIKitOS.h */,
+				00396B5B1B6AF04800D50AFF /* UIKitOS.m */,
+			);
+			path = platform;
+			sourceTree = "<group>";
+		};
+		00E3B1491B6A653F00D29DFA = {
+			isa = PBXGroup;
+			children = (
+				0087B4351B7A018B0033CA57 /* libz.dylib */,
+				0020AA8E1B787A20002268EA /* psgvectorapi.mm */,
+				0020AA8F1B787A20002268EA /* psgvectorapi.h */,
+				001317FA1B6CCA3F00AD95C1 /* Classes */,
+				00E3B1591B6A657D00D29DFA /* Inkpad-Core */,
+				00E3B1531B6A654000D29DFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00E3B1531B6A654000D29DFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00E3B1521B6A654000D29DFA /* libpsgvector.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00E3B1591B6A657D00D29DFA /* Inkpad-Core */ = {
+			isa = PBXGroup;
+			children = (
+				754A30D81C0B3E5F00333F22 /* Tools */,
+				00396B581B6AEAF500D50AFF /* platform */,
+				00E3B15A1B6A657D00D29DFA /* Additions */,
+				00E3B1671B6A657D00D29DFA /* Controllers */,
+				00E3B1701B6A657D00D29DFA /* CurveFit */,
+				00E3B19A1B6A657D00D29DFA /* livarot */,
+				00E3B1AA1B6A657D00D29DFA /* Model */,
+				00E3B1E61B6A657D00D29DFA /* PLists */,
+				00E3B1E81B6A657D00D29DFA /* SVG */,
+				00E3B21C1B6A657D00D29DFA /* Utilities */,
+			);
+			name = "Inkpad-Core";
+			path = "../Inkpad-Core";
+			sourceTree = "<group>";
+		};
+		00E3B15A1B6A657D00D29DFA /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				00E3B15B1B6A657D00D29DFA /* NSArray+Additions.h */,
+				00E3B15C1B6A657D00D29DFA /* NSArray+Additions.m */,
+				00E3B15D1B6A657D00D29DFA /* NSData+Additions.h */,
+				00E3B15E1B6A657D00D29DFA /* NSData+Additions.m */,
+				00E3B15F1B6A657D00D29DFA /* NSString+Additions.h */,
+				00E3B1601B6A657D00D29DFA /* NSString+Additions.m */,
+				00E3B1611B6A657D00D29DFA /* UIColor+Additions.h */,
+				00E3B1621B6A657D00D29DFA /* UIColor+Additions.m */,
+				00E3B1631B6A657D00D29DFA /* UIImage+Additions.h */,
+				00E3B1641B6A657D00D29DFA /* UIImage+Additions.m */,
+				00E3B1651B6A657D00D29DFA /* UIImage+Resize.h */,
+				00E3B1661B6A657D00D29DFA /* UIImage+Resize.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		00E3B1671B6A657D00D29DFA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				00E3B1681B6A657D00D29DFA /* WDDrawingController.h */,
+				00E3B1691B6A657D00D29DFA /* WDDrawingController.m */,
+				00E3B16A1B6A657D00D29DFA /* WDDynamicGuideController.h */,
+				00E3B16B1B6A657D00D29DFA /* WDDynamicGuideController.m */,
+				00E3B16C1B6A657D00D29DFA /* WDPropertyManager.h */,
+				00E3B16D1B6A657D00D29DFA /* WDPropertyManager.m */,
+				00E3B16E1B6A657D00D29DFA /* WDToolManager.h */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		00E3B1701B6A657D00D29DFA /* CurveFit */ = {
+			isa = PBXGroup;
+			children = (
+				00E3B1711B6A657D00D29DFA /* FitCurves.h */,
+				00E3B1721B6A657D00D29DFA /* FitCurves.m */,
+			);
+			path = CurveFit;
+			sourceTree = "<group>";
+		};
+		00E3B19A1B6A657D00D29DFA /* livarot */ = {
+			isa = PBXGroup;
+			children = (
+				00E3B19B1B6A657D00D29DFA /* AVL.cpp */,
+				00E3B19C1B6A657D00D29DFA /* AVL.h */,
+				00E3B19D1B6A657D00D29DFA /* DblLinked.cpp */,
+				00E3B19E1B6A657D00D29DFA /* DblLinked.h */,
+				00E3B19F1B6A657D00D29DFA /* LivarotDefs.h */,
+				00E3B1A01B6A657D00D29DFA /* MyMath.h */,
+				00E3B1A11B6A657D00D29DFA /* Path.cpp */,
+				00E3B1A21B6A657D00D29DFA /* Path.h */,
+				00E3B1A31B6A657D00D29DFA /* PathConversion.cpp */,
+				00E3B1A41B6A657D00D29DFA /* Shape.cpp */,
+				00E3B1A51B6A657D00D29DFA /* Shape.h */,
+				00E3B1A61B6A657D00D29DFA /* ShapeMisc.cpp */,
+				00E3B1A71B6A657D00D29DFA /* ShapeSweep.cpp */,
+				00E3B1A81B6A657D00D29DFA /* ShapeSweepUtils.cpp */,
+				00E3B1A91B6A657D00D29DFA /* ShapeUtils.h */,
+			);
+			path = livarot;
+			sourceTree = "<group>";
+		};
+		00E3B1AA1B6A657D00D29DFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00E3B1AB1B6A657D00D29DFA /* WDAbstractPath.h */,
+				00E3B1AC1B6A657D00D29DFA /* WDAbstractPath.m */,
+				00E3B1AD1B6A657D00D29DFA /* WDArrowhead.h */,
+				00E3B1AE1B6A657D00D29DFA /* WDArrowhead.m */,
+				00E3B1AF1B6A657D00D29DFA /* WDBezierNode.h */,
+				00E3B1B01B6A657D00D29DFA /* WDBezierNode.m */,
+				00E3B1B11B6A657D00D29DFA /* WDBezierSegment.h */,
+				00E3B1B21B6A657D00D29DFA /* WDBezierSegment.m */,
+				00E3B1B31B6A657D00D29DFA /* WDColor.h */,
+				00E3B1B41B6A657D00D29DFA /* WDColor.m */,
+				00E3B1B51B6A657D00D29DFA /* WDCompoundPath.h */,
+				00E3B1B61B6A657D00D29DFA /* WDCompoundPath.m */,
+				00E3B1B71B6A657D00D29DFA /* WDCurveFit.h */,
+				00E3B1B81B6A657D00D29DFA /* WDCurveFit.m */,
+				00E3B1B91B6A657D00D29DFA /* WDDocumentProtocol.h */,
+				00E3B1BA1B6A657D00D29DFA /* WDDrawing.h */,
+				00E3B1BB1B6A657D00D29DFA /* WDDrawing.m */,
+				00E3B1BC1B6A657D00D29DFA /* WDDynamicGuide.h */,
+				00E3B1BD1B6A657D00D29DFA /* WDDynamicGuide.m */,
+				00E3B1BE1B6A657D00D29DFA /* WDElement.h */,
+				00E3B1BF1B6A657D00D29DFA /* WDElement.m */,
+				00E3B1C01B6A657D00D29DFA /* WDFillTransform.h */,
+				00E3B1C11B6A657D00D29DFA /* WDFillTransform.m */,
+				00E3B1C21B6A657D00D29DFA /* WDGradient.h */,
+				00E3B1C31B6A657D00D29DFA /* WDGradient.m */,
+				00E3B1C41B6A657D00D29DFA /* WDGradientStop.h */,
+				00E3B1C51B6A657D00D29DFA /* WDGradientStop.m */,
+				00E3B1C61B6A657D00D29DFA /* WDGroup.h */,
+				00E3B1C71B6A657D00D29DFA /* WDGroup.m */,
+				00E3B1C81B6A657D00D29DFA /* WDImage.h */,
+				00E3B1C91B6A657D00D29DFA /* WDImage.m */,
+				00E3B1CA1B6A657D00D29DFA /* WDImageData.h */,
+				00E3B1CB1B6A657D00D29DFA /* WDImageData.m */,
+				00E3B1CC1B6A657D00D29DFA /* WDInspectableProperties.h */,
+				00E3B1CD1B6A657D00D29DFA /* WDInspectableProperties.m */,
+				00E3B1CE1B6A657D00D29DFA /* WDLayer.h */,
+				00E3B1CF1B6A657D00D29DFA /* WDLayer.m */,
+				00E3B1D01B6A657D00D29DFA /* WDPath.h */,
+				00E3B1D11B6A657D00D29DFA /* WDPath.m */,
+				00E3B1D21B6A657D00D29DFA /* WDPathfinder.h */,
+				00E3B1D31B6A657D00D29DFA /* WDPathfinder.mm */,
+				00E3B1D41B6A657D00D29DFA /* WDPathPainter.h */,
+				00E3B1D51B6A657D00D29DFA /* WDPickResult.h */,
+				00E3B1D61B6A657D00D29DFA /* WDPickResult.m */,
+				00E3B1D71B6A657D00D29DFA /* WDRulerUnit.h */,
+				00E3B1D81B6A657D00D29DFA /* WDRulerUnit.m */,
+				00E3B1D91B6A657D00D29DFA /* WDShadow.h */,
+				00E3B1DA1B6A657D00D29DFA /* WDShadow.m */,
+				00E3B1DB1B6A657D00D29DFA /* WDStrokeStyle.h */,
+				00E3B1DC1B6A657D00D29DFA /* WDStrokeStyle.m */,
+				00E3B1DD1B6A657D00D29DFA /* WDStylable.h */,
+				00E3B1DE1B6A657D00D29DFA /* WDStylable.m */,
+				00E3B1DF1B6A657D00D29DFA /* WDText.h */,
+				00E3B1E01B6A657D00D29DFA /* WDText.m */,
+				00E3B1E11B6A657D00D29DFA /* WDTextPath.h */,
+				00E3B1E21B6A657D00D29DFA /* WDTextPath.m */,
+				00E3B1E31B6A657D00D29DFA /* WDTextRenderer.h */,
+				00E3B1E41B6A657D00D29DFA /* WDXMLElement.h */,
+				00E3B1E51B6A657D00D29DFA /* WDXMLElement.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00E3B1E61B6A657D00D29DFA /* PLists */ = {
+			isa = PBXGroup;
+			children = (
+				00E3B1E71B6A657D00D29DFA /* SVGColors.plist */,
+			);
+			path = PLists;
+			sourceTree = "<group>";
+		};
+		00E3B1E81B6A657D00D29DFA /* SVG */ = {
+			isa = PBXGroup;
+			children = (
+				00E3B1E91B6A657D00D29DFA /* WDParseUtil.h */,
+				00E3B1EA1B6A657D00D29DFA /* WDParseUtil.m */,
+				00E3B1EB1B6A657D00D29DFA /* WDSVGElement.h */,
+				00E3B1EC1B6A657D00D29DFA /* WDSVGElement.m */,
+				00E3B1ED1B6A657D00D29DFA /* WDSVGHelper.h */,
+				00E3B1EE1B6A657D00D29DFA /* WDSVGHelper.m */,
+				00E3B1EF1B6A657D00D29DFA /* WDSVGParser.h */,
+				00E3B1F01B6A657D00D29DFA /* WDSVGParser.m */,
+				00E3B1F11B6A657D00D29DFA /* WDSVGParserState.h */,
+				00E3B1F21B6A657D00D29DFA /* WDSVGParserState.m */,
+				00E3B1F31B6A657D00D29DFA /* WDSVGParserStateStack.h */,
+				00E3B1F41B6A657D00D29DFA /* WDSVGParserStateStack.m */,
+				00E3B1F51B6A657D00D29DFA /* WDSVGPathParser.h */,
+				00E3B1F61B6A657D00D29DFA /* WDSVGPathParser.m */,
+				00E3B1F71B6A657D00D29DFA /* WDSVGStyleParser.h */,
+				00E3B1F81B6A657D00D29DFA /* WDSVGStyleParser.m */,
+				00E3B1F91B6A657D00D29DFA /* WDSVGThumbnailExtractor.h */,
+				00E3B1FA1B6A657D00D29DFA /* WDSVGThumbnailExtractor.m */,
+				00E3B1FB1B6A657D00D29DFA /* WDSVGTransformParser.h */,
+				00E3B1FC1B6A657D00D29DFA /* WDSVGTransformParser.m */,
+			);
+			path = SVG;
+			sourceTree = "<group>";
+		};
+		00E3B21C1B6A657D00D29DFA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				ABC9C0971C412B10008862E0 /* PSPerspectiveTransform.m */,
+				ABC9C0951C4128F1008862E0 /* PSPerspectiveTransform.h */,
+				00E3B21D1B6A657D00D29DFA /* WDGLUtilities.h */,
+				00E3B21E1B6A657D00D29DFA /* WDGLUtilities.m */,
+				00E3B21F1B6A657D00D29DFA /* WDUtilities.h */,
+				00E3B2201B6A657D00D29DFA /* WDUtilities.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		00F06C0C1B7B476A00DC491F /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				00F06C0D1B7B478500DC491F /* UIView+Additions.h */,
+				00F06C0E1B7B478500DC491F /* UIView+Additions.m */,
+				00F06C111B7B478500DC491F /* UIBarButtonItem+Additions.h */,
+				00F06C121B7B478500DC491F /* UIBarButtonItem+Additions.m */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
+		00F06C191B7B47B000DC491F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				00F06C1A1B7B47D100DC491F /* WDActivityController.h */,
+				00F06C1B1B7B47D100DC491F /* WDActivityController.m */,
+				00F06C1C1B7B47D100DC491F /* WDArrowController.h */,
+				00F06C1D1B7B47D100DC491F /* WDArrowController.m */,
+				00F06C1E1B7B47D100DC491F /* WDBlendModeController.h */,
+				00F06C1F1B7B47D100DC491F /* WDBlendModeController.m */,
+				00F06C201B7B47D100DC491F /* WDBrowserController.h */,
+				00F06C211B7B47D100DC491F /* WDBrowserController.m */,
+				00F06C221B7B47D100DC491F /* WDCanvasController.h */,
+				00F06C231B7B47D100DC491F /* WDCanvasController.m */,
+				00F06C241B7B47D100DC491F /* WDColorAdjustmentController.h */,
+				00F06C251B7B47D100DC491F /* WDColorAdjustmentController.m */,
+				00F06C261B7B47D100DC491F /* WDColorBalanceController.h */,
+				00F06C271B7B47D100DC491F /* WDColorBalanceController.m */,
+				00F06C281B7B47D100DC491F /* WDColorController.h */,
+				00F06C291B7B47D100DC491F /* WDColorController.m */,
+				00F06C2A1B7B47D100DC491F /* WDExportController.h */,
+				00F06C2B1B7B47D100DC491F /* WDExportController.m */,
+				00F06C2C1B7B47D100DC491F /* WDFillController.h */,
+				00F06C2D1B7B47D100DC491F /* WDFillController.m */,
+				00F06C2E1B7B47D100DC491F /* WDFontController.h */,
+				00F06C2F1B7B47D100DC491F /* WDFontController.m */,
+				00F06C301B7B47D100DC491F /* WDFontLibraryController.h */,
+				00F06C311B7B47D100DC491F /* WDFontLibraryController.m */,
+				00F06C321B7B47D100DC491F /* WDGradientController.h */,
+				00F06C331B7B47D100DC491F /* WDGradientController.m */,
+				00F06C341B7B47D100DC491F /* WDHelpController.h */,
+				00F06C351B7B47D100DC491F /* WDHelpController.m */,
+				00F06C361B7B47D100DC491F /* WDHueSaturationController.h */,
+				00F06C371B7B47D100DC491F /* WDHueSaturationController.m */,
+				00F06C381B7B47D100DC491F /* WDImportController.h */,
+				00F06C391B7B47D100DC491F /* WDImportController.m */,
+				00F06C3A1B7B47D100DC491F /* WDLayerController.h */,
+				00F06C3B1B7B47D100DC491F /* WDLayerController.m */,
+				00F06C3C1B7B47D100DC491F /* WDPageSizeController.h */,
+				00F06C3D1B7B47D100DC491F /* WDPageSizeController.m */,
+				00F06C3E1B7B47D100DC491F /* WDSamplesController.h */,
+				00F06C3F1B7B47D100DC491F /* WDSamplesController.m */,
+				00F06C401B7B47D100DC491F /* WDSettingsController.h */,
+				00F06C411B7B47D100DC491F /* WDSettingsController.m */,
+				00F06C421B7B47D100DC491F /* WDShadowController.h */,
+				00F06C431B7B47D100DC491F /* WDShadowController.m */,
+				00F06C441B7B47D100DC491F /* WDStrokeController.h */,
+				00F06C451B7B47D100DC491F /* WDStrokeController.m */,
+				00F06C461B7B47D100DC491F /* WDSwatchController.h */,
+				00F06C471B7B47D100DC491F /* WDSwatchController.m */,
+				00F06C481B7B47D100DC491F /* WDTextController.h */,
+				00F06C491B7B47D100DC491F /* WDTextController.m */,
+				00F06C4A1B7B47D100DC491F /* WDUnitsController.h */,
+				00F06C4B1B7B47D100DC491F /* WDUnitsController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		00F06C7E1B7B47EB00DC491F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00F06C801B7B485200DC491F /* WDActivity.h */,
+				00F06C811B7B485200DC491F /* WDActivity.m */,
+				00F06C821B7B485200DC491F /* WDActivityManager.h */,
+				00F06C831B7B485200DC491F /* WDActivityManager.m */,
+				00F06C841B7B485200DC491F /* WDDocument.h */,
+				00F06C851B7B485200DC491F /* WDDocument.m */,
+				00F06C861B7B485200DC491F /* WDDocumentProtocol.h */,
+				00F06C871B7B485200DC491F /* WDDrawingManager.h */,
+				00F06C881B7B485200DC491F /* WDDrawingManager.m */,
+				00F06C891B7B485200DC491F /* WDEmail.h */,
+				00F06C8A1B7B485200DC491F /* WDEmail.m */,
+				00F06C8B1B7B485200DC491F /* WDFontManager.h */,
+				00F06C8C1B7B485200DC491F /* WDFontManager.m */,
+				00F06C8D1B7B485200DC491F /* WDUserFont.h */,
+				00F06C8E1B7B485200DC491F /* WDUserFont.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		00F06C7F1B7B47F400DC491F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00F06C9E1B7B486A00DC491F /* WDAnglePicker.h */,
+				00F06C9F1B7B486A00DC491F /* WDAnglePicker.m */,
+				00F06CA01B7B486A00DC491F /* WDArrowheadCell.h */,
+				00F06CA11B7B486A00DC491F /* WDArrowheadCell.m */,
+				00F06CA21B7B486A00DC491F /* WDBlockingView.h */,
+				00F06CA31B7B486A00DC491F /* WDBlockingView.m */,
+				00F06CA41B7B486A00DC491F /* WDButton.h */,
+				00F06CA51B7B486A00DC491F /* WDButton.m */,
+				00F06CA61B7B486A00DC491F /* WDCanvas.h */,
+				00F06CA71B7B486A00DC491F /* WDCanvas.m */,
+				00F06CA81B7B486A00DC491F /* WDColorIndicator.h */,
+				00F06CA91B7B486A00DC491F /* WDColorIndicator.m */,
+				00F06CAA1B7B486A00DC491F /* WDColorSlider.h */,
+				00F06CAB1B7B486A00DC491F /* WDColorSlider.m */,
+				00F06CAC1B7B486A00DC491F /* WDColorWell.h */,
+				00F06CAD1B7B486A00DC491F /* WDColorWell.m */,
+				00F06CAE1B7B486A00DC491F /* WDCoreTextLabel.h */,
+				00F06CAF1B7B486A00DC491F /* WDCoreTextLabel.m */,
+				00F06CB01B7B486A00DC491F /* WDEraserPreviewView.h */,
+				00F06CB11B7B486A00DC491F /* WDEraserPreviewView.m */,
+				00F06CB21B7B486A00DC491F /* WDEtchedLine.h */,
+				00F06CB31B7B486A00DC491F /* WDEtchedLine.m */,
+				00F06CB41B7B486A00DC491F /* WDEventForwardingView.h */,
+				00F06CB51B7B486A00DC491F /* WDEventForwardingView.m */,
+				00F06CB61B7B486A00DC491F /* WDEyedropper.h */,
+				00F06CB71B7B486A00DC491F /* WDEyedropper.m */,
+				00F06CB81B7B486A00DC491F /* WDGradientEditor.h */,
+				00F06CB91B7B486A00DC491F /* WDGradientEditor.m */,
+				00F06CBA1B7B486A00DC491F /* WDGradientStopIndicator.h */,
+				00F06CBB1B7B486A00DC491F /* WDGradientStopIndicator.m */,
+				00F06CBC1B7B486A00DC491F /* WDHueShifter.h */,
+				00F06CBD1B7B486A00DC491F /* WDHueShifter.m */,
+				00F06CBE1B7B486A00DC491F /* WDImageView.h */,
+				00F06CBF1B7B486A00DC491F /* WDImageView.m */,
+				00F06CC01B7B486A00DC491F /* WDLayerCell.h */,
+				00F06CC11B7B486A00DC491F /* WDLayerCell.m */,
+				00F06CC21B7B486A00DC491F /* WDLineAttributePicker.h */,
+				00F06CC31B7B486A00DC491F /* WDLineAttributePicker.m */,
+				00F06CC41B7B486A00DC491F /* WDMenu.h */,
+				00F06CC51B7B486A00DC491F /* WDMenu.m */,
+				00F06CC61B7B486A00DC491F /* WDMenuItem.h */,
+				00F06CC71B7B486A00DC491F /* WDMenuItem.m */,
+				00F06CC81B7B486A00DC491F /* WDModalTitleBar.h */,
+				00F06CC91B7B486A00DC491F /* WDModalTitleBar.m */,
+				00F06CCA1B7B486A00DC491F /* WDPalette.h */,
+				00F06CCB1B7B486A00DC491F /* WDPalette.m */,
+				00F06CCC1B7B486A00DC491F /* WDPaletteBackgroundView.h */,
+				00F06CCD1B7B486A00DC491F /* WDPaletteBackgroundView.m */,
+				00F06CCE1B7B486A00DC491F /* WDProgressView.h */,
+				00F06CCF1B7B486A00DC491F /* WDProgressView.m */,
+				00F06CD01B7B486A00DC491F /* WDRulerView.h */,
+				00F06CD11B7B486A00DC491F /* WDRulerView.m */,
+				00F06CD21B7B486A00DC491F /* WDSelectionView.h */,
+				00F06CD31B7B486A00DC491F /* WDSelectionView.m */,
+				00F06CD41B7B486A00DC491F /* WDShadowWell.h */,
+				00F06CD51B7B486A00DC491F /* WDShadowWell.m */,
+				00F06CD61B7B486A00DC491F /* WDSimpleColorView.h */,
+				00F06CD71B7B486A00DC491F /* WDSimpleColorView.m */,
+				00F06CD81B7B486A00DC491F /* WDSparkSlider.h */,
+				00F06CD91B7B486A00DC491F /* WDSparkSlider.m */,
+				00F06CDA1B7B486A00DC491F /* WDSwatchCell.h */,
+				00F06CDB1B7B486A00DC491F /* WDSwatchCell.m */,
+				00F06CDC1B7B486A00DC491F /* WDThumbnailView.h */,
+				00F06CDD1B7B486A00DC491F /* WDThumbnailView.m */,
+				00F06CDE1B7B486A00DC491F /* WDToolButton.h */,
+				00F06CDF1B7B486A00DC491F /* WDToolButton.m */,
+				00F06CE01B7B486A00DC491F /* WDToolView.h */,
+				00F06CE11B7B486A00DC491F /* WDToolView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		754A30D81C0B3E5F00333F22 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				754A30DD1C0B3FFC00333F22 /* WDShapeTool.h */,
+				754A30DE1C0B3FFC00333F22 /* WDShapeTool.m */,
+				754A30D91C0B3EA700333F22 /* WDTool.m */,
+				754A30DA1C0B3EA700333F22 /* WDTool.h */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		00E3B1501B6A654000D29DFA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E3B2351B6A657D00D29DFA /* FitCurves.h in Headers */,
+				00E3B28B1B6A657D00D29DFA /* WDSVGParserStateStack.h in Headers */,
+				00E3B2671B6A657D00D29DFA /* WDInspectableProperties.h in Headers */,
+				00E3B2271B6A657D00D29DFA /* UIColor+Additions.h in Headers */,
+				00E3B25D1B6A657D00D29DFA /* WDGradient.h in Headers */,
+				00E3B2331B6A657D00D29DFA /* WDToolManager.h in Headers */,
+				00F06C9A1B7B485200DC491F /* WDFontManager.h in Headers */,
+				00E3B2501B6A657D00D29DFA /* WDCompoundPath.h in Headers */,
+				00E3B2851B6A657D00D29DFA /* WDSVGHelper.h in Headers */,
+				00E3B2591B6A657D00D29DFA /* WDElement.h in Headers */,
+				00E3B2551B6A657D00D29DFA /* WDDrawing.h in Headers */,
+				00E3B2541B6A657D00D29DFA /* WDDocumentProtocol.h in Headers */,
+				00E3B2761B6A657D00D29DFA /* WDStrokeStyle.h in Headers */,
+				00E3B2741B6A657D00D29DFA /* WDShadow.h in Headers */,
+				00E3B2931B6A657D00D29DFA /* WDSVGTransformParser.h in Headers */,
+				00E3B2831B6A657D00D29DFA /* WDSVGElement.h in Headers */,
+				00E3B24E1B6A657D00D29DFA /* WDColor.h in Headers */,
+				00E3B2211B6A657D00D29DFA /* NSArray+Additions.h in Headers */,
+				00E3B23C1B6A657D00D29DFA /* MyMath.h in Headers */,
+				00E3B2521B6A657D00D29DFA /* WDCurveFit.h in Headers */,
+				00E3B2461B6A657D00D29DFA /* WDAbstractPath.h in Headers */,
+				00E3B2611B6A657D00D29DFA /* WDGroup.h in Headers */,
+				00E3B28D1B6A657D00D29DFA /* WDSVGPathParser.h in Headers */,
+				00E3B2311B6A657D00D29DFA /* WDPropertyManager.h in Headers */,
+				00E3B2781B6A657D00D29DFA /* WDStylable.h in Headers */,
+				00E3B2571B6A657D00D29DFA /* WDDynamicGuide.h in Headers */,
+				00E3B27A1B6A657D00D29DFA /* WDText.h in Headers */,
+				00E3B22F1B6A657D00D29DFA /* WDDynamicGuideController.h in Headers */,
+				00E3B2411B6A657D00D29DFA /* Shape.h in Headers */,
+				00E3B24A1B6A657D00D29DFA /* WDBezierNode.h in Headers */,
+				00E3B23A1B6A657D00D29DFA /* DblLinked.h in Headers */,
+				00E3B2381B6A657D00D29DFA /* AVL.h in Headers */,
+				00E3B23E1B6A657D00D29DFA /* Path.h in Headers */,
+				00396B5A1B6AEAF500D50AFF /* UIKitOS.h in Headers */,
+				00E3B2B51B6A657D00D29DFA /* WDUtilities.h in Headers */,
+				00E3B2691B6A657D00D29DFA /* WDLayer.h in Headers */,
+				00E3B26F1B6A657D00D29DFA /* WDPathPainter.h in Headers */,
+				00E3B2811B6A657D00D29DFA /* WDParseUtil.h in Headers */,
+				00F06C9C1B7B485200DC491F /* WDUserFont.h in Headers */,
+				00E3B2871B6A657D00D29DFA /* WDSVGParser.h in Headers */,
+				00E3B28F1B6A657D00D29DFA /* WDSVGStyleParser.h in Headers */,
+				00E3B2911B6A657D00D29DFA /* WDSVGThumbnailExtractor.h in Headers */,
+				00E3B26B1B6A657D00D29DFA /* WDPath.h in Headers */,
+				754A30DC1C0B3EA700333F22 /* WDTool.h in Headers */,
+				00E3B25F1B6A657D00D29DFA /* WDGradientStop.h in Headers */,
+				00E3B2891B6A657D00D29DFA /* WDSVGParserState.h in Headers */,
+				00E3B2631B6A657D00D29DFA /* WDImage.h in Headers */,
+				00E3B2721B6A657D00D29DFA /* WDRulerUnit.h in Headers */,
+				00E3B2251B6A657D00D29DFA /* NSString+Additions.h in Headers */,
+				754A30DF1C0B3FFC00333F22 /* WDShapeTool.h in Headers */,
+				00E3B2451B6A657D00D29DFA /* ShapeUtils.h in Headers */,
+				00E3B2701B6A657D00D29DFA /* WDPickResult.h in Headers */,
+				00E3B22D1B6A657D00D29DFA /* WDDrawingController.h in Headers */,
+				00E3B2B31B6A657D00D29DFA /* WDGLUtilities.h in Headers */,
+				00E3B25B1B6A657D00D29DFA /* WDFillTransform.h in Headers */,
+				00E3B24C1B6A657D00D29DFA /* WDBezierSegment.h in Headers */,
+				00E3B2651B6A657D00D29DFA /* WDImageData.h in Headers */,
+				00E3B27C1B6A657D00D29DFA /* WDTextPath.h in Headers */,
+				00E3B2481B6A657D00D29DFA /* WDArrowhead.h in Headers */,
+				ABC9C0961C4128F1008862E0 /* PSPerspectiveTransform.h in Headers */,
+				00E3B26D1B6A657D00D29DFA /* WDPathfinder.h in Headers */,
+				00E3B2291B6A657D00D29DFA /* UIImage+Additions.h in Headers */,
+				00E3B22B1B6A657D00D29DFA /* UIImage+Resize.h in Headers */,
+				0020AA911B787A20002268EA /* psgvectorapi.h in Headers */,
+				00E3B27E1B6A657D00D29DFA /* WDTextRenderer.h in Headers */,
+				00E3B23B1B6A657D00D29DFA /* LivarotDefs.h in Headers */,
+				00E3B2231B6A657D00D29DFA /* NSData+Additions.h in Headers */,
+				00E3B27F1B6A657D00D29DFA /* WDXMLElement.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		00E3B1511B6A654000D29DFA /* psgvector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E3B1561B6A654000D29DFA /* Build configuration list for PBXNativeTarget "psgvector" */;
+			buildPhases = (
+				00E3B14E1B6A654000D29DFA /* Sources */,
+				00E3B14F1B6A654000D29DFA /* Frameworks */,
+				00E3B1501B6A654000D29DFA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = psgvector;
+			productName = psgvector;
+			productReference = 00E3B1521B6A654000D29DFA /* libpsgvector.dylib */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00E3B14A1B6A654000D29DFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "EffectMatrix Inc.";
+				TargetAttributes = {
+					00E3B1511B6A654000D29DFA = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 00E3B14D1B6A654000D29DFA /* Build configuration list for PBXProject "psgvector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 00E3B1491B6A653F00D29DFA;
+			productRefGroup = 00E3B1531B6A654000D29DFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00E3B1511B6A654000D29DFA /* psgvector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E3B14E1B6A654000D29DFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E3B2B41B6A657D00D29DFA /* WDGLUtilities.m in Sources */,
+				00E3B2441B6A657D00D29DFA /* ShapeSweepUtils.cpp in Sources */,
+				00E3B2771B6A657D00D29DFA /* WDStrokeStyle.m in Sources */,
+				00E3B2241B6A657D00D29DFA /* NSData+Additions.m in Sources */,
+				00E3B2941B6A657D00D29DFA /* WDSVGTransformParser.m in Sources */,
+				00E3B2731B6A657D00D29DFA /* WDRulerUnit.m in Sources */,
+				00E3B2281B6A657D00D29DFA /* UIColor+Additions.m in Sources */,
+				00E3B24B1B6A657D00D29DFA /* WDBezierNode.m in Sources */,
+				754A30DB1C0B3EA700333F22 /* WDTool.m in Sources */,
+				00E3B2641B6A657D00D29DFA /* WDImage.m in Sources */,
+				00E3B2921B6A657D00D29DFA /* WDSVGThumbnailExtractor.m in Sources */,
+				00E3B2621B6A657D00D29DFA /* WDGroup.m in Sources */,
+				00E3B2391B6A657D00D29DFA /* DblLinked.cpp in Sources */,
+				00E3B27B1B6A657D00D29DFA /* WDText.m in Sources */,
+				00E3B2221B6A657D00D29DFA /* NSArray+Additions.m in Sources */,
+				00E3B2491B6A657D00D29DFA /* WDArrowhead.m in Sources */,
+				00E3B27D1B6A657D00D29DFA /* WDTextPath.m in Sources */,
+				00E3B28C1B6A657D00D29DFA /* WDSVGParserStateStack.m in Sources */,
+				754A30E01C0B3FFC00333F22 /* WDShapeTool.m in Sources */,
+				00E3B2751B6A657D00D29DFA /* WDShadow.m in Sources */,
+				00E3B2661B6A657D00D29DFA /* WDImageData.m in Sources */,
+				00E3B2371B6A657D00D29DFA /* AVL.cpp in Sources */,
+				00E3B25C1B6A657D00D29DFA /* WDFillTransform.m in Sources */,
+				00E3B24D1B6A657D00D29DFA /* WDBezierSegment.m in Sources */,
+				00E3B28A1B6A657D00D29DFA /* WDSVGParserState.m in Sources */,
+				0020AA901B787A20002268EA /* psgvectorapi.mm in Sources */,
+				00E3B22A1B6A657D00D29DFA /* UIImage+Additions.m in Sources */,
+				00F06C9D1B7B485200DC491F /* WDUserFont.m in Sources */,
+				00E3B2361B6A657D00D29DFA /* FitCurves.m in Sources */,
+				ABC9C0981C412B10008862E0 /* PSPerspectiveTransform.m in Sources */,
+				00E3B2261B6A657D00D29DFA /* NSString+Additions.m in Sources */,
+				00E3B25A1B6A657D00D29DFA /* WDElement.m in Sources */,
+				00E3B26C1B6A657D00D29DFA /* WDPath.m in Sources */,
+				00E3B2901B6A657D00D29DFA /* WDSVGStyleParser.m in Sources */,
+				00E3B2841B6A657D00D29DFA /* WDSVGElement.m in Sources */,
+				00E3B2711B6A657D00D29DFA /* WDPickResult.m in Sources */,
+				00E3B2531B6A657D00D29DFA /* WDCurveFit.m in Sources */,
+				00E3B2581B6A657D00D29DFA /* WDDynamicGuide.m in Sources */,
+				00E3B22C1B6A657D00D29DFA /* UIImage+Resize.m in Sources */,
+				00E3B23F1B6A657D00D29DFA /* PathConversion.cpp in Sources */,
+				00F06C9B1B7B485200DC491F /* WDFontManager.m in Sources */,
+				00E3B2B61B6A657D00D29DFA /* WDUtilities.m in Sources */,
+				00E3B28E1B6A657D00D29DFA /* WDSVGPathParser.m in Sources */,
+				00E3B2471B6A657D00D29DFA /* WDAbstractPath.m in Sources */,
+				00E3B2561B6A657D00D29DFA /* WDDrawing.m in Sources */,
+				00E3B2421B6A657D00D29DFA /* ShapeMisc.cpp in Sources */,
+				00396B5C1B6AF04800D50AFF /* UIKitOS.m in Sources */,
+				00E3B2861B6A657D00D29DFA /* WDSVGHelper.m in Sources */,
+				00E3B2801B6A657D00D29DFA /* WDXMLElement.m in Sources */,
+				00E3B2401B6A657D00D29DFA /* Shape.cpp in Sources */,
+				00E3B23D1B6A657D00D29DFA /* Path.cpp in Sources */,
+				00E3B2431B6A657D00D29DFA /* ShapeSweep.cpp in Sources */,
+				00E3B22E1B6A657D00D29DFA /* WDDrawingController.m in Sources */,
+				00E3B2601B6A657D00D29DFA /* WDGradientStop.m in Sources */,
+				00E3B2511B6A657D00D29DFA /* WDCompoundPath.m in Sources */,
+				00E3B25E1B6A657D00D29DFA /* WDGradient.m in Sources */,
+				00E3B26E1B6A657D00D29DFA /* WDPathfinder.mm in Sources */,
+				00E3B2301B6A657D00D29DFA /* WDDynamicGuideController.m in Sources */,
+				00E3B24F1B6A657D00D29DFA /* WDColor.m in Sources */,
+				00E3B2681B6A657D00D29DFA /* WDInspectableProperties.m in Sources */,
+				00E3B2821B6A657D00D29DFA /* WDParseUtil.m in Sources */,
+				00E3B2881B6A657D00D29DFA /* WDSVGParser.m in Sources */,
+				00E3B26A1B6A657D00D29DFA /* WDLayer.m in Sources */,
+				00E3B2791B6A657D00D29DFA /* WDStylable.m in Sources */,
+				00E3B2321B6A657D00D29DFA /* WDPropertyManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		00E3B1541B6A654000D29DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		00E3B1551B6A654000D29DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		00E3B1571B6A654000D29DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DYLIB_INSTALL_NAME_BASE = "$(INSTALL_PATH)";
+				EXECUTABLE_EXTENSION = dylib;
+				EXECUTABLE_PREFIX = lib;
+				INSTALL_PATH = "@rpath";
+				LD_DYLIB_INSTALL_NAME = "$(INSTALL_PATH)/libpsgvector.dylib";
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		00E3B1581B6A654000D29DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DYLIB_INSTALL_NAME_BASE = "$(INSTALL_PATH)";
+				EXECUTABLE_EXTENSION = dylib;
+				EXECUTABLE_PREFIX = lib;
+				INSTALL_PATH = "@rpath";
+				LD_DYLIB_INSTALL_NAME = "$(INSTALL_PATH)/libpsgvector.dylib";
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E3B14D1B6A654000D29DFA /* Build configuration list for PBXProject "psgvector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E3B1541B6A654000D29DFA /* Debug */,
+				00E3B1551B6A654000D29DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00E3B1561B6A654000D29DFA /* Build configuration list for PBXNativeTarget "psgvector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E3B1571B6A654000D29DFA /* Debug */,
+				00E3B1581B6A654000D29DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00E3B14A1B6A654000D29DFA /* Project object */;
+}

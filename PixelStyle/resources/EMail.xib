@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="15C50" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="EmailController">
+            <connections>
+                <outlet property="m_pCancel" destination="YyH-Sl-M5y" id="jOb-3C-f7R"/>
+                <outlet property="m_pFadebackLabel" destination="NBy-Kg-bfR" id="2Lt-Nj-a8r"/>
+                <outlet property="m_pFadebackType" destination="W5I-Rv-qch" id="prw-No-FTM"/>
+                <outlet property="m_pFileAttachmentAddBtn" destination="365-Zw-ovq" id="Ru3-A6-qPh"/>
+                <outlet property="m_pFileAttachmentDeleteBtn1" destination="KQD-9d-CvP" id="oQ0-5W-crK"/>
+                <outlet property="m_pFileAttachmentDeleteBtn2" destination="Gwc-OV-s2C" id="m5N-rB-Q51"/>
+                <outlet property="m_pFileAttachmentDeleteBtn3" destination="a2h-DR-zSH" id="peY-bh-Xwq"/>
+                <outlet property="m_pFileAttachmentDeleteBtn4" destination="QMk-v6-qDI" id="pmW-aE-25e"/>
+                <outlet property="m_pFileAttachmentDeleteBtn5" destination="87t-mi-zRV" id="nXr-vp-6eg"/>
+                <outlet property="m_pFileAttachmentLabel1" destination="5b5-N5-Lhd" id="RcE-HB-ull"/>
+                <outlet property="m_pFileAttachmentLabel2" destination="4bl-Jp-6rI" id="dTC-ZJ-kDp"/>
+                <outlet property="m_pFileAttachmentLabel3" destination="0Hi-Eg-pDe" id="lae-Sb-wJh"/>
+                <outlet property="m_pFileAttachmentLabel4" destination="uMZ-u9-Vbc" id="E31-hB-bqA"/>
+                <outlet property="m_pFileAttachmentLabel5" destination="M89-nq-xZh" id="6nb-9N-17c"/>
+                <outlet property="m_pLikeTheApp" destination="fJz-pt-q3a" id="2lA-kN-0Oh"/>
+                <outlet property="m_pLikeTheAppType" destination="mpI-0w-KC1" id="vK5-ej-omp"/>
+                <outlet property="m_pLimtView" destination="mf3-KA-BfN" id="twD-XN-P7x"/>
+                <outlet property="m_pMaxFileNumbers" destination="yjm-o7-fNF" id="Iin-Sf-FgX"/>
+                <outlet property="m_pMaxSignalFileSize" destination="CxZ-PT-ztq" id="3Q8-4t-2u1"/>
+                <outlet property="m_pMessageContent" destination="3cr-uP-gdE" id="Cjl-dD-w1p"/>
+                <outlet property="m_pMessageScrollView" destination="qys-ma-NX7" id="dRe-RB-30a"/>
+                <outlet property="m_pSend" destination="g0m-6a-3km" id="Qtg-Mt-Lkd"/>
+                <outlet property="m_pSubjectField" destination="4X7-hy-kGF" id="PUh-CR-QDm"/>
+                <outlet property="m_pSubjectLable" destination="g5t-4O-TBL" id="efw-Jf-d3o"/>
+                <outlet property="m_pSupportFormat" destination="sNB-X7-QU8" id="8Qe-ih-TIL"/>
+                <outlet property="m_pToField" destination="JhY-56-bMB" id="RKr-gX-zjH"/>
+                <outlet property="m_pToLabel" destination="sto-qA-8hY" id="HMP-Gj-qoQ"/>
+                <outlet property="window" destination="1" id="ctn-VC-waw"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Mail" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="1">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="418" y="240" width="628" height="575"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="0.0" y="0.0" width="628" height="575"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fJz-pt-q3a">
+                        <rect key="frame" x="-3" y="538" width="160" height="24"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Like this app ?" id="IpW-sJ-EaW">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" red="0.33695652170000001" green="0.33695652170000001" blue="0.33695652170000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="windowBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <segmentedControl verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mpI-0w-KC1">
+                        <rect key="frame" x="168" y="540" width="71" height="25"/>
+                        <animations/>
+                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="texturedRounded" trackingMode="momentary" id="TCY-Cp-t2l">
+                            <font key="font" metaFont="system"/>
+                            <segments>
+                                <segment image="email-ui-like" width="32">
+                                    <nil key="label"/>
+                                </segment>
+                                <segment image="email-ui-not-like" width="32" tag="1">
+                                    <nil key="label"/>
+                                </segment>
+                            </segments>
+                        </segmentedCell>
+                        <connections>
+                            <action selector="likeThisAppTypeAction:" target="-2" id="tAS-ll-iTb"/>
+                        </connections>
+                    </segmentedControl>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NBy-Kg-bfR">
+                        <rect key="frame" x="250" y="538" width="160" height="24"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Feedback Type ?" id="CjV-Fb-2gj">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <segmentedControl verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W5I-Rv-qch">
+                        <rect key="frame" x="419" y="540" width="196" height="25"/>
+                        <animations/>
+                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="texturedRounded" trackingMode="momentary" id="2FV-Pk-L8s">
+                            <font key="font" metaFont="systemBold"/>
+                            <segments>
+                                <segment label="Bravo" width="63"/>
+                                <segment label="Bug" width="63" tag="1"/>
+                                <segment label="Idea" width="62"/>
+                            </segments>
+                        </segmentedCell>
+                        <connections>
+                            <action selector="fadebackTypeAction:" target="-2" id="JfT-bl-165"/>
+                        </connections>
+                    </segmentedControl>
+                    <box verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="Shn-KP-IHd">
+                        <rect key="frame" x="0.0" y="527" width="628" height="5"/>
+                        <animations/>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <font key="titleFont" metaFont="system"/>
+                    </box>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sto-qA-8hY">
+                        <rect key="frame" x="-3" y="496" width="129" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="To :" id="aYV-hg-IA4">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g5t-4O-TBL">
+                        <rect key="frame" x="-3" y="464" width="129" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Subject :" id="afq-cu-ddK">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JhY-56-bMB">
+                        <rect key="frame" x="128" y="491" width="493" height="24"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" id="xjg-qV-u8K">
+                            <font key="font" metaFont="system" size="14"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4X7-hy-kGF">
+                        <rect key="frame" x="128" y="460" width="447" height="22"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" id="YTm-yS-q1q">
+                            <font key="font" metaFont="system" size="14"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="365-Zw-ovq">
+                        <rect key="frame" x="584" y="459" width="26" height="26"/>
+                        <animations/>
+                        <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="email-ui-add-file" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="h5X-Xr-hWQ">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="addFileAttachment:" target="-2" id="H6k-Xc-bRp"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5b5-N5-Lhd">
+                        <rect key="frame" x="131" y="435" width="106" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="in3-o8-GTc">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KQD-9d-CvP">
+                        <rect key="frame" x="241" y="430" width="26" height="26"/>
+                        <animations/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="email-ui-delete-file" imagePosition="above" alignment="left" imageScaling="proportionallyDown" id="v2N-6s-MlM">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="deleteFileAttachmentFir:" target="-2" id="r3T-6u-Brx"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4bl-Jp-6rI">
+                        <rect key="frame" x="131" y="406" width="106" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="xCm-NL-6MU">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gwc-OV-s2C">
+                        <rect key="frame" x="241" y="401" width="26" height="26"/>
+                        <animations/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="email-ui-delete-file" imagePosition="above" alignment="left" imageScaling="proportionallyDown" id="p2i-HZ-ZGx">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="deleteFileAttachmentSec:" target="-2" id="0eK-2C-mhH"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Hi-Eg-pDe">
+                        <rect key="frame" x="131" y="377" width="106" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="I3s-lB-K1q">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a2h-DR-zSH">
+                        <rect key="frame" x="241" y="372" width="26" height="26"/>
+                        <animations/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="email-ui-delete-file" imagePosition="above" alignment="left" imageScaling="proportionallyDown" id="xkb-4l-nGL">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="deleteFileAttachmentThi:" target="-2" id="4B7-nB-eyW"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uMZ-u9-Vbc">
+                        <rect key="frame" x="131" y="348" width="106" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="QNl-Mm-Izr">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QMk-v6-qDI">
+                        <rect key="frame" x="241" y="343" width="26" height="26"/>
+                        <animations/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="email-ui-delete-file" imagePosition="above" alignment="left" imageScaling="proportionallyDown" id="7UZ-yJ-BTy">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="deleteFileAttachmentFor:" target="-2" id="Gt4-zK-rTf"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M89-nq-xZh">
+                        <rect key="frame" x="131" y="319" width="106" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="5lA-DN-wsA">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="87t-mi-zRV">
+                        <rect key="frame" x="241" y="314" width="26" height="26"/>
+                        <animations/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="email-ui-delete-file" imagePosition="above" alignment="left" imageScaling="proportionallyDown" id="Mz6-PE-VAT">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="deleteFileAttachmentFiv:" target="-2" id="FBb-Xe-yAv"/>
+                        </connections>
+                    </button>
+                    <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qys-ma-NX7">
+                        <rect key="frame" x="12" y="70" width="606" height="376"/>
+                        <clipView key="contentView" ambiguous="YES" id="Uhk-zA-bmV">
+                            <rect key="frame" x="1" y="1" width="589" height="374"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textView ambiguous="YES" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="3cr-uP-gdE">
+                                    <rect key="frame" x="0.0" y="0.0" width="589" height="374"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <animations/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <size key="minSize" width="589" height="374"/>
+                                    <size key="maxSize" width="606" height="10000000"/>
+                                    <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <size key="minSize" width="589" height="374"/>
+                                    <size key="maxSize" width="606" height="10000000"/>
+                                </textView>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </clipView>
+                        <animations/>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="5fz-6v-qVg">
+                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <animations/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="4S5-DS-xtZ">
+                            <rect key="frame" x="590" y="1" width="15" height="374"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <animations/>
+                        </scroller>
+                    </scrollView>
+                    <box verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="1MX-vE-8px">
+                        <rect key="frame" x="0.0" y="47" width="628" height="5"/>
+                        <animations/>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <font key="titleFont" metaFont="system"/>
+                    </box>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YyH-Sl-M5y">
+                        <rect key="frame" x="310" y="10" width="120" height="32"/>
+                        <animations/>
+                        <buttonCell key="cell" type="squareTextured" title="Cancel" bezelStyle="texturedSquare" image="email-ui-cancel" imagePosition="overlaps" alignment="center" state="on" imageScaling="axesIndependently" inset="2" id="5AT-pG-eVP">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="systemBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancelAction:" target="-2" id="vbP-Ef-kMg"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g0m-6a-3km">
+                        <rect key="frame" x="457" y="10" width="130" height="32"/>
+                        <animations/>
+                        <buttonCell key="cell" type="squareTextured" title="Send" bezelStyle="texturedSquare" image="email-ui-send" imagePosition="overlaps" alignment="center" state="on" imageScaling="axesIndependently" inset="2" id="Oov-u0-Pzw">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="systemBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="sendAction:" target="-2" id="sZd-8g-y3e"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <animations/>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="ZDy-1G-dNb"/>
+            </connections>
+        </window>
+        <window title="Limt" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="yyV-co-RGl">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="131" y="159" width="626" height="91"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <view key="contentView" id="mf3-KA-BfN">
+                <rect key="frame" x="0.0" y="0.0" width="626" height="91"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sNB-X7-QU8">
+                        <rect key="frame" x="-3" y="65" width="364" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Supported formats :" id="sdx-eE-Wwx">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yjm-o7-fNF">
+                        <rect key="frame" x="-3" y="40" width="364" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="The maximum number of attachments :" id="Cgp-0s-LjU">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CxZ-PT-ztq">
+                        <rect key="frame" x="-3" y="15" width="364" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="The maximum size of single file :" id="vWQ-Cy-woc">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vyR-db-fbi">
+                        <rect key="frame" x="361" y="65" width="218" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="gif, jpg, pdf, png, rtf, txt" id="pML-C1-VsC">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SYC-s1-EeK">
+                        <rect key="frame" x="361" y="40" width="218" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="5" id="1Ke-YK-yzz">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qvj-8I-5UL">
+                        <rect key="frame" x="361" y="15" width="218" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="5MB" id="cmH-hE-Bdh">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <animations/>
+            </view>
+        </window>
+    </objects>
+    <resources>
+        <image name="email-ui-add-file" width="48" height="48"/>
+        <image name="email-ui-cancel" width="80" height="32"/>
+        <image name="email-ui-delete-file" width="48" height="48"/>
+        <image name="email-ui-like" width="48" height="48"/>
+        <image name="email-ui-not-like" width="48" height="48"/>
+        <image name="email-ui-send" width="80" height="32"/>
+    </resources>
+</document>

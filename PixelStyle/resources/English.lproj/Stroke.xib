@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="15C50" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PSFillController">
+            <connections>
+                <outlet property="m_winWindow" destination="XS1-Po-8pM" id="LMI-hD-hKW"/>
+                <outlet property="modeSegment_" destination="6l6-Dg-p3M" id="mbE-2w-OD5"/>
+                <outlet property="window" destination="XS1-Po-8pM" id="hrn-rQ-wG8"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Stroke Color" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="XS1-Po-8pM" userLabel="Fill (Window)" customClass="InfoPanel">
+            <windowStyleMask key="styleMask" titled="YES" texturedBackground="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="355" y="331" width="390" height="250"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <view key="contentView" autoresizesSubviews="NO" id="9bj-Gp-5mI" customClass="InfoPanelBacking">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <segmentedControl verticalHuggingPriority="750" id="6l6-Dg-p3M">
+                        <rect key="frame" x="132" y="186" width="127" height="23"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="capsule" trackingMode="selectOne" id="gGZ-JG-9R4">
+                            <font key="font" metaFont="system"/>
+                            <segments>
+                                <segment label="None" width="60"/>
+                                <segment label="Color" width="60" selected="YES" tag="1"/>
+                            </segments>
+                        </segmentedCell>
+                        <connections>
+                            <action selector="modeChanged:" target="-2" id="1md-c9-rp8"/>
+                        </connections>
+                    </segmentedControl>
+                </subviews>
+                <animations/>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="5J8-av-TX6"/>
+            </connections>
+            <point key="canvasLocation" x="418" y="1103"/>
+        </window>
+    </objects>
+</document>

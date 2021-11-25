@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3911BC601C1A7F1A00DDCB84 /* b.png in Resources */ = {isa = PBXBuildFile; fileRef = 3911BC5C1C1A7F1A00DDCB84 /* b.png */; };
+		3911BC611C1A7F1A00DDCB84 /* g.png in Resources */ = {isa = PBXBuildFile; fileRef = 3911BC5D1C1A7F1A00DDCB84 /* g.png */; };
+		3911BC621C1A7F1A00DDCB84 /* r.png in Resources */ = {isa = PBXBuildFile; fileRef = 3911BC5E1C1A7F1A00DDCB84 /* r.png */; };
+		3911BC631C1A7F1A00DDCB84 /* rgb.png in Resources */ = {isa = PBXBuildFile; fileRef = 3911BC5F1C1A7F1A00DDCB84 /* rgb.png */; };
+		AB553D0B1BB24749000AC470 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB553D0A1BB24749000AC470 /* AppKit.framework */; };
+		AB553D0D1BB24833000AC470 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB553D0C1BB24833000AC470 /* QuartzCore.framework */; };
+		AB553D5F1BB2551B000AC470 /* Lagrange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB553D5D1BB2551B000AC470 /* Lagrange.cpp */; };
+		AB553D621BB274D4000AC470 /* PSCurveView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB553D611BB274D4000AC470 /* PSCurveView.m */; };
+		AB7495E61BC7C3BD00D88386 /* blackFiledImage0.png in Resources */ = {isa = PBXBuildFile; fileRef = AB7495E41BC7C3BD00D88386 /* blackFiledImage0.png */; };
+		AB7495E71BC7C3BD00D88386 /* blackFiledImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = AB7495E51BC7C3BD00D88386 /* blackFiledImage1.png */; };
+		AB7495EC1BC7C41000D88386 /* grayFiledImage0.png in Resources */ = {isa = PBXBuildFile; fileRef = AB7495E81BC7C41000D88386 /* grayFiledImage0.png */; };
+		AB7495ED1BC7C41000D88386 /* grayFiledImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = AB7495E91BC7C41000D88386 /* grayFiledImage1.png */; };
+		AB7495EE1BC7C41000D88386 /* whiteFiledImage0.png in Resources */ = {isa = PBXBuildFile; fileRef = AB7495EA1BC7C41000D88386 /* whiteFiledImage0.png */; };
+		AB7495EF1BC7C41000D88386 /* whiteFiledImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = AB7495EB1BC7C41000D88386 /* whiteFiledImage1.png */; };
+		AB86CE3E1BC8B401001CF06F /* PSColorSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CE3D1BC8B401001CF06F /* PSColorSelectView.m */; };
+		AB9EB60E1BB0FBD9001C3677 /* CurvesClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB9EB60D1BB0FBD9001C3677 /* CurvesClass.mm */; };
+		AB9EB6131BB0FBF1001C3677 /* Rects.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9EB6121BB0FBF1001C3677 /* Rects.m */; };
+		AB9EB6171BB0FF89001C3677 /* Curves.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB9EB6161BB0FF89001C3677 /* Curves.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3911BC5C1C1A7F1A00DDCB84 /* b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b.png; sourceTree = "<group>"; };
+		3911BC5D1C1A7F1A00DDCB84 /* g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = g.png; sourceTree = "<group>"; };
+		3911BC5E1C1A7F1A00DDCB84 /* r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = r.png; sourceTree = "<group>"; };
+		3911BC5F1C1A7F1A00DDCB84 /* rgb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rgb.png; sourceTree = "<group>"; };
+		AB553D0A1BB24749000AC470 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AB553D0C1BB24833000AC470 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AB553D5D1BB2551B000AC470 /* Lagrange.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lagrange.cpp; sourceTree = "<group>"; };
+		AB553D5E1BB2551B000AC470 /* Lagrange.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Lagrange.hpp; sourceTree = "<group>"; };
+		AB553D601BB274D4000AC470 /* PSCurveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSCurveView.h; sourceTree = "<group>"; };
+		AB553D611BB274D4000AC470 /* PSCurveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSCurveView.m; sourceTree = "<group>"; };
+		AB7495E41BC7C3BD00D88386 /* blackFiledImage0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackFiledImage0.png; sourceTree = "<group>"; };
+		AB7495E51BC7C3BD00D88386 /* blackFiledImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackFiledImage1.png; sourceTree = "<group>"; };
+		AB7495E81BC7C41000D88386 /* grayFiledImage0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayFiledImage0.png; sourceTree = "<group>"; };
+		AB7495E91BC7C41000D88386 /* grayFiledImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayFiledImage1.png; sourceTree = "<group>"; };
+		AB7495EA1BC7C41000D88386 /* whiteFiledImage0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteFiledImage0.png; sourceTree = "<group>"; };
+		AB7495EB1BC7C41000D88386 /* whiteFiledImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteFiledImage1.png; sourceTree = "<group>"; };
+		AB86CE3C1BC8B401001CF06F /* PSColorSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSColorSelectView.h; sourceTree = "<group>"; };
+		AB86CE3D1BC8B401001CF06F /* PSColorSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSColorSelectView.m; sourceTree = "<group>"; };
+		AB9EB5F91BB0FB61001C3677 /* Curves.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Curves.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB9EB5FD1BB0FB61001C3677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB9EB60C1BB0FBD9001C3677 /* CurvesClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurvesClass.h; sourceTree = "<group>"; };
+		AB9EB60D1BB0FBD9001C3677 /* CurvesClass.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CurvesClass.mm; sourceTree = "<group>"; };
+		AB9EB60F1BB0FBF1001C3677 /* PluginData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PluginData.h; path = ../Common/PluginData.h; sourceTree = "<group>"; };
+		AB9EB6101BB0FBF1001C3677 /* PSPlugins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSPlugins.h; path = ../Common/PSPlugins.h; sourceTree = "<group>"; };
+		AB9EB6111BB0FBF1001C3677 /* Rects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rects.h; path = ../Common/Rects.h; sourceTree = "<group>"; };
+		AB9EB6121BB0FBF1001C3677 /* Rects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Rects.m; path = ../Common/Rects.m; sourceTree = "<group>"; };
+		AB9EB6161BB0FF89001C3677 /* Curves.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Curves.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB9EB5F61BB0FB61001C3677 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB553D0D1BB24833000AC470 /* QuartzCore.framework in Frameworks */,
+				AB553D0B1BB24749000AC470 /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB9EB5F01BB0FB61001C3677 = {
+			isa = PBXGroup;
+			children = (
+				AB553D0C1BB24833000AC470 /* QuartzCore.framework */,
+				AB553D0A1BB24749000AC470 /* AppKit.framework */,
+				AB9EB60B1BB0FBAB001C3677 /* Classes */,
+				AB9EB5FB1BB0FB61001C3677 /* Curves */,
+				AB9EB5FA1BB0FB61001C3677 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB9EB5FA1BB0FB61001C3677 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB9EB5F91BB0FB61001C3677 /* Curves.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB9EB5FB1BB0FB61001C3677 /* Curves */ = {
+			isa = PBXGroup;
+			children = (
+				3911BC5C1C1A7F1A00DDCB84 /* b.png */,
+				3911BC5D1C1A7F1A00DDCB84 /* g.png */,
+				3911BC5E1C1A7F1A00DDCB84 /* r.png */,
+				3911BC5F1C1A7F1A00DDCB84 /* rgb.png */,
+				AB7495E81BC7C41000D88386 /* grayFiledImage0.png */,
+				AB7495E91BC7C41000D88386 /* grayFiledImage1.png */,
+				AB7495EA1BC7C41000D88386 /* whiteFiledImage0.png */,
+				AB7495EB1BC7C41000D88386 /* whiteFiledImage1.png */,
+				AB7495E41BC7C3BD00D88386 /* blackFiledImage0.png */,
+				AB7495E51BC7C3BD00D88386 /* blackFiledImage1.png */,
+				AB9EB5FC1BB0FB61001C3677 /* Supporting Files */,
+				AB9EB6161BB0FF89001C3677 /* Curves.xib */,
+			);
+			path = Curves;
+			sourceTree = "<group>";
+		};
+		AB9EB5FC1BB0FB61001C3677 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB9EB5FD1BB0FB61001C3677 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB9EB60B1BB0FBAB001C3677 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AB553D5D1BB2551B000AC470 /* Lagrange.cpp */,
+				AB553D5E1BB2551B000AC470 /* Lagrange.hpp */,
+				AB9EB60F1BB0FBF1001C3677 /* PluginData.h */,
+				AB9EB6101BB0FBF1001C3677 /* PSPlugins.h */,
+				AB9EB6111BB0FBF1001C3677 /* Rects.h */,
+				AB9EB6121BB0FBF1001C3677 /* Rects.m */,
+				AB9EB60C1BB0FBD9001C3677 /* CurvesClass.h */,
+				AB9EB60D1BB0FBD9001C3677 /* CurvesClass.mm */,
+				AB553D601BB274D4000AC470 /* PSCurveView.h */,
+				AB553D611BB274D4000AC470 /* PSCurveView.m */,
+				AB86CE3C1BC8B401001CF06F /* PSColorSelectView.h */,
+				AB86CE3D1BC8B401001CF06F /* PSColorSelectView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB9EB5F81BB0FB61001C3677 /* Curves */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB9EB6001BB0FB61001C3677 /* Build configuration list for PBXNativeTarget "Curves" */;
+			buildPhases = (
+				AB9EB5F51BB0FB61001C3677 /* Sources */,
+				AB9EB5F61BB0FB61001C3677 /* Frameworks */,
+				AB9EB5F71BB0FB61001C3677 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Curves;
+			productName = Curves;
+			productReference = AB9EB5F91BB0FB61001C3677 /* Curves.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB9EB5F11BB0FB61001C3677 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = lchzh;
+				TargetAttributes = {
+					AB9EB5F81BB0FB61001C3677 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = AB9EB5F41BB0FB61001C3677 /* Build configuration list for PBXProject "Curves" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AB9EB5F01BB0FB61001C3677;
+			productRefGroup = AB9EB5FA1BB0FB61001C3677 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB9EB5F81BB0FB61001C3677 /* Curves */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB9EB5F71BB0FB61001C3677 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3911BC611C1A7F1A00DDCB84 /* g.png in Resources */,
+				AB7495EC1BC7C41000D88386 /* grayFiledImage0.png in Resources */,
+				AB9EB6171BB0FF89001C3677 /* Curves.xib in Resources */,
+				3911BC601C1A7F1A00DDCB84 /* b.png in Resources */,
+				3911BC621C1A7F1A00DDCB84 /* r.png in Resources */,
+				AB7495E71BC7C3BD00D88386 /* blackFiledImage1.png in Resources */,
+				AB7495EE1BC7C41000D88386 /* whiteFiledImage0.png in Resources */,
+				AB7495ED1BC7C41000D88386 /* grayFiledImage1.png in Resources */,
+				AB7495EF1BC7C41000D88386 /* whiteFiledImage1.png in Resources */,
+				3911BC631C1A7F1A00DDCB84 /* rgb.png in Resources */,
+				AB7495E61BC7C3BD00D88386 /* blackFiledImage0.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB9EB5F51BB0FB61001C3677 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB86CE3E1BC8B401001CF06F /* PSColorSelectView.m in Sources */,
+				AB9EB60E1BB0FBD9001C3677 /* CurvesClass.mm in Sources */,
+				AB9EB6131BB0FBF1001C3677 /* Rects.m in Sources */,
+				AB553D5F1BB2551B000AC470 /* Lagrange.cpp in Sources */,
+				AB553D621BB274D4000AC470 /* PSCurveView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AB9EB5FE1BB0FB61001C3677 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AB9EB5FF1BB0FB61001C3677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AB9EB6011BB0FB61001C3677 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Curves/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		AB9EB6021BB0FB61001C3677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Curves/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB9EB5F41BB0FB61001C3677 /* Build configuration list for PBXProject "Curves" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB9EB5FE1BB0FB61001C3677 /* Debug */,
+				AB9EB5FF1BB0FB61001C3677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB9EB6001BB0FB61001C3677 /* Build configuration list for PBXNativeTarget "Curves" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB9EB6011BB0FB61001C3677 /* Debug */,
+				AB9EB6021BB0FB61001C3677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB9EB5F11BB0FB61001C3677 /* Project object */;
+}

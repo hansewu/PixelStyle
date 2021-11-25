@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[PSWhiteboard combineOverlayDataToLayer]:PSWhiteboard.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "m_nOverlayOpacity">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PSWhiteboard forcedUpdate]:PSWhiteboard.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PSLayerFilter transformRect:withTransform:]:PSLayerFilter.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PSHelpers overlayChanged:inThread:]:PSHelpers.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PSLayerFilter getFilterResultWithCGImage:]:PSLayerFilter.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SeaDocumentController newDocument:]:SeaDocumentController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "document">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PSView updateRulers]:PSView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[BrushTool mouseDraggedTo:withEvent:]:BrushTool.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[BrushTool mouseDownAt:withEvent:]:BrushTool.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PSLayer updateFullDataWithFilterAfterDataChangeInRect:]:PSLayer.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "neededRect">
+            </PersistentString>
+            <PersistentString
+               value = "effectedRect">
+            </PersistentString>
+            <PersistentString
+               value = "neededData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PSDocument init]:PSDocument.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "m_nResolution">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -1,0 +1,1119 @@
+"Move and Align Tool" = "Move and Align Tool";
+"Transform Tool" = "Transform Tool";
+"Rectangular Marquee Tool" = "Rectangular Marquee Tool";
+"Elliptical Marquee Tool" = "Elliptical Marquee Tool";
+"Lasso Tool" = "Lasso Tool";
+"Polygonal Lasso Tool" = "Polygonal Lasso Tool";
+"Magic Wand Tool" = "Magic Wand Tool";
+"Crop Tool" = "Crop Tool";
+"Art Brush Tool" = "Art Brush Tool";
+"Pencil Tool" = "Pencil Tool";
+"Brush Tool" = "Brush Tool";
+"Eraser Tool" = "Eraser Tool";
+"Eyedropper Tool" = "Eyedropper Tool";
+"Clone Stamp Tool" = "Clone Stamp Tool";
+"Paint Bucket Tool" = "Paint Bucket Tool";
+"Gradient Tool" = "Gradient Tool";
+"Text Tool" = "Text Tool";
+"Zoom Tool" = "Zoom Tool";
+"Shape Tool" = "Shape Tool";
+"Path Selection Tool" = "Path Selection Tool";
+"Pen Tool" = "Pen Tool";
+"Path Eraser Tool" = "Path Eraser Tool";
+"Red Eye Remove Tool" = "Red Eye Remove Tool";
+"Smudge Tool" = "Smudge Tool";
+"Burn Tool" = "Burn Tool";
+"Dodge Tool" = "Dodge Tool";
+"Sponge Tool" = "Sponge Tool";
+
+"Set the Foreground Color" = "Set the Foreground Color";
+"Set the Background Color" = "Set the Background Color";
+"Switch Foreground/Background Colors" = "Switch Foreground/Background Colors(X)";
+"Align top edges" = "Align top edges";
+"Vertical align center" = "Vertical align center";
+"Align bottom edges" = "Align bottom edges";
+"Align left edges" = "Align left edges";
+"Horizontal align center" = "Horizontal align center";
+"Align right edges" = "Align right edges";
+"Scale" = "Scale";
+"Rotate" = "Rotate";
+"Skew" = "Skew";
+"Perspective" = "Perspective";
+"Adjust horizontal scale" = "Adjust horizontal scale";
+"Adjust vertical scale" = "Adjust vertical scale";
+"Set horizontal position of reference point" = "Set horizontal position of reference point";
+"Set vertical position of reference point" = "Set vertical position of reference point";
+"Set rotation" = "Set rotation";
+"Cancel transform" = "Cancel transform";
+"Apply transform" = "Apply transform(Enter)";
+"New selection" = "New selection";
+"Add to selection" = "Add to selection";
+"Subtract from selection" = "Subtract from selection";
+"Intersect with selection" = "Intersect with selection";
+"Invert the intersected selections" = "Invert the intersected selections";
+"Soften the edge of a selection" = "Soften the edge of a selection";
+"Set the drawing shape of marquee tool" = "Set the drawing shape of marquee tool";
+"Set the fillet radius" = "Set the fillet radius";
+"Tolerance" = "Tolerance";
+"Set the sampling range for color" = "Set the sampling range for color";
+"Set the number of sample points" = "Set the number of sample points";
+"Crop" = "Crop";
+"Display the current brush" = "Display the current brush";
+"Adjust brush size" = "Adjust brush size";
+"Adjust brush transparency" = "Adjust brush transparency";
+"Adjust brush hardness" = "Adjust brush hardness";
+"Adjust brush smoothness" = "Adjust brush smoothness";
+"Adjust/Show brush pressure" = "Adjust/Show brush pressure";
+"Size of drawing square" = "Size of drawing square";
+"Display the current texture" = "Display the current texture";
+"Set the texture" = "Set the texture";
+"Adjust texture transparency" = "Adjust texture transparency";
+"Design the painting way for connecting the previous drawing stroke" = "Design the painting way for connecting the previous drawing stroke";
+"Tap to open the “Art Brush” Selector" = "Tap to open the “Art Brush” Selector";
+"Tap to open the “Brush Preset” Selector" = "Tap to open the “Brush Preset” Selector";
+"Tap to open the “Texture Preset” Selector" = "Tap to open the “Texture Preset” Selector";
+"Choose the brush category" = "Choose the brush category";
+"Choose the pen category" = "Choose the pen category";
+"Choose the pencil category" = "Choose the pencil category";
+"Choose the airbrush category" = "Choose the airbrush category";
+"Choose the scrawl category" = "Choose the scrawl category";
+"Choose the special category" = "Choose the special category";
+"Adjust eraser transparency" = "Adjust eraser transparency";
+"Adjust the sample quantity of sample colors picked by eyedropper tool" = "Adjust the sample quantity of sample colors picked by eyedropper tool";
+"Define the selection mode for the sample point of eyedropper tool" = "Define the selection mode for the sample point of eyedropper tool";
+"Define the selection mode for the sample point of clone tool" = "Define the selection mode for the sample point of clone tool";
+"Designate the sampling color as the foreground/background" = "Designate the sampling color as the foreground/background";
+"Set the source point for the clone stamp tool" = "Set the source point for the clone stamp tool";
+"Set the fill-mode" = "Set the fill-mode";
+"Check the box to preview the filling effects" = "Check the box to preview the filling effects";
+"Radial gradient" = "Radial gradient";
+"Diamond gradient" = "Diamond gradient";
+"Clockwise spiral gradient" = "Clockwise spiral gradient";
+"Counterclockwise spiral gradient" = "Counterclockwise spiral gradient";
+"Reflected gradient" = "Reflected gradient";
+"Conical gradient" = "Conical gradient";
+"Angular gradient" = "Angular gradient";
+"Linear gradient" = "Linear gradient";
+"Set gradient with a tiled image" = "Set gradient with a tiled image";
+"Set gradient with a symmetrical tiling image" = "Set gradient with a symmetrical tiling image";
+"Set the gradient direction" = "Set the gradient direction";
+"Design font family" = "Design font family";
+"Design font style" = "Design font style";
+"Design font size" = "Design font size";
+"Design text color" = "Design text color";
+"Faux bold" = "Faux bold";
+"Faux italic" = "Faux italic";
+"Underlined" = "Underlined";
+"Strikethrough" = "Strikethrough";
+"Design text kerning" = "Design text kerning";
+"Design text deformation" = "Design text deformation";
+"Style :" = "Style :";
+"Bending :" = "Bending :";
+"Zoom In" = "Zoom In";
+"Zoom Out" = "Zoom Out";
+"Display/Adjust Canvas Scale" = "Display/Adjust Canvas Scale";
+"Zoom to the Actual Size" = "Zoom to the Actual Size";
+"Display Canvas Scale" = "Display Canvas Scale";
+"Adjust Canvas Scale" = "Adjust Canvas Scale";
+"The selection boundaries will not be visible if any pixel is less than 50%." = "The selection boundaries will not be visible if any pixel is less than 50%.";
+"Change Layer Blending Modes" = "Change Layer Blending Modes";
+"Change Layer Opacity" = "Change Layer Opacity";
+"Show/Hide Layers" = "Show/Hide Layers";
+"Add Layer Effects" = "Add Layer Effects";
+"Layer Thumbnail" = "Layer Thumbnail";
+"Indicate Text Layers" = "Indicate Text Layers";
+"Create a New Layer" = "Create a New Layer";
+"Output the Selected Layer" = "Output the Selected Layer";
+"Duplicate the Selected Layer" = "Duplicate the Selected Layer";
+"Delete the Selected Layer" = "Delete the Selected Layer";
+"Color :" = "Color :";
+"Opacity :" = "Opacity :";
+"Position :" = "Position :";
+"Angle :" = "Angle :";
+"Distance :" = "Distance :";
+"Position :" = "Position :";
+"Size :" = "Size :";
+"Outer" = "Outer";
+"Central" = "Central";
+"Inner" = "Inner";
+"Show/Hide Channels" = "Show/Hide Channels";
+"Will apply the transform ?" = "Are you sure to apply the transform?";
+"Don't Apply" = "Don't Apply";
+"Are you sure to apply the transform?" = "Are you sure to apply the transform?";
+"Preview the output effect of the central portion of the canvas" = "Preview the output effect of the central portion of the canvas";
+"“Save” and “Export” functions are not available." = "“Save” and “Export” functions are not available.";
+"Operations that are outside the current layer will not be visible." = "Operations that are outside the current layer will not be visible.";
+"Notice:“Save” and “Export” functions are not available!\n" = "Notice:“Save” and “Export” functions are not available!\n";
+"warning" = "Warning";
+"ok" = "OK";
+"error_code" = "Invalid registration information.\n\nPossible reasons for the failed registration:\n\n1.Type error - Please copy and paste the license code wthout blank.\n\n2.Incorrect version - New license code is needed for major upgrade.\n\nPlease contact us at market@effectmatrix.com for further assinstance if problem persisted.";
+"Congratulations. You have successfully registered." = "Congratulations. You have successfully registered.";
+"Registered successfully" = "Registered successfully";
+"Purchase the full version to export your projects now." = "Purchase the full version to export your projects now.";
+"Command - Select multiple shapes"             = "Command - Select multiple shapes";
+"Command+Shift - Select all shapes"     = "Command+Shift - Select all shapes";
+"Alt - Operate control handles independently"    = "Opt - Operate control handles independently";
+"Double-Click could finish bezier path"= "Double-Click could finish bezier path";
+"Command+Ctrl - Close a bezier path" = "Command+Ctrl - Close a bezier path";
+"Double-Click could reset bezier control points" = "Double-Click could reset bezier control points";
+"Alt - Lock gradients to 45" = "Alt - Lock gradients to 45 degree";
+"No shape is selected" = "No shape is selected";
+"Mail" = "Mail";
+"Bravo" = "Bravo";
+"Bug" = "Bug";
+"Idea" = "Idea";
+"Like this app ?" = "Like this app ?";
+"Feedback Type ?" = "Feedback Type ?";
+"To :" = "To :";
+"Subject :" = "Subject :";
+"Send" = "Send";
+"Fadeback" = "Feedback";
+"Like" = "Like";
+"Do not like" = "Do not like";
+"Error" = "Error";
+"Supported formats :" = "Supported formats :";
+"The maximum number of attachments :" = "The maximum number of attachments :";
+"The maximum size of single file :" = "The maximum size of single file :";
+
+"Select and move" = "Select and move";
+"Add and delete anchor" = "Add and delete anchor";
+"Closed freeform pen" = "Closed freeform pen";
+"Freeform pen" = "Freeform pen";
+"Pen" = "Pen";
+
+"Set range" = "Set range";
+"Set mode" = "Set mode";
+"Set exposure" = "Set exposure";
+"Set flow rate" = "Set flow rate";
+
+
+"Color Adjustment" = "Color Adjustment";
+"Color Effect" = "Color Effect";
+"Edge Detection" = "Edge Detection";
+"Sharpen" = "Sharpen";
+"Effect" = "Effect";
+
+
+"About" = "About";
+"Preferences" = "Preferences";
+"Services" = "Services";
+"NO Services Apply" = "NO Services Apply";
+"System Preferences" = "System Preferences";
+"Hide" = "Hide";
+"Hide Others" = "Hide Others";
+"Show All" = "Show All";
+"Quit" = "Quit";
+"File" = "File";
+"New" = "New";
+"New from Clipboard" = "New from Clipboard";
+"Open" = "Open";
+"Open Recent" = "Open Recent";
+"Clear Menu" = "Clear Menu";
+"Close" = "Close";
+"Save" = "Save";
+"Save As" = "Save As";
+"Revert" = "Revert";
+"Import" = "Import";
+"Export" = "Export";
+"Page Setup" = "Page Setup";
+"Print" = "Print";
+"Edit" = "Edit";
+"Undo" = "Undo";
+"Redo" = "Redo";
+"Cut" = "Cut";
+"Copy1" = "Copy";
+"Copy Merged" = "Copy Merged";
+"Paste" = "Paste";
+"Duplicate" = "Duplicate";
+"Fill" = "Fill";
+"Transform" = "Transform";
+"Start Dictation" = "Start Dictation";
+"Emoji & Symbols" = "Emoji & Symbols";
+"Image" = "Image";
+"Resize Image" = "Resize Image";
+"Resolution" = "Resolution";
+"Image Boundaries" = "Image Boundaries";
+"Rotate 90° Clockwise" = "Rotate 90° Clockwise";
+"Rotate 90° Anticlockwise" = "Rotate 90° Anticlockwise";
+"Flip Horizontal" = "Flip Horizontal";
+"Flip Vertical" = "Flip Vertical";
+"Export as Texture" = "Export as Texture";
+"Layer" = "Layer";
+"Resize Layer" = "Resize Layer";
+"Rotate Layer" = "Rotate Layer";
+"Layer Boundaries" = "Layer Boundaries";
+"Trim to Edges" = "Trim to Edges";
+"Condense to Content" = "Condense to Content";
+"Condense to Selection" = "Condense to Selection";
+"Expand to Document" = "Expand to Document";
+"New Layer" = "New Layer";
+"New Shape Layer" = "New Shape Layer";
+"Duplicate" = "Duplicate";
+"Delete" = "Delete";
+"Bring to Front" = "Bring to Front";
+"Bring Forward" = "Bring Forward";
+"Send Backward" = "Send Backward";
+"Send to Back" = "Send to Back";
+"Alignment" = "Alignment";
+"Align Left" = "Align Left";
+"Align Right" = "Align Right";
+"Align Horizontal Center" = "Align Horizontal Center";
+"Align Top" = "Align Top";
+"Align Bottom" = "Align Bottom";
+"Align Vertical Center" = "Align Vertical Center";
+"Center Horizontally" = "Center Horizontally";
+"Center Vertically" = "Center Vertically";
+"Rasterise" = "Rasterise";
+"Convert to Shape" = "Convert to Shape";
+"Merge Down" = "Merge Down";
+"Merge Selected Layers" = "Merge Selected Layers";
+"Flatten Image" = "Flatten Image";
+"Shape" = "Shape";
+"Alignment" = "Alignment";
+"Align Horizontally Center" = "Align Horizontally Center";
+"Align Right" = "Align Right";
+"Align Top" = "Align Top";
+"Align Vertical Center" = "Align Vertical Center";
+"Align Bottom" = "Align Bottom";
+"Arrange" = "Arrange";
+"Bring to Front" = "Bring to Front";
+"Bring Forward" = "Bring Forward";
+"Send  Backward" = "Send  Backward";
+"Send to Back" = "Send to Back";
+"Flip Horizontally" = "Flip Horizontally";
+"Flip Vertically" = "Flip Vertically";
+"Unite Paths" = "Unite Paths";
+"Intersect Paths" = "Intersect Paths";
+"Subtract From Paths" = "Subtract From Paths";
+"Exclude Paths" = "Exclude Paths";
+"Combine Paths" = "Combine Paths";
+"Separate Paths" = "Separate Paths";
+"Delete Paths" = "Delete Paths";
+"Select" = "Select";
+"Select All" = "Select All";
+"Select Alpha" = "Select Alpha";
+"Deselect" = "Deselect";
+"Inverse" = "Inverse";
+"Flip Horizontal" = "Flip Horizontal";
+"Flip Vertical" = "Flip Vertical";
+"Filter" = "Filter";
+"Blur" = "Blur";
+"Gaussian Blur" = "Gaussian Blur";
+"Motion Blur" = "Motion Blur";
+"Zoom Blur" = "Zoom Blur";
+"Color Adjust" = "Color Adjust";
+"Brightness and Contrast" = "Brightness and Contrast";
+"Curves" = "Curves";
+"Gamma" = "Gamma";
+"Hue, Saturation and Value" = "Hue, Saturation and Value";
+"White Point" = "White Point";
+"Color Ramp" = "Color Ramp";
+"Convert to CMYK" = "Convert to CMYK";
+"Convert to Grayscale" = "Convert to Grayscale";
+"Invert" = "Invert";
+"Monochrome" = "Monochrome";
+"Posterize" = "Posterize";
+"Sepia" = "Sepia";
+"Threshold" = "Threshold";
+"Distort" = "Distort";
+"Bump" = "Bump";
+"Circle Splash" = "Circle Splash";
+"Circular Wrap" = "Circular Wrap";
+"Glass Lozenge" = "Glass Lozenge";
+"Hole" = "Hole";
+"Pinch" = "Pinch";
+"Torus Lens" = "Torus Lens";
+"Twirl" = "Twirl";
+"Vortex" = "Vortex";
+
+"Enhance" = "Enhance";
+"Contrast Sharpen" = "Contrast Sharpen";
+"Exposure" = "Exposure";
+"Median" = "Median";
+"Noise Reduction" = "Noise Reduction";
+"Generate" = "Generate";
+"Checkerboard" = "Checkerboard";
+"Halo" = "Halo";
+"Horizontal Stripes" = "Horizontal Stripes";
+"Random Generator" = "Random Generator";
+"Spotlight" = "Spotlight";
+"Starshine" = "Starshine";
+"Sunbeams" = "Sunbeams";
+"Vertical Stripes" = "Vertical Stripes";
+"Halftone" = "Halftone";
+"Circular Screen" = "Circular Screen";
+"CMYK  Halftone" = "CMYK  Halftone";
+"Dot Screen" = "Dot Screen";
+"Hatched  Screen" = "Hatched  Screen";
+"Line  Screen" = "Line  Screen";
+"Stylize" = "Stylize";
+"Bloom" = "Bloom";
+"Color Edges" = "Color Edges";
+"Crystallize" = "Crystallize";
+"Displacement Distortion" = "Displacement Distortion";
+"Edges" = "Edges";
+"Glass Distortion" = "Glass Distortion";
+"Gloom" = "Gloom";
+"Pixellate" = "Pixellate";
+"Pointillize" = "Pointillize";
+"Tile" = "Tile";
+"Kaleidoscope" = "Kaleidoscope";
+"Parallelogram" = "Parallelogram";
+"Perspective" = "Perspective";
+"Scale and Rotate" = "Scale and Rotate";
+"Squares" = "Squares";
+"Triangle" = "Triangle";
+"Last Filter" = "Last Filter";
+"View" = "View";
+"Hide Rulers" = "Hide Rulers";
+"Hide Guides" = "Hide Guides";
+"Hide Layers" = "Hide Layers";
+"Hide Point Information" = "Hide Point Information";
+"Hide option Bar" = "Hide option Bar";
+"Hide Status Bar" = "Hide Status Bar";
+"Colors" = "Colors";
+"Foreground Color" = "Foreground Color";
+"Background Color" = "Background Color";
+"Swap Colors" = "Swap Colors";
+"Default Colors" = "Default Colors";
+"Rotate Selection Shading" = "Rotate Selection Shading";
+"Enter Full Screen" = "Enter Full Screen";
+"Press Ctrl to select new area; Shift to add to selection; Opt to subtract from selection; Shift + Opt to intersect with selection; Shift + Ctrl to inverse intersect of selection." = "Press Ctrl to select new area; Shift to add to selection; Opt to subtract from selection; Shift + Opt to intersect with selection; Shift + Ctrl to inverse intersect of selection.";
+"Press Shift to keep 1:1 aspect ration." = "Press Shift to keep 1:1 aspect ration.";
+"Press Opt to erase. Press Shift to draw straight lines. Press Shift & Ctrl to draw lies at 45 degrees." = "Press Opt to erase. Press Shift to draw straight lines. Press Shift & Ctrl to draw lies at 45 degrees.";
+"Press Opt to flood all selection. Press Shift to preview flood." = "Press Opt to flood all selection. Press Shift to preview flood.";
+"Opt - Define a source" = "Opt - Define a source";
+"Press Shift to draw straight lines. Press Shift & Ctrl to draw lies at 45 degrees." = "Press Shift to draw straight lines. Press Shift & Ctrl to draw lies at 45 degrees.";
+"Press Ctrl to lock gradients to 45." = "Press Ctrl to lock gradients to 45.";
+"Press '[' to decrease radius. Press ']' to increase radius." = "Press '[' to decrease radius. Press ']' to increase radius.";
+"Press Opt to erase. Press Shift to draw straight lines. Press Shift & Ctrl to draw lies at 45 degrees." = "Press Opt to erase. Press Shift to draw straight lines. Press Shift & Ctrl to draw lies at 45 degrees.";
+"Press Opt & Drag the selected object to copy. Press Command & Shift to select all shapes. Press Command to select multiple shapes. Press Shift & Drag to select multiple shapes." = "Press Opt & Drag the selected object to copy. Press Command & Shift to select all shapes. Press Command to select multiple shapes. Press Shift & Drag to select multiple shapes.";
+"Double Click to convert the selected point. Press Command to select multiple nodes. Press Opt to operate control handles independently." = "Double Click to convert the selected point. Press Command to select multiple nodes. Press Opt to operate control handles independently.";
+"Press Opt to switch scaling mode." = "Press Opt to switch scaling mode.";
+"Window" = "Window";
+"Minimize" = "Minimize";
+"Zoom" = "Zoom";
+"Bring All to Front" = "Bring All to Front";
+
+"Help" = "Help";
+"Search" = "Search";
+"PixelStyle Help" = "PixelStyle Help";
+"Forum" = "Forum";
+"Feedback with email" = "Feedback with email";
+
+"Move and Align Tool" = "Move and Align Tool";
+"Align top edges" = "Align top edges";
+"Vertical align center" = "Vertical align center";
+"Align bottom edges" = "Align bottom edges";
+"Align left edges" = "Align left edges";
+"Horizontal align center" = "Horizontal align cente";
+"Align right edges" = "Align right edges";
+
+
+
+
+
+"Add to selection" = "Add to selection";
+"Subtract from selection" = "Subtract from selection";
+"Intersect with selection" = "Intersect with selection";
+"Invert the intersected selection" = "Invert the intersected selection";
+"Feather" = "Feather";
+"Soften the edge of a selection" = "Soften the edge of a selection";
+"Aspect ratio" = "Aspect ratio";
+"Set the drawing shape of the marquee tool" = "Set the drawing shape of the marquee tool";
+"Normal" = "Normal";
+"1to1" = "1to1";
+"4to3" = "4to3";
+"2to1" = "2to1";
+"Custom" = "Custom";
+"Corner radius" = "Corner radius";
+
+"Elliptical Marquee Tool" = "Elliptical Marquee Tool";
+"Lasso Tool" = "Lasso Tool";
+"Polygonal Lasso Tool" = "Polygonal Lasso Tool";
+
+"Magic Wand Tool" = "Magic Wand Tool";
+"Add to selection" = "Add to selection";
+"Subtract from selection" = "Subtract from selection";
+"Intersect with selection" = "Intersect with selection";
+"Invert the intersected selection" = "Invert the intersected selection";
+"Feather" = "Feather";
+"Soften the edge of a selection" = "Soften the edge of a selection";
+"Tolerance" = "Tolerance";
+"Set the sampling range for color" = "Set the sampling range for color";
+"Intervals" = "Intervals";
+"Set the numbers of sampling points" = "Set the numbers of sampling points";
+
+"Crop Tool" = "Crop Tool";
+"Set the drawing shape of the marquee tool" = "Set the drawing shape of the marquee tool";
+"Normal" = "Normal";
+
+"Art Brush Tool" = "Art Brush Tool";
+"Display the current brush" = "Display the current brush";
+"Radius" = "Radius";
+"Opacity" = "Opacity";
+"Adjust brush transparency" = "Adjust brush transparency";
+"Hardness" = "Hardness";
+"Adjust brush hardness" = "Adjust brush hardness";
+"Smooth" = "Smooth";
+"Adjust brush Smothness" = "Adjust brush Smothness";
+"Pressure" = "Pressure";
+"Adjust/Show brush pressure" = "Adjust/Show brush pressure";
+
+"Brush Tool" = "Brush Tool";
+"Display the current brush" = "Display the current brush";
+"Adjust brush transparency" = "Adjust brush transparency";
+"Textures" = "Textures";
+"Display the current texture" = "Display the current texture";
+"Fade-out" = "Fade-out";
+"Fades brush with drawing" = "Fades brush with drawing";
+"Pressure sensitive" = "Pressure sensitive";
+"enable tablet support" = "enable tablet support";
+"Darker" = "Darker";
+"Lighter" = "Lighter";
+"Brush scaling" = "Brush scaling";
+"Scales brush with fading or drawing" = "Scales brush with fading or drawing";
+"Pencil Tool" = "Pencil Tool";
+"Size" = "Size";
+"Pupil Size" = "Pupil Size";
+"Opacity" = "Opacity";
+"Textures" = "Textures";
+"Erase" = "Erase";
+"Erase Tool" = "Erase Tool";
+"Display the current brush" = "Display the current brush";
+
+
+
+
+"Adjust eraser transparency" = "Adjust eraser transparency";
+"Draw straight lines" = "Draw straight lines";
+"Draw straight lines at 45°" = "Draw straight lines at 45°";
+"Mimic paintbrush fading" = "Mimic paintbrush fading";
+"Eyedropper Tool" = "Eyedropper Tool";
+"Sample size" = "Sample size";
+"Use sample from all layer" = "Use sample from all layer";
+"Define the selection mode for the sample point of eyedropper tool" = "Define the selection mode for the sample point of eyedropper tool";
+"Select background color" = "Select background color";
+"Designate the sampling color as the foreground/background" = "Designate the sampling color as the foreground/background";
+"Clone Stamp Tool" = "Clone Stamp Tool";
+"Tab to open the 'Texture Preset' selector" = "Tab to open the 'Texture Preset' selector";
+"Flood all selection" = "Flood all selection";
+"Preview flood" = "Preview flood";
+"Set the fill-mode" = "Set the fill-mode";
+"Check the box to preview the filling effects" = "Check the box to preview the filling effects";
+"Linear gradient" = "Linear gradient";
+"Reflected gradient" = "Reflected gradient";
+"Radial gradient" = "Radial gradient";
+"Diamond gradient" = "Diamond gradient";
+"Conical gradient" = "Conical gradient";
+"Angular gradient" = "Angular gradient";
+"Clockwise spiral gradient" = "Clockwise spiral gradient";
+"Counterclockwise spiral gradient" = "Counterclockwise spiral gradient";
+"Sawtooth Wave" = "Sawtooth Wave";
+"Triangular Wave" = "Triangular Wave";
+"Red Eye Remove Tool" = "Red Eye Remove Tool";
+"Smudge Tool" = "Smudge Tool";
+"Strength" = "Strength";
+"Set strength for the stroke" = "Set strength for the stroke";
+"Burn Tool" = "Burn Tool";
+"Range" = "Range";
+"Midtones" = "Midtones";
+"Highlights" = "Highlights";
+"Shadows" = "Shadows";
+"Exposure" = "Exposure";
+"Dodge Tool" = "Dodge Tool";
+
+"Sponge Tool" = "Sponge Tool";
+"Mode" = "Mode";
+"Desaturate" = "Desaturate";
+"Saturate" = "Saturate";
+"Flow" = "Flow";
+"Fill" = "Fill";
+"Set shape fill type" = "Set shape fill type";
+"Stroke" = "Stroke";
+"Set shape stroke type" = "Set shape stroke type";
+"Set shape arrowheads type" = "Set shape arrowheads type";
+"Select and move" = "Select and move";
+"Add and delete anchor" = "Add and delete anchor";
+"Draw a path in a new layer" = "Draw a path in a new layer";
+"Number of Points" = "Number of Points";
+"Decay" = "Decay";
+"Number of Sides" = "Number of Sides";
+"Corner Radius" = "Corner Radius";
+"Path Selection Tool" = "Path Selection Tool";
+"Path Eraser Tool" = "Path Eraser Tool";
+
+"Pen Tool" = "Pen Tool";
+"Pen" = "Pen";
+"Freeform pen" = "Freeform pen";
+"Closed freeform pen" = "Closed freeform pen";
+"New Layer" = "New Layer";
+
+"Shape Tool" = "Shape Tool";
+"Rectangle" = "Rectangle";
+"Ellipse" = "Ellipse";
+"Star" = "Star";
+"Polygon" = "Polygon";
+"Line" = "Line";
+"Clockwise spiral" = "Clockwise spiral";
+"Corner Radius" = "Corner Radius";
+
+"Text Tool" = "Text Tool";
+"Font Name" = "Font Name";
+"Design font style" = "Design font style";
+
+"Arc Warp" = "Arc Warp";
+"Arc lower Warp" = "Arc lower Warp";
+"Arc upper Warp" = "Arc upper Warp";
+"Arch Warp" = "Arch Warp";
+"Buldge Warp" = "Buldge Warp";
+"Shell lower Warp" = "Shell lower Warp";
+"Shell upper Warp" = "Shell upper Warp";
+
+"Change the zoom of the document" = "Change the zoom of the document";
+
+"Item1" = "Item1";
+"Item2" = "Item2";
+"Item3" = "Item3";
+"Design font size" = "Design font size";
+"Design text color" = "Design text color";
+"Underlined" = "Underlined";
+"Strikethrough" = "Strikethrough";
+"Design text kerning" = "Design text kerning";
+"Design text deformation" = "Design text deformation";
+
+"Zoom Tool" = "Zoom Tool";
+"Display/Adjust Canvas Scale" = "Display/Adjust Canvas Scale";
+"Foreground" = "Foreground";
+"Background" = "Background";
+
+"Untitled" = "Untitled";
+
+"Info" = "Info";
+"Histogram" = "Histogram";
+"Sample" = "Sample";
+"Radius" = "Radius";
+"Layer" = "Layer";
+"Channels" = "Channels";
+"Red" = "Red";
+"Green" = "Green";
+"Blue" = "Blue";
+"Alpha" = "Alpha";
+"Multiply" = "Multiply";
+"Overlay" = "Overlay";
+"Darken" = "Darken";
+"Lighten" = "Lighten";
+"Color Dodge" = "Color Dodge";
+"Color Burn" = "Color Burn";
+"Soft Light" = "Soft Light";
+"Hard Light" = "Hard Light";
+"Difference" = "Difference";
+"Exclusion" = "Exclusion";
+"Hue" = "Hue";
+"Saturation" = "Saturation";
+"Color" = "Color";
+"Luminosity" = "Luminosity";
+"Clear" = "Clear";
+"Copy" = "Copy";
+"Source In" = "Source In";
+"Source Out" = "Source Out";
+"Source Atop" = "Source Atop";
+"Destination Over" = "Destination Over";
+"Destination In" = "Destination In";
+"Destination Out" = "Destination Out";
+"Destination Atop" = "Destination Atop";
+"XOR" = "XOR";
+"Plus Darker" = "Plus Darker";
+"Plus Lighter" = "Plus Lighter";
+"Zoom to the Actual Size" = "Zoom to the Actual Size";
+"Display Canvas Scale" = "Display Canvas Scale";
+"Adjust Canvas Scale" = "Adjust Canvas Scale";
+"Create a New Layer" = "Create a New Layer";
+"Duplicate the Selected Layer" = "Duplicate the Selected Layer";
+"Delete the Selected Layer" = "Delete the Selected Layer";
+"Outline" = "Outline";
+"Fill" = "Fill";
+"Outer Glow" = "Outer Glow";
+"Inner Glow" = "Inner Glow";
+"Shadow" = "Shadow";
+
+"Layer Effects" = "Layer Effects";
+"Add Effects" = "Add Effects";
+"Flattern" = "Flattern";
+"Cancel" = "Cancel";
+"OK" = "OK";
+"Blend Mode" = "Blend Mode";
+"Gradient" = "Gradient";
+"Linear" = "Linear";
+"Angle" = "Angle";
+"Scale" = "Scale";
+"Radial" = "Radial";
+"pixels" = "pixels";
+"Size" = "Size";
+"Distance" = "Distance";
+"Positon" = "Positon";
+"Outer" = "Outer";
+"Inner" = "Inner";
+"Central" = "Central";
+"Shape Burst" = "Shape Burst";
+"Linear" = "Linear";
+"Radial" = "Radial";
+"Reverse" = "Reverse";
+
+"Ctrl - New selection. Shift - Add to selection. Opt - Subtract from selection. Shift + Opt - Intersect of selection. Shift + Ctrl - Inverse intersect of selection." = "Ctrl - New selection. Shift - Add to selection. Opt - Subtract from selection. Shift + Opt - Intersect of selection. Shift + Ctrl - Inverse intersect of selection.";
+"Shift - 1:1 aspect ratio." = "Shift - 1:1 aspect ratio.";
+"[ - Decrease radius. ]- Increase radius" = "[ - Decrease radius. ]- Increase radius";
+"Opt - Erase. Shift - Draw staight lines. Shift + Ctrl - Draw straight lines at 45 degree." = "Opt - Erase. Shift - Draw staight lines. Shift + Ctrl - Draw straight lines at 45 degree.";
+"Shift - Draw straight lines. Shift + Ctrl - Draw straight lines at 45 degree." = "Shift - Draw straight lines. Shift + Ctrl - Draw straight lines at 45 degree.";
+"Opt - Define a source." = "Opt - Define a source.";
+"Opt - Flood all selection. Shift - Preview flood." = "Opt - Flood all selection. Shift - Preview flood.";
+"Ctrl - Lock gradients to 45." = "Ctrl - Lock gradients to 45.";
+"Opt & Drag the selected objects to copy. Opt & Double Click to convert the selected point. Ctrl + Shift - Select all shapes. Ctrl - Select multiple shapes." = "Opt & Drag the selected objects to copy. Opt & Double Click to convert the selected point. Ctrl + Shift - Select all shapes. Ctrl - Select multiple shapes.";
+"Double-Click could finish bezier path. Ctrl + Ctrl - Close a bezier path." = "Double-Click could finish bezier path. Ctrl + Ctrl - Close a bezier path.";
+"Opt - Switch scaling mode." = "Opt - Switch scaling mode.";
+"Switch Forground/Background Colors" = "Switch Forground/Background Colors";
+"Preset" = "Preset";
+"Width" = "Width";
+"Height" = "Height";
+"Default" = "Default";
+"Clipboard" = "Clipboard";
+"Screen" = "Screen";
+"Page size(A4)" = "Page size(A4)";
+"Resolution" = "Resolution";
+"Transparent background" = "Transparent background";
+"Create" = "Create";
+"Open" = "Open";
+"New Image" = "New Image";
+"Do you want to save the changes made to the document “A cat and a fishmonger.psdb”?" = "Do you want to save the changes made to the document “A cat and a fishmonger.psdb”?";
+"Do you want to reopen the last edited file ?" = "Do you want to reopen the last edited file ?";
+"Your changes will be lost if you don’t save them." = "Your changes will be lost if you don’t save them.";
+"Don't Save" = "Don't Save";
+"Save" = "Save";
+"Preferences" = "Preferences";
+"Image Default Settings" = "Image Default Settings";
+"Selection empty" = "Selection empty";
+"The selection cannot be copied since it is empty." = "The selection cannot be copied since it is empty.";
+"Could not use the tool because the target layer is hidden." = "Could not use the tool because the target layer is hidden.";
+"Horizontal" = "Horizontal";
+"Vertical" = "Vertical";
+"Horizontal" = "Horizontal";
+"Vertical" = "Vertical";
+"Set" = "Set";
+"Scale to preserve size" = "Scale to preserve size";
+"Cubic Interpolation" = "Cubic Interpolation";
+"No Interpolation" = "No Interpolation";
+"Linear Interpolation" = "Linear Interpolation";
+"Current Selection" = "Current Selection";
+"Presets" = "Presets";
+"Top" = "Top";
+"Bottom" = "Bottom";
+"Left" = "Left";
+"Right" = "Right";
+"Widht" = "Width";
+"Height" = "Height";
+"Do not clip any content" = "Do not clip any content";
+"Clip full-image layers only" = "Clip full-image layers only";
+"Clip all layers" = "Clip all layers";
+"Export as Texture" = "Export as Texture";
+"Texture opacity" = "Texture opacity";
+"Texture group" = "Texture group";
+"Spacing" = "Spacing";
+"Space between brush plots" = "Space between brush plots";
+"Brush group" = "Brush group";
+"Name" = "Name";
+"Untitled" = "Untitled";
+"All" = "All";
+"Color Paper Texture" = "Color Paper Texture";
+"Gyrosigma" = "Gyrosigma";
+"Lattice Shading" = "Lattice Shading";
+"Paper Texture" = "Paper Texture";
+"Favourites" = "Favourites";
+"Calligraphy" = "Calligraphy";
+"Decorative" = "Decorative";
+"Full Circles" = "Full Circles";
+"Galaxy" = "Galaxy";
+"Partial" = "Partial";
+"Squares" = "Squares";
+"Stars" = "Stars";
+"Add to existing category" = "Add to existing category";
+"Color Paper Texture" = "Color Paper Texture";
+"Gyrosigma" = "Gyrosigma";
+"Lattice Shading" = "Lattice Shading";
+"Paper Texture" = "Paper Texture";
+"Add to new category" = "Add to new category";
+"Export" = "Export";
+"Information will be lost" = "Information will be lost";
+"Parts of the document that are not currently visible will be lost. Are you sure you wish to continue?" = "Parts of the document that are not currently visible will be lost. Are you sure you wish to continue?";
+"Flatten" = "Flatten";
+"Radius" = "Radius";
+"Angle" = "Angle";
+"Center X" = "Center X";
+"Center Y" = "Center Y";
+"Ok" = "OK";
+"Brightness" = "Brightness";
+"Contrast" = "Contrast";
+"Saturation" = "Saturation";
+"Curve" = "Curve";
+"Apply" = "Apply";
+"Auto" = "Auto";
+"Reset" = "Reset";
+"Preview" = "Preview";
+"set the blackeset position" = "set the blackeset position";
+"Sample in image to set black point" = "Sample in image to set black point";
+"set the whitest position" = "set the whitest position";
+"Sample in image to set white point" = "Sample in image to set white point";
+"set the mid-gray position" = "set the mid-gray position";
+"Sample in image to set gray point" = "Sample in image to set gray point";
+"Gamma Adjust" = "Gamma Adjust";
+"Gamma" = "Gamma";
+"Saturation" = "Saturation";
+"Value" = "Value";
+"Screen size" = "Screen size";
+
+"Point1X" = "Point1X";
+"Point1Y" = "Point1Y";
+"Point2X" = "Point2X";
+"Point2Y" = "Point2Y";
+"Refraction" = "Refraction";
+"Scale" = "Scale";
+"Center X" = "Center X";
+"Center Y" = "Center Y";
+"Reverse direction" = "Reverse direction";
+"Intensity" = "Intensity";
+"Exposure value" = "Exposure value";
+"Noise" = "Noise";
+"Sharpness" = "Sharpness";
+"Foreground Color" = "Foreground Color";
+"Background Color" = "Background Color";
+"Overlap" = "Overlap";
+"Contrast" = "Contrast";
+"Light Position X" = "Light Position X";
+"Light Position Y" = "Light Position Y";
+"Light Position At X" = "Light Position At X";
+"Light Position At Y" = "Light Position At Y";
+"Source Height" = "Source Height";
+"Destination Height" = "Destination Height";
+"Brightness" = "Brightness";
+"Concentration" = "Concentration";
+"Opacity" = "Opacity";
+"Sample1" = "Sample";
+"degress" = "degress";
+"Grey Component Repalcement" = "Grey Component Repalcement";
+"Under Colour Removal" = "Under Colour Removal";
+"Texture: Default" = "Texture: Default";
+"Emphasis" = "Emphasis";
+"Top-left based" = "Top-left based";
+"Centre based" = "Centre based";
+"Auto Angle" = "Auto Angle";
+
+"Left top point X" = "Left top point X";
+"Left top point Y" = "Left top point Y";
+"Right top point X" = "Right top point X";
+"Right top point Y" = "Right top point Y";
+"Left bottom point X" = "Left bottom point X";
+"Left bottom point Y" = "Left bottom point Y";
+"Right bottom point X" = "Right bottom point X";
+"Right bottom point Y" = "Right bottom point Y";
+"Offset X" = "Offset X";
+"Offset Y" = "Offset Y";
+"Affine Tile (Sacle and Rotate)" = "Affine Tile (Sacle and Rotate)";
+
+"Edge Detection" = "Edge Detection";
+
+"Hue Adjustment" = "Hue Adjustment";
+"RGB Adjustment" = "RGB Adjustment";
+"red" = "red";
+"green" = "green";
+"blue" = "blue";
+
+"Saturation Adjustment" = "Saturation Adjustment";
+"saturation" = "saturation";
+"Contrast Adjustment" = "Contrast Adjustment";
+"contrast" = "contrast";
+"Brightness Adjustment" = "Brightness Adjustment";
+"brightness" = "brightness";
+
+"Exposure Adjustment" = "Exposure Adjustment";
+"exposure" = "exposure";
+"White Balance" = "White Balance";
+"temperature" = "temperature";
+"tint" = "tint";
+"Grayscale" = "Grayscale";
+"Gamma Adjustment" = "Gamma Adjustment";
+"gamma" = "gamma";
+
+"Highlight Shadow" = "Highlight Shadow";
+"shadows" = "shadows";
+"highlights" = "highlights";
+"Haze" = "Haze";
+"distance" = "distance";
+"slope" = "slope";
+"intensity" = "intensity";
+"color" = "color";
+"Color Monochrome" = "Color Monochrome";
+"False Color" = "False Color";
+"firstColor" = "firstColor";
+"secondColor" = "secondColor";
+"Sepia" = "Sepia";
+"Color Invert" = "Color Invert";
+"Luminance Threshold" = "Luminance Threshold";
+"Pixelation" = "Pixelation";
+"Polar Pixellate" = "Polar Pixellate";
+"Polka Dot" = "Polka Dot";
+"Cross Hatch" = "Cross Hatch";
+"CGA Color Space" = "CGA Color Space";
+
+"threshold" = "threshold";
+"center" = "center";
+"pixelSize" = "pixelSize";
+
+"dotScaling" = "dotScaling";
+"crossHatchSpacin" = "crossHatchSpacin";
+"lineWidth" = "lineWidth";
+
+"Laplcian" = "Laplcian";
+"Sobel" = "Sobel";
+"Prewitt" = "Prewitt";
+"Canny" = "Canny";
+"Weak Pixel Inclusion" = "Weak Pixel Inclusion";
+"Sketch" = "Sketch";
+"Threshold Sketch" = "Threshold Sketch";
+"Edge Strength:" = "Edge Strength:";
+"Blur Radius" = "Blur Radius";
+"blurTexelSpacing" = "blurTexelSpacing";
+"upperThreshold" = "upperThreshold";
+"lowerThreshold" = "lowerThreshold";
+"radius" = "radius";
+"Box Blur" = "Box Blur";
+"Median" = "Median";
+"Bilateral" = "Bilateral";
+"Unsharp Mask" = "Unsharp Mask";
+"Effect" = "Effect" ;
+"Shapen" = "Shapen";
+"Toon" = "Toon";
+"Smooth Toon" = "Smooth Toon";
+"Tilt Shift" = "Tilt Shift" ;
+"Emboss" = "Emboss";
+"Chrome Key" = "Chrome Key";
+"Kuwahara" = "Kuwahara" ;
+"Posterize" = "Posterize";
+"Perlin Noise" = "Perlin Noise";
+"Threshold" = "Threshold";
+"Quantization" = "Quantization";
+"Top Level" = "Top Level";
+"Bottom Level" = "Bottom Level";
+"Falloff Rate" = "Falloff Rate";
+"Sensitivity" = "Sensitivity";
+"Smoothing" = "Smoothing";
+"Start Color" = "Start Color";
+"Finish Color" = "Finish Color";
+
+
+"Auto Selection" = "Auto Selection";
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>16-bit message</key>
+	<string>PixelStyle does not support the editing of 16-bit images. This image has been resampled at 8-bits to be imported.</string>
+	<key>SVG message</key>
+	<string>PixelStyle is unable to open the given SVG file because the SVG Importer is not installed. The installer for this importer can be found on PixelStyle&apos;s website.</string>
+	<key>all group</key>
+	<string>All</string>
+	<key>anchor selection</key>
+	<string>Anchor Selection</string>
+	<key>background</key>
+	<string>Background</string>
+	<key>gif trans</key>
+	<string>PixelStyle does not support GIF transparency or animation.</string>
+	<key>background layer</key>
+	<string>Background</string>
+	<key>beta message</key>
+	<string>PixelStyle is still under development and may contain bugs. Please make sure to only work on copies of images as there is the potential for corruption. Also please report any bugs you find.</string>
+	<key>cancel</key>
+	<string>Cancel</string>
+	<key>channels message</key>
+	<string>This XCF file contains channels which are not currently supported by PixelStyle. These channels will be lost upon saving.</string>
+	<key>click count</key>
+	<string>Clicks remaining: %d</string>
+	<key>compatibility (gimp) message</key>
+	<string>This file contains layer modes which will not be recognized by the GIMP 1.2 series and earlier.</string>
+	<key>corner radius</key>
+	<string>Corner radius: %d</string>
+	<key>disable alpha</key>
+	<string>Disable Alpha Channel</string>
+	<key>disk space body</key>
+	<string>To allow for unlimited undos PixelStyle needs to write some data to your system disk during operation. However since your system disk now has less than 50 MB of space some or all of the data PixelStyle has written to disk will be deleted (possibly causing certain undo or redo actions to fail). As such, it is strongly advised you save all documents and quit PixelStyle. This may improve the disk space situation on your system disk however you are urged to delete some additional files from your system disk to ensure this problem does not arise again in the future.</string>
+	<key>disk space title</key>
+	<string>Disk space low</string>
+	<key>download available body</key>
+	<string>An updated version of PixelStyle is now availble for download.</string>
+	<key>download available title</key>
+	<string>Update available</string>
+	<key>download error body</key>
+	<string>The file required to check if PixelStyle cannot be downloaded from the Internet. Please check your Internet connection and try again.</string>
+	<key>download error title</key>
+	<string>Downolad error</string>
+	<key>download later</key>
+	<string>Download later</string>
+	<key>download now</key>
+	<string>Download now</string>
+	<key>empty selection body</key>
+	<string>The selection cannot be floated since it is empty.</string>
+	<key>empty selection copy body</key>
+	<string>The selection cannot be copied since it is empty.</string>
+	<key>empty selection copy title</key>
+	<string>Selection empty</string>
+	<key>empty selection title</key>
+	<string>Selection empty</string>
+	<key>enable alpha</key>
+	<string>Enable Alpha Channel</string>
+	<key>fade-out</key>
+	<string>Fade-out: %d</string>
+	<key>feedback survey body</key>
+	<string>In order to improve the next release of PixelStyle we are asking users to participate in a survey. The survey is only one page long and can be accessed by clicking the &quot;Run Survey&quot; button. This message should not trouble you again.</string>
+	<key>feedback survey button</key>
+	<string>Run Survey</string>
+	<key>feedback survey title</key>
+	<string>PixelStyle Feedback Survey</string>
+	<key>flatten body</key>
+	<string>Parts of the document that are not currently visible will be lost. Are you sure you wish to continue?</string>
+	<key>flatten title</key>
+	<string>Information will be lost</string>
+	<key>flattened</key>
+	<string>Flattened Layer</string>
+	<key>float selection</key>
+	<string>Float Selection</string>
+	<key>floating</key>
+	<string>Floating Selection</string>
+	<key>foreground</key>
+	<string>Foreground</string>
+	<key>general</key>
+	<string>General</string>
+	<key>hide boundaries</key>
+	<string>Hide Layer Boundaries</string>
+	<key>hide brushes</key>
+	<string>Hide Brushes</string>
+	<key>hide channels</key>
+	<string>Hide Channels</string>
+	<key>hide info</key>
+	<string>Hide Point Information</string>
+	<key>hide layers</key>
+	<string>Hide Layers</string>
+	<key>hide options</key>
+	<string>Hide Options</string>
+	<key>hide rulers</key>
+	<string>Hide Rulers</string>
+	<key>hide textures</key>
+	<string>Hide Textures</string>
+	<key>hide toolbox</key>
+	<string>Hide Toolbox</string>
+	<key>hide transparent</key>
+	<string>Hide Transparent Color</string>
+	<key>high res message</key>
+	<string>This image has a high resolution. PixelStyle&apos;s performance may therefore be reduced. You can reduce the resolution using &quot;Image &gt; Resolution...&quot; (with &quot;Preserve size&quot; checked). This will result in a lower-quality image.</string>
+	<key>import failure message</key>
+	<string>The selected file was not able to be successfully imported into this document.</string>
+	<key>indexed color body</key>
+	<string>XCF files using indexed colors are only supported if they are of version 1 or greater. This is because version 0 is known to have certain problems with indexed colors.</string>
+	<key>indexed color title</key>
+	<string>Indexed color not supported</string>
+	<key>jp2 not supported</key>
+	<string>The JPEG 2000 image format is only supported on systems running Mac OS 10.4 or later.</string>
+	<key>layer title</key>
+	<string>Layer %d</string>
+	<key>locked body</key>
+	<string>The &quot;Compare to Last Saved&quot; operation failed. The most likely cause for this is that the disk the original is kept on is full or read-only.</string>
+	<key>locked title</key>
+	<string>Operation Failed</string>
+	<key>mask-to-alpha message</key>
+	<string>Some of the masks in this image have been composited to their layer&apos;s alpha channel. These masks will be lost upon saving.</string>
+	<key>new images</key>
+	<string>New Images</string>
+	<key>no</key>
+	<string>No</string>
+	<key>non-current message</key>
+	<string>This file will be deleted upon closing unless it is saved.</string>
+	<key>not available</key>
+	<string>N/A</string>
+	<key>ok</key>
+	<string>OK</string>
+	<key>old crash report message</key>
+	<string>PixelStyle has moved its old crash report to the Trash so that it will be deleted next time you empty the trash.</string>
+	<key>opacity</key>
+	<string>Opacity: %d%%</string>
+	<key>outline</key>
+	<string>Outline: %d pt</string>
+	<key>paper size</key>
+	<string>Paper size</string>
+	<key>rate</key>
+	<string>Rate: %d%%</string>
+	<key>read only message</key>
+	<string>This file is in a read-only format, as such you cannot save this file. This warning will not be displayed for subsequent files in a read-only format.</string>
+	<key>resolution no effect message</key>
+	<string>The resolution of this image has been changed and this will affect printing and saving. However this will not affect the viewing window because your Preferences are set to ignore image resolution.</string>
+	<key>revert</key>
+	<string>Revert</string>
+	<key>revert body</key>
+	<string>&quot;%@&quot; has been edited. Are you sure you want to undo changes?</string>
+	<key>revert title</key>
+	<string>Revert</string>
+	<key>show boundaries</key>
+	<string>Show Layer Boundaries</string>
+	<key>show brushes</key>
+	<string>Show Brushes</string>
+	<key>show channels</key>
+	<string>Show Channels</string>
+	<key>show info</key>
+	<string>Show Point Information</string>
+	<key>show layers</key>
+	<string>Show Layers</string>
+	<key>show options</key>
+	<string>Show Options</string>
+	<key>show rulers</key>
+	<string>Show Rulers</string>
+	<key>show textures</key>
+	<string>Show Textures</string>
+	<key>show toolbox</key>
+	<string>Show Toolbox</string>
+	<key>show transparent</key>
+	<string>Show Transparent Color</string>
+	<key>source set</key>
+	<string>Source: (%d, %d) from &quot;%@&quot;</string>
+	<key>source set document</key>
+	<string>Source: (%d, %d) from whole document</string>
+	<key>source unset</key>
+	<string>Source: Unset</string>
+	<key>spacing</key>
+	<string>Spacing: %d%%</string>
+	<key>strange res message</key>
+	<string>This image has an unusual resolution. As such, it may look different to what is expected at 100% zoom. To fix this use &quot;Image &gt; Resolution...&quot; and set to 72 x 72 dpi.</string>
+	<key>tablet bug message</key>
+	<string>There is a bug in Mac OS 10.4 that causes some tablets to incorrectly register their first touch at full strength. A workaround is provided in the &quot;Preferences&quot; dialog however the best solution is to upgrade to Mac OS 10.4.6 or later.</string>
+	<key>tolerance</key>
+	<string>Tolerance: %d</string>
+	<key>transparent</key>
+	<string>Transparent</string>
+	<key>untitled</key>
+	<string>Untitled</string>
+	<key>up-to-date body</key>
+	<string>PixelStyle is up-to-date.</string>
+	<key>up-to-date title</key>
+	<string>PixelStyle up-to-date</string>
+	<key>user guide message</key>
+	<string>PixelStyle is distributed with a user guide to help you understand its features. Simply select &quot;PixelStyle Help&quot; from the &quot;Help&quot; menu to read it.</string>
+	<key>whole document</key>
+	<string>Whole Document</string>
+	<key>window back</key>
+	<string>Window Frame</string>
+	<key>xcf version body</key>
+	<string>The version of the XCF file you are trying to load is not supported by this program, every attempt will be made to load the file in its current state but loading may fail.</string>
+	<key>xcf version title</key>
+	<string>XCF version not supported</string>
+	<key>yes</key>
+	<string>Yes</string>
+	<key>zoom</key>
+	<string>Zoom: %.0f%%</string>
+</dict>
+</plist>

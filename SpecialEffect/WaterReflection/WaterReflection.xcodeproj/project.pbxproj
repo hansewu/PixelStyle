@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABC82A951C852BE100248DD6 /* WaterReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC82A941C852BE100248DD6 /* WaterReflection.m */; };
+		ABC82A9B1C85354400248DD6 /* WaterReflection.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABC82A9A1C85354400248DD6 /* WaterReflection.xib */; };
+		ABC82A9E1C85410F00248DD6 /* PerlinNoise.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC82A9D1C85410F00248DD6 /* PerlinNoise.m */; };
+		ABC82AA11C8562D300248DD6 /* PSPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC82AA01C8562D300248DD6 /* PSPreviewView.m */; };
+		ABF85BD21C845BD1004BCC2F /* Rects.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF85BD11C845BD1004BCC2F /* Rects.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ABC82A931C852BE100248DD6 /* WaterReflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterReflection.h; sourceTree = "<group>"; };
+		ABC82A941C852BE100248DD6 /* WaterReflection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterReflection.m; sourceTree = "<group>"; };
+		ABC82A9A1C85354400248DD6 /* WaterReflection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaterReflection.xib; sourceTree = "<group>"; };
+		ABC82A9C1C85410F00248DD6 /* PerlinNoise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerlinNoise.h; sourceTree = "<group>"; };
+		ABC82A9D1C85410F00248DD6 /* PerlinNoise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerlinNoise.m; sourceTree = "<group>"; };
+		ABC82A9F1C8562D300248DD6 /* PSPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPreviewView.h; sourceTree = "<group>"; };
+		ABC82AA01C8562D300248DD6 /* PSPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPreviewView.m; sourceTree = "<group>"; };
+		ABF85BBF1C845A32004BCC2F /* WaterReflection.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterReflection.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABF85BC21C845A32004BCC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABF85BCE1C845BD1004BCC2F /* PluginData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PluginData.h; path = ../../Common/PluginData.h; sourceTree = "<group>"; };
+		ABF85BCF1C845BD1004BCC2F /* PSPlugins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSPlugins.h; path = ../../Common/PSPlugins.h; sourceTree = "<group>"; };
+		ABF85BD01C845BD1004BCC2F /* Rects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rects.h; path = ../../Common/Rects.h; sourceTree = "<group>"; };
+		ABF85BD11C845BD1004BCC2F /* Rects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Rects.m; path = ../../Common/Rects.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABF85BBC1C845A32004BCC2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABF85BB61C845A32004BCC2F = {
+			isa = PBXGroup;
+			children = (
+				ABF85BC11C845A32004BCC2F /* WaterReflection */,
+				ABF85BC01C845A32004BCC2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABF85BC01C845A32004BCC2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABF85BBF1C845A32004BCC2F /* WaterReflection.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABF85BC11C845A32004BCC2F /* WaterReflection */ = {
+			isa = PBXGroup;
+			children = (
+				ABC82A9C1C85410F00248DD6 /* PerlinNoise.h */,
+				ABC82A9D1C85410F00248DD6 /* PerlinNoise.m */,
+				ABF85BCE1C845BD1004BCC2F /* PluginData.h */,
+				ABF85BCF1C845BD1004BCC2F /* PSPlugins.h */,
+				ABF85BD01C845BD1004BCC2F /* Rects.h */,
+				ABF85BD11C845BD1004BCC2F /* Rects.m */,
+				ABF85BC21C845A32004BCC2F /* Info.plist */,
+				ABC82A931C852BE100248DD6 /* WaterReflection.h */,
+				ABC82A941C852BE100248DD6 /* WaterReflection.m */,
+				ABC82A9A1C85354400248DD6 /* WaterReflection.xib */,
+				ABC82A9F1C8562D300248DD6 /* PSPreviewView.h */,
+				ABC82AA01C8562D300248DD6 /* PSPreviewView.m */,
+			);
+			path = WaterReflection;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABF85BBE1C845A32004BCC2F /* WaterReflection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABF85BC51C845A32004BCC2F /* Build configuration list for PBXNativeTarget "WaterReflection" */;
+			buildPhases = (
+				ABF85BBB1C845A32004BCC2F /* Sources */,
+				ABF85BBC1C845A32004BCC2F /* Frameworks */,
+				ABF85BBD1C845A32004BCC2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaterReflection;
+			productName = WaterReflection;
+			productReference = ABF85BBF1C845A32004BCC2F /* WaterReflection.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABF85BB71C845A32004BCC2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = lchzh;
+				TargetAttributes = {
+					ABF85BBE1C845A32004BCC2F = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = ABF85BBA1C845A32004BCC2F /* Build configuration list for PBXProject "WaterReflection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ABF85BB61C845A32004BCC2F;
+			productRefGroup = ABF85BC01C845A32004BCC2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABF85BBE1C845A32004BCC2F /* WaterReflection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABF85BBD1C845A32004BCC2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC82A9B1C85354400248DD6 /* WaterReflection.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABF85BBB1C845A32004BCC2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC82A9E1C85410F00248DD6 /* PerlinNoise.m in Sources */,
+				ABC82A951C852BE100248DD6 /* WaterReflection.m in Sources */,
+				ABC82AA11C8562D300248DD6 /* PSPreviewView.m in Sources */,
+				ABF85BD21C845BD1004BCC2F /* Rects.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ABF85BC31C845A32004BCC2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		ABF85BC41C845A32004BCC2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		ABF85BC61C845A32004BCC2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WaterReflection/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = yifang.WaterReflection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		ABF85BC71C845A32004BCC2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WaterReflection/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = yifang.WaterReflection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABF85BBA1C845A32004BCC2F /* Build configuration list for PBXProject "WaterReflection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABF85BC31C845A32004BCC2F /* Debug */,
+				ABF85BC41C845A32004BCC2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABF85BC51C845A32004BCC2F /* Build configuration list for PBXNativeTarget "WaterReflection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABF85BC61C845A32004BCC2F /* Debug */,
+				ABF85BC71C845A32004BCC2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABF85BB71C845A32004BCC2F /* Project object */;
+}

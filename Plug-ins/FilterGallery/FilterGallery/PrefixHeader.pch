@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  FilterGallery
+//
+//  Created by Calvin on 4/6/17.
+//  Copyright © 2017 Calvin. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+/* BACKGROUND COLOR*/
+#define LabelBackColor  [NSColor colorWithRed:52.0/255 green:52.0/255 blue:52.0/255 alpha:1]
+#define WindowBackColor [NSColor colorWithRed:79.0/255 green:79.0/255 blue:79.0/255 alpha:1]
+
+/* BUNDLE*/
+#define TBundle [NSBundle bundleForClass:[self class]]
+
+/*NSLOG*/
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif /* DEBUG*/
+
+/*coordinate value*/
+#define VIEWTAGFORAPPLY  77
+#define nXForParamName 10
+#define nWidthForParamName 80
+#define nHeightForParamName 40
+
+/*Height Of TabView*/
+#define fHeightOfTabScrollView 40
+
+#define CategoryOrder @"Adjustment Color Blur Distortion Pixelate Stylize"
+
+#endif /* PrefixHeader_pch */

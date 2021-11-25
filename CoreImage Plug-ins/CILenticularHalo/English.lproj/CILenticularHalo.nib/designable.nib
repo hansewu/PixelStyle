@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="101000" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CILenticularHaloClass">
+            <connections>
+                <outlet property="contrastLabel" destination="61" id="66"/>
+                <outlet property="contrastSlider" destination="60" id="65"/>
+                <outlet property="m_positionXLabel" destination="uUq-d7-qeD" id="oxE-9L-Kmn"/>
+                <outlet property="m_positionXSlider" destination="T38-t3-f7d" id="GNp-yh-lPc"/>
+                <outlet property="m_positionYLabel" destination="bnM-MT-1UM" id="XGR-ut-LpM"/>
+                <outlet property="m_positionYSlider" destination="eNw-15-1D6" id="b9Y-JH-sIB"/>
+                <outlet property="m_radiusLabel" destination="5UF-jf-fbc" id="ZAU-8Q-ZOp"/>
+                <outlet property="m_radiusSlider" destination="kVJ-nm-991" id="ffG-F7-WSZ"/>
+                <outlet property="m_widthLabel" destination="so7-WG-xAg" id="sw8-sv-xpZ"/>
+                <outlet property="m_widthSlider" destination="I7e-DS-R42" id="H2b-nE-tp5"/>
+                <outlet property="mainColorWell" destination="68" id="69"/>
+                <outlet property="overlapLabel" destination="21" id="29"/>
+                <outlet property="overlapSlider" destination="14" id="62"/>
+                <outlet property="panel" destination="6" id="32"/>
+                <outlet property="strengthLabel" destination="40" id="64"/>
+                <outlet property="strengthSlider" destination="39" id="63"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Circular Screen" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="6" userLabel="Panel" customClass="PSWindow">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="66" y="443" width="365" height="384"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="832"/>
+            <view key="contentView" id="5">
+                <rect key="frame" x="0.0" y="0.0" width="365" height="384"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" id="13">
+                        <rect key="frame" x="17" y="173" width="331" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="left" title="Overlap:" id="73" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <slider verticalHuggingPriority="750" id="14">
+                        <rect key="frame" x="32" y="149" width="269" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <sliderCell key="cell" controlSize="small" alignment="left" maxValue="100" doubleValue="77" tickMarkPosition="above" allowsTickMarkValuesOnly="YES" sliderType="linear" id="74" customClass="MyCustomedSliderCell"/>
+                        <connections>
+                            <action selector="update:" target="-2" id="23"/>
+                        </connections>
+                    </slider>
+                    <button verticalHuggingPriority="750" id="16">
+                        <rect key="frame" x="139" y="12" width="92" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="75" customClass="PSButtonImageCell">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">.</string>
+                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancel:" target="-2" id="25"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="21">
+                        <rect key="frame" x="306" y="151" width="42" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="left" title="0.77" id="76" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="38">
+                        <rect key="frame" x="17" y="128" width="331" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="left" title="Strength:" id="77" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <slider verticalHuggingPriority="750" id="39">
+                        <rect key="frame" x="32" y="104" width="269" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <sliderCell key="cell" controlSize="small" alignment="left" maxValue="3" tickMarkPosition="above" allowsTickMarkValuesOnly="YES" sliderType="linear" id="78" customClass="MyCustomedSliderCell"/>
+                        <connections>
+                            <action selector="update:" target="-2" id="48"/>
+                        </connections>
+                    </slider>
+                    <textField verticalHuggingPriority="750" id="40">
+                        <rect key="frame" x="306" y="106" width="42" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="left" title="0.0" id="79" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="59">
+                        <rect key="frame" x="17" y="83" width="331" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="left" title="Contrast:" id="80" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <slider verticalHuggingPriority="750" id="60">
+                        <rect key="frame" x="32" y="59" width="269" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <sliderCell key="cell" controlSize="small" alignment="left" maxValue="5" doubleValue="1" tickMarkPosition="above" allowsTickMarkValuesOnly="YES" sliderType="linear" id="81" customClass="MyCustomedSliderCell"/>
+                        <connections>
+                            <action selector="update:" target="-2" id="67"/>
+                        </connections>
+                    </slider>
+                    <textField verticalHuggingPriority="750" id="61">
+                        <rect key="frame" x="306" y="61" width="42" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="left" title="1.0" id="82" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <colorWell id="68" customClass="HaloColorWell">
+                        <rect key="frame" x="20" y="18" width="52" height="24"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="color" red="1" green="0.96739059686660767" blue="0.73579096794128418" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <outlet property="ciHalo" destination="-2" id="70"/>
+                        </connections>
+                    </colorWell>
+                    <slider verticalHuggingPriority="750" id="T38-t3-f7d">
+                        <rect key="frame" x="32" y="327" width="269" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" controlSize="small" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="UiF-La-U5o" customClass="MyCustomedSliderCell"/>
+                        <connections>
+                            <action selector="update:" target="-2" id="1l1-uW-lvK"/>
+                        </connections>
+                    </slider>
+                    <slider verticalHuggingPriority="750" id="eNw-15-1D6">
+                        <rect key="frame" x="32" y="283" width="269" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" controlSize="small" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="qlJ-Yj-iTA" customClass="MyCustomedSliderCell"/>
+                        <connections>
+                            <action selector="update:" target="-2" id="A2C-Nw-CdV"/>
+                        </connections>
+                    </slider>
+                    <slider verticalHuggingPriority="750" id="I7e-DS-R42">
+                        <rect key="frame" x="32" y="238" width="269" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" controlSize="small" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="quV-8M-Ibc" customClass="MyCustomedSliderCell"/>
+                        <connections>
+                            <action selector="update:" target="-2" id="x4O-Pr-jVq"/>
+                        </connections>
+                    </slider>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Cpw-iz-4Px">
+                        <rect key="frame" x="17" y="352" width="331" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Center X:" id="EZ1-nv-C7T" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="j8s-GG-aKh">
+                        <rect key="frame" x="17" y="307" width="331" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Center Y:" id="pmS-9i-Nhh" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="lvn-0M-3qc">
+                        <rect key="frame" x="17" y="262" width="331" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Width:" id="vx4-1D-HYS" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <slider verticalHuggingPriority="750" id="kVJ-nm-991">
+                        <rect key="frame" x="32" y="194" width="269" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" controlSize="small" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="7Xw-hw-jIV" customClass="MyCustomedSliderCell"/>
+                        <connections>
+                            <action selector="update:" target="-2" id="6T6-bU-qU3"/>
+                        </connections>
+                    </slider>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="PCm-S6-OJA">
+                        <rect key="frame" x="17" y="218" width="331" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Radius:" id="Dls-JM-UYK" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="uUq-d7-qeD">
+                        <rect key="frame" x="306" y="329" width="42" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="X" id="mMr-ai-hh1" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="bnM-MT-1UM">
+                        <rect key="frame" x="306" y="285" width="42" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Y" id="mDx-Pn-sd9" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="so7-WG-xAg">
+                        <rect key="frame" x="306" y="240" width="42" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="width" id="z6v-4z-2hg" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="5UF-jf-fbc">
+                        <rect key="frame" x="306" y="196" width="42" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="radius" id="W5W-L2-cMR" customClass="PSTextFieldLabelCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" id="7">
+                        <rect key="frame" x="251" y="12" width="92" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="72" customClass="PSButtonImageCell">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="apply:" target="-2" id="26"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="270.5" y="195"/>
+        </window>
+    </objects>
+</document>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  	<require_client_version>2.70</require_client_version>
+   	<!-- for client v2.21 and later-->
+   	<recommend_client_version>V3.60</recommend_client_version>
+   	<!-- for client v2.21 and later-->
+   	<update_message_english>A major XXX upgrade is now available.</update_message_english>
+   	<update_informative_english> \nNew Features:\n1.App stability improvement.\n\n\n</update_informative_english>
+</config>

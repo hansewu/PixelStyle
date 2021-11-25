@@ -1,0 +1,957 @@
+"Move and Align Tool" = "移动对齐工具";
+"Transform Tool" = "变换工具";
+"Rectangular Marquee Tool" = "矩形选框工具";
+"Elliptical Marquee Tool" = "椭圆选框工具";
+"Lasso Tool" = "套索工具";
+"Polygonal Lasso Tool" = "多边形套索工具";
+"Magic Wand Tool" = "魔棒工具";
+"Crop Tool" = "裁剪工具";
+"Art Brush Tool" = "艺术画笔工具";
+"Pencil Tool" = "铅笔工具";
+"Brush Tool" = "画笔工具";
+"Eraser Tool" = "橡皮擦工具";
+"Eyedropper Tool" = "吸管工具";
+"Clone Stamp Tool" = "仿制图章工具";
+"Paint Bucket Tool" = "油漆桶工具";
+"Gradient Tool" = "渐变工具";
+"Text Tool" = "文字工具";
+"Zoom Tool" = "缩放工具";
+"Shape Tool" = "形状工具";
+"Path Selection Tool" = "路径选择工具";
+"Pen Tool" = "钢笔工具";
+"Path Eraser Tool" = "路径橡皮擦工具";
+"Red Eye Remove Tool" = "红眼工具";
+"Smudge Tool" = "涂抹工具";
+"Burn Tool" = "加深工具";
+"Dodge Tool" = "减淡工具";
+"Sponge Tool" = "海绵工具";
+
+"Set the Foreground Color" = "设置前景色";
+"Set the Background Color" = "设置背景色";
+"Switch Foreground/Background Colors" = "切换前景色和背景色(X)";
+"Align top edges" = "顶对齐";
+"Vertical align center" = "垂直居中对齐";
+"Align bottom edges" = "底对齐";
+"Align left edges" = "左对齐";
+"Horizontal align center" = "水平居中对齐";
+"Align right edges" = "右对齐";
+"Scale" = "缩放";
+"Rotate" = "旋转";
+"Skew" = "斜切";
+"Perspective" = "透视";
+"Adjust horizontal scale" = "设置水平缩放";
+"Adjust vertical scale" = "设置垂直缩放";
+"Set horizontal position of reference point" = "设置参考点的水平位置";
+"Set vertical position of reference point" = "设置参考点的垂直位置";
+"Set rotation" = "设置旋转";
+"Cancel transform" = "取消变换";
+"Apply transform" = "提交变换(Enter)";
+"New selection" = "新选区";
+"Add to selection" = "添加到选区";
+"Subtract from selection" = "从选区减去";
+"Intersect with selection" = "与选区交叉";
+"Invert the intersected selections" = "排除重叠选区";
+"Soften the edge of a selection" = "软化选区的边";
+"Set the drawing shape of marquee tool" = "设置选框工具如何绘制";
+"Set the fillet radius" = "设置圆角半径";
+"Tolerance" = "容差";
+"Set the sampling range for color" = "设置颜色取样时的范围";
+"Set the number of sample points" = "设置采样点的数目";
+"Crop" = "提交当前裁剪操作";
+"Display the current brush" = "显示当前选择的画笔";
+"Adjust brush size" = "设置画笔大小";
+"Adjust brush transparency" = "设置画笔透明度";
+"Adjust brush hardness" = "设置画笔硬度";
+"Adjust brush smoothness" = "设置画笔平滑度";
+"Adjust/Show brush pressure" = "设置/显示画笔压力";
+"Size of drawing square" = "设置大小";
+"Display the current texture" = "显示当前选择的纹理";
+"Set the texture" = "设置纹理";
+"Adjust texture transparency" = "设置纹理透明度";
+"Design the painting way for connecting the previous drawing stroke" = "设置连接前一笔的绘画方式";
+"Tap to open the “Art Brush” Selector" = "点按打开“艺术画笔”选取器";
+"Tap to open the “Brush Preset” Selector" = "点按打开“画笔预设”选取器";
+"Tap to open the “Texture Preset” Selector" = "点按打开“纹理预设”选取器";
+"Choose the brush category" = "选择画笔类";
+"Choose the pen category" = "选择钢笔类";
+"Choose the pencil category" = "选择铅笔类";
+"Choose the airbrush category" = "选择喷笔类";
+"Choose the scrawl category" = "选择涂抹笔类";
+"Choose the special category" = "选择特效笔类";
+"Adjust eraser transparency" = "设置橡皮擦透明度";
+"Adjust the sample quantity of sample colors picked by eyedropper tool" = "吸管取样的最大数目";
+"Define the selection mode for the sample point of eyedropper tool" = "吸管工具样本模式";
+"Define the selection mode for the sample point of clone tool" = "仿制图章工具样本模式";
+"Designate the sampling color as the foreground/background" = "指定取样的颜色作为前景/背景";
+"Set the source point for the clone stamp tool" = "设置仿制图章工具的源点";
+"Set the fill-mode" = "设置填充模式";
+"Check the box to preview the filling effects" = "勾选预览填充效果";
+"Radial gradient" = "径向渐变";
+"Diamond gradient" = "菱形渐变";
+"Clockwise spiral gradient" = "顺时针螺旋渐变";
+"Counterclockwise spiral gradient" = "逆时针螺旋渐变";
+"Reflected gradient" = "对称渐变";
+"Conical gradient" = "锥形渐变";
+"Angular gradient" = "角度渐变";
+"Linear gradient" = "线性渐变";
+"Set gradient with a tiled image" = "平铺填充";
+"Set gradient with a symmetrical tiling image" = "对称平铺填充";
+"Set the gradient direction" = "设置填充角度";
+"Design font family" = "设置字体系列";
+"Design font style" = "设置字体样式";
+"Design font size" = "设置字体大小";
+"Design text color" = "设置文本颜色";
+"Faux bold" = "仿粗体";
+"Faux italic" = "仿斜体";
+"Underlined" = "下划线";
+"Strikethrough" = "删除线";
+"Design text kerning" = "设置字符间距";
+"Design text deformation" = "设置文字变形";
+"Style :" = "样式 :";
+"Bending :" = "弯曲 :";
+"Zoom In" = "放大";
+"Zoom Out" = "缩小";
+"Display/Adjust Canvas Scale" = "显示/设置画布缩放";
+"Zoom to the Actual Size" = "缩放到实际像素";
+"Display Canvas Scale" = "显示画布缩放";
+"Adjust Canvas Scale" = "设置画布缩放";
+"The selection boundaries will not be visible if any pixel is less than 50%." = "任何像素都不大于50%，选区边将不可见。";
+"Change Layer Blending Modes" = "设置图层的混合模式";
+"Change Layer Opacity" = "设置图层的不透明度";
+"Show/Hide Layers" = "显示/隐藏图层";
+"Add Layer Effects" = "添加图层样式";
+"Layer Thumbnail" = "图层缩览图";
+"Indicate Text Layers" = "指示文本图层";
+"Create a New Layer" = "创建一个新的图层";
+"Output the Selected Layer" = "输出所选图层";
+"Duplicate the Selected Layer" = "复制选中图层";
+"Delete the Selected Layer" = "删除选中图层";
+"Color :" = "颜色 :";
+"Opacity :" = "不透明度 :";
+"Position :" = "位置 :";
+"Angle :" = "角度 :";
+"Distance :" = "距离 :";
+"Size :" = "大小 :";
+"Outer" = "外部";
+"Central" = "居中";
+"Inner" = "内部";
+"Show/Hide Channels" = "显示/隐藏通道";
+"Will apply the transform ?" = "要应用变换吗？";
+"Don't Apply" = "不应用";
+"Are you sure to apply the transform?" = "要应用变换吗？";
+"Preview the output effect of the central portion of the canvas" = "预览画布中央部分的输出效果";
+"“Save” and “Export” functions are not available." = "“保存”和“导出”功能不可用。";
+"Operations that are outside the current layer will not be visible." = "当前层外的操作将不可见.";
+"Notice:“Save” and “Export” functions are not available!\n" = "注意:“保存”和“导出”功能不可用!\n";
+"warning" = "警告";
+"ok" = "确定";
+"error_code" = "注册失败信息。\n\n注册失败的可能原因:\n\n1.输入错误 - 请拷贝复制注册码，确保没有空格。\n\n2.版本错误 - 注册码对应的是最新版本.\n\n如果仍然有问题请联系我们 market@effectmatrix.com。";
+"Congratulations. You have successfully registered." = "祝贺，你已经注册成功！";
+"Registered successfully" = "注册成功";
+"Purchase the full version to export your projects now." = "购买完整版导出您的项目";
+"Command - Select multiple shapes"             = "Command - 选择多个形状";
+"Command+Shift - Select all shapes"     = "Command+Shift - 选择所有的形状";
+"Alt - Operate control handles independently"    = "Opt - 单独操作控制点";
+"Double-Click could finish bezier path"= "双击完成路径";
+"Command+Ctrl - Close a bezier path" = "Command+Ctrl - 关闭路径";
+"Double-Click could reset bezier control points" = "Double-click could reset bezier control points";
+"Alt - Lock gradients to 45" = "Alt - Lock gradients to 45 degree";
+"No shape is selected" = "没有选择形状";
+"Mail" = "Mail";
+"Bravo" = "Bravo";
+"Bug" = "Bug";
+"Idea" = "Idea";
+"Like this app ?" = "Like this app ?";
+"Feedback Type ?" = "Feedback Type ?";
+"To :" = "To :";
+"Subject :" = "Subject :";
+"Send" = "Send";
+"Fadeback" = "Feedback";
+"Like" = "Like";
+"Do not like" = "Do not like";
+"Error" = "Error";
+"Supported formats :" = "Supported formats :";
+"The maximum number of attachments :" = "The maximum number of attachments :";
+"The maximum size of single file :" = "The maximum size of single file :";
+
+"Select and move" = "选择移动";
+"Add and delete anchor" = "添加删除锚点";
+"Closed freeform pen" = "闭合自由钢笔";
+"Freeform pen" = "自由钢笔";
+"Pen" = "钢笔";
+
+
+"Color Adjustment" = "调色";
+"Color Effect" = "色彩效果";
+"Edge Detection" = "边缘检测";
+"Sharpen" = "锐化";
+"Effect" = "特效";
+
+
+"About" = "关于";
+"Preferences" = "首选项";
+"Services" = "服务";
+"NO Services Apply" = "NO Services Apply";
+"System Preferences" = "系统设置";
+"Hide" = "隐藏";
+"Hide Others" = "隐藏其它";
+"Show All" = "显示全部";
+"Quit" = "退出";
+"File" = "文件";
+"New" = "新建";
+"New from Clipboard" = "从剪贴板新建";
+"Open" = "打开";
+"Open Recent" = "最近打开文件";
+"Clear Menu" = "Clear Menu";
+"Close" = "关闭";
+"Save" = "存储";
+"Save As" = "存储为";
+"Revert" = "恢复";
+"Import" = "导入";
+"Export" = "导出";
+"Page Setup" = "页面设置";
+"Print" = "打印";
+"Edit" = "编辑";
+"Undo" = "后退一步";
+"Redo" = "前进一步";
+"Cut" = "剪切";
+"Copy1" = "拷贝";
+"Copy Merged" = "合并拷贝";
+"Paste" = "粘贴";
+"Duplicate" = "复制";
+"Fill" = "填充";
+"Transform" = "变换路径";
+"Start Dictation" = "Start Dictation";
+"Emoji & Symbols" = "Emoji & Symbols";
+"Image" = "图像";
+"Resize Image" = "图像大小";
+"Resolution" = "分辨率";
+"Image Boundaries" = "画布大小";
+"Rotate 90° Clockwise" = "顺时针旋转90°";
+"Rotate 90° Anticlockwise" = "逆时针旋转90°";
+"Flip Horizontal" = "水平翻转";
+"Flip Vertical" = "垂直翻转";
+"Export as Texture" = "导出纹理";
+"Layer" = "图层";
+"Resize Layer" = "图层大小";
+"Rotate Layer" = "图层旋转";
+"Layer Boundaries" = "图层边界";
+"Trim to Edges" = "修边";
+"Condense to Content" = "裁剪到内容";
+"Condense to Selection" = "裁剪到选区";
+"Expand to Document" = "扩大到文档大小";
+"New Layer" = "新建图层";
+"New Shape Layer" = "新建形状图层";
+"Duplicate" = "复制图层";
+"Delete" = "删除";
+"Bring to Front" = "置于顶层";
+"Bring Forward" = "前移一层";
+"Send Backward" = "后移一层";
+"Send to Back" = "置于底层";
+"Alignment" = "对齐";
+"Align Left" = "左对齐";
+"Align Right" = "右对齐";
+"Align Horizontal Center" = "水平居中对齐";
+"Align Top" = "顶对齐";
+"Align Bottom" = "底对齐";
+"Align Vertical Center" = "垂直居中对齐";
+"Center Horizontally" = "水平居中";
+"Center Vertically" = "垂直居中";
+"Rasterise" = "栅格化";
+"Convert to Shape" = "转换为形状";
+"Merge Down" = "向下合并";
+"Merge Selected Layers" = "合并选中图层";
+"Flatten Image" = "拼合图像";
+"Shape" = "形状";
+"Alignment" = "对齐";
+"Arrange" = "排列";
+"Flip Horizontally" = "水平翻转";
+"Flip Vertically" = "垂直翻转";
+"Unite Paths" = "合并路径";
+"Intersect Paths" = "相交路径";
+"Subtract From Paths" = "减去路径";
+"Exclude Paths" = "排除重叠路径";
+"Combine Paths" = "合并路径组件";
+"Separate Paths" = "分离路径";
+"Delete Paths" = "删除路径";
+"Select" = "选择";
+"Select All" = "全部";
+"Select Alpha" = "选择半透明";
+"Deselect" = "取消选择";
+"Inverse" = "反向";
+"Layers" = "图层";
+"Filter" = "滤镜";
+"Blur" = "模糊";
+"Gaussian Blur" = "高斯模糊";
+"Motion Blur" = "动态模糊";
+"Zoom Blur" = "缩放模糊";
+"Color Adjust" = "色彩调整";
+"Brightness and Contrast" = "亮度/对比度";
+"Curves" = "曲线";
+"Gamma" = "伽马线";
+"Adjustment" = "调整";
+"Hue, Saturation and Value" = "色相/饱和度";
+"White Point" = "白点";
+"Color Ramp" = "颜色渐变";
+"Convert to CMYK" = "转成CMYK";
+"Convert to Grayscale" = "转成灰度";
+"Invert" = "反相";
+"Monochrome" = "单色";
+"Posterize" = "色调分离";
+"Sepia" = "怀旧";
+"Threshold" = "阈值";
+"Distort" = "扭曲";
+"Bump" = "凹凸";
+"Circle Splash" = "圆形放射";
+"Circular Wrap" = "环形环绕";
+"Glass Lozenge" = "菱形";
+"Hole" = "孔";
+"Pinch" = "挤压";
+"Torus Lens" = "环形";
+"Twirl" = "旋转";
+"Vortex" = "漩涡";
+
+"Enhance" = "增强";
+"Contrast Sharpen" = "对比锐化";
+"Exposure" = "曝光";
+"Median" = "中间值";
+"Noise Reduction" = "去杂色";
+"Generate" = "生成";
+"Checkerboard" = "棋盘";
+"Halo" = "光环";
+"Horizontal Stripes" = "横条纹";
+"Random Generator" = "添加杂色";
+"Spotlight" = "焦点";
+"Starshine" = "星光";
+"Sunbeams" = "阳光";
+"Vertical Stripes" = "竖条纹";
+"Halftone" = "点染";
+"Circular Screen" = "Circular Screen";
+"CMYK Halftone" = "CMYK 半调";
+"Dot Screen" = "Dot Screen";
+"Hatched Screen" = "Hatched Screen";
+"Line Screen" = "Line Screen";
+"Stylize" = "风格化";
+"Bloom" = "强化亮区";
+"Color Edges" = "彩色边缘";
+"Crystallize" = "晶格化";
+"Displacement Distortion" = "置换";
+"Edges" = "边缘";
+"Glass Distortion" = "球面化";
+"Gloom" = "强化暗区";
+"Pixellate" = "像素化";
+"Pointillize" = "点状化";
+"Tile" = "拼贴";
+"Kaleidoscope" = "对称";
+"Parallelogram" = "平行";
+"Scale and Rotate" = "旋转和缩放";
+"Squares" = "方形";
+"Triangle" = "三角形";
+"Last Filter" = "上次滤镜操作";
+"View" = "视图";
+"Hide Rulers" = "隐藏标尺";
+"Hide Guides" = "隐藏参考线";
+"Hide Layers" = "隐藏图层";
+"Hide Point Information" = "隐藏信息栏";
+"Hide Options Bar" = "隐藏选项栏";
+"Hide Status Bar" = "隐藏状态栏";
+"Show Rulers" = "显示标尺";
+"Show Guides" = "显示参考线";
+"Show Layers" = "显示图层";
+"Show Point Information" = "显示信息栏";
+"Show Options Bar" = "显示选项栏";
+"Show Status Bar" = "显示状态栏";
+"Colors" = "颜色";
+"Foreground Color" = "前景色";
+"Background Color" = "背景色";
+"Swap Colors" = "交换前景背景色";
+"Default Colors" = "默认颜色";
+"Rotate Selection Shading" = "循环选择底纹";
+"Press Ctrl to select new area; Shift to add to selection; Opt to subtract from selection; Shift + Opt to intersect with selection; Shift + Ctrl to inverse intersect of selection." = "按住Ctrl创建新选区; Shift添加选区; Opt从现有选区减去; Shift + Opt与选区交叉; Shift + Ctrl排除重叠选区。";
+"Press Shift to keep 1:1 aspect ration." = "按住Shift键进行正方形裁剪。";
+"Press Opt to erase. Press Shift to draw straight lines. Press Shift & Ctrl to draw lies at 45 degrees." = "按住Opt键进行擦除。按住Shift键画直线。按住Shift & Ctrl画45°直线。";
+"Press Opt to flood all selection. Press Shift to preview flood." = "按住Opt填充整个选区。按住Shift键预览填充效果";
+"Opt - Define a source" = "Opt - 设置源";
+"Press Shift to draw straight lines. Press Shift & Ctrl to draw lies at 45 degrees." = "按住Shift键画直线。按住Shift & Ctrl画45°直线。";
+"Press Ctrl to lock gradients to 45." = "按住Ctrl键固定在45°方向上梯度填充。";
+"Press '[' to decrease radius. Press ']' to increase radius." = "按'['减小半径。按']'增加半径。";
+"Press Opt to erase. Press Shift to draw straight lines. Press Shift & Ctrl to draw lies at 45 degrees." = "按住Opt键进行擦除。按住Shift键画直线。按住Shift & Ctrl画45°直线。";
+"Press Opt & Drag the selected object to copy. Press Command & Shift to select all shapes. Press Command to select multiple shapes. Press Shift & Drag to select multiple shapes." = "按住Opt拖动复制选中的对象。 按住Command & Shift全选。按住Command点击选择多个形状。按住Shift拖动选择多个形状。";
+"Double Click to convert the selected point. Press Command to select multiple nodes. Press Opt to operate control handles independently." = "双击转换选中的点。按住Command点击选择多个点。按住Opt操作单个控制点。";
+"Press Opt to switch scaling mode." = "按住Opt键切换缩放模式";
+"Window" = "窗口";
+"Minimize" = "最小化";
+"Zoom" = "缩放";
+"Bring All to Front" = "前置全部窗口";
+
+"Help" = "帮助";
+"Search" = "搜索";
+"Forum" = "论坛";
+"Feedback with email" = "电子邮件反馈";
+"Pupil Size" = "瞳孔大小";
+"Feather" = "羽化";
+"Aspect ratio" = "样式";
+"Normal" = "正常";
+"Custom" = "自定义";
+"Corner radius" = "圆角半径";
+"Intervals" = "间隔";
+
+
+"Radius" = "半径";
+"Opacity" = "不透明度";
+"Hardness" = "硬度";
+"Smooth" = "平滑";
+"Pressure" = "压力";
+
+"Textures" = "纹理";
+"Fade-out" = "减淡";
+"Fades brush with drawing" = "随着绘制逐渐减淡";
+"Pressure sensitive" = "压力敏感";
+"enable tablet support" = "支持数控板";
+"Darker" = "较深";
+"Lighter" = "较轻";
+"Brush scaling" = "画笔缩放";
+"Scales brush with fading or drawing" = "缩放随着减淡或绘制";
+"Size" = "大小";
+"Erase" = "擦除";
+
+"Draw straight lines" = "绘制直线";
+"Draw straight lines at 45°" = "绘制45°直线";
+"Mimic paintbrush fading" = "模仿画笔衰落";
+"Sample size" = "样本大小";
+"Use sample from all layer" = "从所有层取样";
+"Select background color" = "取背景色";
+"Flood all selection" = "填充整个选区";
+"Preview flood" = "预览填充";
+"Sawtooth Wave" = "锯齿波";
+"Triangular Wave" = "三角波";
+"Strength" = "强度";
+"Set strength for the stroke" = "设置描边强度";
+"Range" = "范围";
+"Midtones" = "中间调";
+"Highlights" = "高光";
+"Shadows" = "阴影";
+"Exposure" = "曝光度";
+"Set range" = "绘画模式";
+"Set exposure" = "设置曝光度";
+"Mode" = "模式";
+"Desaturate" = "降低饱和度";
+"Saturate" = "饱和";
+"Set mode" = "绘画模式";
+"Flow" = "流量";
+"Set flow rate" = "设置饱和度更改速率";
+"Fill" = "填充";
+"Set shape fill type" = "设置形状填充类型";
+"Stroke" = "描边";
+"Set shape stroke type" = "设置形状描边类型";
+"Set shape arrowheads type" = "设置形状箭头类型";
+"Draw a path in a new layer" = "新建图层";
+"Number of Points" = "点数";
+"Decay" = "衰变";
+"Number of Sides" = "边";
+
+
+"Rectangle" = "矩形";
+"Ellipse" = "椭圆";
+"Star" = "星形";
+"Polygon" = "多边形";
+"Line" = "直线";
+"Clockwise spiral" = "顺时针螺旋";
+"Corner Radius" = "圆角半径";
+
+"Font Name" = "字体名";
+"Arc Warp" = "扇形环绕";
+"Arc lower Warp" = "下弧环绕";
+"Arc upper Warp" = "上弧环绕";
+"Arch Warp" = "拱形环绕";
+"Buldge Warp" = "凸起环绕";
+"Shell lower Warp" = "贝壳环绕";
+"Shell upper Warp" = "花冠环绕";
+
+"Change the zoom of the document" = "缩放画布";
+
+"Item1" = "选项1";
+"Item2" = "选项2";
+"Item3" = "选项3";
+
+"Foreground" = "前景";
+"Background" = "背景";
+
+"Untitled" = "未命名";
+
+"Info" = "信息";
+"Histogram" = "直方图";
+"Sample" = "样本";
+"Channels" = "通道";
+"Red" = "红";
+"Green" = "绿";
+"Blue" = "蓝";
+"Alpha" = "Alpha";
+"Multiply" = "正片叠底";
+"Screen" = "滤色";
+"Overlay" = "叠加";
+"Darken" = "暗化";
+"Lighten" = "量化";
+"Color Dodge" = "色彩减淡";
+"Color Burn" = "色彩加深";
+"Soft Light" = "柔光";
+"Hard Light" = "强光";
+"Difference" = "差值";
+"Exclusion" = "排除";
+"Hue" = "色相";
+"Saturation" = "饱和度";
+"Color" = "颜色";
+"Luminosity" = "明度";
+"Clear" = "清除";
+"Copy" = "Copy";
+"Source In" = "Source In";
+"Source Out" = "Source Out";
+"Source Atop" = "Source Atop";
+"Destination Over" = "Destination Over";
+"Destination In" = "Destination In";
+"Destination Out" = "Destination Out";
+"Destination Atop" = "Destination Atop";
+"XOR" = "XOR";
+"Plus Darker" = "Plus Darker";
+"Plus Lighter" = "Plus Lighter";
+"Outline" = "描边";
+"Fill" = "填充";
+"Outer Glow" = "外发光";
+"Inner Glow" = "内发光";
+"Shadow" = "阴影";
+
+"Layer Effects" = "图层样式";
+"Add Effects" = "添加图层样式";
+"Flattern" = "拼合图像";
+"Cancel" = "取消";
+"OK" = "确定";
+"Blend Mode" = "混合模式";
+"Blend Mode :" = "混合模式 :";
+"Angle :" = "角度 :";
+"Style :" = "样式 :";
+"Scale :" = "缩放 :";
+"Gradient" = "渐变";
+"Linear" = "线性";
+"Angle" = "角度";
+"Scale" = "缩放";
+"Radial" = "径向";
+"pixels" = "像素";
+"Size" = "大小";
+"Distance" = "距离";
+"Positon" = "位置";
+"Shape Burst" = "迸发状";
+"Reverse" = "反向";
+"Screen size" = "屏幕尺寸";
+"Preset" = "预设";
+"Width" = "宽";
+"Height" = "高";
+"Default" = "默认";
+"Clipboard" = "剪贴板";
+"Page size(A4)" = "纸张尺寸(A4)";
+"Transparent background" = "透明背景";
+"Create" = "创建";
+"New Image" = "新建";
+"Do you want to reopen the last edited file ?" = "你想重新打开上次编辑的文件？";
+"Your changes will be lost if you don’t save them." = "如果不存储，你更改的内容将会丢失。";
+"Don't Save" = "不保存";
+"Save" = "存储";
+"Image Default Settings" = "图片默认设置";
+"Selection empty" = "空选区";
+"The selection cannot be copied since it is empty." = "不能复制空选区。";
+"Could not use the tool because the target layer is hidden." = "目标图层不可见。";
+"Horizontal" = "水平";
+"Vertical" = "垂直";
+"Set" = "设置";
+"Scale to preserve size" = "缩放保存";
+"Cubic Interpolation" = "三次插值";
+"No Interpolation" = "无插值";
+"Linear Interpolation" = "线性插值";
+"Current Selection" = "当前选择";
+"Presets" = "预设";
+"Top" = "顶";
+"Bottom" = "底";
+"Left" = "左";
+"Right" = "右";
+"Widht" = "宽";
+"Height" = "高";
+"Do not clip any content" = "不裁剪内容";
+"Clip full-image layers only" = "裁剪纯图像层";
+"Clip all layers" = "裁剪所有图层";
+"Texture opacity" = "纹理不透明度";
+"Texture group" = "纹理组";
+"Spacing" = "间距";
+"Space between brush plots" = "笔刷的间隔";
+"Brush group" = "画笔组";
+"Name" = "名字";
+"All" = "所有";
+"Color Paper Texture" = "彩色纸纹";
+"Gyrosigma" = "布纹";
+"Lattice Shading" = "格底纹";
+"Paper Texture" = "纸纹";
+"Favourites" = "最喜欢的";
+"Calligraphy" = "书法";
+"Decorative" = "装饰";
+"Full Circles" = "硬边圆";
+"Galaxy" = "星系";
+"Partial Circles" = "软边圆";
+"Squares" = "方形";
+"Stars" = "星形";
+"Add to existing category" = "添加到现有的类";
+"Add to new category" = "添加到新类";
+"Export" = "导出";
+"Information will be lost" = "信息会丢失";
+"Parts of the document that are not currently visible will be lost. Are you sure you wish to continue?" = "该文件的不可见部分信息将丢失。你确定要继续吗？";
+"Brightness" = "亮度";
+"Contrast" = "对比度";
+"Curve" = "曲线";
+"Apply" = "应用";
+"Auto" = "Auto";
+"Reset" = "重置";
+"Preview" = "预览";
+"set the blackeset position" = "设置黑点";
+"Sample in image to set black point" = "在图像中取样设置黑点";
+"set the whitest position" = "设置白点";
+"Sample in image to set white point" = "在图像中取样设置白点";
+"set the mid-gray position" = "设置中间灰点";
+"Sample in image to set gray point" = "在图像中取样设置灰点";
+"Gamma Adjust" = "伽马线调整";
+"Value" = "Value";
+"Paper size" = "纸张大小";
+"Point1X" = "Point1X";
+"Point1Y" = "Point1Y";
+"Point2X" = "Point2X";
+"Point2Y" = "Point2Y";
+"Refraction" = "Refraction";
+"Center X" = "Center X";
+"Center Y" = "Center Y";
+"Reverse direction" = "Reverse direction";
+"Intensity" = "Intensity";
+"Exposure value" = "Exposure value";
+"Noise" = "杂色";
+"Sharpness" = "Sharpness";
+"Overlap" = "Overlap";
+"Light Position X" = "Light Position X";
+"Light Position Y" = "Light Position Y";
+"Light Position At X" = "Light Position At X";
+"Light Position At Y" = "Light Position At Y";
+"Source Height" = "Source Height";
+"Destination Height" = "Destination Height";
+"Concentration" = "Concentration";
+"Sample1" = "例子";
+"degress" = "度";
+"Grey Component Repalcement" = "Grey Component Repalcement";
+"Under Colour Removal" = "Under Colour Removal";
+"Texture: Default" = "Texture: Default";
+"Emphasis" = "Emphasis";
+"Top-left based" = "Top-left based";
+"Centre based" = "Centre based";
+"Auto Angle" = "Auto Angle";
+
+"Left top point X" = "Left top point X";
+"Left top point Y" = "Left top point Y";
+"Right top point X" = "Right top point X";
+"Right top point Y" = "Right top point Y";
+"Left bottom point X" = "Left bottom point X";
+"Left bottom point Y" = "Left bottom point Y";
+"Right bottom point X" = "Right bottom point X";
+"Right bottom point Y" = "Right bottom point Y";
+"Offset X" = "Offset X";
+"Offset Y" = "Offset Y";
+"Affine Tile (Sacle and Rotate)" = "Affine Tile (Sacle and Rotate)";
+
+
+"Hue Adjustment" = "色相调整";
+"RGB Adjustment" = "RGB调整";
+"red" = "红";
+"green" = "绿";
+"blue" = "蓝";
+
+"Saturation Adjustment" = "饱和度调整";
+"saturation" = "饱和度";
+"Contrast Adjustment" = "对比度调整";
+"contrast" = "对比度";
+"Brightness Adjustment" = "亮度调整";
+"brightness" = "亮度";
+
+"Exposure Adjustment" = "曝光度调整";
+"exposure" = "曝光度";
+"White Balance" = "白平衡";
+"temperature" = "temperature";
+"tint" = "tint";
+"Grayscale" = "灰度";
+"Gamma Adjustment" = "伽马线调整";
+"gamma" = "伽马线";
+
+"Highlight Shadow" = "提亮阴影";
+"shadows" = "阴影";
+"highlights" = "highlights";
+"Haze" = "朦胧加暗";
+"distance" = "距离";
+"slope" = "slope";
+"intensity" = "强度";
+"color" = "颜色";
+"Color Monochrome" = "单色";
+"False Color" = "色彩替换";
+"firstColor" = "firstColor";
+"secondColor" = "secondColor";
+"Color Invert" = "颜色反相";
+"Luminance Threshold" = "亮度阈值";
+"Pixelation" = "像素化";
+"Polar Pixellate" = "同心圆像素化";
+"Polka Dot" = "像素圆点花样";
+"Cross Hatch" = "交叉线";
+"CGA Color Space" = "CGA色彩滤镜";
+
+"threshold" = "阈值";
+"center" = "中心";
+"pixelSize" = "pixelSize";
+
+"dotScaling" = "dotScaling";
+"crossHatchSpacin" = "crossHatchSpacin";
+"lineWidth" = "lineWidth";
+
+"Laplacian" = "Laplacian(拉普拉斯)";
+"Sobel" = "Sobel(索贝尔)";
+"Prewitt" = "Prewitt(普鲁伊特)";
+"Canny" = "Canny(坎尼)";
+"Weak Pixel Inclusion" = "Weak Pixel Inclusion";
+"Sketch" = "素描";
+"Threshold Sketch" = "阈值素描";
+"Edge Strength" = "边缘强度";
+"Blur Radius" = "模糊半径";
+"blurTexelSpacing" = "blurTexelSpacing";
+"upperThreshold" = "阈值上限";
+"lowerThreshold" = "阈值下限";
+"radius" = "半径";
+"Box Blur" = "方框模糊";
+"Bilateral" = "双边模糊";
+"Unsharp Mask" = "反遮罩锐化";
+"Shapen" = "锐化";
+"Toon" = "卡通";
+"Smooth Toon" = "平滑卡通";
+"Tilt Shift" = "条纹模糊" ;
+"Emboss" = "浮雕";
+"Chroma Key" = "色度键";
+"Kuwahara" = "桑原(水粉画模糊)" ;
+"Posterize" = "色调分离";
+"Perlin Noise" = "柏林噪点(花边噪点)";
+"Threshold" = "阈值";
+"Quantization" = "Quantization";
+"Top Level" = "Top Level";
+"Bottom Level" = "Bottom Level";
+"Falloff Rate" = "Falloff Rate";
+"Sensitivity" = "Sensitivity";
+"Smoothing" = "平滑";
+"Start Color" = "Start Color";
+"Finish Color" = "Finish Color";
+
+"Auto Selection" = "自动选择";
+"https://itunes.apple.com/app/id966457795" = "https://itunes.apple.com/cn/app/super-photocut/id966457795?mt=12";
+"https://itunes.apple.com/app/id1152204742" = "https://itunes.apple.com/cn/app/super-vectorizer-2-vector-trace-tool/id1152204742?mt=12";
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>16-bit message</key>
+	<string>PixelStyle does not support the editing of 16-bit images. This image has been resampled at 8-bits to be imported.</string>
+	<key>SVG message</key>
+	<string>PixelStyle is unable to open the given SVG file because the SVG Importer is not installed. The installer for this importer can be found on PixelStyle&apos;s website.</string>
+	<key>all group</key>
+	<string>All</string>
+	<key>anchor selection</key>
+	<string>Anchor Selection</string>
+	<key>background</key>
+	<string>Background</string>
+	<key>gif trans</key>
+	<string>PixelStyle does not support GIF transparency or animation.</string>
+	<key>background layer</key>
+	<string>Background</string>
+	<key>beta message</key>
+	<string>PixelStyle is still under development and may contain bugs. Please make sure to only work on copies of images as there is the potential for corruption. Also please report any bugs you find.</string>
+	<key>cancel</key>
+	<string>Cancel</string>
+	<key>channels message</key>
+	<string>This XCF file contains channels which are not currently supported by PixelStyle. These channels will be lost upon saving.</string>
+	<key>click count</key>
+	<string>Clicks remaining: %d</string>
+	<key>compatibility (gimp) message</key>
+	<string>This file contains layer modes which will not be recognized by the GIMP 1.2 series and earlier.</string>
+	<key>corner radius</key>
+	<string>Corner radius: %d</string>
+	<key>disable alpha</key>
+	<string>Disable Alpha Channel</string>
+	<key>disk space body</key>
+	<string>To allow for unlimited undos PixelStyle needs to write some data to your system disk during operation. However since your system disk now has less than 50 MB of space some or all of the data PixelStyle has written to disk will be deleted (possibly causing certain undo or redo actions to fail). As such, it is strongly advised you save all documents and quit PixelStyle. This may improve the disk space situation on your system disk however you are urged to delete some additional files from your system disk to ensure this problem does not arise again in the future.</string>
+	<key>disk space title</key>
+	<string>Disk space low</string>
+	<key>download available body</key>
+	<string>An updated version of PixelStyle is now availble for download.</string>
+	<key>download available title</key>
+	<string>Update available</string>
+	<key>download error body</key>
+	<string>The file required to check if PixelStyle cannot be downloaded from the Internet. Please check your Internet connection and try again.</string>
+	<key>download error title</key>
+	<string>Downolad error</string>
+	<key>download later</key>
+	<string>Download later</string>
+	<key>download now</key>
+	<string>Download now</string>
+	<key>empty selection body</key>
+	<string>The selection cannot be floated since it is empty.</string>
+	<key>empty selection copy body</key>
+	<string>The selection cannot be copied since it is empty.</string>
+	<key>empty selection copy title</key>
+	<string>Selection empty</string>
+	<key>empty selection title</key>
+	<string>Selection empty</string>
+	<key>enable alpha</key>
+	<string>Enable Alpha Channel</string>
+	<key>fade-out</key>
+	<string>Fade-out: %d</string>
+	<key>feedback survey body</key>
+	<string>In order to improve the next release of PixelStyle we are asking users to participate in a survey. The survey is only one page long and can be accessed by clicking the &quot;Run Survey&quot; button. This message should not trouble you again.</string>
+	<key>feedback survey button</key>
+	<string>Run Survey</string>
+	<key>feedback survey title</key>
+	<string>PixelStyle Feedback Survey</string>
+	<key>flatten body</key>
+	<string>Parts of the document that are not currently visible will be lost. Are you sure you wish to continue?</string>
+	<key>flatten title</key>
+	<string>Information will be lost</string>
+	<key>flattened</key>
+	<string>Flattened Layer</string>
+	<key>float selection</key>
+	<string>Float Selection</string>
+	<key>floating</key>
+	<string>Floating Selection</string>
+	<key>foreground</key>
+	<string>Foreground</string>
+	<key>general</key>
+	<string>General</string>
+	<key>hide boundaries</key>
+	<string>Hide Layer Boundaries</string>
+	<key>hide brushes</key>
+	<string>Hide Brushes</string>
+	<key>hide channels</key>
+	<string>Hide Channels</string>
+	<key>hide info</key>
+	<string>Hide Point Information</string>
+	<key>hide layers</key>
+	<string>Hide Layers</string>
+	<key>hide options</key>
+	<string>Hide Options</string>
+	<key>hide rulers</key>
+	<string>Hide Rulers</string>
+	<key>hide textures</key>
+	<string>Hide Textures</string>
+	<key>hide toolbox</key>
+	<string>Hide Toolbox</string>
+	<key>hide transparent</key>
+	<string>Hide Transparent Color</string>
+	<key>high res message</key>
+	<string>This image has a high resolution. PixelStyle&apos;s performance may therefore be reduced. You can reduce the resolution using &quot;Image &gt; Resolution...&quot; (with &quot;Preserve size&quot; checked). This will result in a lower-quality image.</string>
+	<key>import failure message</key>
+	<string>The selected file was not able to be successfully imported into this document.</string>
+	<key>indexed color body</key>
+	<string>XCF files using indexed colors are only supported if they are of version 1 or greater. This is because version 0 is known to have certain problems with indexed colors.</string>
+	<key>indexed color title</key>
+	<string>Indexed color not supported</string>
+	<key>jp2 not supported</key>
+	<string>The JPEG 2000 image format is only supported on systems running Mac OS 10.4 or later.</string>
+	<key>layer title</key>
+	<string>Layer %d</string>
+	<key>locked body</key>
+	<string>The &quot;Compare to Last Saved&quot; operation failed. The most likely cause for this is that the disk the original is kept on is full or read-only.</string>
+	<key>locked title</key>
+	<string>Operation Failed</string>
+	<key>mask-to-alpha message</key>
+	<string>Some of the masks in this image have been composited to their layer&apos;s alpha channel. These masks will be lost upon saving.</string>
+	<key>new images</key>
+	<string>New Images</string>
+	<key>no</key>
+	<string>No</string>
+	<key>non-current message</key>
+	<string>This file will be deleted upon closing unless it is saved.</string>
+	<key>not available</key>
+	<string>N/A</string>
+	<key>ok</key>
+	<string>OK</string>
+	<key>old crash report message</key>
+	<string>PixelStyle has moved its old crash report to the Trash so that it will be deleted next time you empty the trash.</string>
+	<key>opacity</key>
+	<string>Opacity: %d%%</string>
+	<key>outline</key>
+	<string>Outline: %d pt</string>
+	<key>paper size</key>
+	<string>Paper size</string>
+	<key>rate</key>
+	<string>Rate: %d%%</string>
+	<key>read only message</key>
+	<string>This file is in a read-only format, as such you cannot save this file. This warning will not be displayed for subsequent files in a read-only format.</string>
+	<key>resolution no effect message</key>
+	<string>The resolution of this image has been changed and this will affect printing and saving. However this will not affect the viewing window because your Preferences are set to ignore image resolution.</string>
+	<key>revert</key>
+	<string>Revert</string>
+	<key>revert body</key>
+	<string>&quot;%@&quot; has been edited. Are you sure you want to undo changes?</string>
+	<key>revert title</key>
+	<string>Revert</string>
+	<key>show boundaries</key>
+	<string>Show Layer Boundaries</string>
+	<key>show brushes</key>
+	<string>Show Brushes</string>
+	<key>show channels</key>
+	<string>Show Channels</string>
+	<key>show info</key>
+	<string>Show Point Information</string>
+	<key>show layers</key>
+	<string>Show Layers</string>
+	<key>show options</key>
+	<string>Show Options</string>
+	<key>show rulers</key>
+	<string>Show Rulers</string>
+	<key>show textures</key>
+	<string>Show Textures</string>
+	<key>show toolbox</key>
+	<string>Show Toolbox</string>
+	<key>show transparent</key>
+	<string>Show Transparent Color</string>
+	<key>source set</key>
+	<string>Source: (%d, %d) from &quot;%@&quot;</string>
+	<key>source set document</key>
+	<string>Source: (%d, %d) from whole document</string>
+	<key>source unset</key>
+	<string>Source: Unset</string>
+	<key>spacing</key>
+	<string>Spacing: %d%%</string>
+	<key>strange res message</key>
+	<string>This image has an unusual resolution. As such, it may look different to what is expected at 100% zoom. To fix this use &quot;Image &gt; Resolution...&quot; and set to 72 x 72 dpi.</string>
+	<key>tablet bug message</key>
+	<string>There is a bug in Mac OS 10.4 that causes some tablets to incorrectly register their first touch at full strength. A workaround is provided in the &quot;Preferences&quot; dialog however the best solution is to upgrade to Mac OS 10.4.6 or later.</string>
+	<key>tolerance</key>
+	<string>Tolerance: %d</string>
+	<key>transparent</key>
+	<string>Transparent</string>
+	<key>untitled</key>
+	<string>Untitled</string>
+	<key>up-to-date body</key>
+	<string>PixelStyle is up-to-date.</string>
+	<key>up-to-date title</key>
+	<string>PixelStyle up-to-date</string>
+	<key>user guide message</key>
+	<string>PixelStyle is distributed with a user guide to help you understand its features. Simply select &quot;PixelStyle Help&quot; from the &quot;Help&quot; menu to read it.</string>
+	<key>whole document</key>
+	<string>Whole Document</string>
+	<key>window back</key>
+	<string>Window Frame</string>
+	<key>xcf version body</key>
+	<string>The version of the XCF file you are trying to load is not supported by this program, every attempt will be made to load the file in its current state but loading may fail.</string>
+	<key>xcf version title</key>
+	<string>XCF version not supported</string>
+	<key>yes</key>
+	<string>Yes</string>
+	<key>zoom</key>
+	<string>Zoom: %.0f%%</string>
+</dict>
+</plist>

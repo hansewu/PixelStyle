@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <filterCombination>
+        <filterCombinationName>combination1</filterCombinationName>
+        <filter>
+            <filterInName>CIColorMonochrome</filterInName>
+            <filterName>Monochrome</filterName>
+            <filterIndex>19</filterIndex>
+            <filterCategory>ColorEffect</filterCategory>
+            <param>
+                <param0>
+                    <paramName>Monochrome Color</paramName>
+                    <paramInName>inputColor</paramInName>
+                    <paramType>AV_DWORDCOLOR</paramType>
+                </param0>
+                <param1>
+                    <paramName>Monochrome Intensity</paramName>
+                    <paramInName>inputIntensity</paramInName>
+                    <paramMin>0.00</paramMin>
+                    <paramMax>1.00</paramMax>
+                    <paramDefault>1.00</paramDefault>
+                    <paramType>AV_FLOAT</paramType>
+                </param1>
+            </param>
+        </filter>
+        <filter>
+            <filterName>Vignette</filterName>
+            <filterInName>CIVignette</filterInName>
+            <filterIndex>34</filterIndex>
+            <filterCategory>ColorEffect</filterCategory>
+            <param>
+                <param0>
+                    <paramName>Vignette Intensity</paramName>
+                    <paramInName>inputIntensity</paramInName>
+                    <paramMin>-1.0</paramMin>
+                    <paramMax>1.0</paramMax>
+                    <paramDefault>0.0</paramDefault>
+                    <paramType>AV_FLOAT</paramType>
+                </param0>
+                <param1>
+                    <paramName>Vignette Radius</paramName>
+                    <paramInName>inputRadius</paramInName>
+                    <paramMin>0</paramMin>
+                    <paramMax>2.0</paramMax>
+                    <paramDefault>1.0</paramDefault>
+                    <paramType>AV_FLOAT</paramType>
+                </param1>
+            </param>
+        </filter>
+    </filterCombination>
+</config>

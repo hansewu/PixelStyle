@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<Combination>
+		<filterCombinationName>combination1</filterCombinationName>
+		<filter>
+			<filterInName>CIColorMonochrome</filterInName>
+			<filterName>Monochrome</filterName>
+			<filterCategory>ColorEffect</filterCategory>
+			<param>
+				<param0>
+					<paramInName>inputColor</paramInName>
+					<paramType>AV_DWORDCOLOR</paramType>
+					<paramColorR>0.82</paramColorR>
+					<paramColorG>0.67</paramColorG>
+					<paramColorB>0.81</paramColorB>
+				</param0>
+				<param1>
+					<paramInName>inputIntensity</paramInName>
+					<paramType>AV_FLOAT</paramType>
+					<paramCurrent>0.79</paramCurrent>
+				</param1>
+			</param>
+		</filter>
+		<filter>
+			<filterName>Vignette</filterName>
+			<filterInName>CIVignette</filterInName>
+			<filterCategory>ColorEffect</filterCategory>
+			<param>
+				<param0>
+					<paramInName>inputIntensity</paramInName>
+					<paramType>AV_FLOAT</paramType>
+					<paramCurrent>0.77</paramCurrent>
+				</param0>
+				<param1>
+					<paramInName>inputRadius</paramInName>
+					<paramType>AV_FLOAT</paramType>
+					<paramCurrent>0.61</paramCurrent>
+				</param1>
+			</param>
+		</filter>
+	</Combination>
+</config>

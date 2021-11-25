@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="15C50" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="VerifyRegistration">
+            <connections>
+                <outlet property="m_idBuy" destination="p8b-Ie-lfP" id="XU4-LK-JDw"/>
+                <outlet property="m_idRegister" destination="3gA-J6-z2Q" id="nvK-x1-9Br"/>
+                <outlet property="m_idTry" destination="zUA-L5-kDN" id="Zle-Qf-t9N"/>
+                <outlet property="m_labelInputRegistrationInfo" destination="rih-9H-tWB" id="buC-gL-MLX"/>
+                <outlet property="m_labelLicense" destination="WKp-hY-Nxt" id="NNd-Pg-Ll2"/>
+                <outlet property="m_labelUserName" destination="zBs-cK-HNN" id="lt2-38-mzT"/>
+                <outlet property="m_textFieldLicense" destination="C2x-ng-jNc" id="9YD-cm-nQ4"/>
+                <outlet property="m_textFieldUserName" destination="wfx-Qs-98i" id="Pbo-3R-Ph4"/>
+                <outlet property="window" destination="2U9-Ak-yOd" id="5EC-UR-0Ig"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Registration" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="2U9-Ak-yOd" userLabel="Register (Window)" customClass="PSWindow">
+            <windowStyleMask key="styleMask" titled="YES" texturedBackground="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="355" y="331" width="536" height="498"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <view key="contentView" autoresizesSubviews="NO" id="ujn-br-hGU">
+                <rect key="frame" x="0.0" y="0.0" width="536" height="498"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qKl-gl-O7a">
+                        <rect key="frame" x="0.0" y="0.0" width="536" height="498"/>
+                        <animations/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="info-win-backer" id="gVs-hH-EZe"/>
+                    </imageView>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" tag="1000" translatesAutoresizingMaskIntoConstraints="NO" id="HA8-v1-aLc">
+                        <rect key="frame" x="11" y="464" width="470" height="20"/>
+                        <animations/>
+                        <textFieldCell key="cell" controlSize="small" truncatesLastVisibleLine="YES" sendsActionOnEndEditing="YES" alignment="left" placeholderString="tip" allowsEditingTextAttributes="YES" id="58o-TF-GMh">
+                            <font key="font" metaFont="smallSystem"/>
+                            <string key="title">Warm Tips                                                                                                                                                          </string>
+                            <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <box autoresizesSubviews="NO" fixedFrame="YES" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="DTV-yL-uuH">
+                        <rect key="frame" x="4" y="280" width="527" height="201"/>
+                        <view key="contentView" id="whH-GZ-9fC">
+                            <rect key="frame" x="1" y="1" width="525" height="185"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" tag="1000" translatesAutoresizingMaskIntoConstraints="NO" id="cIo-tU-28r">
+                                    <rect key="frame" x="27" y="7" width="470" height="171"/>
+                                    <animations/>
+                                    <textFieldCell key="cell" controlSize="small" truncatesLastVisibleLine="YES" sendsActionOnEndEditing="YES" alignment="justified" title="Thank you for using the trial version of PixelStyle.                                       " placeholderString="tip" allowsEditingTextAttributes="YES" id="g7Z-9Z-74A">
+                                        <font key="font" metaFont="smallSystem"/>
+                                        <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" tag="1000" translatesAutoresizingMaskIntoConstraints="NO" id="NNB-cN-iwa">
+                                    <rect key="frame" x="27" y="68" width="470" height="60"/>
+                                    <animations/>
+                                    <textFieldCell key="cell" controlSize="small" truncatesLastVisibleLine="YES" sendsActionOnEndEditing="YES" alignment="left" placeholderString="tip" allowsEditingTextAttributes="YES" id="mOT-nk-d8B">
+                                        <font key="font" metaFont="smallSystem"/>
+                                        <mutableString key="title">Benefits of purchasing PixelStyle :                                                                                                 · Life time license.                                                                                                                      · Get free technical support service.                                                                                         · Get free regular upgrade.                                                                                                                                                              </mutableString>
+                                        <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" tag="1000" translatesAutoresizingMaskIntoConstraints="NO" id="fqY-qr-XaD">
+                                    <rect key="frame" x="27" y="7" width="470" height="50"/>
+                                    <animations/>
+                                    <textFieldCell key="cell" controlSize="small" truncatesLastVisibleLine="YES" sendsActionOnEndEditing="YES" alignment="left" title="If you want more details or have any question,please feel free to contact us:                                          " placeholderString="tip" allowsEditingTextAttributes="YES" id="XJs-ST-Vex">
+                                        <font key="font" metaFont="smallSystem"/>
+                                        <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" tag="1000" translatesAutoresizingMaskIntoConstraints="NO" id="lAT-Lx-3nO">
+                                    <rect key="frame" x="27" y="23" width="470" height="20"/>
+                                    <animations/>
+                                    <textFieldCell key="cell" controlSize="small" truncatesLastVisibleLine="YES" sendsActionOnEndEditing="YES" alignment="left" title="market@effectmatrix.com                                          " placeholderString="tip" allowsEditingTextAttributes="YES" id="uyv-hX-1rd">
+                                        <font key="font" metaFont="smallSystem"/>
+                                        <color key="textColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" tag="1000" translatesAutoresizingMaskIntoConstraints="NO" id="xzQ-i9-nhg">
+                                    <rect key="frame" x="27" y="136" width="470" height="32"/>
+                                    <animations/>
+                                    <textFieldCell key="cell" controlSize="small" truncatesLastVisibleLine="YES" sendsActionOnEndEditing="YES" alignment="justified" placeholderString="tip" allowsEditingTextAttributes="YES" id="p01-HP-OL2">
+                                        <font key="font" metaFont="cellTitle"/>
+                                        <string key="title">                                                                                                                                                                                                 Notice: “Save” and “Export” are not available in TRIAL version!                                                                                                                                                                                       </string>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                            <animations/>
+                        </view>
+                        <animations/>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <font key="titleFont" size="11" name="STHeitiSC-Light"/>
+                    </box>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rih-9H-tWB">
+                        <rect key="frame" x="5" y="179" width="527" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Please enter your registration information:" id="Mde-iN-U0W" customClass="PSTextFieldLabelCell">
+                            <font key="font" size="13" name="STHeitiSC-Light"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zBs-cK-HNN">
+                        <rect key="frame" x="5" y="145" width="92" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="User Name:" id="HDF-Mc-HIV" customClass="PSTextFieldLabelCell">
+                            <font key="font" size="13" name="STHeitiSC-Light"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WKp-hY-Nxt">
+                        <rect key="frame" x="5" y="114" width="92" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="License Code:" id="O3m-K7-ISY" customClass="PSTextFieldLabelCell">
+                            <font key="font" size="13" name="STHeitiSC-Light"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wfx-Qs-98i">
+                        <rect key="frame" x="102" y="141" width="426" height="22"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" alignment="left" placeholderString="Enter User Name" drawsBackground="YES" id="hfp-rN-1Nj" customClass="PSColorTextFieldCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zUA-L5-kDN">
+                        <rect key="frame" x="145" y="12" width="147" height="24"/>
+                        <animations/>
+                        <buttonCell key="cell" type="bevel" title="Remind Me Later" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="apu-0o-pq8" customClass="PSButtonImageCell">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name="STHeitiSC-Light"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="RemindMeLater:" target="-2" id="hje-qX-jHw"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3gA-J6-z2Q">
+                        <rect key="frame" x="344" y="12" width="83" height="24"/>
+                        <animations/>
+                        <buttonCell key="cell" type="bevel" title="Register" bezelStyle="rounded" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="He0-bm-Osn" customClass="PSButtonImageCell">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name="STHeitiSC-Light"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="RegisterNow:" target="-2" id="SEn-Rh-ses"/>
+                        </connections>
+                    </button>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D31-Oa-VZ8">
+                        <rect key="frame" x="67" y="218" width="401" height="49"/>
+                        <animations/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="buy-bg" id="10A-eJ-3iG"/>
+                    </imageView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p8b-Ie-lfP">
+                        <rect key="frame" x="67" y="218" width="401" height="49"/>
+                        <animations/>
+                        <buttonCell key="cell" type="squareTextured" title="Order a license code For &quot;PixelStyle&quot;" bezelStyle="texturedSquare" image="shopping" imagePosition="left" alignment="center" state="on" imageScaling="proportionallyUpOrDown" inset="2" id="hOe-d8-v7w" customClass="PSButtonCell">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="onBuy:" target="-2" id="82h-dZ-EBc"/>
+                        </connections>
+                    </button>
+                    <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C2x-ng-jNc">
+                        <rect key="frame" x="102" y="49" width="426" height="81"/>
+                        <animations/>
+                        <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" alignment="left" placeholderString="Enter license code" drawsBackground="YES" id="JN3-7B-Yoq" customClass="PSColorTextFieldCell">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <animations/>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="Oyi-99-oiN"/>
+            </connections>
+            <point key="canvasLocation" x="418" y="1103"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="buy-bg" width="450" height="60"/>
+        <image name="info-win-backer" width="2" height="2"/>
+        <image name="shopping" width="100" height="100"/>
+    </resources>
+</document>

@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "d5eca03e-54bc-7841-aaae-db1ca25c2128",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "d5eca03e-54bc-7841-aaae-db1ca25c2128" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "d5eca03e-54bc-7841-aaae-db1ca25c2128" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FF7379DE-BEA5-443E-B1F4-BC578C8ECE7D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "d5eca03e-54bc-7841-aaae-db1ca25c2128" : "PixelStyle\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PixelStyle",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PixelStyle\/PixelStyle\/PixelStyle.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.0.195:8443\/svn\/pixelstyle",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "d5eca03e-54bc-7841-aaae-db1ca25c2128"
+    }
+  ]
+}

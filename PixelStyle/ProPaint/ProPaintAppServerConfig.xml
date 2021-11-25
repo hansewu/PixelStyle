@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  	<require_client_version>2.70</require_client_version>
+   	<!-- for client v2.21 and later-->
+   	<recommend_client_version>3.35</recommend_client_version>
+   	<!-- for client v2.21 and later-->
+   	<update_message_english>A major XXX upgrade is now available.</update_message_english>
+   	<update_informative_english> \nNew Features:\n1.Optimize the display of cursors.\n2.Add some shortcuts.\n3.Remove some bugs.\n\n</update_informative_english>
+</config>
