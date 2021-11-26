@@ -25,6 +25,14 @@
 #import "PSWindowContent.h"
 //#import "PSHoverButton.h"
 
+//No define in ColorSyncDeprecated.h
+/* Standard type for ColorSync and other system error codes */
+typedef OSStatus                        CMError DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+
+CSEXTERN CMError
+CMLaunchControlPanel(UInt32 flags)                            DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+
+
 @implementation PSProxy
 
 //-(void)awakeFromNib

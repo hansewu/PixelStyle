@@ -14,6 +14,69 @@
 
 #import "ipaintapi.h"
 
+//No define in ColorSyncDeprecated.h
+/* Standard type for ColorSync and other system error codes */
+typedef OSStatus                        CMError DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+
+CSEXTERN CMError
+CMGetDefaultDevice(
+  CMDeviceClass   deviceClass,
+  CMDeviceID *    deviceID)                                   DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+
+CSEXTERN CMError
+CMGetDeviceDefaultProfileID(
+  CMDeviceClass        deviceClass,
+  CMDeviceID           deviceID,
+  CMDeviceProfileID *  defaultProfID)                         DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+
+CSEXTERN CMError
+CMGetDeviceProfile(
+  CMDeviceClass        deviceClass,
+  CMDeviceID           deviceID,
+  CMDeviceProfileID    profileID,
+  CMProfileLocation *  profileLoc)                            DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+
+CSEXTERN CMError
+CMOpenProfile(
+  CMProfileRef *             prof,
+  const CMProfileLocation *  theProfile)                      DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+
+CSEXTERN CMError
+CMGetDefaultProfileBySpace(
+  OSType          dataColorSpace,
+  CMProfileRef *  prof)                                       DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+
+CSEXTERN CMError
+NCWNewColorWorld(
+  CMWorldRef *   cw,
+  CMProfileRef   src,
+  CMProfileRef   dst)                                         DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+
+CSEXTERN CMError
+CWMatchBitmap(
+  CMWorldRef            cw,
+  CMBitmap *            bitmap,
+  CMBitmapCallBackUPP   progressProc,
+  void *                refCon,
+  CMBitmap *            matchedBitmap)                        DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+
+CSEXTERN void
+CWDisposeColorWorld(CMWorldRef cw)                            DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+
+CSEXTERN CMError
+CMCloseProfile(CMProfileRef prof)                             DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+
+CSEXTERN CMError
+CMGetDefaultProfileBySpace(
+  OSType          dataColorSpace,
+  CMProfileRef *  prof)                                       DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+
+CSEXTERN CMError
+CWMatchColors(
+  CMWorldRef   cw,
+  CMColor *    myColors,
+  size_t       count)                                         DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+
 extern BOOL useAltiVec;
 
 extern IntPoint gScreenResolution;
