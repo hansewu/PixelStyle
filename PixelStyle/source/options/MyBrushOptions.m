@@ -180,7 +180,10 @@
 -(void)readBrushNameFromFileconst:(NSString *)sFilePath brushNameArray:(NSArray<NSString *>**)brushNameArray
 {
     NSString *string = [NSString stringWithContentsOfFile:sFilePath encoding:NSUTF8StringEncoding error:nil];
-    *brushNameArray = [string componentsSeparatedByString:@"\r\n"];
+    if([string rangeOfString:@"\r\n"].length != 0)
+        *brushNameArray = [string componentsSeparatedByString:@"\r\n"];
+    else
+        *brushNameArray = [string componentsSeparatedByCharactersInSet:  [NSCharacterSet characterSetWithCharactersInString:@"\r\n"]];
 }
 
 -(void)onFravoriteBrushBtn:(id)sender

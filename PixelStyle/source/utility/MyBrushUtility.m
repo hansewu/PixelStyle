@@ -73,7 +73,12 @@
 -(void)readBrushNameFromFileconst:(NSString *)sFilePath brushNameArray:(NSArray<NSString *>**)brushNameArray
 {
     NSString *string = [NSString stringWithContentsOfFile:sFilePath encoding:NSUTF8StringEncoding error:nil];
-    *brushNameArray = [string componentsSeparatedByString:@"\r\n"];
+   
+    if([string rangeOfString:@"\r\n"].length != 0)
+        *brushNameArray = [string componentsSeparatedByString:@"\r\n"];
+    else
+        *brushNameArray = [string componentsSeparatedByCharactersInSet:  [NSCharacterSet characterSetWithCharactersInString:@"\r\n"]];
+    //*brushNameArray = [string componentsSeparatedByCharactersInSet:  [NSCharacterSet characterSetWithCharactersInString:@"\r\n"]];
 }
 
 -(void)writeToFile:(NSString *)sFilePath string:(NSString *)string
@@ -704,6 +709,7 @@
     
     //更新文件
     NSString *sFavorite = [favoriteArray componentsJoinedByString:@"\r\n"];
+ //   NSString *sFavorite = [favoriteArray componentsJoinedByString:@"\n"];
 //    NSString *sPath = [[gMainBundle resourcePath] stringByAppendingString:@"/myBrushes/favouritebrushconfig.txt"];
     NSString *sPath = [self configFavouriteBrushFile];
     [self writeToFile:sPath string:sFavorite];
@@ -884,6 +890,7 @@
     
     //更新文件
     NSString *sFavorite = [favoriteArray componentsJoinedByString:@"\r\n"];
+//    NSString *sFavorite = [favoriteArray componentsJoinedByString:@"\n"];
 //    NSString *sPath = [[gMainBundle resourcePath] stringByAppendingString:@"/myBrushes/favouritebrushconfig.txt"];
     NSString *sPath = [self configFavouriteBrushFile];
     [self writeToFile:sPath string:sFavorite];
@@ -1126,7 +1133,7 @@
 
 -(NSString *)configFavouriteBrushFile
 {
-    NSArray *paths =NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+    NSArray *paths =NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);// NSDocumentDirectory,NSUserDomainMask, YES);
     NSString *docDir = [paths objectAtIndex:0];
     NSString *pPath = [docDir stringByAppendingString:@"/favouritebrushconfig.txt"];
     

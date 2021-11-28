@@ -77,6 +77,7 @@
         m_sPreScaledRect.size = trueLocalRect.size;
         
 		if(mask){
+            if(m_pPreScaledMask)  free(m_pPreScaledMask);
 			m_pPreScaledMask = malloc(m_sPreScaledRect.size.width * m_sPreScaledRect.size.height);
 			memcpy(m_pPreScaledMask, mask, m_sPreScaledRect.size.width * m_sPreScaledRect.size.height);
 		} else {
@@ -263,8 +264,8 @@
 - (void)mouseUpAt:(IntPoint)localPoin forRect:(IntRect)globalRect andMask:(unsigned char *)mask
 {
 	if(m_nScalingDir > kNoDir){
-		if(m_pPreScaledMask)
-			free(m_pPreScaledMask);
+		//if(m_pPreScaledMask)
+			//free(m_pPreScaledMask);
 	}
 }
 

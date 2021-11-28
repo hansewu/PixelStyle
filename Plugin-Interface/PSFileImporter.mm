@@ -63,7 +63,7 @@ GM_IMAGE_BUFFER* mallocImageBuffer(int nImageWidth, int nImageHeight, int nChann
     imageBuffer->nWidth = nImageWidth;
     imageBuffer->nHeight = nImageHeight;
     imageBuffer->nChannel = nChannel;
-    imageBuffer->pBuffer = (unsigned char*)malloc(nImageWidth * nImageHeight * nChannel);
+    imageBuffer->pBuffer = (unsigned char*)malloc((nImageWidth * nImageHeight * nChannel+15)/16*16); //some operator such as _mm_srli_epi32 need 128 bit
     return imageBuffer;
 }
 

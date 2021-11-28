@@ -24,7 +24,7 @@ static CIImage_Buf CICreateCIImage(unsigned char *pBuf, int nWidth, int nHeight,
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     
     //int nLength = nWidth * nHeight;
-    unsigned int *pData = (unsigned int *)malloc(nWidth * nHeight*sizeof(int));
+    unsigned int *pData = (unsigned int *)malloc((nWidth * nHeight*sizeof(int)+15)/16*16);
     
     unsigned int *pDataFrom = (unsigned int *)pBuf;
     unsigned int *pDataTo = pData;
@@ -216,7 +216,7 @@ int CreateImageBufferFromPolygon(IMAGE_BUFFER *pBufOut, CGPoint *points, int nPo
     pBufOut->nWidth   = nMaxX - nMinX + 4*fGaussanRadius + 1;
     pBufOut->nHeight  = nMaxY - nMinY  + 4*fGaussanRadius + 1;
     
-    pBufOut->pBuffer = (unsigned char *)malloc(pBufOut->nWidth * 4 * pBufOut->nHeight);
+    pBufOut->pBuffer = (unsigned char *)malloc((pBufOut->nWidth * 4 * pBufOut->nHeight+15)/16*16);
     memset(pBufOut->pBuffer, 0, pBufOut->nWidth * 4 * pBufOut->nHeight);
     
     CGContextRef contextCG = MyCreateBitmapContext(pBufOut->nWidth, pBufOut->nHeight, pBufOut->pBuffer, true);
@@ -268,7 +268,7 @@ int CreateImageBufferFromEllipse(IMAGE_BUFFER *pBufOut, CGRect rect, COLOR_STRUC
     pBufOut->nWidth   = rect.size.width + 4*fGaussanRadius;
     pBufOut->nHeight  = rect.size.height + 4*fGaussanRadius;
     
-    pBufOut->pBuffer = (unsigned char *)malloc(pBufOut->nWidth * 4 * pBufOut->nHeight);
+    pBufOut->pBuffer = (unsigned char *)malloc((pBufOut->nWidth * 4 * pBufOut->nHeight+15)/16*16);
     
     memset(pBufOut->pBuffer, 0, pBufOut->nWidth * 4 * pBufOut->nHeight);
     CGContextRef contextCG = MyCreateBitmapContext(pBufOut->nWidth,pBufOut->nHeight, pBufOut->pBuffer, true);
@@ -304,7 +304,7 @@ int CreateImageBufferFromRoundRect(IMAGE_BUFFER *pBufOut, CGRect rect, COLOR_STR
     pBufOut->nWidth   = rect.size.width + 4*fGaussanRadius;
     pBufOut->nHeight  = rect.size.height + 4*fGaussanRadius;
     
-    pBufOut->pBuffer = (unsigned char *)malloc(pBufOut->nWidth * 4 * pBufOut->nHeight);
+    pBufOut->pBuffer = (unsigned char *)malloc((pBufOut->nWidth * 4 * pBufOut->nHeight+15)/16*16);
     
     memset(pBufOut->pBuffer, 0, pBufOut->nWidth * 4 * pBufOut->nHeight);
     CGContextRef contextCG = MyCreateBitmapContext(pBufOut->nWidth,pBufOut->nHeight, pBufOut->pBuffer, true);

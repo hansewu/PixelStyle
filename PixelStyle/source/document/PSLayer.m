@@ -2828,7 +2828,7 @@ extern IntPoint gScreenResolution;
     if (rect.size.width == 0 || (rect.size.height == 0)) return;
     if (rect.size.width == m_nWidth && rect.size.height == m_nHeight)
     {
-        [[m_idDocument docView] setNeedsDisplay:YES];
+       // wzq [[m_idDocument docView] setNeedsDisplay:YES];
         return;
     }
     

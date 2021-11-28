@@ -46,7 +46,7 @@
     int width = srcRect.size.width;
     int height = srcRect.size.height;
     
-    unsigned char *newdata = malloc(srcRect.size.width * srcRect.size.height * spp);
+    unsigned char *newdata = malloc((srcRect.size.width * srcRect.size.height * spp+15)/16*16); //to prevent _mm_srli_epi32 overflow
     premultiplyBitmap(4, newdata, srcData, srcRect.size.width * srcRect.size.height);
     srcData = newdata;
     
@@ -156,7 +156,7 @@
     int width = srcRect.size.width;
     int height = srcRect.size.height;
     
-    unsigned char *newdata = malloc(srcRect.size.width * srcRect.size.height * spp);
+    unsigned char *newdata = malloc((srcRect.size.width * srcRect.size.height * spp+15)/16*16);
     if (premultied) {
         memcpy(newdata, srcData, srcRect.size.width * srcRect.size.height * spp);
     }else{

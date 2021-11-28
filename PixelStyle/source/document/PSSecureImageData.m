@@ -17,7 +17,7 @@
     m_lockWrite = [[NSRecursiveLock alloc] init];
     
     if(nWidth * nHeight != 0)
-        m_imageData.pBuffer = (unsigned char *)malloc((nWidth * nHeight * nSpp + 15)/16*16);
+        m_imageData.pBuffer = (unsigned char *)malloc((nWidth * nHeight * nSpp + 15)/16*16);//128 bit operator such as _mm_srli_epi32
     else m_imageData.pBuffer =  NULL;
     
     m_nReadLockCount                = 0;

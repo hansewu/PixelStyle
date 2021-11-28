@@ -148,7 +148,9 @@ CMCloseProfile(CMProfileRef prof)                             DEPRECATED_IN_MAC_
 		
 		CWMatchBitmap(cw, &srcBitmap, NULL, 0, &destBitmap);
 				
-		for (i = selection.size.width; i >= 0; i--) {
+		//for (i = selection.size.width; i >= 0; i--)
+        for (i = selection.size.width-1; i >= 0; i--)
+        {
 			overlay[(pos + i) * 4] = overlay[pos * 4 + i];
 			overlay[(pos + i) * 4 + 1] = overlay[pos * 4 + i];
 			overlay[(pos + i) * 4 + 2] = overlay[pos * 4 + i];

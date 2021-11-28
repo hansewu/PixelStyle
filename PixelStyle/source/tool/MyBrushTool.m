@@ -237,7 +237,7 @@ static BOOL IntRectEqual(IntRect rect1, IntRect rect2)
     
     HANDLE_PAINT_BRUSH hBrush = [[[PSController utilitiesManager] myBrushUtilityFor:m_idDocument] activeMyBrush];
     assert(hBrush);
-//    IP_SetBrushParam(hCanvas, hBrush, BRUSH_OPAQUE, fAlpha);
+    IP_SetBrushParam(hCanvas, hBrush, BRUSH_OPAQUE, 1.0); //fAlpha);
     m_brushAlpha = 255;
     IP_BeginOneStroke(hCanvas);
     [self strokeTo:hCanvas brush:hBrush color:m_nCurrentColor point:where pressure:fPressure intervalTime:5.1];

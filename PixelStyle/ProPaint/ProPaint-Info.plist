@@ -421,7 +421,7 @@
 		<true/>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright  © 2014-2017 EffectMatrix Inc. All rights reserved.
+	<string>Copyright  © 2014-2022 EffectMatrix Inc. All rights reserved.
 </string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>

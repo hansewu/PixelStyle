@@ -3233,6 +3233,7 @@
 		39FC5C361C87E6AC009CD41B /* PSGradientController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39FC5C2D1C87DDE0009CD41B /* PSGradientController.m */; };
 		39FE7DCC1C2D1EAB002E5AE8 /* text_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 39FE7DCB1C2D1EAB002E5AE8 /* text_thumbnail.png */; };
 		56C8A64D1055A1DA0056E36F /* normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 56C8A64C1055A1DA0056E36F /* normal.png */; };
+		75046F332750B0DB008BEF99 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75046F2F2750B0DB008BEF99 /* libstdc++.6.0.9.dylib */; };
 		75710D1A1D898F0700A61C61 /* Rotate0.png in Resources */ = {isa = PBXBuildFile; fileRef = 75710D121D898F0700A61C61 /* Rotate0.png */; };
 		75710D1B1D898F0700A61C61 /* Rotate0.png in Resources */ = {isa = PBXBuildFile; fileRef = 75710D121D898F0700A61C61 /* Rotate0.png */; };
 		75710D1C1D898F0700A61C61 /* Rotate1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75710D131D898F0700A61C61 /* Rotate1.png */; };
@@ -4309,7 +4310,6 @@
 		AB4C97191EC30FFA0059F605 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA831AA1C44A08C00FD253D /* OpenGL.framework */; };
 		AB4C971A1EC30FFA0059F605 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A924871BE31FC9003BF338 /* CoreText.framework */; };
 		AB4C971B1EC30FFA0059F605 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB56D3751BE53BBD001BFF73 /* Accelerate.framework */; };
-		AB4C971C1EC30FFA0059F605 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7FD6691BD5F36600F454EE /* libstdc++.dylib */; };
 		AB4C971D1EC30FFA0059F605 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB62BCF81BA7C7F70010BD1D /* GPUImage.framework */; };
 		AB4C971E1EC30FFA0059F605 /* libComputeDistance.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB499D541BA27CC700F66C41 /* libComputeDistance.a */; };
 		AB4C971F1EC30FFA0059F605 /* libiomp5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB49A81C1BA28AB800F66C41 /* libiomp5.dylib */; };
@@ -4419,7 +4419,6 @@
 		AB690CC41EEA405F00DE3DA1 /* FilterGallery.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB25132E1EEA2F7700AA3F14 /* FilterGallery.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB72DC7C1BA00502002CFD19 /* GPUImageEffectFilter.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB72DC7B1BA00502002CFD19 /* GPUImageEffectFilter.mm */; };
 		AB7FD6651BD5CD9500F454EE /* PSMemoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7FD6641BD5CD9500F454EE /* PSMemoryManager.m */; };
-		AB7FD66A1BD5F36600F454EE /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7FD6691BD5F36600F454EE /* libstdc++.dylib */; };
 		AB81263D1BE88FED00EB1BFD /* move-center.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8126331BE88FED00EB1BFD /* move-center.png */; };
 		AB81263E1BE88FED00EB1BFD /* scale-lr.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8126341BE88FED00EB1BFD /* scale-lr.png */; };
 		AB81263F1BE88FED00EB1BFD /* scale-ud.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8126351BE88FED00EB1BFD /* scale-ud.png */; };
@@ -9051,6 +9050,7 @@
 		39FC5C2D1C87DDE0009CD41B /* PSGradientController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSGradientController.m; sourceTree = "<group>"; };
 		39FE7DCB1C2D1EAB002E5AE8 /* text_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text_thumbnail.png; sourceTree = "<group>"; };
 		56C8A64C1055A1DA0056E36F /* normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal.png; sourceTree = "<group>"; };
+		75046F2F2750B0DB008BEF99 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "../Extralibs/libstdc++.6.0.9.dylib"; sourceTree = "<group>"; };
 		75710D121D898F0700A61C61 /* Rotate0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rotate0.png; sourceTree = "<group>"; };
 		75710D131D898F0700A61C61 /* Rotate1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rotate1.png; sourceTree = "<group>"; };
 		75710D141D898F0700A61C61 /* Rotate2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rotate2.png; sourceTree = "<group>"; };
@@ -9810,7 +9810,6 @@
 				ABA831AB1C44A08C00FD253D /* OpenGL.framework in Frameworks */,
 				39A924881BE31FC9003BF338 /* CoreText.framework in Frameworks */,
 				AB56D3761BE53BBD001BFF73 /* Accelerate.framework in Frameworks */,
-				AB7FD66A1BD5F36600F454EE /* libstdc++.dylib in Frameworks */,
 				AB62BCFB1BA7C86F0010BD1D /* GPUImage.framework in Frameworks */,
 				AB49A81A1BA2852800F66C41 /* libComputeDistance.a in Frameworks */,
 				AB49A81D1BA28AB800F66C41 /* libiomp5.dylib in Frameworks */,
@@ -9830,13 +9829,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75046F332750B0DB008BEF99 /* libstdc++.6.0.9.dylib in Frameworks */,
 				AB4C97161EC30FFA0059F605 /* QuickLook.framework in Frameworks */,
 				AB4C97171EC30FFA0059F605 /* ScriptingBridge.framework in Frameworks */,
 				AB4C97181EC30FFA0059F605 /* WebKit.framework in Frameworks */,
 				AB4C97191EC30FFA0059F605 /* OpenGL.framework in Frameworks */,
 				AB4C971A1EC30FFA0059F605 /* CoreText.framework in Frameworks */,
 				AB4C971B1EC30FFA0059F605 /* Accelerate.framework in Frameworks */,
-				AB4C971C1EC30FFA0059F605 /* libstdc++.dylib in Frameworks */,
 				AB4C971D1EC30FFA0059F605 /* GPUImage.framework in Frameworks */,
 				AB4C971E1EC30FFA0059F605 /* libComputeDistance.a in Frameworks */,
 				AB4C971F1EC30FFA0059F605 /* libiomp5.dylib in Frameworks */,
@@ -10032,6 +10031,7 @@
 		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75046F2F2750B0DB008BEF99 /* libstdc++.6.0.9.dylib */,
 				39509C9A1D1923D400C72299 /* QuickLook.framework */,
 				39B932D51CB4FFE6005EB6E5 /* ScriptingBridge.framework */,
 				AB886C531C579370006139C7 /* WebKit.framework */,
@@ -16488,11 +16488,7 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-			);
-			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
@@ -20398,8 +20394,8 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_ENTITLEMENTS = PixelStyle/PixelStyle.entitlements;
-				CODE_SIGN_IDENTITY = "Developer ID Application: XiuXia Yang (VA2XE4K2T9)";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application: XiuXia Yang (VA2XE4K2T9)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
@@ -20444,7 +20440,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "i386 x86_64";
+				VALID_ARCHS = x86_64;
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wno-four-char-constants",
@@ -20463,7 +20459,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_ENTITLEMENTS = PixelStyle/PixelStyle.entitlements;
-				CODE_SIGN_IDENTITY = "Developer ID Application: XiuXia Yang (VA2XE4K2T9)";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application: XiuXia Yang (VA2XE4K2T9)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
@@ -20507,7 +20503,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "i386 x86_64";
+				VALID_ARCHS = x86_64;
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wno-four-char-constants",
@@ -20544,8 +20540,8 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-PixelStyle";
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_ENTITLEMENTS = PixelStyle/PixelStyle.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
@@ -20611,8 +20607,8 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-PixelStyle";
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_ENTITLEMENTS = PixelStyle/PixelStyle.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
