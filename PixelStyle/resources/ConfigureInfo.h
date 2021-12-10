@@ -26,9 +26,20 @@
 #define URL_FORUM                   @"http://www.effectmatrix.com/forum/viewforum.php?f=54"
 #define URL_PRODUCT                 @"http://www.effectmatrix.com/mac-appstore/pro-paint-for-mac-tool.htm"
 #define URL_WEB_CONFIG_INFO         @"http://www.effectmatrix.com/PixelStyle/ProPaintAppServerConfig.xml"
-#define README_FILE                 @"readme_propaint.rtfd"
+#define  README_FILE    @"readme_propaint.rtfd"
 #define APPLE_ID                    1127869373
 #define REGISTER_PUBLIC_KEY         {0x67,0xb4,0xbe,0xdf,0xdc,0xeb,0xd1,0x66,0xee,0xd4,0xd2,0x27,0xc4,0xff,0x04,0x9c,0x43,0x41,0xca,0x95,0x93,0x9b,0x27,0xdb,0xf5,0x5a,0xbf,0x15}
+
+#elif defined PROPAINT_FREE
+
+#define URL_BUY                     @"https://www.bluesnap.com/jsp/buynow.jsp?contractId=3319670"
+#define URL_FORUM                   @"http://www.effectmatrix.com/forum/viewforum.php?f=54"
+#define URL_PRODUCT                 @"http://www.effectmatrix.com/mac-appstore/pro-paint-for-mac-tool.htm"
+#define URL_WEB_CONFIG_INFO         @"http://www.effectmatrix.com/PixelStyle/ProPaintAppServerConfig.xml"
+#define     README_FILE     @"readme_propaint.rtfd"
+#define APPLE_ID                    1127869373
+#define REGISTER_PUBLIC_KEY         {0x67,0xb4,0xbe,0xdf,0xdc,0xeb,0xd1,0x66,0xee,0xd4,0xd2,0x27,0xc4,0xff,0x04,0x9c,0x43,0x41,0xca,0x95,0x93,0x9b,0x27,0xdb,0xf5,0x5a,0xbf,0x15}
+
 #elif defined FREE_VERSION
 #define URL_BUY                     @"https://www.bluesnap.com/jsp/buynow.jsp?contractId=1695191"
 #define URL_FORUM                   @"http://www.effectmatrix.com/forum/viewforum.php?f=5&sid=2724153edd90697789f99d4ea080bb84"

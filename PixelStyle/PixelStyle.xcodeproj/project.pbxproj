@@ -68,8 +68,8 @@
 		391D4E391D1E321C00DA8396 /* ProPaintAppServerConfig.xml in Resources */ = {isa = PBXBuildFile; fileRef = 391D4E381D1E321C00DA8396 /* ProPaintAppServerConfig.xml */; };
 		391DBCD01C7C48D200CA983A /* ShapeOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 391DBCCF1C7C48D200CA983A /* ShapeOptions.m */; };
 		391EC63F1BD5E6BC00D7EA89 /* ChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 391EC63E1BD5E6BC00D7EA89 /* ChannelView.m */; };
-		39218F971D1E93B900A55C5B /* GIMPCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B156E20A2C00D0005B688F /* GIMPCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39218F981D1E93B900A55C5B /* TIFF.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B156E90A2C00E0005B688F /* TIFF.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		39218F971D1E93B900A55C5B /* GIMPCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B156E20A2C00D0005B688F /* GIMPCore.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		39218F981D1E93B900A55C5B /* TIFF.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B156E90A2C00E0005B688F /* TIFF.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		39234D1C1D00004E00707484 /* crosspoint-multiply-cursor.png in Resources */ = {isa = PBXBuildFile; fileRef = 39234D1B1D00004E00707484 /* crosspoint-multiply-cursor.png */; };
 		3927F0061C4E102B004BDE34 /* PSDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 3927F0041C4E102B004BDE34 /* PSDocument.nib */; };
 		392D06CD1D6EBD7C003765FB /* rotate_flag_a.png in Resources */ = {isa = PBXBuildFile; fileRef = 392D06CB1D6EBD7C003765FB /* rotate_flag_a.png */; };
@@ -933,7 +933,6 @@
 		394FD7091D12A01500A59E8A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA831AA1C44A08C00FD253D /* OpenGL.framework */; };
 		394FD70A1D12A01500A59E8A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A924871BE31FC9003BF338 /* CoreText.framework */; };
 		394FD70C1D12A01500A59E8A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB56D3751BE53BBD001BFF73 /* Accelerate.framework */; };
-		394FD70D1D12A01500A59E8A /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7FD6691BD5F36600F454EE /* libstdc++.dylib */; };
 		394FD70E1D12A01500A59E8A /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB62BCF81BA7C7F70010BD1D /* GPUImage.framework */; };
 		394FD7101D12A01500A59E8A /* libComputeDistance.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB499D541BA27CC700F66C41 /* libComputeDistance.a */; };
 		394FD7111D12A01500A59E8A /* libiomp5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB49A81C1BA28AB800F66C41 /* libiomp5.dylib */; };
@@ -946,9 +945,8 @@
 		394FD7181D12A01500A59E8A /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CE25B003D7112D013D2EC9 /* ApplicationServices.framework */; };
 		394FD7191D12A01500A59E8A /* GIMPCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8EB480409C5AE58007B9A41 /* GIMPCore.framework */; };
 		394FD71A1D12A01500A59E8A /* TIFF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8EB480A09C5AE65007B9A41 /* TIFF.framework */; };
-		394FD71C1D12A01500A59E8A /* libpsgvector.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0087B42E1B79FFF70033CA57 /* libpsgvector.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		394FD71D1D12A01500A59E8A /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB62BCF81BA7C7F70010BD1D /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		394FD7221D12A01500A59E8A /* libiomp5.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB49A81C1BA28AB800F66C41 /* libiomp5.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		394FD71D1D12A01500A59E8A /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB62BCF81BA7C7F70010BD1D /* GPUImage.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		394FD7221D12A01500A59E8A /* libiomp5.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB49A81C1BA28AB800F66C41 /* libiomp5.dylib */; };
 		394FD7241D12A01500A59E8A /* AffineTile+.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A825EA660C38FE060017A3D1 /* AffineTile+.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		394FD7251D12A01500A59E8A /* AffineTransform+.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A8F67D700C45F7C000CE8770 /* AffineTransform+.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		394FD7261D12A01500A59E8A /* Bloom+.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A8B9AB8D0C131FFF0050D2A9 /* Bloom+.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -3234,6 +3232,7 @@
 		39FE7DCC1C2D1EAB002E5AE8 /* text_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 39FE7DCB1C2D1EAB002E5AE8 /* text_thumbnail.png */; };
 		56C8A64D1055A1DA0056E36F /* normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 56C8A64C1055A1DA0056E36F /* normal.png */; };
 		75046F332750B0DB008BEF99 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75046F2F2750B0DB008BEF99 /* libstdc++.6.0.9.dylib */; };
+		752D7F2127605B2000FC5299 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75046F2F2750B0DB008BEF99 /* libstdc++.6.0.9.dylib */; };
 		75710D1A1D898F0700A61C61 /* Rotate0.png in Resources */ = {isa = PBXBuildFile; fileRef = 75710D121D898F0700A61C61 /* Rotate0.png */; };
 		75710D1B1D898F0700A61C61 /* Rotate0.png in Resources */ = {isa = PBXBuildFile; fileRef = 75710D121D898F0700A61C61 /* Rotate0.png */; };
 		75710D1C1D898F0700A61C61 /* Rotate1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75710D131D898F0700A61C61 /* Rotate1.png */; };
@@ -3253,6 +3252,7 @@
 		7574A8A91C0DA1E20001CD9B /* ThressPointsAffine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7574A8A81C0DA1E20001CD9B /* ThressPointsAffine.m */; };
 		759E7D3F1C0C386400D7FFDD /* PSVecLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 759E7D3E1C0C386400D7FFDD /* PSVecLayer.m */; };
 		75B8CECA1BFFFD7F00C8D997 /* PSRenderSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B8CEC91BFFFD7F00C8D997 /* PSRenderSlice.m */; };
+		75CFC54D2761A216008EEBC2 /* libpsgvector.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0087B42E1B79FFF70033CA57 /* libpsgvector.dylib */; };
 		75D9CF101BFF02BD00DB34C6 /* PSSecureImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D9CF0F1BFF02BD00DB34C6 /* PSSecureImageData.m */; };
 		75DA64CD1BF9EBA70045D792 /* PSFontPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DA64CC1BF9EBA70045D792 /* PSFontPanel.m */; };
 		75DA64D21BF9EC430045D792 /* PSTextInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DA64D11BF9EC430045D792 /* PSTextInputView.m */; };
@@ -3490,12 +3490,10 @@
 		AB2513311EEA30CF00AA3F14 /* FilterGallery.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB25132E1EEA2F7700AA3F14 /* FilterGallery.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB26CB271CACBA8C007575E6 /* PSVectorEraserTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AB26CB261CACBA8C007575E6 /* PSVectorEraserTool.m */; };
 		AB26CB2B1CACBBAF007575E6 /* PSVectorEraserOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB26CB2A1CACBBAF007575E6 /* PSVectorEraserOptions.m */; };
-		AB2C4F2D1EE64211000CDC63 /* GraphicsMagickImporter.plugin in Resources */ = {isa = PBXBuildFile; fileRef = AB2C4F2B1EE64211000CDC63 /* GraphicsMagickImporter.plugin */; };
 		AB2C4F2E1EE64211000CDC63 /* GraphicsMagickImporter.plugin in Resources */ = {isa = PBXBuildFile; fileRef = AB2C4F2B1EE64211000CDC63 /* GraphicsMagickImporter.plugin */; };
 		AB2C4F2F1EE64211000CDC63 /* GraphicsMagickImporter.plugin in Resources */ = {isa = PBXBuildFile; fileRef = AB2C4F2B1EE64211000CDC63 /* GraphicsMagickImporter.plugin */; };
 		AB2C4F331EE6429C000CDC63 /* GraphicsMagickImporter.plugin in Copy Files */ = {isa = PBXBuildFile; fileRef = AB2C4F2B1EE64211000CDC63 /* GraphicsMagickImporter.plugin */; };
 		AB41230A1CDC479600E2D9D7 /* texture-none.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4123091CDC479600E2D9D7 /* texture-none.png */; };
-		AB430DC71EF0D37A009E436B /* GraphicsMagickExporter.plugin in Resources */ = {isa = PBXBuildFile; fileRef = AB430DC51EF0D37A009E436B /* GraphicsMagickExporter.plugin */; };
 		AB430DC81EF0D37A009E436B /* GraphicsMagickExporter.plugin in Resources */ = {isa = PBXBuildFile; fileRef = AB430DC51EF0D37A009E436B /* GraphicsMagickExporter.plugin */; };
 		AB430DC91EF0D37A009E436B /* GraphicsMagickExporter.plugin in Resources */ = {isa = PBXBuildFile; fileRef = AB430DC51EF0D37A009E436B /* GraphicsMagickExporter.plugin */; };
 		AB430DD11EF0D4BD009E436B /* GraphicsMagickExporter.plugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB430DC51EF0D37A009E436B /* GraphicsMagickExporter.plugin */; };
@@ -7916,9 +7914,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				75CFC54D2761A216008EEBC2 /* libpsgvector.dylib in CopyFiles */,
 				39218F971D1E93B900A55C5B /* GIMPCore.framework in CopyFiles */,
 				39218F981D1E93B900A55C5B /* TIFF.framework in CopyFiles */,
-				394FD71C1D12A01500A59E8A /* libpsgvector.dylib in CopyFiles */,
 				394FD71D1D12A01500A59E8A /* GPUImage.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -9732,7 +9730,7 @@
 				394FD7091D12A01500A59E8A /* OpenGL.framework in Frameworks */,
 				394FD70A1D12A01500A59E8A /* CoreText.framework in Frameworks */,
 				394FD70C1D12A01500A59E8A /* Accelerate.framework in Frameworks */,
-				394FD70D1D12A01500A59E8A /* libstdc++.dylib in Frameworks */,
+				752D7F2127605B2000FC5299 /* libstdc++.6.0.9.dylib in Frameworks */,
 				394FD70E1D12A01500A59E8A /* GPUImage.framework in Frameworks */,
 				394FD7101D12A01500A59E8A /* libComputeDistance.a in Frameworks */,
 				394FD7111D12A01500A59E8A /* libiomp5.dylib in Frameworks */,
@@ -12734,7 +12732,6 @@
 						};
 					};
 					A8EDF05C078959C80022BB31 = {
-						DevelopmentTeam = FWV6QAHT4A;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
@@ -13913,7 +13910,6 @@
 				394FD4B81D12A01500A59E8A /* tools-24-a.png in Resources */,
 				394FD7AD1D12A7CC00A59E8A /* ProPaint-Info.plist in Resources */,
 				394FD4B91D12A01500A59E8A /* lasso-subProduct-cursor.png in Resources */,
-				AB2C4F2D1EE64211000CDC63 /* GraphicsMagickImporter.plugin in Resources */,
 				394FD4BB1D12A01500A59E8A /* skew-uldr.png in Resources */,
 				394FD4BC1D12A01500A59E8A /* shape-4.png in Resources */,
 				394FD4BD1D12A01500A59E8A /* help-big.png in Resources */,
@@ -14195,7 +14191,6 @@
 				394FD5D31D12A01500A59E8A /* tools-6-a@2x.png in Resources */,
 				394FD5D41D12A01500A59E8A /* transform-rotate.png in Resources */,
 				394FD5D51D12A01500A59E8A /* tools-22-a.png in Resources */,
-				AB430DC71EF0D37A009E436B /* GraphicsMagickExporter.plugin in Resources */,
 				394FD5D61D12A01500A59E8A /* tools-6-a.png in Resources */,
 				394FD5D71D12A01500A59E8A /* none-tb.png in Resources */,
 				394FD5D81D12A01500A59E8A /* tools-0-h@2x.png in Resources */,
@@ -16452,7 +16447,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "install_name_tool -change /usr/local/lib/libiomp5.dylib @executable_path/libiomp5.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\"";
+			shellScript = "install_name_tool -change /usr/local/lib/libiomp5.dylib @executable_path/libiomp5.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\"\n";
 			showEnvVarsInLog = 0;
 		};
 		39C7873D1DAD301E00379B9B /* ShellScript */ = {
@@ -20024,9 +20019,12 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ProPaint/ProPaint.entitlements;
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: XiuXia Yang (VA2XE4K2T9)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = VA2XE4K2T9;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -20039,6 +20037,7 @@
 					MACOS_10_4_COMPILE,
 					USE_CENTERING_CLIPVIEW,
 					"APPSTORE_VERSION=1",
+					"PROPAINT_FREE=1",
 				);
 				GCC_VERSION = "";
 				GCC_VERSION_ppc = 4.0;
@@ -20056,17 +20055,18 @@
 					"$(PROJECT_DIR)/../Extralibs",
 					"$(PROJECT_DIR)/resources",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_CFLAGS = "";
-				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = "-lz";
 				PREBINDING = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.effectmatrix.propaintmac;
 				PRODUCT_NAME = ProPaint;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = NO;
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "i386 x86_64";
+				VALID_ARCHS = x86_64;
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wno-four-char-constants",
@@ -20083,8 +20083,11 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ProPaint/ProPaint.entitlements;
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: XiuXia Yang (VA2XE4K2T9)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = VA2XE4K2T9;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				GCC_AUTO_VECTORIZATION = YES;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
@@ -20096,6 +20099,7 @@
 					MACOS_10_4_COMPILE,
 					USE_CENTERING_CLIPVIEW,
 					"APPSTORE_VERSION=1",
+					"PROPAINT_FREE=1",
 				);
 				GCC_VERSION = "";
 				GCC_VERSION_ppc = 4.0;
@@ -20113,18 +20117,19 @@
 					"$(PROJECT_DIR)/../Extralibs",
 					"$(PROJECT_DIR)/resources",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_CFLAGS = "";
-				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = "-lz";
 				PREBINDING = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.effectmatrix.propaintmac;
 				PRODUCT_NAME = ProPaint;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = NO;
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "i386 x86_64";
+				VALID_ARCHS = x86_64;
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wno-four-char-constants",
@@ -20398,6 +20403,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = VA2XE4K2T9;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -20544,7 +20550,7 @@
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_ENTITLEMENTS = PixelStyle/PixelStyle.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;

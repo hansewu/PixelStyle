@@ -59,6 +59,7 @@
     
     [m_pToLabel setStringValue:NSLocalizedString(@"To :", nil)];
     [m_pSubjectLable setStringValue:NSLocalizedString(@"Subject :", nil)];
+    [m_pSubjectField setStringValue:NSLocalizedString(@"ProPaint Feedback", nil)];
     
     [m_pCancel setTitle:NSLocalizedString(@"Remind me later", nil)];
     [m_pSend setTitle:NSLocalizedString(@"Send", nil)];
@@ -175,8 +176,9 @@
 
 - (void)updateSubjectText
 {
-    NSString *fadeback = NSLocalizedString(@" Fadeback", nil);
+    NSString *fadeback = NSLocalizedString(@"Fadeback", nil);
     NSString *sProductName = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleNameKey];
+    sProductName = [sProductName stringByAppendingString:@" "];
     fadeback = [sProductName stringByAppendingString:fadeback];
     
     // Like this app
