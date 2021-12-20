@@ -3490,12 +3490,8 @@
 		AB2513311EEA30CF00AA3F14 /* FilterGallery.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB25132E1EEA2F7700AA3F14 /* FilterGallery.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB26CB271CACBA8C007575E6 /* PSVectorEraserTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AB26CB261CACBA8C007575E6 /* PSVectorEraserTool.m */; };
 		AB26CB2B1CACBBAF007575E6 /* PSVectorEraserOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB26CB2A1CACBBAF007575E6 /* PSVectorEraserOptions.m */; };
-		AB2C4F2E1EE64211000CDC63 /* GraphicsMagickImporter.plugin in Resources */ = {isa = PBXBuildFile; fileRef = AB2C4F2B1EE64211000CDC63 /* GraphicsMagickImporter.plugin */; };
-		AB2C4F2F1EE64211000CDC63 /* GraphicsMagickImporter.plugin in Resources */ = {isa = PBXBuildFile; fileRef = AB2C4F2B1EE64211000CDC63 /* GraphicsMagickImporter.plugin */; };
 		AB2C4F331EE6429C000CDC63 /* GraphicsMagickImporter.plugin in Copy Files */ = {isa = PBXBuildFile; fileRef = AB2C4F2B1EE64211000CDC63 /* GraphicsMagickImporter.plugin */; };
 		AB41230A1CDC479600E2D9D7 /* texture-none.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4123091CDC479600E2D9D7 /* texture-none.png */; };
-		AB430DC81EF0D37A009E436B /* GraphicsMagickExporter.plugin in Resources */ = {isa = PBXBuildFile; fileRef = AB430DC51EF0D37A009E436B /* GraphicsMagickExporter.plugin */; };
-		AB430DC91EF0D37A009E436B /* GraphicsMagickExporter.plugin in Resources */ = {isa = PBXBuildFile; fileRef = AB430DC51EF0D37A009E436B /* GraphicsMagickExporter.plugin */; };
 		AB430DD11EF0D4BD009E436B /* GraphicsMagickExporter.plugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB430DC51EF0D37A009E436B /* GraphicsMagickExporter.plugin */; };
 		AB49A81A1BA2852800F66C41 /* libComputeDistance.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB499D541BA27CC700F66C41 /* libComputeDistance.a */; };
 		AB49A81D1BA28AB800F66C41 /* libiomp5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB49A81C1BA28AB800F66C41 /* libiomp5.dylib */; };
@@ -4413,7 +4409,6 @@
 		AB62BCFB1BA7C86F0010BD1D /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB62BCF81BA7C7F70010BD1D /* GPUImage.framework */; };
 		AB66985F1CFECB100079A560 /* PSHelpInfoUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = AB66985E1CFECB100079A560 /* PSHelpInfoUtility.m */; };
 		AB6791511BEB2A9600B19A01 /* PSSelectionEventInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6791501BEB2A9600B19A01 /* PSSelectionEventInfo.m */; };
-		AB690CC11EEA405900DE3DA1 /* SeamCarving.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB2513391EEA322A00AA3F14 /* SeamCarving.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB690CC41EEA405F00DE3DA1 /* FilterGallery.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB25132E1EEA2F7700AA3F14 /* FilterGallery.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB72DC7C1BA00502002CFD19 /* GPUImageEffectFilter.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB72DC7B1BA00502002CFD19 /* GPUImageEffectFilter.mm */; };
 		AB7FD6651BD5CD9500F454EE /* PSMemoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7FD6641BD5CD9500F454EE /* PSMemoryManager.m */; };
@@ -8090,7 +8085,6 @@
 				396615571CCDFA450022F60E /* Random.bundle in CopyFiles */,
 				396615581CCDFA450022F60E /* Sepia.bundle in CopyFiles */,
 				396615591CCDFA450022F60E /* VertStripes.bundle in CopyFiles */,
-				AB690CC11EEA405900DE3DA1 /* SeamCarving.bundle in CopyFiles */,
 				AB690CC41EEA405F00DE3DA1 /* FilterGallery.bundle in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -14350,8 +14344,6 @@
 				39C7846B1DAD301E00379B9B /* zoom+-a.png in Resources */,
 				39C7846C1DAD301E00379B9B /* button-bg-a.png in Resources */,
 				39C7846D1DAD301E00379B9B /* eraser.png in Resources */,
-				AB2C4F2E1EE64211000CDC63 /* GraphicsMagickImporter.plugin in Resources */,
-				AB430DC81EF0D37A009E436B /* GraphicsMagickExporter.plugin in Resources */,
 				39C7846E1DAD301E00379B9B /* shape-5.png in Resources */,
 				39C7846F1DAD301E00379B9B /* mybrushes-group-3.png in Resources */,
 				39C784701DAD301E00379B9B /* tools-28-a.png in Resources */,
@@ -14897,8 +14889,6 @@
 				39C7889C1DAD302D00379B9B /* zoom+-a.png in Resources */,
 				39C7889D1DAD302D00379B9B /* button-bg-a.png in Resources */,
 				39C7889E1DAD302D00379B9B /* eraser.png in Resources */,
-				AB2C4F2F1EE64211000CDC63 /* GraphicsMagickImporter.plugin in Resources */,
-				AB430DC91EF0D37A009E436B /* GraphicsMagickExporter.plugin in Resources */,
 				39C7889F1DAD302D00379B9B /* shape-5.png in Resources */,
 				39C788A01DAD302D00379B9B /* mybrushes-group-3.png in Resources */,
 				39C788A11DAD302D00379B9B /* tools-28-a.png in Resources */,
@@ -20145,9 +20135,14 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ProPaint/ProPaint.entitlements;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 20211208;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = VA2XE4K2T9;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -20179,17 +20174,19 @@
 					"$(PROJECT_DIR)/../Extralibs",
 					"$(PROJECT_DIR)/resources",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 3.7.0;
 				OTHER_CFLAGS = "";
-				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = "-lz";
 				PREBINDING = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.effectmatrix.propaintmac;
 				PRODUCT_NAME = "Pro Paint for Mac";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = NO;
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "i386 x86_64";
+				VALID_ARCHS = x86_64;
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wno-four-char-constants",
@@ -20206,8 +20203,13 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ProPaint/ProPaint.entitlements;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20211208;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = VA2XE4K2T9;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				GCC_AUTO_VECTORIZATION = YES;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
@@ -20238,17 +20240,19 @@
 					"$(PROJECT_DIR)/../Extralibs",
 					"$(PROJECT_DIR)/resources",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 3.7.0;
 				OTHER_CFLAGS = "";
-				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = "-lz";
 				PREBINDING = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.effectmatrix.propaintmac;
 				PRODUCT_NAME = "Pro Paint for Mac";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = NO;
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "i386 x86_64";
+				VALID_ARCHS = x86_64;
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wno-four-char-constants",
@@ -20264,9 +20268,14 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ProPaint/ProPaint.entitlements;
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: XiuXia Yang (VA2XE4K2T9)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 20211208;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = VA2XE4K2T9;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -20298,17 +20307,19 @@
 					"$(PROJECT_DIR)/../Extralibs",
 					"$(PROJECT_DIR)/resources",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 3.7.0;
 				OTHER_CFLAGS = "";
-				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = "-lz";
 				PREBINDING = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.effectmatrix.propaintmac;
 				PRODUCT_NAME = "Pro Paint for Mac";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = NO;
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "i386 x86_64";
+				VALID_ARCHS = x86_64;
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wno-four-char-constants",
@@ -20325,8 +20336,13 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ProPaint/ProPaint.entitlements;
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: XiuXia Yang (VA2XE4K2T9)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20211208;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = VA2XE4K2T9;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				GCC_AUTO_VECTORIZATION = YES;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
@@ -20357,17 +20373,19 @@
 					"$(PROJECT_DIR)/../Extralibs",
 					"$(PROJECT_DIR)/resources",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 3.7.0;
 				OTHER_CFLAGS = "";
-				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = "-lz";
 				PREBINDING = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.effectmatrix.propaintmac;
 				PRODUCT_NAME = "Pro Paint for Mac";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = NO;
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "i386 x86_64";
+				VALID_ARCHS = x86_64;
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wno-four-char-constants",
@@ -20399,11 +20417,14 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_ENTITLEMENTS = PixelStyle/PixelStyle.entitlements;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = VA2XE4K2T9;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -20436,7 +20457,7 @@
 					"$(PROJECT_DIR)/resources",
 					"$(PROJECT_DIR)/source/GraphicsMagick/lib",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_CFLAGS = "";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = "-lz";
@@ -20444,6 +20465,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.effectmatrix.pixelstyle;
 				PRODUCT_NAME = PixelStyle;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "";
 				VALID_ARCHS = x86_64;
@@ -20465,9 +20487,12 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_ENTITLEMENTS = PixelStyle/PixelStyle.entitlements;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application: XiuXia Yang (VA2XE4K2T9)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = VA2XE4K2T9;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				GCC_AUTO_VECTORIZATION = YES;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
@@ -20499,7 +20524,7 @@
 					"$(PROJECT_DIR)/resources",
 					"$(PROJECT_DIR)/source/GraphicsMagick/lib",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_CFLAGS = "";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = "-lz";
@@ -20507,6 +20532,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.effectmatrix.pixelstyle;
 				PRODUCT_NAME = PixelStyle;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "";
 				VALID_ARCHS = x86_64;

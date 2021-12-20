@@ -22,7 +22,7 @@
 
 
 #ifdef PROPAINT_VERSION
-#define URL_BUY                     @"https://www.bluesnap.com/jsp/buynow.jsp?contractId=3319670"
+#define URL_BUY                     @"https://checkout.bluesnap.com/buynow/checkout?sku3319670=1&storeid=48664"
 #define URL_FORUM                   @"http://www.effectmatrix.com/forum/viewforum.php?f=54"
 #define URL_PRODUCT                 @"http://www.effectmatrix.com/mac-appstore/pro-paint-for-mac-tool.htm"
 #define URL_WEB_CONFIG_INFO         @"http://www.effectmatrix.com/PixelStyle/ProPaintAppServerConfig.xml"
@@ -49,7 +49,7 @@
 #define APPLE_ID                    1244649277
 #define REGISTER_PUBLIC_KEY         {0xc6,0x32,0xe8,0x14,0x59,0xd2,0x23,0xe7,0x6f,0x79,0x36,0x3b,0x4d,0xa3,0xc0,0xf7,0x86,0x5c,0xc6,0xbc,0x19,0x57,0x99,0xa1,0x5a,0x40,0xcc,0x3d}
 #else
-#define URL_BUY                     @"https://www.bluesnap.com/jsp/buynow.jsp?contractId=1695191"
+#define URL_BUY                     @"https://checkout.bluesnap.com/buynow/checkout?sku1695191=1&storeid=48664"
 #define URL_FORUM                   @"http://www.effectmatrix.com/forum/viewforum.php?f=5&sid=2724153edd90697789f99d4ea080bb84"
 #define URL_PRODUCT                 @"http://www.effectmatrix.com/mac-appstore/mac-photo-editor-pixelstyle.htm"
 #define URL_WEB_CONFIG_INFO         @"http://www.effectmatrix.com/PixelStyle/PixelStyleAppServerConfig.xml"

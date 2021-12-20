@@ -106,13 +106,13 @@ void Vector_SetupDefaults();
     
     [self performSelector:@selector(initRegisterVerify) withObject:nil afterDelay:0.5 inModes:[NSArray arrayWithObjects:NSModalPanelRunLoopMode, NSDefaultRunLoopMode, nil]];
     
-    [self performSelector:@selector(openHelpUrlDirectly) withObject:nil afterDelay:1.0];
+    //[self performSelector:@selector(openHelpUrlDirectly) withObject:nil afterDelay:1.0];
     
     [self performSelector:@selector(checkTrialDaysState) withObject:nil afterDelay:1.0];
     [self performSelectorInBackground:@selector(configClientInfo) withObject:nil];
     
 #ifdef PROPAINT_VERSION
-    [self performSelector:@selector(showHelpWindow) withObject:nil afterDelay:1.5 inModes:[NSArray arrayWithObjects:NSModalPanelRunLoopMode, NSDefaultRunLoopMode, nil]];
+   // [self performSelector:@selector(showHelpWindow) withObject:nil afterDelay:1.5 inModes:[NSArray arrayWithObjects:NSModalPanelRunLoopMode, NSDefaultRunLoopMode, nil]];
 #endif
     
 #endif
