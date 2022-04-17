@@ -32,6 +32,10 @@
 		0087B41D1B79954E0033CA57 /* VectorOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0087B41C1B79954D0033CA57 /* VectorOptions.m */; };
 		0087B4211B7995ED0033CA57 /* VectorTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0087B4201B7995ED0033CA57 /* VectorTool.m */; };
 		00F06C091B7AFBA800DC491F /* VecDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00F06C081B7AFBA800DC491F /* VecDefaults.plist */; };
+		181AF4C02805533F0054C4EA /* SeamCarving.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB2513391EEA322A00AA3F14 /* SeamCarving.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18A38CC4280907AE00FACD25 /* OCBilateral.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18A38C662809056B00FACD25 /* OCBilateral.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18D7E9492806498400A8FC3E /* libopencv_core.405.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18D7E9472806498300A8FC3E /* libopencv_core.405.dylib */; };
+		18D7E94A2806498400A8FC3E /* libopencv_imgproc.405.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18D7E9482806498300A8FC3E /* libopencv_imgproc.405.dylib */; };
 		2FAF307D19F8DF4A00AD7814 /* JP2Exporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF307C19F8DF4A00AD7814 /* JP2Exporter.m */; };
 		3901216F1C7D8A3F00A03ED2 /* ShapeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3901216E1C7D8A3F00A03ED2 /* ShapeTool.m */; };
 		39044E2B1FE8B28B003729F5 /* spc_icon_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = 39044E2A1FE8B27F003729F5 /* spc_icon_16x16.png */; };
@@ -4582,6 +4586,27 @@
 			remoteGlobalIDString = 00E3B1521B6A654000D29DFA;
 			remoteInfo = psgvector;
 		};
+		181AF4BE280553170054C4EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB2513331EEA322A00AA3F14 /* SeamCarving.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EA7D63B1D6418B2002DA368;
+			remoteInfo = SeamCarving;
+		};
+		18A38C652809056B00FACD25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18A38C602809056A00FACD25 /* OCBilateral.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
+			remoteInfo = OCBilateral;
+		};
+		18A38CBF2809078000FACD25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18A38C602809056A00FACD25 /* OCBilateral.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = OCBilateral;
+		};
 		35B156E10A2C00D0005B688F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 35B156DC0A2C00D0005B688F /* GIMPCore.xcodeproj */;
@@ -8361,6 +8386,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				18D7E9492806498400A8FC3E /* libopencv_core.405.dylib in CopyFiles */,
+				18D7E94A2806498400A8FC3E /* libopencv_imgproc.405.dylib in CopyFiles */,
 				AB4C972A1EC30FFA0059F605 /* libpsgvector.dylib in CopyFiles */,
 				AB4C972B1EC30FFA0059F605 /* GPUImage.framework in CopyFiles */,
 				AB4C972C1EC30FFA0059F605 /* GIMPCore.framework in CopyFiles */,
@@ -8384,6 +8411,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				18A38CC4280907AE00FACD25 /* OCBilateral.bundle in CopyFiles */,
+				181AF4C02805533F0054C4EA /* SeamCarving.bundle in CopyFiles */,
 				AB4C97321EC30FFA0059F605 /* AffineTile+.bundle in CopyFiles */,
 				AB4C97331EC30FFA0059F605 /* AffineTransform+.bundle in CopyFiles */,
 				AB4C97341EC30FFA0059F605 /* Bloom+.bundle in CopyFiles */,
@@ -8487,6 +8516,9 @@
 		0087B4291B79FFF70033CA57 /* psgvector.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = psgvector.xcodeproj; path = source/Inkpad/psgvector/psgvector.xcodeproj; sourceTree = "<group>"; };
 		00F06C081B7AFBA800DC491F /* VecDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = VecDefaults.plist; sourceTree = SOURCE_ROOT; };
 		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		18A38C602809056A00FACD25 /* OCBilateral.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OCBilateral.xcodeproj; path = "../Plug-ins/OCBilateral/OCBilateral.xcodeproj"; sourceTree = "<group>"; };
+		18D7E9472806498300A8FC3E /* libopencv_core.405.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.405.dylib; path = ../opencv/lib/libopencv_core.405.dylib; sourceTree = "<group>"; };
+		18D7E9482806498300A8FC3E /* libopencv_imgproc.405.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.405.dylib; path = ../opencv/lib/libopencv_imgproc.405.dylib; sourceTree = "<group>"; };
 		2A37F4ACFDCFA73011CA2CEA /* PSDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSDocument.m; sourceTree = "<group>"; };
 		2A37F4AEFDCFA73011CA2CEA /* PSDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSDocument.h; sourceTree = "<group>"; };
 		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -9879,6 +9911,14 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
+		18A38C612809056A00FACD25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18A38C662809056B00FACD25 /* OCBilateral.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		19C28FB0FE9D524F11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -9894,6 +9934,8 @@
 		2A37F4AAFDCFA73011CA2CEA /* Seashore */ = {
 			isa = PBXGroup;
 			children = (
+				18D7E9472806498300A8FC3E /* libopencv_core.405.dylib */,
+				18D7E9482806498300A8FC3E /* libopencv_imgproc.405.dylib */,
 				AB5C30A61EF2857E00ECA96B /* Plugin-Interface */,
 				AB2C4F2A1EE641EC000CDC63 /* Importer-Plugins */,
 				AB430DC41EF0D37A009E436B /* Exporter-Plugins */,
@@ -10145,6 +10187,7 @@
 		35B157F80A2C04F9005B688F /* Universal Plug-ins */ = {
 			isa = PBXGroup;
 			children = (
+				18A38C602809056A00FACD25 /* OCBilateral.xcodeproj */,
 				AB2513331EEA322A00AA3F14 /* SeamCarving.xcodeproj */,
 				AB2513291EEA2F7700AA3F14 /* FilterGallery.xcodeproj */,
 				AB5868151BBA60490013CA22 /* Curves.xcodeproj */,
@@ -12626,6 +12669,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				18A38CC02809078000FACD25 /* PBXTargetDependency */,
+				181AF4BF280553170054C4EA /* PBXTargetDependency */,
 				AB4C93531EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C93551EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C93571EC30FFA0059F605 /* PBXTargetDependency */,
@@ -13038,6 +13083,10 @@
 					ProjectRef = A83316C80C094D4400E1EBBE /* Median.xcodeproj */;
 				},
 				{
+					ProductGroup = 18A38C612809056A00FACD25 /* Products */;
+					ProjectRef = 18A38C602809056A00FACD25 /* OCBilateral.xcodeproj */;
+				},
+				{
 					ProductGroup = 35B1586C0A2C08A4005B688F /* Products */;
 					ProjectRef = 35B1586B0A2C08A4005B688F /* Pat2PNG.xcodeproj */;
 				},
@@ -13108,6 +13157,13 @@
 			fileType = archive.ar;
 			path = libpsgvector.dylib;
 			remoteRef = 0087B42D1B79FFF70033CA57 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18A38C662809056B00FACD25 /* OCBilateral.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OCBilateral.bundle;
+			remoteRef = 18A38C652809056B00FACD25 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		35B156E20A2C00D0005B688F /* GIMPCore.framework */ = {
@@ -17920,6 +17976,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		181AF4BF280553170054C4EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SeamCarving;
+			targetProxy = 181AF4BE280553170054C4EA /* PBXContainerItemProxy */;
+		};
+		18A38CC02809078000FACD25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OCBilateral;
+			targetProxy = 18A38CBF2809078000FACD25 /* PBXContainerItemProxy */;
+		};
 		35B157380A2C015A005B688F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GIMPCore;
@@ -20600,13 +20666,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"./source/Inkpad/Inkpad-Core/**",
-					"./source/Inkpad/Classes/**",
-					./source/EccRegisterBundle,
+					"$(PROJECT_DIR)/source/Inkpad/Inkpad-Core/**",
+					"$(PROJECT_DIR)/source/Inkpad/Classes/**",
+					"$(PROJECT_DIR)/source/EccRegisterBundle",
 				);
 				INFOPLIST_FILE = "PixelStyle copy-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path @loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../Extralibs",
@@ -20665,13 +20731,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"./source/Inkpad/Inkpad-Core/**",
-					"./source/Inkpad/Classes/**",
-					./source/EccRegisterBundle,
+					"$(PROJECT_DIR)/source/Inkpad/Inkpad-Core/**",
+					"$(PROJECT_DIR)/source/Inkpad/Classes/**",
+					"$(PROJECT_DIR)/source/EccRegisterBundle",
 				);
 				INFOPLIST_FILE = "PixelStyle copy-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path @loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../Extralibs",

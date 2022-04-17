@@ -11,7 +11,7 @@
 #import "PSVecLayer.h"
 
 #import "SVGLayer.h"
-#import "wdDrawingController.h"
+#import "WDDrawingController.h"
 #import "WDDrawing.h"
 #import "WDSVGParser.h"
 #import "WDLayer.h"

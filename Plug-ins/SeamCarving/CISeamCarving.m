@@ -68,7 +68,7 @@
 }
 
 -(NSString *)groupName{
-    return [[NSBundle bundleForClass:[self class]] localizedStringForKey:@"groupName" value:@"Stylize" table:NULL];
+    return [[NSBundle bundleForClass:[self class]] localizedStringForKey:@"groupName" value:@"AI" table:NULL];
 }
 
 -(int)type
@@ -275,7 +275,7 @@ static const int multiple = 2;
     return output.pData;
 }
 
--(unsigned char*)excuteAlgorithmThenReturnBuffer
+-(IMAGE_DATA)excuteAlgorithmThenReturnBuffer
 {
     PluginData* pPluginData = [(PSPlugins*)m_idSeaPlugins data];
     int nWidth = [pPluginData width];
@@ -309,12 +309,16 @@ static const int multiple = 2;
         
         resizeImageWithSeams(&pluginImageData, &applyOutputImageData, &m_expandHorizontalSeamData, &m_expandVerticalSeamData);
         
-        return applyOutputImageData.pData;
+        return applyOutputImageData;
     }
     else{
-        unsigned char * pAlloc = (unsigned char*)malloc(nWidth * nHeight *4);
-        memcpy(pAlloc, [pPluginData data], nWidth * nHeight * 4);
-        return pAlloc;
+        //unsigned char * pAlloc = (unsigned char*)malloc(nWidth * nHeight *4);
+        //memcpy(pAlloc, [pPluginData data], nWidth * nHeight * 4);
+        IMAGE_DATA data;
+        data.nWidth = nWidth;  data.nHeight = nHeight; data.nChannels = 4;
+        data.pData =  (unsigned char*)malloc(nWidth * nHeight *4);
+        memcpy(data.pData, [pPluginData data], nWidth * nHeight * 4);
+        return data;
     }
 }
 
@@ -550,18 +554,21 @@ static const float fMaxHeightForPreview  = 150;
 - (IBAction)apply:(id)sender{
     [m_indicatorCircularProgress startAnimation:nil];
     [m_labelNotice setHidden:NO];
-    [self performSelectorInBackground:@selector(applyImage) withObject:nil];
+ //   [self performSelectorInBackground:@selector(applyImage) withObject:nil];
+    [self applyImage];
 }
 
 -(void)applyImage
 {
     PluginData* pPluginData          = [(PSPlugins*)m_idSeaPlugins data];
-    unsigned char* pChangedMemory    = [self excuteAlgorithmThenReturnBuffer];
-    [self replaceMemory:pChangedMemory];
-    if(pChangedMemory != nil)
+    IMAGE_DATA pChangedMemory    = [self excuteAlgorithmThenReturnBuffer];
+    
+    [pPluginData applyWithNewDocumentData:pChangedMemory.pData  spp:pChangedMemory.nChannels width:pChangedMemory.nWidth height:pChangedMemory.nHeight];
+  //  [self replaceMemory:pChangedMemory];
+    if(pChangedMemory.pData != nil)
     {
-        free(pChangedMemory);
-        pChangedMemory                   = nil;
+        free(pChangedMemory.pData);
+        pChangedMemory.pData                   = nil;
     }
     if(m_horizontalSeamsData.pData != nil)
     {
@@ -587,9 +594,9 @@ static const float fMaxHeightForPreview  = 150;
 
     [self performSelectorOnMainThread:@selector(stopProgressIndicator) withObject:nil waitUntilDone:NO];
     
-    [pPluginData setOverlayOpacity:255];
+    /*[pPluginData setOverlayOpacity:255];
     [pPluginData setOverlayBehaviour:kReplacingBehaviour];
-    [pPluginData apply];
+    [pPluginData apply];*/
     [self closePanel];
 }
 

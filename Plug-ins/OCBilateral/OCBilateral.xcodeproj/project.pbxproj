@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18A38CCD280955EF00FACD25 /* libopencv_core.405.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A38CCB280955EF00FACD25 /* libopencv_core.405.dylib */; };
+		18A38CCE280955EF00FACD25 /* libopencv_imgproc.405.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A38CCC280955EF00FACD25 /* libopencv_imgproc.405.dylib */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		A8080AE30C07BF260026D06E /* OCBilaterClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = A8080AE20C07BF260026D06E /* OCBilaterClass.mm */; };
+		A8080AF10C07BF8D0026D06E /* OCBilateral.nib in Resources */ = {isa = PBXBuildFile; fileRef = A8080AEF0C07BF8D0026D06E /* OCBilateral.nib */; };
+		A831E1410789471D0009080F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A831E13F0789471D0009080F /* Localizable.strings */; };
+		A89CC2C409A9DF410072B19D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A89CC2C309A9DF410072B19D /* QuartzCore.framework */; };
+		A89CC46909A9E07A0072B19D /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A89CC46809A9E07A0072B19D /* ApplicationServices.framework */; };
+		A89DCE51078A300C005008F4 /* Rects.m in Sources */ = {isa = PBXBuildFile; fileRef = A89DCE50078A300C005008F4 /* Rects.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		18A38CCB280955EF00FACD25 /* libopencv_core.405.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.405.dylib; path = ../../opencv/lib/libopencv_core.405.dylib; sourceTree = "<group>"; };
+		18A38CCC280955EF00FACD25 /* libopencv_imgproc.405.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.405.dylib; path = ../../opencv/lib/libopencv_imgproc.405.dylib; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* OCBilateral.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCBilateral.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8080AE10C07BF260026D06E /* OCBilaterClass.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = OCBilaterClass.h; sourceTree = "<group>"; };
+		A8080AE20C07BF260026D06E /* OCBilaterClass.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = OCBilaterClass.mm; sourceTree = "<group>"; };
+		A8080AF00C07BF8D0026D06E /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/OCBilateral.nib; sourceTree = "<group>"; };
+		A831E1400789471D0009080F /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A84C96B8078965B900451E47 /* PSPlugins.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PSPlugins.h; path = ../Common/PSPlugins.h; sourceTree = "<group>"; };
+		A89CC2C309A9DF410072B19D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		A89CC46809A9E07A0072B19D /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		A89DCE2A078A2FCB005008F4 /* Rects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rects.h; path = ../Common/Rects.h; sourceTree = "<group>"; };
+		A89DCE50078A300C005008F4 /* Rects.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = Rects.m; path = ../Common/Rects.m; sourceTree = "<group>"; };
+		A8CA5C4307937C9E004BE921 /* PluginData.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PluginData.h; path = ../Common/PluginData.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A38CCD280955EF00FACD25 /* libopencv_core.405.dylib in Frameworks */,
+				18A38CCE280955EF00FACD25 /* libopencv_imgproc.405.dylib in Frameworks */,
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+				A89CC2C409A9DF410072B19D /* QuartzCore.framework in Frameworks */,
+				A89CC46909A9E07A0072B19D /* ApplicationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* CICrystallize */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+				18A38CCA280955EF00FACD25 /* Frameworks */,
+			);
+			name = CICrystallize;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8080AEF0C07BF8D0026D06E /* OCBilateral.nib */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				A831E13F0789471D0009080F /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A89DCE2A078A2FCB005008F4 /* Rects.h */,
+				A89DCE50078A300C005008F4 /* Rects.m */,
+				A8CA5C4307937C9E004BE921 /* PluginData.h */,
+				A84C96B8078965B900451E47 /* PSPlugins.h */,
+				A8080AE10C07BF260026D06E /* OCBilaterClass.h */,
+				A8080AE20C07BF260026D06E /* OCBilaterClass.mm */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A89CC46809A9E07A0072B19D /* ApplicationServices.framework */,
+				A89CC2C309A9DF410072B19D /* QuartzCore.framework */,
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		18A38CCA280955EF00FACD25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18A38CCB280955EF00FACD25 /* libopencv_core.405.dylib */,
+				18A38CCC280955EF00FACD25 /* libopencv_imgproc.405.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* OCBilateral.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* OCBilateral */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8F2BD590BCD1EE6001DB353 /* Build configuration list for PBXNativeTarget "OCBilateral" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCBilateral;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = CICrystallize;
+			productReference = 8D5B49B6048680CD000E48DA /* OCBilateral.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = A8F2BD5D0BCD1EE6001DB353 /* Build configuration list for PBXProject "OCBilateral" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* CICrystallize */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* OCBilateral */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A831E1410789471D0009080F /* Localizable.strings in Resources */,
+				A8080AF10C07BF8D0026D06E /* OCBilateral.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A89DCE51078A300C005008F4 /* Rects.m in Sources */,
+				A8080AE30C07BF260026D06E /* OCBilaterClass.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A8080AEF0C07BF8D0026D06E /* OCBilateral.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8080AF00C07BF8D0026D06E /* English */,
+			);
+			name = OCBilateral.nib;
+			sourceTree = "<group>";
+		};
+		A831E13F0789471D0009080F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A831E1400789471D0009080F /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8F2BD5A0BCD1EE6001DB353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks\"";
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = "";
+				GCC_VERSION_ppc = 4.0;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../opencv/include";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../../opencv/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "-DDEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = net.photoart.ocbilateral;
+				PRODUCT_NAME = OCBilateral;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		A8F2BD5B0BCD1EE6001DB353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks\"";
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_VERSION = "";
+				GCC_VERSION_ppc = 4.0;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../opencv/include";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../../opencv/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = net.photoart.ocbilateral;
+				PRODUCT_NAME = OCBilateral;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		A8F2BD5E0BCD1EE6001DB353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A8F2BD5F0BCD1EE6001DB353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8F2BD590BCD1EE6001DB353 /* Build configuration list for PBXNativeTarget "OCBilateral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8F2BD5A0BCD1EE6001DB353 /* Debug */,
+				A8F2BD5B0BCD1EE6001DB353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8F2BD5D0BCD1EE6001DB353 /* Build configuration list for PBXProject "OCBilateral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8F2BD5E0BCD1EE6001DB353 /* Debug */,
+				A8F2BD5F0BCD1EE6001DB353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

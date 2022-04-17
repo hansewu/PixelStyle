@@ -5,12 +5,14 @@
 #include <fstream>
 #include <cstring>
 
+
 using namespace cv;
 using namespace std;
 
-bool g_stopSeamCarving;
+static bool g_stopSeamCarving;
 
-int get(Mat I, int x, int y){
+inline int get(Mat I, int x, int y)
+{
     return (int)I.at<uchar>(y,x);
 }
 
@@ -47,12 +49,12 @@ Mat calculate_energy(Mat I){
     return energy;
 }
 
-#define MAXR 1000
-#define MAXC 1000
-
-Mat gray,energy;
-int dpH[MAXR][MAXC],dpV[MAXR][MAXC];
-int dirH[MAXR][MAXC],dirV[MAXR][MAXC];
+//#define MAXR 1000
+//#define MAXC 1000
+//
+////Mat gray,energy;
+//int dpH[MAXR][MAXC],dpV[MAXR][MAXC];
+//int dirH[MAXR][MAXC],dirV[MAXR][MAXC];
 
 /*
 void reduce(Mat &I, int YF, int XF, bool forward=false){
@@ -276,44 +278,55 @@ void reduce(Mat &I, int YF, int XF, bool forward=false){
 }
 */
 
-void remove_horizontal(Mat &Image, int nOutPutHeight, Mat &horizontalSeam){
+void remove_horizontal(Mat &Image, int nOutPutHeight, Mat &horizontalSeam)
+{
     int nRows = Image.rows;
     int nOutRows = nRows,nCols = Image.cols;
     
-    bool mark[nOutRows][nCols];
-    int pos[nCols][nOutRows];
+    vector<vector<int>> dpH(nCols, vector<int>(nOutRows));
+    vector<vector<int>> dirH(nCols, vector<int>(nOutRows));
+    //bool mark[nOutRows][nCols];
+    vector<vector<bool>> mark(nOutRows, vector<bool>(nCols, false));
+    //memset(mark,false,sizeof mark);
     
-    memset(mark,false,sizeof mark);
-    
+    //int pos[nCols][nOutRows];
+    vector<vector<int>> pos(nCols, vector<int>(nOutRows));
+        
     for(int i = 0;i < nCols;++i)
         for(int j = 0;j < nOutRows;++j)
             pos[i][j] = j;
 
     
-    for(int it = 0;it < nRows - nOutPutHeight && (!g_stopSeamCarving);++it){
+    for(int it = 0;it < nRows - nOutPutHeight && (!g_stopSeamCarving);++it)
+    {
         Mat gray = Mat(Image.rows, Image.cols, CV_8UC1);
-        cvtColor(Image,gray,CV_BGRA2GRAY);
-        energy = calculate_energy(gray);
+        cvtColor(Image,gray,cv::COLOR_BGRA2GRAY);
+        Mat energy = calculate_energy(gray);
 
         for(int y = 0;y < nOutRows;++y)
             dpH[0][y] = energy.at<int>(y,0);
 
-        for(int x = 1;x < nCols;++x){
-            for(int y = 0;y < nOutRows;++y){
+        for(int x = 1;x < nCols;++x)
+        {
+            for(int y = 0;y < nOutRows;++y)
+            {
                 unsigned int val = energy.at<int>(y,x);
                 dpH[x][y] = -1;
 
-                if(y > 0 && (dpH[x][y] == -1 || val + dpH[x - 1][y - 1] < dpH[x][y])){
+                if(y > 0 && (dpH[x][y] == -1 || val + dpH[x - 1][y - 1] < dpH[x][y]))
+                {
                     dpH[x][y] = val + dpH[x - 1][y - 1];
                     dirH[x][y] = -1;
                 }
 
-                if(dpH[x][y] == -1 || val + dpH[x - 1][y] < dpH[x][y]){
+                if(dpH[x][y] == -1 || val + dpH[x - 1][y] < dpH[x][y])
+                {
                     dpH[x][y] = val + dpH[x - 1][y];
                     dirH[x][y] = 0;
                 }
 
-                if(y + 1 < nOutRows && (dpH[x][y] == -1 || val + dpH[x - 1][y + 1] < dpH[x][y])){
+                if(y + 1 < nOutRows && (dpH[x][y] == -1 || val + dpH[x - 1][y + 1] < dpH[x][y]))
+                {
                     dpH[x][y] = val + dpH[x - 1][y + 1];
                     dirH[x][y] = 1;
                 }
@@ -342,11 +355,14 @@ void remove_horizontal(Mat &Image, int nOutPutHeight, Mat &horizontalSeam){
                 if(i < cury)
                 {
                     tmp.at<Vec4b>(i,x) = Image.at<Vec4b>(i,x);
-                }else if(i > cury){
+                }
+                else if(i > cury)
+                {
                     tmp.at<Vec4b>(i - 1,x) = Image.at<Vec4b>(i,x);
                     pos[x][i - 1] = pos[x][i];
                 }
-                else{
+                else
+                {
                     mark[ pos[x][i] ][x] = true;
                 }
             }
@@ -376,10 +392,15 @@ void remove_vertical(Mat &Image, int nOutputWidth, Mat &verticalSeam){
     int nCols = Image.cols;
     int nOutCols = nCols,nRows = Image.rows;
 
-    bool mark[nRows][nOutCols];
-    int pos[nOutCols][nRows];
+    vector<vector<int>> dpV(nCols, vector<int>(nRows));
+    vector<vector<int>> dirV(nCols, vector<int>(nRows));
     
-    memset(mark,false,sizeof mark);
+//    bool mark[nRows][nOutCols];
+//    int pos[nOutCols][nRows];
+//
+//    memset(mark,false,sizeof mark);
+    vector<vector<bool>> mark(nRows, vector<bool>(nOutCols, false));
+    vector<vector<int>> pos(nOutCols, vector<int>(nRows));
     
     for(int i = 0;i < nOutCols;++i)
         for(int j = 0;j < nRows;++j)
@@ -387,8 +408,8 @@ void remove_vertical(Mat &Image, int nOutputWidth, Mat &verticalSeam){
     
     for(int it = 0;it < nCols - nOutputWidth && (!g_stopSeamCarving);++it){
          Mat gray = Mat(Image.rows, Image.cols, CV_8UC1);
-        cvtColor(Image,gray,CV_BGRA2GRAY);
-        energy = calculate_energy(gray);
+        cvtColor(Image,gray,COLOR_BGRA2GRAY);
+        Mat energy = calculate_energy(gray);
 
         for(int x = 0;x < nOutCols;++x)
             dpV[x][0] = energy.at<int>(0,x);
@@ -474,10 +495,17 @@ void add_horizontal(Mat &Image, int nOutputHeight, Mat &horizontalSeam){
     Mat I0 = Image;
     int Y0 = Image.rows;
     int Y = Y0,X = Image.cols;
-    bool mark[Y][X];
-    int pos[X][Y];
+    
+    vector<vector<int>> dpH(Image.cols, vector<int>(nOutputHeight));
+    vector<vector<int>> dirH(Image.cols, vector<int>(nOutputHeight));
 
-    memset(mark,false,sizeof mark);
+    vector<vector<bool>> mark(nOutputHeight, vector<bool>(Image.cols, false));
+    vector<vector<int>> pos(Image.cols, vector<int>(nOutputHeight));
+ 
+//    bool mark[Y][X];
+//    int pos[X][Y];
+//
+//    memset(mark,false,sizeof mark);
 
     for(int i = 0;i < X;++i)
         for(int j = 0;j < Y;++j)
@@ -487,8 +515,8 @@ void add_horizontal(Mat &Image, int nOutputHeight, Mat &horizontalSeam){
         
         if(Image.rows <= 0) break;
         Mat gray = Mat(Image.rows, Image.cols, CV_8UC1);
-        cvtColor(Image,gray,CV_BGRA2GRAY);
-        energy = calculate_energy(gray);
+        cvtColor(Image,gray, COLOR_BGRA2GRAY);
+        Mat energy = calculate_energy(gray);
 
         for(int y = 0;y < Y;++y)
             dpH[0][y] = energy.at<int>(y,0);
@@ -581,10 +609,17 @@ void add_vertical(Mat &inputImage, int nOutputWidth, Mat &verticalSeam){
     Mat inputImageCopy = inputImage;
     int nInputImageCols = inputImage.cols;
     int nCols = nInputImageCols,nRows = inputImage.rows;
-    bool mark[nRows][nCols];
-    int pos[nCols][nRows];
+    
+    vector<vector<int>> dpV(nOutputWidth, vector<int>(inputImage.rows));
+    vector<vector<int>> dirV(nOutputWidth, vector<int>(inputImage.rows));
 
-    memset(mark,false,sizeof mark);
+    vector<vector<bool>> mark(inputImage.rows, vector<bool>(nOutputWidth, false));
+    vector<vector<int>> pos(nOutputWidth, vector<int>(inputImage.rows));
+    
+//    bool mark[nRows][nCols];
+//    int pos[nCols][nRows];
+//
+//    memset(mark,false,sizeof mark);
 
     for(int i = 0;i < nCols;++i)
         for(int j = 0;j < nRows;++j)
@@ -596,8 +631,8 @@ void add_vertical(Mat &inputImage, int nOutputWidth, Mat &verticalSeam){
         
 //        printf("it = %d\n", it);
         Mat gray = Mat(inputImage.rows, inputImage.cols, CV_8UC1);
-        cvtColor(inputImage,gray,CV_BGRA2GRAY);
-        energy = calculate_energy(gray);
+        cvtColor(inputImage,gray,COLOR_BGRA2GRAY);
+        Mat energy = calculate_energy(gray);
 
         for(int x = 0;x < nCols;++x)
             dpV[x][0] = energy.at<int>(0,x);
@@ -1097,7 +1132,7 @@ int resizeImage(IMAGE_DATA *pInputData, IMAGE_DATA *pOutputData, int nInterpolat
     }
     
     Mat imageOut;
-    resize(image, imageOut, cvSize(nOutputWidth, nOutputHeight), 0, 0,nInterpolation);
+    resize(image, imageOut, Size(nOutputWidth, nOutputHeight), 0, 0,nInterpolation);
     
     memcpy(pOutputData->pData, imageOut.data, nOutputWidth * nOutputHeight*nChannels);
     

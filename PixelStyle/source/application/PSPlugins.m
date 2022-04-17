@@ -418,6 +418,7 @@ BOOL checkRun(NSString *path, NSString *file)
 		return NO;
 	
 	// Never if we are told not to
+    // crashed often here wzq
 	if ([menuItem tag] >= 10000 && [menuItem tag] < 17500) {
 		if (![[m_arrPlugins objectAtIndex:[menuItem tag] - 10000] validateMenuItem:menuItem])
 			return NO;

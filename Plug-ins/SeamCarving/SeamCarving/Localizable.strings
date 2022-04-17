@@ -9,7 +9,7 @@
 <key>description</key>
 <string>Applies a SeamCarving to the selection.</string>
 <key>groupName</key>
-<string>Stylize</string>
+<string>AI</string>
 <key>license</key>
 <string>Public Domain</string>
 <key>name</key>
