@@ -307,6 +307,7 @@ static const int multiple = 2;
         m_expandVerticalSeamData.pData         = (unsigned char*)malloc(m_expandVerticalSeamData.nHeight * m_expandVerticalSeamData.nWidth * m_expandVerticalSeamData.nChannels);
         resizeImage(&m_verticalSeamsData, &m_expandVerticalSeamData, 0);
         
+        //seamcarveImage(&pluginImageData, &applyOutputImageData, NULL, NULL);
         resizeImageWithSeams(&pluginImageData, &applyOutputImageData, &m_expandHorizontalSeamData, &m_expandVerticalSeamData);
         
         return applyOutputImageData;
@@ -322,8 +323,8 @@ static const int multiple = 2;
     }
 }
 
-static const float fMaxWidthForPreview   = 200;
-static const float fMaxHeightForPreview  = 150;
+static const float fMaxWidthForPreview   = 400;
+static const float fMaxHeightForPreview  = 300;
 
 -(int)resizeImageWithWidth:(int*)pWidth andHeight:(int*)pHeight
 {

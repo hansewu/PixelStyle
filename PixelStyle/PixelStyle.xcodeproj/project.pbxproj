@@ -1007,22 +1007,10 @@
 		394FD7591D12A01500A59E8A /* WhitePointAdjust+.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A8EC3F260BDB56DE00EF2B55 /* WhitePointAdjust+.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		394FD75A1D12A01500A59E8A /* ZoomBlur+.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A874156E0C0E6D930043AD86 /* ZoomBlur+.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		394FD75B1D12A01500A59E8A /* Curves.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB58681A1BBA604A0013CA22 /* Curves.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		394FD75C1D12A01500A59E8A /* Sharpen.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1570E0A2C0116005B688F /* Sharpen.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		394FD75D1D12A01500A59E8A /* Threshold.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B157120A2C0116005B688F /* Threshold.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		394FD75E1D12A01500A59E8A /* Brightness.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1571E0A2C0116005B688F /* Brightness.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		394FD75F1D12A01500A59E8A /* Checkerboard.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A83DE58C0C451B37000FEEA8 /* Checkerboard.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		394FD7601D12A01500A59E8A /* CMYK.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B157260A2C0116005B688F /* CMYK.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		394FD7611D12A01500A59E8A /* Gaussian.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1572A0A2C0116005B688F /* Gaussian.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		394FD7621D12A01500A59E8A /* Greyscale.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B157360A2C0117005B688F /* Greyscale.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		394FD7631D12A01500A59E8A /* HorizStripes.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A83DE63E0C4523AE000FEEA8 /* HorizStripes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		394FD7641D12A01500A59E8A /* HSV.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1571A0A2C0116005B688F /* HSV.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		394FD7651D12A01500A59E8A /* Invert.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1572E0A2C0117005B688F /* Invert.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		394FD7661D12A01500A59E8A /* Median.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A83316CD0C094D4400E1EBBE /* Median.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		394FD7671D12A01500A59E8A /* Pixellate.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A8956C4D0C2E569D006069EE /* Pixellate.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		394FD7681D12A01500A59E8A /* Posterize.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B157220A2C0116005B688F /* Posterize.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		394FD7691D12A01500A59E8A /* Random.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A861D4810BF2C2840015E71C /* Random.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		394FD76A1D12A01500A59E8A /* Sepia.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A8753A840C1FBE5E00EBA9B2 /* Sepia.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		394FD76B1D12A01500A59E8A /* VertStripes.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A83DE5F10C45207E000FEEA8 /* VertStripes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		394FD7AD1D12A7CC00A59E8A /* ProPaint-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 394FD7AB1D12A7CC00A59E8A /* ProPaint-Info.plist */; };
 		394FD7AE1D12A7CC00A59E8A /* ProPaint.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 394FD7AC1D12A7CC00A59E8A /* ProPaint.entitlements */; };
 		394FD7B01D12A85300A59E8A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39EBF0B11C255B2700157116 /* Images.xcassets */; };
@@ -1108,22 +1096,10 @@
 		396615471CCDFA450022F60E /* WhitePointAdjust+.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A8EC3F260BDB56DE00EF2B55 /* WhitePointAdjust+.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		396615481CCDFA450022F60E /* ZoomBlur+.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A874156E0C0E6D930043AD86 /* ZoomBlur+.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		396615491CCDFA450022F60E /* Curves.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB58681A1BBA604A0013CA22 /* Curves.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3966154A1CCDFA450022F60E /* Sharpen.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1570E0A2C0116005B688F /* Sharpen.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3966154B1CCDFA450022F60E /* Threshold.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B157120A2C0116005B688F /* Threshold.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3966154C1CCDFA450022F60E /* Brightness.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1571E0A2C0116005B688F /* Brightness.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3966154D1CCDFA450022F60E /* Checkerboard.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A83DE58C0C451B37000FEEA8 /* Checkerboard.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3966154E1CCDFA450022F60E /* CMYK.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B157260A2C0116005B688F /* CMYK.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3966154F1CCDFA450022F60E /* Gaussian.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1572A0A2C0116005B688F /* Gaussian.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		396615501CCDFA450022F60E /* Greyscale.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B157360A2C0117005B688F /* Greyscale.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		396615511CCDFA450022F60E /* HorizStripes.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A83DE63E0C4523AE000FEEA8 /* HorizStripes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		396615521CCDFA450022F60E /* HSV.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1571A0A2C0116005B688F /* HSV.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		396615531CCDFA450022F60E /* Invert.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1572E0A2C0117005B688F /* Invert.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		396615541CCDFA450022F60E /* Median.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A83316CD0C094D4400E1EBBE /* Median.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		396615551CCDFA450022F60E /* Pixellate.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A8956C4D0C2E569D006069EE /* Pixellate.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		396615561CCDFA450022F60E /* Posterize.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B157220A2C0116005B688F /* Posterize.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		396615571CCDFA450022F60E /* Random.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A861D4810BF2C2840015E71C /* Random.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		396615581CCDFA450022F60E /* Sepia.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A8753A840C1FBE5E00EBA9B2 /* Sepia.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		396615591CCDFA450022F60E /* VertStripes.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A83DE5F10C45207E000FEEA8 /* VertStripes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		396785C11B85A8E4003B3D49 /* GraphicsToBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 396785C01B85A8E4003B3D49 /* GraphicsToBuffer.m */; };
 		396E9EB01D3DC82F00098FA3 /* iRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 396E9EAD1D3DC82F00098FA3 /* iRate.bundle */; };
 		396E9EB11D3DC82F00098FA3 /* iRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 396E9EAD1D3DC82F00098FA3 /* iRate.bundle */; };
@@ -2120,22 +2096,10 @@
 		39C787761DAD301E00379B9B /* WhitePointAdjust+.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A8EC3F260BDB56DE00EF2B55 /* WhitePointAdjust+.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		39C787771DAD301E00379B9B /* ZoomBlur+.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A874156E0C0E6D930043AD86 /* ZoomBlur+.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		39C787781DAD301E00379B9B /* Curves.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB58681A1BBA604A0013CA22 /* Curves.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C787791DAD301E00379B9B /* Sharpen.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1570E0A2C0116005B688F /* Sharpen.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		39C7877A1DAD301E00379B9B /* Threshold.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B157120A2C0116005B688F /* Threshold.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C7877B1DAD301E00379B9B /* Brightness.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1571E0A2C0116005B688F /* Brightness.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C7877C1DAD301E00379B9B /* Checkerboard.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A83DE58C0C451B37000FEEA8 /* Checkerboard.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		39C7877D1DAD301E00379B9B /* CMYK.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B157260A2C0116005B688F /* CMYK.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C7877E1DAD301E00379B9B /* Gaussian.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1572A0A2C0116005B688F /* Gaussian.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		39C7877F1DAD301E00379B9B /* Greyscale.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B157360A2C0117005B688F /* Greyscale.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C787801DAD301E00379B9B /* HorizStripes.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A83DE63E0C4523AE000FEEA8 /* HorizStripes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		39C787811DAD301E00379B9B /* HSV.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1571A0A2C0116005B688F /* HSV.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C787821DAD301E00379B9B /* Invert.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1572E0A2C0117005B688F /* Invert.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C787831DAD301E00379B9B /* Median.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A83316CD0C094D4400E1EBBE /* Median.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C787841DAD301E00379B9B /* Pixellate.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A8956C4D0C2E569D006069EE /* Pixellate.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C787851DAD301E00379B9B /* Posterize.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B157220A2C0116005B688F /* Posterize.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C787861DAD301E00379B9B /* Random.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A861D4810BF2C2840015E71C /* Random.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C787871DAD301E00379B9B /* Sepia.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A8753A840C1FBE5E00EBA9B2 /* Sepia.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C787881DAD301E00379B9B /* VertStripes.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A83DE5F10C45207E000FEEA8 /* VertStripes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		39C7882D1DAD302D00379B9B /* anchor-add-cursor.png in Resources */ = {isa = PBXBuildFile; fileRef = AB001B5D1CBB316F00E44163 /* anchor-add-cursor.png */; };
 		39C7882E1DAD302D00379B9B /* Rotate2.png in Resources */ = {isa = PBXBuildFile; fileRef = 75710D141D898F0700A61C61 /* Rotate2.png */; };
 		39C7882F1DAD302D00379B9B /* tools-14-h.png in Resources */ = {isa = PBXBuildFile; fileRef = 393524441CD1AD9D0082F717 /* tools-14-h.png */; };
@@ -3016,22 +2980,10 @@
 		39C78BA71DAD302D00379B9B /* WhitePointAdjust+.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A8EC3F260BDB56DE00EF2B55 /* WhitePointAdjust+.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		39C78BA81DAD302D00379B9B /* ZoomBlur+.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A874156E0C0E6D930043AD86 /* ZoomBlur+.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		39C78BA91DAD302D00379B9B /* Curves.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB58681A1BBA604A0013CA22 /* Curves.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C78BAA1DAD302D00379B9B /* Sharpen.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1570E0A2C0116005B688F /* Sharpen.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		39C78BAB1DAD302D00379B9B /* Threshold.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B157120A2C0116005B688F /* Threshold.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C78BAC1DAD302D00379B9B /* Brightness.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1571E0A2C0116005B688F /* Brightness.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C78BAD1DAD302D00379B9B /* Checkerboard.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A83DE58C0C451B37000FEEA8 /* Checkerboard.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C78BAE1DAD302D00379B9B /* CMYK.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B157260A2C0116005B688F /* CMYK.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		39C78BAF1DAD302D00379B9B /* Gaussian.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1572A0A2C0116005B688F /* Gaussian.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		39C78BB01DAD302D00379B9B /* Greyscale.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B157360A2C0117005B688F /* Greyscale.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C78BB11DAD302D00379B9B /* HorizStripes.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A83DE63E0C4523AE000FEEA8 /* HorizStripes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		39C78BB21DAD302D00379B9B /* HSV.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1571A0A2C0116005B688F /* HSV.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C78BB31DAD302D00379B9B /* Invert.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1572E0A2C0117005B688F /* Invert.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C78BB41DAD302D00379B9B /* Median.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A83316CD0C094D4400E1EBBE /* Median.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C78BB51DAD302D00379B9B /* Pixellate.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A8956C4D0C2E569D006069EE /* Pixellate.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C78BB61DAD302D00379B9B /* Posterize.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B157220A2C0116005B688F /* Posterize.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C78BB71DAD302D00379B9B /* Random.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A861D4810BF2C2840015E71C /* Random.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C78BB81DAD302D00379B9B /* Sepia.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A8753A840C1FBE5E00EBA9B2 /* Sepia.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		39C78BB91DAD302D00379B9B /* VertStripes.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A83DE5F10C45207E000FEEA8 /* VertStripes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		39C78BC91DAD3BE600379B9B /* EccRegisterBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 39C78BC51DAD3BE600379B9B /* EccRegisterBundle.bundle */; };
 		39C78BCA1DAD3BE600379B9B /* EccRegisterBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 39C78BC51DAD3BE600379B9B /* EccRegisterBundle.bundle */; };
 		39C78BCB1DAD3BE600379B9B /* EccRegisterBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 39C78BC51DAD3BE600379B9B /* EccRegisterBundle.bundle */; };
@@ -4381,22 +4333,10 @@
 		AB4C97671EC30FFA0059F605 /* WhitePointAdjust+.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A8EC3F260BDB56DE00EF2B55 /* WhitePointAdjust+.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB4C97681EC30FFA0059F605 /* ZoomBlur+.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A874156E0C0E6D930043AD86 /* ZoomBlur+.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB4C97691EC30FFA0059F605 /* Curves.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB58681A1BBA604A0013CA22 /* Curves.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AB4C976A1EC30FFA0059F605 /* Sharpen.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1570E0A2C0116005B688F /* Sharpen.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB4C976B1EC30FFA0059F605 /* Threshold.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B157120A2C0116005B688F /* Threshold.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AB4C976C1EC30FFA0059F605 /* Brightness.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1571E0A2C0116005B688F /* Brightness.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AB4C976D1EC30FFA0059F605 /* Checkerboard.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A83DE58C0C451B37000FEEA8 /* Checkerboard.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB4C976E1EC30FFA0059F605 /* CMYK.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B157260A2C0116005B688F /* CMYK.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AB4C976F1EC30FFA0059F605 /* Gaussian.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1572A0A2C0116005B688F /* Gaussian.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB4C97701EC30FFA0059F605 /* Greyscale.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B157360A2C0117005B688F /* Greyscale.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AB4C97711EC30FFA0059F605 /* HorizStripes.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A83DE63E0C4523AE000FEEA8 /* HorizStripes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB4C97721EC30FFA0059F605 /* HSV.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1571A0A2C0116005B688F /* HSV.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AB4C97731EC30FFA0059F605 /* Invert.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B1572E0A2C0117005B688F /* Invert.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AB4C97741EC30FFA0059F605 /* Median.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A83316CD0C094D4400E1EBBE /* Median.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AB4C97751EC30FFA0059F605 /* Pixellate.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A8956C4D0C2E569D006069EE /* Pixellate.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AB4C97761EC30FFA0059F605 /* Posterize.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B157220A2C0116005B688F /* Posterize.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AB4C97771EC30FFA0059F605 /* Random.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A861D4810BF2C2840015E71C /* Random.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AB4C97781EC30FFA0059F605 /* Sepia.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A8753A840C1FBE5E00EBA9B2 /* Sepia.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AB4C97791EC30FFA0059F605 /* VertStripes.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A83DE5F10C45207E000FEEA8 /* VertStripes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB56D3761BE53BBD001BFF73 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB56D3751BE53BBD001BFF73 /* Accelerate.framework */; };
 		AB5A0E391BAC0A9D009C4388 /* libiomp5.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB49A81C1BA28AB800F66C41 /* libiomp5.dylib */; };
 		AB5A0E3A1BAC12A7009C4388 /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB62BCF81BA7C7F70010BD1D /* GPUImage.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -4761,13 +4701,6 @@
 			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = TIFF;
 		};
-		394FD3581D12A01500A59E8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B156F60A2C0116005B688F /* Brightness.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Brightness;
-		};
 		394FD35A1D12A01500A59E8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8487CA80BD1F11800755EE4 /* CICrystallize.xcodeproj */;
@@ -4789,20 +4722,6 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "Gaussian+";
 		};
-		394FD3601D12A01500A59E8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A861D4790BF2C2840015E71C /* Random.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Random;
-		};
-		394FD3621D12A01500A59E8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B156F90A2C0116005B688F /* Posterize.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Posterize;
-		};
 		394FD3641D12A01500A59E8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8307DCC0BF2B783000BD82C /* CIRandom.xcodeproj */;
@@ -4817,33 +4736,12 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = CMYK;
 		};
-		394FD3681D12A01500A59E8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B156FF0A2C0116005B688F /* Gaussian.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Gaussian;
-		};
 		394FD36A1D12A01500A59E8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A86E1BC30BF215B600CCFBB8 /* CIGammaAdjust.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "GammaAdjust+";
-		};
-		394FD36C1D12A01500A59E8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B157020A2C0116005B688F /* Invert.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Invert;
-		};
-		394FD36E1D12A01500A59E8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B156EA0A2C0116005B688F /* Sharpen.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Sharpen;
 		};
 		394FD3701D12A01500A59E8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -4886,13 +4784,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "Median+";
-		};
-		394FD37C1D12A01500A59E8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A83316C80C094D4400E1EBBE /* Median.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Median;
 		};
 		394FD37E1D12A01500A59E8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -4957,13 +4848,6 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "CircularWrap+";
 		};
-		394FD3901D12A01500A59E8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8753A7E0C1FBE5D00EBA9B2 /* Sepia.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Sepia;
-		};
 		394FD3921D12A01500A59E8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8753E300C1FC7AC00EBA9B2 /* CIInvert.xcodeproj */;
@@ -4991,13 +4875,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "Pixellate+";
-		};
-		394FD39A1D12A01500A59E8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8956C480C2E569D006069EE /* Pixellate.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Pixellate;
 		};
 		394FD39C1D12A01500A59E8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -5223,27 +5100,6 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "DisplacementDistortion+";
 		};
-		394FD3DC1D12A01500A59E8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A83DE5870C451B37000FEEA8 /* Checkerboard.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Checkerboard;
-		};
-		394FD3DE1D12A01500A59E8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A83DE5EC0C45207E000FEEA8 /* VertStripes.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = VertStripes;
-		};
-		394FD3E01D12A01500A59E8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A83DE6360C4523AE000FEEA8 /* HorizStripes.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = HorizStripes;
-		};
 		394FD3E21D12A01500A59E8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8F67D680C45F7C000CE8770 /* CIAffineTransform.xcodeproj */;
@@ -5307,13 +5163,6 @@
 			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = TIFF;
 		};
-		39C7836E1DAD301E00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B156F60A2C0116005B688F /* Brightness.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Brightness;
-		};
 		39C783701DAD301E00379B9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8487CA80BD1F11800755EE4 /* CICrystallize.xcodeproj */;
@@ -5335,20 +5184,6 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "Gaussian+";
 		};
-		39C783761DAD301E00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A861D4790BF2C2840015E71C /* Random.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Random;
-		};
-		39C783781DAD301E00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B156F90A2C0116005B688F /* Posterize.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Posterize;
-		};
 		39C7837A1DAD301E00379B9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8307DCC0BF2B783000BD82C /* CIRandom.xcodeproj */;
@@ -5363,33 +5198,12 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = CMYK;
 		};
-		39C7837E1DAD301E00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B156FF0A2C0116005B688F /* Gaussian.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Gaussian;
-		};
 		39C783801DAD301E00379B9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A86E1BC30BF215B600CCFBB8 /* CIGammaAdjust.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "GammaAdjust+";
-		};
-		39C783821DAD301E00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B157020A2C0116005B688F /* Invert.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Invert;
-		};
-		39C783841DAD301E00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B156EA0A2C0116005B688F /* Sharpen.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Sharpen;
 		};
 		39C783861DAD301E00379B9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -5432,13 +5246,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "Median+";
-		};
-		39C783921DAD301E00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A83316C80C094D4400E1EBBE /* Median.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Median;
 		};
 		39C783941DAD301E00379B9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -5503,13 +5310,6 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "CircularWrap+";
 		};
-		39C783A61DAD301E00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8753A7E0C1FBE5D00EBA9B2 /* Sepia.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Sepia;
-		};
 		39C783A81DAD301E00379B9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8753E300C1FC7AC00EBA9B2 /* CIInvert.xcodeproj */;
@@ -5537,13 +5337,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "Pixellate+";
-		};
-		39C783B01DAD301E00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8956C480C2E569D006069EE /* Pixellate.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Pixellate;
 		};
 		39C783B21DAD301E00379B9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -5769,27 +5562,6 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "DisplacementDistortion+";
 		};
-		39C783F21DAD301E00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A83DE5870C451B37000FEEA8 /* Checkerboard.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Checkerboard;
-		};
-		39C783F41DAD301E00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A83DE5EC0C45207E000FEEA8 /* VertStripes.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = VertStripes;
-		};
-		39C783F61DAD301E00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A83DE6360C4523AE000FEEA8 /* HorizStripes.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = HorizStripes;
-		};
 		39C783F81DAD301E00379B9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8F67D680C45F7C000CE8770 /* CIAffineTransform.xcodeproj */;
@@ -5853,13 +5625,6 @@
 			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = TIFF;
 		};
-		39C7879F1DAD302D00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B156F60A2C0116005B688F /* Brightness.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Brightness;
-		};
 		39C787A11DAD302D00379B9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8487CA80BD1F11800755EE4 /* CICrystallize.xcodeproj */;
@@ -5881,20 +5646,6 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "Gaussian+";
 		};
-		39C787A71DAD302D00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A861D4790BF2C2840015E71C /* Random.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Random;
-		};
-		39C787A91DAD302D00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B156F90A2C0116005B688F /* Posterize.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Posterize;
-		};
 		39C787AB1DAD302D00379B9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8307DCC0BF2B783000BD82C /* CIRandom.xcodeproj */;
@@ -5909,33 +5660,12 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = CMYK;
 		};
-		39C787AF1DAD302D00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B156FF0A2C0116005B688F /* Gaussian.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Gaussian;
-		};
 		39C787B11DAD302D00379B9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A86E1BC30BF215B600CCFBB8 /* CIGammaAdjust.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "GammaAdjust+";
-		};
-		39C787B31DAD302D00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B157020A2C0116005B688F /* Invert.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Invert;
-		};
-		39C787B51DAD302D00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B156EA0A2C0116005B688F /* Sharpen.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Sharpen;
 		};
 		39C787B71DAD302D00379B9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -5978,13 +5708,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "Median+";
-		};
-		39C787C31DAD302D00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A83316C80C094D4400E1EBBE /* Median.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Median;
 		};
 		39C787C51DAD302D00379B9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -6049,13 +5772,6 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "CircularWrap+";
 		};
-		39C787D71DAD302D00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8753A7E0C1FBE5D00EBA9B2 /* Sepia.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Sepia;
-		};
 		39C787D91DAD302D00379B9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8753E300C1FC7AC00EBA9B2 /* CIInvert.xcodeproj */;
@@ -6083,13 +5799,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "Pixellate+";
-		};
-		39C787E11DAD302D00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8956C480C2E569D006069EE /* Pixellate.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Pixellate;
 		};
 		39C787E31DAD302D00379B9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -6315,27 +6024,6 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "DisplacementDistortion+";
 		};
-		39C788231DAD302D00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A83DE5870C451B37000FEEA8 /* Checkerboard.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Checkerboard;
-		};
-		39C788251DAD302D00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A83DE5EC0C45207E000FEEA8 /* VertStripes.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = VertStripes;
-		};
-		39C788271DAD302D00379B9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A83DE6360C4523AE000FEEA8 /* HorizStripes.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = HorizStripes;
-		};
 		39C788291DAD302D00379B9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8F67D680C45F7C000CE8770 /* CIAffineTransform.xcodeproj */;
@@ -6378,13 +6066,6 @@
 			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
 			remoteInfo = "Gaussian+";
 		};
-		A8080D5F0C07C5D50026D06E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B156F60A2C0116005B688F /* Brightness.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Brightness;
-		};
 		A8080D610C07C5D50026D06E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8487CA80BD1F11800755EE4 /* CICrystallize.xcodeproj */;
@@ -6406,20 +6087,6 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "Gaussian+";
 		};
-		A8080D670C07C5D50026D06E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A861D4790BF2C2840015E71C /* Random.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Random;
-		};
-		A8080D690C07C5D50026D06E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B156F90A2C0116005B688F /* Posterize.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Posterize;
-		};
 		A8080D6B0C07C5D50026D06E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8307DCC0BF2B783000BD82C /* CIRandom.xcodeproj */;
@@ -6434,33 +6101,12 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = CMYK;
 		};
-		A8080D6F0C07C5D50026D06E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B156FF0A2C0116005B688F /* Gaussian.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Gaussian;
-		};
 		A8080D710C07C5D50026D06E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A86E1BC30BF215B600CCFBB8 /* CIGammaAdjust.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "GammaAdjust+";
-		};
-		A8080D730C07C5D50026D06E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B157020A2C0116005B688F /* Invert.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Invert;
-		};
-		A8080D750C07C5D50026D06E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B156EA0A2C0116005B688F /* Sharpen.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Sharpen;
 		};
 		A8080D770C07C5D50026D06E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -6693,13 +6339,6 @@
 			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
 			remoteInfo = Median;
 		};
-		A83316E20C094D5600E1EBBE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A83316C80C094D4400E1EBBE /* Median.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Median;
-		};
 		A8357BBC0C2E8CCE000983AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8357BB50C2E8CCE000983AB /* CIPointillize.xcodeproj */;
@@ -6763,13 +6402,6 @@
 			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
 			remoteInfo = Checkerboard;
 		};
-		A83DE5940C451B58000FEEA8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A83DE5870C451B37000FEEA8 /* Checkerboard.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Checkerboard;
-		};
 		A83DE5F00C45207E000FEEA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A83DE5EC0C45207E000FEEA8 /* VertStripes.xcodeproj */;
@@ -6777,25 +6409,11 @@
 			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
 			remoteInfo = VertStripes;
 		};
-		A83DE5F50C4520AB000FEEA8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A83DE5EC0C45207E000FEEA8 /* VertStripes.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = VertStripes;
-		};
 		A83DE63D0C4523AE000FEEA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A83DE6360C4523AE000FEEA8 /* HorizStripes.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
-			remoteInfo = HorizStripes;
-		};
-		A83DE6420C4523D4000FEEA8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A83DE6360C4523AE000FEEA8 /* HorizStripes.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = HorizStripes;
 		};
 		A83F30F50C3A333800BCB83E /* PBXContainerItemProxy */ = {
@@ -6910,13 +6528,6 @@
 			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
 			remoteInfo = Sepia;
 		};
-		A8753A9E0C1FBE7F00EBA9B2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8753A7E0C1FBE5D00EBA9B2 /* Sepia.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Sepia;
-		};
 		A8753E370C1FC7AC00EBA9B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8753E300C1FC7AC00EBA9B2 /* CIInvert.xcodeproj */;
@@ -7020,13 +6631,6 @@
 			containerPortal = A8956C480C2E569D006069EE /* Pixellate.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
-			remoteInfo = Pixellate;
-		};
-		A8956C560C2E56C1006069EE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8956C480C2E569D006069EE /* Pixellate.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = Pixellate;
 		};
 		A89B83D80A426D8200AD6941 /* PBXContainerItemProxy */ = {
@@ -7372,13 +6976,6 @@
 			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = TIFF;
 		};
-		AB4C93621EC30FFA0059F605 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B156F60A2C0116005B688F /* Brightness.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Brightness;
-		};
 		AB4C93641EC30FFA0059F605 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8487CA80BD1F11800755EE4 /* CICrystallize.xcodeproj */;
@@ -7400,20 +6997,6 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "Gaussian+";
 		};
-		AB4C936A1EC30FFA0059F605 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A861D4790BF2C2840015E71C /* Random.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Random;
-		};
-		AB4C936C1EC30FFA0059F605 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B156F90A2C0116005B688F /* Posterize.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Posterize;
-		};
 		AB4C936E1EC30FFA0059F605 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8307DCC0BF2B783000BD82C /* CIRandom.xcodeproj */;
@@ -7428,33 +7011,12 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = CMYK;
 		};
-		AB4C93721EC30FFA0059F605 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B156FF0A2C0116005B688F /* Gaussian.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Gaussian;
-		};
 		AB4C93741EC30FFA0059F605 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A86E1BC30BF215B600CCFBB8 /* CIGammaAdjust.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "GammaAdjust+";
-		};
-		AB4C93761EC30FFA0059F605 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B157020A2C0116005B688F /* Invert.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Invert;
-		};
-		AB4C93781EC30FFA0059F605 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35B156EA0A2C0116005B688F /* Sharpen.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Sharpen;
 		};
 		AB4C937A1EC30FFA0059F605 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -7497,13 +7059,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "Median+";
-		};
-		AB4C93861EC30FFA0059F605 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A83316C80C094D4400E1EBBE /* Median.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Median;
 		};
 		AB4C93881EC30FFA0059F605 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -7568,13 +7123,6 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "CircularWrap+";
 		};
-		AB4C939A1EC30FFA0059F605 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8753A7E0C1FBE5D00EBA9B2 /* Sepia.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Sepia;
-		};
 		AB4C939C1EC30FFA0059F605 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8753E300C1FC7AC00EBA9B2 /* CIInvert.xcodeproj */;
@@ -7602,13 +7150,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "Pixellate+";
-		};
-		AB4C93A41EC30FFA0059F605 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8956C480C2E569D006069EE /* Pixellate.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Pixellate;
 		};
 		AB4C93A61EC30FFA0059F605 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -7834,27 +7375,6 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "DisplacementDistortion+";
 		};
-		AB4C93E61EC30FFA0059F605 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A83DE5870C451B37000FEEA8 /* Checkerboard.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = Checkerboard;
-		};
-		AB4C93E81EC30FFA0059F605 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A83DE5EC0C45207E000FEEA8 /* VertStripes.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = VertStripes;
-		};
-		AB4C93EA1EC30FFA0059F605 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A83DE6360C4523AE000FEEA8 /* HorizStripes.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = HorizStripes;
-		};
 		AB4C93EC1EC30FFA0059F605 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8F67D680C45F7C000CE8770 /* CIAffineTransform.xcodeproj */;
@@ -8013,22 +7533,10 @@
 				394FD7591D12A01500A59E8A /* WhitePointAdjust+.bundle in CopyFiles */,
 				394FD75A1D12A01500A59E8A /* ZoomBlur+.bundle in CopyFiles */,
 				394FD75B1D12A01500A59E8A /* Curves.bundle in CopyFiles */,
-				394FD75C1D12A01500A59E8A /* Sharpen.bundle in CopyFiles */,
 				394FD75D1D12A01500A59E8A /* Threshold.bundle in CopyFiles */,
-				394FD75E1D12A01500A59E8A /* Brightness.bundle in CopyFiles */,
-				394FD75F1D12A01500A59E8A /* Checkerboard.bundle in CopyFiles */,
 				394FD7601D12A01500A59E8A /* CMYK.bundle in CopyFiles */,
-				394FD7611D12A01500A59E8A /* Gaussian.bundle in CopyFiles */,
 				394FD7621D12A01500A59E8A /* Greyscale.bundle in CopyFiles */,
-				394FD7631D12A01500A59E8A /* HorizStripes.bundle in CopyFiles */,
 				394FD7641D12A01500A59E8A /* HSV.bundle in CopyFiles */,
-				394FD7651D12A01500A59E8A /* Invert.bundle in CopyFiles */,
-				394FD7661D12A01500A59E8A /* Median.bundle in CopyFiles */,
-				394FD7671D12A01500A59E8A /* Pixellate.bundle in CopyFiles */,
-				394FD7681D12A01500A59E8A /* Posterize.bundle in CopyFiles */,
-				394FD7691D12A01500A59E8A /* Random.bundle in CopyFiles */,
-				394FD76A1D12A01500A59E8A /* Sepia.bundle in CopyFiles */,
-				394FD76B1D12A01500A59E8A /* VertStripes.bundle in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -8094,22 +7602,10 @@
 				396615471CCDFA450022F60E /* WhitePointAdjust+.bundle in CopyFiles */,
 				396615481CCDFA450022F60E /* ZoomBlur+.bundle in CopyFiles */,
 				396615491CCDFA450022F60E /* Curves.bundle in CopyFiles */,
-				3966154A1CCDFA450022F60E /* Sharpen.bundle in CopyFiles */,
 				3966154B1CCDFA450022F60E /* Threshold.bundle in CopyFiles */,
-				3966154C1CCDFA450022F60E /* Brightness.bundle in CopyFiles */,
-				3966154D1CCDFA450022F60E /* Checkerboard.bundle in CopyFiles */,
 				3966154E1CCDFA450022F60E /* CMYK.bundle in CopyFiles */,
-				3966154F1CCDFA450022F60E /* Gaussian.bundle in CopyFiles */,
 				396615501CCDFA450022F60E /* Greyscale.bundle in CopyFiles */,
-				396615511CCDFA450022F60E /* HorizStripes.bundle in CopyFiles */,
 				396615521CCDFA450022F60E /* HSV.bundle in CopyFiles */,
-				396615531CCDFA450022F60E /* Invert.bundle in CopyFiles */,
-				396615541CCDFA450022F60E /* Median.bundle in CopyFiles */,
-				396615551CCDFA450022F60E /* Pixellate.bundle in CopyFiles */,
-				396615561CCDFA450022F60E /* Posterize.bundle in CopyFiles */,
-				396615571CCDFA450022F60E /* Random.bundle in CopyFiles */,
-				396615581CCDFA450022F60E /* Sepia.bundle in CopyFiles */,
-				396615591CCDFA450022F60E /* VertStripes.bundle in CopyFiles */,
 				AB690CC41EEA405F00DE3DA1 /* FilterGallery.bundle in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -8199,22 +7695,10 @@
 				39C787761DAD301E00379B9B /* WhitePointAdjust+.bundle in CopyFiles */,
 				39C787771DAD301E00379B9B /* ZoomBlur+.bundle in CopyFiles */,
 				39C787781DAD301E00379B9B /* Curves.bundle in CopyFiles */,
-				39C787791DAD301E00379B9B /* Sharpen.bundle in CopyFiles */,
 				39C7877A1DAD301E00379B9B /* Threshold.bundle in CopyFiles */,
-				39C7877B1DAD301E00379B9B /* Brightness.bundle in CopyFiles */,
-				39C7877C1DAD301E00379B9B /* Checkerboard.bundle in CopyFiles */,
 				39C7877D1DAD301E00379B9B /* CMYK.bundle in CopyFiles */,
-				39C7877E1DAD301E00379B9B /* Gaussian.bundle in CopyFiles */,
 				39C7877F1DAD301E00379B9B /* Greyscale.bundle in CopyFiles */,
-				39C787801DAD301E00379B9B /* HorizStripes.bundle in CopyFiles */,
 				39C787811DAD301E00379B9B /* HSV.bundle in CopyFiles */,
-				39C787821DAD301E00379B9B /* Invert.bundle in CopyFiles */,
-				39C787831DAD301E00379B9B /* Median.bundle in CopyFiles */,
-				39C787841DAD301E00379B9B /* Pixellate.bundle in CopyFiles */,
-				39C787851DAD301E00379B9B /* Posterize.bundle in CopyFiles */,
-				39C787861DAD301E00379B9B /* Random.bundle in CopyFiles */,
-				39C787871DAD301E00379B9B /* Sepia.bundle in CopyFiles */,
-				39C787881DAD301E00379B9B /* VertStripes.bundle in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -8303,22 +7787,10 @@
 				39C78BA71DAD302D00379B9B /* WhitePointAdjust+.bundle in CopyFiles */,
 				39C78BA81DAD302D00379B9B /* ZoomBlur+.bundle in CopyFiles */,
 				39C78BA91DAD302D00379B9B /* Curves.bundle in CopyFiles */,
-				39C78BAA1DAD302D00379B9B /* Sharpen.bundle in CopyFiles */,
 				39C78BAB1DAD302D00379B9B /* Threshold.bundle in CopyFiles */,
-				39C78BAC1DAD302D00379B9B /* Brightness.bundle in CopyFiles */,
-				39C78BAD1DAD302D00379B9B /* Checkerboard.bundle in CopyFiles */,
-				39C78BAE1DAD302D00379B9B /* CMYK.bundle in CopyFiles */,
 				39C78BAF1DAD302D00379B9B /* Gaussian.bundle in CopyFiles */,
 				39C78BB01DAD302D00379B9B /* Greyscale.bundle in CopyFiles */,
-				39C78BB11DAD302D00379B9B /* HorizStripes.bundle in CopyFiles */,
 				39C78BB21DAD302D00379B9B /* HSV.bundle in CopyFiles */,
-				39C78BB31DAD302D00379B9B /* Invert.bundle in CopyFiles */,
-				39C78BB41DAD302D00379B9B /* Median.bundle in CopyFiles */,
-				39C78BB51DAD302D00379B9B /* Pixellate.bundle in CopyFiles */,
-				39C78BB61DAD302D00379B9B /* Posterize.bundle in CopyFiles */,
-				39C78BB71DAD302D00379B9B /* Random.bundle in CopyFiles */,
-				39C78BB81DAD302D00379B9B /* Sepia.bundle in CopyFiles */,
-				39C78BB91DAD302D00379B9B /* VertStripes.bundle in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -8469,23 +7941,11 @@
 				AB4C97671EC30FFA0059F605 /* WhitePointAdjust+.bundle in CopyFiles */,
 				AB4C97681EC30FFA0059F605 /* ZoomBlur+.bundle in CopyFiles */,
 				AB4C97691EC30FFA0059F605 /* Curves.bundle in CopyFiles */,
-				AB4C976A1EC30FFA0059F605 /* Sharpen.bundle in CopyFiles */,
 				AB4C976B1EC30FFA0059F605 /* Threshold.bundle in CopyFiles */,
-				AB4C976C1EC30FFA0059F605 /* Brightness.bundle in CopyFiles */,
-				AB4C976D1EC30FFA0059F605 /* Checkerboard.bundle in CopyFiles */,
 				AB4C976E1EC30FFA0059F605 /* CMYK.bundle in CopyFiles */,
-				AB4C976F1EC30FFA0059F605 /* Gaussian.bundle in CopyFiles */,
 				AB4C97701EC30FFA0059F605 /* Greyscale.bundle in CopyFiles */,
-				AB4C97711EC30FFA0059F605 /* HorizStripes.bundle in CopyFiles */,
 				AB2513311EEA30CF00AA3F14 /* FilterGallery.bundle in CopyFiles */,
 				AB4C97721EC30FFA0059F605 /* HSV.bundle in CopyFiles */,
-				AB4C97731EC30FFA0059F605 /* Invert.bundle in CopyFiles */,
-				AB4C97741EC30FFA0059F605 /* Median.bundle in CopyFiles */,
-				AB4C97751EC30FFA0059F605 /* Pixellate.bundle in CopyFiles */,
-				AB4C97761EC30FFA0059F605 /* Posterize.bundle in CopyFiles */,
-				AB4C97771EC30FFA0059F605 /* Random.bundle in CopyFiles */,
-				AB4C97781EC30FFA0059F605 /* Sepia.bundle in CopyFiles */,
-				AB4C97791EC30FFA0059F605 /* VertStripes.bundle in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -12273,25 +11733,18 @@
 				394FD3511D12A01500A59E8A /* PBXTargetDependency */,
 				394FD3531D12A01500A59E8A /* PBXTargetDependency */,
 				394FD3551D12A01500A59E8A /* PBXTargetDependency */,
-				394FD3571D12A01500A59E8A /* PBXTargetDependency */,
 				394FD3591D12A01500A59E8A /* PBXTargetDependency */,
 				394FD35B1D12A01500A59E8A /* PBXTargetDependency */,
 				394FD35D1D12A01500A59E8A /* PBXTargetDependency */,
-				394FD35F1D12A01500A59E8A /* PBXTargetDependency */,
-				394FD3611D12A01500A59E8A /* PBXTargetDependency */,
 				394FD3631D12A01500A59E8A /* PBXTargetDependency */,
 				394FD3651D12A01500A59E8A /* PBXTargetDependency */,
-				394FD3671D12A01500A59E8A /* PBXTargetDependency */,
 				394FD3691D12A01500A59E8A /* PBXTargetDependency */,
-				394FD36B1D12A01500A59E8A /* PBXTargetDependency */,
-				394FD36D1D12A01500A59E8A /* PBXTargetDependency */,
 				394FD36F1D12A01500A59E8A /* PBXTargetDependency */,
 				394FD3711D12A01500A59E8A /* PBXTargetDependency */,
 				394FD3731D12A01500A59E8A /* PBXTargetDependency */,
 				394FD3751D12A01500A59E8A /* PBXTargetDependency */,
 				394FD3771D12A01500A59E8A /* PBXTargetDependency */,
 				394FD3791D12A01500A59E8A /* PBXTargetDependency */,
-				394FD37B1D12A01500A59E8A /* PBXTargetDependency */,
 				394FD37D1D12A01500A59E8A /* PBXTargetDependency */,
 				394FD37F1D12A01500A59E8A /* PBXTargetDependency */,
 				394FD3811D12A01500A59E8A /* PBXTargetDependency */,
@@ -12301,12 +11754,10 @@
 				394FD3891D12A01500A59E8A /* PBXTargetDependency */,
 				394FD38B1D12A01500A59E8A /* PBXTargetDependency */,
 				394FD38D1D12A01500A59E8A /* PBXTargetDependency */,
-				394FD38F1D12A01500A59E8A /* PBXTargetDependency */,
 				394FD3911D12A01500A59E8A /* PBXTargetDependency */,
 				394FD3931D12A01500A59E8A /* PBXTargetDependency */,
 				394FD3951D12A01500A59E8A /* PBXTargetDependency */,
 				394FD3971D12A01500A59E8A /* PBXTargetDependency */,
-				394FD3991D12A01500A59E8A /* PBXTargetDependency */,
 				394FD39B1D12A01500A59E8A /* PBXTargetDependency */,
 				394FD39D1D12A01500A59E8A /* PBXTargetDependency */,
 				394FD39F1D12A01500A59E8A /* PBXTargetDependency */,
@@ -12339,9 +11790,6 @@
 				394FD3D51D12A01500A59E8A /* PBXTargetDependency */,
 				394FD3D71D12A01500A59E8A /* PBXTargetDependency */,
 				394FD3D91D12A01500A59E8A /* PBXTargetDependency */,
-				394FD3DB1D12A01500A59E8A /* PBXTargetDependency */,
-				394FD3DD1D12A01500A59E8A /* PBXTargetDependency */,
-				394FD3DF1D12A01500A59E8A /* PBXTargetDependency */,
 				394FD3E11D12A01500A59E8A /* PBXTargetDependency */,
 				394FD3E31D12A01500A59E8A /* PBXTargetDependency */,
 			);
@@ -12373,25 +11821,18 @@
 				39C783671DAD301E00379B9B /* PBXTargetDependency */,
 				39C783691DAD301E00379B9B /* PBXTargetDependency */,
 				39C7836B1DAD301E00379B9B /* PBXTargetDependency */,
-				39C7836D1DAD301E00379B9B /* PBXTargetDependency */,
 				39C7836F1DAD301E00379B9B /* PBXTargetDependency */,
 				39C783711DAD301E00379B9B /* PBXTargetDependency */,
 				39C783731DAD301E00379B9B /* PBXTargetDependency */,
-				39C783751DAD301E00379B9B /* PBXTargetDependency */,
-				39C783771DAD301E00379B9B /* PBXTargetDependency */,
 				39C783791DAD301E00379B9B /* PBXTargetDependency */,
 				39C7837B1DAD301E00379B9B /* PBXTargetDependency */,
-				39C7837D1DAD301E00379B9B /* PBXTargetDependency */,
 				39C7837F1DAD301E00379B9B /* PBXTargetDependency */,
-				39C783811DAD301E00379B9B /* PBXTargetDependency */,
-				39C783831DAD301E00379B9B /* PBXTargetDependency */,
 				39C783851DAD301E00379B9B /* PBXTargetDependency */,
 				39C783871DAD301E00379B9B /* PBXTargetDependency */,
 				39C783891DAD301E00379B9B /* PBXTargetDependency */,
 				39C7838B1DAD301E00379B9B /* PBXTargetDependency */,
 				39C7838D1DAD301E00379B9B /* PBXTargetDependency */,
 				39C7838F1DAD301E00379B9B /* PBXTargetDependency */,
-				39C783911DAD301E00379B9B /* PBXTargetDependency */,
 				39C783931DAD301E00379B9B /* PBXTargetDependency */,
 				39C783951DAD301E00379B9B /* PBXTargetDependency */,
 				39C783971DAD301E00379B9B /* PBXTargetDependency */,
@@ -12401,12 +11842,10 @@
 				39C7839F1DAD301E00379B9B /* PBXTargetDependency */,
 				39C783A11DAD301E00379B9B /* PBXTargetDependency */,
 				39C783A31DAD301E00379B9B /* PBXTargetDependency */,
-				39C783A51DAD301E00379B9B /* PBXTargetDependency */,
 				39C783A71DAD301E00379B9B /* PBXTargetDependency */,
 				39C783A91DAD301E00379B9B /* PBXTargetDependency */,
 				39C783AB1DAD301E00379B9B /* PBXTargetDependency */,
 				39C783AD1DAD301E00379B9B /* PBXTargetDependency */,
-				39C783AF1DAD301E00379B9B /* PBXTargetDependency */,
 				39C783B11DAD301E00379B9B /* PBXTargetDependency */,
 				39C783B31DAD301E00379B9B /* PBXTargetDependency */,
 				39C783B51DAD301E00379B9B /* PBXTargetDependency */,
@@ -12439,9 +11878,6 @@
 				39C783EB1DAD301E00379B9B /* PBXTargetDependency */,
 				39C783ED1DAD301E00379B9B /* PBXTargetDependency */,
 				39C783EF1DAD301E00379B9B /* PBXTargetDependency */,
-				39C783F11DAD301E00379B9B /* PBXTargetDependency */,
-				39C783F31DAD301E00379B9B /* PBXTargetDependency */,
-				39C783F51DAD301E00379B9B /* PBXTargetDependency */,
 				39C783F71DAD301E00379B9B /* PBXTargetDependency */,
 				39C783F91DAD301E00379B9B /* PBXTargetDependency */,
 			);
@@ -12473,25 +11909,18 @@
 				39C787981DAD302D00379B9B /* PBXTargetDependency */,
 				39C7879A1DAD302D00379B9B /* PBXTargetDependency */,
 				39C7879C1DAD302D00379B9B /* PBXTargetDependency */,
-				39C7879E1DAD302D00379B9B /* PBXTargetDependency */,
 				39C787A01DAD302D00379B9B /* PBXTargetDependency */,
 				39C787A21DAD302D00379B9B /* PBXTargetDependency */,
 				39C787A41DAD302D00379B9B /* PBXTargetDependency */,
-				39C787A61DAD302D00379B9B /* PBXTargetDependency */,
-				39C787A81DAD302D00379B9B /* PBXTargetDependency */,
 				39C787AA1DAD302D00379B9B /* PBXTargetDependency */,
 				39C787AC1DAD302D00379B9B /* PBXTargetDependency */,
-				39C787AE1DAD302D00379B9B /* PBXTargetDependency */,
 				39C787B01DAD302D00379B9B /* PBXTargetDependency */,
-				39C787B21DAD302D00379B9B /* PBXTargetDependency */,
-				39C787B41DAD302D00379B9B /* PBXTargetDependency */,
 				39C787B61DAD302D00379B9B /* PBXTargetDependency */,
 				39C787B81DAD302D00379B9B /* PBXTargetDependency */,
 				39C787BA1DAD302D00379B9B /* PBXTargetDependency */,
 				39C787BC1DAD302D00379B9B /* PBXTargetDependency */,
 				39C787BE1DAD302D00379B9B /* PBXTargetDependency */,
 				39C787C01DAD302D00379B9B /* PBXTargetDependency */,
-				39C787C21DAD302D00379B9B /* PBXTargetDependency */,
 				39C787C41DAD302D00379B9B /* PBXTargetDependency */,
 				39C787C61DAD302D00379B9B /* PBXTargetDependency */,
 				39C787C81DAD302D00379B9B /* PBXTargetDependency */,
@@ -12501,12 +11930,10 @@
 				39C787D01DAD302D00379B9B /* PBXTargetDependency */,
 				39C787D21DAD302D00379B9B /* PBXTargetDependency */,
 				39C787D41DAD302D00379B9B /* PBXTargetDependency */,
-				39C787D61DAD302D00379B9B /* PBXTargetDependency */,
 				39C787D81DAD302D00379B9B /* PBXTargetDependency */,
 				39C787DA1DAD302D00379B9B /* PBXTargetDependency */,
 				39C787DC1DAD302D00379B9B /* PBXTargetDependency */,
 				39C787DE1DAD302D00379B9B /* PBXTargetDependency */,
-				39C787E01DAD302D00379B9B /* PBXTargetDependency */,
 				39C787E21DAD302D00379B9B /* PBXTargetDependency */,
 				39C787E41DAD302D00379B9B /* PBXTargetDependency */,
 				39C787E61DAD302D00379B9B /* PBXTargetDependency */,
@@ -12539,9 +11966,6 @@
 				39C7881C1DAD302D00379B9B /* PBXTargetDependency */,
 				39C7881E1DAD302D00379B9B /* PBXTargetDependency */,
 				39C788201DAD302D00379B9B /* PBXTargetDependency */,
-				39C788221DAD302D00379B9B /* PBXTargetDependency */,
-				39C788241DAD302D00379B9B /* PBXTargetDependency */,
-				39C788261DAD302D00379B9B /* PBXTargetDependency */,
 				39C788281DAD302D00379B9B /* PBXTargetDependency */,
 				39C7882A1DAD302D00379B9B /* PBXTargetDependency */,
 			);
@@ -12575,25 +11999,18 @@
 				AB49A8191BA2848E00F66C41 /* PBXTargetDependency */,
 				35B157380A2C015A005B688F /* PBXTargetDependency */,
 				35B1573A0A2C015E005B688F /* PBXTargetDependency */,
-				A8080D600C07C5D50026D06E /* PBXTargetDependency */,
 				A8080D620C07C5D50026D06E /* PBXTargetDependency */,
 				A8080D640C07C5D50026D06E /* PBXTargetDependency */,
 				A8080D660C07C5D50026D06E /* PBXTargetDependency */,
-				A8080D680C07C5D50026D06E /* PBXTargetDependency */,
-				A8080D6A0C07C5D50026D06E /* PBXTargetDependency */,
 				A8080D6C0C07C5D50026D06E /* PBXTargetDependency */,
 				A8080D6E0C07C5D50026D06E /* PBXTargetDependency */,
-				A8080D700C07C5D50026D06E /* PBXTargetDependency */,
 				A8080D720C07C5D50026D06E /* PBXTargetDependency */,
-				A8080D740C07C5D50026D06E /* PBXTargetDependency */,
-				A8080D760C07C5D50026D06E /* PBXTargetDependency */,
 				A8080D780C07C5D50026D06E /* PBXTargetDependency */,
 				A8080D7A0C07C5D50026D06E /* PBXTargetDependency */,
 				A8080D7E0C07C5D50026D06E /* PBXTargetDependency */,
 				A8080D800C07C5D50026D06E /* PBXTargetDependency */,
 				A8080F7C0C07CF620026D06E /* PBXTargetDependency */,
 				A8360C760C09311E0050D855 /* PBXTargetDependency */,
-				A83316E30C094D5600E1EBBE /* PBXTargetDependency */,
 				A89096A70C0D53DE0039D3DC /* PBXTargetDependency */,
 				A8E94E900C0D8E89008A39FD /* PBXTargetDependency */,
 				A87415720C0E6D9E0043AD86 /* PBXTargetDependency */,
@@ -12603,12 +12020,10 @@
 				A88768D60C1B99A600ADB8BE /* PBXTargetDependency */,
 				A8C7287A0C1BD05100222AE2 /* PBXTargetDependency */,
 				A84C31820C1C364300EE1E6C /* PBXTargetDependency */,
-				A8753A9F0C1FBE7F00EBA9B2 /* PBXTargetDependency */,
 				A8753E3C0C1FC7B700EBA9B2 /* PBXTargetDependency */,
 				A8D6370B0C25267C0073FAE0 /* PBXTargetDependency */,
 				A82ED5E10C2D05AA00EB75C0 /* PBXTargetDependency */,
 				A82E45FD0C2E3A86003A0ACC /* PBXTargetDependency */,
-				A8956C570C2E56C1006069EE /* PBXTargetDependency */,
 				A8BE6E8D0C2E8B84002F031C /* PBXTargetDependency */,
 				A8357BC30C2E8CEC000983AB /* PBXTargetDependency */,
 				A8357D2C0C2E9189000983AB /* PBXTargetDependency */,
@@ -12641,9 +12056,6 @@
 				A8E136AA0C40753600C8A848 /* PBXTargetDependency */,
 				A82F05300C407EB200404BA7 /* PBXTargetDependency */,
 				A835D2CE0C43886D0076DF2D /* PBXTargetDependency */,
-				A83DE5950C451B58000FEEA8 /* PBXTargetDependency */,
-				A83DE5F60C4520AB000FEEA8 /* PBXTargetDependency */,
-				A83DE6430C4523D4000FEEA8 /* PBXTargetDependency */,
 				A8F67D750C45F7E100CE8770 /* PBXTargetDependency */,
 				A8F67D8D0C45F89B00CE8770 /* PBXTargetDependency */,
 			);
@@ -12678,25 +12090,18 @@
 				AB4C935B1EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C935D1EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C935F1EC30FFA0059F605 /* PBXTargetDependency */,
-				AB4C93611EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C93631EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C93651EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C93671EC30FFA0059F605 /* PBXTargetDependency */,
-				AB4C93691EC30FFA0059F605 /* PBXTargetDependency */,
-				AB4C936B1EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C936D1EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C936F1EC30FFA0059F605 /* PBXTargetDependency */,
-				AB4C93711EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C93731EC30FFA0059F605 /* PBXTargetDependency */,
-				AB4C93751EC30FFA0059F605 /* PBXTargetDependency */,
-				AB4C93771EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C93791EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C937B1EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C937D1EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C937F1EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C93811EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C93831EC30FFA0059F605 /* PBXTargetDependency */,
-				AB4C93851EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C93871EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C93891EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C938B1EC30FFA0059F605 /* PBXTargetDependency */,
@@ -12706,12 +12111,10 @@
 				AB4C93931EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C93951EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C93971EC30FFA0059F605 /* PBXTargetDependency */,
-				AB4C93991EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C939B1EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C939D1EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C939F1EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C93A11EC30FFA0059F605 /* PBXTargetDependency */,
-				AB4C93A31EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C93A51EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C93A71EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C93A91EC30FFA0059F605 /* PBXTargetDependency */,
@@ -12744,9 +12147,6 @@
 				AB4C93DF1EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C93E11EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C93E31EC30FFA0059F605 /* PBXTargetDependency */,
-				AB4C93E51EC30FFA0059F605 /* PBXTargetDependency */,
-				AB4C93E71EC30FFA0059F605 /* PBXTargetDependency */,
-				AB4C93E91EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C93EB1EC30FFA0059F605 /* PBXTargetDependency */,
 				AB4C93ED1EC30FFA0059F605 /* PBXTargetDependency */,
 			);
@@ -18031,11 +17431,6 @@
 			name = TIFF;
 			targetProxy = 394FD3561D12A01500A59E8A /* PBXContainerItemProxy */;
 		};
-		394FD3571D12A01500A59E8A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Brightness;
-			targetProxy = 394FD3581D12A01500A59E8A /* PBXContainerItemProxy */;
-		};
 		394FD3591D12A01500A59E8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Crystallize+";
@@ -18051,16 +17446,6 @@
 			name = "Gaussian+";
 			targetProxy = 394FD35E1D12A01500A59E8A /* PBXContainerItemProxy */;
 		};
-		394FD35F1D12A01500A59E8A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Random;
-			targetProxy = 394FD3601D12A01500A59E8A /* PBXContainerItemProxy */;
-		};
-		394FD3611D12A01500A59E8A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Posterize;
-			targetProxy = 394FD3621D12A01500A59E8A /* PBXContainerItemProxy */;
-		};
 		394FD3631D12A01500A59E8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Random+";
@@ -18071,25 +17456,10 @@
 			name = CMYK;
 			targetProxy = 394FD3661D12A01500A59E8A /* PBXContainerItemProxy */;
 		};
-		394FD3671D12A01500A59E8A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Gaussian;
-			targetProxy = 394FD3681D12A01500A59E8A /* PBXContainerItemProxy */;
-		};
 		394FD3691D12A01500A59E8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GammaAdjust+";
 			targetProxy = 394FD36A1D12A01500A59E8A /* PBXContainerItemProxy */;
-		};
-		394FD36B1D12A01500A59E8A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Invert;
-			targetProxy = 394FD36C1D12A01500A59E8A /* PBXContainerItemProxy */;
-		};
-		394FD36D1D12A01500A59E8A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Sharpen;
-			targetProxy = 394FD36E1D12A01500A59E8A /* PBXContainerItemProxy */;
 		};
 		394FD36F1D12A01500A59E8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -18120,11 +17490,6 @@
 			isa = PBXTargetDependency;
 			name = "Median+";
 			targetProxy = 394FD37A1D12A01500A59E8A /* PBXContainerItemProxy */;
-		};
-		394FD37B1D12A01500A59E8A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Median;
-			targetProxy = 394FD37C1D12A01500A59E8A /* PBXContainerItemProxy */;
 		};
 		394FD37D1D12A01500A59E8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -18171,11 +17536,6 @@
 			name = "CircularWrap+";
 			targetProxy = 394FD38E1D12A01500A59E8A /* PBXContainerItemProxy */;
 		};
-		394FD38F1D12A01500A59E8A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Sepia;
-			targetProxy = 394FD3901D12A01500A59E8A /* PBXContainerItemProxy */;
-		};
 		394FD3911D12A01500A59E8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Invert+";
@@ -18195,11 +17555,6 @@
 			isa = PBXTargetDependency;
 			name = "Pixellate+";
 			targetProxy = 394FD3981D12A01500A59E8A /* PBXContainerItemProxy */;
-		};
-		394FD3991D12A01500A59E8A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Pixellate;
-			targetProxy = 394FD39A1D12A01500A59E8A /* PBXContainerItemProxy */;
 		};
 		394FD39B1D12A01500A59E8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -18361,21 +17716,6 @@
 			name = "DisplacementDistortion+";
 			targetProxy = 394FD3DA1D12A01500A59E8A /* PBXContainerItemProxy */;
 		};
-		394FD3DB1D12A01500A59E8A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Checkerboard;
-			targetProxy = 394FD3DC1D12A01500A59E8A /* PBXContainerItemProxy */;
-		};
-		394FD3DD1D12A01500A59E8A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = VertStripes;
-			targetProxy = 394FD3DE1D12A01500A59E8A /* PBXContainerItemProxy */;
-		};
-		394FD3DF1D12A01500A59E8A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HorizStripes;
-			targetProxy = 394FD3E01D12A01500A59E8A /* PBXContainerItemProxy */;
-		};
 		394FD3E11D12A01500A59E8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "AffineTransform+";
@@ -18421,11 +17761,6 @@
 			name = TIFF;
 			targetProxy = 39C7836C1DAD301E00379B9B /* PBXContainerItemProxy */;
 		};
-		39C7836D1DAD301E00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Brightness;
-			targetProxy = 39C7836E1DAD301E00379B9B /* PBXContainerItemProxy */;
-		};
 		39C7836F1DAD301E00379B9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Crystallize+";
@@ -18441,16 +17776,6 @@
 			name = "Gaussian+";
 			targetProxy = 39C783741DAD301E00379B9B /* PBXContainerItemProxy */;
 		};
-		39C783751DAD301E00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Random;
-			targetProxy = 39C783761DAD301E00379B9B /* PBXContainerItemProxy */;
-		};
-		39C783771DAD301E00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Posterize;
-			targetProxy = 39C783781DAD301E00379B9B /* PBXContainerItemProxy */;
-		};
 		39C783791DAD301E00379B9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Random+";
@@ -18461,25 +17786,10 @@
 			name = CMYK;
 			targetProxy = 39C7837C1DAD301E00379B9B /* PBXContainerItemProxy */;
 		};
-		39C7837D1DAD301E00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Gaussian;
-			targetProxy = 39C7837E1DAD301E00379B9B /* PBXContainerItemProxy */;
-		};
 		39C7837F1DAD301E00379B9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GammaAdjust+";
 			targetProxy = 39C783801DAD301E00379B9B /* PBXContainerItemProxy */;
-		};
-		39C783811DAD301E00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Invert;
-			targetProxy = 39C783821DAD301E00379B9B /* PBXContainerItemProxy */;
-		};
-		39C783831DAD301E00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Sharpen;
-			targetProxy = 39C783841DAD301E00379B9B /* PBXContainerItemProxy */;
 		};
 		39C783851DAD301E00379B9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -18510,11 +17820,6 @@
 			isa = PBXTargetDependency;
 			name = "Median+";
 			targetProxy = 39C783901DAD301E00379B9B /* PBXContainerItemProxy */;
-		};
-		39C783911DAD301E00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Median;
-			targetProxy = 39C783921DAD301E00379B9B /* PBXContainerItemProxy */;
 		};
 		39C783931DAD301E00379B9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -18561,11 +17866,6 @@
 			name = "CircularWrap+";
 			targetProxy = 39C783A41DAD301E00379B9B /* PBXContainerItemProxy */;
 		};
-		39C783A51DAD301E00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Sepia;
-			targetProxy = 39C783A61DAD301E00379B9B /* PBXContainerItemProxy */;
-		};
 		39C783A71DAD301E00379B9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Invert+";
@@ -18585,11 +17885,6 @@
 			isa = PBXTargetDependency;
 			name = "Pixellate+";
 			targetProxy = 39C783AE1DAD301E00379B9B /* PBXContainerItemProxy */;
-		};
-		39C783AF1DAD301E00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Pixellate;
-			targetProxy = 39C783B01DAD301E00379B9B /* PBXContainerItemProxy */;
 		};
 		39C783B11DAD301E00379B9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -18751,21 +18046,6 @@
 			name = "DisplacementDistortion+";
 			targetProxy = 39C783F01DAD301E00379B9B /* PBXContainerItemProxy */;
 		};
-		39C783F11DAD301E00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Checkerboard;
-			targetProxy = 39C783F21DAD301E00379B9B /* PBXContainerItemProxy */;
-		};
-		39C783F31DAD301E00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = VertStripes;
-			targetProxy = 39C783F41DAD301E00379B9B /* PBXContainerItemProxy */;
-		};
-		39C783F51DAD301E00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HorizStripes;
-			targetProxy = 39C783F61DAD301E00379B9B /* PBXContainerItemProxy */;
-		};
 		39C783F71DAD301E00379B9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "AffineTransform+";
@@ -18811,11 +18091,6 @@
 			name = TIFF;
 			targetProxy = 39C7879D1DAD302D00379B9B /* PBXContainerItemProxy */;
 		};
-		39C7879E1DAD302D00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Brightness;
-			targetProxy = 39C7879F1DAD302D00379B9B /* PBXContainerItemProxy */;
-		};
 		39C787A01DAD302D00379B9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Crystallize+";
@@ -18831,16 +18106,6 @@
 			name = "Gaussian+";
 			targetProxy = 39C787A51DAD302D00379B9B /* PBXContainerItemProxy */;
 		};
-		39C787A61DAD302D00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Random;
-			targetProxy = 39C787A71DAD302D00379B9B /* PBXContainerItemProxy */;
-		};
-		39C787A81DAD302D00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Posterize;
-			targetProxy = 39C787A91DAD302D00379B9B /* PBXContainerItemProxy */;
-		};
 		39C787AA1DAD302D00379B9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Random+";
@@ -18851,25 +18116,10 @@
 			name = CMYK;
 			targetProxy = 39C787AD1DAD302D00379B9B /* PBXContainerItemProxy */;
 		};
-		39C787AE1DAD302D00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Gaussian;
-			targetProxy = 39C787AF1DAD302D00379B9B /* PBXContainerItemProxy */;
-		};
 		39C787B01DAD302D00379B9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GammaAdjust+";
 			targetProxy = 39C787B11DAD302D00379B9B /* PBXContainerItemProxy */;
-		};
-		39C787B21DAD302D00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Invert;
-			targetProxy = 39C787B31DAD302D00379B9B /* PBXContainerItemProxy */;
-		};
-		39C787B41DAD302D00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Sharpen;
-			targetProxy = 39C787B51DAD302D00379B9B /* PBXContainerItemProxy */;
 		};
 		39C787B61DAD302D00379B9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -18900,11 +18150,6 @@
 			isa = PBXTargetDependency;
 			name = "Median+";
 			targetProxy = 39C787C11DAD302D00379B9B /* PBXContainerItemProxy */;
-		};
-		39C787C21DAD302D00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Median;
-			targetProxy = 39C787C31DAD302D00379B9B /* PBXContainerItemProxy */;
 		};
 		39C787C41DAD302D00379B9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -18951,11 +18196,6 @@
 			name = "CircularWrap+";
 			targetProxy = 39C787D51DAD302D00379B9B /* PBXContainerItemProxy */;
 		};
-		39C787D61DAD302D00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Sepia;
-			targetProxy = 39C787D71DAD302D00379B9B /* PBXContainerItemProxy */;
-		};
 		39C787D81DAD302D00379B9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Invert+";
@@ -18975,11 +18215,6 @@
 			isa = PBXTargetDependency;
 			name = "Pixellate+";
 			targetProxy = 39C787DF1DAD302D00379B9B /* PBXContainerItemProxy */;
-		};
-		39C787E01DAD302D00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Pixellate;
-			targetProxy = 39C787E11DAD302D00379B9B /* PBXContainerItemProxy */;
 		};
 		39C787E21DAD302D00379B9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -19141,21 +18376,6 @@
 			name = "DisplacementDistortion+";
 			targetProxy = 39C788211DAD302D00379B9B /* PBXContainerItemProxy */;
 		};
-		39C788221DAD302D00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Checkerboard;
-			targetProxy = 39C788231DAD302D00379B9B /* PBXContainerItemProxy */;
-		};
-		39C788241DAD302D00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = VertStripes;
-			targetProxy = 39C788251DAD302D00379B9B /* PBXContainerItemProxy */;
-		};
-		39C788261DAD302D00379B9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HorizStripes;
-			targetProxy = 39C788271DAD302D00379B9B /* PBXContainerItemProxy */;
-		};
 		39C788281DAD302D00379B9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "AffineTransform+";
@@ -19170,11 +18390,6 @@
 			isa = PBXTargetDependency;
 			name = "SpotLight+";
 			targetProxy = A80105860C3D150D00826C24 /* PBXContainerItemProxy */;
-		};
-		A8080D600C07C5D50026D06E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Brightness;
-			targetProxy = A8080D5F0C07C5D50026D06E /* PBXContainerItemProxy */;
 		};
 		A8080D620C07C5D50026D06E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -19191,16 +18406,6 @@
 			name = "Gaussian+";
 			targetProxy = A8080D650C07C5D50026D06E /* PBXContainerItemProxy */;
 		};
-		A8080D680C07C5D50026D06E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Random;
-			targetProxy = A8080D670C07C5D50026D06E /* PBXContainerItemProxy */;
-		};
-		A8080D6A0C07C5D50026D06E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Posterize;
-			targetProxy = A8080D690C07C5D50026D06E /* PBXContainerItemProxy */;
-		};
 		A8080D6C0C07C5D50026D06E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Random+";
@@ -19211,25 +18416,10 @@
 			name = CMYK;
 			targetProxy = A8080D6D0C07C5D50026D06E /* PBXContainerItemProxy */;
 		};
-		A8080D700C07C5D50026D06E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Gaussian;
-			targetProxy = A8080D6F0C07C5D50026D06E /* PBXContainerItemProxy */;
-		};
 		A8080D720C07C5D50026D06E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GammaAdjust+";
 			targetProxy = A8080D710C07C5D50026D06E /* PBXContainerItemProxy */;
-		};
-		A8080D740C07C5D50026D06E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Invert;
-			targetProxy = A8080D730C07C5D50026D06E /* PBXContainerItemProxy */;
-		};
-		A8080D760C07C5D50026D06E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Sharpen;
-			targetProxy = A8080D750C07C5D50026D06E /* PBXContainerItemProxy */;
 		};
 		A8080D780C07C5D50026D06E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -19321,11 +18511,6 @@
 			name = "Sharpen+";
 			targetProxy = A82F052F0C407EB200404BA7 /* PBXContainerItemProxy */;
 		};
-		A83316E30C094D5600E1EBBE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Median;
-			targetProxy = A83316E20C094D5600E1EBBE /* PBXContainerItemProxy */;
-		};
 		A8357BC30C2E8CEC000983AB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pointillize+";
@@ -19345,21 +18530,6 @@
 			isa = PBXTargetDependency;
 			name = "Median+";
 			targetProxy = A8360C750C09311E0050D855 /* PBXContainerItemProxy */;
-		};
-		A83DE5950C451B58000FEEA8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Checkerboard;
-			targetProxy = A83DE5940C451B58000FEEA8 /* PBXContainerItemProxy */;
-		};
-		A83DE5F60C4520AB000FEEA8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = VertStripes;
-			targetProxy = A83DE5F50C4520AB000FEEA8 /* PBXContainerItemProxy */;
-		};
-		A83DE6430C4523D4000FEEA8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HorizStripes;
-			targetProxy = A83DE6420C4523D4000FEEA8 /* PBXContainerItemProxy */;
 		};
 		A83F31080C3A337300BCB83E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -19390,11 +18560,6 @@
 			isa = PBXTargetDependency;
 			name = "ZoomBlur+";
 			targetProxy = A87415710C0E6D9E0043AD86 /* PBXContainerItemProxy */;
-		};
-		A8753A9F0C1FBE7F00EBA9B2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Sepia;
-			targetProxy = A8753A9E0C1FBE7F00EBA9B2 /* PBXContainerItemProxy */;
 		};
 		A8753E3C0C1FC7B700EBA9B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -19430,11 +18595,6 @@
 			isa = PBXTargetDependency;
 			name = "Hole+";
 			targetProxy = A893EE190C33D2EB009D2D2E /* PBXContainerItemProxy */;
-		};
-		A8956C570C2E56C1006069EE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Pixellate;
-			targetProxy = A8956C560C2E56C1006069EE /* PBXContainerItemProxy */;
 		};
 		A89B83D90A426D8200AD6941 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -19571,11 +18731,6 @@
 			name = TIFF;
 			targetProxy = AB4C93601EC30FFA0059F605 /* PBXContainerItemProxy */;
 		};
-		AB4C93611EC30FFA0059F605 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Brightness;
-			targetProxy = AB4C93621EC30FFA0059F605 /* PBXContainerItemProxy */;
-		};
 		AB4C93631EC30FFA0059F605 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Crystallize+";
@@ -19591,16 +18746,6 @@
 			name = "Gaussian+";
 			targetProxy = AB4C93681EC30FFA0059F605 /* PBXContainerItemProxy */;
 		};
-		AB4C93691EC30FFA0059F605 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Random;
-			targetProxy = AB4C936A1EC30FFA0059F605 /* PBXContainerItemProxy */;
-		};
-		AB4C936B1EC30FFA0059F605 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Posterize;
-			targetProxy = AB4C936C1EC30FFA0059F605 /* PBXContainerItemProxy */;
-		};
 		AB4C936D1EC30FFA0059F605 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Random+";
@@ -19611,25 +18756,10 @@
 			name = CMYK;
 			targetProxy = AB4C93701EC30FFA0059F605 /* PBXContainerItemProxy */;
 		};
-		AB4C93711EC30FFA0059F605 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Gaussian;
-			targetProxy = AB4C93721EC30FFA0059F605 /* PBXContainerItemProxy */;
-		};
 		AB4C93731EC30FFA0059F605 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GammaAdjust+";
 			targetProxy = AB4C93741EC30FFA0059F605 /* PBXContainerItemProxy */;
-		};
-		AB4C93751EC30FFA0059F605 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Invert;
-			targetProxy = AB4C93761EC30FFA0059F605 /* PBXContainerItemProxy */;
-		};
-		AB4C93771EC30FFA0059F605 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Sharpen;
-			targetProxy = AB4C93781EC30FFA0059F605 /* PBXContainerItemProxy */;
 		};
 		AB4C93791EC30FFA0059F605 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -19660,11 +18790,6 @@
 			isa = PBXTargetDependency;
 			name = "Median+";
 			targetProxy = AB4C93841EC30FFA0059F605 /* PBXContainerItemProxy */;
-		};
-		AB4C93851EC30FFA0059F605 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Median;
-			targetProxy = AB4C93861EC30FFA0059F605 /* PBXContainerItemProxy */;
 		};
 		AB4C93871EC30FFA0059F605 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -19711,11 +18836,6 @@
 			name = "CircularWrap+";
 			targetProxy = AB4C93981EC30FFA0059F605 /* PBXContainerItemProxy */;
 		};
-		AB4C93991EC30FFA0059F605 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Sepia;
-			targetProxy = AB4C939A1EC30FFA0059F605 /* PBXContainerItemProxy */;
-		};
 		AB4C939B1EC30FFA0059F605 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Invert+";
@@ -19735,11 +18855,6 @@
 			isa = PBXTargetDependency;
 			name = "Pixellate+";
 			targetProxy = AB4C93A21EC30FFA0059F605 /* PBXContainerItemProxy */;
-		};
-		AB4C93A31EC30FFA0059F605 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Pixellate;
-			targetProxy = AB4C93A41EC30FFA0059F605 /* PBXContainerItemProxy */;
 		};
 		AB4C93A51EC30FFA0059F605 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -19900,21 +19015,6 @@
 			isa = PBXTargetDependency;
 			name = "DisplacementDistortion+";
 			targetProxy = AB4C93E41EC30FFA0059F605 /* PBXContainerItemProxy */;
-		};
-		AB4C93E51EC30FFA0059F605 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Checkerboard;
-			targetProxy = AB4C93E61EC30FFA0059F605 /* PBXContainerItemProxy */;
-		};
-		AB4C93E71EC30FFA0059F605 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = VertStripes;
-			targetProxy = AB4C93E81EC30FFA0059F605 /* PBXContainerItemProxy */;
-		};
-		AB4C93E91EC30FFA0059F605 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HorizStripes;
-			targetProxy = AB4C93EA1EC30FFA0059F605 /* PBXContainerItemProxy */;
 		};
 		AB4C93EB1EC30FFA0059F605 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

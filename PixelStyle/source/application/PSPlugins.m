@@ -354,10 +354,18 @@ BOOL checkRun(NSString *path, NSString *file)
 		return NULL;
 }
 
+//From the Apple documentation on NSDocumentController currentDocument it says:
+//
+//    This method returns nil if it is called when its application is not active. This can occur during processing of a drag-and-drop operation, for example, in an implementation of readSelectionFromPasteboard:. In such a case, send the following message instead from an NSView subclass associated with the document:
+//
+//    [[[self window] windowController] document];
 - (id)data
 {
-    if(m_currentDocument == nil)
-        m_currentDocument = gCurrentDocument;
+    id document = gCurrentDocument;
+    
+    if (document)
+        m_currentDocument = document;
+    
     return [m_currentDocument pluginData];
 	//return [gCurrentDocument pluginData];
 }
@@ -409,6 +417,8 @@ BOOL checkRun(NSString *path, NSString *file)
 	// Never when there is no document
 	if (document == NULL)
 		return NO;
+    
+    m_currentDocument = document;
 	
 	// End the line drawing
 	[[document helpers] endLineDrawing];
@@ -420,6 +430,8 @@ BOOL checkRun(NSString *path, NSString *file)
 	// Never if we are told not to
     // crashed often here wzq
 	if ([menuItem tag] >= 10000 && [menuItem tag] < 17500) {
+        if(!gCurrentDocument)
+            return NO;
 		if (![[m_arrPlugins objectAtIndex:[menuItem tag] - 10000] validateMenuItem:menuItem])
 			return NO;
         

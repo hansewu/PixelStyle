@@ -995,8 +995,8 @@ int seamcarveImage(IMAGE_DATA *pInputData, IMAGE_DATA *pOutputData, IMAGE_DATA *
     int nChannels       = pInputData->nChannels;
     
     assert(nInputWidth && nInputHeight && nOutputWidth && nOutputHeight);
-    assert(pHorizontalSeamsData->nChannels == 1);
-    assert(pVerticalSeamsData->nChannels == 1);
+    //assert(pHorizontalSeamsData->nChannels == 1);
+    //assert(pVerticalSeamsData->nChannels == 1);
     
     
     
@@ -1020,8 +1020,12 @@ int seamcarveImage(IMAGE_DATA *pInputData, IMAGE_DATA *pOutputData, IMAGE_DATA *
     
     
     Mat imageCopy = image;
-    Mat horizontalseams = Mat(nInputHeight, nInputWidth, CV_8UC1, pHorizontalSeamsData->pData);
-    Mat verticalseams = Mat(nOutputHeight, nInputWidth, CV_8UC1, pVerticalSeamsData->pData);
+    Mat horizontalseams = Mat(nInputHeight, nInputWidth, CV_8UC1);//, pHorizontalSeamsData->pData);
+    Mat verticalseams = Mat(nOutputHeight, nInputWidth, CV_8UC1);//, pVerticalSeamsData->pData);
+    if(pHorizontalSeamsData)
+        horizontalseams = Mat(nInputHeight, nInputWidth, CV_8UC1, pHorizontalSeamsData->pData);
+    if(pVerticalSeamsData)
+        verticalseams = Mat(nOutputHeight, nInputWidth, CV_8UC1, pVerticalSeamsData->pData);
     process(imageCopy, nOutputHeight, nOutputWidth, horizontalseams, verticalseams);
     
     
@@ -1030,9 +1034,10 @@ int seamcarveImage(IMAGE_DATA *pInputData, IMAGE_DATA *pOutputData, IMAGE_DATA *
     {
         memcpy(pOutputData->pData, imageCopy.data, nOutputWidth * nOutputHeight*4);
     }
-    
-    memcpy(pHorizontalSeamsData->pData, horizontalseams.data, nInputWidth * nInputHeight * 1);
-    memcpy(pVerticalSeamsData->pData, verticalseams.data, nInputWidth * nOutputHeight * 1);
+    if(pHorizontalSeamsData)
+        memcpy(pHorizontalSeamsData->pData, horizontalseams.data, nInputWidth * nInputHeight * 1);
+    if(pVerticalSeamsData)
+        memcpy(pVerticalSeamsData->pData, verticalseams.data, nInputWidth * nOutputHeight * 1);
     
     return 0;
 }

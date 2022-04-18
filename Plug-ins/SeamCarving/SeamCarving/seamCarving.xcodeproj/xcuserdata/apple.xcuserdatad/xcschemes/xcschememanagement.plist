@@ -6,11 +6,15 @@
 	<dict>
 		<key>SeamCarving.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>80</integer>
 		</dict>
 		<key>seamCarving.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>81</integer>
 		</dict>

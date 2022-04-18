@@ -19,19 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		18D7E9402806492F00A8FC3E /* PBXContainerItemProxy */ = {
+		1809BA9F280CF0D900B2D8AD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3E1E179B1D7D1742009E0C28 /* seamCarving.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 398EC7FA1D6402E700C6DB08;
 			remoteInfo = SeamCarving;
-		};
-		3E1E17A01D7D1743009E0C28 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3E1E179B1D7D1742009E0C28 /* seamCarving.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 39A2F50C1D62BB87003BD3E8;
-			remoteInfo = seamCarving;
 		};
 		3E1E17A21D7D1743009E0C28 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -79,7 +72,6 @@
 		3E1E179C1D7D1742009E0C28 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3E1E17A11D7D1743009E0C28 /* libseamCarving.dylib */,
 				3E1E17A31D7D1743009E0C28 /* libSeamCarving.a */,
 			);
 			name = Products;
@@ -153,7 +145,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				18D7E9412806492F00A8FC3E /* PBXTargetDependency */,
+				1809BAA0280CF0D900B2D8AD /* PBXTargetDependency */,
 			);
 			name = SeamCarving;
 			productName = SeamCarving;
@@ -199,13 +191,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		3E1E17A11D7D1743009E0C28 /* libseamCarving.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libseamCarving.dylib;
-			remoteRef = 3E1E17A01D7D1743009E0C28 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		3E1E17A31D7D1743009E0C28 /* libSeamCarving.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -241,10 +226,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		18D7E9412806492F00A8FC3E /* PBXTargetDependency */ = {
+		1809BAA0280CF0D900B2D8AD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SeamCarving;
-			targetProxy = 18D7E9402806492F00A8FC3E /* PBXContainerItemProxy */;
+			targetProxy = 1809BA9F280CF0D900B2D8AD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

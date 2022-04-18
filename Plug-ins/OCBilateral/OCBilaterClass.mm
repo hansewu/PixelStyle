@@ -58,6 +58,7 @@
 	
 	success = NO;
 	pluginData = [(PSPlugins *)seaPlugins data];
+    if(!pluginData)  return;
 	//if ([pluginData spp] == 2 || [pluginData channel] != kAllChannels){
 	newdata = (unsigned char *)malloc(make_128([pluginData width] * [pluginData height] * 4));
 	//}
@@ -70,6 +71,8 @@
 	PluginData *pluginData;
 	
 	pluginData = [(PSPlugins *)seaPlugins data];
+    if(!pluginData)  return;
+    
 	if (refresh) [self execute];
 	[pluginData apply];
 	
@@ -89,6 +92,7 @@
 	PluginData *pluginData;
 	
 	pluginData = [(PSPlugins *)seaPlugins data];
+    if(!pluginData)  return;
 	//if ([pluginData spp] == 2 || [pluginData channel] != kAllChannels){
 	newdata = (unsigned char *)malloc(make_128([pluginData width] * [pluginData height] * 4));
 	//}
@@ -107,6 +111,7 @@
 	PluginData *pluginData;
 	
 	pluginData = [(PSPlugins *)seaPlugins data];
+    if(!pluginData) return;
 	if (refresh) [self execute];
 	[pluginData preview];
 	refresh = NO;
@@ -117,6 +122,7 @@
 	PluginData *pluginData;
 	
 	pluginData = [(PSPlugins *)seaPlugins data];
+    if(!pluginData) return;
 	[pluginData cancel];
 	if (newdata) { free(newdata); newdata = NULL; }
 	
@@ -144,6 +150,7 @@
 	PluginData *pluginData;
 
 	pluginData = [(PSPlugins *)seaPlugins data];
+    if(!pluginData)  return;
 	if ([pluginData spp] == 2)
     {
 		[self executeGrey:pluginData];
@@ -330,6 +337,8 @@
 		memset(replace, 0xFF, width * height);
 		memcpy(overlay, resdata, width * height * 4);
 	}
+    
+    free(resdata);
 }
 
 - (unsigned char *)executeChannel:(PluginData *)pluginData withBitmap:(unsigned char *)data
@@ -428,7 +437,13 @@
     cv::split(image, old_rgb4Channels);
     
     cv::Mat image1;
-    cv::cvtColor(image, image1, cv::COLOR_RGBA2RGB);
+    std::vector<cv::Mat> old_rgb4Channels1(3);
+    old_rgb4Channels1[0] = old_rgb4Channels[0];
+    old_rgb4Channels1[1] = old_rgb4Channels[1];
+    old_rgb4Channels1[2] = old_rgb4Channels[2];
+    cv::merge(old_rgb4Channels1, image1);
+    
+    //cv::cvtColor(image, image1, cv::COLOR_RGBA2RGB);
     
     cv::Mat image2;
     cv::bilateralFilter(image1, image2, g_d, g_sigmaColor, g_sigmaSpace);
