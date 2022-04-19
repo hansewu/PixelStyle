@@ -22,6 +22,8 @@
 
 #import "PSSelection.h"
 
+#import "ocInpaint.h"
+
 #define EPSILON 0.0001
 
 @implementation EraserTool
@@ -32,7 +34,7 @@
     if(self)
     {
         m_strToolTips = [[NSString alloc] initWithFormat:@"%@",NSLocalizedString(@"Press Shift to draw straight lines. Press Shift & Ctrl to draw lies at 45 degrees.", nil)];
-
+        m_pErasedFlagBuf = NULL;
     }
     
     return self;
@@ -182,7 +184,7 @@
                                 }
                                 else if (m_overlayBehaviour == kErasingBehaviour)
                                 {
-                                    eraseMergeCustom(spp, layerData, overlayPos, overlay, overlayPos, m_layerRawData, overlayPos, brushAlpha);
+                                    eraseMergeCustomWithFlag(spp, layerData, m_pErasedFlagBuf, overlayPos, overlay, overlayPos, m_layerRawData, overlayPos, brushAlpha);
                                 }
                             }
                                 break;
@@ -231,6 +233,9 @@
     
     int width = [(PSLayer *)layer width], height = [(PSLayer *)layer height];
     int layerSpp = [layer spp];
+    
+    m_pErasedFlagBuf = (unsigned char *)malloc(width * height);
+    memset(m_pErasedFlagBuf, 0, width * height);
     
     m_dataChangedRect = IntMakeRect(0, 0, 0, 0);
     [[m_idDocument whiteboard] clearOverlay];
@@ -643,11 +648,27 @@ next:
 	}
 }
 
+-(void)inpaint
+{
+    id layer = [[m_idDocument contents] activeLayer];
+    int width = [(PSLayer *)layer width];
+    int height = [(PSLayer *)layer height];
+    ocInpaint([layer getDirectData], m_pErasedFlagBuf, width, height);
+    [layer refreshTotalToRender];
+}
+
 - (void)mouseUpAt:(IntPoint)where withEvent:(NSEvent *)event
 {
 	// Apply the changes
 	[self endLineDrawing];
     m_bFirstTouchDone = NO;
+    
+    [self inpaint];
+    if(m_pErasedFlagBuf)
+    {
+        free(m_pErasedFlagBuf);
+        m_pErasedFlagBuf = NULL;
+    }
     
     [(PSHelpers *)[m_idDocument helpers] updateLayerThumbnailInHelper];
     PSLayer *layer = [[m_idDocument contents] activeLayer];

@@ -156,6 +156,8 @@ void normalMergeCustom(int spp, unsigned char *destPtr, int destLoc, unsigned ch
  void eraseMerge(int spp, unsigned char *destPtr, int destLoc, unsigned char *srcPtr, int srcLoc, int srcOpacity);
 
 void eraseMergeCustom(int spp, unsigned char *destPtr, int destLoc, unsigned char *srcPtr1, int srcLoc1, unsigned char *srcPtr2, int srcLoc2, int srcOpacity);
+void eraseMergeCustomWithFlag(int spp, unsigned char *destPtr, unsigned char *flagPtr, int destLoc, unsigned char *srcPtr1, int srcLoc1, unsigned char *srcPtr2, int srcLoc2, int srcOpacity);
+
 void flexibleEraseMerge(int spp, unsigned char *destPtr, int destLoc, unsigned char *srcPtr, int srcLoc, int srcOpacity, PS_EDIT_CHANNEL_TYPE type);
 
 /*!

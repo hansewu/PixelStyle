@@ -67,6 +67,8 @@ typedef struct {
 	// The last where recorded
 	IntPoint m_sLastWhere;
 	
+    //flag buffer for inpaint
+    unsigned char *m_pErasedFlagBuf;
 }
 /*!
 	@method		dealloc
