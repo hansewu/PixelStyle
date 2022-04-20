@@ -26,7 +26,12 @@ int ocInpaint(unsigned char *pBuffer, unsigned char *pMask, int nWidth, int nHei
     return 0;
 }
 */
-int PatchMatch(cv::Mat &matImage, cv::Mat &matMask, cv::Mat &matOutImage);
+int patchMatchInpaint(cv::Mat &matImage, cv::Mat &matMask, cv::Mat &matOutImage);
+void criminisiInpaint(
+    cv::InputArray image,
+    cv::InputArray targetMask,
+    cv::InputArray sourceMask,
+                      int patchSize);
 
 int ocInpaint(unsigned char *pBuffer, unsigned char *pMask, int nWidth, int nHeight)
 {
@@ -35,11 +40,16 @@ int ocInpaint(unsigned char *pBuffer, unsigned char *pMask, int nWidth, int nHei
     cv::Mat cvImage1, cvRes;
     
     cv::cvtColor(cvImage, cvImage1, cv::COLOR_RGBA2RGB);
-    PatchMatch(cvImage1, cvMask, cvRes);
-    //inpaint(cvImage1, cvMask, cvRes, 3, INPAINT_TELEA);//INPAINT_NS);//
-    cv::cvtColor(cvRes, cvImage1, cv::COLOR_RGB2RGBA);
     
-    memcpy(pBuffer, cvImage1.data, nHeight*nWidth*4);
+    cv::Mat cvSMask;
+    //cvSMask.create(cvImage.size(), CV_8UC1);
+    //cvSMask.setTo(0);
+    criminisiInpaint(cvImage1, cvMask, cvSMask, 7);
+    //PatchMatch(cvImage1, cvMask, cvRes);
+    //inpaint(cvImage1, cvMask, cvRes, 3, INPAINT_TELEA);//INPAINT_NS);//
+    cv::cvtColor(cvImage1, cvRes, cv::COLOR_RGB2RGBA);
+    
+    memcpy(pBuffer, cvRes.data, nHeight*nWidth*4);
     
     return 0;
 }

@@ -893,6 +893,9 @@
 		18A38CC4280907AE00FACD25 /* OCBilateral.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18A38C662809056B00FACD25 /* OCBilateral.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18D7E9492806498400A8FC3E /* libopencv_core.405.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18D7E9472806498300A8FC3E /* libopencv_core.405.dylib */; };
 		18D7E94A2806498400A8FC3E /* libopencv_imgproc.405.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18D7E9482806498300A8FC3E /* libopencv_imgproc.405.dylib */; };
+		18E68A27280F91AC009AD2FF /* libcriminisi.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18E68A16280F9033009AD2FF /* libcriminisi.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		18E68A2A280F91D1009AD2FF /* libopencv_flann.405.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18E68A29280F91D1009AD2FF /* libopencv_flann.405.dylib */; };
+		18E68A2D280F949A009AD2FF /* libcriminisi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E68A16280F9033009AD2FF /* libcriminisi.dylib */; };
 		2FAF307D19F8DF4A00AD7814 /* JP2Exporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF307C19F8DF4A00AD7814 /* JP2Exporter.m */; };
 		3901216F1C7D8A3F00A03ED2 /* ShapeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3901216E1C7D8A3F00A03ED2 /* ShapeTool.m */; };
 		39044E2B1FE8B28B003729F5 /* spc_icon_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = 39044E2A1FE8B27F003729F5 /* spc_icon_16x16.png */; };
@@ -5460,6 +5463,20 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = OCBilateral;
 		};
+		18E68A15280F9033009AD2FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18E68A0F280F9033009AD2FF /* criminisi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1852F1E0280E9A9A00D028C1;
+			remoteInfo = criminisi;
+		};
+		18E68A25280F919A009AD2FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18E68A0F280F9033009AD2FF /* criminisi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1852F1DF280E9A9A00D028C1;
+			remoteInfo = criminisi;
+		};
 		35B156E10A2C00D0005B688F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 35B156DC0A2C00D0005B688F /* GIMPCore.xcodeproj */;
@@ -8367,6 +8384,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				18E68A2A280F91D1009AD2FF /* libopencv_flann.405.dylib in CopyFiles */,
+				18E68A27280F91AC009AD2FF /* libcriminisi.dylib in CopyFiles */,
 				1852F2A3280EB39800D028C1 /* libpatchmatch.dylib in CopyFiles */,
 				1852F1D1280E576600D028C1 /* libopencv_photo.405.dylib in CopyFiles */,
 				1852F15A280E34C800D028C1 /* libopencv_core.405.dylib in CopyFiles */,
@@ -8935,6 +8954,8 @@
 		18A38C602809056A00FACD25 /* OCBilateral.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OCBilateral.xcodeproj; path = "../Plug-ins/OCBilateral/OCBilateral.xcodeproj"; sourceTree = "<group>"; };
 		18D7E9472806498300A8FC3E /* libopencv_core.405.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.405.dylib; path = ../opencv/lib/libopencv_core.405.dylib; sourceTree = "<group>"; };
 		18D7E9482806498300A8FC3E /* libopencv_imgproc.405.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.405.dylib; path = ../opencv/lib/libopencv_imgproc.405.dylib; sourceTree = "<group>"; };
+		18E68A0F280F9033009AD2FF /* criminisi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = criminisi.xcodeproj; path = criminisi_inpainting/inpaint/criminisi.xcodeproj; sourceTree = "<group>"; };
+		18E68A29280F91D1009AD2FF /* libopencv_flann.405.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_flann.405.dylib; path = ../opencv/lib/libopencv_flann.405.dylib; sourceTree = "<group>"; };
 		2A37F4ACFDCFA73011CA2CEA /* PSDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSDocument.m; sourceTree = "<group>"; };
 		2A37F4AEFDCFA73011CA2CEA /* PSDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSDocument.h; sourceTree = "<group>"; };
 		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -10166,6 +10187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E68A2D280F949A009AD2FF /* libcriminisi.dylib in Frameworks */,
 				1852F2A1280EB38500D028C1 /* libpatchmatch.dylib in Frameworks */,
 				1852F1CE280E573300D028C1 /* libopencv_photo.405.dylib in Frameworks */,
 				1852F1CA280E56F500D028C1 /* libopencv_core.405.dylib in Frameworks */,
@@ -10373,6 +10395,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		18E68A10280F9033009AD2FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18E68A16280F9033009AD2FF /* libcriminisi.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		19C28FB0FE9D524F11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -10389,6 +10419,7 @@
 		2A37F4AAFDCFA73011CA2CEA /* Seashore */ = {
 			isa = PBXGroup;
 			children = (
+				18E68A29280F91D1009AD2FF /* libopencv_flann.405.dylib */,
 				1852F1D0280E576500D028C1 /* libopencv_photo.405.dylib */,
 				18D7E9472806498300A8FC3E /* libopencv_core.405.dylib */,
 				18D7E9482806498300A8FC3E /* libopencv_imgproc.405.dylib */,
@@ -10794,6 +10825,7 @@
 		39E610CA1BD7247D0039B546 /* Extralibs */ = {
 			isa = PBXGroup;
 			children = (
+				18E68A0F280F9033009AD2FF /* criminisi.xcodeproj */,
 				1852F22A280EB03E00D028C1 /* patchmatch.xcodeproj */,
 				39E610CB1BD7247D0039B546 /* ipaintapi.h */,
 				39E610CC1BD7247D0039B546 /* libipaintlib-nl.a */,
@@ -12728,6 +12760,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				18E68A26280F919A009AD2FF /* PBXTargetDependency */,
 				1852F290280EB36D00D028C1 /* PBXTargetDependency */,
 				1852ED8E280E34C800D028C1 /* PBXTargetDependency */,
 				1852ED90280E34C800D028C1 /* PBXTargetDependency */,
@@ -13474,6 +13507,10 @@
 					ProjectRef = AB499D4E1BA27CC600F66C41 /* ComputeDistance.xcodeproj */;
 				},
 				{
+					ProductGroup = 18E68A10280F9033009AD2FF /* Products */;
+					ProjectRef = 18E68A0F280F9033009AD2FF /* criminisi.xcodeproj */;
+				},
+				{
 					ProductGroup = AB5868161BBA60490013CA22 /* Products */;
 					ProjectRef = AB5868151BBA60490013CA22 /* Curves.xcodeproj */;
 				},
@@ -13607,6 +13644,13 @@
 			fileType = wrapper.cfbundle;
 			path = OCBilateral.bundle;
 			remoteRef = 18A38C652809056B00FACD25 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18E68A16280F9033009AD2FF /* libcriminisi.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libcriminisi.dylib;
+			remoteRef = 18E68A15280F9033009AD2FF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		35B156E20A2C00D0005B688F /* GIMPCore.framework */ = {
@@ -19329,6 +19373,11 @@
 			isa = PBXTargetDependency;
 			name = OCBilateral;
 			targetProxy = 18A38CBF2809078000FACD25 /* PBXContainerItemProxy */;
+		};
+		18E68A26280F919A009AD2FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = criminisi;
+			targetProxy = 18E68A25280F919A009AD2FF /* PBXContainerItemProxy */;
 		};
 		35B157380A2C015A005B688F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

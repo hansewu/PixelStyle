@@ -13,7 +13,7 @@
 //double* G_globalSimilarity = NULL;
 //int G_initSim = 0;
 
-int PatchMatch(cv::Mat &matImage, cv::Mat &matMask, cv::Mat &matOutImage)
+int patchMatchInpaint(cv::Mat &matImage, cv::Mat &matMask, cv::Mat &matOutImage)
 {
     clock_t tic, toc;
     float cpu_time;     /* Total CPU time in minutes */
