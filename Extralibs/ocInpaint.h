@@ -16,7 +16,7 @@ extern "C"
 
 
 
-int ocInpaint(unsigned char *pBuffer, unsigned char *pMask, int nWidth, int nHeight);
+int ocInpaint(unsigned char *pBuffer, unsigned char *pMask, int nWidth, int nHeight, int nFillType);
 
 
 

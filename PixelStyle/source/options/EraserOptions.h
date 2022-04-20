@@ -23,6 +23,7 @@
 	IBOutlet id m_idMimicBrushCheckbox;
 	
     STRAIGHT_LINE_TYPE m_nStraightLineType;
+    int m_nFillType;
     
 //    IBOutlet NSTextField *m_texFieldOpacity;
     
@@ -73,5 +74,7 @@
 
 -(IBAction)onDrawLinesType:(id)sender;
 -(STRAIGHT_LINE_TYPE)getDrawLinesType;
+
+-(int)fillType;
 
 @end

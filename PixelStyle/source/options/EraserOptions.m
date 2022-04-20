@@ -4,6 +4,7 @@
 #import "UtilitiesManager.h"
 #import "PSHelp.h"
 #import "PSTools.h"
+#import "PSButtonCell.h"
 
 @implementation EraserOptions
 
@@ -29,6 +30,48 @@
 
 -(void)initViews
 {
+    NSMutableArray *subviews = [[[m_idDrawTyle superview] subviews] mutableCopy];
+     for (NSView *view in subviews)
+     {
+         if(view.frame.origin.x > 50)
+         {
+             NSPoint originPoint = NSMakePoint(view.frame.origin.x+100, view.frame.origin.y);
+             [view setFrameOrigin:originPoint];
+         }
+         
+     }
+    
+    NSPopUpButton *popBtn = [[NSPopUpButton alloc] initWithFrame:
+          NSMakeRect(55, 8, 100, 18) pullsDown:YES];
+    [popBtn addItemWithTitle:@"Fill Type"];
+    [popBtn addItemWithTitle:@"No Fill"];
+    [popBtn addItemWithTitle:@"Auto Fill"];
+    [popBtn addItemWithTitle:@"Fast Auto Fill"];
+    [popBtn addItemWithTitle:@"Slow Auto Fill"];
+    
+    [popBtn setTarget:self];
+    
+    popBtn.title = @"Auto Fill";
+        
+    [[m_idDrawTyle superview] addSubview:popBtn];
+    [popBtn setAction:@selector(handlePopBtn:)];
+    [popBtn selectItemAtIndex:2];
+    
+    m_nFillType = 2;
+    /*
+    NSComboBox *popBtn = [[NSComboBox alloc] initWithFrame:
+          NSMakeRect(52, 5, 100, 20)];
+    //[popBtn addItemWithObjectValue:@"Fill Type"];
+    [popBtn addItemWithObjectValue:@"No Fill"];
+    [popBtn addItemWithObjectValue:@"Auto Fill"];
+    [popBtn addItemWithObjectValue:@"Fast Auto Fill"];
+    [popBtn addItemWithObjectValue:@"Slow Auto Fill" ];
+    //[popBtn setFont:<#(NSFont * _Nullable)#>]
+     [[m_idDrawTyle superview] addSubview:popBtn];
+    [popBtn selectItemAtIndex:1];
+    
+     */
+    
     [m_idPSComboxOpacity setDelegate:self];
     [m_idPSComboxOpacity setSliderMaxValue:100];
     [m_idPSComboxOpacity setSliderMinValue:5];
@@ -53,6 +96,19 @@
     [(NSButton *)m_idMimicBrushCheckbox setTitle:NSLocalizedString(@"Mimic paintbrush fading", nil)];
 }
 
+- (void)handlePopBtn:(NSPopUpButton *)popBtn
+{
+    // 选中item 的索引
+    NSLog(@"%d", popBtn.indexOfSelectedItem);
+//    [popBtn selectItemAtIndex:popBtn.indexOfSelectedItem];
+    popBtn.title = popBtn.selectedItem.title;
+    m_nFillType = popBtn.indexOfSelectedItem;
+}
+
+-(int)fillType
+{
+    return m_nFillType;
+}
 
 //- (IBAction)opacityChanged:(id)sender
 //{		

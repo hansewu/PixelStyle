@@ -650,10 +650,12 @@ next:
 
 -(void)inpaint
 {
+    if([(EraserOptions*)m_idOptions fillType] ==1)  return;
+    
     id layer = [[m_idDocument contents] activeLayer];
     int width = [(PSLayer *)layer width];
     int height = [(PSLayer *)layer height];
-    ocInpaint([layer getDirectData], m_pErasedFlagBuf, width, height);
+    ocInpaint([layer getDirectData], m_pErasedFlagBuf, width, height, [(EraserOptions*)m_idOptions fillType]);
     [layer refreshTotalToRender];
 }
 
