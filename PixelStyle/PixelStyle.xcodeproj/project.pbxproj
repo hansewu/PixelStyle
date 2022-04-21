@@ -896,6 +896,15 @@
 		18E68A27280F91AC009AD2FF /* libcriminisi.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18E68A16280F9033009AD2FF /* libcriminisi.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		18E68A2A280F91D1009AD2FF /* libopencv_flann.405.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18E68A29280F91D1009AD2FF /* libopencv_flann.405.dylib */; };
 		18E68A2D280F949A009AD2FF /* libcriminisi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E68A16280F9033009AD2FF /* libcriminisi.dylib */; };
+		18E68A33280FF5E3009AD2FF /* libcriminisi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E68A16280F9033009AD2FF /* libcriminisi.dylib */; };
+		18E68A34280FF5E3009AD2FF /* libpatchmatch.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1852F22F280EB03E00D028C1 /* libpatchmatch.dylib */; };
+		18E68A35280FF602009AD2FF /* libopencv_core.405.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D7E9472806498300A8FC3E /* libopencv_core.405.dylib */; };
+		18E68A36280FF602009AD2FF /* libopencv_imgproc.405.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D7E9482806498300A8FC3E /* libopencv_imgproc.405.dylib */; };
+		18E68A37280FF602009AD2FF /* libopencv_photo.405.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1852F1CD280E573200D028C1 /* libopencv_photo.405.dylib */; };
+		18E68A38280FF613009AD2FF /* libopencv_flann.405.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18E68A29280F91D1009AD2FF /* libopencv_flann.405.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		18E68A39280FF613009AD2FF /* libopencv_photo.405.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1852F1D0280E576500D028C1 /* libopencv_photo.405.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		18E68A3A280FF623009AD2FF /* libcriminisi.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18E68A16280F9033009AD2FF /* libcriminisi.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		18E68A3B280FF62C009AD2FF /* libpatchmatch.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1852F22F280EB03E00D028C1 /* libpatchmatch.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2FAF307D19F8DF4A00AD7814 /* JP2Exporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF307C19F8DF4A00AD7814 /* JP2Exporter.m */; };
 		3901216F1C7D8A3F00A03ED2 /* ShapeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3901216E1C7D8A3F00A03ED2 /* ShapeTool.m */; };
 		39044E2B1FE8B28B003729F5 /* spc_icon_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = 39044E2A1FE8B27F003729F5 /* spc_icon_16x16.png */; };
@@ -5477,6 +5486,20 @@
 			remoteGlobalIDString = 1852F1DF280E9A9A00D028C1;
 			remoteInfo = criminisi;
 		};
+		18E68A2F280FF5A5009AD2FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18E68A0F280F9033009AD2FF /* criminisi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1852F1DF280E9A9A00D028C1;
+			remoteInfo = criminisi;
+		};
+		18E68A31280FF5BD009AD2FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1852F22A280EB03E00D028C1 /* patchmatch.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1852F1DF280E9A9A00D028C1;
+			remoteInfo = patchmatch;
+		};
 		35B156E10A2C00D0005B688F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 35B156DC0A2C00D0005B688F /* GIMPCore.xcodeproj */;
@@ -8826,6 +8849,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				18E68A3B280FF62C009AD2FF /* libpatchmatch.dylib in CopyFiles */,
+				18E68A3A280FF623009AD2FF /* libcriminisi.dylib in CopyFiles */,
+				18E68A38280FF613009AD2FF /* libopencv_flann.405.dylib in CopyFiles */,
+				18E68A39280FF613009AD2FF /* libopencv_photo.405.dylib in CopyFiles */,
 				18D7E9492806498400A8FC3E /* libopencv_core.405.dylib in CopyFiles */,
 				18D7E94A2806498400A8FC3E /* libopencv_imgproc.405.dylib in CopyFiles */,
 				AB4C972A1EC30FFA0059F605 /* libpsgvector.dylib in CopyFiles */,
@@ -10321,6 +10348,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E68A35280FF602009AD2FF /* libopencv_core.405.dylib in Frameworks */,
+				18E68A36280FF602009AD2FF /* libopencv_imgproc.405.dylib in Frameworks */,
+				18E68A37280FF602009AD2FF /* libopencv_photo.405.dylib in Frameworks */,
+				18E68A33280FF5E3009AD2FF /* libcriminisi.dylib in Frameworks */,
+				18E68A34280FF5E3009AD2FF /* libpatchmatch.dylib in Frameworks */,
 				75046F332750B0DB008BEF99 /* libstdc++.6.0.9.dylib in Frameworks */,
 				AB4C97161EC30FFA0059F605 /* QuickLook.framework in Frameworks */,
 				AB4C97171EC30FFA0059F605 /* ScriptingBridge.framework in Frameworks */,
@@ -13145,6 +13177,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				18E68A32280FF5BD009AD2FF /* PBXTargetDependency */,
+				18E68A30280FF5A5009AD2FF /* PBXTargetDependency */,
 				18A38CC02809078000FACD25 /* PBXTargetDependency */,
 				181AF4BF280553170054C4EA /* PBXTargetDependency */,
 				AB4C93531EC30FFA0059F605 /* PBXTargetDependency */,
@@ -19379,6 +19413,16 @@
 			name = criminisi;
 			targetProxy = 18E68A25280F919A009AD2FF /* PBXContainerItemProxy */;
 		};
+		18E68A30280FF5A5009AD2FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = criminisi;
+			targetProxy = 18E68A2F280FF5A5009AD2FF /* PBXContainerItemProxy */;
+		};
+		18E68A32280FF5BD009AD2FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = patchmatch;
+			targetProxy = 18E68A31280FF5BD009AD2FF /* PBXContainerItemProxy */;
+		};
 		35B157380A2C015A005B688F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GIMPCore;
@@ -21866,7 +21910,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-PixelStyle";
-				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_ENTITLEMENTS = PixelStyle/PixelStyle.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -21897,6 +21941,7 @@
 					"$(PROJECT_DIR)/source/Inkpad/Inkpad-Core/**",
 					"$(PROJECT_DIR)/source/Inkpad/Classes/**",
 					"$(PROJECT_DIR)/source/EccRegisterBundle",
+					"$(PROJECT_DIR)/../opencv/include",
 				);
 				INFOPLIST_FILE = "PixelStyle copy-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
@@ -21905,8 +21950,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/../Extralibs",
 					"$(PROJECT_DIR)/resources",
+					"$(PROJECT_DIR)/../opencv/lib",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CFLAGS = "";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = "-lz";
@@ -21933,11 +21979,11 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-PixelStyle";
-				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_ENTITLEMENTS = PixelStyle/PixelStyle.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = VA2XE4K2T9;
@@ -21962,6 +22008,7 @@
 					"$(PROJECT_DIR)/source/Inkpad/Inkpad-Core/**",
 					"$(PROJECT_DIR)/source/Inkpad/Classes/**",
 					"$(PROJECT_DIR)/source/EccRegisterBundle",
+					"$(PROJECT_DIR)/../opencv/include",
 				);
 				INFOPLIST_FILE = "PixelStyle copy-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
@@ -21970,8 +22017,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/../Extralibs",
 					"$(PROJECT_DIR)/resources",
+					"$(PROJECT_DIR)/../opencv/lib",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CFLAGS = "";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = "-lz";

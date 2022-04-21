@@ -3242,11 +3242,42 @@ int matrix_invert(int N, double *matrix) {
 		}
 		
 		// Accept files as new layers
-		if ([[pboard types] containsObject:NSFilenamesPboardType]) {
+		if ([[pboard types] containsObject:NSFilenamesPboardType])
+        {
 			files = [pboard propertyListForType:NSFilenamesPboardType];
 			success = YES;
-			for (i = 0; i < [files count]; i++)
-				success = success && [[m_idDocument contents] importLayerFromFile:[files objectAtIndex:i]];
+            
+            NSAlert *alert = [[[NSAlert alloc] init] autorelease];
+            [alert addButtonWithTitle:@"New Docoment"];
+            [alert addButtonWithTitle:@"New Layer"];
+            [alert setMessageText:NSLocalizedString(@"", nil) ];
+            [alert setInformativeText:NSLocalizedString(@"Open File as ...", nil)];
+            [alert setAlertStyle:NSWarningAlertStyle];
+            
+            NSModalResponse reCode = [alert runModal];
+            if(reCode == NSAlertFirstButtonReturn) //Update Now
+            {
+                for (i = 0; i < [files count]; i++)
+                {
+                    
+                    NSString *file = [files objectAtIndex:i];
+                    NSURL *fileType = (NSString *)UTTypeCreatePreferredIdentifierForTag( kUTTagClassFilenameExtension,
+                        (CFStringRef)[file pathExtension],
+                        (CFStringRef)@"public.data");
+                    
+                    PSDocument *newDocument = [[PSDocument alloc] initWithContentsOfFile:file ofType:fileType];
+                    [[NSDocumentController sharedDocumentController] addDocument:newDocument];
+                    [newDocument makeWindowControllers];
+                    [newDocument showWindows];
+                    [newDocument autorelease];
+                }
+            }
+            else                  //No
+            {
+                for (i = 0; i < [files count]; i++)
+                    success = success && [[m_idDocument contents] importLayerFromFile:[files objectAtIndex:i]];
+            }
+	
 			return success;
 		}
         if ([[pboard types] containsObject:NSHTMLPboardType])

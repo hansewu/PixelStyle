@@ -147,10 +147,11 @@ MaskedImage_P ExpectationMaximization(Inpaint_P imp, int level)
         // compile votes and update pixel values
         MaximizationStep(newtarget, vote);
 
-        size = cvSize(imp->initial->image->width,imp->initial->image->height);
-        IplImage* result=cvCreateImage(size,IPL_DEPTH_8U,3);
+        //????????????????? wzq
+        //size = cvSize(imp->initial->image->width,imp->initial->image->height);
+        //IplImage* result=cvCreateImage(size,IPL_DEPTH_8U,3);
 
-        cvResize(newtarget->image,result,CV_INTER_LINEAR);
+        //cvResize(newtarget->image,result,CV_INTER_LINEAR);
 
         for (i=0; i<newtarget->image->height; i++)
         {
@@ -385,4 +386,8 @@ void freeInpaintingPyramid(Inpaint_P inp)
         free(inp->pyramid);
         inp->pyramid = NULL;
     }
+    
+    freeNNF(inp->nnf_SourceToTarget);
+    freeNNF(inp->nnf_TargetToSource);
+    //freeMaskedImage(inp->initial);
 }

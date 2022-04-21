@@ -56,6 +56,8 @@ int patchMatchInpaint(cv::Mat &matImage, cv::Mat &matMask, cv::Mat &matOutImage)
     cv::Mat output_image = cv::cvarrToMat(output_ipl_img);
     
     output_image.copyTo(matOutImage);
+    cvReleaseImage(&output_ipl_img);
+    
     freeInpaintingPyramid(inp);
     
     toc = clock();
@@ -95,7 +97,7 @@ int process(const char *image_path, const char *mask_path, const char *output_pa
     cv::Mat mask_image = cv::imread(input_mask_path, cv::IMREAD_GRAYSCALE);
     
     cv::Mat output_image;
-    PatchMatch(ori_image, mask_image, output_image);
+    patchMatchInpaint(ori_image, mask_image, output_image);
     /*
     if ((ori_image.empty()) || (mask_image.empty())) return 1;
     IplImage ori_ipl_img_data = cvIplImage(ori_image); //IplImage(ori_image);
