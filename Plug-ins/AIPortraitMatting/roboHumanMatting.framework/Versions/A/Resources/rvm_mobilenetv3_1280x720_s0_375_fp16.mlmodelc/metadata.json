@@ -1,0 +1,181 @@
+[
+  {
+    "shortDescription" : "A robust human video matting model with recurrent architecture. The model has recurrent states that must be passed to subsequent frames. Please refer to paper \\\"Robust High-Resolution Video Matting with Temporal Guidance\\\" for more details.",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "height" : "720",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "1280",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 1280 × 720)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "Foreground prediction",
+        "name" : "fgr"
+      },
+      {
+        "height" : "720",
+        "colorspace" : "Grayscale",
+        "isOptional" : "0",
+        "width" : "1280",
+        "isColor" : "0",
+        "formattedType" : "Image (Grayscale 1280 × 720)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "Alpha prediction",
+        "name" : "pha"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "Recurrent state 1. Needs to be passed as r1i input in the next time step.",
+        "shape" : "[]",
+        "name" : "r1o",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "Recurrent state 2. Needs to be passed as r2i input in the next time step.",
+        "shape" : "[]",
+        "name" : "r2o",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "Recurrent state 3. Needs to be passed as r3i input in the next time step.",
+        "shape" : "[]",
+        "name" : "r3o",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "Recurrent state 4. Needs to be passed as r4i input in the next time step.",
+        "shape" : "[]",
+        "name" : "r4o",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "1.0.0",
+    "modelParameters" : [
+
+    ],
+    "author" : "Shanchuan Lin",
+    "specificationVersion" : 4,
+    "license" : "Apache License 2.0",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "formattedType" : "Image (Color 1280 × 720)",
+        "hasSizeFlexibility" : "1",
+        "shortDescription" : "Source frame",
+        "sizeRange" : "[[1280, 1280], [720, 720]]",
+        "width" : "1280",
+        "type" : "Image",
+        "isColor" : "1",
+        "height" : "720",
+        "sizeFlexibility" : "1280 × 720",
+        "colorspace" : "RGB",
+        "name" : "src",
+        "isOptional" : "0"
+      },
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "1",
+        "shapeFlexibility" : "1... × 16 × 135 × 240",
+        "shapeRange" : "[[1, -1], [16, 16], [135, 135], [240, 240]]",
+        "formattedType" : "MultiArray (Float32 1 × 16 × 135 × 240)?",
+        "type" : "MultiArray",
+        "shape" : "[1, 16, 135, 240]",
+        "name" : "r1i",
+        "shortDescription" : "Recurrent state 1. Initial state is an all zero tensor. Subsequent state is received from r1o."
+      },
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "1",
+        "shapeFlexibility" : "1... × 20 × 68 × 120",
+        "shapeRange" : "[[1, -1], [20, 20], [68, 68], [120, 120]]",
+        "formattedType" : "MultiArray (Float32 1 × 20 × 68 × 120)?",
+        "type" : "MultiArray",
+        "shape" : "[1, 20, 68, 120]",
+        "name" : "r2i",
+        "shortDescription" : "Recurrent state 2. Initial state is an all zero tensor. Subsequent state is received from r2o."
+      },
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "1",
+        "shapeFlexibility" : "1... × 40 × 34 × 60",
+        "shapeRange" : "[[1, -1], [40, 40], [34, 34], [60, 60]]",
+        "formattedType" : "MultiArray (Float32 1 × 40 × 34 × 60)?",
+        "type" : "MultiArray",
+        "shape" : "[1, 40, 34, 60]",
+        "name" : "r3i",
+        "shortDescription" : "Recurrent state 3. Initial state is an all zero tensor. Subsequent state is received from r3o."
+      },
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "1",
+        "shapeFlexibility" : "1... × 64 × 17 × 30",
+        "shapeRange" : "[[1, -1], [64, 64], [17, 17], [30, 30]]",
+        "formattedType" : "MultiArray (Float32 1 × 64 × 17 × 30)?",
+        "type" : "MultiArray",
+        "shape" : "[1, 64, 17, 30]",
+        "name" : "r4i",
+        "shortDescription" : "Recurrent state 4. Initial state is an all zero tensor. Subsequent state is received from r4o."
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "5.0b1",
+      "com.github.apple.coremltools.source" : "torch==1.8.1"
+    },
+    "generatedClassName" : "rvm_mobilenetv3_1280x720_s0_375_fp16",
+    "neuralNetworkLayerTypeHistogram" : {
+      "SubtractBroadcastable" : 3,
+      "AddBroadcastable" : 14,
+      "Concat" : 20,
+      "ActivationSigmoidHard" : 28,
+      "Convolution" : 85,
+      "Clip" : 2,
+      "ResizeBilinear" : 7,
+      "ActivationSigmoid" : 5,
+      "LoadConstantND" : 3,
+      "MultiplyBroadcastable" : 21,
+      "ReduceMean" : 2,
+      "ActivationTanh" : 4,
+      "SplitND" : 10,
+      "Add" : 7,
+      "Multiply" : 29,
+      "Slice" : 1,
+      "ActivationLinear" : 5,
+      "ActivationReLU" : 27,
+      "PoolingAverage" : 12
+    },
+    "method" : "predict"
+  }
+]

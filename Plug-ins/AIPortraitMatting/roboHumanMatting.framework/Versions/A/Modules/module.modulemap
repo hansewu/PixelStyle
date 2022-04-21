@@ -1,0 +1,6 @@
+framework module roboHumanMatting {
+  umbrella header "roboHumanMatting.h"
+
+  export *
+  module * { export * }
+}
