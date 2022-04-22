@@ -911,6 +911,15 @@
 
 "Auto Selection" = "Auto Selection";
 
+"Auto Portrait Matting" = "Auto Portrait Matting";
+"Bilateral Smooth" = "Auto Smooth (e.g. skin etc.)";
+"SeamCaving""Intelligent Resize";
+
+"No Fill" = "No Fill";
+"Auto Fill" = "Auto Fill";
+"Fast Auto Fill" = "Fast Auto Fill";
+"Slow Auto Fill" = "Slow Auto Fill";
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

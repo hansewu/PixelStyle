@@ -7,13 +7,13 @@
 	<key>copyright</key>
 	<string>EffectMatrix 2022</string>
 	<key>description</key>
-	<string>Applies potrait matting.</string>
+	<string>Applies portrait matting.</string>
 	<key>groupName</key>
 	<string>AI</string>
 	<key>license</key>
 	<string>Public Domain</string>
 	<key>name</key>
-	<string>Potrait Matting</string>
+	<string>Auto Portrait Matting</string>
 </dict>
 </plist>
 

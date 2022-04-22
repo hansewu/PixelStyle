@@ -44,14 +44,14 @@
     NSPopUpButton *popBtn = [[NSPopUpButton alloc] initWithFrame:
           NSMakeRect(55, 8, 100, 18) pullsDown:YES];
     [popBtn addItemWithTitle:@"Fill Type"];
-    [popBtn addItemWithTitle:@"No Fill"];
-    [popBtn addItemWithTitle:@"Auto Fill"];
-    [popBtn addItemWithTitle:@"Fast Auto Fill"];
-    [popBtn addItemWithTitle:@"Slow Auto Fill"];
+    [popBtn addItemWithTitle:NSLocalizedString(@"No Fill", nil)];
+    [popBtn addItemWithTitle:NSLocalizedString(@"Auto Fill", nil)];
+    [popBtn addItemWithTitle:NSLocalizedString(@"Fast Auto Fill", nil)];
+    [popBtn addItemWithTitle:NSLocalizedString(@"Slow Auto Fill", nil)];
     
     [popBtn setTarget:self];
     
-    popBtn.title = @"Auto Fill";
+    popBtn.title = NSLocalizedString(@"Auto Fill", nil);
         
     [[m_idDrawTyle superview] addSubview:popBtn];
     [popBtn setAction:@selector(handlePopBtn:)];

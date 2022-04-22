@@ -745,7 +745,16 @@
 "Start Color" = "Start Color";
 "Finish Color" = "Finish Color";
 
+"No Fill" = "透明";
+"Auto Fill" = "自動填充";
+"Fast Auto Fill" = "快速自動填充";
+"Slow Auto Fill" = "慢速自動填充";
+
 "Auto Selection" = "自動選擇";
+"Auto Portrait Matting" = "自動扣人像";
+"Bilateral Smooth" = "自動平滑(例如皮膚)";
+"SeamCaving" = "智能縮放";
+
 "https://itunes.apple.com/app/id966457795" = "https://itunes.apple.com/cn/app/super-photocut/id966457795?mt=12";
 "https://itunes.apple.com/app/id1152204742" = "https://itunes.apple.com/cn/app/super-vectorizer-2-vector-trace-tool/id1152204742?mt=12";
 
