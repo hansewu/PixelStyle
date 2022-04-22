@@ -21827,7 +21827,7 @@
 					"$(PROJECT_DIR)/resources",
 					"$(PROJECT_DIR)/source/GraphicsMagick/lib",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CFLAGS = "";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = "-lz";
@@ -21894,7 +21894,7 @@
 					"$(PROJECT_DIR)/resources",
 					"$(PROJECT_DIR)/source/GraphicsMagick/lib",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CFLAGS = "";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = "-lz";
