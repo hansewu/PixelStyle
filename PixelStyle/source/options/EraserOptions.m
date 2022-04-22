@@ -51,13 +51,13 @@
     
     [popBtn setTarget:self];
     
-    popBtn.title = NSLocalizedString(@"Auto Fill", nil);
+    popBtn.title = NSLocalizedString(@"Fast Auto Fill", nil);
         
     [[m_idDrawTyle superview] addSubview:popBtn];
     [popBtn setAction:@selector(handlePopBtn:)];
-    [popBtn selectItemAtIndex:2];
+    [popBtn selectItemAtIndex:3];
     
-    m_nFillType = 2;
+    m_nFillType = 3;
     /*
     NSComboBox *popBtn = [[NSComboBox alloc] initWithFrame:
           NSMakeRect(52, 5, 100, 20)];
