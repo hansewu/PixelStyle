@@ -1930,9 +1930,9 @@ int matrix_invert(int N, double *matrix) {
 	NSPoint globalPoint;
 	
 	// Check for zoom-in or zoom-out
-/*	mods = [theEvent modifierFlags];
+	mods = [theEvent modifierFlags];
 	if ((mods & NSAlternateKeyMask) >> 19)
- */   {
+    {
 		globalPoint = [self convertPoint:[theEvent locationInWindow] fromView:NULL];
 		
 		m_fScrollZoom += ([theEvent deltaY] > 0.0) ? 1.0 : -1.0;
@@ -1947,12 +1947,12 @@ int matrix_invert(int N, double *matrix) {
              [self zoomOutFromPoint:globalPoint];
          }
 	}
-/*	else {
+	else {
         
         [self setRefreshWhiteboardImage:NO];
 		[super scrollWheel:theEvent];
 	}
- */
+ 
 }
 
 - (void)readjust:(BOOL)scaling
@@ -3248,8 +3248,8 @@ int matrix_invert(int N, double *matrix) {
 			success = YES;
             
             NSAlert *alert = [[[NSAlert alloc] init] autorelease];
-            [alert addButtonWithTitle:@"New Docoment"];
-            [alert addButtonWithTitle:@"New Layer"];
+            [alert addButtonWithTitle:NSLocalizedString(@"New Document", nil)];
+            [alert addButtonWithTitle:NSLocalizedString(@"New Layer", nil)];
             [alert setMessageText:NSLocalizedString(@"", nil) ];
             [alert setInformativeText:NSLocalizedString(@"Open File as ...", nil)];
             [alert setAlertStyle:NSWarningAlertStyle];
