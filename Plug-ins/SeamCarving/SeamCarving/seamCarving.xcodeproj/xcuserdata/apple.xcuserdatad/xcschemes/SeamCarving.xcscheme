@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "398EC7FA1D6402E700C6DB08"
-               BuildableName = "libSeamCarving.a"
-               BlueprintName = "SeamCarving"
+               BlueprintIdentifier = "39A2F50B1D62BB87003BD3E8"
+               BuildableName = "libseamCarving.dylib"
+               BlueprintName = "seamCarving"
                ReferencedContainer = "container:seamCarving.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -50,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "398EC7FA1D6402E700C6DB08"
-            BuildableName = "libSeamCarving.a"
-            BlueprintName = "SeamCarving"
+            BlueprintIdentifier = "39A2F50B1D62BB87003BD3E8"
+            BuildableName = "libseamCarving.dylib"
+            BlueprintName = "seamCarving"
             ReferencedContainer = "container:seamCarving.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
