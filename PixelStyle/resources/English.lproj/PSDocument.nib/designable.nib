@@ -3182,7 +3182,7 @@ Gw
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <size key="minSize" width="427" height="54"/>
-                                    <size key="maxSize" width="571" height="10000000"/>
+                                    <size key="maxSize" width="584" height="10000000"/>
                                     <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 </textView>
                             </subviews>
@@ -10454,18 +10454,6 @@ DQ
                 <rect key="frame" x="0.0" y="0.0" width="412" height="320"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <popUpButton hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LTY-6A-uz7">
-                        <rect key="frame" x="50" y="330" width="200" height="26"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="pgK-LB-3v7" customClass="PSPopButtonCell">
-                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="menu"/>
-                            <menu key="menu" id="j13-bX-rdK"/>
-                        </popUpButtonCell>
-                        <connections>
-                            <action selector="onPreset:" target="3n4-qL-uP2" id="N5g-Am-mmr"/>
-                        </connections>
-                    </popUpButton>
                     <button fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="Zq1-dt-did">
                         <rect key="frame" x="20" y="247" width="20" height="15"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -10607,6 +10595,18 @@ DQ
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <sliderCell key="cell" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="P6h-F1-MNb" customClass="MyCustomedSliderCell"/>
                     </slider>
+                    <popUpButton hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LTY-6A-uz7">
+                        <rect key="frame" x="29" y="13" width="200" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="pgK-LB-3v7" customClass="PSPopButtonCell">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" id="j13-bX-rdK"/>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="onPreset:" target="3n4-qL-uP2" id="N5g-Am-mmr"/>
+                        </connections>
+                    </popUpButton>
                 </subviews>
             </view>
             <connections>
@@ -10616,7 +10616,7 @@ DQ
                 <outlet property="m_btnReverse" destination="ygP-Nm-xtI" id="dEX-b8-iMh"/>
                 <outlet property="presetsButton" destination="LTY-6A-uz7" id="JDk-Lr-g4n"/>
             </connections>
-            <point key="canvasLocation" x="1318" y="466"/>
+            <point key="canvasLocation" x="1320" y="462"/>
         </window>
         <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="hD0-Go-OZ1">
             <rect key="frame" x="0.0" y="0.0" width="45" height="674"/>

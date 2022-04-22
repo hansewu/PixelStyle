@@ -120,9 +120,12 @@
 
 - (void)runWindow
 {
-//    [[m_idDocument window] addChildWindow:m_idPanel ordered:NSWindowAbove];
-//    [m_idPanel makeKeyAndOrderFront:nil];
-    [NSApp runModalForWindow:m_idPanel];
+    [m_idPanel makeKeyAndOrderFront:self];
+    [NSApp activateIgnoringOtherApps:YES];
+    
+    //[[m_idDocument window] addChildWindow:m_idPanel ordered:NSWindowAbove];
+    //[m_idPanel makeKeyAndOrderFront:nil];
+//    [NSApp runModalForWindow:m_idPanel];
     
 }
 
@@ -677,11 +680,12 @@
     //[m_windowGradient makeKeyAndOrderFront:nil];
     //[m_windowGradient orderFrontRegardless];
     //[m_windowGradient orderWindow:NSWindowAbove relativeTo:0];
-    [NSApp runModalForWindow:m_windowGradient];
     
+    //[NSApp runModalForWindow:m_windowGradient];
     
-    
-    
+    [m_windowGradient makeKeyAndOrderFront:self];
+    [NSApp activateIgnoringOtherApps:YES];
+ 
 }
 
 

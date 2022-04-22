@@ -406,13 +406,13 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>3.7.0</string>
+	<string>3.8.0</string>
 	<key>CFBundleSignature</key>
 	<string>SeSh</string>
 	<key>CFBundleVersion</key>
-	<string>20211125.0</string>
+	<string>20220330.0</string>
 	<key>LSApplicationCategoryType</key>
-	<string>public.app-category.graphics-design</string>
+	<string>public.app-category.photography</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>NSAppTransportSecurity</key>

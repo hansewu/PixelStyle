@@ -66,8 +66,9 @@
             [self.sliders insertObject:child atIndex:index];
         }
     }
-//    [self loadPresets];
-//    [self onPreset:nil];
+    [self loadPresets];
+   // [self onPreset:nil];
+   
 }
 
 - (void)dealloc {
@@ -226,7 +227,8 @@
     }
     [self.presetsButton selectItemAtIndex:0];
 
-    
+    [self.presetsButton setHidden:NO];
+    [self.presetsButton setEnabled:YES];
 }
 
 - (IBAction)onPreset:(id)sender {

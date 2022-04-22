@@ -179,6 +179,7 @@ static NSString*	DocToolbarIdentifier 	= @"Document Toolbar Instance Identifier"
              [NSNumber numberWithInt:kCropTool],
              [NSNumber numberWithInt:-1],
 //             [NSArray arrayWithObjects:[NSNumber numberWithInt:kBrushTool],[NSNumber numberWithInt:kPencilTool],nil],
+             [NSNumber numberWithInt:kMyBrushTool],
              [NSNumber numberWithInt:kBrushTool],
              [NSNumber numberWithInt:kPencilTool],
              [NSNumber numberWithInt:kEraserTool],

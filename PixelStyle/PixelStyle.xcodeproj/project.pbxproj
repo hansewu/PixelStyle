@@ -1904,12 +1904,6 @@
 		395E2D161D751CDD007214D2 /* tools-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 395E2D151D751CDD007214D2 /* tools-29.png */; };
 		395E2D171D751CDD007214D2 /* tools-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 395E2D151D751CDD007214D2 /* tools-29.png */; };
 		3960D87F1C143B72002831F5 /* BMPExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3960D87E1C143B72002831F5 /* BMPExporter.m */; };
-		3960FE201DADE36F0040CDAD /* propaint_keylist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3960FE1E1DADE36F0040CDAD /* propaint_keylist.txt */; };
-		3960FE211DADE36F0040CDAD /* propaint_keylist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3960FE1E1DADE36F0040CDAD /* propaint_keylist.txt */; };
-		3960FE221DADE36F0040CDAD /* propaint_keylist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3960FE1E1DADE36F0040CDAD /* propaint_keylist.txt */; };
-		3960FE231DADE36F0040CDAD /* propaint_key.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3960FE1F1DADE36F0040CDAD /* propaint_key.txt */; };
-		3960FE241DADE36F0040CDAD /* propaint_key.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3960FE1F1DADE36F0040CDAD /* propaint_key.txt */; };
-		3960FE251DADE36F0040CDAD /* propaint_key.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3960FE1F1DADE36F0040CDAD /* propaint_key.txt */; };
 		39647AE11C55ABDA00ABF03F /* layer-fx.png in Resources */ = {isa = PBXBuildFile; fileRef = 39647AE01C55ABDA00ABF03F /* layer-fx.png */; };
 		3964B7F31D742E9D0037A19A /* PSVectorNodeEditorOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3964B7F21D742E9D0037A19A /* PSVectorNodeEditorOptions.m */; };
 		3964B7F41D742E9D0037A19A /* PSVectorNodeEditorOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3964B7F21D742E9D0037A19A /* PSVectorNodeEditorOptions.m */; };
@@ -3860,12 +3854,6 @@
 		39C78BC91DAD3BE600379B9B /* EccRegisterBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 39C78BC51DAD3BE600379B9B /* EccRegisterBundle.bundle */; };
 		39C78BCA1DAD3BE600379B9B /* EccRegisterBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 39C78BC51DAD3BE600379B9B /* EccRegisterBundle.bundle */; };
 		39C78BCB1DAD3BE600379B9B /* EccRegisterBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 39C78BC51DAD3BE600379B9B /* EccRegisterBundle.bundle */; };
-		39C78BCC1DAD3BE600379B9B /* key.txt in Resources */ = {isa = PBXBuildFile; fileRef = 39C78BC61DAD3BE600379B9B /* key.txt */; };
-		39C78BCD1DAD3BE600379B9B /* key.txt in Resources */ = {isa = PBXBuildFile; fileRef = 39C78BC61DAD3BE600379B9B /* key.txt */; };
-		39C78BCE1DAD3BE600379B9B /* key.txt in Resources */ = {isa = PBXBuildFile; fileRef = 39C78BC61DAD3BE600379B9B /* key.txt */; };
-		39C78BCF1DAD3BE600379B9B /* keylist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 39C78BC71DAD3BE600379B9B /* keylist.txt */; };
-		39C78BD01DAD3BE600379B9B /* keylist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 39C78BC71DAD3BE600379B9B /* keylist.txt */; };
-		39C78BD11DAD3BE600379B9B /* keylist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 39C78BC71DAD3BE600379B9B /* keylist.txt */; };
 		39D387D31CA38840006E2701 /* PSShowInfoPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D387D21CA38840006E2701 /* PSShowInfoPanel.m */; };
 		39D4AD291C103799004C1E4C /* PSTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D4AD281C103799004C1E4C /* PSTextFieldCell.m */; };
 		39D89C9F1C34D629009B0194 /* ZoomTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D89C9E1C34D629009B0194 /* ZoomTool.m */; };
@@ -4439,7 +4427,6 @@
 		AB4C94601EC30FFA0059F605 /* tools-21-a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39F8E0A41CBF76B8007B4FBF /* tools-21-a@2x.png */; };
 		AB4C94611EC30FFA0059F605 /* transform-perspective.png in Resources */ = {isa = PBXBuildFile; fileRef = 394492021BE85684004F6310 /* transform-perspective.png */; };
 		AB4C94621EC30FFA0059F605 /* smudge.png in Resources */ = {isa = PBXBuildFile; fileRef = A8C04BE005B837DC00A80207 /* smudge.png */; };
-		AB4C94631EC30FFA0059F605 /* propaint_key.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3960FE1F1DADE36F0040CDAD /* propaint_key.txt */; };
 		AB4C94641EC30FFA0059F605 /* box-midle.png in Resources */ = {isa = PBXBuildFile; fileRef = 39A1BE6B1BE1C64C008DAB88 /* box-midle.png */; };
 		AB4C94651EC30FFA0059F605 /* select-4-a.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C020321BE995B700D09D2F /* select-4-a.png */; };
 		AB4C94661EC30FFA0059F605 /* spark_knob_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 39F067B41C93180400F5BC61 /* spark_knob_highlighted.png */; };
@@ -4581,7 +4568,6 @@
 		AB4C94EF1EC30FFA0059F605 /* skew-lr.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8126391BE88FED00EB1BFD /* skew-lr.png */; };
 		AB4C94F01EC30FFA0059F605 /* intro-new.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D7CBC60A209AC400FFC6A4 /* intro-new.png */; };
 		AB4C94F11EC30FFA0059F605 /* PixelStyleAppServerConfig.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3938ED111C7F581400AE970C /* PixelStyleAppServerConfig.xml */; };
-		AB4C94F21EC30FFA0059F605 /* keylist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 39C78BC71DAD3BE600379B9B /* keylist.txt */; };
 		AB4C94F31EC30FFA0059F605 /* tools-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39F8E0831CBF76B8007B4FBF /* tools-1@2x.png */; };
 		AB4C94F41EC30FFA0059F605 /* fx-shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 39A0E2FB1BE0A6800073C955 /* fx-shadow.png */; };
 		AB4C94F51EC30FFA0059F605 /* tools-21-a.png in Resources */ = {isa = PBXBuildFile; fileRef = 39493E0F1C9147AD00143AE7 /* tools-21-a.png */; };
@@ -4594,7 +4580,6 @@
 		AB4C94FC1EC30FFA0059F605 /* poly-lasso.png in Resources */ = {isa = PBXBuildFile; fileRef = DC74776B0A43CE7C00CB1C1D /* poly-lasso.png */; };
 		AB4C94FD1EC30FFA0059F605 /* GeneralPrefsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DC70A07D0A6205DC000B8333 /* GeneralPrefsIcon.png */; };
 		AB4C94FE1EC30FFA0059F605 /* transform-perspective-a.png in Resources */ = {isa = PBXBuildFile; fileRef = 394492011BE85684004F6310 /* transform-perspective-a.png */; };
-		AB4C94FF1EC30FFA0059F605 /* key.txt in Resources */ = {isa = PBXBuildFile; fileRef = 39C78BC61DAD3BE600379B9B /* key.txt */; };
 		AB4C95001EC30FFA0059F605 /* info-rgba.png in Resources */ = {isa = PBXBuildFile; fileRef = 39A1BE601BE1C15D008DAB88 /* info-rgba.png */; };
 		AB4C95011EC30FFA0059F605 /* NewPrefsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DC70A07E0A6205DC000B8333 /* NewPrefsIcon.png */; };
 		AB4C95021EC30FFA0059F605 /* link.png in Resources */ = {isa = PBXBuildFile; fileRef = 39EBF0AB1C24DE6D00157116 /* link.png */; };
@@ -4622,7 +4607,6 @@
 		AB4C95181EC30FFA0059F605 /* resize-ne-sw-cursor.png in Resources */ = {isa = PBXBuildFile; fileRef = DCCC46180FB32277006A7E69 /* resize-ne-sw-cursor.png */; };
 		AB4C95191EC30FFA0059F605 /* mybrushes-group-4-a.png in Resources */ = {isa = PBXBuildFile; fileRef = 39BFA2181BFC55B300F88F72 /* mybrushes-group-4-a.png */; };
 		AB4C951A1EC30FFA0059F605 /* info-xy.png in Resources */ = {isa = PBXBuildFile; fileRef = 39A1BE621BE1C15D008DAB88 /* info-xy.png */; };
-		AB4C951B1EC30FFA0059F605 /* propaint_keylist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3960FE1E1DADE36F0040CDAD /* propaint_keylist.txt */; };
 		AB4C951C1EC30FFA0059F605 /* pen-0.png in Resources */ = {isa = PBXBuildFile; fileRef = AB001B671CBB469F00E44163 /* pen-0.png */; };
 		AB4C951D1EC30FFA0059F605 /* skew-urdl.png in Resources */ = {isa = PBXBuildFile; fileRef = AB81263C1BE88FED00EB1BFD /* skew-urdl.png */; };
 		AB4C951E1EC30FFA0059F605 /* polyon-add-cursor.png in Resources */ = {isa = PBXBuildFile; fileRef = 390AFF8F1D018BF800E416E2 /* polyon-add-cursor.png */; };
@@ -9941,7 +9925,7 @@
 		AB430DC51EF0D37A009E436B /* GraphicsMagickExporter.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = GraphicsMagickExporter.plugin; sourceTree = "<group>"; };
 		AB499D4E1BA27CC600F66C41 /* ComputeDistance.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ComputeDistance.xcodeproj; path = source/ComputeDistance/ComputeDistance.xcodeproj; sourceTree = "<group>"; };
 		AB49A81C1BA28AB800F66C41 /* libiomp5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libiomp5.dylib; sourceTree = "<group>"; };
-		AB4C977D1EC30FFA0059F605 /* Photo Image Editor Pixelstyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Image Editor Pixelstyle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB4C977D1EC30FFA0059F605 /* Pixelstyle Photo Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pixelstyle Photo Editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4C977F1EC30FFB0059F605 /* PixelStyle copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PixelStyle copy-Info.plist"; path = "/Users/lchzh/Documents/yifang_project/pixelstyle/PixelStyle/PixelStyle/PixelStyle copy-Info.plist"; sourceTree = "<absolute>"; };
 		AB56D3751BE53BBD001BFF73 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		AB5868151BBA60490013CA22 /* Curves.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Curves.xcodeproj; path = "../Plug-ins/Curves/Curves.xcodeproj"; sourceTree = "<group>"; };
@@ -10481,7 +10465,7 @@
 				394FD76F1D12A01500A59E8A /* ProPaint.app */,
 				39C7878C1DAD301E00379B9B /* Pro Paint for Mac.app */,
 				39C78BBD1DAD302D00379B9B /* Pro Paint for Mac.app */,
-				AB4C977D1EC30FFA0059F605 /* Photo Image Editor Pixelstyle.app */,
+				AB4C977D1EC30FFA0059F605 /* Pixelstyle Photo Editor.app */,
 				1852F1A7280E34C800D028C1 /* PixelStyle Free No Plugins.app */,
 			);
 			name = Products;
@@ -13294,7 +13278,7 @@
 			name = "PixelStyle Free";
 			productInstallPath = "$(HOME)/Applications";
 			productName = Seashore;
-			productReference = AB4C977D1EC30FFA0059F605 /* Photo Image Editor Pixelstyle.app */;
+			productReference = AB4C977D1EC30FFA0059F605 /* Pixelstyle Photo Editor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -15667,7 +15651,6 @@
 				39C784F41DAD301E00379B9B /* tools-12-a@2x.png in Resources */,
 				39C784F51DAD301E00379B9B /* win-btn-bg.png in Resources */,
 				39C784F61DAD301E00379B9B /* paths-mode-exclude.png in Resources */,
-				3960FE211DADE36F0040CDAD /* propaint_keylist.txt in Resources */,
 				39C784F71DAD301E00379B9B /* vec-align-top.png in Resources */,
 				39C784F81DAD301E00379B9B /* gradient-7.png in Resources */,
 				39C784F91DAD301E00379B9B /* move-left-alignment-a.png in Resources */,
@@ -15836,7 +15819,6 @@
 				39C7859C1DAD301E00379B9B /* new-tb.png in Resources */,
 				39C7859D1DAD301E00379B9B /* forward-tb.png in Resources */,
 				39C7859E1DAD301E00379B9B /* backward-tb.png in Resources */,
-				39C78BD01DAD3BE600379B9B /* keylist.txt in Resources */,
 				39C7859F1DAD301E00379B9B /* float.png in Resources */,
 				39C785A01DAD301E00379B9B /* tools-23-h@2x.png in Resources */,
 				39C785A11DAD301E00379B9B /* solid_white.png in Resources */,
@@ -15885,7 +15867,6 @@
 				39C785CC1DAD301E00379B9B /* done.png in Resources */,
 				39C785CD1DAD301E00379B9B /* polyon-cursor.png in Resources */,
 				39C785CE1DAD301E00379B9B /* tools-23.png in Resources */,
-				39C78BCD1DAD3BE600379B9B /* key.txt in Resources */,
 				39C785CF1DAD301E00379B9B /* tools-7-a@2x.png in Resources */,
 				39C785D01DAD301E00379B9B /* selectnone.png in Resources */,
 				39C785D11DAD301E00379B9B /* trueview-not.png in Resources */,
@@ -15925,7 +15906,6 @@
 				39C785F41DAD301E00379B9B /* tools-5-a@2x.png in Resources */,
 				39C785F51DAD301E00379B9B /* tools-27-h.png in Resources */,
 				39C785F61DAD301E00379B9B /* vector-move-align.png in Resources */,
-				3960FE241DADE36F0040CDAD /* propaint_key.txt in Resources */,
 				39C785F71DAD301E00379B9B /* selectall.png in Resources */,
 				39C785F81DAD301E00379B9B /* tools-4@2x.png in Resources */,
 				39C785F91DAD301E00379B9B /* anchorcontrol-0-a.png in Resources */,
@@ -16212,7 +16192,6 @@
 				39C789251DAD302D00379B9B /* tools-12-a@2x.png in Resources */,
 				39C789261DAD302D00379B9B /* win-btn-bg.png in Resources */,
 				39C789271DAD302D00379B9B /* paths-mode-exclude.png in Resources */,
-				3960FE221DADE36F0040CDAD /* propaint_keylist.txt in Resources */,
 				39C789281DAD302D00379B9B /* vec-align-top.png in Resources */,
 				39C789291DAD302D00379B9B /* gradient-7.png in Resources */,
 				39C7892A1DAD302D00379B9B /* move-left-alignment-a.png in Resources */,
@@ -16381,7 +16360,6 @@
 				39C789CD1DAD302D00379B9B /* new-tb.png in Resources */,
 				39C789CE1DAD302D00379B9B /* forward-tb.png in Resources */,
 				39C789CF1DAD302D00379B9B /* backward-tb.png in Resources */,
-				39C78BD11DAD3BE600379B9B /* keylist.txt in Resources */,
 				39C789D01DAD302D00379B9B /* float.png in Resources */,
 				39C789D11DAD302D00379B9B /* tools-23-h@2x.png in Resources */,
 				39C789D21DAD302D00379B9B /* solid_white.png in Resources */,
@@ -16430,7 +16408,6 @@
 				39C789FD1DAD302D00379B9B /* done.png in Resources */,
 				39C789FE1DAD302D00379B9B /* polyon-cursor.png in Resources */,
 				39C789FF1DAD302D00379B9B /* tools-23.png in Resources */,
-				39C78BCE1DAD3BE600379B9B /* key.txt in Resources */,
 				39C78A001DAD302D00379B9B /* tools-7-a@2x.png in Resources */,
 				39C78A011DAD302D00379B9B /* selectnone.png in Resources */,
 				39C78A021DAD302D00379B9B /* trueview-not.png in Resources */,
@@ -16470,7 +16447,6 @@
 				39C78A251DAD302D00379B9B /* tools-5-a@2x.png in Resources */,
 				39C78A261DAD302D00379B9B /* tools-27-h.png in Resources */,
 				39C78A271DAD302D00379B9B /* vector-move-align.png in Resources */,
-				3960FE251DADE36F0040CDAD /* propaint_key.txt in Resources */,
 				39C78A281DAD302D00379B9B /* selectall.png in Resources */,
 				39C78A291DAD302D00379B9B /* tools-4@2x.png in Resources */,
 				39C78A2A1DAD302D00379B9B /* anchorcontrol-0-a.png in Resources */,
@@ -16624,7 +16600,6 @@
 				39F8E0D01CBF76B9007B4FBF /* tools-21-a@2x.png in Resources */,
 				3944920A1BE85684004F6310 /* transform-perspective.png in Resources */,
 				A8EDF0DD078959C80022BB31 /* smudge.png in Resources */,
-				3960FE231DADE36F0040CDAD /* propaint_key.txt in Resources */,
 				39A1BE6F1BE1C64C008DAB88 /* box-midle.png in Resources */,
 				39C020341BE995B700D09D2F /* select-4-a.png in Resources */,
 				39F067B51C93180400F5BC61 /* spark_knob_highlighted.png in Resources */,
@@ -16768,7 +16743,6 @@
 				AB8126431BE88FED00EB1BFD /* skew-lr.png in Resources */,
 				A8D7CBC90A209AC400FFC6A4 /* intro-new.png in Resources */,
 				3938ED121C7F581400AE970C /* PixelStyleAppServerConfig.xml in Resources */,
-				39C78BCF1DAD3BE600379B9B /* keylist.txt in Resources */,
 				39F8E0AF1CBF76B8007B4FBF /* tools-1@2x.png in Resources */,
 				39A0E3051BE0A6800073C955 /* fx-shadow.png in Resources */,
 				39493E111C9147AD00143AE7 /* tools-21-a.png in Resources */,
@@ -16781,7 +16755,6 @@
 				DC74776C0A43CE7C00CB1C1D /* poly-lasso.png in Resources */,
 				DC70A07F0A6205DC000B8333 /* GeneralPrefsIcon.png in Resources */,
 				394492091BE85684004F6310 /* transform-perspective-a.png in Resources */,
-				39C78BCC1DAD3BE600379B9B /* key.txt in Resources */,
 				39A1BE641BE1C15D008DAB88 /* info-rgba.png in Resources */,
 				DC70A0800A6205DC000B8333 /* NewPrefsIcon.png in Resources */,
 				AB96ADEF1EF2601D0064B0CF /* mat-pro.png in Resources */,
@@ -16810,7 +16783,6 @@
 				DCCC461D0FB32277006A7E69 /* resize-ne-sw-cursor.png in Resources */,
 				39BFA2241BFC55B300F88F72 /* mybrushes-group-4-a.png in Resources */,
 				39A1BE661BE1C15D008DAB88 /* info-xy.png in Resources */,
-				3960FE201DADE36F0040CDAD /* propaint_keylist.txt in Resources */,
 				AB001B711CBB469F00E44163 /* pen-0.png in Resources */,
 				AB8126461BE88FED00EB1BFD /* skew-urdl.png in Resources */,
 				390AFF931D018BF800E416E2 /* polyon-add-cursor.png in Resources */,
@@ -17174,7 +17146,6 @@
 				AB4C94601EC30FFA0059F605 /* tools-21-a@2x.png in Resources */,
 				AB4C94611EC30FFA0059F605 /* transform-perspective.png in Resources */,
 				AB4C94621EC30FFA0059F605 /* smudge.png in Resources */,
-				AB4C94631EC30FFA0059F605 /* propaint_key.txt in Resources */,
 				AB4C94641EC30FFA0059F605 /* box-midle.png in Resources */,
 				AB4C94651EC30FFA0059F605 /* select-4-a.png in Resources */,
 				AB4C94661EC30FFA0059F605 /* spark_knob_highlighted.png in Resources */,
@@ -17320,7 +17291,6 @@
 				AB4C94EF1EC30FFA0059F605 /* skew-lr.png in Resources */,
 				AB4C94F01EC30FFA0059F605 /* intro-new.png in Resources */,
 				AB4C94F11EC30FFA0059F605 /* PixelStyleAppServerConfig.xml in Resources */,
-				AB4C94F21EC30FFA0059F605 /* keylist.txt in Resources */,
 				AB4C94F31EC30FFA0059F605 /* tools-1@2x.png in Resources */,
 				AB4C94F41EC30FFA0059F605 /* fx-shadow.png in Resources */,
 				AB4C94F51EC30FFA0059F605 /* tools-21-a.png in Resources */,
@@ -17333,7 +17303,6 @@
 				AB4C94FC1EC30FFA0059F605 /* poly-lasso.png in Resources */,
 				AB4C94FD1EC30FFA0059F605 /* GeneralPrefsIcon.png in Resources */,
 				AB4C94FE1EC30FFA0059F605 /* transform-perspective-a.png in Resources */,
-				AB4C94FF1EC30FFA0059F605 /* key.txt in Resources */,
 				AB4C95001EC30FFA0059F605 /* info-rgba.png in Resources */,
 				AB4C95011EC30FFA0059F605 /* NewPrefsIcon.png in Resources */,
 				AB4C95021EC30FFA0059F605 /* link.png in Resources */,
@@ -17361,7 +17330,6 @@
 				AB4C95181EC30FFA0059F605 /* resize-ne-sw-cursor.png in Resources */,
 				AB4C95191EC30FFA0059F605 /* mybrushes-group-4-a.png in Resources */,
 				AB4C951A1EC30FFA0059F605 /* info-xy.png in Resources */,
-				AB4C951B1EC30FFA0059F605 /* propaint_keylist.txt in Resources */,
 				AB4C951C1EC30FFA0059F605 /* pen-0.png in Resources */,
 				AB4C951D1EC30FFA0059F605 /* skew-urdl.png in Resources */,
 				AB4C951E1EC30FFA0059F605 /* polyon-add-cursor.png in Resources */,
@@ -22022,7 +21990,7 @@
 				OTHER_LDFLAGS = "-lz";
 				PREBINDING = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.effectmatrix.pixelstylefree;
-				PRODUCT_NAME = "Photo Image Editor Pixelstyle";
+				PRODUCT_NAME = "Pixelstyle Photo Editor";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
@@ -22089,7 +22057,7 @@
 				OTHER_LDFLAGS = "-lz";
 				PREBINDING = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.effectmatrix.pixelstylefree;
-				PRODUCT_NAME = "Photo Image Editor Pixelstyle";
+				PRODUCT_NAME = "Pixelstyle Photo Editor";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
