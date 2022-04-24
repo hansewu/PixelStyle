@@ -2164,7 +2164,7 @@ int matrix_invert(int N, double *matrix) {
 - (BOOL)judgeIsSupportChannelForTool
 {
     int curToolIndex = [[[PSController utilitiesManager] toolboxUtilityFor:m_idDocument] tool];
-    if (curToolIndex == kBucketTool || curToolIndex == kGradientTool || curToolIndex == kCloneTool || curToolIndex == kSmudgeTool|| curToolIndex == kRedEyeRemoveTool|| curToolIndex == kMyBrushTool|| curToolIndex == kBurnTool|| curToolIndex == kDodgeTool|| curToolIndex == kSpongeTool)
+    if (curToolIndex == kCloneTool || curToolIndex == kSmudgeTool|| curToolIndex == kRedEyeRemoveTool|| curToolIndex == kMyBrushTool|| curToolIndex == kBurnTool|| curToolIndex == kDodgeTool|| curToolIndex == kSpongeTool) //curToolIndex == kBucketTool || curToolIndex == kGradientTool || 
     {
         PS_EDIT_CHANNEL_TYPE editType = [[[m_idDocument contents] activeLayer] editedChannelOfLayer];
         if (editType != kEditAllChannels) {
@@ -3022,12 +3022,16 @@ int matrix_invert(int N, double *matrix) {
 
 - (IBAction)cut:(id)sender
 {
+    if (![[m_idDocument selection] active])
+        [self selectAll:nil];
 	[[m_idDocument selection] cutSelection];
     
 }
 
 - (IBAction)copy:(id)sender
 {
+    if (![[m_idDocument selection] active])
+        [self selectAll:nil];
 	[[m_idDocument selection] copySelection];
 }
 
@@ -3366,16 +3370,16 @@ int matrix_invert(int N, double *matrix) {
 	
 	[[m_idDocument helpers] endLineDrawing];
 	switch ([menuItem tag]) {
-		case 261: /* Copy */
-			if (![[m_idDocument selection] active])
-				return NO;
-		break;
-		case 260: /* Cut */
-			if (![[m_idDocument selection] active] || [[m_idDocument selection] floating] || [[m_idDocument contents] selectedChannel] != kAllChannels)
-				return NO;
-		break;
+//		case 261: /* Copy */
+//			if (![[m_idDocument selection] active])
+//				return NO;
+//		break;
+//		case 260: /* Cut */
+//			if (![[m_idDocument selection] active] || [[m_idDocument selection] floating])// || [[m_idDocument contents] selectedChannel] != kAllChannels)
+//				return NO;
+//		break;
 		case 263: /* Delete */
-			if (![[m_idDocument selection] active] || [[m_idDocument contents] selectedChannel] != kAllChannels)
+			if (![[m_idDocument selection] active])// || [[m_idDocument contents] selectedChannel] != kAllChannels)
 				return NO;
 		break;
 		case 270: /* Select All */

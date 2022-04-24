@@ -62,10 +62,10 @@
     [[NSBezierPath bezierPathWithRect:titlebarRect] addClip];
     NSGradient * gradient = [[[NSGradient alloc] initWithStartingColor:WINDOW_TITLE_BAR_BEGIN_COLOR endingColor:WINDOW_TITLE_BAR_END_COLOR] autorelease];
     [path addClip];
-    [gradient drawInRect:titlebarRect angle:270.0];
+ //   [gradient drawInRect:titlebarRect angle:270.0];
     
     m_windowTitle = [[self window] title];
-    [self drawString:m_windowTitle inRect:titlebarRect];
+  //  [self drawString:m_windowTitle inRect:titlebarRect];
 }
 
 @end

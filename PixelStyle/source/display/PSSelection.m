@@ -1825,6 +1825,7 @@
     IntRect localRect = [self localRect];
     unsigned char *overlay = [[m_idDocument whiteboard] overlay];
     unsigned char basePixel[4];
+    int channel = [[m_idDocument contents] selectedChannel];
     
     localRect = IntConstrainRect(localRect, IntMakeRect(0, 0, [(PSLayer *)layer width], [(PSLayer *)layer height]));
     
@@ -1842,14 +1843,32 @@
     }
     
     // Set the overlay to erasing
-    if (YES) //[layer hasAlpha]
-        [[m_idDocument whiteboard] setOverlayBehaviour:kErasingBehaviour];
-    [[m_idDocument whiteboard] setOverlayOpacity:255];
+
     
     // Fill the overlay with the base pixel
-    for (j = 0; j < localRect.size.height; j++) {
-        for (i = 0; i < localRect.size.width; i++) {
-            memcpy(&(overlay[((localRect.origin.y + j) * width + (localRect.origin.x + i)) * spp]), &basePixel, spp);
+    if(channel != kAlphaChannel)
+    {
+        if (YES) //[layer hasAlpha]
+            [[m_idDocument whiteboard] setOverlayBehaviour:kErasingBehaviour];
+        [[m_idDocument whiteboard] setOverlayOpacity:255];
+        
+        for (j = 0; j < localRect.size.height; j++) {
+            for (i = 0; i < localRect.size.width; i++) {
+                memcpy(&(overlay[((localRect.origin.y + j) * width + (localRect.origin.x + i)) * spp]), &basePixel, spp);
+            }
+        }
+    }
+    else
+    {
+        [[m_idDocument whiteboard] setOverlayBehaviour:kReplacingBehaviour];
+        [[m_idDocument whiteboard] setOverlayOpacity:255];
+        unsigned char *replace = [[m_idDocument whiteboard] replace];
+        
+        for (j = 0; j < localRect.size.height; j++) {
+            for (i = 0; i < localRect.size.width; i++) {
+                overlay[((localRect.origin.y + j) * width + (localRect.origin.x + i)) * spp + spp -1] = 0;
+                replace[(localRect.origin.y + j) * width + (localRect.origin.x + i) ] = 0xff;
+            }
         }
     }
     

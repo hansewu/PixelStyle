@@ -9925,7 +9925,7 @@
 		AB430DC51EF0D37A009E436B /* GraphicsMagickExporter.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = GraphicsMagickExporter.plugin; sourceTree = "<group>"; };
 		AB499D4E1BA27CC600F66C41 /* ComputeDistance.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ComputeDistance.xcodeproj; path = source/ComputeDistance/ComputeDistance.xcodeproj; sourceTree = "<group>"; };
 		AB49A81C1BA28AB800F66C41 /* libiomp5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libiomp5.dylib; sourceTree = "<group>"; };
-		AB4C977D1EC30FFA0059F605 /* Pixelstyle Photo Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pixelstyle Photo Editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB4C977D1EC30FFA0059F605 /* PixelStyle Photo Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PixelStyle Photo Editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4C977F1EC30FFB0059F605 /* PixelStyle copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PixelStyle copy-Info.plist"; path = "/Users/lchzh/Documents/yifang_project/pixelstyle/PixelStyle/PixelStyle/PixelStyle copy-Info.plist"; sourceTree = "<absolute>"; };
 		AB56D3751BE53BBD001BFF73 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		AB5868151BBA60490013CA22 /* Curves.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Curves.xcodeproj; path = "../Plug-ins/Curves/Curves.xcodeproj"; sourceTree = "<group>"; };
@@ -10465,7 +10465,7 @@
 				394FD76F1D12A01500A59E8A /* ProPaint.app */,
 				39C7878C1DAD301E00379B9B /* Pro Paint for Mac.app */,
 				39C78BBD1DAD302D00379B9B /* Pro Paint for Mac.app */,
-				AB4C977D1EC30FFA0059F605 /* Pixelstyle Photo Editor.app */,
+				AB4C977D1EC30FFA0059F605 /* PixelStyle Photo Editor.app */,
 				1852F1A7280E34C800D028C1 /* PixelStyle Free No Plugins.app */,
 			);
 			name = Products;
@@ -13278,7 +13278,7 @@
 			name = "PixelStyle Free";
 			productInstallPath = "$(HOME)/Applications";
 			productName = Seashore;
-			productReference = AB4C977D1EC30FFA0059F605 /* Pixelstyle Photo Editor.app */;
+			productReference = AB4C977D1EC30FFA0059F605 /* PixelStyle Photo Editor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -21990,7 +21990,7 @@
 				OTHER_LDFLAGS = "-lz";
 				PREBINDING = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.effectmatrix.pixelstylefree;
-				PRODUCT_NAME = "Pixelstyle Photo Editor";
+				PRODUCT_NAME = "PixelStyle Photo Editor";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
@@ -22056,7 +22056,7 @@
 				OTHER_LDFLAGS = "-lz";
 				PREBINDING = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.effectmatrix.pixelstylefree;
-				PRODUCT_NAME = "Pixelstyle Photo Editor";
+				PRODUCT_NAME = "PixelStyle Photo Editor";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
