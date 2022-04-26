@@ -214,6 +214,7 @@
 "Save As" = "Save As";
 "Revert" = "Revert";
 "Import" = "Import";
+"Import as a new layer" = "Import as a new layer";
 "Export" = "Export";
 "Page Setup" = "Page Setup";
 "Print" = "Print";
@@ -291,7 +292,7 @@
 "Delete Paths" = "Delete Paths";
 "Select" = "Select";
 "Select All" = "Select All";
-"Select Alpha" = "Select Alpha";
+"Select From Alpha Channel" = "Select From Alpha Channel";
 "Deselect" = "Deselect";
 "Inverse" = "Inverse";
 "Flip Horizontal" = "Flip Horizontal";

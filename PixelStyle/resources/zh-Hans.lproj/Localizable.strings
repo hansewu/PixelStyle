@@ -208,6 +208,7 @@
 "Save As" = "存储为";
 "Revert" = "恢复";
 "Import" = "导入";
+"Import as a new layer" = "导入为新图层";
 "Export" = "导出";
 "Page Setup" = "页面设置";
 "Print" = "打印";
@@ -275,8 +276,8 @@
 "Separate Paths" = "分离路径";
 "Delete Paths" = "删除路径";
 "Select" = "选择";
-"Select All" = "全部";
-"Select Alpha" = "选择半透明";
+"Select All" = "选择全部";
+"Select From Alpha Channel" = "从Alpha通道选择";
 "Deselect" = "取消选择";
 "Inverse" = "反向";
 "Layers" = "图层";

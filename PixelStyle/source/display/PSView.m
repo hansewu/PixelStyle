@@ -51,6 +51,7 @@
 #import "PSSynthesizeImageRender.h"
 #import "PSVectorPenTool.h"
 #import "MyBrushOptions.h"
+#import "PSMenuManager.h"
 
 extern IntPoint gScreenResolution;
 
@@ -61,11 +62,31 @@ static NSString*	SelectAlphaToolbarItemIdentifier = @"Select Alpha Toolbar Item 
 
 @implementation PSView
 
+- (void)addOtherMenu
+{
+    PSMenuManager *menuManager = [PSMenuManager getMenuManager];
+    
+    NSMenuItem *menuItem = [[menuManager getMenuSelection] itemWithTitle:NSLocalizedString(@"Selection to Alpha channel", nil)];
+    if (menuItem == nil)
+    {
+        menuItem = [[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Selection to Alpha channel", nil) action:@selector(selectionToAlpha:) keyEquivalent:@""];
+        [[menuManager getMenuSelection] addItem:menuItem];
+        [menuItem autorelease];
+    }
+    
+    [menuItem setTarget:self];
+    
+//    [submenu addItem:];
+//    [menuItem setTag:i + 10000];
+    
+}
+
 - (id)initWithDocument:(id)doc 
 {
 	NSRect frame;
 	int xres, yres;
 	
+    //[self addOtherMenu];
 	// Set the last ruler update to take place in the distant past
 	m_dateLastRulerUpdate = [NSDate distantPast];
 	[m_dateLastRulerUpdate retain];
@@ -3071,6 +3092,10 @@ int matrix_invert(int N, double *matrix) {
 	}
 }
 
+- (IBAction)selectionToAlpha:(id)sender
+{
+    
+}
 
 - (IBAction)selectAll:(id)sender
 {

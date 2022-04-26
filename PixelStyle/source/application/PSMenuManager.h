@@ -10,6 +10,7 @@
 
 @interface PSMenuManager : NSObject
 {
+       
     //NSMenu
     IBOutlet NSMenu         *m_menuFile;
     IBOutlet NSMenu         *m_menuEdit;
@@ -175,4 +176,7 @@
     
     
 }
+
++(PSMenuManager *)getMenuManager;
+-(NSMenu *)getMenuSelection;
 @end

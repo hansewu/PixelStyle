@@ -832,6 +832,7 @@ static NSString*	DuplicateSelectionToolbarItemIdentifier = @"Duplicate Selection
     id layer = [[m_idDocument contents] activeLayer];
     int width = [(PSLayer *)layer width], height = [(PSLayer *)layer height];
     int spp = [(PSLayer *)layer spp];
+    int channel = [self selectedChannel];
     
     unsigned char aBasePixel[4];
     if (spp == 4)
@@ -841,6 +842,8 @@ static NSString*	DuplicateSelectionToolbarItemIdentifier = @"Duplicate Selection
         aBasePixel[1] = (unsigned char)([color greenComponent] * 255.0);
         aBasePixel[2] = (unsigned char)([color blueComponent] * 255.0);
         aBasePixel[3] = (unsigned char)([color alphaComponent] * 255.0);
+        if(channel == kAlphaChannel)
+            aBasePixel[3] = ((int)aBasePixel[0]*30 + (int)aBasePixel[1]*59 + (int)aBasePixel[2]*11)/100;
     }
     else
     {
@@ -856,6 +859,7 @@ static NSString*	DuplicateSelectionToolbarItemIdentifier = @"Duplicate Selection
     IntSize maskSize = [[m_idDocument selection] maskSize];
     BOOL useSelection = [[m_idDocument selection] active];
     unsigned char *layerData = [layer getRawData];
+    
     
     if (useSelection)
     {
@@ -875,7 +879,12 @@ static NSString*	DuplicateSelectionToolbarItemIdentifier = @"Duplicate Selection
                     brushAlpha = mask[(trueMaskOffset.y + tempPoint.y) * maskSize.width + (trueMaskOffset.x + tempPoint.x)];
                 if (brushAlpha > 0)
                 {
-                    specialMergeCustom(spp, layerData, position, aBasePixel, 0, layerData, position, brushAlpha);
+                    if(channel != kAlphaChannel)
+                        specialMergeCustom(spp, layerData, position, aBasePixel, 0, layerData, position, brushAlpha);
+                    else
+                    {
+                        replaceAlphaMerge(spp, layerData, position, aBasePixel, 0, 255);
+                    }
                 }
                 
             }
@@ -891,7 +900,10 @@ static NSString*	DuplicateSelectionToolbarItemIdentifier = @"Duplicate Selection
             {
                 int position = (j * width + i) * spp;
                 //memcpy(layerData + position, aBasePixel, spp);
-                specialMergeCustom(spp, layerData, position, aBasePixel, 0, layerData, position, 255);
+                if(channel != kAlphaChannel)
+                    specialMergeCustom(spp, layerData, position, aBasePixel, 0, layerData, position, 255);
+                else
+                    replaceAlphaMerge(spp, layerData, position, aBasePixel, 0, 255);
             }
         }
     }

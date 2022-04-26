@@ -10,8 +10,22 @@
 
 @implementation PSMenuManager
 
+PSMenuManager *m_menuManagerId;
+
++(PSMenuManager *)getMenuManager
+{
+    return m_menuManagerId;
+}
+
+-(NSMenu *)getMenuSelection
+{
+    return m_menuSelect;
+}
+
 -(void)awakeFromNib
 {
+    m_menuManagerId     = self;
+    
     m_menuFile.title    = NSLocalizedString(@"File", nil);
     m_menuEdit.title    = NSLocalizedString(@"Edit", nil);
     m_menuImage.title   = NSLocalizedString(@"Image", nil);
@@ -37,7 +51,7 @@
     m_menuItemSave.title  = NSLocalizedString(@"Save", nil);
     m_menuItemSaveAs.title    = [NSString stringWithFormat:@"%@...",NSLocalizedString(@"Save As", nil)];
     m_menuItemRevert.title  = NSLocalizedString(@"Revert", nil);
-    m_menuItemImport.title    = [NSString stringWithFormat:@"%@...",NSLocalizedString(@"Import", nil)];
+    m_menuItemImport.title    = [NSString stringWithFormat:@"%@...",NSLocalizedString(@"Import as a new layer", nil)];
     m_menuItemExport.title    = [NSString stringWithFormat:@"%@...",NSLocalizedString(@"Export", nil)];
     m_menuItemPageSetup.title  = [NSString stringWithFormat:@"%@...",NSLocalizedString(@"Page Setup", nil)];
     m_menuItemPrint.title    = [NSString stringWithFormat:@"%@...",NSLocalizedString(@"Print", nil)];
@@ -114,7 +128,7 @@
     
     
     m_menuItemSelectAll.title    = NSLocalizedString(@"Select All", nil);
-    m_menuItemSelectAlpha.title    = NSLocalizedString(@"Select Alpha", nil);
+    m_menuItemSelectAlpha.title    = NSLocalizedString(@"Select From Alpha Channel", nil);
     m_menuItemDeselect.title   = NSLocalizedString(@"Deselect", nil);
     m_menuItemInverse.title  = NSLocalizedString(@"Inverse", nil);
     m_menuItemFlipHorizontal.title   = NSLocalizedString(@"Flip Horizontal", nil);

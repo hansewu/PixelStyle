@@ -890,6 +890,8 @@
 		1852F1D1280E576600D028C1 /* libopencv_photo.405.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1852F1D0280E576500D028C1 /* libopencv_photo.405.dylib */; };
 		1852F2A1280EB38500D028C1 /* libpatchmatch.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1852F22F280EB03E00D028C1 /* libpatchmatch.dylib */; };
 		1852F2A3280EB39800D028C1 /* libpatchmatch.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1852F22F280EB03E00D028C1 /* libpatchmatch.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		186AD8062816917600009522 /* SelectionToAlpha.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 186AD7FD2816913200009522 /* SelectionToAlpha.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1876E91328177CFC00B790DF /* luminanceToAlpha.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1876E90628177CCF00B790DF /* luminanceToAlpha.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18A38CC4280907AE00FACD25 /* OCBilateral.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18A38C662809056B00FACD25 /* OCBilateral.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18D7E9492806498400A8FC3E /* libopencv_core.405.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18D7E9472806498300A8FC3E /* libopencv_core.405.dylib */; };
 		18D7E94A2806498400A8FC3E /* libopencv_imgproc.405.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18D7E9482806498300A8FC3E /* libopencv_imgproc.405.dylib */; };
@@ -5446,6 +5448,34 @@
 			remoteGlobalIDString = 1852F1DF280E9A9A00D028C1;
 			remoteInfo = patchmatch;
 		};
+		186AD7FC2816913200009522 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 186AD7EE2816913200009522 /* SelectionToAlpha.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
+			remoteInfo = SelectionToAlpha;
+		};
+		186AD8042816915300009522 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 186AD7EE2816913200009522 /* SelectionToAlpha.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = SelectionToAlpha;
+		};
+		1876E90528177CCF00B790DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1876E8FB28177CCF00B790DF /* luminanceToAlpha.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
+			remoteInfo = luminanceToAlpha;
+		};
+		1876E91128177CED00B790DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1876E8FB28177CCF00B790DF /* luminanceToAlpha.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = luminanceToAlpha;
+		};
 		18A38C652809056B00FACD25 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 18A38C602809056A00FACD25 /* OCBilateral.xcodeproj */;
@@ -8446,6 +8476,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				1876E91328177CFC00B790DF /* luminanceToAlpha.bundle in CopyFiles */,
+				186AD8062816917600009522 /* SelectionToAlpha.bundle in CopyFiles */,
 				18E68B4628115C40009AD2FF /* AIPortraitMatting.bundle in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -8991,6 +9023,8 @@
 		1852F1CD280E573200D028C1 /* libopencv_photo.405.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_photo.405.dylib; path = ../opencv/lib/libopencv_photo.405.dylib; sourceTree = "<group>"; };
 		1852F1D0280E576500D028C1 /* libopencv_photo.405.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_photo.405.dylib; path = ../opencv/lib/libopencv_photo.405.dylib; sourceTree = "<group>"; };
 		1852F22A280EB03E00D028C1 /* patchmatch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = patchmatch.xcodeproj; path = patchmatch_inpainting/inpaint/patchmatch.xcodeproj; sourceTree = "<group>"; };
+		186AD7EE2816913200009522 /* SelectionToAlpha.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SelectionToAlpha.xcodeproj; path = "../Plug-ins/SelectionToAlpha/SelectionToAlpha.xcodeproj"; sourceTree = "<group>"; };
+		1876E8FB28177CCF00B790DF /* luminanceToAlpha.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = luminanceToAlpha.xcodeproj; path = "../Plug-ins/luminanceToAlpha/luminanceToAlpha.xcodeproj"; sourceTree = "<group>"; };
 		18A38C602809056A00FACD25 /* OCBilateral.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OCBilateral.xcodeproj; path = "../Plug-ins/OCBilateral/OCBilateral.xcodeproj"; sourceTree = "<group>"; };
 		18D7E9472806498300A8FC3E /* libopencv_core.405.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.405.dylib; path = ../opencv/lib/libopencv_core.405.dylib; sourceTree = "<group>"; };
 		18D7E9482806498300A8FC3E /* libopencv_imgproc.405.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.405.dylib; path = ../opencv/lib/libopencv_imgproc.405.dylib; sourceTree = "<group>"; };
@@ -10434,6 +10468,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		186AD7EF2816913200009522 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				186AD7FD2816913200009522 /* SelectionToAlpha.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1876E8FC28177CCF00B790DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1876E90628177CCF00B790DF /* luminanceToAlpha.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		18A38C612809056A00FACD25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -10732,6 +10782,8 @@
 		35B157F80A2C04F9005B688F /* Universal Plug-ins */ = {
 			isa = PBXGroup;
 			children = (
+				1876E8FB28177CCF00B790DF /* luminanceToAlpha.xcodeproj */,
+				186AD7EE2816913200009522 /* SelectionToAlpha.xcodeproj */,
 				18E68B2F28115BDD009AD2FF /* AIPortraitMatting.xcodeproj */,
 				18A38C602809056A00FACD25 /* OCBilateral.xcodeproj */,
 				AB2513331EEA322A00AA3F14 /* SeamCarving.xcodeproj */,
@@ -12817,6 +12869,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				1876E91228177CED00B790DF /* PBXTargetDependency */,
+				186AD8052816915300009522 /* PBXTargetDependency */,
 				18E68B4528115C17009AD2FF /* PBXTargetDependency */,
 				18E68A26280F919A009AD2FF /* PBXTargetDependency */,
 				1852F290280EB36D00D028C1 /* PBXTargetDependency */,
@@ -13612,6 +13666,10 @@
 					ProjectRef = 35B157020A2C0116005B688F /* Invert.xcodeproj */;
 				},
 				{
+					ProductGroup = 1876E8FC28177CCF00B790DF /* Products */;
+					ProjectRef = 1876E8FB28177CCF00B790DF /* luminanceToAlpha.xcodeproj */;
+				},
+				{
 					ProductGroup = A83316C90C094D4400E1EBBE /* Products */;
 					ProjectRef = A83316C80C094D4400E1EBBE /* Median.xcodeproj */;
 				},
@@ -13646,6 +13704,10 @@
 				{
 					ProductGroup = AB2513341EEA322A00AA3F14 /* Products */;
 					ProjectRef = AB2513331EEA322A00AA3F14 /* SeamCarving.xcodeproj */;
+				},
+				{
+					ProductGroup = 186AD7EF2816913200009522 /* Products */;
+					ProjectRef = 186AD7EE2816913200009522 /* SelectionToAlpha.xcodeproj */;
 				},
 				{
 					ProductGroup = A8753A7F0C1FBE5D00EBA9B2 /* Products */;
@@ -13702,6 +13764,20 @@
 			fileType = "compiled.mach-o.dylib";
 			path = libpatchmatch.dylib;
 			remoteRef = 1852F22E280EB03E00D028C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		186AD7FD2816913200009522 /* SelectionToAlpha.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SelectionToAlpha.bundle;
+			remoteRef = 186AD7FC2816913200009522 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1876E90628177CCF00B790DF /* luminanceToAlpha.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = luminanceToAlpha.bundle;
+			remoteRef = 1876E90528177CCF00B790DF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		18A38C662809056B00FACD25 /* OCBilateral.bundle */ = {
@@ -19424,6 +19500,16 @@
 			isa = PBXTargetDependency;
 			name = patchmatch;
 			targetProxy = 1852F28F280EB36D00D028C1 /* PBXContainerItemProxy */;
+		};
+		186AD8052816915300009522 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SelectionToAlpha;
+			targetProxy = 186AD8042816915300009522 /* PBXContainerItemProxy */;
+		};
+		1876E91228177CED00B790DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = luminanceToAlpha;
+			targetProxy = 1876E91128177CED00B790DF /* PBXContainerItemProxy */;
 		};
 		18A38CC02809078000FACD25 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

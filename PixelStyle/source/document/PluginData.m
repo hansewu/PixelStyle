@@ -36,6 +36,19 @@
 		return IntMakeRect(0, 0, [(PSLayer *)[[document contents] activeLayer] width], [(PSLayer *)[[document contents] activeLayer] height]);
 }
 
+-(unsigned char *)selectionMask:(IntRect *)pSelectRect
+{
+    if ([[(PSDocument *)document selection] active])
+    {
+        IntRect selectRect = [[(PSDocument *)document selection] trueLocalRect];
+       
+        *pSelectRect = selectRect;
+        return [(PSSelection *)[(PSDocument *)document selection] mask];
+    }
+    
+    return NULL;
+}
+
 - (unsigned char *)data
 {
 	return [(PSLayer *)[[document contents] activeLayer] getDirectData];

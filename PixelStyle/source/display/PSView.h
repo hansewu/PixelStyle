@@ -668,6 +668,8 @@ typedef struct
  */
 - (void)restoreDrawSelectionBoundariesTimer;
 
+- (IBAction)selectionToAlpha:(id)sender;
+
 - (void)resetSynthesizedImageRender;
 - (BOOL)getNeedResetCombineData;
 - (NSColor*)getScreenColor:(int)spp;

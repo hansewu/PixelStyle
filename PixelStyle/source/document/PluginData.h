@@ -23,7 +23,7 @@
 	@result		Returns a IntRect indicating the active selection.
 */
 - (IntRect)selection;
-
+- (unsigned char *)selectionMask:(IntRect *)pSelectRect;
 /*!
 	@method		data
 	@discussion	Returns the bitmap data of the layer.
