@@ -33,6 +33,7 @@
 		0087B4211B7995ED0033CA57 /* VectorTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0087B4201B7995ED0033CA57 /* VectorTool.m */; };
 		00F06C091B7AFBA800DC491F /* VecDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00F06C081B7AFBA800DC491F /* VecDefaults.plist */; };
 		181AF4C02805533F0054C4EA /* SeamCarving.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB2513391EEA322A00AA3F14 /* SeamCarving.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1836E1E42818D091000E0DB9 /* AlphaToRGB.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1836E1D12818D021000E0DB9 /* AlphaToRGB.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1852EE11280E34C800D028C1 /* anchor-add-cursor.png in Resources */ = {isa = PBXBuildFile; fileRef = AB001B5D1CBB316F00E44163 /* anchor-add-cursor.png */; };
 		1852EE12280E34C800D028C1 /* tools-14-h.png in Resources */ = {isa = PBXBuildFile; fileRef = 393524441CD1AD9D0082F717 /* tools-14-h.png */; };
 		1852EE13280E34C800D028C1 /* btn-bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 39F067A41C92C9C800F5BC61 /* btn-bg2.png */; };
@@ -5392,6 +5393,20 @@
 			remoteGlobalIDString = 3EA7D63B1D6418B2002DA368;
 			remoteInfo = SeamCarving;
 		};
+		1836E1D02818D021000E0DB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1836E1CC2818D021000E0DB9 /* AlphaToRGB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
+			remoteInfo = AlphaToRGB;
+		};
+		1836E1E22818D081000E0DB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1836E1CC2818D021000E0DB9 /* AlphaToRGB.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = AlphaToRGB;
+		};
 		1852ED8F280E34C800D028C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0087B4291B79FFF70033CA57 /* psgvector.xcodeproj */;
@@ -8476,6 +8491,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				1836E1E42818D091000E0DB9 /* AlphaToRGB.bundle in CopyFiles */,
 				1876E91328177CFC00B790DF /* luminanceToAlpha.bundle in CopyFiles */,
 				186AD8062816917600009522 /* SelectionToAlpha.bundle in CopyFiles */,
 				18E68B4628115C40009AD2FF /* AIPortraitMatting.bundle in CopyFiles */,
@@ -9016,6 +9032,7 @@
 		0087B4291B79FFF70033CA57 /* psgvector.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = psgvector.xcodeproj; path = source/Inkpad/psgvector/psgvector.xcodeproj; sourceTree = "<group>"; };
 		00F06C081B7AFBA800DC491F /* VecDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = VecDefaults.plist; sourceTree = SOURCE_ROOT; };
 		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1836E1CC2818D021000E0DB9 /* AlphaToRGB.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AlphaToRGB.xcodeproj; path = "../Plug-ins/AlphaToRGB/AlphaToRGB.xcodeproj"; sourceTree = "<group>"; };
 		1852F1A7280E34C800D028C1 /* PixelStyle Free No Plugins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PixelStyle Free No Plugins.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1852F1B6280E34CD00D028C1 /* PixelStyle Free copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PixelStyle Free copy-Info.plist"; path = "/Volumes/D/wzq/2019/pixelstylenew/PixelStyle/PixelStyle/PixelStyle Free copy-Info.plist"; sourceTree = "<absolute>"; };
 		1852F1BB280E4DB600D028C1 /* ocInpaint.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ocInpaint.cpp; sourceTree = "<group>"; };
@@ -10460,6 +10477,14 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
+		1836E1CD2818D021000E0DB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1836E1D12818D021000E0DB9 /* AlphaToRGB.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		1852F22B280EB03E00D028C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -10782,6 +10807,7 @@
 		35B157F80A2C04F9005B688F /* Universal Plug-ins */ = {
 			isa = PBXGroup;
 			children = (
+				1836E1CC2818D021000E0DB9 /* AlphaToRGB.xcodeproj */,
 				1876E8FB28177CCF00B790DF /* luminanceToAlpha.xcodeproj */,
 				186AD7EE2816913200009522 /* SelectionToAlpha.xcodeproj */,
 				18E68B2F28115BDD009AD2FF /* AIPortraitMatting.xcodeproj */,
@@ -12869,6 +12895,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1836E1E32818D081000E0DB9 /* PBXTargetDependency */,
 				1876E91228177CED00B790DF /* PBXTargetDependency */,
 				186AD8052816915300009522 /* PBXTargetDependency */,
 				18E68B4528115C17009AD2FF /* PBXTargetDependency */,
@@ -13386,6 +13413,10 @@
 					ProjectRef = 18E68B2F28115BDD009AD2FF /* AIPortraitMatting.xcodeproj */;
 				},
 				{
+					ProductGroup = 1836E1CD2818D021000E0DB9 /* Products */;
+					ProjectRef = 1836E1CC2818D021000E0DB9 /* AlphaToRGB.xcodeproj */;
+				},
+				{
 					ProductGroup = 35B156F70A2C0116005B688F /* Products */;
 					ProjectRef = 35B156F60A2C0116005B688F /* Brightness.xcodeproj */;
 				},
@@ -13757,6 +13788,13 @@
 			fileType = archive.ar;
 			path = libpsgvector.dylib;
 			remoteRef = 0087B42D1B79FFF70033CA57 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1836E1D12818D021000E0DB9 /* AlphaToRGB.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlphaToRGB.bundle;
+			remoteRef = 1836E1D02818D021000E0DB9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		1852F22F280EB03E00D028C1 /* libpatchmatch.dylib */ = {
@@ -19465,6 +19503,11 @@
 			isa = PBXTargetDependency;
 			name = SeamCarving;
 			targetProxy = 181AF4BE280553170054C4EA /* PBXContainerItemProxy */;
+		};
+		1836E1E32818D081000E0DB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlphaToRGB;
+			targetProxy = 1836E1E22818D081000E0DB9 /* PBXContainerItemProxy */;
 		};
 		1852ED8E280E34C800D028C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
