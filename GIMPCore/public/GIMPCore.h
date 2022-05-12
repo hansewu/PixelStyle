@@ -56,6 +56,13 @@ typedef enum {
   GIMP_REPEAT_TRIANGULAR  /* Specifies triangular repeat wave */
 } GimpRepeatMode;
 
+typedef struct
+{
+    int nCount;
+    float *fArrPositions;
+    unsigned char (*ArrayColors)[4];
+}OTHER_COLORS;
+
 typedef struct {
 	 int gradient_type;					/* Specifies the gradient type */
 	 int repeat;						/* Specifies the repeat mode */
@@ -65,7 +72,8 @@ typedef struct {
 	 unsigned char start_color[4];		/* Specifies the colour to start with */
 	 IntPoint start;					/* Specifies the start co-ordinates */ 
 	 unsigned char end_color[4];		/* Specifies the colour to end with */
-	 IntPoint end;						/* Specifies the end co-ordinates */ 
+	 IntPoint end;						/* Specifies the end co-ordinates */
+    OTHER_COLORS other_colors;
 } GimpGradientInfo;
 
 typedef struct _GimpVector2 GimpVector2;

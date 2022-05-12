@@ -54,6 +54,8 @@ typedef enum {
 - (CGGradientRef) gradientRef;
 - (void) drawSwatchInRect:(CGRect)rect;
 
+- (NSGradient *) newNSGradient;
+
 - (WDXMLElement *) SVGElementWithID:(NSString *)unique fillTransform:(WDFillTransform *)fT;
 
 @end

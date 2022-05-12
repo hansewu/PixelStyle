@@ -84,10 +84,10 @@
         
         NSRect boundsRect = [[[self contentView] superview] bounds];
         
-        MyTitleView * titleview = [[MyTitleView alloc] initWithFrame:boundsRect];
-        titleview.m_windowTitle = [self title];
-        
-        [titleview setAutoresizingMask:(NSViewWidthSizable | NSViewHeightSizable)];
+//        MyTitleView * titleview = [[MyTitleView alloc] initWithFrame:boundsRect];
+//        titleview.m_windowTitle = [self title];
+//
+//        [titleview setAutoresizingMask:(NSViewWidthSizable | NSViewHeightSizable)];
     //    [titleview setStyleMask:0];
         
     /*    if (NSClassFromString(@"NSTitlebarAccessoryViewController"))
@@ -102,7 +102,7 @@
         }
         else*/
         {
-            [[[self contentView] superview] addSubview:titleview positioned:NSWindowBelow relativeTo:[[[[self contentView] superview] subviews] objectAtIndex:0]];
+      //      [[[self contentView] superview] addSubview:titleview positioned:NSWindowBelow relativeTo:[[[[self contentView] superview] subviews] objectAtIndex:0]];
         
         }
         
@@ -124,7 +124,7 @@
 //            [containerView addSubview:titleview positioned:NSWindowBelow relativeTo: nil];
 //        }
         
-        [titleview release];
+      //  [titleview release];
     }
     
     return self;

@@ -10,7 +10,8 @@
 				<b>License:</b> GNU General Public License<br>
 				<b>Copyright:</b> Copyright (c) 2002 Mark Pazolli
 */
-
+@class PSColorWell;
+@class PSFillController;
 
 @interface GradientOptions : AbstractOptions<MyCustomComboBoxDelegate>
 {
@@ -25,6 +26,9 @@
     
     int m_nGradientType;
     int m_nWaveType;
+    
+    PSColorWell *m_fillWell;
+    PSFillController *m_fillController;
     
     
     IBOutlet id m_idGradientLinear;
@@ -104,5 +108,7 @@
 -(IBAction)onLockGradients45:(id)sender;
 
 - (float)getOpacityValue;
+
+-(NSGradient *)gradient;
 
 @end

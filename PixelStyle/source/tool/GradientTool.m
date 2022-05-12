@@ -65,13 +65,37 @@
 	NSColor *color;
 	double angle;
 	int deltaX, deltaY;
+    
+    NSGradient *gradient = [[m_idOptions gradient] autorelease];
 	
+    if(gradient.numberOfColorStops <2) return;
+    float posRoom[gradient.numberOfColorStops -2];
+    unsigned char colorsRoom[gradient.numberOfColorStops -2][4];
+    if(gradient.numberOfColorStops >2)
+    {
+        info.other_colors.nCount = gradient.numberOfColorStops -2;
+        info.other_colors.fArrPositions = posRoom;//(float *)malloc(sizeof(float)*info.other_colors.nCount );
+        info.other_colors.ArrayColors   = colorsRoom;//(unsigned char (*)[4])malloc(sizeof(unsigned char)*4*info.other_colors.nCount);
+        for(int i=0; i< info.other_colors.nCount; i++)
+        {
+            CGFloat location;
+            [gradient getColor:&color location:&location atIndex:i+1];
+            info.other_colors.ArrayColors[i][0] = [color redComponent] * 255;
+            info.other_colors.ArrayColors[i][1] = [color greenComponent] * 255;
+            info.other_colors.ArrayColors[i][2] = [color blueComponent] * 255;
+            info.other_colors.ArrayColors[i][3] = [color alphaComponent] * 255;
+            info.other_colors.fArrPositions[i]  = location;
+        }
+    }
+    else info.other_colors.nCount = 0;
+        
 	// Get ready
 	[[m_idDocument whiteboard] setOverlayOpacity:255];
     
     float alpha = [m_idOptions getOpacityValue];
 	
 	// Determine gradient information
+    
 	info.repeat = [m_idOptions repeat];
 	info.gradient_type = [(GradientOptions *)m_idOptions type];
 	info.supersample = [m_idOptions supersample];
@@ -99,13 +123,22 @@
 			where.y = m_sStartPoint.y - abs(deltaX);
 	}
 	if ([contents spp] == 4) {
-		color = [contents foreground];
+        color = [contents foreground];
+        //if(gradient.numberOfColorStops == 2)
+        {
+            [gradient getColor:&color location:nil atIndex:0];
+        }
+		
 		info.start_color[0] = [color redComponent] * 255;
 		info.start_color[1] = [color greenComponent] * 255;
 		info.start_color[2] = [color blueComponent] * 255;
 		info.start_color[3] = alpha * 255;
 		info.end = where;
 		color = [contents background];
+        //if(gradient.numberOfColorStops == 2)
+        {
+            [gradient getColor:&color location:nil atIndex:gradient.numberOfColorStops-1];
+        }
 		info.end_color[0] = [color redComponent] * 255;
 		info.end_color[1] = [color greenComponent] * 255;
 		info.end_color[2] = [color blueComponent] * 255;
@@ -138,6 +171,12 @@
 	[(PSHelpers *)[m_idDocument helpers] applyOverlay];
 	
 	m_bIntermediate = NO;
+    
+    /*if(info.other_colors.nCount >2)
+    {
+        free(info.other_colors.fArrPositions);
+        free(info.other_colors.ArrayColors);
+    }*/
 }
 
 

@@ -35,5 +35,7 @@ typedef enum {
     id<WDPathPainter>       fill_;
 }
 
+- (void)showGradientPanelFrom:(NSPoint)p onWindow: (NSWindow *)parent;
+
 @property (nonatomic, assign) WDDrawingController *drawingController;
 @end

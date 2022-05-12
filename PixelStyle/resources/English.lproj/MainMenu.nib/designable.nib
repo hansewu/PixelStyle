@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment version="1050" identifier="macosx"/>
-        <development version="6300" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication"/>
@@ -13,25 +13,25 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" topStrut="YES"/>
             <rect key="contentRect" x="160" y="545" width="481" height="473"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="697"/>
             <value key="minSize" type="size" width="213" height="107"/>
             <view key="contentView" id="P1c-OK-k8m">
                 <rect key="frame" x="0.0" y="0.0" width="481" height="473"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="oLl-7b-cif">
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oLl-7b-cif">
                         <rect key="frame" x="0.0" y="0.0" width="481" height="473"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="info-win-backer" id="Ex0-HV-TK8"/>
                     </imageView>
-                    <scrollView borderType="line" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" scrollerKnobStyle="dark" id="Hi6-ya-o8b" customClass="PSScrollView">
+                    <scrollView fixedFrame="YES" borderType="line" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" scrollerKnobStyle="dark" translatesAutoresizingMaskIntoConstraints="NO" id="Hi6-ya-o8b" customClass="PSScrollView">
                         <rect key="frame" x="20" y="41" width="440" height="290"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="fxe-cg-qH3">
                             <rect key="frame" x="1" y="1" width="423" height="288"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <textView editable="NO" importsGraphics="NO" richText="NO" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="2Wh-fu-fGY">
+                                <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" usesFontPanel="YES" usesRuler="YES" spellingCorrection="YES" smartInsertDelete="YES" id="2Wh-fu-fGY">
                                     <rect key="frame" x="0.0" y="-117" width="423" height="3371"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="textColor" white="0.93000000000000005" alpha="1" colorSpace="calibratedWhite"/>
@@ -785,8 +785,6 @@ Cg
                                         </fragment>
                                     </attributedString>
                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <size key="minSize" width="423" height="288"/>
-                                    <size key="maxSize" width="465" height="10000000"/>
                                 </textView>
                             </subviews>
                             <color key="backgroundColor" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
@@ -800,7 +798,7 @@ Cg
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                     </scrollView>
-                    <textField verticalHuggingPriority="750" id="zPE-Dj-78b">
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zPE-Dj-78b">
                         <rect key="frame" x="17" y="357" width="446" height="28"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Except for plug-ins, Seashore is covered by version 2 of the GNU General Public License." id="9V6-BA-k8I">
@@ -809,7 +807,7 @@ Cg
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" id="BZP-0e-8ZN">
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BZP-0e-8ZN">
                         <rect key="frame" x="17" y="343" width="446" height="14"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="This version of Seashore can be redistributed as-is." id="PyC-h5-Zeo" customClass="PSTextFieldLabelCell">
@@ -818,7 +816,7 @@ Cg
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" id="9fh-Zb-r7d">
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9fh-Zb-r7d">
                         <rect key="frame" x="16" y="14" width="446" height="14"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="This version of Seashore can be redistributed as-is." id="UJZ-SG-SSC" customClass="PSTextFieldLabelCell">
@@ -827,7 +825,7 @@ Cg
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="A7R-7p-2wx">
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A7R-7p-2wx">
                         <rect key="frame" x="207" y="397" width="64" height="64"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" id="KC4-50-BVX"/>
@@ -1957,33 +1955,36 @@ CA
                     </menu>
                 </menuItem>
             </items>
+            <point key="canvasLocation" x="-135" y="119"/>
         </menu>
         <window title="Seashore License" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="license window" animationBehavior="default" id="204" userLabel="License Win" customClass="PSWindow">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" topStrut="YES"/>
             <rect key="contentRect" x="160" y="545" width="480" height="413"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="697"/>
             <value key="minSize" type="size" width="213" height="107"/>
             <view key="contentView" id="207">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="413"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="205">
+                    <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="205">
                         <rect key="frame" x="20" y="20" width="440" height="290"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <clipView key="contentView" id="F1u-N1-8Ts">
+                        <clipView key="contentView" drawsBackground="NO" id="F1u-N1-8Ts">
                             <rect key="frame" x="1" y="1" width="423" height="288"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <textView editable="NO" importsGraphics="NO" baseWritingDirection="leftToRight" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="4078">
-                                    <rect key="frame" x="0.0" y="-117" width="423" height="5850"/>
+                                <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" baseWritingDirection="leftToRight" usesFontPanel="YES" usesRuler="YES" spellingCorrection="YES" smartInsertDelete="YES" id="4078">
+                                    <rect key="frame" x="0.0" y="-234" width="423" height="5850"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <size key="minSize" width="423" height="288"/>
                                     <size key="maxSize" width="465" height="10000000"/>
                                     <attributedString key="textStorage">
                                         <fragment content="The GNU General Public License (GPL)">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="28" name="Times-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -1993,12 +1994,14 @@ CA
 Cgo
 </string>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="14" name="Times-Roman"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="Version 2, June 1991">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="21" name="Times-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2008,6 +2011,7 @@ Cgo
 Cg
 </string>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="14" name="Times-Roman"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2021,12 +2025,14 @@ Everyone is permitted to copy and distribute verbatim copies of this license doc
 
 </string>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="Preamble">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2052,12 +2058,14 @@ The precise terms and conditions for copying, distribution and modification foll
 
 </mutableString>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2067,12 +2075,14 @@ The precise terms and conditions for copying, distribution and modification foll
 Cgo
 </string>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="0">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2084,12 +2094,14 @@ Activities other than copying, distribution and modification are not covered by 
 
 </mutableString>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="1">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2101,12 +2113,14 @@ You may charge a fee for the physical act of transferring a copy, and you may at
 
 </mutableString>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="2">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2129,12 +2143,14 @@ In addition, mere aggregation of another work not based on the Program with the 
 
 </mutableString>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="3">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2155,12 +2171,14 @@ If distribution of executable or object code is made by offering access to copy 
 
 </mutableString>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="4">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2170,12 +2188,14 @@ If distribution of executable or object code is made by offering access to copy 
 
 </string>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="5">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2185,12 +2205,14 @@ If distribution of executable or object code is made by offering access to copy 
 
 </string>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="6">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2200,12 +2222,14 @@ If distribution of executable or object code is made by offering access to copy 
 
 </string>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="7">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2221,12 +2245,14 @@ This section is intended to make thoroughly clear what is believed to be a conse
 
 </mutableString>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="8">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2236,12 +2262,14 @@ This section is intended to make thoroughly clear what is believed to be a conse
 
 </string>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="9">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2253,12 +2281,14 @@ Each version is given a distinguishing version number. If the Program specifies 
 
 </mutableString>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="10">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2268,12 +2298,14 @@ Each version is given a distinguishing version number. If the Program specifies 
 
 </string>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="NO WARRANTY">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2283,12 +2315,14 @@ Each version is given a distinguishing version number. If the Program specifies 
 Cgo
 </string>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="11">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2298,12 +2332,14 @@ Cgo
 
 </mutableString>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="12">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2315,12 +2351,14 @@ END OF TERMS AND CONDITIONS
 
 </mutableString>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="How to Apply These Terms to Your New Programs">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2335,12 +2373,14 @@ To do so, attach the following notices to the program. It is safest to attach th
 
 </string>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="one line to give the program's name and a brief idea of what it does.">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="11" name="Courier-Oblique"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2349,12 +2389,14 @@ To do so, attach the following notices to the program. It is safest to attach th
                                             <string key="content">
 Copyright (C) </string>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="11" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="yyyy name of author">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="11" name="Courier-Oblique"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2369,6 +2411,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 </mutableString>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="11" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2383,6 +2426,7 @@ If the program is interactive, make it output a short notice like this when it s
 
 </string>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2390,6 +2434,7 @@ If the program is interactive, make it output a short notice like this when it s
                                         <fragment>
                                             <string key="content">Gnomovision version 69, Copyright (C) year name of author Gnomovision comes with ABSOLUTELY NO WARRANTY; for details type `show w'. This is free software, and you are welcome to redistribute it under certain conditions; type `show c' for details.</string>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="11" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2405,6 +2450,7 @@ You should also get your employer (if you work as a programmer) or your school, 
 
 </string>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2417,6 +2463,7 @@ written by James Hacker.
 signature of Ty Coon, 1 April 1989
 Ty Coon, President of Vice</string>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="11" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
@@ -2428,17 +2475,15 @@ Ty Coon, President of Vice</string>
 This General Public License does not permit incorporating your program into proprietary programs. If your program is a subroutine library, you may consider it more useful to permit linking proprietary applications with the library. If this is what you want to do, use the GNU Library General Public License instead of this License.
 </string>
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Courier"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
-                                    <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <size key="minSize" width="423" height="288"/>
-                                    <size key="maxSize" width="465" height="10000000"/>
+                                    <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 </textView>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </clipView>
                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="7366">
                             <rect key="frame" x="-100" y="-100" width="87" height="18"/>
@@ -2449,7 +2494,7 @@ This General Public License does not permit incorporating your program into prop
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                     </scrollView>
-                    <textField verticalHuggingPriority="750" id="203">
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="203">
                         <rect key="frame" x="17" y="376" width="446" height="17"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Seashore Licensing Agreement" id="7298">
@@ -2458,7 +2503,7 @@ This General Public License does not permit incorporating your program into prop
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" id="206">
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="206">
                         <rect key="frame" x="17" y="340" width="446" height="28"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Except for plug-ins, Seashore is covered by version 2 of the GNU General Public License." id="7299">
@@ -2467,7 +2512,7 @@ This General Public License does not permit incorporating your program into prop
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" id="1834">
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1834">
                         <rect key="frame" x="17" y="318" width="446" height="14"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="This version of Seashore can be redistributed as-is." id="7300">
@@ -2676,7 +2721,7 @@ This General Public License does not permit incorporating your program into prop
             <rect key="frame" x="0.0" y="0.0" width="359" height="29"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
-                <textField verticalHuggingPriority="750" id="1131">
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1131">
                     <rect key="frame" x="9" y="8" width="216" height="14"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="No document active" id="7301" customClass="PSTextFieldLabelCell">
@@ -2691,18 +2736,18 @@ This General Public License does not permit incorporating your program into prop
             <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" nonactivatingPanel="YES"/>
             <windowPositionMask key="initialPositionMask" rightStrut="YES" topStrut="YES"/>
             <rect key="contentRect" x="1078" y="953" width="355" height="113"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1360" height="746"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="697"/>
             <value key="minSize" type="size" width="213" height="101"/>
             <view key="contentView" id="913">
                 <rect key="frame" x="0.0" y="0.0" width="355" height="113"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView id="917">
+                    <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="917">
                         <rect key="frame" x="20" y="50" width="48" height="48"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="help-big" id="7302"/>
                     </imageView>
-                    <textField verticalHuggingPriority="750" id="918">
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="918">
                         <rect key="frame" x="76" y="20" width="259" height="78"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="7303">
@@ -2719,18 +2764,18 @@ This General Public License does not permit incorporating your program into prop
             <windowStyleMask key="styleMask" titled="YES" utility="YES" nonactivatingPanel="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" topStrut="YES"/>
             <rect key="contentRect" x="604" y="953" width="355" height="113"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1360" height="746"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="697"/>
             <value key="minSize" type="size" width="213" height="101"/>
             <view key="contentView" id="1248">
                 <rect key="frame" x="0.0" y="0.0" width="355" height="113"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView id="1251">
+                    <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1251">
                         <rect key="frame" x="16" y="47" width="64" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="warning" id="7304"/>
                     </imageView>
-                    <textField verticalHuggingPriority="750" id="1252">
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1252">
                         <rect key="frame" x="92" y="32" width="243" height="66"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="7305">
@@ -2739,7 +2784,7 @@ This General Public License does not permit incorporating your program into prop
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button toolTip="Dismiss warning" id="1253">
+                    <button toolTip="Dismiss warning" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1253">
                         <rect key="frame" x="319" y="20" width="16" height="16"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="next" imagePosition="only" alignment="left" id="7306">
@@ -2754,7 +2799,7 @@ This General Public License does not permit incorporating your program into prop
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="496" y="365" width="432" height="236"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1360" height="746"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="697"/>
             <value key="minSize" type="size" width="213" height="107"/>
             <view key="contentView" id="1330">
                 <rect key="frame" x="0.0" y="0.0" width="432" height="236"/>
@@ -2804,31 +2849,31 @@ This General Public License does not permit incorporating your program into prop
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="180" y="638" width="303" height="107"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1360" height="746"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="697"/>
             <value key="minSize" type="size" width="213" height="107"/>
             <view key="contentView" id="2247">
                 <rect key="frame" x="0.0" y="0.0" width="303" height="107"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField verticalHuggingPriority="750" id="2252">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2252">
                         <rect key="frame" x="20" y="65" width="72" height="22"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="2" drawsBackground="YES" id="7309">
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" id="2248">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2248">
                         <rect key="frame" x="143" y="65" width="72" height="22"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="1" drawsBackground="YES" id="7307">
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" id="2250">
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2250">
                         <rect key="frame" x="100" y="67" width="35" height="13"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="to" id="7308">
@@ -2837,7 +2882,7 @@ This General Public License does not permit incorporating your program into prop
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button verticalHuggingPriority="750" id="2253">
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2253">
                         <rect key="frame" x="193" y="19" width="96" height="32"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <buttonCell key="cell" type="push" title="Set" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="7310">
@@ -2848,7 +2893,7 @@ DQ
 </string>
                         </buttonCell>
                     </button>
-                    <popUpButton id="3191">
+                    <popUpButton fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3191">
                         <rect key="frame" x="220" y="63" width="66" height="22"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <popUpButtonCell key="cell" type="bevel" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" borderStyle="bezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" id="7311">
@@ -2895,7 +2940,7 @@ DQ
             <rect key="frame" x="0.0" y="0.0" width="431" height="359"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
-                <button id="4922">
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4922">
                     <rect key="frame" x="139" y="107" width="272" height="18"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="check" title="Use Core Image for rotating/scaling" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="7325">
@@ -2906,7 +2951,7 @@ DQ
                         <action selector="setUseCoreImage:" target="507" id="5454"/>
                     </connections>
                 </button>
-                <popUpButton verticalHuggingPriority="750" id="3788">
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3788">
                     <rect key="frame" x="139" y="294" width="266" height="22"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <popUpButtonCell key="cell" type="push" title="Assume screen is 72 dpi (recommended)" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="1" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="3792" id="7324">
@@ -2921,7 +2966,7 @@ DQ
                         </menu>
                     </popUpButtonCell>
                 </popUpButton>
-                <textField verticalHuggingPriority="750" id="2952">
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2952">
                     <rect key="frame" x="144" y="20" width="200" height="28"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="* Needed for some tablet users running  Mac OS 10.4.0 to 10.4.5" id="7323">
@@ -2930,7 +2975,7 @@ DQ
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <button id="2725">
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2725">
                     <rect key="frame" x="139" y="147" width="265" height="18"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <buttonCell key="cell" type="check" title="Check for updates" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="7322">
@@ -2941,21 +2986,15 @@ DQ
                         <action selector="setCheckForUpdates:" target="507" id="2805"/>
                     </connections>
                 </button>
-                <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" id="2723">
+                <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="2723">
                     <rect key="frame" x="10" y="190" width="407" height="5"/>
                     <autoresizingMask key="autoresizingMask"/>
-                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <font key="titleFont" metaFont="system"/>
                 </box>
-                <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" id="2721">
+                <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="2721">
                     <rect key="frame" x="10" y="287" width="407" height="5"/>
                     <autoresizingMask key="autoresizingMask"/>
-                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <font key="titleFont" metaFont="system"/>
                 </box>
-                <button id="2720">
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2720">
                     <rect key="frame" x="139" y="199" width="265" height="18"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <buttonCell key="cell" type="check" title="Ignore first pressure-sensitive touch *" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="7321">
@@ -2966,7 +3005,7 @@ DQ
                         <action selector="setIgnoreFirstTouch:" target="507" id="2809"/>
                     </connections>
                 </button>
-                <button id="2718">
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2718">
                     <rect key="frame" x="139" y="127" width="265" height="18"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <buttonCell key="cell" type="check" title="Reduce warning messages" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="7320">
@@ -2977,7 +3016,7 @@ DQ
                         <action selector="setFewerWarnings:" target="507" id="2807"/>
                     </connections>
                 </button>
-                <button id="2717">
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2717">
                     <rect key="frame" x="139" y="321" width="265" height="18"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <buttonCell key="cell" type="check" title="Configure effects in a dialog" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="7319">
@@ -2988,7 +3027,7 @@ DQ
                         <action selector="setEffectsPanel:" target="507" id="2806"/>
                     </connections>
                 </button>
-                <button id="2716">
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2716">
                     <rect key="frame" x="139" y="243" width="265" height="18"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <buttonCell key="cell" type="check" title="Faster drawing (mouse coalescing)" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="7318">
@@ -2999,7 +3038,7 @@ DQ
                         <action selector="setMouseCoalescing:" target="507" id="2811"/>
                     </connections>
                 </button>
-                <button id="2714">
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2714">
                     <rect key="frame" x="139" y="265" width="265" height="18"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <buttonCell key="cell" type="check" title="Use image smoothing" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="7317">
@@ -3010,7 +3049,7 @@ DQ
                         <action selector="setSmartInterpolation:" target="507" id="2815"/>
                     </connections>
                 </button>
-                <button id="2713">
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2713">
                     <rect key="frame" x="139" y="221" width="265" height="18"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <buttonCell key="cell" type="check" title="Always use cross-hair cursor" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="7316">
@@ -3021,7 +3060,7 @@ DQ
                         <action selector="setPreciseCursor:" target="507" id="2812"/>
                     </connections>
                 </button>
-                <button id="2712">
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2712">
                     <rect key="frame" x="139" y="167" width="265" height="18"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <buttonCell key="cell" type="check" title="Create a new document at start-up" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="7315">
@@ -3032,7 +3071,7 @@ DQ
                         <action selector="setOpenUntitled:" target="507" id="2814"/>
                     </connections>
                 </button>
-                <textField verticalHuggingPriority="750" id="2711">
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2711">
                     <rect key="frame" x="15" y="267" width="114" height="14"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Draw Settings" id="7314">
@@ -3041,7 +3080,7 @@ DQ
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField verticalHuggingPriority="750" id="2710">
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2710">
                     <rect key="frame" x="17" y="323" width="114" height="14"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Window Settings" id="7313">
@@ -3050,7 +3089,7 @@ DQ
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField verticalHuggingPriority="750" id="2709">
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2709">
                     <rect key="frame" x="15" y="170" width="114" height="14"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Program Settings" id="7312">
@@ -3065,7 +3104,7 @@ DQ
             <rect key="frame" x="0.0" y="0.0" width="432" height="236"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
-                <popUpButton id="3000">
+                <popUpButton fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3000">
                     <rect key="frame" x="328" y="191" width="58" height="21"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <popUpButtonCell key="cell" type="bevel" title="mm" bezelStyle="rounded" alignment="left" state="on" borderStyle="bezel" tag="722" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="3004" id="7337" customClass="PSPopButtonCell">
@@ -3092,7 +3131,7 @@ DQ
                         </menu>
                     </popUpButtonCell>
                 </popUpButton>
-                <textField hidden="YES" verticalHuggingPriority="750" id="2998">
+                <textField hidden="YES" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2998">
                     <rect key="frame" x="161" y="66" width="75" height="21"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Mode :" id="7335" customClass="PSTextFieldLabelCell">
@@ -3101,7 +3140,7 @@ DQ
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField verticalHuggingPriority="750" id="2997">
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2997">
                     <rect key="frame" x="161" y="88" width="75" height="21"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Resolution :" id="7334" customClass="PSTextFieldLabelCell">
@@ -3110,7 +3149,7 @@ DQ
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField verticalHuggingPriority="750" id="2996">
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2996">
                     <rect key="frame" x="161" y="138" width="75" height="21"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Height :" id="7333" customClass="PSTextFieldLabelCell">
@@ -3119,7 +3158,7 @@ DQ
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField verticalHuggingPriority="750" id="2995">
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2995">
                     <rect key="frame" x="161" y="187" width="75" height="21"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Width :" id="7332" customClass="PSTextFieldLabelCell">
@@ -3128,7 +3167,7 @@ DQ
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <popUpButton hidden="YES" id="2990">
+                <popUpButton hidden="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2990">
                     <rect key="frame" x="244" y="60" width="122" height="21"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <popUpButtonCell key="cell" type="bevel" title="Full Color" bezelStyle="regularSquare" alignment="left" lineBreakMode="truncatingTail" state="on" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="2992" id="7330" customClass="PSPopButtonCell">
@@ -3146,7 +3185,7 @@ DQ
                         <outlet property="nextKeyView" destination="2994" id="3011"/>
                     </connections>
                 </popUpButton>
-                <popUpButton toolTip="Resolution of the new image" id="2984">
+                <popUpButton toolTip="Resolution of the new image" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2984">
                     <rect key="frame" x="244" y="89" width="142" height="21"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <popUpButtonCell key="cell" type="bevel" bezelStyle="regularSquare" alignment="left" lineBreakMode="clipping" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" id="7329" customClass="PSPopButtonCell">
@@ -3166,12 +3205,12 @@ DQ
                         <outlet property="nextKeyView" destination="2990" id="3006"/>
                     </connections>
                 </popUpButton>
-                <textField toolTip="Width of the new image" verticalHuggingPriority="750" id="2983">
+                <textField toolTip="Width of the new image" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2983">
                     <rect key="frame" x="247" y="191" width="72" height="21"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" title="512" drawsBackground="YES" id="7328" customClass="PSTextFieldCell">
                         <font key="font" metaFont="system"/>
-                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                     <connections>
@@ -3179,12 +3218,12 @@ DQ
                         <outlet property="nextKeyView" destination="2982" id="3008"/>
                     </connections>
                 </textField>
-                <textField toolTip="Height of the new image" verticalHuggingPriority="750" id="2982">
+                <textField toolTip="Height of the new image" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2982">
                     <rect key="frame" x="247" y="141" width="72" height="21"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" title="384" drawsBackground="YES" id="7327" customClass="PSTextFieldCell">
                         <font key="font" metaFont="system"/>
-                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                     <connections>
@@ -3192,7 +3231,7 @@ DQ
                         <outlet property="nextKeyView" destination="2984" id="3010"/>
                     </connections>
                 </textField>
-                <textField verticalHuggingPriority="750" id="2953">
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2953">
                     <rect key="frame" x="28" y="127" width="134" height="14"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Image Default Settings :" id="7326" customClass="PSTextFieldLabelCell">
@@ -3201,7 +3240,7 @@ DQ
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <popUpButton id="VMl-6Y-jjK">
+                <popUpButton fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VMl-6Y-jjK">
                     <rect key="frame" x="328" y="141" width="58" height="21"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <popUpButtonCell key="cell" type="bevel" title="in" bezelStyle="rounded" alignment="left" state="on" borderStyle="bezel" tag="721" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="RQs-cV-AaS" id="PVj-2C-djC" customClass="PSPopButtonCell">
@@ -3228,12 +3267,12 @@ DQ
                         </menu>
                     </popUpButtonCell>
                 </popUpButton>
-                <button id="2994">
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2994">
                     <rect key="frame" x="205" y="47" width="160" height="15"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <buttonCell key="cell" type="bevel" title="Transparent background" bezelStyle="regularSquare" image="checkbox-not" imagePosition="left" alignment="right" alternateImage="checkbox-selected" imageScaling="proportionallyUpOrDown" inset="2" id="7331" customClass="PSButtonCell">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                        <font key="font" size="11" name=".HelveticaNeueDeskInterface-Regular"/>
+                        <font key="font" metaFont="smallSystem"/>
                     </buttonCell>
                     <connections>
                         <action selector="setTransparentBackground:" target="507" id="3020"/>
@@ -3246,33 +3285,33 @@ DQ
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="223" y="314" width="640" height="347"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1360" height="746"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="697"/>
             <value key="minSize" type="size" width="213" height="107"/>
             <view key="contentView" id="2878">
                 <rect key="frame" x="0.0" y="0.0" width="640" height="347"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField verticalHuggingPriority="750" id="2879">
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2879">
                         <rect key="frame" x="36" y="307" width="79" height="14"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Preset :" id="7338" customClass="PSTextFieldLabelCell">
-                            <font key="font" size="11" name=".HelveticaNeueDeskInterface-Regular"/>
+                            <font key="font" metaFont="smallSystem"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <box title="New Image Settings" boxType="custom" borderType="none" titlePosition="noTitle" id="2888">
+                    <box fixedFrame="YES" boxType="custom" borderType="none" title="New Image Settings" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="2888">
                         <rect key="frame" x="12" y="121" width="277" height="180"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <view key="contentView">
+                        <view key="contentView" id="ZJb-pI-CRf">
                             <rect key="frame" x="0.0" y="0.0" width="277" height="180"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <textField toolTip="Height of the new image" focusRingType="none" verticalHuggingPriority="750" id="2899">
+                                <textField toolTip="Height of the new image" focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2899">
                                     <rect key="frame" x="116" y="99" width="45" height="21"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" focusRingType="none" alignment="left" title=" 384" id="7345" customClass="PSTextFieldCell">
-                                        <font key="font" size="11" name=".HelveticaNeueDeskInterface-Regular"/>
+                                        <font key="font" metaFont="smallSystem"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="backgroundColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
                                     </textFieldCell>
@@ -3280,11 +3319,11 @@ DQ
                                         <outlet property="nextKeyView" destination="2890" id="2922"/>
                                     </connections>
                                 </textField>
-                                <textField toolTip="Width of the new image" focusRingType="none" verticalHuggingPriority="750" id="2906">
+                                <textField toolTip="Width of the new image" focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2906">
                                     <rect key="frame" x="116" y="142" width="45" height="21"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" focusRingType="none" alignment="left" title=" 512" id="7349" customClass="PSTextFieldCell">
-                                        <font key="font" size="11" name=".HelveticaNeueDeskInterface-Regular"/>
+                                        <font key="font" metaFont="smallSystem"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="backgroundColor" red="0.14395912247474751" green="0.14395912247474751" blue="0.14395912247474751" alpha="1" colorSpace="calibratedRGB"/>
                                     </textFieldCell>
@@ -3292,7 +3331,7 @@ DQ
                                         <outlet property="nextKeyView" destination="2899" id="2920"/>
                                     </connections>
                                 </textField>
-                                <popUpButton toolTip="Resolution of the new image" id="2890">
+                                <popUpButton toolTip="Resolution of the new image" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2890">
                                     <rect key="frame" x="116" y="54" width="113" height="21"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <popUpButtonCell key="cell" type="bevel" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" inset="2" arrowPosition="noArrow" preferredEdge="maxY" id="7341" customClass="PSPopButtonCell">
@@ -3311,7 +3350,7 @@ DQ
                                         <outlet property="nextKeyView" destination="2901" id="2914"/>
                                     </connections>
                                 </popUpButton>
-                                <popUpButton hidden="YES" id="2901">
+                                <popUpButton hidden="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2901">
                                     <rect key="frame" x="116" y="32" width="113" height="21"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <popUpButtonCell key="cell" type="bevel" title="Full Color" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" inset="2" arrowPosition="noArrow" preferredEdge="maxY" selectedItem="2903" id="7347" customClass="PSPopButtonCell">
@@ -3328,7 +3367,7 @@ DQ
                                         <outlet property="nextKeyView" destination="2900" id="2918"/>
                                     </connections>
                                 </popUpButton>
-                                <button id="2900">
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2900">
                                     <rect key="frame" x="53" y="18" width="174" height="15"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <buttonCell key="cell" type="bevel" title="Transparent background" bezelStyle="regularSquare" image="checkbox-not" imagePosition="left" alignment="right" alternateImage="checkbox-selected" imageScaling="proportionallyUpOrDown" inset="2" id="7346" customClass="PSButtonCell">
@@ -3339,34 +3378,34 @@ DQ
                                         <outlet property="nextKeyView" destination="2880" id="2919"/>
                                     </connections>
                                 </button>
-                                <textField verticalHuggingPriority="750" id="2896">
+                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2896">
                                     <rect key="frame" x="24" y="102" width="79" height="14"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Height :" id="7342" customClass="PSTextFieldLabelCell">
-                                        <font key="font" size="11" name=".HelveticaNeueDeskInterface-Regular"/>
+                                        <font key="font" metaFont="smallSystem"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                 </textField>
-                                <textField verticalHuggingPriority="750" id="2897">
+                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2897">
                                     <rect key="frame" x="24" y="58" width="79" height="14"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Resolution :" id="7343" customClass="PSTextFieldLabelCell">
-                                        <font key="font" size="11" name=".HelveticaNeueDeskInterface-Regular"/>
+                                        <font key="font" metaFont="smallSystem"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                 </textField>
-                                <textField hidden="YES" verticalHuggingPriority="750" id="2898">
+                                <textField hidden="YES" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2898">
                                     <rect key="frame" x="24" y="39" width="79" height="14"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Mode :" id="7344" customClass="PSTextFieldLabelCell">
-                                        <font key="font" size="11" name=".HelveticaNeueDeskInterface-Regular"/>
+                                        <font key="font" metaFont="smallSystem"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                 </textField>
-                                <popUpButton id="8r2-fl-FHa">
+                                <popUpButton fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8r2-fl-FHa">
                                     <rect key="frame" x="168" y="98" width="61" height="21"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <popUpButtonCell key="cell" type="bevel" title="mm" bezelStyle="regularSquare" alignment="left" lineBreakMode="truncatingTail" state="on" tag="2" imageScaling="proportionallyDown" inset="2" arrowPosition="noArrow" selectedItem="HdY-SQ-iSC" id="eN0-vV-CuL" customClass="PSPopButtonCell">
@@ -3384,16 +3423,16 @@ DQ
                                         <action selector="changeUnits:" target="2281" id="inx-fL-oGD"/>
                                     </connections>
                                 </popUpButton>
-                                <textField hidden="YES" verticalHuggingPriority="750" id="2905">
+                                <textField hidden="YES" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2905">
                                     <rect key="frame" x="172" y="99" width="48" height="17"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="px" id="7348" customClass="PSTextFieldLabelCell">
-                                        <font key="font" size="11" name=".HelveticaNeueDeskInterface-Regular"/>
+                                        <font key="font" metaFont="smallSystem"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                     </textFieldCell>
                                 </textField>
-                                <popUpButton id="2908">
+                                <popUpButton fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2908">
                                     <rect key="frame" x="168" y="141" width="61" height="21"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <popUpButtonCell key="cell" type="bevel" title="mm" bezelStyle="rounded" alignment="left" state="on" borderStyle="bezel" tag="2" inset="2" arrowPosition="noArrow" preferredEdge="maxY" selectedItem="2912" id="7351" customClass="PSPopButtonCell">
@@ -3411,11 +3450,11 @@ DQ
                                         <action selector="changeUnits:" target="2281" id="2941"/>
                                     </connections>
                                 </popUpButton>
-                                <textField verticalHuggingPriority="750" id="2907">
+                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2907">
                                     <rect key="frame" x="24" y="145" width="79" height="14"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Width :" id="7350" customClass="PSTextFieldLabelCell">
-                                        <font key="font" size="11" name=".HelveticaNeueDeskInterface-Regular"/>
+                                        <font key="font" metaFont="smallSystem"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
@@ -3425,7 +3464,7 @@ DQ
                         <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                         <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </box>
-                    <popUpButton toolTip="Various predefined sizes" id="2881">
+                    <popUpButton toolTip="Various predefined sizes" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2881">
                         <rect key="frame" x="128" y="304" width="113" height="21"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <popUpButtonCell key="cell" type="bevel" title="Presets" bezelStyle="rounded" alignment="left" borderStyle="bezel" inset="2" pullsDown="YES" arrowPosition="noArrow" preferredEdge="maxY" id="7340" customClass="PSPopButtonCell">
@@ -3445,26 +3484,26 @@ DQ
                             <action selector="changeToTemplate:" target="2281" id="2936"/>
                         </connections>
                     </popUpButton>
-                    <customView hidden="YES" id="Qa3-Aw-YSP">
+                    <customView hidden="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qa3-Aw-YSP">
                         <rect key="frame" x="40" y="15" width="100" height="28"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Of0-5U-d3U">
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Of0-5U-d3U">
                                 <rect key="frame" x="0.0" y="0.0" width="5" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="btn-l" id="jgj-yb-SD2"/>
                             </imageView>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5VB-6L-Emv">
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5VB-6L-Emv">
                                 <rect key="frame" x="5" y="0.0" width="90" height="28"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="btn-m" id="2jJ-2G-IiA"/>
                             </imageView>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="KQg-Ty-i2S">
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KQg-Ty-i2S">
                                 <rect key="frame" x="95" y="0.0" width="5" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="btn-r" id="txo-Mf-UsI"/>
                             </imageView>
-                            <popUpButton id="7277" customClass="PSPopButton">
+                            <popUpButton fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7277" customClass="PSPopButton">
                                 <rect key="frame" x="0.0" y="5" width="100" height="18"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <popUpButtonCell key="cell" type="bevel" title="Open Recent" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" inset="2" pullsDown="YES" arrowPosition="noArrow" preferredEdge="maxY" selectedItem="7281" id="7352">
@@ -3482,12 +3521,12 @@ DQ
                             </popUpButton>
                         </subviews>
                     </customView>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="n4Y-XA-H5y">
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n4Y-XA-H5y">
                         <rect key="frame" x="3" y="122" width="315" height="1"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="slim-line" id="Bp5-Ji-iT3"/>
                     </imageView>
-                    <button verticalHuggingPriority="750" id="2880">
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2880">
                         <rect key="frame" x="50" y="67" width="220" height="33"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                         <buttonCell key="cell" type="bevel" title="Create" bezelStyle="rounded" imagePosition="overlaps" alignment="center" alternateImage="slim-line" imageScaling="axesIndependently" inset="2" id="7339" customClass="PSButtonImageCell">
@@ -3502,7 +3541,7 @@ DQ
                             <outlet property="nextKeyView" destination="2906" id="2913"/>
                         </connections>
                     </button>
-                    <button verticalHuggingPriority="750" id="ERY-qu-TFm">
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ERY-qu-TFm">
                         <rect key="frame" x="50" y="15" width="220" height="33"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="bevel" title="Open..." bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="Msg-SO-ibU" customClass="PSButtonImageCell">
@@ -3513,12 +3552,12 @@ DQ
                             <action selector="openDocument:" target="2281" id="JBI-i5-GlT"/>
                         </connections>
                     </button>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="E0J-7r-02Z">
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E0J-7r-02Z">
                         <rect key="frame" x="325" y="3" width="1" height="341"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="slim-line" id="9RK-ty-xgu"/>
                     </imageView>
-                    <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="Mp5-pl-eZg" customClass="PSScrollView">
+                    <scrollView fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mp5-pl-eZg" customClass="PSScrollView">
                         <rect key="frame" x="330" y="6" width="307" height="337"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="nVp-G7-xys">
@@ -3526,15 +3565,14 @@ DQ
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" id="Pkl-iK-V2f">
-                                    <rect key="frame" x="0.0" y="0.0" width="307" height="0.0"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="307" height="337"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                     <tableColumns>
                                         <tableColumn identifier="RecentFileInfo" width="304" minWidth="40" maxWidth="1000" id="Mg7-BO-Y9x">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
-                                                <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                             </tableHeaderCell>
@@ -3549,7 +3587,7 @@ DQ
                                                     <rect key="frame" x="1" y="1" width="304" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="YNi-RV-UuK">
+                                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YNi-RV-UuK">
                                                             <rect key="frame" x="0.0" y="0.0" width="304" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="Qj7-aV-5Tc">

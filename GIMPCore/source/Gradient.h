@@ -9,6 +9,13 @@ typedef gdouble (* BlendRepeatFunc) (gdouble);
 
 typedef struct
 {
+    int nCount;
+    float *fArrPositions;
+    GimpRGB *ArrayColors;
+}GIMP_OTHER_COLORS;
+
+typedef struct
+{
   void				*gradient;
   gboolean          reverse;
   gdouble           offset;
@@ -18,6 +25,7 @@ typedef struct
   gdouble           dist;
   gdouble           vec[2];
   BlendRepeatFunc   repeat_func;
+    GIMP_OTHER_COLORS other_colors;
 } RenderBlendData;
 
 typedef struct

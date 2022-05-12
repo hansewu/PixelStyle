@@ -201,6 +201,21 @@
     }
 }
 
+- (void)showGradientPanelFrom:(NSPoint)p onWindow: (NSWindow *)parent
+{
+    [super showPanelFrom:p onWindow:parent];
+    gradientController_.gradient =  [drawingController_.propertyManager defaultValueForProperty:WDFillGradientProperty];
+    
+    gradientController_.inactive = NO;
+    [gradientController_ noAccessory];
+    colorController_.colorWell.gradientStopMode = YES;
+    
+    fillMode_ = kFillGradient;
+    
+    modeSegment_.selectedSegment = fillMode_;
+    [modeSegment_ setHidden:YES];
+}
+
 - (void)showPanelFrom:(NSPoint)p onWindow: (NSWindow *)parent
 {
     [super showPanelFrom:p onWindow:parent];

@@ -3,6 +3,7 @@
 #include "Gradient.h"
 #include "gimprgb.h"
 #include "gimpadaptivesupersample.h"
+#include <math.h>
 
 /*  local function prototypes  */
 
@@ -515,6 +516,52 @@ gradient_precalc_shapeburst (GimpImage    *gimage,
 }
 */
 
+static gdouble get_color_in_others(RenderBlendData *rbd, gdouble factor, GimpRGB  *fg, GimpRGB  *bg)
+{
+    int i, j=-1;
+    gdouble fg_f, bg_f;
+    if(rbd->other_colors.nCount <= 0 || factor < 0.0 || factor > 1.0)
+    {
+        *fg = rbd->fg;  *bg = rbd->bg;
+        if(factor < 0.0) factor = 0.0;
+        if(factor > 1.0) factor = 1.0;
+        return factor;
+    }
+    
+    for(i=0; i<rbd->other_colors.nCount; i++)
+    {
+        if(rbd->other_colors.fArrPositions[i] >= factor)
+        {
+            j=i; break;
+        }
+    }
+    
+    if(j == -1)
+    {
+        *fg = rbd->other_colors.ArrayColors[rbd->other_colors.nCount -1];
+        *bg = rbd->bg;
+        fg_f = rbd->other_colors.fArrPositions[rbd->other_colors.nCount -1];
+        bg_f = 1.0;
+    }
+    else if(j == 0)
+    {
+        *fg = rbd->fg;
+        *bg = rbd->other_colors.ArrayColors[j];
+        fg_f = 0.0;
+        bg_f = rbd->other_colors.fArrPositions[j];
+    }
+    else
+    {
+        *fg = rbd->other_colors.ArrayColors[j-1];
+        *bg = rbd->other_colors.ArrayColors[j];
+        fg_f = rbd->other_colors.fArrPositions[j-1];
+        bg_f = rbd->other_colors.fArrPositions[j];
+    }
+    
+    factor = (factor - fg_f)/(fabs(bg_f - fg_f) + 0.0001);
+    return  factor;
+}
+
 static void
 gradient_render_pixel (double    x,
 		       double    y,
@@ -523,6 +570,8 @@ gradient_render_pixel (double    x,
 {
   RenderBlendData *rbd;
   gdouble          factor;
+    GimpRGB           fg, bg;
+    
 
   rbd = render_data;
 
@@ -596,10 +645,11 @@ gradient_render_pixel (double    x,
       if (rbd->reverse)
         factor = 1.0 - factor;
 
-      color->r = rbd->fg.r + (rbd->bg.r - rbd->fg.r) * factor;
-      color->g = rbd->fg.g + (rbd->bg.g - rbd->fg.g) * factor;
-      color->b = rbd->fg.b + (rbd->bg.b - rbd->fg.b) * factor;
-      color->a = rbd->fg.a + (rbd->bg.a - rbd->fg.a) * factor;
+    factor = get_color_in_others(rbd, factor, &fg, &bg);
+      color->r = fg.r + (bg.r - fg.r) * factor;
+      color->g = fg.g + (bg.g - fg.g) * factor;
+      color->b = fg.b + (bg.b - fg.b) * factor;
+      color->a = fg.a + (bg.a - fg.a) * factor;
 /*
       if (rbd->blend_mode == GIMP_FG_BG_HSV_MODE)
         {
@@ -649,8 +699,9 @@ void GCFillGradient(unsigned char *dest, int destWidth, int destHeight, IntRect 
 	RenderBlendData rbd;
 	PutPixelData ppd;
 	GimpRGB color;
-	int x, y;
+	int x, y, i;
 	
+    rbd.other_colors.nCount = 0;
 	rbd.gradient = NULL;
 	rbd.reverse = 0;
 
@@ -663,6 +714,22 @@ void GCFillGradient(unsigned char *dest, int destWidth, int destHeight, IntRect 
 	rbd.bg.g = (double)info.end_color[1] / 255.0;
 	rbd.bg.b = (double)info.end_color[2] / 255.0;
 	rbd.bg.a = (double)info.end_color[3] / 255.0;
+    
+    if(info.other_colors.nCount > 0)
+    {
+        rbd.other_colors.nCount = info.other_colors.nCount;
+        rbd.other_colors.fArrPositions = (float *)malloc(sizeof(float) * info.other_colors.nCount);
+        rbd.other_colors.ArrayColors = (GimpRGB *)malloc(sizeof(GimpRGB) * info.other_colors.nCount);
+        memcpy(rbd.other_colors.fArrPositions, info.other_colors.fArrPositions, sizeof(float) * info.other_colors.nCount);
+        for(i=0; i< info.other_colors.nCount; i++)
+        {
+            rbd.other_colors.ArrayColors[i].r = (gdouble)info.other_colors.ArrayColors[i][0] / 255.0;
+            rbd.other_colors.ArrayColors[i].g = (gdouble)info.other_colors.ArrayColors[i][1] / 255.0;
+            rbd.other_colors.ArrayColors[i].b = (gdouble)info.other_colors.ArrayColors[i][2] / 255.0;
+            rbd.other_colors.ArrayColors[i].a = (gdouble)info.other_colors.ArrayColors[i][3] / 255.0;
+        }
+    }
+    
 	
 	switch (info.repeat) {
 		case GIMP_REPEAT_NONE:
@@ -756,4 +823,11 @@ void GCFillGradient(unsigned char *dest, int destWidth, int destHeight, IntRect 
 				(* progress_callback) (max_progress, progress);
 		}
 	}
+    
+    if(info.other_colors.nCount > 0)
+    {
+        free(rbd.other_colors.fArrPositions);
+        free(rbd.other_colors.ArrayColors);
+        
+    }
 }

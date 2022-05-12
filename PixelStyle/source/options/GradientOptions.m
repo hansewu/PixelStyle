@@ -2,6 +2,17 @@
 #import "PSController.h"
 #import "PSTools.h"
 #import "PSHelp.h"
+#import "PSDocument.h"
+#import "PSContent.h"
+#import "PSGradientButton.h"
+#import "PSFillController.h"
+#import "PSColorWell.h"
+
+#import "WDGradient.h"
+#import "WDDrawingController.h"
+#import "WDPropertyManager.h"
+#import "WDUtilities.h"
+#import "WDInspectableProperties.h"
 
 @implementation GradientOptions
 
@@ -59,11 +70,126 @@
 
 -(void)initViews
 {
+    NSMutableArray *subviews = [[m_idView subviews] mutableCopy];
+     for (NSView *view in subviews)
+     {
+         if(view.frame.origin.x > 50)
+         {
+             NSPoint originPoint = NSMakePoint(view.frame.origin.x+50, view.frame.origin.y);
+             [view setFrameOrigin:originPoint];
+         }
+         
+     }
+    
+
+    m_fillWell = [[PSColorWell alloc] initWithFrame:NSMakeRect(55, 10, 40, 18)];
+    
+    [m_fillWell setTarget:self];
+    [m_idView addSubview:m_fillWell];
+    
+//    //id contents = [m_idDocument contents];
+//    id colorF = [NSColor colorWithWhite:0.0 alpha:1.0];//[contents foreground];
+//    id colorB = [NSColor colorWithWhite:1.0 alpha:1.0];//[contents background];
+//
+//    NSGradient *gradient = [[[NSGradient alloc] initWithStartingColor:colorF endingColor:colorB] autorelease];
+//    GRADIENT_COLOR gColor = [self makeGradientColorFromGradient:gradient];
+//    [popBtn setGradientColor:gColor];
+    
+    WDGradient *gradient = [WDGradient defaultGradient];
+    [m_fillWell setPainter:gradient];
+    
+    [m_fillWell setAction:@selector(handlePopBtn:)];
+    
     [m_myCustomComboOpacity setDelegate:self];
     [m_myCustomComboOpacity setSliderMaxValue:100.0];
     [m_myCustomComboOpacity setSliderMinValue:0.0];
     [m_myCustomComboOpacity setStringValue:@"100.0%"];
+    
+    m_fillController = nil;
+    
+
 }
+
+-(NSGradient *)gradient
+{
+    if([m_fillWell.painter isKindOfClass:[WDGradient class]])
+    {
+            WDGradient *wgradient = (WDGradient *)m_fillWell.painter;
+            return [wgradient newNSGradient];
+    }
+    return nil;
+}
+
+-(void)activate:(id)sender
+{
+    [super activate:sender];
+    PSContent *contents = (PSContent *)[m_idDocument contents];
+    WDDrawingController *wdDrawingController = [contents wdDrawingController];
+    WDPropertyManager *propertyManager = wdDrawingController.propertyManager;
+    
+    if([[propertyManager activeFillStyle] isKindOfClass:[WDGradient class]])
+        [m_fillWell setPainter:[propertyManager activeFillStyle]];
+    
+    if(!m_fillController)
+        m_fillController = [[PSFillController alloc] initWithWindowNibName:@"Fill"];
+    
+    if(!m_fillController.drawingController)
+    {
+        PSContent *contents = (PSContent *)[m_idDocument contents];
+        m_fillController.drawingController = [contents wdDrawingController];
+        
+        [[NSNotificationCenter defaultCenter] removeObserver:self];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(invalidProperties:)
+                                                     name:WDInvalidPropertiesNotification
+                                                   object:m_fillController.drawingController.propertyManager];
+    }
+
+}
+
+- (void)handlePopBtn:(NSPopUpButton *)popBtn
+{
+    NSWindow *w = [m_idDocument window];
+    NSPoint p = [w convertBaseToScreen:[w mouseLocationOutsideOfEventStream]];
+        
+    [m_fillController showGradientPanelFrom: p onWindow: w];
+}
+
+- (void) invalidProperties:(NSNotification *)aNotification
+{
+    NSSet *properties = [aNotification userInfo][WDInvalidPropertiesKey];
+    
+    if ([properties containsObject:WDFillProperty])
+    {
+        id<WDPathPainter> fill = [m_fillController.drawingController.propertyManager defaultValueForProperty:WDFillProperty];
+        [m_fillWell setPainter:fill];
+    }
+}
+
+- (GRADIENT_COLOR)makeGradientColorFromGradient:(NSGradient *)gradient
+{
+    int count = [gradient numberOfColorStops];
+    GRADIENT_COLOR gradientColor;
+    gradientColor.colorInfo[0] = count;
+    gradientColor.colorAlphaInfo[0] = count;
+    
+    for (int i = 0; i < count; i++) {
+        NSColor *color;
+        CGFloat location = 0.0;
+        [gradient getColor:&color location:&location atIndex:i];
+        gradientColor.colorInfo[i * 4 + 1] = [color redComponent];
+        gradientColor.colorInfo[i * 4 + 2] = [color greenComponent];
+        gradientColor.colorInfo[i * 4 + 3] = [color blueComponent];
+        gradientColor.colorInfo[i * 4 + 4] = location;
+        gradientColor.colorAlphaInfo[i * 2 + 1] = [color alphaComponent];
+        gradientColor.colorAlphaInfo[i * 2 + 2] = location;
+    }
+    
+    return gradientColor;
+}
+
+
+
 
 - (int)type
 {

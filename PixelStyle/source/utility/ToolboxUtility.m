@@ -161,10 +161,11 @@ static NSString*	DocToolbarIdentifier 	= @"Document Toolbar Instance Identifier"
                              [NSNumber numberWithInt:-1],
 //                             [NSArray arrayWithObjects:[NSNumber numberWithInt:kVectorMoveTool],
 //                                [NSNumber numberWithInt:kVectorNodeEditorTool],[NSNumber numberWithInt:kVectorEraserTool],nil],
-                             [NSArray arrayWithObjects:[NSNumber numberWithInt:kVectorMoveTool],                              [NSNumber numberWithInt:kVectorEraserTool],nil],  //modify by lcz
-                             [NSNumber numberWithInt:kVectorPenTool],
+                            [NSNumber numberWithInt:kTextTool],
                              [NSNumber numberWithInt:kShapeTool],
-                             [NSNumber numberWithInt:kTextTool],
+                            [NSNumber numberWithInt:kVectorPenTool],
+                             [NSArray arrayWithObjects:[NSNumber numberWithInt:kVectorMoveTool],                              [NSNumber numberWithInt:kVectorEraserTool],nil],  //modify by lcz
+                             
                              [NSNumber numberWithInt:-1],
                              [NSNumber numberWithInt:kZoomTool],
                              nil];

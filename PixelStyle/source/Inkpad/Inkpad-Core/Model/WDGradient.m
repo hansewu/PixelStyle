@@ -324,6 +324,23 @@ NSString *WDGradientScaleKey = @"WDGradientScaleKey";
     return result;
 }
 
+- (NSGradient *) newNSGradient
+{
+    NSMutableArray  *colors = [NSMutableArray array];
+    CGFloat         locations[stops_.count];
+    int             ix = 0;
+    
+    for (WDGradientStop *stop in stops_) {
+        [colors addObject:(id) [stop.color UIColor]];
+        locations[ix++] = stop.ratio;
+    }
+    CGColorSpaceRef genericRGBColorspace = CGColorSpaceCreateDeviceRGB();
+    NSColorSpace *colorSpace = [[NSColorSpace alloc] initWithCGColorSpace:genericRGBColorspace] ;
+    NSGradient *gradient = [[NSGradient alloc] initWithColors:colors  atLocations:locations colorSpace:colorSpace];
+    CGColorSpaceRelease(genericRGBColorspace);
+    return gradient;
+}
+
 - (CGGradientRef) gradientRef
 {
     if (!gradientRef_) {

@@ -44,4 +44,6 @@
 - (void) reverseGradient:(id)sender;
 - (void) distributeGradientStops:(id)sender;
 
+-(void)noAccessory;
+
 @end

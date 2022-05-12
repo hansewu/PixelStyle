@@ -134,6 +134,14 @@
     [m_textFiledAngle setDelegate:self];
 }
 
+-(void)noAccessory
+{
+    [colorWell_ setHidden:YES];
+    [typeButton_ setHidden:YES];
+    [m_sliderAngle setHidden:YES];
+    [m_textFiledAngle setHidden:YES];
+}
+
 -(void)dealloc
 {
     if(gradient_) [gradient_ release];

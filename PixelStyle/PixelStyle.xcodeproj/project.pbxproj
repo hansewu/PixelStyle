@@ -9040,6 +9040,7 @@
 		1852F1CD280E573200D028C1 /* libopencv_photo.405.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_photo.405.dylib; path = ../opencv/lib/libopencv_photo.405.dylib; sourceTree = "<group>"; };
 		1852F1D0280E576500D028C1 /* libopencv_photo.405.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_photo.405.dylib; path = ../opencv/lib/libopencv_photo.405.dylib; sourceTree = "<group>"; };
 		1852F22A280EB03E00D028C1 /* patchmatch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = patchmatch.xcodeproj; path = patchmatch_inpainting/inpaint/patchmatch.xcodeproj; sourceTree = "<group>"; };
+		185300EC2828A71F00A2708D /* PixelStyle copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PixelStyle copy2-Info.plist"; path = "/Volumes/D/wzq/2019/pixelstylenew/PixelStyle/PixelStyle/PixelStyle copy2-Info.plist"; sourceTree = "<absolute>"; };
 		186AD7EE2816913200009522 /* SelectionToAlpha.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SelectionToAlpha.xcodeproj; path = "../Plug-ins/SelectionToAlpha/SelectionToAlpha.xcodeproj"; sourceTree = "<group>"; };
 		1876E8FB28177CCF00B790DF /* luminanceToAlpha.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = luminanceToAlpha.xcodeproj; path = "../Plug-ins/luminanceToAlpha/luminanceToAlpha.xcodeproj"; sourceTree = "<group>"; };
 		18A38C602809056A00FACD25 /* OCBilateral.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OCBilateral.xcodeproj; path = "../Plug-ins/OCBilateral/OCBilateral.xcodeproj"; sourceTree = "<group>"; };
@@ -10589,6 +10590,7 @@
 				39C78BBE1DAD302E00379B9B /* ProPaint register.plist */,
 				AB4C977F1EC30FFB0059F605 /* PixelStyle copy-Info.plist */,
 				1852F1B6280E34CD00D028C1 /* PixelStyle Free copy-Info.plist */,
+				185300EC2828A71F00A2708D /* PixelStyle copy2-Info.plist */,
 			);
 			name = Seashore;
 			sourceTree = "<group>";
@@ -13771,11 +13773,11 @@
 			);
 			projectRoot = "";
 			targets = (
-				A8EDF05C078959C80022BB31 /* PixelStyle */,
 				A89B83C60A426D3B00AD6941 /* PhotoArt Disk Image */,
 				394FD3481D12A01500A59E8A /* ProPaint */,
 				39C7835E1DAD301E00379B9B /* ProPaint trial */,
 				39C7878F1DAD302D00379B9B /* ProPaint register */,
+				A8EDF05C078959C80022BB31 /* PixelStyle */,
 				AB4C93521EC30FFA0059F605 /* PixelStyle Free */,
 				1852ED87280E34C800D028C1 /* PixelStyle Free No Plugins */,
 			);
@@ -21392,8 +21394,7 @@
 					USE_CENTERING_CLIPVIEW,
 					MACOS_10_4_COMPILE,
 					MAIN_COMPILE,
-					"FREE_VERSION=1",
-					"APPSTORE_VERSION=1",
+					"REGISTER_VERSION=1",
 				);
 				GCC_VERSION = "";
 				GCC_VERSION_ppc = 4.0;
@@ -21913,7 +21914,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-PixelStyle";
-				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_ENTITLEMENTS = PixelStyle/PixelStyle.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -21983,7 +21984,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-PixelStyle";
-				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_ENTITLEMENTS = PixelStyle/PixelStyle.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";

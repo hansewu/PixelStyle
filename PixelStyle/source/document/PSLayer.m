@@ -2837,7 +2837,12 @@ extern IntPoint gScreenResolution;
     rect.origin.x += m_nXoff;
     rect.origin.y += m_nYoff;
     NSRect displayUpdateRect = IntRectMakeNSRect(rect);
-    float zoom = [(PSView *)[m_idDocument docView] zoom];
+    
+    __block float zoom = 1.0;
+    dispatch_sync(dispatch_get_main_queue(), ^{
+         zoom = [(PSView *)[m_idDocument docView] zoom];
+    });
+    //float zoom = [(PSView *)[m_idDocument docView] zoom];
     int xres = [[m_idDocument contents] xres], yres = [[m_idDocument contents] yres];
     
     if (gScreenResolution.x != 0 && xres != gScreenResolution.x)
