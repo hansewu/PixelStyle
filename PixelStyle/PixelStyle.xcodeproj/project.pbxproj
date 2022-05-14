@@ -896,6 +896,25 @@
 		18A38CC4280907AE00FACD25 /* OCBilateral.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18A38C662809056B00FACD25 /* OCBilateral.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18D7E9492806498400A8FC3E /* libopencv_core.405.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18D7E9472806498300A8FC3E /* libopencv_core.405.dylib */; };
 		18D7E94A2806498400A8FC3E /* libopencv_imgproc.405.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18D7E9482806498300A8FC3E /* libopencv_imgproc.405.dylib */; };
+		18E3AE9B282F82E9006B7F64 /* libcriminisi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E68A16280F9033009AD2FF /* libcriminisi.dylib */; };
+		18E3AE9C282F82E9006B7F64 /* libpatchmatch.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1852F22F280EB03E00D028C1 /* libpatchmatch.dylib */; };
+		18E3AE9D282F8345006B7F64 /* libopencv_core.405.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D7E9472806498300A8FC3E /* libopencv_core.405.dylib */; };
+		18E3AE9E282F8346006B7F64 /* libopencv_imgproc.405.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D7E9482806498300A8FC3E /* libopencv_imgproc.405.dylib */; };
+		18E3AE9F282F8346006B7F64 /* libopencv_photo.405.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1852F1CD280E573200D028C1 /* libopencv_photo.405.dylib */; };
+		18E3AEA0282F83D5006B7F64 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75046F2F2750B0DB008BEF99 /* libstdc++.6.0.9.dylib */; };
+		18E3AEA1282F845C006B7F64 /* roboHumanMatting.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18E68B482811767D009AD2FF /* roboHumanMatting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18E3AEA2282F845C006B7F64 /* libopencv_flann.405.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18E68A29280F91D1009AD2FF /* libopencv_flann.405.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		18E3AEA3282F845D006B7F64 /* libopencv_photo.405.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1852F1D0280E576500D028C1 /* libopencv_photo.405.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		18E3AEA4282F845D006B7F64 /* libopencv_core.405.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18D7E9472806498300A8FC3E /* libopencv_core.405.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		18E3AEA5282F845D006B7F64 /* libopencv_imgproc.405.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18D7E9482806498300A8FC3E /* libopencv_imgproc.405.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		18E3AEA7282F8481006B7F64 /* libpatchmatch.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1852F22F280EB03E00D028C1 /* libpatchmatch.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		18E3AEA9282F8497006B7F64 /* libcriminisi.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18E68A16280F9033009AD2FF /* libcriminisi.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		18E3AEAB282F851B006B7F64 /* AlphaToRGB.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1836E1D12818D021000E0DB9 /* AlphaToRGB.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18E3AEAC282F851B006B7F64 /* luminanceToAlpha.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1876E90628177CCF00B790DF /* luminanceToAlpha.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18E3AEAD282F851B006B7F64 /* SelectionToAlpha.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 186AD7FD2816913200009522 /* SelectionToAlpha.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18E3AEAE282F851B006B7F64 /* AIPortraitMatting.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18E68B3428115BDE009AD2FF /* AIPortraitMatting.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18E3AEAF282F851B006B7F64 /* OCBilateral.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18A38C662809056B00FACD25 /* OCBilateral.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18E3AEB0282F851B006B7F64 /* SeamCarving.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB2513391EEA322A00AA3F14 /* SeamCarving.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18E68A27280F91AC009AD2FF /* libcriminisi.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18E68A16280F9033009AD2FF /* libcriminisi.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		18E68A2A280F91D1009AD2FF /* libopencv_flann.405.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18E68A29280F91D1009AD2FF /* libopencv_flann.405.dylib */; };
 		18E68A2D280F949A009AD2FF /* libcriminisi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E68A16280F9033009AD2FF /* libcriminisi.dylib */; };
@@ -5505,6 +5524,62 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = OCBilateral;
 		};
+		18E3AE7D282F811A006B7F64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1836E1CC2818D021000E0DB9 /* AlphaToRGB.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = AlphaToRGB;
+		};
+		18E3AE8D282F8137006B7F64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1876E8FB28177CCF00B790DF /* luminanceToAlpha.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = luminanceToAlpha;
+		};
+		18E3AE8F282F815B006B7F64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 186AD7EE2816913200009522 /* SelectionToAlpha.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = SelectionToAlpha;
+		};
+		18E3AE91282F8188006B7F64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18E68B2F28115BDD009AD2FF /* AIPortraitMatting.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = AIPortraitMatting;
+		};
+		18E3AE93282F81A4006B7F64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18E68A0F280F9033009AD2FF /* criminisi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1852F1DF280E9A9A00D028C1;
+			remoteInfo = criminisi;
+		};
+		18E3AE95282F81C5006B7F64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1852F22A280EB03E00D028C1 /* patchmatch.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1852F1DF280E9A9A00D028C1;
+			remoteInfo = patchmatch;
+		};
+		18E3AE97282F81F9006B7F64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18A38C602809056A00FACD25 /* OCBilateral.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = OCBilateral;
+		};
+		18E3AE99282F8221006B7F64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB2513331EEA322A00AA3F14 /* SeamCarving.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EA7D63B1D6418B2002DA368;
+			remoteInfo = SeamCarving;
+		};
 		18E68A15280F9033009AD2FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 18E68A0F280F9033009AD2FF /* criminisi.xcodeproj */;
@@ -8596,6 +8671,12 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				18E3AEAB282F851B006B7F64 /* AlphaToRGB.bundle in CopyFiles */,
+				18E3AEAC282F851B006B7F64 /* luminanceToAlpha.bundle in CopyFiles */,
+				18E3AEAD282F851B006B7F64 /* SelectionToAlpha.bundle in CopyFiles */,
+				18E3AEAE282F851B006B7F64 /* AIPortraitMatting.bundle in CopyFiles */,
+				18E3AEAF282F851B006B7F64 /* OCBilateral.bundle in CopyFiles */,
+				18E3AEB0282F851B006B7F64 /* SeamCarving.bundle in CopyFiles */,
 				396615121CCDFA440022F60E /* AffineTile+.bundle in CopyFiles */,
 				396615131CCDFA440022F60E /* AffineTransform+.bundle in CopyFiles */,
 				396615141CCDFA440022F60E /* Bloom+.bundle in CopyFiles */,
@@ -8874,6 +8955,13 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				18E3AEA9282F8497006B7F64 /* libcriminisi.dylib in CopyFiles */,
+				18E3AEA7282F8481006B7F64 /* libpatchmatch.dylib in CopyFiles */,
+				18E3AEA1282F845C006B7F64 /* roboHumanMatting.framework in CopyFiles */,
+				18E3AEA2282F845C006B7F64 /* libopencv_flann.405.dylib in CopyFiles */,
+				18E3AEA3282F845D006B7F64 /* libopencv_photo.405.dylib in CopyFiles */,
+				18E3AEA4282F845D006B7F64 /* libopencv_core.405.dylib in CopyFiles */,
+				18E3AEA5282F845D006B7F64 /* libopencv_imgproc.405.dylib in CopyFiles */,
 				39EF4BF91C58586E008DAE08 /* libpsgvector.dylib in CopyFiles */,
 				AB5A0E3A1BAC12A7009C4388 /* GPUImage.framework in CopyFiles */,
 				A8EB481309C5AE79007B9A41 /* GIMPCore.framework in CopyFiles */,
@@ -10390,6 +10478,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E3AEA0282F83D5006B7F64 /* libstdc++.6.0.9.dylib in Frameworks */,
+				18E3AE9D282F8345006B7F64 /* libopencv_core.405.dylib in Frameworks */,
+				18E3AE9E282F8346006B7F64 /* libopencv_imgproc.405.dylib in Frameworks */,
+				18E3AE9F282F8346006B7F64 /* libopencv_photo.405.dylib in Frameworks */,
+				18E3AE9B282F82E9006B7F64 /* libcriminisi.dylib in Frameworks */,
+				18E3AE9C282F82E9006B7F64 /* libpatchmatch.dylib in Frameworks */,
 				39509C9C1D1923E900C72299 /* QuickLook.framework in Frameworks */,
 				39B932D61CB4FFE6005EB6E5 /* ScriptingBridge.framework in Frameworks */,
 				AB886C541C579370006139C7 /* WebKit.framework in Frameworks */,
@@ -13197,6 +13291,14 @@
 			buildRules = (
 			);
 			dependencies = (
+				18E3AE9A282F8221006B7F64 /* PBXTargetDependency */,
+				18E3AE98282F81F9006B7F64 /* PBXTargetDependency */,
+				18E3AE96282F81C5006B7F64 /* PBXTargetDependency */,
+				18E3AE94282F81A4006B7F64 /* PBXTargetDependency */,
+				18E3AE92282F8188006B7F64 /* PBXTargetDependency */,
+				18E3AE90282F815B006B7F64 /* PBXTargetDependency */,
+				18E3AE8E282F8137006B7F64 /* PBXTargetDependency */,
+				18E3AE7E282F811A006B7F64 /* PBXTargetDependency */,
 				ABC82A971C8530FA00248DD6 /* PBXTargetDependency */,
 				AB831EF51C5634770096885A /* PBXTargetDependency */,
 				AB58681C1BBA608E0013CA22 /* PBXTargetDependency */,
@@ -19561,6 +19663,46 @@
 			name = OCBilateral;
 			targetProxy = 18A38CBF2809078000FACD25 /* PBXContainerItemProxy */;
 		};
+		18E3AE7E282F811A006B7F64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlphaToRGB;
+			targetProxy = 18E3AE7D282F811A006B7F64 /* PBXContainerItemProxy */;
+		};
+		18E3AE8E282F8137006B7F64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = luminanceToAlpha;
+			targetProxy = 18E3AE8D282F8137006B7F64 /* PBXContainerItemProxy */;
+		};
+		18E3AE90282F815B006B7F64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SelectionToAlpha;
+			targetProxy = 18E3AE8F282F815B006B7F64 /* PBXContainerItemProxy */;
+		};
+		18E3AE92282F8188006B7F64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AIPortraitMatting;
+			targetProxy = 18E3AE91282F8188006B7F64 /* PBXContainerItemProxy */;
+		};
+		18E3AE94282F81A4006B7F64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = criminisi;
+			targetProxy = 18E3AE93282F81A4006B7F64 /* PBXContainerItemProxy */;
+		};
+		18E3AE96282F81C5006B7F64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = patchmatch;
+			targetProxy = 18E3AE95282F81C5006B7F64 /* PBXContainerItemProxy */;
+		};
+		18E3AE98282F81F9006B7F64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OCBilateral;
+			targetProxy = 18E3AE97282F81F9006B7F64 /* PBXContainerItemProxy */;
+		};
+		18E3AE9A282F8221006B7F64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SeamCarving;
+			targetProxy = 18E3AE99282F8221006B7F64 /* PBXContainerItemProxy */;
+		};
 		18E68A26280F919A009AD2FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = criminisi;
@@ -21917,13 +22059,13 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_ENTITLEMENTS = PixelStyle/PixelStyle.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = VA2XE4K2T9;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
@@ -21947,6 +22089,7 @@
 					"./source/Inkpad/Classes/**",
 					./source/EccRegisterBundle,
 					"./source/GraphicsMagick/**",
+					"$(PROJECT_DIR)/../opencv/include",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
@@ -21956,6 +22099,7 @@
 					"$(PROJECT_DIR)/../Extralibs",
 					"$(PROJECT_DIR)/resources",
 					"$(PROJECT_DIR)/source/GraphicsMagick/lib",
+					"$(PROJECT_DIR)/../opencv/lib",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CFLAGS = "";
@@ -21987,11 +22131,11 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_ENTITLEMENTS = PixelStyle/PixelStyle.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = VA2XE4K2T9;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				GCC_AUTO_VECTORIZATION = YES;
@@ -22014,6 +22158,7 @@
 					"./source/Inkpad/Classes/**",
 					./source/EccRegisterBundle,
 					"./source/GraphicsMagick/**",
+					"$(PROJECT_DIR)/../opencv/include",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
@@ -22023,6 +22168,7 @@
 					"$(PROJECT_DIR)/../Extralibs",
 					"$(PROJECT_DIR)/resources",
 					"$(PROJECT_DIR)/source/GraphicsMagick/lib",
+					"$(PROJECT_DIR)/../opencv/lib",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CFLAGS = "";
