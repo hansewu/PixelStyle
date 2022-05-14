@@ -87,13 +87,7 @@
     [m_fillWell setTarget:self];
     [m_idView addSubview:m_fillWell];
     
-//    //id contents = [m_idDocument contents];
-//    id colorF = [NSColor colorWithWhite:0.0 alpha:1.0];//[contents foreground];
-//    id colorB = [NSColor colorWithWhite:1.0 alpha:1.0];//[contents background];
-//
-//    NSGradient *gradient = [[[NSGradient alloc] initWithStartingColor:colorF endingColor:colorB] autorelease];
-//    GRADIENT_COLOR gColor = [self makeGradientColorFromGradient:gradient];
-//    [popBtn setGradientColor:gColor];
+
     
     WDGradient *gradient = [WDGradient defaultGradient];
     [m_fillWell setPainter:gradient];
@@ -141,8 +135,8 @@
         [[NSNotificationCenter defaultCenter] removeObserver:self];
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(invalidProperties:)
-                                                     name:WDInvalidPropertiesNotification
-                                                   object:m_fillController.drawingController.propertyManager];
+                                                     name:@"PSFillGradientChanged"
+                                                   object:m_fillController];
     }
 
 }
@@ -157,13 +151,14 @@
 
 - (void) invalidProperties:(NSNotification *)aNotification
 {
-    NSSet *properties = [aNotification userInfo][WDInvalidPropertiesKey];
+    WDGradient *wGradient = [aNotification userInfo][@"gradient"];
     
-    if ([properties containsObject:WDFillProperty])
+    [m_fillWell setPainter:wGradient];
+   /* if ([properties containsObject:WDFillProperty])
     {
         id<WDPathPainter> fill = [m_fillController.drawingController.propertyManager defaultValueForProperty:WDFillProperty];
         [m_fillWell setPainter:fill];
-    }
+    }*/
 }
 
 - (GRADIENT_COLOR)makeGradientColorFromGradient:(NSGradient *)gradient

@@ -6,7 +6,7 @@
 - (id)initWithContentRect:(NSRect)contentRect styleMask:(unsigned int)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag {
 	//Call NSWindow's version of this function, but pass in the all-important value of NSBorderlessWindowMask
     //for the styleMask so that the window doesn't have a title bar
-    NSWindow* result = [super initWithContentRect:contentRect styleMask:(NSBorderlessWindowMask) backing:NSBackingStoreBuffered defer:NO];
+    NSWindow* result = [super initWithContentRect:contentRect styleMask:(NSBorderlessWindowMask) backing:NSBackingStoreNonretained defer:NO];//NSBackingStoreBuffered defer:NO];
     //Set the background color to clear so that (along with the setOpaque call below) we can see through the parts
     //of the window that we're not drawing into
     [result setBackgroundColor: [NSColor clearColor]];
@@ -57,6 +57,11 @@
 	return m_nPanelStyle;
 }
 
+- (int) arrowPosStyle
+{
+    return m_nArrowPosStyle;
+}
+
 - (void) setPanelStyle:(int)newStyle
 {
 	m_nPanelStyle = newStyle;
@@ -65,12 +70,26 @@
 - (void) orderFrontToGoal:(NSPoint)goal onWindow:(NSWindow *)parent
 {
 	NSRect oldFrame = [self frame];
-	if(m_nPanelStyle == kVerticalPanelStyle){
+    m_nArrowPosStyle = kArrowMiddleStyle;
+    
+	if(m_nPanelStyle == kVerticalPanelStyle)
+    {
+        oldFrame.size.height = 398;
         oldFrame.origin.x = goal.x - oldFrame.size.width / 2;
         oldFrame.origin.y = goal.y - oldFrame.size.height;
-    }else if(m_nPanelStyle == kHorizontalPanelStyle){
+        if(oldFrame.origin.x < 0)
+        {
+            oldFrame.origin.x = goal.x-10;
+            m_nArrowPosStyle = kArrowLeftStyle;
+            oldFrame.size.height = 390;//-=20; force repaint InfoPanelBacking
+            oldFrame.origin.y = goal.y - oldFrame.size.height;
+        }
+            
+    }
+    else if(m_nPanelStyle == kHorizontalPanelStyle)
+    {
         oldFrame.origin.x = goal.x;
-	oldFrame.origin.y = goal.y - 2 * oldFrame.size.height / 3;
+        oldFrame.origin.y = goal.y - 2 * oldFrame.size.height / 3;
     }
     
 //    NSRect screenRect = [[parent screen] visibleFrame];

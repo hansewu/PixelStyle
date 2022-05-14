@@ -48,9 +48,19 @@
 	
 	// We're now on the top side so draw the arrow
 	if(top){
+        int arrowPosStyle = [(InfoPanel *)[self window] arrowPosStyle];
+        if(arrowPosStyle == kArrowMiddleStyle)
+        {
 		[tempPath lineToPoint:NSMakePoint(rect.origin.x + rect.size.width / 2 + 10, rect.origin.y + rect.size.height )];
 		[tempPath lineToPoint:NSMakePoint(rect.origin.x + rect.size.width / 2 , rect.origin.y + rect.size.height + 15)];
 		[tempPath lineToPoint:NSMakePoint(rect.origin.x + rect.size.width / 2 - 10, rect.origin.y + rect.size.height )];
+        }
+        else if(arrowPosStyle == kArrowLeftStyle )
+        {
+            [tempPath lineToPoint:NSMakePoint(rect.origin.x  + 20, rect.origin.y + rect.size.height )];
+            [tempPath lineToPoint:NSMakePoint(rect.origin.x  +10, rect.origin.y + rect.size.height + 15)];
+            [tempPath lineToPoint:NSMakePoint(rect.origin.x , rect.origin.y + rect.size.height )];
+        }
 	}
 
 	// Finish this side

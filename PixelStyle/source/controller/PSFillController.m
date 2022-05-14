@@ -123,6 +123,10 @@
     PSGradientController *controller = (PSGradientController *)sender;
     
     [drawingController_ setValue:controller.gradient forProperty:WDFillProperty];
+    
+    NSDictionary *userInfo = [NSDictionary dictionaryWithObject:controller.gradient forKey:@"gradient"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"PSFillGradientChanged" object:self userInfo:userInfo];
+
 }
 
 -(void)windowDidLoad

@@ -18,6 +18,12 @@ enum {
 	kHorizontalPanelStyle
 };
 
+enum {
+    kArrowMiddleStyle,
+    kArrowLeftStyle,
+    kArrowRightStyle,
+    
+};
 /*!
 	@class		InfoPanel
 	@abstract	A class for PixelStyle-specific modal information panels. 
@@ -33,7 +39,7 @@ enum {
 	// Info panels can come in a few different styles.
 	// This stores what we currently think the style is.
 	int m_nPanelStyle;
-	
+    int m_nArrowPosStyle;
 	// Sometimes the panel is too close to the edge of the screen
 	// to fit, so it has to be flipped
 	BOOL m_bPanelFilpped;
@@ -65,4 +71,5 @@ enum {
 */
 - (void) orderFrontToGoal:(NSPoint)goal onWindow:(NSWindow *)parent;
  
+- (int) arrowPosStyle;
 @end
