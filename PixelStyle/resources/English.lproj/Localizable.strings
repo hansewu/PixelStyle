@@ -916,6 +916,10 @@
 "Bilateral Smooth" = "Auto Smooth (e.g. skin etc.)";
 "SeamCaving" = "Intelligent Resize";
 
+"Alpha Channel to RGB channels" = "Alpha Channel to RGB channels";
+"Luminance to Alpha Channel" = "Luminance to Alpha Channel";
+"Selection to Alpha Channel" = "Selection to Alpha Channel";
+
 "No Fill" = "No Fill";
 "Auto Fill" = "Auto Fill";
 "Fast Auto Fill" = "Fast Auto Fill";

@@ -265,7 +265,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../../opencv/lib";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_CFLAGS = "-DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = net.photoart.AIPortraitMatting;
 				PRODUCT_NAME = AIPortraitMatting;
@@ -298,7 +298,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../../opencv/lib";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = net.photoart.AIPortraitMatting;
 				PRODUCT_NAME = AIPortraitMatting;

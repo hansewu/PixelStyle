@@ -406,7 +406,8 @@ void eraseMergeCustomWithFlag(int spp, unsigned char *destPtr, unsigned char *fl
     
     destPtr[destLoc + alphaPos] = int_mult(srcPtr2[srcLoc2 + alphaPos], alpha, t1);
     
-    flagPtr[destLoc/spp] = 255;
+    flagPtr[destLoc*2/spp] = 255;
+    flagPtr[destLoc*2/spp +1] = srcPtr1[srcLoc1 + alphaPos];
 }
 
  void primaryMerge(int spp, unsigned char *destPtr, int destLoc, unsigned char *srcPtr, int srcLoc, int srcOpacity, BOOL lazy)

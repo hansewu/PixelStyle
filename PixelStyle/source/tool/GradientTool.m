@@ -132,7 +132,7 @@
 		info.start_color[0] = [color redComponent] * 255;
 		info.start_color[1] = [color greenComponent] * 255;
 		info.start_color[2] = [color blueComponent] * 255;
-		info.start_color[3] = alpha * 255;
+		info.start_color[3] = alpha * [color alphaComponent] *255;
 		info.end = where;
 		color = [contents background];
         //if(gradient.numberOfColorStops == 2)
@@ -142,16 +142,18 @@
 		info.end_color[0] = [color redComponent] * 255;
 		info.end_color[1] = [color greenComponent] * 255;
 		info.end_color[2] = [color blueComponent] * 255;
-		info.end_color[3] = alpha * 255;
+		info.end_color[3] = alpha * [color alphaComponent] *255;
 	}
 	else {
-		color = [contents foreground];
+		//color = [contents foreground];
+        [gradient getColor:&color location:nil atIndex:0];
 		info.start_color[0] = info.start_color[1] = info.start_color[2] = [color whiteComponent] * 255;
-		info.start_color[3] = alpha * 255;
+		info.start_color[3] = alpha * [color alphaComponent] * 255;
 		info.end = where;
-		color = [contents background];
+		//color = [contents background];
+        [gradient getColor:&color location:nil atIndex:gradient.numberOfColorStops-1];
 		info.end_color[0] = info.end_color[1] = info.end_color[2] = [color whiteComponent] * 255;
-		info.end_color[3] = alpha * 255;
+		info.end_color[3] = alpha * [color alphaComponent] * 255;
 	}
 	
 	// Work out the rectangle for the gradient

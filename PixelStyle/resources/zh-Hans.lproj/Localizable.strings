@@ -756,6 +756,10 @@
 "Bilateral Smooth" = "自动平滑(例如皮肤)";
 "SeamCaving" = "智能缩放";
 
+"Alpha Channel to RGB channels" = "拷贝alpha通道到rgb通道";
+"Luminance to Alpha Channel" = "拷贝亮度到alpha通道";
+"Selection to Alpha Channel" = "将选择转到alpha通道";
+
 "New Document" = "新文档";
 "New Layer" = "新图层";
 "Open File as ..." = "打开文件为...";

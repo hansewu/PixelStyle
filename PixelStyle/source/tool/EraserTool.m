@@ -234,8 +234,8 @@
     int width = [(PSLayer *)layer width], height = [(PSLayer *)layer height];
     int layerSpp = [layer spp];
     
-    m_pErasedFlagBuf = (unsigned char *)malloc(width * height);
-    memset(m_pErasedFlagBuf, 0, width * height);
+    m_pErasedFlagBuf = (unsigned char *)malloc(width * height*2);
+    memset(m_pErasedFlagBuf, 0, width * height*2);
     
     m_dataChangedRect = IntMakeRect(0, 0, 0, 0);
     [[m_idDocument whiteboard] clearOverlay];

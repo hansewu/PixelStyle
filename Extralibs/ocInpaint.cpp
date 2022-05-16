@@ -33,9 +33,12 @@ void criminisiInpaint(
     cv::InputArray sourceMask,
                       int patchSize);
 
-int ocInpaint(unsigned char *pBuffer, unsigned char *pMask, int nWidth, int nHeight, int nFillType)
+int ocInpaint(unsigned char *pBuffer, unsigned char *pMaskAlpha, int nWidth, int nHeight, int nFillType)
 {
     cv::Mat_<cv::Vec4b> cvImage = cv::Mat(nHeight, nWidth, CV_8UC4, pBuffer);
+    unsigned char *pMask = new unsigned char[nHeight *nWidth];
+    for(int i=0; i< nHeight *nWidth; i++)
+        pMask[i] = pMaskAlpha[2*i];
     cv::Mat cvMask = cv::Mat(nHeight, nWidth, CV_8UC1, pMask);
     cv::Mat cvImage1, cvRes;
     
@@ -59,9 +62,22 @@ int ocInpaint(unsigned char *pBuffer, unsigned char *pMask, int nWidth, int nHei
         cvRes = cvImage1;
     }
 
-    cv::cvtColor(cvRes, cvImage, cv::COLOR_RGB2RGBA);
+    cv::cvtColor(cvRes, cvImage1, cv::COLOR_RGB2RGBA);
     
-    memcpy(pBuffer, cvImage.data, nHeight*nWidth*4);
-    
+    for(int y=0;y<nHeight; y++)
+    for(int x=0; x<nWidth; x++)
+    {
+        int nPos = y*nWidth+x;
+            if(pMaskAlpha[2*nPos] == 255)
+            {
+                pBuffer[nPos*4] = cvImage1.data[nPos*4];
+                pBuffer[nPos*4+1] = cvImage1.data[nPos*4+1];
+                pBuffer[nPos*4+2] = cvImage1.data[nPos*4+2];
+                pBuffer[nPos*4+3] = 255;//pMaskAlpha[2*nPos+1];//cvImage.data[nPos*4+3];
+            }
+            
+    }
+    //memcpy(pBuffer, cvImage.data, nHeight*nWidth*4);
+    delete []pMask;
     return 0;
 }
