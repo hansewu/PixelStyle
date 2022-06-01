@@ -46,15 +46,15 @@ int ocInpaint(unsigned char *pBuffer, unsigned char *pMaskAlpha, int nWidth, int
     
     cv::Mat cvSMask;
     
-    if(nFillType==3)
+    if(nFillType==2)
     {
         inpaint(cvImage1, cvMask, cvRes, 3, INPAINT_TELEA);//INPAINT_NS);//
     }
-    else if(nFillType==2)
+    else if(nFillType==1)
     {
         patchMatchInpaint(cvImage1, cvMask, cvRes);
     }
-    else if(nFillType==4)
+    else if(nFillType==3)
     {
         //cvSMask.create(cvImage.size(), CV_8UC1);
         //cvSMask.setTo(0);

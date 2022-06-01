@@ -35,9 +35,21 @@
     {
         m_strToolTips = [[NSString alloc] initWithFormat:@"%@",NSLocalizedString(@"Press Shift to draw straight lines. Press Shift & Ctrl to draw lies at 45 degrees.", nil)];
         m_pErasedFlagBuf = NULL;
+        m_nEraserType = 0;
     }
     
     return self;
+}
+
+- (void) setEraserType:(int) nEraserType
+{
+    m_nEraserType = nEraserType;
+    [(EraserOptions*)m_idOptions setEraserType:nEraserType];
+}
+
+- (int) getEraserType
+{
+    return m_nEraserType;
 }
 
 - (int)toolId
@@ -47,7 +59,10 @@
 
 -(NSString *)toolTip
 {
-    return NSLocalizedString(@"Eraser Tool", nil);
+    if(m_nEraserType == 0)
+        return NSLocalizedString(@"Eraser Tool", nil);
+    else
+        return NSLocalizedString(@"Inpaint Tool", nil);
 }
 
 
@@ -650,7 +665,7 @@ next:
 
 -(void)inpaint
 {
-    if([(EraserOptions*)m_idOptions fillType] ==1)  return;
+    if(m_nEraserType == 0)  return;
     
     id layer = [[m_idDocument contents] activeLayer];
     int width = [(PSLayer *)layer width];

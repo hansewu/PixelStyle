@@ -75,9 +75,9 @@ static NSString*	DocToolbarIdentifier 	= @"Document Toolbar Instance Identifier"
     m_nTool = kPositionTool; //set initial tool, modify by lcz
 	m_nOldTool = kPositionTool;
     
-    m_arrToolBtnTip = [[NSArray arrayWithObjects:NSLocalizedString(@"Rectangular Marquee Tool", nil), NSLocalizedString(@"Elliptical Marquee Tool", nil),NSLocalizedString(@"Lasso Tool", nil), NSLocalizedString(@"Polygonal Lasso Tool", nil),NSLocalizedString(@"Magic Wand Tool", nil), NSLocalizedString(@"Pencil Tool", nil),NSLocalizedString(@"Brush Tool", nil), NSLocalizedString(@"Eyedropper Tool", nil),NSLocalizedString(@"Text Tool", nil), NSLocalizedString(@"Eraser Tool", nil),NSLocalizedString(@"Paint Bucket Tool", nil), NSLocalizedString(@"Gradient Tool", nil),NSLocalizedString(@"Crop Tool", nil), NSLocalizedString(@"Clone Stamp Tool", nil),NSLocalizedString(@"Smudge Tool", nil), NSLocalizedString(@"Effect Tool", nil),NSLocalizedString(@"Zoom Tool", nil), NSLocalizedString(@"Move and Align Tool", nil),NSLocalizedString(@"Vector Tool", nil), NSLocalizedString(@"Art Brush Tool", nil),NSLocalizedString(@"Transform Tool", nil), NSLocalizedString(@"Shape Tool", nil),NSLocalizedString(@"Path Selection Tool", nil), NSLocalizedString(@"Pen Tool", nil),NSLocalizedString(@"Path Eraser Tool", nil),NSLocalizedString(@"Red Eye Remove Tool", nil),NSLocalizedString(@"Burn Tool", nil),NSLocalizedString(@"Dodge Tool", nil),NSLocalizedString(@"Sponge Tool", nil),NSLocalizedString(@"Node Editor Tool", nil), nil] retain];
+    m_arrToolBtnTip = [[NSArray arrayWithObjects:NSLocalizedString(@"Rectangular Marquee Tool", nil), NSLocalizedString(@"Elliptical Marquee Tool", nil),NSLocalizedString(@"Lasso Tool", nil), NSLocalizedString(@"Polygonal Lasso Tool", nil),NSLocalizedString(@"Magic Wand Tool", nil), NSLocalizedString(@"Pencil Tool", nil),NSLocalizedString(@"Brush Tool", nil), NSLocalizedString(@"Eyedropper Tool", nil),NSLocalizedString(@"Text Tool", nil), NSLocalizedString(@"Eraser Tool", nil),NSLocalizedString(@"Paint Bucket Tool", nil), NSLocalizedString(@"Gradient Tool", nil),NSLocalizedString(@"Crop Tool", nil), NSLocalizedString(@"Clone Stamp Tool", nil),NSLocalizedString(@"Smudge Tool", nil), NSLocalizedString(@"Effect Tool", nil),NSLocalizedString(@"Zoom Tool", nil), NSLocalizedString(@"Move and Align Tool", nil),NSLocalizedString(@"Vector Tool", nil), NSLocalizedString(@"Art Brush Tool", nil),NSLocalizedString(@"Transform Tool", nil), NSLocalizedString(@"Shape Tool", nil),NSLocalizedString(@"Path Selection Tool", nil), NSLocalizedString(@"Pen Tool", nil),NSLocalizedString(@"Path Eraser Tool", nil),NSLocalizedString(@"Red Eye Remove Tool", nil),NSLocalizedString(@"Burn Tool", nil),NSLocalizedString(@"Dodge Tool", nil),NSLocalizedString(@"Sponge Tool", nil),NSLocalizedString(@"Node Editor Tool", nil),NSLocalizedString(@"Inpaint Tool", nil), nil] retain];
     
-    m_arrToolBtnShotKey = [[NSArray arrayWithObjects:@"M", @"M",@"L", @"L",@"W", @"B",@"B", @"I",@"T", @"E",@"G", @"G",@"C", @"S",@"O", @" ",@"Z", @"V",@" ", @"B",@"T", @"U",@"A", @"P",@"E", @"R",@"O",@"O",@"O",@"N",  nil] retain];
+    m_arrToolBtnShotKey = [[NSArray arrayWithObjects:@"M", @"M",@"L", @"L",@"W", @"B",@"B", @"I",@"T", @"E",@"G", @"G",@"C", @"S",@"O", @" ",@"Z", @"V",@" ", @"B",@"T", @"U",@"A", @"P",@"E", @"R",@"O",@"O",@"O",@"N",@"E",  nil] retain];
     
     m_colorCanChange = YES;
     
@@ -126,7 +126,8 @@ static NSString*	DocToolbarIdentifier 	= @"Document Toolbar Instance Identifier"
                              [NSNumber numberWithInt:kMyBrushTool],
                              [NSNumber numberWithInt:kBrushTool],
                              [NSNumber numberWithInt:kPencilTool],
-                             [NSNumber numberWithInt:kEraserTool],
+                            [NSArray arrayWithObjects:[NSNumber numberWithInt:kEraserTool],[NSNumber numberWithInt:kInpaintTool],nil],
+                             //[NSNumber numberWithInt:kEraserTool],
                              [NSNumber numberWithInt:kEyedropTool],
 //                             [NSArray arrayWithObjects:[NSNumber numberWithInt:kBucketTool],[NSNumber numberWithInt:kGradientTool],nil],
                              [NSNumber numberWithInt:kBucketTool],
@@ -151,7 +152,7 @@ static NSString*	DocToolbarIdentifier 	= @"Document Toolbar Instance Identifier"
                              [NSNumber numberWithInt:kCropTool],
                              [NSNumber numberWithInt:-1],
                              [NSArray arrayWithObjects:[NSNumber numberWithInt:kMyBrushTool],[NSNumber numberWithInt:kBrushTool],[NSNumber numberWithInt:kPencilTool],nil],
-                             [NSNumber numberWithInt:kEraserTool],
+                            [NSArray arrayWithObjects:[NSNumber numberWithInt:kEraserTool],[NSNumber numberWithInt:kInpaintTool],nil],
                              [NSNumber numberWithInt:kEyedropTool],
                              [NSNumber numberWithInt:kCloneTool],
                              [NSArray arrayWithObjects:[NSNumber numberWithInt:kBucketTool],[NSNumber numberWithInt:kGradientTool],nil],
@@ -183,7 +184,7 @@ static NSString*	DocToolbarIdentifier 	= @"Document Toolbar Instance Identifier"
              [NSNumber numberWithInt:kMyBrushTool],
              [NSNumber numberWithInt:kBrushTool],
              [NSNumber numberWithInt:kPencilTool],
-             [NSNumber numberWithInt:kEraserTool],
+             [NSArray arrayWithObjects:[NSNumber numberWithInt:kEraserTool],[NSNumber numberWithInt:kInpaintTool],nil],
              [NSNumber numberWithInt:kEyedropTool],
              [NSNumber numberWithInt:kCloneTool],
              [NSArray arrayWithObjects:[NSNumber numberWithInt:kBucketTool],[NSNumber numberWithInt:kGradientTool],nil],
@@ -707,6 +708,7 @@ static NSString*	DocToolbarIdentifier 	= @"Document Toolbar Instance Identifier"
             break;
             
         case kEraserTool:
+        case kInpaintTool:
         case kVectorEraserTool:
             m_arrayLastTools[5] = newTool;
             m_nLastToolType = 'e';

@@ -107,6 +107,7 @@
 			return m_idEyedropOptions;
 		break;
 		case kEraserTool:
+        case kInpaintTool:
 			return m_idEraserOptions;
 		break;
 		case kSmudgeTool:

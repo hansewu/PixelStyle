@@ -48,6 +48,10 @@
 			return m_idEyedropTool;
 		break;
 		case kEraserTool:
+            [m_idEraserTool setEraserType:0];
+            return m_idEraserTool;
+        case kInpaintTool:
+            [m_idEraserTool setEraserType:1];
 			return m_idEraserTool;
 		break;
 		case kPositionTool:

@@ -142,11 +142,21 @@ void replaceMergeCustom(int spp, unsigned char *destPtr, int destLoc, unsigned c
         case 2:
         {
             if (srcOpacity == 255) {
-                destPtr[destLoc + alphaPos] = srcPtr1[srcLoc1 + alphaPos];
+                int modifed = 0;
+                for (k = 0; k < spp; k++)
+                {
+                    if(srcPtr2[srcLoc2 +k] != srcPtr1[srcLoc1 +k])
+                    {
+                        modifed = 1;
+                        break;
+                    }
+                }
+                if(modifed)
+                    destPtr[destLoc + alphaPos] = (int)srcPtr1[srcLoc1]*(int)srcPtr1[srcLoc1 + alphaPos]/255;
             }
             else {
                 alpha = int_mult(srcPtr1[srcLoc1 + alphaPos], srcOpacity, t1);
-                destPtr[destLoc + alphaPos] = int_mult(srcPtr1[srcLoc1 + alphaPos], alpha, t1) + int_mult(srcPtr2[srcLoc2 + alphaPos], 255 - alpha, t2);
+                destPtr[destLoc + alphaPos] = int_mult(srcPtr1[srcLoc1], alpha, t1) + int_mult(srcPtr2[srcLoc2 ], 255 - alpha, t2); // + alphaPos  + alphaPos
             }
         }
             break;

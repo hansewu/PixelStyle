@@ -30,47 +30,8 @@
 
 -(void)initViews
 {
-    NSMutableArray *subviews = [[[m_idDrawTyle superview] subviews] mutableCopy];
-     for (NSView *view in subviews)
-     {
-         if(view.frame.origin.x > 50)
-         {
-             NSPoint originPoint = NSMakePoint(view.frame.origin.x+100, view.frame.origin.y);
-             [view setFrameOrigin:originPoint];
-         }
-         
-     }
-    
-    NSPopUpButton *popBtn = [[NSPopUpButton alloc] initWithFrame:
-          NSMakeRect(55, 8, 100, 18) pullsDown:YES];
-    [popBtn addItemWithTitle:@"Fill Type"];
-    [popBtn addItemWithTitle:NSLocalizedString(@"No Fill", nil)];
-    [popBtn addItemWithTitle:NSLocalizedString(@"Auto Fill", nil)];
-    [popBtn addItemWithTitle:NSLocalizedString(@"Fast Auto Fill", nil)];
-    [popBtn addItemWithTitle:NSLocalizedString(@"Slow Auto Fill", nil)];
-    
-    [popBtn setTarget:self];
-    
-    popBtn.title = NSLocalizedString(@"Fast Auto Fill", nil);
-        
-    [[m_idDrawTyle superview] addSubview:popBtn];
-    [popBtn setAction:@selector(handlePopBtn:)];
-    [popBtn selectItemAtIndex:3];
-    
-    m_nFillType = 3;
-    /*
-    NSComboBox *popBtn = [[NSComboBox alloc] initWithFrame:
-          NSMakeRect(52, 5, 100, 20)];
-    //[popBtn addItemWithObjectValue:@"Fill Type"];
-    [popBtn addItemWithObjectValue:@"No Fill"];
-    [popBtn addItemWithObjectValue:@"Auto Fill"];
-    [popBtn addItemWithObjectValue:@"Fast Auto Fill"];
-    [popBtn addItemWithObjectValue:@"Slow Auto Fill" ];
-    //[popBtn setFont:<#(NSFont * _Nullable)#>]
-     [[m_idDrawTyle superview] addSubview:popBtn];
-    [popBtn selectItemAtIndex:1];
-    
-     */
+    m_nEraserType = 0;
+    m_popBtnFillType = nil;
     
     [m_idPSComboxOpacity setDelegate:self];
     [m_idPSComboxOpacity setSliderMaxValue:100];
@@ -94,6 +55,86 @@
     [(NSButton *)m_idDrawTyle setTitle:NSLocalizedString(@"Draw straight lines", nil)];
     [(NSButton *)m_idDrawTyle45 setTitle:NSLocalizedString(@"Draw straight lines at 45°", nil)];
     [(NSButton *)m_idMimicBrushCheckbox setTitle:NSLocalizedString(@"Mimic paintbrush fading", nil)];
+}
+
+-(void)setEraserTypeIcon:(int)nEraserType
+{
+    NSMutableArray *subviews = [[[m_idDrawTyle superview] subviews] mutableCopy];
+     for (NSView *view in subviews)
+     {
+         if(view.frame.origin.x < 50)
+         {
+             if([view isKindOfClass:[NSImageView class]])
+             {
+                 
+                 NSImage *image = nil;
+                 if(nEraserType == 0)
+                     image = [NSImage imageNamed:@"tools-9"];
+                 else
+                     image = [NSImage imageNamed:@"tools-30"];
+
+                 ((NSImageView *)view).image = image;
+                 break;
+             }
+         }
+     }
+}
+
+-(void)setEraserType:(int)nEraserType
+{
+    if(m_nEraserType == nEraserType) return;
+    m_nEraserType = nEraserType;
+    
+    if(nEraserType == 0)
+    {
+        [m_popBtnFillType removeFromSuperview];
+        [m_popBtnFillType release];
+        m_popBtnFillType = nil;
+        
+        NSMutableArray *subviews = [[[m_idDrawTyle superview] subviews] mutableCopy];
+         for (NSView *view in subviews)
+         {
+             if(view.frame.origin.x > 150)
+             {
+                 NSPoint originPoint = NSMakePoint(view.frame.origin.x-100, view.frame.origin.y);
+                 [view setFrameOrigin:originPoint];
+             }
+             
+         }
+    }
+    else
+    {
+        NSMutableArray *subviews = [[[m_idDrawTyle superview] subviews] mutableCopy];
+         for (NSView *view in subviews)
+         {
+             if(view.frame.origin.x > 50)
+             {
+                 NSPoint originPoint = NSMakePoint(view.frame.origin.x+100, view.frame.origin.y);
+                 [view setFrameOrigin:originPoint];
+             }
+             
+         }
+        
+        m_popBtnFillType = [[NSPopUpButton alloc] initWithFrame:
+              NSMakeRect(55, 8, 100, 18) pullsDown:YES];
+        [m_popBtnFillType addItemWithTitle:@"Fill Type"];
+     //   [m_popBtnFillType addItemWithTitle:NSLocalizedString(@"No Fill", nil)];
+        [m_popBtnFillType addItemWithTitle:NSLocalizedString(@"Auto Fill", nil)];
+        [m_popBtnFillType addItemWithTitle:NSLocalizedString(@"Fast Auto Fill", nil)];
+        [m_popBtnFillType addItemWithTitle:NSLocalizedString(@"Slow Auto Fill", nil)];
+        
+        [m_popBtnFillType setTarget:self];
+        
+        m_popBtnFillType.title = NSLocalizedString(@"Fast Auto Fill", nil);
+            
+        [[m_idDrawTyle superview] addSubview:m_popBtnFillType];
+        [m_popBtnFillType setAction:@selector(handlePopBtn:)];
+        [m_popBtnFillType selectItemAtIndex:3];
+        
+        m_nFillType = 2;
+    }
+    
+    [self setEraserTypeIcon:nEraserType];
 }
 
 - (void)handlePopBtn:(NSPopUpButton *)popBtn

@@ -891,6 +891,39 @@
 		1852F1D1280E576600D028C1 /* libopencv_photo.405.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1852F1D0280E576500D028C1 /* libopencv_photo.405.dylib */; };
 		1852F2A1280EB38500D028C1 /* libpatchmatch.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1852F22F280EB03E00D028C1 /* libpatchmatch.dylib */; };
 		1852F2A3280EB39800D028C1 /* libpatchmatch.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1852F22F280EB03E00D028C1 /* libpatchmatch.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		185B19732846F2B2007EDEE6 /* tools-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19602846F2AF007EDEE6 /* tools-30.png */; };
+		185B19742846F2B2007EDEE6 /* tools-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19602846F2AF007EDEE6 /* tools-30.png */; };
+		185B19752846F2B2007EDEE6 /* tools-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19602846F2AF007EDEE6 /* tools-30.png */; };
+		185B19762846F2B2007EDEE6 /* tools-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19602846F2AF007EDEE6 /* tools-30.png */; };
+		185B19772846F2B2007EDEE6 /* tools-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19602846F2AF007EDEE6 /* tools-30.png */; };
+		185B19782846F2B2007EDEE6 /* tools-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19602846F2AF007EDEE6 /* tools-30.png */; };
+		185B19792846F2B2007EDEE6 /* tools-30-h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B196F2846F2AF007EDEE6 /* tools-30-h@2x.png */; };
+		185B197A2846F2B2007EDEE6 /* tools-30-h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B196F2846F2AF007EDEE6 /* tools-30-h@2x.png */; };
+		185B197B2846F2B2007EDEE6 /* tools-30-h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B196F2846F2AF007EDEE6 /* tools-30-h@2x.png */; };
+		185B197C2846F2B2007EDEE6 /* tools-30-h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B196F2846F2AF007EDEE6 /* tools-30-h@2x.png */; };
+		185B197D2846F2B2007EDEE6 /* tools-30-h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B196F2846F2AF007EDEE6 /* tools-30-h@2x.png */; };
+		185B197E2846F2B2007EDEE6 /* tools-30-h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B196F2846F2AF007EDEE6 /* tools-30-h@2x.png */; };
+		185B197F2846F2B2007EDEE6 /* tools-30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19702846F2B0007EDEE6 /* tools-30@2x.png */; };
+		185B19802846F2B2007EDEE6 /* tools-30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19702846F2B0007EDEE6 /* tools-30@2x.png */; };
+		185B19812846F2B2007EDEE6 /* tools-30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19702846F2B0007EDEE6 /* tools-30@2x.png */; };
+		185B19822846F2B2007EDEE6 /* tools-30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19702846F2B0007EDEE6 /* tools-30@2x.png */; };
+		185B19832846F2B3007EDEE6 /* tools-30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19702846F2B0007EDEE6 /* tools-30@2x.png */; };
+		185B19842846F2B3007EDEE6 /* tools-30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19702846F2B0007EDEE6 /* tools-30@2x.png */; };
+		185B19852846F2B3007EDEE6 /* tools-30-a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19712846F2B1007EDEE6 /* tools-30-a@2x.png */; };
+		185B19862846F2B3007EDEE6 /* tools-30-a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19712846F2B1007EDEE6 /* tools-30-a@2x.png */; };
+		185B19872846F2B3007EDEE6 /* tools-30-a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19712846F2B1007EDEE6 /* tools-30-a@2x.png */; };
+		185B19882846F2B3007EDEE6 /* tools-30-a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19712846F2B1007EDEE6 /* tools-30-a@2x.png */; };
+		185B19892846F2B3007EDEE6 /* tools-30-a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19712846F2B1007EDEE6 /* tools-30-a@2x.png */; };
+		185B198A2846F2B3007EDEE6 /* tools-30-a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19712846F2B1007EDEE6 /* tools-30-a@2x.png */; };
+		185B198B2846F2B3007EDEE6 /* tools-30-a.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19722846F2B2007EDEE6 /* tools-30-a.png */; };
+		185B198C2846F2B3007EDEE6 /* tools-30-a.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19722846F2B2007EDEE6 /* tools-30-a.png */; };
+		185B198D2846F2B3007EDEE6 /* tools-30-a.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19722846F2B2007EDEE6 /* tools-30-a.png */; };
+		185B198E2846F2B3007EDEE6 /* tools-30-a.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19722846F2B2007EDEE6 /* tools-30-a.png */; };
+		185B198F2846F2B3007EDEE6 /* tools-30-a.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19722846F2B2007EDEE6 /* tools-30-a.png */; };
+		185B19902846F2B3007EDEE6 /* tools-30-a.png in Resources */ = {isa = PBXBuildFile; fileRef = 185B19722846F2B2007EDEE6 /* tools-30-a.png */; };
+		185B199828470876007EDEE6 /* AlphaToRGB.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1836E1D12818D021000E0DB9 /* AlphaToRGB.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		185B199928470876007EDEE6 /* luminanceToAlpha.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1876E90628177CCF00B790DF /* luminanceToAlpha.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		185B199A28470876007EDEE6 /* SelectionToAlpha.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 186AD7FD2816913200009522 /* SelectionToAlpha.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		186AD8062816917600009522 /* SelectionToAlpha.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 186AD7FD2816913200009522 /* SelectionToAlpha.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1876E91328177CFC00B790DF /* luminanceToAlpha.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1876E90628177CCF00B790DF /* luminanceToAlpha.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18A38CC4280907AE00FACD25 /* OCBilateral.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18A38C662809056B00FACD25 /* OCBilateral.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -5482,6 +5515,27 @@
 			remoteGlobalIDString = 1852F1DF280E9A9A00D028C1;
 			remoteInfo = patchmatch;
 		};
+		185B1992284707DC007EDEE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1836E1CC2818D021000E0DB9 /* AlphaToRGB.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = AlphaToRGB;
+		};
+		185B1994284707DC007EDEE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1876E8FB28177CCF00B790DF /* luminanceToAlpha.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = luminanceToAlpha;
+		};
+		185B1996284707DC007EDEE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 186AD7EE2816913200009522 /* SelectionToAlpha.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = SelectionToAlpha;
+		};
 		186AD7FC2816913200009522 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 186AD7EE2816913200009522 /* SelectionToAlpha.xcodeproj */;
@@ -9026,6 +9080,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				185B199828470876007EDEE6 /* AlphaToRGB.bundle in CopyFiles */,
+				185B199928470876007EDEE6 /* luminanceToAlpha.bundle in CopyFiles */,
+				185B199A28470876007EDEE6 /* SelectionToAlpha.bundle in CopyFiles */,
 				18E68B5228117A39009AD2FF /* AIPortraitMatting.bundle in CopyFiles */,
 				18A38CC4280907AE00FACD25 /* OCBilateral.bundle in CopyFiles */,
 				181AF4C02805533F0054C4EA /* SeamCarving.bundle in CopyFiles */,
@@ -9129,6 +9186,11 @@
 		1852F1D0280E576500D028C1 /* libopencv_photo.405.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_photo.405.dylib; path = ../opencv/lib/libopencv_photo.405.dylib; sourceTree = "<group>"; };
 		1852F22A280EB03E00D028C1 /* patchmatch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = patchmatch.xcodeproj; path = patchmatch_inpainting/inpaint/patchmatch.xcodeproj; sourceTree = "<group>"; };
 		185300EC2828A71F00A2708D /* PixelStyle copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PixelStyle copy2-Info.plist"; path = "/Volumes/D/wzq/2019/pixelstylenew/PixelStyle/PixelStyle/PixelStyle copy2-Info.plist"; sourceTree = "<absolute>"; };
+		185B19602846F2AF007EDEE6 /* tools-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tools-30.png"; sourceTree = "<group>"; };
+		185B196F2846F2AF007EDEE6 /* tools-30-h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tools-30-h@2x.png"; sourceTree = "<group>"; };
+		185B19702846F2B0007EDEE6 /* tools-30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tools-30@2x.png"; sourceTree = "<group>"; };
+		185B19712846F2B1007EDEE6 /* tools-30-a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tools-30-a@2x.png"; sourceTree = "<group>"; };
+		185B19722846F2B2007EDEE6 /* tools-30-a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tools-30-a.png"; sourceTree = "<group>"; };
 		186AD7EE2816913200009522 /* SelectionToAlpha.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SelectionToAlpha.xcodeproj; path = "../Plug-ins/SelectionToAlpha/SelectionToAlpha.xcodeproj"; sourceTree = "<group>"; };
 		1876E8FB28177CCF00B790DF /* luminanceToAlpha.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = luminanceToAlpha.xcodeproj; path = "../Plug-ins/luminanceToAlpha/luminanceToAlpha.xcodeproj"; sourceTree = "<group>"; };
 		18A38C602809056A00FACD25 /* OCBilateral.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OCBilateral.xcodeproj; path = "../Plug-ins/OCBilateral/OCBilateral.xcodeproj"; sourceTree = "<group>"; };
@@ -12631,6 +12693,11 @@
 		F5A77790040101DB01DD7B36 /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				185B19722846F2B2007EDEE6 /* tools-30-a.png */,
+				185B19712846F2B1007EDEE6 /* tools-30-a@2x.png */,
+				185B196F2846F2AF007EDEE6 /* tools-30-h@2x.png */,
+				185B19602846F2AF007EDEE6 /* tools-30.png */,
+				185B19702846F2B0007EDEE6 /* tools-30@2x.png */,
 				395E2D151D751CDD007214D2 /* tools-29.png */,
 				393524431CD1AD9D0082F717 /* tools-14-a.png */,
 				393524441CD1AD9D0082F717 /* tools-14-h.png */,
@@ -13388,6 +13455,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				185B1993284707DC007EDEE6 /* PBXTargetDependency */,
+				185B1995284707DC007EDEE6 /* PBXTargetDependency */,
+				185B1997284707DC007EDEE6 /* PBXTargetDependency */,
 				18E68B4C28117818009AD2FF /* PBXTargetDependency */,
 				18E68A32280FF5BD009AD2FF /* PBXTargetDependency */,
 				18E68A30280FF5A5009AD2FF /* PBXTargetDependency */,
@@ -14534,6 +14604,7 @@
 				1852EE18280E34C800D028C1 /* text_thumbnail.png in Resources */,
 				1852EE19280E34C800D028C1 /* btn-a-m.png in Resources */,
 				1852EE1A280E34C800D028C1 /* tools-rounded.png in Resources */,
+				185B197E2846F2B2007EDEE6 /* tools-30-h@2x.png in Resources */,
 				1852EE1B280E34C800D028C1 /* tools-0.png in Resources */,
 				1852EE1C280E34C800D028C1 /* duplicate.png in Resources */,
 				1852EE1D280E34C800D028C1 /* new.png in Resources */,
@@ -14700,6 +14771,7 @@
 				1852EEBE280E34C800D028C1 /* PICT Icon.icns in Resources */,
 				1852EEBF280E34C800D028C1 /* Rotate0.png in Resources */,
 				1852EEC0280E34C800D028C1 /* tools-3-a.png in Resources */,
+				185B19782846F2B2007EDEE6 /* tools-30.png in Resources */,
 				1852EEC1280E34C800D028C1 /* dash_black.png in Resources */,
 				1852EEC2280E34C800D028C1 /* tools-23@2x.png in Resources */,
 				1852EEC3280E34C800D028C1 /* TIFF Icon.icns in Resources */,
@@ -14762,6 +14834,7 @@
 				1852EEFC280E34C800D028C1 /* tools-17-a.png in Resources */,
 				1852EEFD280E34C800D028C1 /* shape-4-a.png in Resources */,
 				1852EEFE280E34C800D028C1 /* Gradient.xib in Resources */,
+				185B19902846F2B3007EDEE6 /* tools-30-a.png in Resources */,
 				1852EEFF280E34C800D028C1 /* skew-corner.png in Resources */,
 				1852EF00280E34C800D028C1 /* tools-24-h@2x.png in Resources */,
 				1852EF01280E34C800D028C1 /* grab-cursor.png in Resources */,
@@ -14769,6 +14842,7 @@
 				1852EF03280E34C800D028C1 /* textfield-bg.png in Resources */,
 				1852EF04280E34C800D028C1 /* tools-12-a@2x.png in Resources */,
 				1852EF05280E34C800D028C1 /* win-btn-bg.png in Resources */,
+				185B19842846F2B3007EDEE6 /* tools-30@2x.png in Resources */,
 				1852EF06280E34C800D028C1 /* paths-mode-exclude.png in Resources */,
 				1852EF07280E34C800D028C1 /* mat-pro-h.png in Resources */,
 				1852EF08280E34C800D028C1 /* sd_icon_16x16.png in Resources */,
@@ -15002,6 +15076,7 @@
 				1852EFEC280E34C800D028C1 /* tools-7-a@2x.png in Resources */,
 				1852EFED280E34C800D028C1 /* selectnone.png in Resources */,
 				1852EFEE280E34C800D028C1 /* trueview-not.png in Resources */,
+				185B198A2846F2B3007EDEE6 /* tools-30-a@2x.png in Resources */,
 				1852EFEF280E34C800D028C1 /* shape-froward.png in Resources */,
 				1852EFF0280E34C800D028C1 /* Rotate2.png in Resources */,
 				1852EFF1280E34C800D028C1 /* select-1-a.png in Resources */,
@@ -15088,6 +15163,7 @@
 				394FD3EC1D12A01500A59E8A /* select-2.png in Resources */,
 				394FD3ED1D12A01500A59E8A /* text_thumbnail.png in Resources */,
 				394FD3EE1D12A01500A59E8A /* btn-a-m.png in Resources */,
+				185B19852846F2B3007EDEE6 /* tools-30-a@2x.png in Resources */,
 				394FD3EF1D12A01500A59E8A /* tools-rounded.png in Resources */,
 				394FD3F01D12A01500A59E8A /* tools-0.png in Resources */,
 				394FD3F11D12A01500A59E8A /* duplicate.png in Resources */,
@@ -15107,6 +15183,7 @@
 				394FD3FE1D12A01500A59E8A /* move.png in Resources */,
 				394FD3FF1D12A01500A59E8A /* vec-align-vertical-center.png in Resources */,
 				394FD4001D12A01500A59E8A /* text-deform.png in Resources */,
+				185B197F2846F2B2007EDEE6 /* tools-30@2x.png in Resources */,
 				394FD4011D12A01500A59E8A /* text-underline.png in Resources */,
 				75710D1B1D898F0700A61C61 /* Rotate0.png in Resources */,
 				394FD4021D12A01500A59E8A /* status-zoom+.png in Resources */,
@@ -15130,6 +15207,7 @@
 				394FD4131D12A01500A59E8A /* pencil.png in Resources */,
 				394FD4141D12A01500A59E8A /* tools-0-a@2x.png in Resources */,
 				394FD4151D12A01500A59E8A /* slider_border.png in Resources */,
+				185B19792846F2B2007EDEE6 /* tools-30-h@2x.png in Resources */,
 				394FD4161D12A01500A59E8A /* tools-16-h@2x.png in Resources */,
 				394FD4171D12A01500A59E8A /* text-underline-a.png in Resources */,
 				394FD4181D12A01500A59E8A /* fx-stroke-a.png in Resources */,
@@ -15185,6 +15263,7 @@
 				75710D1D1D898F0700A61C61 /* Rotate1.png in Resources */,
 				394FD44D1D12A01500A59E8A /* checkerboard1.png in Resources */,
 				394FD44E1D12A01500A59E8A /* buy-bg.png in Resources */,
+				185B198B2846F2B3007EDEE6 /* tools-30-a.png in Resources */,
 				394FD44F1D12A01500A59E8A /* email-ui-delete-file.png in Resources */,
 				394FD4501D12A01500A59E8A /* tools-12-a.png in Resources */,
 				394FD4511D12A01500A59E8A /* polyon-subProduct-cursor.png in Resources */,
@@ -15218,6 +15297,7 @@
 				394FD46F1D12A01500A59E8A /* tools-26-a.png in Resources */,
 				394FD4701D12A01500A59E8A /* tools-24.png in Resources */,
 				394FD4711D12A01500A59E8A /* tools-21.png in Resources */,
+				185B19732846F2B2007EDEE6 /* tools-30.png in Resources */,
 				394FD4721D12A01500A59E8A /* mybrushes-group-5-a.png in Resources */,
 				394FD4731D12A01500A59E8A /* text-delete.png in Resources */,
 				394FD4741D12A01500A59E8A /* wand-cursor.png in Resources */,
@@ -15657,6 +15737,7 @@
 				39C784201DAD301E00379B9B /* tools-7-a.png in Resources */,
 				39C784211DAD301E00379B9B /* gradient-6.png in Resources */,
 				39C784221DAD301E00379B9B /* lasso-add-cursor.png in Resources */,
+				185B19862846F2B3007EDEE6 /* tools-30-a@2x.png in Resources */,
 				39C784231DAD301E00379B9B /* tools-11.png in Resources */,
 				39C784241DAD301E00379B9B /* checkbox-selected.png in Resources */,
 				39C784251DAD301E00379B9B /* zoom-cursor.png in Resources */,
@@ -15852,6 +15933,7 @@
 				39C784E31DAD301E00379B9B /* move-right-alignment.png in Resources */,
 				39C784E41DAD301E00379B9B /* JP2 Icon.icns in Resources */,
 				39C784E51DAD301E00379B9B /* VerifyRegistration.xib in Resources */,
+				185B19742846F2B2007EDEE6 /* tools-30.png in Resources */,
 				39C784E61DAD301E00379B9B /* lasso.png in Resources */,
 				39C784E71DAD301E00379B9B /* tools-19-a@2x.png in Resources */,
 				39C784E81DAD301E00379B9B /* GIF Icon.icns in Resources */,
@@ -15917,6 +15999,7 @@
 				39C785241DAD301E00379B9B /* select-3.png in Resources */,
 				39C785251DAD301E00379B9B /* ColorPrefsIcon.png in Resources */,
 				39C785261DAD301E00379B9B /* crosspoint-subtract-cursor.png in Resources */,
+				185B197A2846F2B2007EDEE6 /* tools-30-h@2x.png in Resources */,
 				39C785271DAD301E00379B9B /* crosspoint-close-cursor.png in Resources */,
 				39C785281DAD301E00379B9B /* lasso-multiply-cursor.png in Resources */,
 				39C785291DAD301E00379B9B /* crosspoint-add-cursor.png in Resources */,
@@ -16002,6 +16085,7 @@
 				39C785791DAD301E00379B9B /* pen-1-a.png in Resources */,
 				39C7857A1DAD301E00379B9B /* tools-5-h@2x.png in Resources */,
 				39C7857B1DAD301E00379B9B /* texture-left-right.png in Resources */,
+				185B198C2846F2B3007EDEE6 /* tools-30-a.png in Resources */,
 				39C7857C1DAD301E00379B9B /* Rotate4.png in Resources */,
 				39C7857D1DAD301E00379B9B /* filter_reset.png in Resources */,
 				39C7857E1DAD301E00379B9B /* scale-uldr.png in Resources */,
@@ -16110,6 +16194,7 @@
 				39C785E61DAD301E00379B9B /* tools-1-a@2x.png in Resources */,
 				39C785E71DAD301E00379B9B /* tools-6.png in Resources */,
 				39C785E81DAD301E00379B9B /* anchor-tb.png in Resources */,
+				185B19802846F2B2007EDEE6 /* tools-30@2x.png in Resources */,
 				39C785E91DAD301E00379B9B /* tools-6-a@2x.png in Resources */,
 				39C785EA1DAD301E00379B9B /* transform-rotate.png in Resources */,
 				39C785EB1DAD301E00379B9B /* tools-22-a.png in Resources */,
@@ -16198,6 +16283,7 @@
 				39C788511DAD302D00379B9B /* tools-7-a.png in Resources */,
 				39C788521DAD302D00379B9B /* gradient-6.png in Resources */,
 				39C788531DAD302D00379B9B /* lasso-add-cursor.png in Resources */,
+				185B19872846F2B3007EDEE6 /* tools-30-a@2x.png in Resources */,
 				39C788541DAD302D00379B9B /* tools-11.png in Resources */,
 				39C788551DAD302D00379B9B /* checkbox-selected.png in Resources */,
 				39C788561DAD302D00379B9B /* zoom-cursor.png in Resources */,
@@ -16393,6 +16479,7 @@
 				39C789141DAD302D00379B9B /* move-right-alignment.png in Resources */,
 				39C789151DAD302D00379B9B /* JP2 Icon.icns in Resources */,
 				39C789161DAD302D00379B9B /* VerifyRegistration.xib in Resources */,
+				185B19752846F2B2007EDEE6 /* tools-30.png in Resources */,
 				39C789171DAD302D00379B9B /* lasso.png in Resources */,
 				39C789181DAD302D00379B9B /* tools-19-a@2x.png in Resources */,
 				39C789191DAD302D00379B9B /* GIF Icon.icns in Resources */,
@@ -16458,6 +16545,7 @@
 				39C789551DAD302D00379B9B /* select-3.png in Resources */,
 				39C789561DAD302D00379B9B /* ColorPrefsIcon.png in Resources */,
 				39C789571DAD302D00379B9B /* crosspoint-subtract-cursor.png in Resources */,
+				185B197B2846F2B2007EDEE6 /* tools-30-h@2x.png in Resources */,
 				39C789581DAD302D00379B9B /* crosspoint-close-cursor.png in Resources */,
 				39C789591DAD302D00379B9B /* lasso-multiply-cursor.png in Resources */,
 				39C7895A1DAD302D00379B9B /* crosspoint-add-cursor.png in Resources */,
@@ -16543,6 +16631,7 @@
 				39C789AA1DAD302D00379B9B /* pen-1-a.png in Resources */,
 				39C789AB1DAD302D00379B9B /* tools-5-h@2x.png in Resources */,
 				39C789AC1DAD302D00379B9B /* texture-left-right.png in Resources */,
+				185B198D2846F2B3007EDEE6 /* tools-30-a.png in Resources */,
 				39C789AD1DAD302D00379B9B /* Rotate4.png in Resources */,
 				39C789AE1DAD302D00379B9B /* filter_reset.png in Resources */,
 				39C789AF1DAD302D00379B9B /* scale-uldr.png in Resources */,
@@ -16651,6 +16740,7 @@
 				39C78A171DAD302D00379B9B /* tools-1-a@2x.png in Resources */,
 				39C78A181DAD302D00379B9B /* tools-6.png in Resources */,
 				39C78A191DAD302D00379B9B /* anchor-tb.png in Resources */,
+				185B19812846F2B2007EDEE6 /* tools-30@2x.png in Resources */,
 				39C78A1A1DAD302D00379B9B /* tools-6-a@2x.png in Resources */,
 				39C78A1B1DAD302D00379B9B /* transform-rotate.png in Resources */,
 				39C78A1C1DAD302D00379B9B /* tools-22-a.png in Resources */,
@@ -16730,6 +16820,7 @@
 				A8EDF0C2078959C80022BB31 /* move.png in Resources */,
 				394C90411D1100FB005F1E3A /* vec-align-vertical-center.png in Resources */,
 				39E88F931C0AD317003FB061 /* text-deform.png in Resources */,
+				185B198E2846F2B3007EDEE6 /* tools-30-a.png in Resources */,
 				39E88F9A1C0AD317003FB061 /* text-underline.png in Resources */,
 				39A1BEC61BE2055B008DAB88 /* status-zoom+.png in Resources */,
 				A8EDF0C3078959C80022BB31 /* zoom.png in Resources */,
@@ -16841,6 +16932,7 @@
 				A8EDF0E0078959C80022BB31 /* wand-cursor.png in Resources */,
 				39E5726A1BF43FD700EDEE54 /* texture-left-right-a.png in Resources */,
 				39E51E731BEB42170089245F /* texture-no.png in Resources */,
+				185B19822846F2B2007EDEE6 /* tools-30@2x.png in Resources */,
 				3938EB5F1C7E9E3200AE970C /* shape-2-a.png in Resources */,
 				39A1BEA21BE1F003008DAB88 /* tools-12.png in Resources */,
 				A8EDF0E1078959C80022BB31 /* BMP Icon.icns in Resources */,
@@ -16950,6 +17042,7 @@
 				394C90401D1100FB005F1E3A /* vec-align-top.png in Resources */,
 				39E68C3D1BEC503C007E8B48 /* gradient-7.png in Resources */,
 				39C0209E1BE9E22100D09D2F /* move-left-alignment-a.png in Resources */,
+				185B197C2846F2B2007EDEE6 /* tools-30-h@2x.png in Resources */,
 				A893606D09EFC34A006DF75E /* clone.png in Resources */,
 				392D06CD1D6EBD7C003765FB /* rotate_flag_a.png in Resources */,
 				39BFA21E1BFC55B300F88F72 /* mybrushes-group-1-a.png in Resources */,
@@ -17082,12 +17175,14 @@
 				39E572661BF43F3C00EDEE54 /* btn-r.png in Resources */,
 				AB001B721CBB469F00E44163 /* pen-1-a.png in Resources */,
 				39F8E15B1CBFAF96007B4FBF /* tools-5-h@2x.png in Resources */,
+				185B19882846F2B3007EDEE6 /* tools-30-a@2x.png in Resources */,
 				39E51E751BEB422C0089245F /* texture-left-right.png in Resources */,
 				AB240ED21C8EB6B0008C1FF6 /* filter_reset.png in Resources */,
 				AB8126401BE88FED00EB1BFD /* scale-uldr.png in Resources */,
 				39BFA2221BFC55B300F88F72 /* mybrushes-group-3-a.png in Resources */,
 				39E572591BF43EFF00EDEE54 /* status-zoom--a.png in Resources */,
 				390AFF891D01893400E416E2 /* polyon-subtract-cursor.png in Resources */,
+				185B19762846F2B2007EDEE6 /* tools-30.png in Resources */,
 				39C020A81BE9F83B00D09D2F /* cancel-a.png in Resources */,
 				39F0ABBB1C8D264E00863D89 /* Fill.xib in Resources */,
 				394492081BE85684004F6310 /* transform-miter.png in Resources */,
@@ -17271,6 +17366,7 @@
 				AB4C94041EC30FFA0059F605 /* crosspoint-subProduct-cursor.png in Resources */,
 				AB4C94051EC30FFA0059F605 /* warning.png in Resources */,
 				AB4C94061EC30FFA0059F605 /* gradient-0-a.png in Resources */,
+				185B19832846F2B3007EDEE6 /* tools-30@2x.png in Resources */,
 				AB4C94071EC30FFA0059F605 /* text.png in Resources */,
 				AB4C94081EC30FFA0059F605 /* move.png in Resources */,
 				AB4C94091EC30FFA0059F605 /* vec-align-vertical-center.png in Resources */,
@@ -17280,6 +17376,7 @@
 				AB4C940D1EC30FFA0059F605 /* zoom.png in Resources */,
 				AB4C940E1EC30FFA0059F605 /* move-cursor.png in Resources */,
 				AB4C940F1EC30FFA0059F605 /* VecDefaults.plist in Resources */,
+				185B19772846F2B2007EDEE6 /* tools-30.png in Resources */,
 				AB4C94101EC30FFA0059F605 /* tools-7-a.png in Resources */,
 				AB4C94111EC30FFA0059F605 /* gradient-6.png in Resources */,
 				AB4C94121EC30FFA0059F605 /* lasso-add-cursor.png in Resources */,
@@ -17453,6 +17550,7 @@
 				AB4C94BA1EC30FFA0059F605 /* seperator-h.png in Resources */,
 				AB4C94BB1EC30FFA0059F605 /* move-c-center-alignment.png in Resources */,
 				AB4C94BC1EC30FFA0059F605 /* tools-9.png in Resources */,
+				185B19892846F2B3007EDEE6 /* tools-30-a@2x.png in Resources */,
 				AB4C94BD1EC30FFA0059F605 /* tools-24-a.png in Resources */,
 				AB4C94BE1EC30FFA0059F605 /* lasso-subProduct-cursor.png in Resources */,
 				AB4C94BF1EC30FFA0059F605 /* skew-uldr.png in Resources */,
@@ -17474,6 +17572,7 @@
 				AB4C94CF1EC30FFA0059F605 /* move-up-a.png in Resources */,
 				AB4C94D01EC30FFA0059F605 /* box-right.png in Resources */,
 				39044E8A1FE8E772003729F5 /* sv_icon_32x32.png in Resources */,
+				185B197D2846F2B2007EDEE6 /* tools-30-h@2x.png in Resources */,
 				AB4C94D11EC30FFA0059F605 /* move-right-alignment.png in Resources */,
 				AB4C94D21EC30FFA0059F605 /* JP2 Icon.icns in Resources */,
 				AB4C94D31EC30FFA0059F605 /* VerifyRegistration.xib in Resources */,
@@ -17692,6 +17791,7 @@
 				AB4C95A51EC30FFA0059F605 /* info-wh.png in Resources */,
 				AB4C95A61EC30FFA0059F605 /* left-align.png in Resources */,
 				39044E2B1FE8B28B003729F5 /* spc_icon_16x16.png in Resources */,
+				185B198F2846F2B3007EDEE6 /* tools-30-a.png in Resources */,
 				AB4C95A71EC30FFA0059F605 /* center-align.png in Resources */,
 				AB4C95A81EC30FFA0059F605 /* help-button.png in Resources */,
 				AB4C95A91EC30FFA0059F605 /* bg-gradient.png in Resources */,
@@ -19648,6 +19748,21 @@
 			name = patchmatch;
 			targetProxy = 1852F28F280EB36D00D028C1 /* PBXContainerItemProxy */;
 		};
+		185B1993284707DC007EDEE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlphaToRGB;
+			targetProxy = 185B1992284707DC007EDEE6 /* PBXContainerItemProxy */;
+		};
+		185B1995284707DC007EDEE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = luminanceToAlpha;
+			targetProxy = 185B1994284707DC007EDEE6 /* PBXContainerItemProxy */;
+		};
+		185B1997284707DC007EDEE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SelectionToAlpha;
+			targetProxy = 185B1996284707DC007EDEE6 /* PBXContainerItemProxy */;
+		};
 		186AD8052816915300009522 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SelectionToAlpha;
@@ -21536,7 +21651,8 @@
 					USE_CENTERING_CLIPVIEW,
 					MACOS_10_4_COMPILE,
 					MAIN_COMPILE,
-					"REGISTER_VERSION=1",
+					"FREE_VERSION=1",
+					"APPSTORE_VERSION=1",
 				);
 				GCC_VERSION = "";
 				GCC_VERSION_ppc = 4.0;
@@ -22064,6 +22180,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 20220601;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -22134,6 +22251,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20220601;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;

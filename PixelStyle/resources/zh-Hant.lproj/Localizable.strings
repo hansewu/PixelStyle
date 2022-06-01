@@ -25,6 +25,7 @@
 "Burn Tool" = "加深工具";
 "Dodge Tool" = "減淡工具";
 "Sponge Tool" = "海綿工具";
+"Inpaint Tool" = "擦除後自動填充工具";
 
 "Set the Foreground Color" = "設置前景色";
 "Set the Background Color" = "設置背景色";

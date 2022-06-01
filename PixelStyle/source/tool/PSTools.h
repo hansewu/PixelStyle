@@ -74,11 +74,13 @@ enum {
     kDodgeTool = 27,
     kSpongeTool = 28,
     kVectorNodeEditorTool = 29,
+    kInpaintTool = 30,
+    
 	kFirstSelectionTool = 0,
 	kLastSelectionTool = 4,
 //    kFirstShapeTool = 22,
 //    kLastShapeTool = 27,
-	kLastTool = 29
+	kLastTool = 30
 };
 
 @class AbstractTool;

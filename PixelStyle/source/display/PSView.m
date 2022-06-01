@@ -2173,7 +2173,7 @@ int matrix_invert(int N, double *matrix) {
 - (BOOL)judgeIsSupportLayerHiddenForTool
 {
     int curToolIndex = [[[PSController utilitiesManager] toolboxUtilityFor:m_idDocument] tool];
-    if (curToolIndex == kTransformTool || curToolIndex == kPencilTool || curToolIndex == kBrushTool || curToolIndex == kEraserTool || curToolIndex == kBucketTool || curToolIndex == kGradientTool || curToolIndex == kCloneTool || curToolIndex == kSmudgeTool || curToolIndex == kRedEyeRemoveTool || curToolIndex == kMyBrushTool || curToolIndex == kBurnTool || curToolIndex == kDodgeTool || curToolIndex == kSpongeTool || curToolIndex == kShapeTool)
+    if (curToolIndex == kTransformTool || curToolIndex == kPencilTool || curToolIndex == kBrushTool || curToolIndex == kEraserTool ||curToolIndex == kInpaintTool || curToolIndex == kBucketTool || curToolIndex == kGradientTool || curToolIndex == kCloneTool || curToolIndex == kSmudgeTool || curToolIndex == kRedEyeRemoveTool || curToolIndex == kMyBrushTool || curToolIndex == kBurnTool || curToolIndex == kDodgeTool || curToolIndex == kSpongeTool || curToolIndex == kShapeTool)
     {
         if (![[[m_idDocument contents] activeLayer] visible]) {
             return NO;
@@ -2185,7 +2185,7 @@ int matrix_invert(int N, double *matrix) {
 - (BOOL)judgeIsSupportChannelForTool
 {
     int curToolIndex = [[[PSController utilitiesManager] toolboxUtilityFor:m_idDocument] tool];
-    if (curToolIndex == kCloneTool || curToolIndex == kSmudgeTool|| curToolIndex == kRedEyeRemoveTool|| curToolIndex == kMyBrushTool|| curToolIndex == kBurnTool|| curToolIndex == kDodgeTool|| curToolIndex == kSpongeTool) //curToolIndex == kBucketTool || curToolIndex == kGradientTool || 
+    if (curToolIndex == kCloneTool || curToolIndex == kSmudgeTool|| curToolIndex == kRedEyeRemoveTool|| curToolIndex == kBurnTool|| curToolIndex == kDodgeTool|| curToolIndex == kSpongeTool) //curToolIndex == kMyBrushTool|| curToolIndex == kBucketTool || curToolIndex == kGradientTool || 
     {
         PS_EDIT_CHANNEL_TYPE editType = [[[m_idDocument contents] activeLayer] editedChannelOfLayer];
         if (editType != kEditAllChannels) {

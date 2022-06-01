@@ -187,6 +187,9 @@
     xres = [contents xres];
     yres = [contents yres];
     
+    ((NSTextField *)m_idWidthValue).delegate     = self;
+    ((NSTextField *)m_idHeightValue).delegate    = self;
+    
     // Set the values properly
     [m_idWidthPopdown selectItemAtIndex:m_nUnits];
     [m_idHeightPopdown selectItemAtIndex:m_nUnits];
@@ -276,6 +279,9 @@
         NSString *string = [NSString stringWithFormat:@"%@ (%@)", NSLocalizedString(@"Paper size", nil), [[gCurrentDocument printInfo] localizedPaperName]];
         [menuItem setTitle:string];
     }
+    
+    
+
 }
 
 - (IBAction)apply:(id)sender
@@ -549,6 +555,12 @@
 	// Finally display the changes
 	[m_idWidthValue setStringValue:StringFromPixels(width, m_nUnits, xres)];
 	[m_idHeightValue setStringValue:StringFromPixels(height, m_nUnits, yres)];
+}
+
+- (void)controlTextDidChange:(NSNotification *)obj
+{
+//    NSLog(@"controlTextDidChange");
+    [self dimensionsChanged:nil];
 }
 
 - (IBAction)dimensionsChanged:(id)sender

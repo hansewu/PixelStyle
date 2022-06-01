@@ -29,7 +29,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="fxe-cg-qH3">
                             <rect key="frame" x="1" y="1" width="423" height="288"/>
-                            <autoresizingMask key="autoresizingMask"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" usesFontPanel="YES" usesRuler="YES" spellingCorrection="YES" smartInsertDelete="YES" id="2Wh-fu-fGY">
                                     <rect key="frame" x="0.0" y="-117" width="423" height="3371"/>
@@ -396,14 +396,14 @@ Cgo
                                             </attributes>
                                         </fragment>
                                         <fragment>
-                                            <string key="content">
+                                            <mutableString key="content">
 1.Copy the selected shapes.
 2.Red eye remove tool:reduce the effect of red eye caused by your camera flash.
 3.Basic SVG support! You can now import SVG files.
 4.Beautify the UI of toolbar.
 5.Fix some other small bugs.                                            
                                                                         
-                                                                         </string>
+                                                                         </mutableString>
                                             <attributes>
                                                 <color key="NSColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" size="13" name="Menlo-Regular"/>
@@ -462,7 +462,7 @@ CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCg
                                             </attributes>
                                         </fragment>
                                         <fragment>
-                                            <string key="content">
+                                            <mutableString key="content">
 1.Add anchor points:add more points to the shapes.
 2.Delete anchor points.
 3.Reset control Points:Click curve point to change to corner point,Click converts back to curve point.
@@ -473,7 +473,7 @@ CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCg
 8.Fix some other small bugs.
 
 
-</string>
+</mutableString>
                                             <attributes>
                                                 <color key="NSColor" white="0.93000000000000005" alpha="1" colorSpace="calibratedWhite"/>
                                                 <font key="NSFont" size="13" name="Menlo-Regular"/>
@@ -1975,7 +1975,7 @@ CA
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" baseWritingDirection="leftToRight" usesFontPanel="YES" usesRuler="YES" spellingCorrection="YES" smartInsertDelete="YES" id="4078">
-                                    <rect key="frame" x="0.0" y="-234" width="423" height="5850"/>
+                                    <rect key="frame" x="0.0" y="-351" width="423" height="5850"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>

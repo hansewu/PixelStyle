@@ -25,6 +25,7 @@
 "Burn Tool" = "Burn Tool";
 "Dodge Tool" = "Dodge Tool";
 "Sponge Tool" = "Sponge Tool";
+"Inpaint Tool" = "Inpaint Tool";
 
 "Set the Foreground Color" = "Set the Foreground Color";
 "Set the Background Color" = "Set the Background Color";
@@ -524,7 +525,6 @@
 "Exposure" = "Exposure";
 "Dodge Tool" = "Dodge Tool";
 
-"Sponge Tool" = "Sponge Tool";
 "Mode" = "Mode";
 "Desaturate" = "Desaturate";
 "Saturate" = "Saturate";

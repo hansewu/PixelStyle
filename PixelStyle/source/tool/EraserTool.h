@@ -69,7 +69,12 @@ typedef struct {
 	
     //flag buffer for inpaint
     unsigned char *m_pErasedFlagBuf;
+    
+    int m_nEraserType; //0 eraser, 1 inpaint
 }
+
+- (int) getEraserType;
+- (void) setEraserType:(int) nEraserType;
 /*!
 	@method		dealloc
 	@discussion	Frees memory occupied by an instance of this class.

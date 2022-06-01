@@ -256,6 +256,7 @@
 				[self addCursorRect:[m_psView frame] cursor:m_curEyedrop];
 				break;
 			case kEraserTool:
+            case  kInpaintTool:
 				[self addCursorRect:operableRect cursor:m_curEraser];
 				break;
 			case kGradientTool:

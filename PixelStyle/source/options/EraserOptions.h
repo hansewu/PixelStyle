@@ -33,6 +33,9 @@
     IBOutlet id m_idOpenBrushPanel;
     IBOutlet id m_idDrawTyle;
     IBOutlet id m_idDrawTyle45;
+    
+    int m_nEraserType;
+    NSPopUpButton *m_popBtnFillType;
 }
 
 
@@ -75,6 +78,7 @@
 -(IBAction)onDrawLinesType:(id)sender;
 -(STRAIGHT_LINE_TYPE)getDrawLinesType;
 
+-(void)setEraserType:(int)nEraserType;//0 eraser 1 inpaint
 -(int)fillType;
 
 @end

@@ -64,7 +64,7 @@ enum {
 				<b>Copyright:</b> Copyright (c) 2002 Mark Pazolli
 */
 
-@interface PSMargins : NSObject {
+@interface PSMargins : NSObject<NSTextFieldDelegate> {
 	
 	// The document and sheet associated with this object
     IBOutlet id m_idDocument;
