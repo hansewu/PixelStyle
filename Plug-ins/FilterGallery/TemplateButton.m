@@ -3,7 +3,7 @@
 //  CIFilters
 //
 //  Created by Calvin on 1/12/17.
-//  Copyright © 2017 Calvin. All rights reserved.
+//  Copyright © 2017 EffectMatrix. All rights reserved.
 //
 
 #import "TemplateButton.h"

@@ -10,6 +10,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
 
 @class WDColor;
 @class WDXMLElement;

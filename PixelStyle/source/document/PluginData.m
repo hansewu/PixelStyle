@@ -17,10 +17,14 @@
 - (void)awakeFromNib
 {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pluginShouldRun:) name:@"PLUGINSHOULDRUN" object:nil];
+    
+    _dataColorSpace = CGColorSpaceCreateDeviceRGB();
 }
 
 - (void)dealloc
 {
+    if(_dataColorSpace)
+        CGColorSpaceRelease(_dataColorSpace);
     [[NSNotificationCenter defaultCenter] removeObserver:self name:@"PLUGINSHOULDRUN" object:nil];
     [super dealloc];
 }
@@ -128,6 +132,13 @@
 - (CGColorSpaceRef)displayProf
 {
 	return [[document whiteboard] displayProf];
+}
+
+- (CGColorSpaceRef)dataColorSpace
+{
+    if(!_dataColorSpace)
+        _dataColorSpace = CGColorSpaceCreateDeviceRGB();
+    return _dataColorSpace;
 }
 
 - (id)window

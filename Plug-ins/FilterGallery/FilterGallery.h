@@ -3,7 +3,7 @@
 //  FilterGallery
 //
 //  Created by Calvin on 3/9/17.
-//  Copyright © 2017 Calvin. All rights reserved.
+//  Copyright © 2017 EffectMatrix. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

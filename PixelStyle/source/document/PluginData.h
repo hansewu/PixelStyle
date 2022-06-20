@@ -13,7 +13,7 @@
 
 	// The document associated with this object
     IBOutlet id document;
-
+    CGColorSpaceRef _dataColorSpace;
 }
 
 /*!
@@ -127,6 +127,7 @@
 				PixelStyle is using.
 */
 - (CGColorSpaceRef)displayProf;
+- (CGColorSpaceRef)dataColorSpace;
 
 /*!
 	@method		window

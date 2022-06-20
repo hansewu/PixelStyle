@@ -384,6 +384,34 @@
 	return resdata;
 }
 
+-(CGImageRef) createCGImageFromBuffer:(unsigned char *)pBuffer nWidth:(int)width nHeight:(int)height
+{
+    unsigned char* pBufferNew           = (unsigned char*)malloc(width*height*4);
+    memset(pBufferNew,0,width*height*4);
+    memcpy(pBufferNew,pBuffer,width*height*4);
+    for(int i = 0;i < height;i++)
+    {
+        for(int j = 0;j < width; j++)
+        {
+            pBufferNew[i*width*4+j*4]   *= pBufferNew[i*width*4+4*j+3]/255.0;
+            pBufferNew[i*width*4+j*4+1] *= pBufferNew[i*width*4+4*j+3]/255.0;
+            pBufferNew[i*width*4+j*4+2] *= pBufferNew[i*width*4+4*j+3]/255.0;
+        }
+    }
+    CGColorSpaceRef colorSpace      = CGColorSpaceCreateDeviceRGB();
+    CGContextRef bitmapContext      = CGBitmapContextCreate(pBufferNew,width,height,8,width*4,colorSpace,kCGImageAlphaPremultipliedLast);
+    CGImageRef imageRef             = CGBitmapContextCreateImage(bitmapContext);
+  //  NSImage* image                  = [[[NSImage alloc]initWithCGImage:imageRef size:NSMakeSize(width,height)]autorelease];
+    
+    CGColorSpaceRelease(colorSpace);
+    CGContextRelease(bitmapContext);
+    //CGImageRelease(imageRef);
+    free(pBufferNew);
+    pBufferNew = nil;
+    
+    return imageRef;
+}
+
 - (unsigned char *)adjust:(PluginData *)pluginData withBitmap:(unsigned char *)data
 {
 	CIContext *context;
@@ -410,10 +438,10 @@
 	// Create core image with data
 	size.width = width;
 	size.height = height;
-	input = [CIImage imageWithBitmapData:[NSData dataWithBytesNoCopy:data length:width * height * 4 freeWhenDone:NO] bytesPerRow:width * 4 size:size format:kCIFormatARGB8 colorSpace:[pluginData displayProf]];
+    input = [CIImage imageWithBitmapData:[NSData dataWithBytesNoCopy:data length:width * height * 4 freeWhenDone:NO] bytesPerRow:width * 4 size:size format:kCIFormatARGB8 colorSpace:[pluginData dataColorSpace]];//colorSpace:];
 	
 	// Run filter
-	filter = [CIFilter filterWithName:@"CIColorControls"];
+    filter = [CIFilter filterWithName:@"CIColorControls"];
 	if (filter == NULL) {
 		@throw [NSException exceptionWithName:@"CoreImageFilterNotFoundException" reason:[NSString stringWithFormat:@"The Core Image filter named \"%@\" was not found.", @"CIColorControls"] userInfo:NULL];
 	}
@@ -451,6 +479,19 @@
 		temp_image = [context createCGImage:output fromRect:rect];
 		
 	}
+    /*
+    CGImageRef cgImage = temp_image;
+    int nWidth = (int)CGImageGetWidth(cgImage);
+    int nHeight = (int)CGImageGetHeight(cgImage);
+    
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGContextRef ctx = CGBitmapContextCreate( NULL, nWidth, nHeight, 8, nWidth * 4, colorSpace, kCGImageAlphaPremultipliedLast);
+    CGContextDrawImage(ctx, CGRectMake(0, 0, nWidth, nHeight), cgImage);
+    unsigned char* imagePointer = (unsigned char*)CGBitmapContextGetData(ctx);
+   // CGContextRelease(ctx);
+    //CGImageRelease(cgImage);
+     resdata = imagePointer;
+     */
 	
 	// Get data from output core image
 	temp_handler = [NSMutableData dataWithLength:0];
@@ -459,7 +500,8 @@
 	CGImageDestinationFinalize(temp_writer);
 	temp_rep = [NSBitmapImageRep imageRepWithData:temp_handler];
 	resdata = [temp_rep bitmapData];
-		
+     
+    
 	return resdata;
 }
 

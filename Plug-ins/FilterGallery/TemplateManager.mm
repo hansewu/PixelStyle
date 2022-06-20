@@ -3,7 +3,7 @@
 //  FilterGallery
 //
 //  Created by Calvin on 4/5/17.
-//  Copyright © 2017 Calvin. All rights reserved.
+//  Copyright © 2017 EffectMatrix. All rights reserved.
 
 #import "TemplateManager.h"
 @implementation TemplateManager

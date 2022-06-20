@@ -171,7 +171,7 @@ enum {
 				PhotoArt is using.
 */
 - (CGColorSpaceRef)displayProf;
-
+- (CGColorSpaceRef)dataColorSpace;
 /*!
 	@method		window
 	@discussion	Returns the window to use for the plug-in's panel.

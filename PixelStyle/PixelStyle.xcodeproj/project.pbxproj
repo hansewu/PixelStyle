@@ -964,6 +964,7 @@
 		18E68B492811767E009AD2FF /* roboHumanMatting.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18E68B482811767D009AD2FF /* roboHumanMatting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18E68B50281179FC009AD2FF /* roboHumanMatting.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18E68B482811767D009AD2FF /* roboHumanMatting.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		18E68B5228117A39009AD2FF /* AIPortraitMatting.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18E68B3428115BDE009AD2FF /* AIPortraitMatting.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18FF9560285C001200B64CE0 /* WhitePointAdjust+.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A8EC3F260BDB56DE00EF2B55 /* WhitePointAdjust+.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FAF307D19F8DF4A00AD7814 /* JP2Exporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF307C19F8DF4A00AD7814 /* JP2Exporter.m */; };
 		3901216F1C7D8A3F00A03ED2 /* ShapeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3901216E1C7D8A3F00A03ED2 /* ShapeTool.m */; };
 		39044E2B1FE8B28B003729F5 /* spc_icon_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = 39044E2A1FE8B27F003729F5 /* spc_icon_16x16.png */; };
@@ -4122,6 +4123,7 @@
 		75710D281D898F0700A61C61 /* Rotate7.png in Resources */ = {isa = PBXBuildFile; fileRef = 75710D191D898F0700A61C61 /* Rotate7.png */; };
 		75710D291D898F0700A61C61 /* Rotate7.png in Resources */ = {isa = PBXBuildFile; fileRef = 75710D191D898F0700A61C61 /* Rotate7.png */; };
 		7574A8A91C0DA1E20001CD9B /* ThressPointsAffine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7574A8A81C0DA1E20001CD9B /* ThressPointsAffine.m */; };
+		757D583E285FEF7D0042F294 /* Brightness+.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A8E1369D0C40751800C8A848 /* Brightness+.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		759E7D3F1C0C386400D7FFDD /* PSVecLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 759E7D3E1C0C386400D7FFDD /* PSVecLayer.m */; };
 		75B8CECA1BFFFD7F00C8D997 /* PSRenderSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B8CEC91BFFFD7F00C8D997 /* PSRenderSlice.m */; };
 		75CFC54D2761A216008EEBC2 /* libpsgvector.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0087B42E1B79FFF70033CA57 /* libpsgvector.dylib */; };
@@ -5683,6 +5685,13 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = AIPortraitMatting;
 		};
+		18FF9550285BFFFD00B64CE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8EC3F210BDB56DE00EF2B55 /* CIWhitePointAdjust.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = "WhitePointAdjust+";
+		};
 		35B156E10A2C00D0005B688F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 35B156DC0A2C00D0005B688F /* GIMPCore.xcodeproj */;
@@ -7174,6 +7183,13 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "PerspectiveTransform+";
 		};
+		757D582D285FEEB80042F294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35B156F60A2C0116005B688F /* Brightness.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = Brightness;
+		};
 		A801004F0BF96F130048FCD7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A801004B0BF96F130048FCD7 /* CIKaleidoscope.xcodeproj */;
@@ -8620,6 +8636,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				757D583E285FEF7D0042F294 /* Brightness+.bundle in CopyFiles */,
+				18FF9560285C001200B64CE0 /* WhitePointAdjust+.bundle in CopyFiles */,
 				1836E1E42818D091000E0DB9 /* AlphaToRGB.bundle in CopyFiles */,
 				1876E91328177CFC00B790DF /* luminanceToAlpha.bundle in CopyFiles */,
 				186AD8062816917600009522 /* SelectionToAlpha.bundle in CopyFiles */,
@@ -13058,6 +13076,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				757D582E285FEEB80042F294 /* PBXTargetDependency */,
+				18FF9551285BFFFD00B64CE0 /* PBXTargetDependency */,
 				1836E1E32818D081000E0DB9 /* PBXTargetDependency */,
 				1876E91228177CED00B790DF /* PBXTargetDependency */,
 				186AD8052816915300009522 /* PBXTargetDependency */,
@@ -19843,6 +19863,11 @@
 			name = AIPortraitMatting;
 			targetProxy = 18E68B4B28117818009AD2FF /* PBXContainerItemProxy */;
 		};
+		18FF9551285BFFFD00B64CE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "WhitePointAdjust+";
+			targetProxy = 18FF9550285BFFFD00B64CE0 /* PBXContainerItemProxy */;
+		};
 		35B157380A2C015A005B688F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GIMPCore;
@@ -20842,6 +20867,11 @@
 			isa = PBXTargetDependency;
 			name = "PerspectiveTransform+";
 			targetProxy = 39C7882B1DAD302D00379B9B /* PBXContainerItemProxy */;
+		};
+		757D582E285FEEB80042F294 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Brightness;
+			targetProxy = 757D582D285FEEB80042F294 /* PBXContainerItemProxy */;
 		};
 		A80105870C3D150D00826C24 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

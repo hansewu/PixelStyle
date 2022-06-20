@@ -412,7 +412,7 @@
 	// Create core image with data
 	size.width = width;
 	size.height = height;
-	unclampedInput = [CIImage imageWithBitmapData:[NSData dataWithBytesNoCopy:data length:width * height * 4 freeWhenDone:NO] bytesPerRow:width * 4 size:size format:kCIFormatARGB8 colorSpace:[pluginData displayProf]];
+	unclampedInput = [CIImage imageWithBitmapData:[NSData dataWithBytesNoCopy:data length:width * height * 4 freeWhenDone:NO] bytesPerRow:width * 4 size:size format:kCIFormatARGB8 colorSpace:[pluginData dataColorSpace]];
 	
 	// We need to apply a CIAffineClamp to prevent the black soft fringe we'd normally get from
 	// the content outside the borders of the image
