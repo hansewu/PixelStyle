@@ -9,7 +9,7 @@
 	<key>description</key>
 	<string>Adjusts the selection's white point to match the foreground colour.</string>
 	<key>groupName</key>
-	<string>Color Adjust</string>
+	<string>Enhance</string>
 	<key>license</key>
 	<string>Public Domain</string>
 	<key>name</key>

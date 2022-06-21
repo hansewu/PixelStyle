@@ -29,7 +29,7 @@
 
 - (NSString *)groupName
 {
-	return [gOurBundle localizedStringForKey:@"groupName" value:@"Color" table:NULL];
+	return [gOurBundle localizedStringForKey:@"groupName" value:@"Color Adjust" table:NULL];
 }
 
 - (NSString *)sanity

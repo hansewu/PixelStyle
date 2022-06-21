@@ -26,7 +26,7 @@
 
 - (NSString *)groupName
 {
-	return [gOurBundle localizedStringForKey:@"groupName" value:@"Color" table:NULL];
+    return [gOurBundle localizedStringForKey:@"groupName" value:@"Enhance" table:NULL];//Color" 
 }
 
 - (NSString *)sanity

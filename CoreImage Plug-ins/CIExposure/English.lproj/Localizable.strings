@@ -9,7 +9,7 @@
 	<key>description</key>
 	<string>Applies a crystillising effect to the selection.</string>
 	<key>groupName</key>
-	<string>Enhance</string>
+	<string>Color Adjust</string>
 	<key>license</key>
 	<string>Public Domain</string>
 	<key>name</key>
