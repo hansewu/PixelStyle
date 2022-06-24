@@ -1,0 +1,459 @@
+Determining if the include file altivec.h exists failed with the following output:
+Change Dir: /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_38c85 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_38c85 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+
+User defaults from command line:
+    HideShellScriptEnvironment = YES
+
+note: Using new build system
+note: Building targets in parallel
+note: Planning build
+note: Constructing build description
+CreateBuildDirectory /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp (in target 'cmTC_38c85' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    builtin-create-build-directory /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+
+WriteAuxiliaryFile /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_38c85.build/Objects-normal/x86_64/cmTC_38c85.LinkFileList (in target 'cmTC_38c85' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    write-file /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_38c85.build/Objects-normal/x86_64/cmTC_38c85.LinkFileList
+
+CompileC /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_38c85.build/Objects-normal/x86_64/CheckIncludeFile.o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_38c85' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target x86_64-apple-macos10.15 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR\=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/Debug/include -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_38c85.build/DerivedSources-normal/x86_64 -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_38c85.build/DerivedSources/x86_64 -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_38c85.build/DerivedSources -F/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_38c85.build/Objects-normal/x86_64/CheckIncludeFile.d --serialize-diagnostics /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_38c85.build/Objects-normal/x86_64/CheckIncludeFile.dia -c /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c -o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_38c85.build/Objects-normal/x86_64/CheckIncludeFile.o
+In file included from /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/altivec.h:13:2: error: "AltiVec support not enabled"
+#error "AltiVec support not enabled"
+ ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/altivec.h:48:19: error: unknown type name 'vector'
+static __inline__ vector signed char __ATTRS_o_ai vec_perm(
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/altivec.h:49:5: error: unknown type name 'vector'
+    vector signed char __a, vector signed char __b, vector unsigned char __c);
+    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/altivec.h:49:29: error: unknown type name 'vector'
+    vector signed char __a, vector signed char __b, vector unsigned char __c);
+                            ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/altivec.h:49:53: error: unknown type name 'vector'
+    vector signed char __a, vector signed char __b, vector unsigned char __c);
+                                                    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/altivec.h:51:19: error: unknown type name 'vector'
+static __inline__ vector unsigned char __ATTRS_o_ai
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/altivec.h:52:10: error: unknown type name 'vector'
+vec_perm(vector unsigned char __a, vector unsigned char __b,
+         ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/altivec.h:52:36: error: unknown type name 'vector'
+vec_perm(vector unsigned char __a, vector unsigned char __b,
+                                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/altivec.h:53:10: error: unknown type name 'vector'
+         vector unsigned char __c);
+         ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/altivec.h:55:19: error: unknown type name 'vector'
+static __inline__ vector bool char __ATTRS_o_ai
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/altivec.h:55:8: error: 'inline' can only appear on functions
+static __inline__ vector bool char __ATTRS_o_ai
+       ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/altivec.h:55:30: error: expected ';' after top level declarator
+static __inline__ vector bool char __ATTRS_o_ai
+                             ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/altivec.h:56:10: error: unknown type name 'vector'
+vec_perm(vector bool char __a, vector bool char __b, vector unsigned char __c);
+         ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/altivec.h:56:22: error: expected ')'
+vec_perm(vector bool char __a, vector bool char __b, vector unsigned char __c);
+                     ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/altivec.h:56:9: note: to match this '('
+vec_perm(vector bool char __a, vector bool char __b, vector unsigned char __c);
+        ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/altivec.h:58:19: error: unknown type name 'vector'
+static __inline__ vector short __ATTRS_o_ai vec_perm(vector signed short __a,
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/altivec.h:58:54: error: unknown type name 'vector'
+static __inline__ vector short __ATTRS_o_ai vec_perm(vector signed short __a,
+                                                     ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/altivec.h:59:54: error: unknown type name 'vector'
+                                                     vector signed short __b,
+                                                     ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/altivec.h:60:54: error: unknown type name 'vector'
+                                                     vector unsigned char __c);
+                                                     ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/altivec.h:62:19: error: unknown type name 'vector'
+static __inline__ vector unsigned short __ATTRS_o_ai
+                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_38c85.build/Objects-normal/x86_64/CheckIncludeFile.o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+
+
+Determining if the include file c_asm.h exists failed with the following output:
+Change Dir: /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_2afe9 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_2afe9 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+
+User defaults from command line:
+    HideShellScriptEnvironment = YES
+
+note: Using new build system
+note: Building targets in parallel
+note: Planning build
+note: Constructing build description
+CreateBuildDirectory /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp (in target 'cmTC_2afe9' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    builtin-create-build-directory /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+
+CompileC /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_2afe9.build/Objects-normal/x86_64/CheckIncludeFile.o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_2afe9' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target x86_64-apple-macos10.15 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR\=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/Debug/include -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_2afe9.build/DerivedSources-normal/x86_64 -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_2afe9.build/DerivedSources/x86_64 -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_2afe9.build/DerivedSources -F/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_2afe9.build/Objects-normal/x86_64/CheckIncludeFile.d --serialize-diagnostics /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_2afe9.build/Objects-normal/x86_64/CheckIncludeFile.dia -c /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c -o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_2afe9.build/Objects-normal/x86_64/CheckIncludeFile.o
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'c_asm.h' file not found
+#include <c_asm.h>
+         ^~~~~~~~~
+1 error generated.
+
+WriteAuxiliaryFile /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_2afe9.build/Objects-normal/x86_64/cmTC_2afe9.LinkFileList (in target 'cmTC_2afe9' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    write-file /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_2afe9.build/Objects-normal/x86_64/cmTC_2afe9.LinkFileList
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_2afe9.build/Objects-normal/x86_64/CheckIncludeFile.o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+
+
+Determining if the include file intrinsics.h exists failed with the following output:
+Change Dir: /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_7feaf -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_7feaf -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+
+User defaults from command line:
+    HideShellScriptEnvironment = YES
+
+note: Using new build system
+note: Building targets in parallel
+note: Planning build
+note: Constructing build description
+CreateBuildDirectory /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp (in target 'cmTC_7feaf' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    builtin-create-build-directory /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+
+WriteAuxiliaryFile /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_7feaf.build/Objects-normal/x86_64/cmTC_7feaf.LinkFileList (in target 'cmTC_7feaf' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    write-file /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_7feaf.build/Objects-normal/x86_64/cmTC_7feaf.LinkFileList
+
+CompileC /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_7feaf.build/Objects-normal/x86_64/CheckIncludeFile.o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_7feaf' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target x86_64-apple-macos10.15 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR\=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/Debug/include -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_7feaf.build/DerivedSources-normal/x86_64 -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_7feaf.build/DerivedSources/x86_64 -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_7feaf.build/DerivedSources -F/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_7feaf.build/Objects-normal/x86_64/CheckIncludeFile.d --serialize-diagnostics /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_7feaf.build/Objects-normal/x86_64/CheckIncludeFile.dia -c /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c -o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_7feaf.build/Objects-normal/x86_64/CheckIncludeFile.o
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'intrinsics.h' file not found
+#include <intrinsics.h>
+         ^~~~~~~~~~~~~~
+1 error generated.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_7feaf.build/Objects-normal/x86_64/CheckIncludeFile.o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+
+
+Determining if the include file libintl.h exists failed with the following output:
+Change Dir: /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_9474c -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_9474c -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+
+User defaults from command line:
+    HideShellScriptEnvironment = YES
+
+note: Using new build system
+note: Building targets in parallel
+note: Planning build
+note: Constructing build description
+CreateBuildDirectory /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp (in target 'cmTC_9474c' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    builtin-create-build-directory /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+
+WriteAuxiliaryFile /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_9474c.build/Objects-normal/x86_64/cmTC_9474c.LinkFileList (in target 'cmTC_9474c' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    write-file /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_9474c.build/Objects-normal/x86_64/cmTC_9474c.LinkFileList
+
+CompileC /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_9474c.build/Objects-normal/x86_64/CheckIncludeFile.o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_9474c' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target x86_64-apple-macos10.15 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR\=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/Debug/include -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_9474c.build/DerivedSources-normal/x86_64 -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_9474c.build/DerivedSources/x86_64 -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_9474c.build/DerivedSources -F/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_9474c.build/Objects-normal/x86_64/CheckIncludeFile.d --serialize-diagnostics /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_9474c.build/Objects-normal/x86_64/CheckIncludeFile.dia -c /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c -o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_9474c.build/Objects-normal/x86_64/CheckIncludeFile.o
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'libintl.h' file not found
+#include <libintl.h>
+         ^~~~~~~~~~~
+1 error generated.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_9474c.build/Objects-normal/x86_64/CheckIncludeFile.o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+
+
+Determining if the include file malloc.h exists failed with the following output:
+Change Dir: /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_066dd -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_066dd -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+
+User defaults from command line:
+    HideShellScriptEnvironment = YES
+
+note: Using new build system
+note: Building targets in parallel
+note: Planning build
+note: Constructing build description
+CreateBuildDirectory /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp (in target 'cmTC_066dd' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    builtin-create-build-directory /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+
+CompileC /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_066dd.build/Objects-normal/x86_64/CheckIncludeFile.o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_066dd' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target x86_64-apple-macos10.15 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR\=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/Debug/include -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_066dd.build/DerivedSources-normal/x86_64 -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_066dd.build/DerivedSources/x86_64 -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_066dd.build/DerivedSources -F/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_066dd.build/Objects-normal/x86_64/CheckIncludeFile.d --serialize-diagnostics /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_066dd.build/Objects-normal/x86_64/CheckIncludeFile.dia -c /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c -o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_066dd.build/Objects-normal/x86_64/CheckIncludeFile.o
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'malloc.h' file not found
+#include <malloc.h>
+         ^~~~~~~~~~
+1 error generated.
+
+WriteAuxiliaryFile /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_066dd.build/Objects-normal/x86_64/cmTC_066dd.LinkFileList (in target 'cmTC_066dd' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    write-file /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_066dd.build/Objects-normal/x86_64/cmTC_066dd.LinkFileList
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_066dd.build/Objects-normal/x86_64/CheckIncludeFile.o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+
+
+Determining if the include file uintptr.h exists failed with the following output:
+Change Dir: /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_95fdc -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_95fdc -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+
+User defaults from command line:
+    HideShellScriptEnvironment = YES
+
+note: Using new build system
+note: Building targets in parallel
+note: Planning build
+note: Constructing build description
+CreateBuildDirectory /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp (in target 'cmTC_95fdc' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    builtin-create-build-directory /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+
+CompileC /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_95fdc.build/Objects-normal/x86_64/CheckIncludeFile.o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_95fdc' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target x86_64-apple-macos10.15 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR\=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/Debug/include -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_95fdc.build/DerivedSources-normal/x86_64 -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_95fdc.build/DerivedSources/x86_64 -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_95fdc.build/DerivedSources -F/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_95fdc.build/Objects-normal/x86_64/CheckIncludeFile.d --serialize-diagnostics /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_95fdc.build/Objects-normal/x86_64/CheckIncludeFile.dia -c /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c -o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_95fdc.build/Objects-normal/x86_64/CheckIncludeFile.o
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'uintptr.h' file not found
+#include <uintptr.h>
+         ^~~~~~~~~~~
+1 error generated.
+
+WriteAuxiliaryFile /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_95fdc.build/Objects-normal/x86_64/cmTC_95fdc.LinkFileList (in target 'cmTC_95fdc' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    write-file /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_95fdc.build/Objects-normal/x86_64/cmTC_95fdc.LinkFileList
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_95fdc.build/Objects-normal/x86_64/CheckIncludeFile.o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckIncludeFile.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+
+
+Determining if the prototype memalign exists for HAVE_DECL_MEMALIGN failed with the following output:
+Change Dir: /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_02a99 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_02a99 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+
+User defaults from command line:
+    HideShellScriptEnvironment = YES
+
+note: Using new build system
+note: Building targets in parallel
+note: Planning build
+note: Constructing build description
+CreateBuildDirectory /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp (in target 'cmTC_02a99' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    builtin-create-build-directory /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+
+WriteAuxiliaryFile /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_02a99.build/Objects-normal/x86_64/cmTC_02a99.LinkFileList (in target 'cmTC_02a99' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    write-file /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_02a99.build/Objects-normal/x86_64/cmTC_02a99.LinkFileList
+
+CompileC /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_02a99.build/Objects-normal/x86_64/CheckPrototypeDefinition.o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_02a99' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target x86_64-apple-macos10.15 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR\=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/Debug/include -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_02a99.build/DerivedSources-normal/x86_64 -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_02a99.build/DerivedSources/x86_64 -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_02a99.build/DerivedSources -F/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_02a99.build/Objects-normal/x86_64/CheckPrototypeDefinition.d --serialize-diagnostics /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_02a99.build/Objects-normal/x86_64/CheckPrototypeDefinition.dia -c /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c -o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_02a99.build/Objects-normal/x86_64/CheckPrototypeDefinition.o
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:1:10: fatal error: 'malloc.h' file not found
+#include <malloc.h>
+         ^~~~~~~~~~
+1 error generated.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_02a99.build/Objects-normal/x86_64/CheckPrototypeDefinition.o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+
+
+#include <malloc.h>
+
+
+static void cmakeRequireSymbol(int dummy, ...) {
+  (void) dummy;
+}
+
+static void checkSymbol(void) {
+#ifndef memalign
+  cmakeRequireSymbol(0, &memalign);
+#endif
+}
+
+void *memalign(size_t alignment, size_t size) {
+  return 0;
+}
+
+#ifdef __CLASSIC_C__
+int main() {
+  int ac;
+  char*av[];
+#else
+int main(int ac, char *av[]) {
+#endif
+  checkSymbol();
+  if (ac > 1000) {
+    return *av[0];
+  }
+  return 0;
+}
+
+
+Determining if the memalign exist failed with the following output:
+Change Dir: /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_249ce -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_249ce -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+
+User defaults from command line:
+    HideShellScriptEnvironment = YES
+
+note: Using new build system
+note: Building targets in parallel
+note: Planning build
+note: Constructing build description
+CreateBuildDirectory /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp (in target 'cmTC_249ce' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    builtin-create-build-directory /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+
+WriteAuxiliaryFile /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_249ce.build/Objects-normal/x86_64/cmTC_249ce.LinkFileList (in target 'cmTC_249ce' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    write-file /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_249ce.build/Objects-normal/x86_64/cmTC_249ce.LinkFileList
+
+CompileC /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_249ce.build/Objects-normal/x86_64/CheckSymbolExists.o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckSymbolExists.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_249ce' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target x86_64-apple-macos10.15 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR\=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/Debug/include -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_249ce.build/DerivedSources-normal/x86_64 -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_249ce.build/DerivedSources/x86_64 -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_249ce.build/DerivedSources -F/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_249ce.build/Objects-normal/x86_64/CheckSymbolExists.d --serialize-diagnostics /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_249ce.build/Objects-normal/x86_64/CheckSymbolExists.dia -c /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckSymbolExists.c -o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_249ce.build/Objects-normal/x86_64/CheckSymbolExists.o
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'malloc.h' file not found
+#include <malloc.h>
+         ^~~~~~~~~~
+1 error generated.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_249ce.build/Objects-normal/x86_64/CheckSymbolExists.o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckSymbolExists.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+
+File /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef memalign
+  return ((int*)(&memalign))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sysctl exist failed with the following output:
+Change Dir: /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_57432 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_57432 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+
+User defaults from command line:
+    HideShellScriptEnvironment = YES
+
+note: Using new build system
+note: Building targets in parallel
+note: Planning build
+note: Constructing build description
+CreateBuildDirectory /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp (in target 'cmTC_57432' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    builtin-create-build-directory /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+
+CompileC /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_57432.build/Objects-normal/x86_64/CheckSymbolExists.o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckSymbolExists.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_57432' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target x86_64-apple-macos10.15 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR\=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/Debug/include -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_57432.build/DerivedSources-normal/x86_64 -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_57432.build/DerivedSources/x86_64 -I/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_57432.build/DerivedSources -F/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_57432.build/Objects-normal/x86_64/CheckSymbolExists.d --serialize-diagnostics /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_57432.build/Objects-normal/x86_64/CheckSymbolExists.dia -c /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckSymbolExists.c -o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_57432.build/Objects-normal/x86_64/CheckSymbolExists.o
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'sysctl'
+  return ((int*)(&sysctl))[argc];
+                  ^
+1 error generated.
+
+WriteAuxiliaryFile /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_57432.build/Objects-normal/x86_64/cmTC_57432.LinkFileList (in target 'cmTC_57432' from project 'CMAKE_TRY_COMPILE')
+    cd /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp
+    write-file /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_57432.build/Objects-normal/x86_64/cmTC_57432.LinkFileList
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_57432.build/Objects-normal/x86_64/CheckSymbolExists.o /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckSymbolExists.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+
+File /Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/fftw-3.3.10/xcode/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sysctl
+  return ((int*)(&sysctl))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}

@@ -1,0 +1,204 @@
+# Software License :
+#
+# Copyright (c) 2003-2015, The Open Effects Association Ltd. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#
+#     * Redistributions of source code must retain the above copyright notice,
+#       this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above copyright notice,
+#       this list of conditions and the following disclaimer in the documentation
+#       and/or other materials provided with the distribution.
+#     * Neither the name The Open Effects Association Ltd, nor the names of its 
+#       contributors may be used to endorse or promote products derived from this
+#       software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+# ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+# ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+# (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+# LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+# ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+# SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+OPTFLAG = -O2
+
+ifeq ($(CONFIG), debug)
+  DEBUGFLAG = -g -DDEBUG -Wall -Wextra
+  DEBUGNAME = debug
+endif
+ifeq ($(CONFIG), release)
+  DEBUGFLAG = $(OPTFLAG) -DNDEBUG
+  DEBUGNAME = release
+endif
+ifeq ($(CONFIG), relwithdebinfo)
+  DEBUGFLAG = $(OPTFLAG) -g -DNDEBUG
+  DEBUGNAME = relwithdebinfo
+endif
+
+BITS := 32
+ifeq ($(shell getconf LONG_BIT),64)
+  BITS := 64
+endif
+OS := $(shell uname -s)
+DEBUGFLAG ?= -g
+DEBUGNAME ?= debug
+ifeq ($(DEBUGFLAG),-O3)
+  DEBUGNAME = release
+endif
+
+ifeq ($(OS:MINGW%=MINGW),MINGW)
+  PLUGINPATH=C:\\Program Files\\Common Files\\OFX\\Plugins
+endif
+ifeq ($(OS),Linux)
+  PLUGINPATH=/usr/OFX/Plugins
+endif
+ifeq ($(OS),FreeBSD)
+  PLUGINPATH=/usr/OFX/Plugins
+endif
+ifeq ($(OS),Darwin)
+  PLUGINPATH=/Library/OFX/Plugins
+endif
+
+OBJECTPATH = $(OS)-$(BITS)-$(DEBUGNAME)
+
+# the following is inspired by automake's verbosity mechanism. compile with "make V=1" to get verbose output
+V=0
+AM_V_CXX = $(am__v_CXX_$(V))
+am__v_CXX_0 = @echo "  CXX     " $@;
+am__v_CXX_1 = 
+AM_V_NVCC = $(am__v_NVCC_$(V))
+am__v_NVCC_0 = @echo "  NVCC    " $@;
+am__v_NVCC_1 =
+AM_V_CXXLD = $(am__v_CXXLD_$(V))
+am__v_CXXLD_0 = @echo "  CXXLD   " $@;
+am__v_CXXLD_1 = 
+
+$(OBJECTPATH)/%.o : %.cpp
+	@mkdir -p $(OBJECTPATH)
+	$(AM_V_CXX)$(CXX) -c $(CXXFLAGS) $< -o $@
+
+$(OBJECTPATH)/%.o : %.cu
+	@mkdir -p $(OBJECTPATH)
+	$(AM_V_NVCC)$(NVCC) -c $(CUFLAGS) $< -o $@
+
+SUPPORTOBJECTS ?= \
+ofxsMultiThread.o \
+ofxsInteract.o \
+ofxsProperty.o \
+ofxsLog.o \
+ofxsCore.o \
+ofxsPropertyValidation.o \
+ofxsImageEffect.o \
+ofxsParams.o 
+
+VPATH += $(PATHTOROOT)/Library
+
+.PHONY: all install uninstall
+
+all: $(OBJECTPATH)/$(PLUGINNAME).ofx.bundle
+
+install:
+	@mkdir -p $(DESTDIR)$(PLUGINPATH)
+	(cd $(OBJECTPATH); tar cf - $(PLUGINNAME).ofx.bundle) | (cd "$(DESTDIR)$(PLUGINPATH)"; tar xvf -)
+
+uninstall:
+	rm -rf "$(PLUGINPATH)/$(PLUGINNAME).ofx.bundle"
+
+  ifeq ($(OS:MINGW%=MINGW),MINGW)
+    LINKFLAGS = -shared -fvisibility=hidden -Xlinker --version-script=$(PATHTOROOT)/include/linuxSymbols -lopengl32
+    ARCH = Win32
+    BITSFLAG = -m32
+    ifeq ($(BITS), 64)
+      BITSFLAG = -m64
+      ARCH = Win64
+    endif
+    # mingw64 runtime >=3 or mingw32 runtime>=3.15 is required to get a proper snprintf implementation,
+    # which is triggered by the following CPPFLAGS.
+    CPPFLAGS = -U__STRICT_ANSI__ -D__USE_MINGW_ANSI_STDIO=1
+    LINKFLAGS := $(LINKFLAGS) $(BITSFLAG)
+  endif
+  ifeq ($(OS),Linux)
+    # use $ORIGIN to link to bundled libraries first, see http://itee.uq.edu.au/~daniel/using_origin/
+    LINKFLAGS = -shared -fvisibility=hidden -Xlinker --version-script=$(PATHTOROOT)/include/linuxSymbols -lGL -Wl,-rpath,'$$ORIGIN'/../../Libraries
+    ARCH = Linux-x86
+    BITSFLAG = -m32 -fPIC
+    ifeq ($(BITS), 64)
+      BITSFLAG = -m64 -fPIC
+      ARCH = Linux-x86-64
+    endif
+    LINKFLAGS := $(LINKFLAGS) $(BITSFLAG)
+  endif
+  ifeq ($(OS),FreeBSD)
+    LINKFLAGS = -L/usr/local/lib -shared -fvisibility=hidden -Xlinker --version-script=$(PATHTOROOT)/include/linuxSymbols -lGL -Wl,-rpath,'$$ORIGIN'/../../Libraries
+    ARCH= FreeBSD-x86
+    BITSFLAG = -m32 -fPIC
+    ifeq ($(BITS), 64)
+      BITSFLAG = -m64 -fPIC
+      ARCH = FreeBSD-x86-64
+    endif
+    LINKFLAGS := $(LINKFLAGS) $(BITSFLAG)
+  endif 
+  ifeq ($(OS),Darwin) 
+    ifeq ($(BITS), Universal)
+      # Universal x86_64/i386 is useful only on OSX 10.4 (i386/ppc), 10.5 (i386/ppc) and 10.6 (i386/x86_64).
+      # OSX 10.6 (Snow Leopard) through macOS 10.13 (High Sierra), build for x86_64/i386.
+      # macOS 11 (Big Sur) and later, build for arm64/x86_64
+      MACOSXMAJOR=$(shell sw_vers -productVersion | cut -f 1 -d .)
+      MACOSXMINOR=$(shell sw_vers -productVersion | cut -f 2 -d .)
+      ifeq ($(MACOSXMAJOR),10)
+        MACOSX := $(MACOSXMAJOR).$(MACOSXMINOR)
+        MACOSXSDK := $(MACOSXMAJOR).$(MACOSXMINOR)
+        ARCHFLAGS=-arch i386 -arch x86_64
+        ifeq ($(MACOSXMINOR), 4)
+          # OSX 10.4 (Tiger)
+          MACOSXSDK := 10.4u
+          ARCHFLAGS=-arch i386 -arch ppc
+        endif
+        ifeq ($(MACOSXMINOR), 5)
+          # OSX 10.5 (Leopard)
+          ARCHFLAGS=-arch i386 -arch ppc
+        endif
+        SDKROOT = /Developer/SDKs/MacOSX$(MACOSX).sdk
+      else
+        # macOS 11 and later.
+        # The minor version of the Xcode SDK may differ from $(MACOSXMINOR).
+        MACOSX := $(shell xcodebuild -version -sdk macosx ProductVersion)
+        MACOSXSDK := $(MACOSX)
+        ARCHFLAGS=-arch arm64 -arch x86_64
+        SDKROOT = $(shell xcodebuild -version -sdk macosx Path)
+      endif
+    else
+      ARCHFLAGS=
+      MACOSX := $(shell xcodebuild -version -sdk macosx ProductVersion)
+      SDKROOT = $(shell xcodebuild -version -sdk macosx Path)
+    endif
+    CPPFLAGS += -DGL_SILENCE_DEPRECATION
+    BITSFLAG = -isysroot $(SDKROOT) $(ARCHFLAGS) -mmacosx-version-min=$(MACOSX) -fPIC
+    LINKFLAGS = $(BITSFLAG) -bundle -fvisibility=hidden -exported_symbols_list $(PATHTOROOT)/include/osxSymbols -framework OpenGL -Wl,-rpath,@loader_path/../Frameworks -Wl,-rpath,@loader_path/../Libraries
+    ARCH = MacOS
+  endif
+
+  CXXFLAGS := $(DEBUGFLAG) $(CPPFLAGS) -I$(PATHTOROOT)/../include -I$(PATHTOROOT)/include -I$(PATHTOROOT)/Plugins/include $(BITSFLAG) -fvisibility=hidden $(CXXFLAGS_ADD) $(CXXFLAGS_EXTRA)
+
+$(OBJECTPATH)/$(PLUGINNAME).ofx: $(addprefix $(OBJECTPATH)/,$(PLUGINOBJECTS) $(SUPPORTOBJECTS))
+	@mkdir -p $(OBJECTPATH)/
+	$(AM_V_CXXLD)$(CXX) $^ $(LINKFLAGS) $(LDFLAGS_ADD) $(LDFLAGS_EXTRA) -o $@
+
+$(OBJECTPATH)/$(PLUGINNAME).ofx.bundle: $(OBJECTPATH)/$(PLUGINNAME).ofx
+	mkdir -p  $@/Contents/$(ARCH)
+	cp  $^  $@/Contents/$(ARCH)
+	cp  Info.plist  $@/Contents/
+	if [ -n "$(RESOURCES)" ]; then mkdir -p $@/Contents/Resources; cp -r $(RESOURCES)  $@/Contents/Resources; fi
+	if [ \( $(DEBUGNAME) = "release" -o $(DEBUGNAME) = "relwithdebinfo" \) -a $(ARCH) = "MacOS" ]; then bash $(PATHTOROOT)/include/osxDeploy.sh $@ $(PLUGINNAME).ofx; fi
+
+clean :
+	rm -rf $(OBJECTPATH)
+
+release :
+	make DEBUGFLAG=-O3
+

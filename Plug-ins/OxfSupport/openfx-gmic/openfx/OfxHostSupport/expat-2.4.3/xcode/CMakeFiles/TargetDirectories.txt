@@ -1,0 +1,17 @@
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/openfx/HostSupport/expat-2.4.3/xcode/CMakeFiles/install.dir
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/openfx/HostSupport/expat-2.4.3/xcode/CMakeFiles/package.dir
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/openfx/HostSupport/expat-2.4.3/xcode/CMakeFiles/RUN_TESTS.dir
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/openfx/HostSupport/expat-2.4.3/xcode/CMakeFiles/run-xmltest.dir
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/openfx/HostSupport/expat-2.4.3/xcode/CMakeFiles/xmlwf.dir
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/openfx/HostSupport/expat-2.4.3/xcode/CMakeFiles/xmlts-zip-downloaded.dir
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/openfx/HostSupport/expat-2.4.3/xcode/CMakeFiles/xmltest-log-verified.dir
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/openfx/HostSupport/expat-2.4.3/xcode/CMakeFiles/xmltest-log-fixed.dir
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/openfx/HostSupport/expat-2.4.3/xcode/CMakeFiles/xmlts-zip-extracted.dir
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/openfx/HostSupport/expat-2.4.3/xcode/CMakeFiles/elements.dir
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/openfx/HostSupport/expat-2.4.3/xcode/CMakeFiles/runtests.dir
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/openfx/HostSupport/expat-2.4.3/xcode/CMakeFiles/outline.dir
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/openfx/HostSupport/expat-2.4.3/xcode/CMakeFiles/xmltest-sh-been-run.dir
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/openfx/HostSupport/expat-2.4.3/xcode/CMakeFiles/runtestspp.dir
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/openfx/HostSupport/expat-2.4.3/xcode/CMakeFiles/expat.dir
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/openfx/HostSupport/expat-2.4.3/xcode/CMakeFiles/ALL_BUILD.dir
+/Volumes/D/wzq/2019/gmic-3.1.2/openfx-gmic-master/openfx/HostSupport/expat-2.4.3/xcode/CMakeFiles/ZERO_CHECK.dir

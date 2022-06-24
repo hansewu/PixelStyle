@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18CAD77A286534D700E495E2 /* libomp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CAD779286534D700E495E2 /* libomp.dylib */; };
 		75EC10E51DA8D5BF008D4C5E /* PSjfdt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EC10E41DA8D5BF008D4C5E /* PSjfdt.cpp */; };
 		AB499D591BA27D1A00F66C41 /* PSvxldt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB499D571BA27D1A00F66C41 /* PSvxldt.cpp */; };
-		AB49A7DD1BA280D900F66C41 /* libiomp5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB49A7DA1BA280D900F66C41 /* libiomp5.dylib */; };
 		AB49A7E01BA2816500F66C41 /* omp_lib.h in Headers */ = {isa = PBXBuildFile; fileRef = AB49A7DB1BA280D900F66C41 /* omp_lib.h */; };
 		AB49A7E11BA2816900F66C41 /* omp.h in Headers */ = {isa = PBXBuildFile; fileRef = AB49A7DC1BA280D900F66C41 /* omp.h */; };
 		AB49A7E21BA2816C00F66C41 /* PSvxldt.h in Headers */ = {isa = PBXBuildFile; fileRef = AB499D581BA27D1A00F66C41 /* PSvxldt.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18CAD779286534D700E495E2 /* libomp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libomp.dylib; sourceTree = "<group>"; };
 		75EC10E41DA8D5BF008D4C5E /* PSjfdt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PSjfdt.cpp; sourceTree = "<group>"; };
 		AB499D341BA27CC600F66C41 /* libComputeDistance.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libComputeDistance.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB499D571BA27D1A00F66C41 /* PSvxldt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PSvxldt.cpp; sourceTree = "<group>"; };
 		AB499D581BA27D1A00F66C41 /* PSvxldt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSvxldt.h; sourceTree = "<group>"; };
-		AB49A7DA1BA280D900F66C41 /* libiomp5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libiomp5.dylib; sourceTree = "<group>"; };
 		AB49A7DB1BA280D900F66C41 /* omp_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = omp_lib.h; sourceTree = "<group>"; };
 		AB49A7DC1BA280D900F66C41 /* omp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = omp.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -30,7 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB49A7DD1BA280D900F66C41 /* libiomp5.dylib in Frameworks */,
+				18CAD77A286534D700E495E2 /* libomp.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,7 @@
 		AB499D361BA27CC600F66C41 /* ComputeDistance */ = {
 			isa = PBXGroup;
 			children = (
-				AB49A7DA1BA280D900F66C41 /* libiomp5.dylib */,
+				18CAD779286534D700E495E2 /* libomp.dylib */,
 				AB49A7DB1BA280D900F66C41 /* omp_lib.h */,
 				AB49A7DC1BA280D900F66C41 /* omp.h */,
 				AB499D571BA27D1A00F66C41 /* PSvxldt.cpp */,
@@ -118,6 +118,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = AB499D2B1BA27CC600F66C41;

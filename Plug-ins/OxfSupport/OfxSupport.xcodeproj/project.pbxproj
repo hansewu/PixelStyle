@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18CAD7C728654DFD00E495E2 /* libimofxhost.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CAD7BB2865428400E495E2 /* libimofxhost.dylib */; };
+		18E68B2B28113092009AD2FF /* OfxSupportClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18E68B2A28113092009AD2FF /* OfxSupportClass.mm */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		A8080AF10C07BF8D0026D06E /* OxfPluginInfo.nib in Resources */ = {isa = PBXBuildFile; fileRef = A8080AEF0C07BF8D0026D06E /* OxfPluginInfo.nib */; };
+		A831E1410789471D0009080F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A831E13F0789471D0009080F /* Localizable.strings */; };
+		A89CC2C409A9DF410072B19D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A89CC2C309A9DF410072B19D /* QuartzCore.framework */; };
+		A89CC46909A9E07A0072B19D /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A89CC46809A9E07A0072B19D /* ApplicationServices.framework */; };
+		A89DCE51078A300C005008F4 /* Rects.m in Sources */ = {isa = PBXBuildFile; fileRef = A89DCE50078A300C005008F4 /* Rects.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18CAD7B42865428400E495E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18CAD7AC2865428400E495E2 /* HostSupport.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1E742FEA17992CF9007D295B;
+			remoteInfo = ofxHost;
+		};
+		18CAD7B62865428400E495E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18CAD7AC2865428400E495E2 /* HostSupport.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1E3CB8731799312D0032B538;
+			remoteInfo = hostDemo;
+		};
+		18CAD7B82865428400E495E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18CAD7AC2865428400E495E2 /* HostSupport.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1E3CB880179931470032B538;
+			remoteInfo = cacheDemo;
+		};
+		18CAD7BA2865428400E495E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18CAD7AC2865428400E495E2 /* HostSupport.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18D848EA28628C1C006A530F;
+			remoteInfo = imofxhost;
+		};
+		18CAD7C528654DF200E495E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18CAD7AC2865428400E495E2 /* HostSupport.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 18D848E928628C1C006A530F;
+			remoteInfo = imofxhost;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18E68B282811302B009AD2FF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		18CAD7AC2865428400E495E2 /* HostSupport.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HostSupport.xcodeproj; path = "openfx-gmic/openfx/OfxHostSupport/HostSupport.xcodeproj"; sourceTree = "<group>"; };
+		18E68B2928113092009AD2FF /* OfxSupportClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfxSupportClass.h; sourceTree = "<group>"; };
+		18E68B2A28113092009AD2FF /* OfxSupportClass.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OfxSupportClass.mm; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* OfxSupport.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OfxSupport.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8080AF00C07BF8D0026D06E /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/OxfPluginInfo.nib; sourceTree = "<group>"; };
+		A831E1400789471D0009080F /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A84C96B8078965B900451E47 /* PSPlugins.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PSPlugins.h; path = ../Common/PSPlugins.h; sourceTree = "<group>"; };
+		A89CC2C309A9DF410072B19D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		A89CC46809A9E07A0072B19D /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		A89DCE2A078A2FCB005008F4 /* Rects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rects.h; path = ../Common/Rects.h; sourceTree = "<group>"; };
+		A89DCE50078A300C005008F4 /* Rects.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = Rects.m; path = ../Common/Rects.m; sourceTree = "<group>"; };
+		A8CA5C4307937C9E004BE921 /* PluginData.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PluginData.h; path = ../Common/PluginData.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CAD7C728654DFD00E495E2 /* libimofxhost.dylib in Frameworks */,
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+				A89CC2C409A9DF410072B19D /* QuartzCore.framework in Frameworks */,
+				A89CC46909A9E07A0072B19D /* ApplicationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* CICrystallize */ = {
+			isa = PBXGroup;
+			children = (
+				18CAD7AC2865428400E495E2 /* HostSupport.xcodeproj */,
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+				18A38CCA280955EF00FACD25 /* Frameworks */,
+			);
+			name = CICrystallize;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8080AEF0C07BF8D0026D06E /* OxfPluginInfo.nib */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				A831E13F0789471D0009080F /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				18E68B2928113092009AD2FF /* OfxSupportClass.h */,
+				18E68B2A28113092009AD2FF /* OfxSupportClass.mm */,
+				A89DCE2A078A2FCB005008F4 /* Rects.h */,
+				A89DCE50078A300C005008F4 /* Rects.m */,
+				A8CA5C4307937C9E004BE921 /* PluginData.h */,
+				A84C96B8078965B900451E47 /* PSPlugins.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A89CC46809A9E07A0072B19D /* ApplicationServices.framework */,
+				A89CC2C309A9DF410072B19D /* QuartzCore.framework */,
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		18A38CCA280955EF00FACD25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18CAD7AD2865428400E495E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18CAD7B52865428400E495E2 /* libofxHost.a */,
+				18CAD7B72865428400E495E2 /* hostDemo */,
+				18CAD7B92865428400E495E2 /* cacheDemo */,
+				18CAD7BB2865428400E495E2 /* libimofxhost.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* OfxSupport.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* OfxSupport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8F2BD590BCD1EE6001DB353 /* Build configuration list for PBXNativeTarget "OfxSupport" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+				18E68B282811302B009AD2FF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18CAD7C628654DF200E495E2 /* PBXTargetDependency */,
+			);
+			name = OfxSupport;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = CICrystallize;
+			productReference = 8D5B49B6048680CD000E48DA /* OfxSupport.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = A8F2BD5D0BCD1EE6001DB353 /* Build configuration list for PBXProject "OfxSupport" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* CICrystallize */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 18CAD7AD2865428400E495E2 /* Products */;
+					ProjectRef = 18CAD7AC2865428400E495E2 /* HostSupport.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* OfxSupport */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		18CAD7B52865428400E495E2 /* libofxHost.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libofxHost.a;
+			remoteRef = 18CAD7B42865428400E495E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18CAD7B72865428400E495E2 /* hostDemo */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = hostDemo;
+			remoteRef = 18CAD7B62865428400E495E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18CAD7B92865428400E495E2 /* cacheDemo */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = cacheDemo;
+			remoteRef = 18CAD7B82865428400E495E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18CAD7BB2865428400E495E2 /* libimofxhost.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libimofxhost.dylib;
+			remoteRef = 18CAD7BA2865428400E495E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A831E1410789471D0009080F /* Localizable.strings in Resources */,
+				A8080AF10C07BF8D0026D06E /* OxfPluginInfo.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E68B2B28113092009AD2FF /* OfxSupportClass.mm in Sources */,
+				A89DCE51078A300C005008F4 /* Rects.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18CAD7C628654DF200E495E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = imofxhost;
+			targetProxy = 18CAD7C528654DF200E495E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A8080AEF0C07BF8D0026D06E /* OxfPluginInfo.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8080AF00C07BF8D0026D06E /* English */,
+			);
+			name = OxfPluginInfo.nib;
+			sourceTree = "<group>";
+		};
+		A831E13F0789471D0009080F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A831E1400789471D0009080F /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8F2BD5A0BCD1EE6001DB353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks\"",
+					"$(PROJECT_DIR)",
+				);
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = "";
+				GCC_VERSION_ppc = 4.0;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../opencv/include";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../../opencv/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "-DDEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = net.photoart.OfxSupport;
+				PRODUCT_NAME = OfxSupport;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		A8F2BD5B0BCD1EE6001DB353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks\"",
+					"$(PROJECT_DIR)",
+				);
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_VERSION = "";
+				GCC_VERSION_ppc = 4.0;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../opencv/include";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../../opencv/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = net.photoart.OfxSupport;
+				PRODUCT_NAME = OfxSupport;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		A8F2BD5E0BCD1EE6001DB353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A8F2BD5F0BCD1EE6001DB353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8F2BD590BCD1EE6001DB353 /* Build configuration list for PBXNativeTarget "OfxSupport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8F2BD5A0BCD1EE6001DB353 /* Debug */,
+				A8F2BD5B0BCD1EE6001DB353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8F2BD5D0BCD1EE6001DB353 /* Build configuration list for PBXProject "OfxSupport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8F2BD5E0BCD1EE6001DB353 /* Debug */,
+				A8F2BD5F0BCD1EE6001DB353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

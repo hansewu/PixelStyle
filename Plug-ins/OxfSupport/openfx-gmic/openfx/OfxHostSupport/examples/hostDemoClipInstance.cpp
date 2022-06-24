@@ -1,0 +1,552 @@
+/*
+Software License :
+
+Copyright (c) 2007, The Open Effects Association Ltd. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright notice,
+      this list of conditions and the following disclaimer in the documentation
+      and/or other materials provided with the distribution.
+    * Neither the name The Open Effects Association Ltd, nor the names of its 
+      contributors may be used to endorse or promote products derived from this
+      software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+#include <iostream>
+#include <fstream>
+#include <cassert>
+#include <algorithm>
+#include <cmath>
+#include <ctime>
+
+// ofx
+#include "ofxCore.h"
+#include "ofxImageEffect.h"
+#include "ofxPixels.h"
+
+// ofx host
+#include "ofxhBinary.h"
+#include "ofxhPropertySuite.h"
+#include "ofxhClip.h"
+#include "ofxhParam.h"
+#include "ofxhMemory.h"
+#include "ofxhImageEffect.h"
+#include "ofxhPluginAPICache.h"
+#include "ofxhPluginCache.h"
+#include "ofxhHost.h"
+#include "ofxhImageEffectAPI.h"
+
+// my host
+#include "hostDemoHostDescriptor.h"
+#include "hostDemoEffectInstance.h"
+#include "hostDemoClipInstance.h"
+
+// We are hard coding everything in our example, in a real host you
+// need to enquire things from your host.
+namespace MyHost {
+ /* const double    kPalPixelAspect = double(768)/double(720);
+  const int       kPalSizeXPixels = 720;
+  const int       kPalSizeYPixels = 576;
+  const OfxRectI  kPalRegionPixels = {0, 0, kPalSizeXPixels, kPalSizeYPixels};
+ */ //const OfxRectD  kPalRegionCanon = {0,0, kPalSizeXPixels * kPalPixelAspect ,kPalSizeYPixels};
+
+  // 5x3 bitmaps for digits 0..9 and period
+  const char digits[11][5][3] = {
+    { {0,1,0},
+      {1,0,1},
+      {1,0,1},
+      {1,0,1},
+      {0,1,0} },
+    { {0,1,0},
+      {1,1,0},
+      {0,1,0},
+      {0,1,0},
+      {0,1,0} },    
+    { {0,1,0},
+      {1,0,1},
+      {0,0,1},
+      {0,1,0},
+      {1,1,1} },    
+    { {1,1,0},
+      {0,0,1},
+      {0,1,1},
+      {0,0,1},
+      {1,1,0} },      
+    { {0,1,0},
+      {1,0,0},
+      {1,0,1},
+      {1,1,1},
+      {0,0,1} },    
+    { {1,1,1},
+      {1,0,0},
+      {1,1,0},
+      {0,0,1},
+      {1,1,0} },  
+    { {0,1,1},
+      {1,0,0},
+      {1,1,0},
+      {1,0,1},
+      {0,1,0} },      
+    { {1,1,1},
+      {0,0,1},
+      {0,1,0},
+      {0,1,1},
+      {0,1,0} },      
+    { {0,1,0},
+      {1,0,1},
+      {0,1,0},
+      {1,0,1},
+      {0,1,0} },  
+    { {0,1,0},
+      {1,0,1},
+      {0,1,1},
+      {0,0,1},
+      {1,1,0} },
+    { {0,0,0},
+      {0,0,0},
+      {0,0,0},
+      {0,0,0},
+      {0,1,0} }
+  };
+
+  // draw digit d at x,y int the width*height image pointed to by data
+  static void drawDigit(OfxRGBAColourB* data, int width, int height, int d, int x, int y , int scale, OfxRGBAColourB color) {
+    assert(0 <= x && x+3*scale < width);
+    assert(0 <= y && y+5*scale < height);
+
+    for (int j = 0; j < 5; ++j) {
+      for (int i = 0; i < 3; ++i) {
+        if (digits[d][j][i]) {
+          for (int jj = 0; jj < scale; ++jj) {
+            for (int ii = 0; ii < scale; ++ii) {
+              int x1 = x + i*scale + ii;
+              int y1 = y + j*scale + jj;
+              data[x1+y1*width] = color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /// images are always SD PAL progressive full res images for the purpose of this example only
+  MyImage::MyImage(MyClipInstance &clip, OfxTime time, int view)
+    : OFX::Host::ImageEffect::Image(clip) /// this ctor will set basic props on the image
+    , _data(NULL)
+  {
+    // make some memory
+ /*   _data = new OfxRGBAColourB[kPalSizeXPixels * kPalSizeYPixels] ; /// PAL SD RGBA
+    
+    int fillValue = (int)(floor(255.0 * (time/OFXHOSTDEMOCLIPLENGTH))) & 0xff;
+    OfxRGBAColourB color;
+#ifdef OFX_EXTENSIONS_VEGAS
+    color.r = view == 0 ? fillValue : 0;
+    color.g = view == 1 ? fillValue : 0;
+    color.b = view == 1 ? fillValue : 0;
+#else
+    color.r = color.g = color.b = fillValue;
+#endif
+    color.a = 255;
+
+    std::fill(_data, _data + kPalSizeXPixels * kPalSizeYPixels, color);
+    // draw the time and the view number in reverse color
+    const int scale = 5;
+    const int charwidth = 4*scale;
+#ifdef OFX_EXTENSIONS_VEGAS
+    color.r = view == 0 ? 255-fillValue : 0;
+    color.g = view == 1 ? 255-fillValue : 0;
+    color.b = view == 1 ? 255-fillValue : 0;
+#else
+    color.r = color.g = color.b = 255-fillValue;
+#endif
+    int xx = 50;
+    int yy = 50;
+    int d;
+    d = (int(time)/10)%10;
+    drawDigit(_data, kPalSizeXPixels, kPalSizeYPixels, d, xx, yy, scale, color);
+    xx += charwidth;
+    d = int(time)%10;
+    drawDigit(_data, kPalSizeXPixels, kPalSizeYPixels, d, xx, yy, scale, color);
+    xx += charwidth;
+    d = 10;
+    drawDigit(_data, kPalSizeXPixels, kPalSizeYPixels, d, xx, yy, scale, color);
+    xx += charwidth;
+    d = int(time*10)%10;
+    drawDigit(_data, kPalSizeXPixels, kPalSizeYPixels, d, xx, yy, scale, color);
+    xx = 50;
+    yy += 8*scale;
+    d = int(view)%10;
+    drawDigit(_data, kPalSizeXPixels, kPalSizeYPixels, d, xx, yy, scale, color);
+
+    // render scale x and y of 1.0
+    setDoubleProperty(kOfxImageEffectPropRenderScale, 1.0, 0);
+    setDoubleProperty(kOfxImageEffectPropRenderScale, 1.0, 1); 
+
+    // data ptr
+    setPointerProperty(kOfxImagePropData,_data);
+
+    // bounds and rod
+    setIntProperty(kOfxImagePropBounds, kPalRegionPixels.x1, 0);
+    setIntProperty(kOfxImagePropBounds, kPalRegionPixels.y1, 1);
+    setIntProperty(kOfxImagePropBounds, kPalRegionPixels.x2, 2);
+    setIntProperty(kOfxImagePropBounds, kPalRegionPixels.y2, 3);
+    
+    setIntProperty(kOfxImagePropRegionOfDefinition, kPalRegionPixels.x1, 0);
+    setIntProperty(kOfxImagePropRegionOfDefinition, kPalRegionPixels.y1, 1);
+    setIntProperty(kOfxImagePropRegionOfDefinition, kPalRegionPixels.x2, 2);
+    setIntProperty(kOfxImagePropRegionOfDefinition, kPalRegionPixels.y2, 3);        
+
+    // row bytes
+    setIntProperty(kOfxImagePropRowBytes, kPalSizeXPixels * sizeof(OfxRGBAColourB));
+  */
+  }
+
+ MyImage::MyImage(MyClipInstance &clip, OfxTime t, int nWidth, int nHeight, unsigned char *pBuffer, int view)
+{
+    _data = new OfxRGBAColourB[nWidth * nHeight] ;
+    if(pBuffer)
+        memcpy(_data, pBuffer, nWidth*nHeight*4);
+    
+    // render scale x and y of 1.0
+    setDoubleProperty(kOfxImageEffectPropRenderScale, 1.0, 0);
+    setDoubleProperty(kOfxImageEffectPropRenderScale, 1.0, 1);
+
+    // data ptr
+    setPointerProperty(kOfxImagePropData,_data);
+
+    OfxRectI  kRegionPixels = {0, 0, nWidth, nHeight};
+    // bounds and rod
+    setIntProperty(kOfxImagePropBounds, kRegionPixels.x1, 0);
+    setIntProperty(kOfxImagePropBounds, kRegionPixels.y1, 1);
+    setIntProperty(kOfxImagePropBounds, kRegionPixels.x2, 2);
+    setIntProperty(kOfxImagePropBounds, kRegionPixels.y2, 3);
+    
+    setIntProperty(kOfxImagePropRegionOfDefinition, kRegionPixels.x1, 0);
+    setIntProperty(kOfxImagePropRegionOfDefinition, kRegionPixels.y1, 1);
+    setIntProperty(kOfxImagePropRegionOfDefinition, kRegionPixels.x2, 2);
+    setIntProperty(kOfxImagePropRegionOfDefinition, kRegionPixels.y2, 3);
+
+    // row bytes
+    setIntProperty(kOfxImagePropRowBytes, nWidth * sizeof(OfxRGBAColourB));
+    setStringProperty(kOfxImageEffectPropPixelDepth, kOfxBitDepthByte);
+}
+
+  OfxRGBAColourB* MyImage::pixel(int x, int y) const
+  {
+    OfxRectI bounds = getBounds();
+    if ((x >= bounds.x1) && ( x< bounds.x2) && ( y >= bounds.y1) && ( y < bounds.y2) )
+    {
+      int rowBytes = getIntProperty(kOfxImagePropRowBytes);
+      int offset = (y - bounds.y1) * rowBytes + (x - bounds.x1) * sizeof(OfxRGBAColourB);
+      return reinterpret_cast<OfxRGBAColourB*>(&(reinterpret_cast<char*>(_data)[offset]));
+    }
+    return 0;
+  }
+
+  MyImage::~MyImage() 
+  {
+    delete []_data;
+  }
+
+  MyClipInstance::MyClipInstance(MyEffectInstance* effect, OFX::Host::ImageEffect::ClipDescriptor *desc)
+    : OFX::Host::ImageEffect::ClipInstance(effect, *desc)
+    , _effect(effect)
+    , _name(desc->getName())
+    , _outputImage(NULL)
+#ifdef OFX_EXTENSIONS_VEGAS
+    , _view(0)
+#endif
+  {
+  }
+
+  MyClipInstance::~MyClipInstance()
+  {
+    if(_outputImage)
+      _outputImage->releaseReference();
+  }
+   
+  /// Get the Raw Unmapped Pixel Depth from the host. We are always 8 bits in our example
+  const std::string &MyClipInstance::getUnmappedBitDepth() const
+  {
+    static const std::string v(kOfxBitDepthByte);
+    return v;
+  }
+    
+  /// Get the Raw Unmapped Components from the host. In our example we are always RGBA
+  const std::string &MyClipInstance::getUnmappedComponents() const
+  {
+    static const std::string v(kOfxImageComponentRGBA);
+    return v;
+  }
+
+  // PreMultiplication -
+  //
+  //  kOfxImageOpaque - the image is opaque and so has no premultiplication state
+  //  kOfxImagePreMultiplied - the image is premultiplied by it's alpha
+  //  kOfxImageUnPreMultiplied - the image is unpremultiplied
+  const std::string &MyClipInstance::getPremult() const
+  {
+    static const std::string v(kOfxImageUnPreMultiplied);
+    return v;
+  }
+
+
+#ifdef OFX_EXTENSIONS_NATRON
+  // Format -
+  // The format of the clip or image (in pixel coordinates)
+  OfxRectI MyClipInstance::getFormat() const
+  {
+    /// our clip is pretending to be progressive PAL SD, so return 0<=x<768, 0<=y<576
+      if(_outputImage)
+      {
+          OfxRectI rect =  _outputImage->getROD();
+          return rect;
+      }
+    OfxRectI v;
+    v.x1 = v.y1 = 0;
+    v.x2 = 768;
+    v.y2 = 576;
+    return v;
+  }
+#endif
+
+  // Pixel Aspect Ratio -
+  //
+  //  The pixel aspect ratio of a clip or image.
+  double MyClipInstance::getAspectRatio() const
+  {
+    /// our clip is pretending to be progressive PAL SD, so return 1.06666
+      return 1.0;//kPalPixelAspect;
+  }
+  
+  // Frame Rate -
+  double MyClipInstance::getFrameRate() const
+  {
+    /// our clip is pretending to be progressive PAL SD, so return 25
+    return 25.0;
+  }
+  
+  // Frame Range (startFrame, endFrame) -
+  //
+  //  The frame range over which a clip has images.
+  void MyClipInstance::getFrameRange(double &startFrame, double &endFrame) const
+  {
+    // pretend we have a second's worth of PAL SD
+    startFrame = 0;
+    endFrame = 25;
+  }
+
+  /// Field Order - Which spatial field occurs temporally first in a frame.
+  /// \returns 
+  ///  - kOfxImageFieldNone - the clip material is unfielded
+  ///  - kOfxImageFieldLower - the clip material is fielded, with image rows 0,2,4.... occuring first in a frame
+  ///  - kOfxImageFieldUpper - the clip material is fielded, with image rows line 1,3,5.... occuring first in a frame
+  const std::string &MyClipInstance::getFieldOrder() const
+  {
+    /// our clip is pretending to be progressive PAL SD, so return kOfxImageFieldNone
+    static const std::string v(kOfxImageFieldNone);
+    return v;
+  }
+        
+  // Connected -
+  //
+  //  Says whether the clip is actually connected at the moment.
+  bool MyClipInstance::getConnected() const
+  {
+    return true;
+  }
+  
+  // Unmapped Frame Rate -
+  //
+  //  The unmaped frame range over which an output clip has images.
+  double MyClipInstance::getUnmappedFrameRate() const
+  {
+    /// our clip is pretending to be progressive PAL SD, so return 25
+    return 25;
+  }
+  
+  // Unmapped Frame Range -
+  //
+  //  The unmaped frame range over which an output clip has images.
+  // this is applicable only to hosts and plugins that allow a plugin to change frame rates
+  void MyClipInstance::getUnmappedFrameRange(double &unmappedStartFrame, double &unmappedEndFrame) const
+  {
+    // pretend we have a second's worth of PAL SD
+    unmappedStartFrame = 0;
+    unmappedEndFrame = 25;
+  }
+
+  // Continuous Samples -
+  //
+  //  0 if the images can only be sampled at discreet times (eg: the clip is a sequence of frames),
+  //  1 if the images can only be sampled continuously (eg: the clip is infact an animating roto spline and can be rendered anywhen). 
+  bool MyClipInstance::getContinuousSamples() const
+  {
+    return false;
+  }
+
+
+  /// override this to return the rod on the clip canonical coords!
+  OfxRectD MyClipInstance::getRegionOfDefinition(OfxTime time) const
+  {
+    /// our clip is pretending to be progressive PAL SD, so return 0<=x<768, 0<=y<576
+      OfxRectD v;
+    if(_outputImage)
+    {
+        OfxRectI rect =  _outputImage->getROD();
+        v.x1 = rect.x1; v.y1 = rect.y1;
+        v.x2 = rect.x2;
+        v.y2 = rect.y2;
+        return v;
+    }
+    
+    v.x1 = v.y1 = 0;
+    v.x2 = 768;
+    v.y2 = 576;
+    return v;
+  }
+  
+    int MyClipInstance::setRGBAImageBuffer(int nWidth, int nHeight, unsigned char *pBufferRGBA)
+   {
+       if(_outputImage) delete  _outputImage;
+#ifdef OFX_EXTENSIONS_VEGAS
+        _outputImage = new MyImage(*this, 0, nWidth, nHeight, pBufferRGBA, _view);
+#else
+        _outputImage = new MyImage(*this, 0, nWidth, nHeight, pBufferRGBA);
+#endif
+       return 0;
+   }
+  /// override this to fill in the image at the given time.
+  /// The bounds of the image on the image plane should be 
+  /// 'appropriate', typically the value returned in getRegionsOfInterest
+  /// on the effect instance. Outside a render call, the optionalBounds should
+  /// be 'appropriate' for the.
+  /// If bounds is not null, fetch the indicated section of the canonical image plane.
+  OFX::Host::ImageEffect::Image* MyClipInstance::getImage(OfxTime time, const OfxRectD *optionalBounds)
+  {
+      if(!_outputImage) {
+        // make a new ref counted image
+#ifdef OFX_EXTENSIONS_VEGAS
+        _outputImage = new MyImage(*this, 0, _view);
+#else
+        _outputImage = new MyImage(*this, 0);
+#endif
+      }
+     
+      // add another reference to the member image for this fetch
+      // as we have a ref count of 1 due to construction, this will
+      // cause the output image never to delete by the plugin
+      // when it releases the image
+      _outputImage->addReference();
+      return _outputImage;
+      // return it
+      /*
+    if(_name == "Output") {
+      
+    }
+    else {
+      // Fetch on demand for the input clip.
+      // It does get deleted after the plugin is done with it as we
+      // have not incremented the auto ref
+      // 
+      // You should do somewhat more sophisticated image management
+      // than this.
+#ifdef OFX_EXTENSIONS_VEGAS
+      MyImage *image = new MyImage(*this, time, _view);
+#else
+      MyImage *image = new MyImage(*this, time);
+#endif
+      return image;
+    }*/
+  }
+
+#ifdef OFX_EXTENSIONS_NUKE
+  /// override this to fill in the given image plane at the given time.
+  /// The bounds of the image on the image plane should be
+  /// 'appropriate', typically the value returned in getRegionsOfInterest
+  /// on the effect instance.
+  /// Outside a render call, the optionalBounds should
+  /// be 'appropriate' for the image.
+  /// If bounds is not null, fetch the indicated section of the canonical image plane.
+  ///
+  /// This function implements both V1 of the image plane suite and V2. In the V1 the parameter view was not present and
+  /// will be passed -1, indicating that you should on your own retrieve the correct index of the view at which the render called was issues
+  /// by using thread local storage. In V2 the view index will be correctly set with a value >= 0.
+  ///
+  OFX::Host::ImageEffect::Image* MyClipInstance::getImagePlane(OfxTime time, int view, const std::string& plane,const OfxRectD *optionalBounds)
+  {
+    return NULL;
+  }
+
+  /// override this to return the rod on the clip for the given view
+  OfxRectD MyClipInstance::getRegionOfDefinition(OfxTime time, int view) const
+  {
+    return getRegionOfDefinition(time);
+  }
+#endif
+
+#ifdef OFX_EXTENSIONS_VEGAS
+  /// override this to fill in the image at the given time from a specific view
+  /// (using the standard callback gets you the current view being rendered, @see getImage).
+  /// The bounds of the image on the image plane should be
+  /// 'appropriate', typically the value returned in getRegionsOfInterest
+  /// on the effect instance. Outside a render call, the optionalBounds should
+  /// be 'appropriate' for the.
+  /// If bounds is not null, fetch the indicated section of the canonical image plane.
+  OFX::Host::ImageEffect::Image* MyClipInstance::getStereoscopicImage(OfxTime time, int view, const OfxRectD *optionalBounds)
+  {
+    if(_name == "Output") {
+      if(!_outputImage) {
+        // make a new ref counted image
+        _outputImage = new MyImage(*this, 0, view);
+      }
+     
+      // add another reference to the member image for this fetch
+      // as we have a ref count of 1 due to construction, this will
+      // cause the output image never to delete by the plugin
+      // when it releases the image
+      _outputImage->addReference();
+
+      // return it
+      return _outputImage;
+    }
+    else {
+      // Fetch on demand for the input clip.
+      // It does get deleted after the plugin is done with it as we
+      // have not incremented the auto ref
+      // 
+      // You should do somewhat more sophisticated image management
+      // than this.
+      MyImage *image = new MyImage(*this, time, view);
+      return image;
+    }
+  }
+#endif
+
+#if defined(OFX_EXTENSIONS_VEGAS) || defined(OFX_EXTENSIONS_NUKE)
+  /// set the default view returned by getImage()
+  void MyClipInstance::setView(int view) {
+    if (view != _view) {
+      if (_outputImage) {
+        delete _outputImage;
+        _outputImage = NULL;
+      }
+      _view = view;
+    }
+  }
+#endif
+} // MyHost
