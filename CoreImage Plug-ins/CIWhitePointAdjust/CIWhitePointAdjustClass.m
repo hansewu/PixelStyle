@@ -16,7 +16,7 @@
 
 - (int)type
 {
-	return 3;
+    return 0;//3;
 }
 
 - (NSString *)name

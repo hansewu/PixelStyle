@@ -5,7 +5,7 @@
 #include <cassert>
 #include <stdexcept>
 #include <sstream> // stringstream
-
+#include <vector>
 // ofx
 #include "ofxCore.h"
 #include "ofxImageEffect.h"
@@ -22,6 +22,8 @@
 #include "ofxhPluginCache.h"
 #include "ofxhHost.h"
 #include "ofxhImageEffectAPI.h"
+#include "ofxCore.h"
+#include "ofxImageEffect.h"
 
 // my host
 #include "hostDemoHostDescriptor.h"
@@ -29,9 +31,14 @@
 #include "hostDemoClipInstance.h"
 #include "hostDemoParamInstance.h"
 
+typedef void * HOST_FILTERS_MANAGER;
+HOST_FILTERS_MANAGER oxfInit(const std::string &pluginPath);
+int getPluginsCount(HOST_FILTERS_MANAGER hostFilters);
+int getPluginInfo(HOST_FILTERS_MANAGER hostFilters, int nIndex, std::string &outPluginLabel, std::string &outPluginIdentifier);
+
 typedef void * OFX_HOST_HANDLE;
 //OFX::Host::ImageEffect::Instance *
-OFX_HOST_HANDLE oxfHostLoad(const std::string &pluginPath, const std::string &plugid);
+OFX_HOST_HANDLE oxfHostLoad(HOST_FILTERS_MANAGER hostFilters, const std::string &pluginIdentifier);
 int oxfHostGetParamsCount(OFX_HOST_HANDLE ofxHandle);
 int oxfHostGetParamInfo(OFX_HOST_HANDLE ofxHandle,
                         int index, std::string &outParaName, std::string &outParaType);
@@ -88,8 +95,8 @@ static bool findType(const std::string paramType, OFX::Host::Property::TypeEnum 
   return false;
 }
 
-//OFX::Host::ImageEffect::Instance *
-OFX_HOST_HANDLE oxfHostLoad(const std::string &pluginPath, const std::string &plugid)
+
+HOST_FILTERS_MANAGER oxfInit(const std::string &pluginPath)
 {
     // set the version label in the global cache
     OFX::Host::PluginCache::getPluginCache()->setCacheVersion("hostDemoV1");
@@ -97,14 +104,14 @@ OFX_HOST_HANDLE oxfHostLoad(const std::string &pluginPath, const std::string &pl
     // create our derived image effect host which provides
     // a factory to make plugin instances and acts
     // as a description of the host application
-    MyHost::Host myHost;
+    MyHost::Host *myHost = new MyHost::Host();
 
     // make an image effect plugin cache. This is what knows about
     // all the plugins.
-    OFX::Host::ImageEffect::PluginCache imageEffectPluginCache(&myHost);
+    OFX::Host::ImageEffect::PluginCache *imageEffectPluginCache = new OFX::Host::ImageEffect::PluginCache(myHost);
 
     // register the image effect cache with the global plugin cache
-    imageEffectPluginCache.registerInCache(*OFX::Host::PluginCache::getPluginCache());
+    imageEffectPluginCache->registerInCache(*OFX::Host::PluginCache::getPluginCache());
 
     // try to read an old cache
    /* std::ifstream ifs("hostDemoPluginCache.xml");
@@ -118,6 +125,36 @@ OFX_HOST_HANDLE oxfHostLoad(const std::string &pluginPath, const std::string &pl
     OFX::Host::PluginCache::getPluginCache()->addFileToPath(pluginPath, false);
     OFX::Host::PluginCache::getPluginCache()->scanPluginFiles();
     
+    return imageEffectPluginCache;
+}
+
+int getPluginsCount(HOST_FILTERS_MANAGER hostFilters)
+{
+    OFX::Host::ImageEffect::PluginCache *imageEffectPluginCache = (OFX::Host::ImageEffect::PluginCache *)hostFilters;
+    
+    const std::vector<OFX::Host::ImageEffect::ImageEffectPlugin *> &plugins = imageEffectPluginCache->getPlugins();
+    return  (int)plugins.size();
+}
+
+int getPluginInfo(HOST_FILTERS_MANAGER hostFilters, int nIndex, std::string &outLabel, std::string &outIdentifier)
+{
+    OFX::Host::ImageEffect::PluginCache *imageEffectPluginCache = (OFX::Host::ImageEffect::PluginCache *)hostFilters;
+    
+    const std::vector<OFX::Host::ImageEffect::ImageEffectPlugin *> &plugins = imageEffectPluginCache->getPlugins();
+    
+    if(nIndex <0 || nIndex >= plugins.size())
+        return -1;
+    
+    outLabel        = plugins[nIndex]->getDescriptor().getProps().getStringProperty(kOfxPropLabel);
+    outIdentifier   = plugins[nIndex]->getIdentifier();
+    return 0;
+}
+
+//OFX::Host::ImageEffect::Instance *
+OFX_HOST_HANDLE oxfHostLoad(HOST_FILTERS_MANAGER hostFilters, const std::string &plugid)
+{
+
+    OFX::Host::ImageEffect::PluginCache *imageEffectPluginCache = (OFX::Host::ImageEffect::PluginCache *)hostFilters;
 
     /// flush out the current cache
     //std::ofstream of("hostDemoPluginCache.xml");
@@ -125,7 +162,7 @@ OFX_HOST_HANDLE oxfHostLoad(const std::string &pluginPath, const std::string &pl
     //of.close();
 
     // get the invert example plugin which uses the OFX C++ support code
-    OFX::Host::ImageEffect::ImageEffectPlugin* plugin = imageEffectPluginCache.getPluginById(plugid);//eu.gmic
+    OFX::Host::ImageEffect::ImageEffectPlugin* plugin = imageEffectPluginCache->getPluginById(plugid);//eu.gmic
     
     if(!plugin) return NULL;
     
@@ -481,7 +518,9 @@ int oxfHostProcess(OFX_HOST_HANDLE ofxHandle, unsigned char *pRGBABufOut, int nB
     MyHost::MyImage *outputImage = outputClip->getOutputImage();
     OfxRGBAColourB* pOutBuf = outputImage->pixel(0, 0);
     
-    memcpy(pRGBABufOut, pOutBuf, nBufWidth * nBufHeight *4);
+    for(int y=0;y<nBufHeight; y++)
+        memcpy(pRGBABufOut+y*nBufWidth*4, (unsigned char *)pOutBuf +(nBufHeight-y-1)*nBufWidth*4, nBufWidth  *4);
+    //memcpy(pRGBABufOut, pOutBuf, nBufWidth * nBufHeight *4);
     
     instance->endRenderAction(0, numFramesToRender, 1.0, false, renderScale, /*sequential=*/true, /*interactive=*/false,
 #                               ifdef OFX_SUPPORTS_OPENGLRENDER

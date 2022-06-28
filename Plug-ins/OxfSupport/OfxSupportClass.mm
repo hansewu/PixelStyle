@@ -3,8 +3,13 @@
 #import "OfxSupportClass.h"
 
 
-//OFX::Host::ImageEffect::Instance *
-OFX_HOST_HANDLE oxfHostLoad(const std::string &pluginPath, const std::string &plugid);
+typedef void * HOST_FILTERS_MANAGER;
+HOST_FILTERS_MANAGER oxfInit(const std::string &pluginPath);
+int getPluginsCount(HOST_FILTERS_MANAGER hostFilters);
+int getPluginInfo(HOST_FILTERS_MANAGER hostFilters, int nIndex, std::string &outPluginLabel, std::string &outPluginIdentifier);
+
+//typedef void * OFX_HOST_HANDLE;
+OFX_HOST_HANDLE oxfHostLoad(HOST_FILTERS_MANAGER hostFilters, const std::string &pluginIdentifier);
 int oxfHostGetParamsCount(OFX_HOST_HANDLE ofxHandle);
 int oxfHostGetParamInfo(OFX_HOST_HANDLE ofxHandle,
                         int index, std::string &outParaName, std::string &outParaType);
@@ -22,18 +27,83 @@ int oxfHostProcess(OFX_HOST_HANDLE ofxHandle, unsigned char *pRGBABufOut, int nB
 
 #define make_128(x) (x + 16 - (x % 16))
 
-
+static char *s_enabledFilterId[] =
+{
+    (char *)"eu.gmic.GradientRGB",
+    (char *)"eu.gmic.HardSketch",
+    (char *)"eu.gmic.ColorBalance",
+    (char *)"eu.gmic.ColorBlindness",
+    (char *)"eu.gmic.Sketch",
+    (char *)"eu.gmic.VectorPainting",
+    (char *)"eu.gmic.Charcoal",
+    (char *)"eu.gmic.Pencil",
+    (char *)"eu.gmic.Retinex",
+    (char *)"eu.gmic.Edges",
+    (char *)"eu.gmic.Ripple",
+    (char *)"eu.gmic.Wind",
+    (char *)"eu.gmic.Wave",
+    (char *)"eu.gmic.Water",
+    (char *)"eu.gmic.RainSnow",
+  //  (char *)"eu.gmic.DetailsEqualizer",
+    (char *)"eu.gmic.EqualizeLocalHistograms",//(slow)
+  //  (char *)"eu.gmic.FreakyDetails",
+    (char *)"eu.gmic.LocalNormalization",
+    (char *)"eu.gmic.BlurAngular",
+    (char *)"eu.gmic.BlurBloom",
+    (char *)"eu.gmic.BlurDepthofField",
+    (char *)"eu.gmic.BlurGlow",
+    (char *)"eu.gmic.BlurLinear",
+    (char *)"eu.gmic.BlurRadial",
+    
+};
 @implementation OfxSupportClass
-
 - (id)initWithManager:(PSPlugins *)manager
+{
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSString *pluginPath = [bundle.builtInPlugInsPath stringByAppendingPathComponent:@"/ofx"];
+    
+    HOST_FILTERS_MANAGER hFilters = oxfInit(std::string(pluginPath.UTF8String));
+    int count = getPluginsCount(hFilters);
+    if(count <=0)  return nil;
+    
+    std::string PluginLabel, PluginIdentifier;
+    
+    _arrPlugins = [[[NSMutableArray alloc] init] autorelease];
+    for(int i=0; i< count; i++)
+    {
+        int nret = getPluginInfo(hFilters, i, PluginLabel, PluginIdentifier);
+        printf("Filter label = %s, id = %s\n", PluginLabel.c_str(), PluginIdentifier.c_str());
+        for(int j=0; j< sizeof(s_enabledFilterId)/sizeof(char *); j++)
+        {
+            if(PluginIdentifier == std::string(s_enabledFilterId[j]))
+            {
+                OfxSupportClassItem *plugin = [[OfxSupportClassItem alloc] init];
+                
+                [plugin initWithManagerOxf:manager oxfHostHandle:hFilters stringId:[NSString stringWithUTF8String:s_enabledFilterId[j]]];
+                [_arrPlugins addObject:plugin];
+            }
+        }
+    }
+    
+    return self;
+}
+
+-(NSMutableArray *)getPlugins
+{
+    return _arrPlugins;
+}
+@end
+
+@implementation OfxSupportClassItem
+
+- (id)initWithManagerOxf:(PSPlugins *)manager oxfHostHandle:(void *)hostHandle stringId:(NSString *)strPluginId
 {
 	seaPlugins = manager;
 	[NSBundle loadNibNamed:@"OxfPluginInfo" owner:self];
 	newdata = NULL;
-    
-    _effectHandle = oxfHostLoad("/Users/apple/Library/Developer/Xcode/DerivedData/HostSupport-fqanezsqoesezlfisjqyirptjlkx/Build/Products/Debug", "uk.co.thefoundry.OfxInvertExample");//eu.gmic.HardSketch");//eu.gmic.GradientRGB");//
-   // m_rvmProcess = [[robustVideoMatting alloc] init];
-   // [m_rvmProcess loadModel];
+    _hostHandle = hostHandle;
+    _strPluginId = strPluginId;
+    _effectHandle = nil;
 	
 	return self;
 }
@@ -45,12 +115,12 @@ int oxfHostProcess(OFX_HOST_HANDLE ofxHandle, unsigned char *pRGBABufOut, int nB
 
 - (NSString *)name
 {
-	return [gOurBundle localizedStringForKey:@"name" value:@"OfxSupport" table:NULL];
+    return _strPluginId;//[gOurBundle localizedStringForKey:@"name" value:@"OfxSupport" table:NULL];
 }
 
 - (NSString *)groupName
 {
-	return [gOurBundle localizedStringForKey:@"groupName" value:@"AI" table:NULL];
+    return @"OfxPlugins";//[gOurBundle localizedStringForKey:@"groupName" value:@"AI" table:NULL];
 }
 
 - (NSString *)sanity
@@ -60,6 +130,8 @@ int oxfHostProcess(OFX_HOST_HANDLE ofxHandle, unsigned char *pRGBABufOut, int nB
 
 - (void)run
 {
+    _effectHandle = oxfHostLoad(_hostHandle, std::string(_strPluginId.UTF8String));
+    
 	PluginData *pluginData;
 	/*
 	if ([gUserDefaults objectForKey:@"AIPortraitMatting.radius"])
@@ -104,7 +176,7 @@ int oxfHostProcess(OFX_HOST_HANDLE ofxHandle, unsigned char *pRGBABufOut, int nB
 	success = YES;
 	if (newdata) { free(newdata); newdata = NULL; }
 		
-	[gUserDefaults setInteger:radius forKey:@"OCBilaterClass.radius"];
+	//[gUserDefaults setInteger:radius forKey:@"OCBilaterClass.radius"];
 }
 
 - (void)reapply
@@ -312,6 +384,9 @@ int oxfHostProcess(OFX_HOST_HANDLE ofxHandle, unsigned char *pRGBABufOut, int nB
 {
     int nInputWidth = [pluginData width];
     int nInputHeight = [pluginData height];
+    
+    if(!_effectHandle)
+       _effectHandle = oxfHostLoad(_hostHandle, std::string(_strPluginId.UTF8String));
     
     oxfHostSetImageFrame(_effectHandle, data, nInputWidth, nInputHeight);
     unsigned char  *resdata = (unsigned char *)malloc(nInputWidth*nInputHeight*4);

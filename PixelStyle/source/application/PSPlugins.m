@@ -157,10 +157,17 @@ BOOL checkRun(NSString *path, NSString *file)
 			if (plugin) {
 				if ([plugin respondsToSelector:@selector(initWithManager:)]) {
 					[plugin initWithManager:self];
+                    
 					if ([plugin respondsToSelector:@selector(sanity)] && [[plugin sanity] isEqualToString:@"PixelStyle Approved (Bobo)"]) {
 						m_arrPlugins = [m_arrPlugins arrayByAddingObject:plugin];
 						success = YES;
-					}		
+					}
+                    else if([plugin respondsToSelector:@selector(getPlugins)])
+                    {
+                        NSMutableArray *arrFilters = [plugin getPlugins];
+                        m_arrPlugins = [m_arrPlugins arrayByAddingObjectsFromArray:arrFilters];
+                        success = YES;
+                    }
 				}
 				if (!success) {
 					[plugin autorelease];

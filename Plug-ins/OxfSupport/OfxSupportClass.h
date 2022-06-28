@@ -13,8 +13,14 @@
 #import "PSPlugins.h"
 
 typedef void * OFX_HOST_HANDLE;
-
 @interface OfxSupportClass : NSObject {
+    NSMutableArray *_arrPlugins;
+}
+
+-(NSMutableArray *)getPlugins;
+@end
+
+@interface OfxSupportClassItem : NSObject {
 
 	// The plug-in's manager
 	id seaPlugins;
@@ -40,6 +46,8 @@ typedef void * OFX_HOST_HANDLE;
 	// Some temporary space we need preallocated for greyscale data
 	unsigned char *newdata;
 
+    void * _hostHandle;
+    NSString *_strPluginId;
     OFX_HOST_HANDLE _effectHandle;
     //robustVideoMatting *m_rvmProcess;
 }
@@ -51,7 +59,7 @@ typedef void * OFX_HOST_HANDLE;
 				The PSPlugins instance responsible for managing the plug-ins.
 	@result		Returns instance upon success (or NULL otherwise).
 */
-- (id)initWithManager:(PSPlugins *)manager;
+- (id)initWithManagerOxf:(PSPlugins *)manager  oxfHostHandle:(void *)hostHandle stringId:(NSString *)strPluginId;
 
 /*!
 	@method		type

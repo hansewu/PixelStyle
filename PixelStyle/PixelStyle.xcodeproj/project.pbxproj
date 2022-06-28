@@ -925,6 +925,7 @@
 		186AD8062816917600009522 /* SelectionToAlpha.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 186AD7FD2816913200009522 /* SelectionToAlpha.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1876E91328177CFC00B790DF /* luminanceToAlpha.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1876E90628177CCF00B790DF /* luminanceToAlpha.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18A38CC4280907AE00FACD25 /* OCBilateral.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18A38C662809056B00FACD25 /* OCBilateral.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18BBB2E9286689760010D537 /* libimofxhost.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18BBB2DF286689420010D537 /* libimofxhost.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		18CAD78F2865378800E495E2 /* libomp.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18CAD78E2865378700E495E2 /* libomp.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		18CAD7902865379900E495E2 /* libomp.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18CAD78E2865378700E495E2 /* libomp.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		18CAD791286537A900E495E2 /* libomp.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18CAD78E2865378700E495E2 /* libomp.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -5581,6 +5582,41 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = OCBilateral;
 		};
+		18BBB2CE286689420010D537 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18BBB2CB286689420010D537 /* HostSupport.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 18D848E928628C1C006A530F;
+			remoteInfo = imofxhost;
+		};
+		18BBB2D8286689420010D537 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18BBB2CB286689420010D537 /* HostSupport.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1E742FEA17992CF9007D295B;
+			remoteInfo = ofxHost;
+		};
+		18BBB2DA286689420010D537 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18BBB2CB286689420010D537 /* HostSupport.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1E3CB8731799312D0032B538;
+			remoteInfo = hostDemo;
+		};
+		18BBB2DC286689420010D537 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18BBB2CB286689420010D537 /* HostSupport.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1E3CB880179931470032B538;
+			remoteInfo = cacheDemo;
+		};
+		18BBB2DE286689420010D537 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18BBB2CB286689420010D537 /* HostSupport.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18D848EA28628C1C006A530F;
+			remoteInfo = imofxhost;
+		};
 		18CAD7D52865505A00E495E2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 18CAD7D02865505A00E495E2 /* OfxSupport.xcodeproj */;
@@ -8621,6 +8657,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				18BBB2E9286689760010D537 /* libimofxhost.dylib in CopyFiles */,
 				18E68B492811767E009AD2FF /* roboHumanMatting.framework in CopyFiles */,
 				18E68A2A280F91D1009AD2FF /* libopencv_flann.405.dylib in CopyFiles */,
 				18E68A27280F91AC009AD2FF /* libcriminisi.dylib in CopyFiles */,
@@ -9229,6 +9266,7 @@
 		186AD7EE2816913200009522 /* SelectionToAlpha.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SelectionToAlpha.xcodeproj; path = "../Plug-ins/SelectionToAlpha/SelectionToAlpha.xcodeproj"; sourceTree = "<group>"; };
 		1876E8FB28177CCF00B790DF /* luminanceToAlpha.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = luminanceToAlpha.xcodeproj; path = "../Plug-ins/luminanceToAlpha/luminanceToAlpha.xcodeproj"; sourceTree = "<group>"; };
 		18A38C602809056A00FACD25 /* OCBilateral.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OCBilateral.xcodeproj; path = "../Plug-ins/OCBilateral/OCBilateral.xcodeproj"; sourceTree = "<group>"; };
+		18BBB2CB286689420010D537 /* HostSupport.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HostSupport.xcodeproj; path = "/Volumes/D/wzq/2019/pixelstylenew/PixelStyle/Plug-ins/OxfSupport/openfx-gmic/openfx/OfxHostSupport/HostSupport.xcodeproj"; sourceTree = "<absolute>"; };
 		18CAD78E2865378700E495E2 /* libomp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libomp.dylib; path = source/ComputeDistance/ComputeDistance/libomp.dylib; sourceTree = "<group>"; };
 		18CAD7D02865505A00E495E2 /* OfxSupport.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OfxSupport.xcodeproj; path = "../Plug-ins/OxfSupport/OfxSupport.xcodeproj"; sourceTree = "<group>"; };
 		18D7E9472806498300A8FC3E /* libopencv_core.405.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.405.dylib; path = ../opencv/lib/libopencv_core.405.dylib; sourceTree = "<group>"; };
@@ -10711,6 +10749,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		18BBB2CC286689420010D537 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18BBB2D9286689420010D537 /* libofxHost.a */,
+				18BBB2DB286689420010D537 /* hostDemo */,
+				18BBB2DD286689420010D537 /* cacheDemo */,
+				18BBB2DF286689420010D537 /* libimofxhost.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		18CAD7D12865505A00E495E2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -10793,6 +10842,7 @@
 				AB4C977F1EC30FFB0059F605 /* PixelStyle copy-Info.plist */,
 				1852F1B6280E34CD00D028C1 /* PixelStyle Free copy-Info.plist */,
 				185300EC2828A71F00A2708D /* PixelStyle copy2-Info.plist */,
+				18BBB2CB286689420010D537 /* HostSupport.xcodeproj */,
 			);
 			name = Seashore;
 			sourceTree = "<group>";
@@ -13105,6 +13155,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				18BBB2CF286689420010D537 /* PBXTargetDependency */,
 				18CAD7DD286550A500E495E2 /* PBXTargetDependency */,
 				757D582E285FEEB80042F294 /* PBXTargetDependency */,
 				18FF9551285BFFFD00B64CE0 /* PBXTargetDependency */,
@@ -13913,6 +13964,10 @@
 					ProjectRef = A83DE6360C4523AE000FEEA8 /* HorizStripes.xcodeproj */;
 				},
 				{
+					ProductGroup = 18BBB2CC286689420010D537 /* Products */;
+					ProjectRef = 18BBB2CB286689420010D537 /* HostSupport.xcodeproj */;
+				},
+				{
 					ProductGroup = 35B156F40A2C0116005B688F /* Products */;
 					ProjectRef = 35B156F30A2C0116005B688F /* HSV.xcodeproj */;
 				},
@@ -14051,6 +14106,34 @@
 			fileType = wrapper.cfbundle;
 			path = OCBilateral.bundle;
 			remoteRef = 18A38C652809056B00FACD25 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18BBB2D9286689420010D537 /* libofxHost.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libofxHost.a;
+			remoteRef = 18BBB2D8286689420010D537 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18BBB2DB286689420010D537 /* hostDemo */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = hostDemo;
+			remoteRef = 18BBB2DA286689420010D537 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18BBB2DD286689420010D537 /* cacheDemo */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = cacheDemo;
+			remoteRef = 18BBB2DC286689420010D537 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18BBB2DF286689420010D537 /* libimofxhost.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libimofxhost.dylib;
+			remoteRef = 18BBB2DE286689420010D537 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		18CAD7D62865505A00E495E2 /* OfxSupport.bundle */ = {
@@ -19838,6 +19921,11 @@
 			isa = PBXTargetDependency;
 			name = OCBilateral;
 			targetProxy = 18A38CBF2809078000FACD25 /* PBXContainerItemProxy */;
+		};
+		18BBB2CF286689420010D537 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = imofxhost;
+			targetProxy = 18BBB2CE286689420010D537 /* PBXContainerItemProxy */;
 		};
 		18CAD7DD286550A500E495E2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
