@@ -20,3 +20,6 @@ https://www.effectmatrix.com/mac-appstore/mac-photo-editor-pixelstyle.htm
 
 #  Compile
 Tested: XCode 12.2 PixelStyle/PixelStyle.xcodeproj  target: PixelStyle Free No Sign
+
+#   License
+ GPL2
