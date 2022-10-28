@@ -1,4 +1,4 @@
-# PixelStyle  - a open source photo editor
+# PixelStyle  - an powerful photo editor with open source
  
 
 # Features 
