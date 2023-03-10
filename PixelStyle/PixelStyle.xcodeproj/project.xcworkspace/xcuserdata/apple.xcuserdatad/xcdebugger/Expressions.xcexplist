@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[PSLayer updatePreviewEffectForInRect:inThread:mode:]:PSLayer.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "imaData.pBuffer[overlayPos]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "preProcessToARGB:Rects.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "pBufRaw[i * 4+3]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "postProcessToRGBA:Rects.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "pBufDataARGBM[i * 4]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

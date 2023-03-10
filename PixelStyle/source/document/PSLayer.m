@@ -2462,7 +2462,8 @@ extern IntPoint gScreenResolution;
                         case kReplacingBehaviour:{
                             unsigned char tempSpace[spp];
                             memcpy(tempSpace, pData + overlayPos, spp);
-                            replaceAlphaMerge(spp, tempSpace, 0, previewData, overlayPos, brushAlpha);
+                            replaceAlphaMerge(spp, tempSpace, 0, previewData, overlayPos+spp-1,//???overlayPos
+                                              brushAlpha);
                             previewData[overlayPos + spp - 1] = tempSpace[spp - 1];
                         }
                             break;

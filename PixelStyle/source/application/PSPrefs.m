@@ -272,7 +272,8 @@ CGDisplayErr GetMainDisplayDPI(float *horizontalDPI, float *verticalDPI)
 		m_bUseCoreImage = YES;
 		
 	// Get the main screen resolution
-	if (GetMainDisplayDPI(&xdpi, &ydpi)) {
+	//if (GetMainDisplayDPI(&xdpi, &ydpi))
+    {
 		xdpi = ydpi = 72.0;
 		NSLog(@"Error finding screen resolution.");
 	}

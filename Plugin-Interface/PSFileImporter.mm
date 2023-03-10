@@ -184,6 +184,7 @@ int createCocoaLayerWithBuffer(GM_IMAGE_BUFFER *bufferInfo, void* document, cons
 int plugin_ImportImageToDocument(const char* filePath, void* document)
 {
     NSBundle *main = [NSBundle mainBundle];
+    
     NSArray *allPlugins = [main pathsForResourcesOfType:@"plugin" inDirectory:@"../PlugIns/Importer"];
 
     int status = -1;
@@ -249,10 +250,18 @@ char** plugin_GetAllSupportedTypes(int* count)
     int indexType = 0;
     
     NSBundle *main = [NSBundle mainBundle];
-    NSArray *allPlugins = [main pathsForResourcesOfType:@"plugin" inDirectory:@"../PlugIns/Importer"];
-    
-    for (NSString *path in allPlugins)
+    NSString *pluginsPath = [main builtInPlugInsPath];
+    pluginsPath = [pluginsPath stringByAppendingString:@"/Importer/"];
+    NSArray *pre_files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:pluginsPath error:NULL];
+    //NSArray *allPlugins = [main pathsForResourcesOfType:@"plugin" inDirectory:pluginsPath];
+
+    for (int i = 0; i < [pre_files count]; i++)
     {
+        NSString *path = [pre_files objectAtIndex:i];
+        if (![path hasSuffix:@".plugin"]) continue;
+        
+        path = [pluginsPath stringByAppendingString:path];
+        
         CFURLRef bundleURL;
         CFBundleRef myBundle;
         CFStringRef bundlePath = (__bridge CFStringRef)path;

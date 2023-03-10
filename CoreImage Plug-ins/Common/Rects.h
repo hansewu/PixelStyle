@@ -236,3 +236,10 @@ inline void premultiplyBitmap(int spp, unsigned char *destPtr, unsigned char *sr
 				The length of the bitmap in terms of pixels (not bytes).
 */
 inline void unpremultiplyBitmap(int spp, unsigned char *destPtr, unsigned char *srcPtr, int length);
+
+inline void swapRgbaToArgb(unsigned char *output, unsigned char *input, int length);
+
+inline void swapArgbToRgba(unsigned char *output, unsigned char *input, int length);
+
+int preProcessToARGB(unsigned char *pBufRaw, int spp, int nWidth, int nHeight, unsigned char *pBufOut, int nChannelMode);
+int postProcessToRGBA(unsigned char *pBufRawRGBA, IntRect selection, int rawWidth, int rawHeight, unsigned char *pBufDataARGBM, int spp, int nWidth, int nHeight, unsigned char *pBufOutRGBA, int nChannelMode);

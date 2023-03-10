@@ -149,6 +149,35 @@
 		<dict>
 			<key>CFBundleTypeExtensions</key>
 			<array>
+				<string>webp</string>
+				<string>WEBP</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>JPEG Icon.icns</string>
+			<key>CFBundleTypeMIMETypes</key>
+			<array>
+				<string>image/webp</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>WebP Image (WEBP)</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>WEBP</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>org.webmproject.webp</string>
+			</array>
+			<key>LSTypeIsPackage</key>
+			<false/>
+			<key>NSDocumentClass</key>
+			<string>PSDocument</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
 				<string>xbm</string>
 				<string>XBM</string>
 			</array>
@@ -421,7 +450,7 @@
 		<true/>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2014-2022 EffectMatrix Inc. All rights reserved.
+	<string>Copyright © 2014-2023 EffectMatrix Inc. All rights reserved.
 </string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>

@@ -122,6 +122,7 @@
 				<string>JPG</string>
 				<string>jpeg</string>
 				<string>JPEG</string>
+				<string>webp</string>
 			</array>
 			<key>CFBundleTypeIconFile</key>
 			<string>JPEG Icon.icns</string>

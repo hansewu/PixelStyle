@@ -158,7 +158,7 @@
 	@param		pluginData
 				The PluginData object.
 */
-- (void)executeGrey:(PluginData *)pluginData;
+//- (void)executeGrey:(PluginData *)pluginData;
 
 /*!
 	@method		executeColor
@@ -166,7 +166,7 @@
 	@param		pluginData
 				The PluginData object.
 */
-- (void)executeColor:(PluginData *)pluginData;
+//- (void)executeColor:(PluginData *)pluginData;
 
 /*!
 	@method		executeChannel:withBitmap:
@@ -178,7 +178,7 @@
 				The bitmap data to work with (must be 8-bit ARGB).
 	@result		Returns the resulting bitmap.
 */
-- (unsigned char *)executeChannel:(PluginData *)pluginData withBitmap:(unsigned char *)data;
+//- (unsigned char *)executeChannel:(PluginData *)pluginData withBitmap:(unsigned char *)data;
 
 /*!
 	@method		adjust:withBitmap:

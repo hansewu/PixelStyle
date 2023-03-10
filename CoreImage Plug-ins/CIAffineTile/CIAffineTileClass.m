@@ -104,7 +104,7 @@
 {
 	return NO;
 }
-
+/*
 - (void)execute
 {
 	PluginData *pluginData;
@@ -116,8 +116,63 @@
 	else {
 		[self executeColor:pluginData];
 	}
-}
+}*/
 
+- (void)execute
+{
+    PluginData *pluginData;
+
+    pluginData = [(PSPlugins *)seaPlugins data];
+    
+    IntRect selection;
+    int i, width, height;
+    unsigned char *data, *resdata, *overlay, *replace;
+    int vec_len;
+    
+    // Set-up plug-in
+    [pluginData setOverlayOpacity:255];
+    [pluginData setOverlayBehaviour:kReplacingBehaviour];
+    selection = [pluginData selection];
+    
+    int spp = [pluginData spp];
+    
+    // Get plug-in data
+    width = [pluginData width];
+    height = [pluginData height];
+    //vec_len = width * height * spp;
+    //if (vec_len % 16 == 0) { vec_len /= 16; }
+    //else { vec_len /= 16; vec_len++; }
+    data = [pluginData data];
+    overlay = [pluginData overlay];
+    replace = [pluginData replace];
+    
+    int channelMode = [pluginData channel];
+    
+    preProcessToARGB(data, spp, width, height, newdata, channelMode);
+    
+    // Run CoreImage effect
+    resdata = [self tile:pluginData withBitmap:newdata];
+    
+    postProcessToRGBA(data, selection, width, height, resdata, spp, selection.size.width, selection.size.height, newdata, channelMode);
+    
+    // Copy to destination
+    
+    if ((selection.size.width > 0 && selection.size.width < width) || (selection.size.height > 0 && selection.size.height < height))
+    {
+        for (i = 0; i < selection.size.height; i++)
+        {
+            memset(&(replace[width * (selection.origin.y + i) + selection.origin.x]), 0xFF, selection.size.width);
+            memcpy(&(overlay[(width * (selection.origin.y + i) + selection.origin.x) * spp]), &(newdata[selection.size.width * spp * i]), selection.size.width * spp);
+        }
+    }
+    else
+    {
+        memset(replace, 0xFF, width * height);
+        memcpy(overlay, newdata, width * height * spp);
+    }
+    
+}
+/*
 - (void)executeGrey:(PluginData *)pluginData
 {
 	IntRect selection;
@@ -176,7 +231,7 @@
 
 - (void)executeColor:(PluginData *)pluginData
 {
-#ifdef __ppc__
+    //#ifdef __ppc__
 	vector unsigned char TOGGLERGBF = (vector unsigned char)(0x03, 0x00, 0x01, 0x02, 0x07, 0x04, 0x05, 0x06, 0x0B, 0x08, 0x09, 0x0A, 0x0F, 0x0C, 0x0D, 0x0E);
 	vector unsigned char TOGGLERGBR = (vector unsigned char)(0x01, 0x02, 0x03, 0x00, 0x05, 0x06, 0x07, 0x04, 0x09, 0x0A, 0x0B, 0x08, 0x0D, 0x0E, 0x0F, 0x0C);
 	vector unsigned char *vdata, *voverlay, *vresdata;
@@ -206,6 +261,7 @@
 	replace = [pluginData replace];
 	premultiplyBitmap(4, newdata, data, width * height);
 	// Convert from RGBA to ARGB
+    swapRgbaToArgb(newdata, newdata, width*height);
 #ifdef __ppc__
 	vdata = (vector unsigned char *)newdata;
 	for (i = 0; i < vec_len; i++) {
@@ -225,6 +281,7 @@
 	resdata = [self executeChannel:pluginData withBitmap:newdata];
 }
 @catch (NSException *exception) {
+    swapArgbToRgba(resdata, resdata, width * height);
 #ifdef __ppc__
 	for (i = 0; i < vec_len; i++) {
 		vdata[i] = vec_perm(vdata[i], vdata[i], TOGGLERGBR);
@@ -236,6 +293,7 @@
 		vdata[i] = _mm_add_epi32(vdata[i], vstore);
 	}
 #endif
+ 
 	NSLog([exception reason]);
 	return;
 }
@@ -245,7 +303,8 @@
 		unpremultiplyBitmap(4, resdata, resdata, width * height);
 	}
 	// Convert from ARGB to RGBA
-#ifdef __ppc__
+    swapArgbToRgba(resdata, resdata, width * height);
+/*#ifdef __ppc__
 	for (i = 0; i < vec_len; i++) {
 		vdata[i] = vec_perm(vdata[i], vdata[i], TOGGLERGBR);
 	}
@@ -256,7 +315,7 @@
 		vdata[i] = _mm_add_epi32(vdata[i], vstore);
 	}
 #endif
-	
+
 	// Copy to destination
 	if ((selection.size.width > 0 && selection.size.width < width) || (selection.size.height > 0 && selection.size.height < height)) {
 		for (i = 0; i < selection.size.height; i++) {
@@ -333,7 +392,7 @@
 	
 	return resdata;
 }
-
+*/
 - (void)determineContentBorders:(PluginData *)pluginData
 {
 	int contentLeft, contentRight, contentTop, contentBottom;

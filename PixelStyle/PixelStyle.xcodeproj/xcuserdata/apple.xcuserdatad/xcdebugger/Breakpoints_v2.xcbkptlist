@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
+   uuid = "A63514F4-BDDA-4A6F-AD57-FC540F20EFC3"
    type = "1"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "CF64AEB4-E1B1-44F3-9444-6E7A8FC15013"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -22,6 +24,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "3819E7DB-E58D-4374-B54F-29E8483A3BC7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -33,6 +36,819 @@
             endingLineNumber = "25"
             landmarkName = "-initWithManager:"
             landmarkType = "4">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../CoreImage Plug-ins/Common/Rects.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "275"
+            endingLineNumber = "275"
+            landmarkName = "preProcessToARGB(pBufRaw, spp, nWidth, nHeight, pBufOut, nChannelMode)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - ce53a237a0a14f3d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Monochrome+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - ff35a7c7e6223873"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Twirl+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - c7f3cd3b33b24763"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Random+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - c87c4c3c56747e8f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "OpTile+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - ede77c8b0da8ef31"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "MotionBlur+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - fc30ef3f9fee9bff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Exposure+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 9f17ece8bb9d9694"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "TorusLens+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - a0817b48f835913c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "EdgeWork+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 9f0f7a2c3d5087d4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "UnsharpMask+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 13c54783cd18c77b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Kaleidoscope+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - ff3268b19c225e93"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Sepia+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - f300400797259485"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Checkerboard+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - f7d3b6a8c6feb4a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "LenticularHalo+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 7d953af9e5f86fad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Pixellate+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - b849e6e517acc2a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "SpotLight+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 4dd6137a77539e50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "FalseColor+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 142375476f2b28bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "CircularScreen+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 7399910d622d4a5e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "HorizStripes+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - ff29a731b68efe34"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Bump+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 626eb6e3c96e383a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "DisplacementDistortion+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - cb153481bb8379da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Invert+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - c9618a2cc0370ff0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Median+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 7f84c431a2e6debd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Crystallize+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - cd6d8f69ce7712ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "CMYKHalftone+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 5a43ec1a415bf385"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "CircleSplash+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - fd01950cfdbd4e76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "GlassLozenge+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 8b97fcfd836b1123"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "PerspectiveTile+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - fa9e044799ced37d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "AffineTile+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - a0a9f9aec387738a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Posterize+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 5ec1bda09f45d8b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "VertStripes+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 6a9e3fa7ae0641c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "WhitePointAdjust+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - c44e603a41ccd5cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "DotScreen+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 6e544bd9b7bf3f02"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Sunbeams+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - eed30d8dfd66a7ba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Pointillize+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - c5d86735b3049fca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Vortex+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 5305b8d7301daa8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "TriangleTile+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 28621abc6b278296"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Starshine+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - ff31073ecc17a69f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Gloom+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - ff29a069eabee1c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Hole+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - a33825016c249e77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "CircularWrap+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - b04cb4c276eee36e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "LineScreen+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 83aa0c4e556f947e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "ParallelogramTile+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - ff3ef3a472ec78da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Bloom+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 4b22e63d42a7d61e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "ZoomBlur+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 52cbc118f16e1b14"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "GlassDistortion+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 9da65a88e015223f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Brightness+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - ff335280a89ee093"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Pinch+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 57b612dca948ff1f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Gaussian+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - af1b9fbf87c6493a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "HatchedScreen+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 9fcab0d2daa8c0f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "GammaAdjust+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - ff3188df9a2a7d29"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Edges+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - b6ae7111a5735c95"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "NoiseReduction+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+               <Location
+                  uuid = "BDC3B85C-CD91-4409-BF75-4D8BF77ADE74 - 29f6d3b9fce38b74"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "preProcessToARGB"
+                  moduleName = "Sharpen+"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/CoreImage%20Plug-ins/Common/Rects.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "3207">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -15,9 +15,13 @@
 	   [controller type: aType isContainedInDocType: @"JPEG image (JPG)"] ||
        [controller type: aType isContainedInDocType: @"JPEG 2000 image (JP2)"]||
        [controller type: aType isContainedInDocType: @"Windows bitmap image (BMP)"]||
-       [controller type: aType isContainedInDocType: @"Portable Document Format (PDF)"]){
+       [controller type: aType isContainedInDocType: @"Portable Document Format (PDF)"]||
+       [controller type: aType isContainedInDocType: @"WebP Image (WEBP)"])
+    {
 		return YES;
-	}else if ([controller type: aType isContainedInDocType: @"Graphics Interchange Format (GIF)"]){
+	}
+    else if ([controller type: aType isContainedInDocType: @"Graphics Interchange Format (GIF)"])
+    {
         NSString *sProductName = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleNameKey];
         NSString *sKey = [NSString stringWithFormat:@"%@ does not support GIF transparency or animation.",sProductName];
 		[[PSController seaWarning]
@@ -59,6 +63,7 @@
 		return NULL;
 	
 	// Open the image
+    NSArray *types = [NSImage imageFileTypes];
 	image = [[NSImage alloc] initByReferencingFile:path];
 	if (image == NULL) {
 		[image autorelease];

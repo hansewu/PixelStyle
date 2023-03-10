@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AB4C93521EC30FFA0059F605"
-               BuildableName = "Pixelstyle Photo Editor.app"
+               BuildableName = "PixelStyle Photo Editor.app"
                BlueprintName = "PixelStyle Free"
                ReferencedContainer = "container:PixelStyle.xcodeproj">
             </BuildableReference>
@@ -31,7 +31,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AB4C93521EC30FFA0059F605"
-            BuildableName = "Pixelstyle Photo Editor.app"
+            BuildableName = "PixelStyle Photo Editor.app"
             BlueprintName = "PixelStyle Free"
             ReferencedContainer = "container:PixelStyle.xcodeproj">
          </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AB4C93521EC30FFA0059F605"
-            BuildableName = "Pixelstyle Photo Editor.app"
+            BuildableName = "PixelStyle Photo Editor.app"
             BlueprintName = "PixelStyle Free"
             ReferencedContainer = "container:PixelStyle.xcodeproj">
          </BuildableReference>
@@ -86,7 +86,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AB4C93521EC30FFA0059F605"
-            BuildableName = "Pixelstyle Photo Editor.app"
+            BuildableName = "PixelStyle Photo Editor.app"
             BlueprintName = "PixelStyle Free"
             ReferencedContainer = "container:PixelStyle.xcodeproj">
          </BuildableReference>

@@ -92,7 +92,7 @@
 //    [colorTitle setAlignment:[m_idCreatButton alignment] range:titleRange];
 //    [(NSButton*)m_idCreatButton setAttributedTitle:colorTitle];
     
-    [self initPluginImporterSupportTypes];
+//    [self initPluginImporterSupportTypes];
 //    [self performSelector:@selector(initPluginImporterSupportTypes) withObject:NULL afterDelay:2];
     
     [self initViews];
