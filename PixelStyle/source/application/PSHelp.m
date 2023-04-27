@@ -35,7 +35,7 @@
 - (IBAction)openBugs:(id)sender
 {
 //	NSString *url = [NSString stringWithFormat:@"http://photoart.sourceforge.net/quick.php?version=%@" , [[[NSBundle mainBundle] infoDictionary] valueForKey: @"CFBundleVersion"]];
-	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:URL_FORUM]];
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:URL_PRODUCT]];//URL_FORUM]];
 }
 
 - (IBAction)openHelp:(id)sender

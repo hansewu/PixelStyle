@@ -5,7 +5,7 @@
 //  Created by lchzh on 6/9/15.
 //  Copyright (c) 2015 effectmatrix. All rights reserved.
 //
-
+#import <stdio.h>
 #import "GPUImageEffectFilter.h"
 
 @implementation GPUImageEffectFilter
@@ -774,6 +774,8 @@ NSString *const kGPUImageEffectFragmentShaderString = SHADER_STRING
     self.strokeSize = 0.1;
     self.strokeColor = makeGPUVector3(0.0, 0.0, 0.0);
     self.strokeColorAlpha = 1.0;
+    //GPUVectorLong test;
+    //self.strokeGradientColor = test;
     
     //fill
     fillEnableUniform = [filterProgram uniformIndex:@"fillEnable"];
@@ -910,6 +912,7 @@ NSString *const kGPUImageEffectFragmentShaderString = SHADER_STRING
     _strokeGradientColor = strokeGradientColor;
     int size = _strokeGradientColor.array[0];
     size = size * 4 + 1;
+   
     [self setFloatArray:_strokeGradientColor.array length:size forUniform:strokeGradientColorUniform program:filterProgram];
 }
 

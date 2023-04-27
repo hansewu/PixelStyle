@@ -140,6 +140,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 089C166AFE841209C02AAC07 /* Invert */;
@@ -202,7 +203,6 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = Invert;
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = YES;
 			};
@@ -222,7 +222,6 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = Invert;
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -230,7 +229,7 @@
 		A893C29A09BD8F17000B6D38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
 			};
@@ -239,7 +238,7 @@
 		A893C29B09BD8F17000B6D38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
 			};

@@ -169,7 +169,7 @@
 
 -(IBAction)onForum:(id)sender
 {
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:URL_FORUM]];
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:URL_PRODUCT]];//URL_FORUM]];
 }
 
 //- (NSRect)constrainFrameRect:(NSRect)frameRect toScreen:(NSScreen *)screen

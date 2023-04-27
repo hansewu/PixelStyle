@@ -12,6 +12,38 @@
 #import <QuartzCore/QuartzCore.h>
 #import <CoreGraphics/CoreGraphics.h>
 
+static void swapRgbaToArgb(unsigned char *output, unsigned char *input, int length)
+{
+    unsigned char *from = input;
+    unsigned char *to = output;
+
+    if(input != output)
+    {
+        for(int i=0; i< length; i++)
+        {
+            to[0] = from[3];
+            to[1] = from[0];
+            to[2] = from[1];
+            to[3] = from[2];
+            from += 4;
+            to += 4;
+        }
+    }
+    else
+    {
+        for(int i=0; i< length; i++)
+        {
+            uint32 nValue = *(uint32 *)from;
+            unsigned char *tfrom = (unsigned char *)&nValue;
+            to[0] = tfrom[3];
+            to[1] = tfrom[0];
+            to[2] = tfrom[1];
+            to[3] = tfrom[2];
+            from += 4;
+            to += 4;
+        }
+    }
+}
 
 #define make_128(x) (x + 16 - (x % 16))
 
@@ -33,7 +65,7 @@
     [super dealloc];
 }
 
-
+/*
 - (unsigned char*)makePerspectiveTransformWithPoint_tl:(IntPoint)point_tl Point_tr:(IntPoint)point_tr Point_br:(IntPoint)point_br Point_bl:(IntPoint)point_bl OnData:(unsigned char*)srcData FromRect:(IntRect)srcRect spp:(int)spp opaque:(BOOL)hasOpaque newWidth:(int*)newWidth newHeight:(int*)newHeight colorSpace:(CGColorSpaceRef)colorSpaceRef backColor:(NSColor *)nsBackColor
 {
     NSTimeInterval begin = [NSDate timeIntervalSinceReferenceDate];
@@ -144,13 +176,13 @@
     return resdata;
     
 }
-
+*/
 - (void)initWithSrcData:(unsigned char*)srcData FromRect:(IntRect)srcRect spp:(int)spp opaque:(BOOL)hasOpaque colorSpace:(CGColorSpaceRef)colorSpaceRef backColor:(NSColor *)nsBackColor premultied:(BOOL)premultied
 {
-    __m128i opaquea = _mm_set1_epi32(0x000000FF);
+ /*   __m128i opaquea = _mm_set1_epi32(0x000000FF);
     __m128i *vdata, *voverlay, *vresdata;
     __m128i vstore;
-    int vec_len;
+    int vec_len;*/
     
     m_fromRect = srcRect;
     int width = srcRect.size.width;
@@ -162,10 +194,11 @@
     }else{
         premultiplyBitmap(4, newdata, srcData, srcRect.size.width * srcRect.size.height);
     }
-    
+    if(m_srcData) free(m_srcData);
     m_srcData = newdata;
     
-    vec_len = width * height * 4;
+    swapRgbaToArgb(newdata, newdata, width * height);
+   /* vec_len = width * height * 4;
     if (vec_len % 16 == 0) { vec_len /= 16; }
     else { vec_len /= 16; vec_len++; }
     
@@ -175,7 +208,7 @@
         vdata[i] = _mm_slli_epi32(vdata[i], 8);
         vdata[i] = _mm_add_epi32(vdata[i], vstore);
     }
-    
+    */
     
     CGImageRef temp_image;
     CGImageDestinationRef temp_writer;

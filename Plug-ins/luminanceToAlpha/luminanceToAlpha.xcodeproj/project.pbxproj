@@ -218,7 +218,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.photoart.luminanceToAlpha;
 				PRODUCT_NAME = luminanceToAlpha;
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = YES;
 			};
@@ -244,7 +243,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.photoart.luminanceToAlpha;
 				PRODUCT_NAME = luminanceToAlpha;
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -252,7 +250,7 @@
 		A8F2BD5E0BCD1EE6001DB353 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
 			};
@@ -261,7 +259,7 @@
 		A8F2BD5F0BCD1EE6001DB353 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
 			};

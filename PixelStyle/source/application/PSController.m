@@ -604,8 +604,8 @@ void Vector_SetupDefaults();
     [m_menuItemHide setTitle:[NSString stringWithFormat:@"%@ %@",NSLocalizedString(@"Hide", nil),sProductName]];
     [m_menuItemQuit setTitle:[NSString stringWithFormat:@"%@ %@",NSLocalizedString(@"Quit", nil),sProductName]];
     [m_menuItemHelp setTitle:[NSString stringWithFormat:@"%@ %@",sProductName, NSLocalizedString(@"Help", nil)]];
-    [m_menuItemForum setTitle:[NSString stringWithFormat:@"%@ %@",sProductName ,NSLocalizedString(@"Forum", nil)]];
-    
+   // [m_menuItemForum setTitle:[NSString stringWithFormat:@"%@ %@",sProductName ,NSLocalizedString(@"Forum", nil)]];
+    [m_menuItemForum setTitle:[NSString stringWithFormat:@"%@ %@",sProductName ,NSLocalizedString(@"Homepage", nil)]];
 //#ifdef PROPAINT_VERSION
 //    NSArray *arrMenu = [[NSApp mainMenu] itemArray];
 //    for(NSMenuItem *item in arrMenu)

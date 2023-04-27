@@ -121,7 +121,7 @@
 }
 
 
-
+/*
 - (unsigned char *)executeChannel:(PluginData *)pluginData withBitmap:(unsigned char *)data
 {
 	int i, j, vec_len, width, height, channel;
@@ -281,7 +281,7 @@
 	
 	return resdata;
 }
-
+*/
 - (BOOL)validateMenuItem:(id)menuItem
 {
 	return YES;

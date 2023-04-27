@@ -574,7 +574,7 @@
 	
 	return resdata;
 }
-
+/*
 - (unsigned char *)prepareAlphaAffineTransform:(NSAffineTransform *)at withImage:(unsigned char *)data spp:(int)spp width:(int)width height:(int)height
 {
 	unsigned char *ndata;
@@ -738,12 +738,12 @@
 
 - (unsigned char *)unprepareImage:(unsigned char *)data spliceAlpha:(unsigned char *)alpha spp:(int)spp ispp:(int)ispp width:(int)width height:(int)height
 {
-	/*#ifdef __ppc__
+	#ifdef __ppc__
 	vector unsigned char TOGGLERGBR = (vector unsigned char)(0x00, 0x01, 0x02, 0x13, 0x04, 0x05, 0x06, 0x17, 0x08, 0x09, 0x0A, 0x1B, 0x0C, 0x0D, 0x0E, 0x1F);
 	vector unsigned char HIGHVEC = (vector unsigned char)(0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF);
 	vector unsigned char *vdata, *rvdata, *ovdata;
 	int vec_len;
-	#endif*/
+	#endif
 	unsigned char *ndata;
 	int i;
 
@@ -752,10 +752,10 @@
 	if (spp == 2) {
 	
 		for (i = 0; i < width * height; i++) {
-			/* The transformation apparently will always return spp as 4, which means that when 
-			 transforming something that's greyscale, if we force the spp of the output to have been
-			 2, then we'll never get the data. Conviently, by just taking the first channel, we're 
-			 able to get perfectly fine data.*/
+			// The transformation apparently will always return spp as 4, which means that when
+			// transforming something that's greyscale, if we force the spp of the output to have been
+			// 2, then we'll never get the data. Conviently, by just taking the first channel, we're
+			// able to get perfectly fine data.
 			//if (ispp == 2) {
 				ndata[i * 2] = data[i * ispp];
 				ndata[i * 2 + 1] = (alpha ?  alpha[i * ispp] : 0xFF);
@@ -766,7 +766,7 @@
 	else {
 		
 		// I'm writing this on an Intel machine but AltiVec still kicks ass
-		/* Maybe, if it worked...
+		// Maybe, if it worked...
 		#if __ppc__
 		vec_len = width * height * 4;
 		if (vec_len % 16 == 0) { vec_len /= 16; }
@@ -785,7 +785,7 @@
 				rvdata[i] = vec_perm(vdata[i], HIGHVEC, TOGGLERGBR);
 			}
 		}
-		#else*/
+		#else
 		for (i = 0; i < width * height; i++) {
 			ndata[i * 4] = data[i * ispp];
 			ndata[i * 4 + 1] = data[i * ispp + 1];
@@ -817,7 +817,7 @@
 	
 	return odata;
 }
-
+*/
 
 - (BOOL)validateMenuItem:(id)menuItem
 {

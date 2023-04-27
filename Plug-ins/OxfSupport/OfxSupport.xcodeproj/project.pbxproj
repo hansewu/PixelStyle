@@ -357,7 +357,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.photoart.OfxSupport;
 				PRODUCT_NAME = OfxSupport;
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = YES;
 			};
@@ -390,7 +389,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.photoart.OfxSupport;
 				PRODUCT_NAME = OfxSupport;
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;

@@ -1133,7 +1133,7 @@
 
 -(NSString *)configFavouriteBrushFile
 {
-    NSArray *paths =NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);// NSDocumentDirectory,NSUserDomainMask, YES);
+    NSArray *paths =NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);//NSCachesDirectory, NSUserDomainMask, YES);// 
     NSString *docDir = [paths objectAtIndex:0];
     NSString *pPath = [docDir stringByAppendingString:@"/favouritebrushconfig.txt"];
     

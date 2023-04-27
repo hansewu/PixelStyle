@@ -160,6 +160,59 @@
 
 - (void)execute
 {
+    PluginData *pluginData;
+
+    pluginData = [(PSPlugins *)seaPlugins data];
+    
+    IntRect selection;
+    int i, width, height;
+    unsigned char *data, *resdata, *overlay, *replace;
+    int vec_len;
+    
+    // Set-up plug-in
+    [pluginData setOverlayOpacity:255];
+    [pluginData setOverlayBehaviour:kReplacingBehaviour];
+    selection = [pluginData selection];
+    
+    int spp = [pluginData spp];
+    
+    // Get plug-in data
+    width = [pluginData width];
+    height = [pluginData height];
+
+    data = [pluginData data];
+    overlay = [pluginData overlay];
+    replace = [pluginData replace];
+    
+    int channelMode = [pluginData channel];
+    
+    preProcessToARGB(data, spp, width, height, newdata, channelMode);
+    // Run CoreImage effect
+    resdata = [self tile:pluginData withBitmap:newdata];
+    
+    postProcessToRGBA(data, selection, width, height, resdata, spp, selection.size.width, selection.size.height, newdata, channelMode);
+    
+    // Copy to destination
+    
+    if ((selection.size.width > 0 && selection.size.width < width) || (selection.size.height > 0 && selection.size.height < height))
+    {
+        for (i = 0; i < selection.size.height; i++)
+        {
+            memset(&(replace[width * (selection.origin.y + i) + selection.origin.x]), 0xFF, selection.size.width);
+            memcpy(&(overlay[(width * (selection.origin.y + i) + selection.origin.x) * spp]), &(newdata[selection.size.width * spp * i]), selection.size.width * spp);
+        }
+    }
+    else
+    {
+        memset(replace, 0xFF, width * height);
+        memcpy(overlay, newdata, width * height * spp);
+    }
+    
+}
+
+/*
+- (void)execute
+{
 	PluginData *pluginData;
 
 	pluginData = [(PSPlugins *)seaPlugins data];
@@ -170,7 +223,7 @@
 		[self executeColor:pluginData];
 	}
 }
-
+*/
 - (IBAction)update:(id)sender
 {
     [m_positionXLabel setIntValue:[m_positionXSlider floatValue]];
@@ -181,7 +234,7 @@
 	PluginData *pluginData;
 	
 	acute = roundf([acuteSlider floatValue]) / 100.0;
-	if (acute > -0.015 && acute < 0.00) acute = 0.00; /* Force a zero point */
+	if (acute > -0.015 && acute < 0.00) acute = 0.00; // Force a zero point
 	
 	[panel setAlphaValue:1.0];
 	
@@ -191,7 +244,7 @@
     
 	[self preview:self];
 }
-
+/*
 - (void)executeGrey:(PluginData *)pluginData
 {
 	IntRect selection;
@@ -407,7 +460,7 @@
 	
 	return resdata;
 }
-
+*/
 #define PI 3.14159265
 
 - (unsigned char *)tile:(PluginData *)pluginData withBitmap:(unsigned char *)data

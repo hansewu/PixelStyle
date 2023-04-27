@@ -143,7 +143,7 @@ PSMenuManager *m_menuManagerId;
     m_menuItemSearch.title    = NSLocalizedString(@"Search", nil);
     m_menuItemSendFeedbackToApple.title    = NSLocalizedString(@"SendFeedbackToApple", nil);
     m_menuItemPSHelp.title   = [NSString stringWithFormat:@"%@ %@",sProductName, NSLocalizedString(@"Help", nil)];
-    m_menuItemForum.title  = [NSString stringWithFormat:@"%@ %@",sProductName,NSLocalizedString(@"Forum", nil)];
+    m_menuItemForum.title  = [NSString stringWithFormat:@"%@ %@",sProductName,NSLocalizedString(@"Homepage", nil)];
     m_menuItemFeedbackWithEmail.title   = NSLocalizedString(@"Feedback with email", nil);
     
     

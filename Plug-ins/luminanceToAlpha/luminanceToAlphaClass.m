@@ -117,7 +117,7 @@
 	return;
 }
 
-
+/*
 
 - (unsigned char *)executeChannel:(PluginData *)pluginData withBitmap:(unsigned char *)data
 {
@@ -278,7 +278,7 @@
 	
 	return resdata;
 }
-
+*/
 - (BOOL)validateMenuItem:(id)menuItem
 {
 	return YES;

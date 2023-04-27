@@ -71,10 +71,31 @@
             case V_FLOAT_ARRAY:{
                 //value = [NSValue valueWithBytes:paraInfo.value.fFloatVector4 objCType:@encode(GPUVector4)];
                 //value = [NSData dataWithBytes:paraInfo.value.fFloatArray length:200 * sizeof(float)];
-                GPUVectorLong vecLong;
-                memcpy(vecLong.array, paraInfo.value.fFloatArray, 100 * sizeof(float));
-                value = [NSValue valueWithBytes:&vecLong objCType:@encode(GPUVectorLong)];
-                //value = [NSNumber numberwith];
+                int size = paraInfo.value.fFloatArray[0];
+                size = size * 4 + 1;
+                //float *pArray = (float *)malloc(size*sizeof(float));
+                GPUVectorLong vecLong;// = (GPUVectorLong *)malloc(sizeof(GPUVectorLong));
+                memcpy(vecLong.array, paraInfo.value.fFloatArray, size * sizeof(float));
+                //value = [NSValue valueWithBytes:pArray objCType:@encode(float [9])];
+                //value = [NSValue valueWithBytes:vecLong objCType:@encode(GPUVectorLong)];
+                //调用下面的[self setValue:value forKey:key]; 会出错，只能直接调用，原因未知
+                if([key isEqualToString:@"strokeGradientColor"])
+                    [self setStrokeGradientColor:vecLong];
+                else if([key isEqualToString:@"strokeGradientColorAlpha"])
+                    [self setStrokeGradientColorAlpha:vecLong];
+                else if([key isEqualToString:@"fillGradientColor"])
+                    [self setFillGradientColor:vecLong];
+                else if([key isEqualToString:@"fillGradientColorAlpha"])
+                    [self setFillGradientColorAlpha:vecLong];
+                else if([key isEqualToString:@"outerGlowGradientColor"])
+                    [self setOuterGlowGradientColor:vecLong];
+                else if([key isEqualToString:@"outerGlowGradientColorAlpha"])
+                    [self setOuterGlowGradientColorAlpha:vecLong];
+                else if([key isEqualToString:@"innerGlowGradientColor"])
+                    [self setInnerGlowGradientColor:vecLong];
+                else if([key isEqualToString:@"innerGlowGradientColorAlpha"])
+                    [self setInnerGlowGradientColorAlpha:vecLong];
+                
                 
             }
                 break;
@@ -82,9 +103,9 @@
             default:
                 break;
         }
-        assert(value);
-        
-        [self setValue:value forKey:key];
+        //assert(value);
+        if(paraInfo.parameterType != V_FLOAT_ARRAY) //
+            [self setValue:value forKey:key];
     }
 }
 
