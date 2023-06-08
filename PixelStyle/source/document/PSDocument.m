@@ -54,6 +54,14 @@ enum {
 	kPlugInStart = 4
 };
 
+
+static void listImageCodecs(void){
+    CFArrayRef mySourceTypes = CGImageSourceCopyTypeIdentifiers();
+    CFShow(mySourceTypes);
+    CFArrayRef myDestinationTypes = CGImageDestinationCopyTypeIdentifiers();
+    CFShow(myDestinationTypes);
+}
+
 @implementation PSDocument
 
 - (id)init
@@ -65,6 +73,7 @@ enum {
 	if (![super init])
 		return NULL;
 	
+    //listImageCodecs(); //test
 	// Reset m_nUniqueLayerID
 	m_nUniqueLayerID = -1;
 	m_nUniqueFloatingLayerID = 4999;

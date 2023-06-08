@@ -101,7 +101,8 @@ static OSErr getcm(SInt32 command, SInt32 *size, void *data, void *refCon)
 
 - (BOOL)writeDocument:(id)document toFile:(NSString *)path
 {
-    float fScreenScale = [[NSScreen mainScreen] backingScaleFactor];
+    return [self basicWriteDocument:document toFile:path representationUsingType:NSTIFFFileType properties:nil];
+/*    float fScreenScale = [[NSScreen mainScreen] backingScaleFactor];
     int nWidth = [(PSContent *)[document contents] width];
     int nHeight = [(PSContent *)[document contents] height];
     NSSize imageSize = NSMakeSize(nWidth/fScreenScale, nHeight/fScreenScale);
@@ -153,7 +154,7 @@ static OSErr getcm(SInt32 command, SInt32 *size, void *data, void *refCon)
     
     return YES;
 
-    
+    */
     
 //    int i, j, width, height, spp, xres, yres, linebytes;
 //    unsigned char *srcData, *tempData, *destData, *buf;

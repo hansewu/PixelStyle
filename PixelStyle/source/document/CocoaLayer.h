@@ -31,5 +31,6 @@
 	@result		Returns instance upon success (or NULL otherwise).
 */
 - (id)initWithImageRep:(id)imageRep document:(id)doc spp:(int)lspp;
+- (id)initWithImageRep32:(id)imageRep document:(id)doc;
 
 @end

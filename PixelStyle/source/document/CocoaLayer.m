@@ -6,8 +6,63 @@
 
 @implementation CocoaLayer
 
+- (id)initWithImageRep32:(id)imageRep document:(id)doc
+{
+    int i;
+    // Initialize superclass first
+    if (![super initWithDocument:doc])
+        return NULL;
+    
+    // Determine the width and height of this layer
+    
+    long lwidth = [(NSImageRep*)imageRep pixelsWide];
+    long lheight = [(NSImageRep*)imageRep pixelsHigh];
+    
+    if(lwidth<kMinImageSize || lwidth > kMaxImageSize ||
+       lheight < kMinImageSize || lheight > kMaxImageSize) {
+        return NULL;
+    }
+
+    m_nWidth = (int)lwidth;
+    m_nHeight = (int)lheight;
+    
+    m_nSpp = 4; //lspp;
+    
+    unsigned char *pData = convertRepToRGBA(imageRep);
+    if(!pData){
+        return NULL;
+    }
+    
+    m_bHasAlpha = NO;
+    int alphaPos = m_nSpp - 1;
+    for (i = 0; i < m_nWidth * m_nHeight; i++)
+    {
+        if (pData[i*m_nSpp+alphaPos] != 255)
+            m_bHasAlpha = YES;
+    }
+    if(m_bHasAlpha)
+        unpremultiplyBitmap(m_nSpp, pData, pData, m_nWidth * m_nHeight);
+   
+    //modify by lcz
+    if (!m_pImageData)
+    {
+        m_pImageData = [[PSSecureImageData alloc] initDataWithBuffer:pData width:m_nWidth height:m_nHeight spp:m_nSpp alphaPremultiplied:false];
+    }
+    else
+    {
+        [m_pImageData reInitDataWithBuffer:pData width:m_nWidth height:m_nHeight spp:m_nSpp  alphaPremultiplied:false];
+    }
+    
+    [self refreshTotalToRender];
+    
+    return self;
+}
+
 - (id)initWithImageRep:(id)imageRep document:(id)doc spp:(int)lspp
 {
+    if(lspp == 4)
+        return [self initWithImageRep32:imageRep document:doc];
+    
 	int i, space, bps, sspp, format;
 	unsigned char *srcPtr;
 	CMProfileLocation cmProfileLoc;
@@ -53,12 +108,16 @@
 	}
 	
 	// Extract color profile
-	profile = NULL;//[imageRep valueForProperty:NSImageColorSyncProfileData];
-/*	if (profile) {
-		cmProfileLoc.locType = cmPtrBasedProfile;
-		cmProfileLoc.u.ptrLoc.p = (Ptr)[profile bytes];
-	}
-*/	
+    int cmPtrBasedProfile           = 3;
+	profile = NULL;//[imageRep valueForProperty:NSImageColorSyncProfileData];//
+	/*if (profile)
+    {
+		//cmProfileLoc.locType = cmPtrBasedProfile;
+        //cmProfileLoc.u.bufferLoc.buffer = (Ptr)[profile bytes];
+        //cmProfileLoc.u.bufferLoc.size = (UInt32)[profile length] ;
+		//cmProfileLoc.ptrLoc.p = (Ptr)[profile bytes];
+	}*/
+	
 	// Convert data to what we want
 	bipp = [imageRep bitsPerPixel];
 	bypr = [imageRep bytesPerRow];

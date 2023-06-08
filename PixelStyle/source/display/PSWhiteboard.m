@@ -1207,7 +1207,7 @@ extern IntPoint gScreenResolution;
  
     //每次重新生成太浪费，可从PSSynthesizeImageRender获取
     
-    float fScreenScale = 1.0;//[[NSScreen mainScreen] backingScaleFactor];
+    float fScreenScale = 1.0; //[[NSScreen mainScreen] backingScaleFactor];
     int nWidth = [(PSContent *)[m_idDocument contents] width];
     int nHeight = [(PSContent *)[m_idDocument contents] height];
     NSSize imageSize = NSMakeSize(nWidth/fScreenScale, nHeight/fScreenScale);
@@ -1216,14 +1216,14 @@ extern IntPoint gScreenResolution;
     //画到NSImage
     NSImage *image = [[[NSImage alloc] initWithSize:NSSizeFromCGSize(imageSize)] autorelease];
     [image lockFocus];
-    
+    [[NSGraphicsContext currentContext] setImageInterpolation:NSImageInterpolationHigh];
     CGContextRef context = (CGContextRef)[[NSGraphicsContext currentContext] graphicsPort];
     CGContextSaveGState(context);
     CGContextConcatCTM(context, CGAffineTransformMakeScale(1/fScreenScale, 1/fScreenScale));
     NSAffineTransform *transform = [NSAffineTransform transform];
-    [transform translateXBy:0 yBy:nHeight];
-    [transform scaleXBy:1.0 yBy:-1.0];
-    [transform concat];
+  //  [transform translateXBy:0 yBy:nHeight];
+    //[transform scaleXBy:1.0 yBy:-1.0];
+  //  [transform concat];
     
     [m_idCompositor compositeLayersToContextFull:context];
     CGContextRestoreGState(context);

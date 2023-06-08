@@ -303,6 +303,16 @@ static OSErr getcm(SInt32 command, SInt32 *size, void *data, void *refCon)
 
 - (BOOL)writeDocument:(id)document toFile:(NSString *)path
 {
+    int nXRes = [(PSContent *)[document contents] xres];
+    int nYRes = [(PSContent *)[document contents] yres];
+    
+    NSDictionary* properties = [NSDictionary dictionaryWithObjectsAndKeys:
+                                [NSNumber numberWithFloat:[self reviseCompression]], kCGImageDestinationLossyCompressionQuality,
+                                [NSNumber numberWithInteger:nYRes], kCGImagePropertyDPIHeight,
+                                [NSNumber numberWithInteger:nXRes], kCGImagePropertyDPIWidth,
+                                nil];
+    return [self basicWriteDocument:document toFile:path representationUsingType:NSJPEGFileType properties:properties];
+/*
     float fScreenScale = [[NSScreen mainScreen] backingScaleFactor];
     int nWidth = [(PSContent *)[document contents] width];
     int nHeight = [(PSContent *)[document contents] height];
@@ -371,7 +381,7 @@ static OSErr getcm(SInt32 command, SInt32 *size, void *data, void *refCon)
         CFRelease(imageDest);
     
     return YES;
-    
+    */
 //    int width, height, xres, yres, spp;
 //    unsigned char *srcData, *destData;
 //    NSBitmapImageRep *imageRep;

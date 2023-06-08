@@ -475,6 +475,10 @@
         
         if (isLayerShadowEnable)
         {
+            CGAffineTransform trans = CGContextGetCTM(context);
+            printf("CGAffineTransform = %.3f %.3f %.3f %.3f %.3f %.3f\n", trans.a, trans.b, trans.c, trans.d, trans.tx, trans.ty);
+            //if(trans.d < 0.0 && fabs(fabs(trans.d) -1.0) < 1.0e-6)
+            //    yoffset = -yoffset;
             CGColorRef shadowColor = CGColorCreateGenericRGB(red / 255.0, green / 255.0,  blue / 255.0, colorAlpha);
             CGContextSetShadowWithColor(context, CGSizeMake(xoffset, yoffset), shadowBlur, shadowColor);
             CGColorRelease(shadowColor);

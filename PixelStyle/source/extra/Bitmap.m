@@ -729,3 +729,34 @@ void CloseDisplayProfile(CMProfileRef profile)
 	CMCloseProfile(profile);
 }
 
+/*
+ convert NSImageRep to a format Seashore can work with, which is ARGB
+ */
+unsigned char *convertRepToRGBA(NSImageRep *imageRep)
+{
+    
+    int width = (int)[imageRep pixelsWide];
+    int height = (int)[imageRep pixelsHigh];
+    
+    unsigned char *buffer = calloc(width*height*4,sizeof(unsigned char));
+    
+    if(!buffer){
+        return NULL;
+    }
+    
+    NSBitmapImageRep *bitmapWhoseFormatIKnow = [[NSBitmapImageRep alloc] initWithBitmapDataPlanes:&buffer pixelsWide:width pixelsHigh:height  bitsPerSample:8 samplesPerPixel:4 hasAlpha:YES isPlanar:NO colorSpaceName:NSDeviceRGBColorSpace
+                                    bitmapFormat:0 //~NSBitmapFormatAlphaFirst
+                                    bytesPerRow:width*4 bitsPerPixel:8*4];
+    
+    [bitmapWhoseFormatIKnow setSize:[imageRep size]];
+    
+    [NSGraphicsContext saveGraphicsState];
+    NSGraphicsContext *ctx = [NSGraphicsContext graphicsContextWithBitmapImageRep:bitmapWhoseFormatIKnow];
+    [NSGraphicsContext setCurrentContext:ctx];
+    [imageRep draw];
+    [NSGraphicsContext restoreGraphicsState];
+
+    //unpremultiplyBitmap(4,buffer,buffer,width*height);
+
+    return buffer;
+}

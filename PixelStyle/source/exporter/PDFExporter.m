@@ -10,6 +10,7 @@
 #import "PSContent.h"
 #import "PSDocument.h"
 #import "PSWhiteboard.h"
+#import "Bitmap.h"
 
 @implementation PDFExporter
 
@@ -35,7 +36,48 @@
 
 - (BOOL)writeDocument:(id)document toFile:(NSString *)path
 {
-    float fScreenScale = [[NSScreen mainScreen] backingScaleFactor];
+    int i, j, width, height, spp;
+    unsigned char *srcData, *destData;
+    NSBitmapImageRep *imageRep;
+
+    BOOL hasAlpha = NO;
+    
+    // Get the data to write
+    srcData = [(PSWhiteboard *)[document whiteboard] data];
+    width = [(PSContent *)[document contents] width];
+    height = [(PSContent *)[document contents] height];
+    spp = [(PSContent *)[document contents] spp];
+   
+    // Determine whether or not an alpha channel would be redundant
+    for (i = 0; i < width * height && hasAlpha == NO; i++)
+    {
+        if (srcData[(i + 1) * spp - 1] != 255)
+            hasAlpha = YES;
+    }
+    
+    // Strip the alpha channel if necessary
+    if (!hasAlpha)
+    {
+        spp--;
+        destData = malloc(width * height * spp);
+        for (i = 0; i < width * height; i++)
+        {
+            for (j = 0; j < spp; j++)
+                destData[i * spp + j] = srcData[i * (spp + 1) + j];
+        }
+    }
+    else
+    {
+        destData = malloc(width * height * spp);
+        premultiplyBitmap(spp, destData, srcData, width*height);
+    }
+    // Make an image representation from the data
+    imageRep = [[[NSBitmapImageRep alloc] initWithBitmapDataPlanes:&destData pixelsWide:width pixelsHigh:height bitsPerSample:8 samplesPerPixel:spp hasAlpha:hasAlpha isPlanar:NO colorSpaceName:(spp > 2) ? NSDeviceRGBColorSpace : NSDeviceWhiteColorSpace bytesPerRow:width * spp bitsPerPixel:8 * spp] autorelease];
+    
+    NSImage *image = [[NSImage alloc] init];
+    [image addRepresentation:imageRep];
+    
+  /*  float fScreenScale = [[NSScreen mainScreen] backingScaleFactor];
     int nWidth = [(PSContent *)[document contents] width];
     int nHeight = [(PSContent *)[document contents] height];
     NSSize imageSize = NSMakeSize(nWidth/fScreenScale, nHeight/fScreenScale);
@@ -55,7 +97,7 @@
     [[[document whiteboard] compositor] compositeLayersToContextFull:context];
     CGContextRestoreGState(context);
     [image unlockFocus];
-    
+    */
     
     NSImageView *myView;
     NSRect vFrame;

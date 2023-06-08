@@ -68,4 +68,5 @@
 */
 - (BOOL)writeDocument:(id)document toFile:(NSString *)path;
 
+- (BOOL)basicWriteDocument:(id)document toFile:(NSString *)path representationUsingType:(NSBitmapImageFileType)type properties:(NSDictionary*)properties;
 @end

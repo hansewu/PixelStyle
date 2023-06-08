@@ -177,8 +177,9 @@
 	}
 	
 	// Determine the image type
-	test = [[imageRep colorSpaceName] isEqualToString:NSCalibratedBlackColorSpace] || [[imageRep colorSpaceName] isEqualToString:NSDeviceBlackColorSpace];
-	test = test || [[imageRep colorSpaceName] isEqualToString:NSCalibratedWhiteColorSpace] || [[imageRep colorSpaceName] isEqualToString:NSDeviceWhiteColorSpace];
+    NSString *colorSpaceName = [imageRep colorSpaceName];
+	test = [colorSpaceName isEqualToString:NSCalibratedBlackColorSpace] || [colorSpaceName isEqualToString:NSDeviceBlackColorSpace];
+	test = test || [colorSpaceName isEqualToString:NSCalibratedWhiteColorSpace] || [colorSpaceName isEqualToString:NSDeviceWhiteColorSpace];
 	if (test) 
 		m_nType = XCF_GRAY_IMAGE;
 	else

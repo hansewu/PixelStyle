@@ -301,6 +301,10 @@ static OSErr getcm(SInt32 command, SInt32 *size, void *data, void *refCon)
 
 - (BOOL)writeDocument:(id)document toFile:(NSString *)path
 {
+    NSDictionary* properties = [NSDictionary dictionaryWithObjectsAndKeys:
+                                [NSNumber numberWithFloat:[self reviseCompression]], NSImageCompressionFactor,nil];
+    return [self basicWriteDocument:document toFile:path representationUsingType:NSJPEG2000FileType properties:properties];
+/*
 #ifdef MACOS_10_4_COMPILE
     
     float fScreenScale = [[NSScreen mainScreen] backingScaleFactor];
@@ -410,6 +414,7 @@ static OSErr getcm(SInt32 command, SInt32 *size, void *data, void *refCon)
 #else
     return NO;
 #endif
+ */
 }
 
 static CGContextRef MyCreateBitmapContext(int pixelsWidth,int pixelsHigh, void * pBuffer, int bAlphaPremultiplied)

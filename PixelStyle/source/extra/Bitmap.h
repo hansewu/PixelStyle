@@ -156,3 +156,5 @@ void OpenDisplayProfile(CMProfileRef *profile);
 				The profile to make the default display's profile.
 */
 void CloseDisplayProfile(CMProfileRef profile);
+
+unsigned char *convertRepToRGBA(NSImageRep *imageRep);
