@@ -25,6 +25,7 @@
 #include "ofxCore.h"
 #include "ofxImageEffect.h"
 
+
 // my host
 #include "hostDemoHostDescriptor.h"
 #include "hostDemoEffectInstance.h"

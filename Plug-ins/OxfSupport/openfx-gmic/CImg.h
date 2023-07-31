@@ -301,7 +301,7 @@ enum {FALSE_WIN = FALSE};
 #endif
 #endif
 #if cimg_use_openmp!=0
-#include <omp.h>
+#include "omp.h"
 #define cimg_pragma_openmp(p) cimg_pragma(omp p)
 #else
 #define cimg_pragma_openmp(p)

@@ -114,31 +114,57 @@ void exportToPPM(const std::string& fname, MyHost::MyImage* im)
     }
   }
 }
-OFX::Host::ImageEffect::Instance *oxfHostLoad(const std::string &pluginPath, const std::string &plugid);
-int oxfHostGetParamsCount(OFX::Host::ImageEffect::Instance *instance);
-int oxfHostGetParamInfo(OFX::Host::ImageEffect::Instance *instance,
+
+typedef void * OFX_HOST_HANDLE;
+typedef void * HOST_FILTERS_MANAGER;
+HOST_FILTERS_MANAGER oxfInit(const std::string &pluginPath);
+int getPluginsCount(HOST_FILTERS_MANAGER hostFilters);
+int getPluginInfo(HOST_FILTERS_MANAGER hostFilters, int nIndex, std::string &outPluginLabel, std::string &outPluginIdentifier);
+
+//typedef void * OFX_HOST_HANDLE;
+OFX_HOST_HANDLE oxfHostLoad(HOST_FILTERS_MANAGER hostFilters, const std::string &pluginIdentifier);
+int oxfHostGetParamsCount(OFX_HOST_HANDLE ofxHandle);
+int oxfHostGetParamInfo(OFX_HOST_HANDLE ofxHandle,
                         int index, std::string &outParaName, std::string &outParaType);
-int oxfHostGetParamDefaultInfo(OFX::Host::ImageEffect::Instance *instance,
-                               int index, int nValueIndex, std::string &outParaDefault, std::string &outParaMax, std::string &outParaMin);
+int oxfHostGetParamDefaultInfo(OFX_HOST_HANDLE ofxHandle,
+                               int index, int nValueIndex, std::string &outParaDefault, std::string &outParaMax, std::string &outParaMin, std::vector<std::string> *pvecChoice);
+int oxfHostSetParamValue(OFX_HOST_HANDLE ofxHandle,
+                         int index, int nValueIndex, const std::string &paraValue);
+int oxfHostSetImageFrame(OFX_HOST_HANDLE ofxHandle,
+                         unsigned char *pRGBABuf, int nWidth, int nHeight);
+int oxfHostProcess(OFX_HOST_HANDLE ofxHandle, unsigned char *pRGBABufOut, int nBufWidth, int nBufHeight);
 int test()
 {
-    OFX::Host::ImageEffect::Instance *effectIn = oxfHostLoad("/Users/apple/Library/Developer/Xcode/DerivedData/HostSupport-fqanezsqoesezlfisjqyirptjlkx/Build/Products/Debug", "eu.gmic.GradientRGB");
+    HOST_FILTERS_MANAGER hFilters = oxfInit(std::string("/Volumes/osx1013/Users/Shared/project/2023/PixelStyle/Plug-ins/OxfSupport/openfx-gmic/GMIC_OFX/release"));
+    
+    OFX_HOST_HANDLE effectIn = oxfHostLoad(hFilters, "eu.gmic.Ripple");
     int nParamCount = oxfHostGetParamsCount(effectIn);
     for(int i=0; i< nParamCount; i++)
     {
         std::string outParaName, outParaType;
         int nDim = oxfHostGetParamInfo(effectIn, i, outParaName, outParaType);
+        printf("outParaName = %s, outParaType = %s, nDim = %d\n", outParaName.c_str(), outParaType.c_str(), nDim);
         for(int j=0; j< nDim; j++)
         {
+            printf("dim = %d\n", j);
+            
             std::string outParaDefault, outParaMax, outParaMin;
-            oxfHostGetParamDefaultInfo(effectIn, i, j, outParaDefault, outParaMax, outParaMin);
+            std::vector<std::string> choise;
+            oxfHostGetParamDefaultInfo(effectIn, i, j, outParaDefault, outParaMax, outParaMin, &choise);
+            
+            printf("outParaDefault = %s, outParaMax = %s, outParaMin = %s\n", outParaDefault.c_str(), outParaMax.c_str(), outParaMin.c_str());
+            
+            for(int k = 0; k< choise.size(); k++)
+                printf("choise = %s", choise[k].c_str());
+            
+            printf("\n");
         }
     }
     return 0;
 }
 int main(int argc, char **argv) 
 {
-    //test();
+    test();
   //_CrtSetBreakAlloc(3168);
 #ifdef _WIN32
   _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );

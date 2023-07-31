@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		18CAD7C728654DFD00E495E2 /* libimofxhost.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CAD7BB2865428400E495E2 /* libimofxhost.dylib */; };
 		18E68B2B28113092009AD2FF /* OfxSupportClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18E68B2A28113092009AD2FF /* OfxSupportClass.mm */; };
+		75DFB25C2A68F287007F8A94 /* libimofxhost.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18CAD7BB2865428400E495E2 /* libimofxhost.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 		A8080AF10C07BF8D0026D06E /* OxfPluginInfo.nib in Resources */ = {isa = PBXBuildFile; fileRef = A8080AEF0C07BF8D0026D06E /* OxfPluginInfo.nib */; };
 		A831E1410789471D0009080F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A831E13F0789471D0009080F /* Localizable.strings */; };
@@ -64,6 +65,16 @@
 			files = (
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DFB2582A68F277007F8A94 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				75DFB25C2A68F287007F8A94 /* libimofxhost.dylib in CopyFiles */,
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -203,6 +214,7 @@
 				8D5B49B1048680CD000E48DA /* Sources */,
 				8D5B49B3048680CD000E48DA /* Frameworks */,
 				18E68B282811302B009AD2FF /* Embed Frameworks */,
+				75DFB2582A68F277007F8A94 /* CopyFiles */,
 			);
 			buildRules = (
 			);

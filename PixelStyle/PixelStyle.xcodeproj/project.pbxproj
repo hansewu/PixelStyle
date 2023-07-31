@@ -5033,6 +5033,8 @@
 		39FC5C351C87E6AC009CD41B /* PSFillController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39FC5C2B1C87DDE0009CD41B /* PSFillController.m */; };
 		39FC5C361C87E6AC009CD41B /* PSGradientController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39FC5C2D1C87DDE0009CD41B /* PSGradientController.m */; };
 		39FE7DCC1C2D1EAB002E5AE8 /* text_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 39FE7DCB1C2D1EAB002E5AE8 /* text_thumbnail.png */; };
+		4BF38E632A68E148004D88BD /* GMIC.ofx.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4BF38E622A68E148004D88BD /* GMIC.ofx.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4BFC37CB2A6585340040886B /* OfxSupport.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18CAD7D62865505A00E495E2 /* OfxSupport.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		56C8A64D1055A1DA0056E36F /* normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 56C8A64C1055A1DA0056E36F /* normal.png */; };
 		75046F332750B0DB008BEF99 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75046F2F2750B0DB008BEF99 /* libstdc++.6.0.9.dylib */; };
 		752D7F2127605B2000FC5299 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75046F2F2750B0DB008BEF99 /* libstdc++.6.0.9.dylib */; };
@@ -5060,6 +5062,7 @@
 		75D9CF101BFF02BD00DB34C6 /* PSSecureImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D9CF0F1BFF02BD00DB34C6 /* PSSecureImageData.m */; };
 		75DA64CD1BF9EBA70045D792 /* PSFontPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DA64CC1BF9EBA70045D792 /* PSFontPanel.m */; };
 		75DA64D21BF9EC430045D792 /* PSTextInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DA64D11BF9EC430045D792 /* PSTextInputView.m */; };
+		75DFB26E2A68FC19007F8A94 /* libimofxhost.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75DFB26D2A68FC18007F8A94 /* libimofxhost.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		75EC118A1DA8ED87008D4C5E /* GPUImageDTFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EC11891DA8ED87008D4C5E /* GPUImageDTFilter.m */; };
 		75EC118B1DA8ED87008D4C5E /* GPUImageDTFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EC11891DA8ED87008D4C5E /* GPUImageDTFilter.m */; };
 		A80EB8A6086F05E300369324 /* JP2 Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = A80EB8A5086F05E300369324 /* JP2 Icon.icns */; };
@@ -8676,6 +8679,13 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "PerspectiveTransform+";
 		};
+		4BFC36DE2A657AE10040886B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18CAD7D02865505A00E495E2 /* OfxSupport.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = OfxSupport;
+		};
 		757D582D285FEEB80042F294 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 35B156F60A2C0116005B688F /* Brightness.xcodeproj */;
@@ -10598,6 +10608,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4BF38E542A68E127004D88BD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = ofx;
+			dstSubfolderSpec = 13;
+			files = (
+				4BF38E632A68E148004D88BD /* GMIC.ofx.bundle in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A89B83C50A426D3B00AD6941 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -10681,6 +10701,7 @@
 				AB4C972B1EC30FFA0059F605 /* GPUImage.framework in CopyFiles */,
 				AB4C972C1EC30FFA0059F605 /* GIMPCore.framework in CopyFiles */,
 				AB4C972D1EC30FFA0059F605 /* TIFF.framework in CopyFiles */,
+				75DFB26E2A68FC19007F8A94 /* libimofxhost.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -10700,6 +10721,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				4BFC37CB2A6585340040886B /* OfxSupport.bundle in CopyFiles */,
 				185B199828470876007EDEE6 /* AlphaToRGB.bundle in CopyFiles */,
 				185B199928470876007EDEE6 /* luminanceToAlpha.bundle in CopyFiles */,
 				185B199A28470876007EDEE6 /* SelectionToAlpha.bundle in CopyFiles */,
@@ -11379,6 +11401,7 @@
 		39FC5C2C1C87DDE0009CD41B /* PSGradientController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSGradientController.h; sourceTree = "<group>"; };
 		39FC5C2D1C87DDE0009CD41B /* PSGradientController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSGradientController.m; sourceTree = "<group>"; };
 		39FE7DCB1C2D1EAB002E5AE8 /* text_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text_thumbnail.png; sourceTree = "<group>"; };
+		4BF38E622A68E148004D88BD /* GMIC.ofx.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GMIC.ofx.bundle; path = "../Plug-ins/OxfSupport/openfx-gmic/GMIC_OFX/release/GMIC.ofx.bundle"; sourceTree = "<group>"; };
 		56C8A64C1055A1DA0056E36F /* normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal.png; sourceTree = "<group>"; };
 		75046F2F2750B0DB008BEF99 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "../Extralibs/libstdc++.6.0.9.dylib"; sourceTree = "<group>"; };
 		75710D121D898F0700A61C61 /* Rotate0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rotate0.png; sourceTree = "<group>"; };
@@ -11397,10 +11420,13 @@
 		75B8CEC91BFFFD7F00C8D997 /* PSRenderSlice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRenderSlice.m; sourceTree = "<group>"; };
 		75D9CF0E1BFF02BC00DB34C6 /* PSSecureImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSSecureImageData.h; sourceTree = "<group>"; };
 		75D9CF0F1BFF02BD00DB34C6 /* PSSecureImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSSecureImageData.m; sourceTree = "<group>"; };
+		75D9D1A92A3171D60091C78B /* WEBPExporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WEBPExporter.h; sourceTree = "<group>"; };
+		75D9D1B72A3171D60091C78B /* WEBPExporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WEBPExporter.m; sourceTree = "<group>"; };
 		75DA64CB1BF9EBA70045D792 /* PSFontPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSFontPanel.h; sourceTree = "<group>"; };
 		75DA64CC1BF9EBA70045D792 /* PSFontPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSFontPanel.m; sourceTree = "<group>"; };
 		75DA64D01BF9EC430045D792 /* PSTextInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTextInputView.h; sourceTree = "<group>"; };
 		75DA64D11BF9EC430045D792 /* PSTextInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTextInputView.m; sourceTree = "<group>"; };
+		75DFB26D2A68FC18007F8A94 /* libimofxhost.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libimofxhost.dylib; path = "../Plug-ins/OxfSupport/libimofxhost.dylib"; sourceTree = "<group>"; };
 		75EC11881DA8ED87008D4C5E /* GPUImageDTFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageDTFilter.h; sourceTree = "<group>"; };
 		75EC11891DA8ED87008D4C5E /* GPUImageDTFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageDTFilter.m; sourceTree = "<group>"; };
 		A801004B0BF96F130048FCD7 /* CIKaleidoscope.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CIKaleidoscope.xcodeproj; path = "../CoreImage Plug-ins/CIKaleidoscope/CIKaleidoscope.xcodeproj"; sourceTree = SOURCE_ROOT; };
@@ -12382,6 +12408,8 @@
 		2A37F4AAFDCFA73011CA2CEA /* Seashore */ = {
 			isa = PBXGroup;
 			children = (
+				75DFB26D2A68FC18007F8A94 /* libimofxhost.dylib */,
+				4BF38E622A68E148004D88BD /* GMIC.ofx.bundle */,
 				18CAD78E2865378700E495E2 /* libomp.dylib */,
 				18E68B482811767D009AD2FF /* roboHumanMatting.framework */,
 				18E68A29280F91D1009AD2FF /* libopencv_flann.405.dylib */,
@@ -14243,6 +14271,8 @@
 				ABB61B701C4A46FA00375C67 /* PDFExporter.m */,
 				390C86161CAE2680008040AF /* SVGExporter.h */,
 				390C86171CAE2680008040AF /* SVGExporter.m */,
+				75D9D1A92A3171D60091C78B /* WEBPExporter.h */,
+				75D9D1B72A3171D60091C78B /* WEBPExporter.m */,
 			);
 			name = "Exporter Classes";
 			path = source/exporter;
@@ -15231,11 +15261,13 @@
 				AB4C972E1EC30FFA0059F605 /* ShellScript */,
 				AB4C972F1EC30FFA0059F605 /* CopyFiles */,
 				AB4C97311EC30FFA0059F605 /* CopyFiles */,
+				4BF38E542A68E127004D88BD /* CopyFiles */,
 				75601E0A23AB549F00E693F7 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4BFC36DF2A657AE10040886B /* PBXTargetDependency */,
 				185B1993284707DC007EDEE6 /* PBXTargetDependency */,
 				185B1995284707DC007EDEE6 /* PBXTargetDependency */,
 				185B1997284707DC007EDEE6 /* PBXTargetDependency */,
@@ -23915,6 +23947,11 @@
 			name = "PerspectiveTransform+";
 			targetProxy = 39C7882B1DAD302D00379B9B /* PBXContainerItemProxy */;
 		};
+		4BFC36DF2A657AE10040886B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OfxSupport;
+			targetProxy = 4BFC36DE2A657AE10040886B /* PBXContainerItemProxy */;
+		};
 		757D582E285FEEB80042F294 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Brightness;
@@ -25560,12 +25597,12 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_ENTITLEMENTS = PixelStyle/PixelStyle.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 20230526.0;
+				CURRENT_PROJECT_VERSION = 20230720.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = VA2XE4K2T9;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
@@ -25604,7 +25641,7 @@
 					"$(PROJECT_DIR)/source/ComputeDistance/ComputeDistance",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 4.0.1;
+				MARKETING_VERSION = 4.1.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
@@ -25636,7 +25673,7 @@
 				CODE_SIGN_ENTITLEMENTS = PixelStyle/PixelStyle.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20230526.0;
+				CURRENT_PROJECT_VERSION = 20230720.0;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = VA2XE4K2T9;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
@@ -25674,7 +25711,7 @@
 					"$(PROJECT_DIR)/source/ComputeDistance/ComputeDistance",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 4.0.1;
+				MARKETING_VERSION = 4.1.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
 				OTHER_CODE_SIGN_FLAGS = "--deep";

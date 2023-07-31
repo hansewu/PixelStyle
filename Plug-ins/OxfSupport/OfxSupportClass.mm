@@ -29,20 +29,21 @@ int oxfHostProcess(OFX_HOST_HANDLE ofxHandle, unsigned char *pRGBABufOut, int nB
 
 static char *s_enabledFilterId[] =
 {
-    (char *)"eu.gmic.GradientRGB",
+    (char *)"eu.gmic.LocalConstrast", //color
+    (char *)"eu.gmic.GradientRGB",//3 slider 2 check
     (char *)"eu.gmic.HardSketch",
     (char *)"eu.gmic.ColorBalance",
     (char *)"eu.gmic.ColorBlindness",
     (char *)"eu.gmic.Sketch",
     (char *)"eu.gmic.VectorPainting",
     (char *)"eu.gmic.Charcoal",
-    (char *)"eu.gmic.Pencil",
+    (char *)"eu.gmic.Pencil", //4 slider
     (char *)"eu.gmic.Retinex",
     (char *)"eu.gmic.Edges",
     (char *)"eu.gmic.Ripple",
     (char *)"eu.gmic.Wind",
     (char *)"eu.gmic.Wave",
-    (char *)"eu.gmic.Water",
+  //  (char *)"eu.gmic.Water",
     (char *)"eu.gmic.RainSnow",
   //  (char *)"eu.gmic.DetailsEqualizer",
     (char *)"eu.gmic.EqualizeLocalHistograms",//(slow)
@@ -105,6 +106,7 @@ static char *s_enabledFilterId[] =
     _strPluginId = strPluginId;
     _effectHandle = nil;
 	
+    [self constructParasUI];
 	return self;
 }
 
@@ -128,25 +130,180 @@ static char *s_enabledFilterId[] =
 	return @"PixelStyle Approved (Bobo)";
 }
 
-- (void)run
+#define FILTER_TITLE_HEIGHT 25
+#define FILTER_BUTTON_SIZE 16
+
+#define FILTER_PARA_VOFFSET 10
+#define FILTER_PARA_INOFFSET 5
+
+#define FILTER_PARATITLE_HEIGHT 20
+#define FILTER_PARATITLE_WIDTH 100
+
+#define FILTER_PARAFIELD_HEIGHT 20
+#define FILTER_PARAFIELD_WIDTH 70
+
+#define FILTER_SLIDER_HEIGHT 20
+#define FILTER_SLIDER_WIDTH 170
+- (int)getFrameHeight
+{
+    if(!_effectHandle) return;
+    
+    int nParamCount = oxfHostGetParamsCount(_effectHandle);
+    int height = 80;
+    for(int i=0; i< nParamCount; i++)
+    {
+        std::string outParaName, outParaType;
+        int nDim = oxfHostGetParamInfo(_effectHandle, i, outParaName, outParaType);
+        
+        if(outParaName == "Preview Type" || outParaName == "Advanced Options")  break;
+        if(nDim != 1)  continue;;
+        
+        if(outParaType == "OfxParamTypeDouble"|| outParaType == "OfxParamTypeInteger" || outParaType == "OfxParamTypeBoolean") //OfxParamTypeChoice
+        {
+            height += FILTER_PARATITLE_HEIGHT;
+            height += FILTER_SLIDER_HEIGHT;
+        }
+
+    }
+    
+    return height;
+}
+
+- (void)sliderChanged:(id)sender
+{
+    NSSlider *slider = (NSSlider *)sender;
+    int nIndex = [slider tag];
+    
+    std::string outParaName, outParaType;
+    int nDim = oxfHostGetParamInfo(_effectHandle, nIndex, outParaName, outParaType);
+    if(nDim < 0)  return;
+    double value = slider.doubleValue;
+    char cStrValue[512];
+    if(outParaType == "OfxParamTypeDouble")
+    {
+        sprintf(cStrValue, "%.5f", value);
+    }
+    else if(outParaType == "OfxParamTypeInteger")
+    {
+        sprintf(cStrValue, "%d", (int)value);
+    }
+    const std::string paraValue = std::string(cStrValue);
+    oxfHostSetParamValue(_effectHandle, nIndex, 0, paraValue);
+    
+    refresh = YES;
+    [self preview:self];
+}
+
+- (void)checkChanged:(id)sender
+{
+    NSButton *btnCheck = (NSButton *)sender;
+    int nIndex = [btnCheck tag];
+    
+    std::string outParaName, outParaType;
+    int nDim = oxfHostGetParamInfo(_effectHandle, nIndex, outParaName, outParaType);
+    if(nDim < 0)  return;
+    
+    int nState = btnCheck.state;
+    char cStrValue[512];
+    if(nState == 0)
+    {
+        sprintf(cStrValue, "%d", nState);
+    }
+    else
+    {
+        strcpy(cStrValue, "1");
+    }
+    const std::string paraValue = std::string(cStrValue);
+    oxfHostSetParamValue(_effectHandle, nIndex, 0, paraValue);
+    
+    refresh = YES;
+    [self preview:self];
+}
+
+- (void)constructParasUI
 {
     _effectHandle = oxfHostLoad(_hostHandle, std::string(_strPluginId.UTF8String));
+    if(!_effectHandle) return;
+
+    
+    int nParamCount = oxfHostGetParamsCount(_effectHandle);
+    int ParaHeight = [self getFrameHeight];
+    
+    NSRect boundsRect = [panel  frame];
+    boundsRect.size.height += ParaHeight;
+    
+    int height = 80;
+    for(int i=0; i< nParamCount; i++)
+    {
+        std::string outParaName, outParaType;
+        int nDim = oxfHostGetParamInfo(_effectHandle, i, outParaName, outParaType);
+        
+        if(outParaName == "Preview Type" || outParaName == "Advanced Options")  break;
+
+        if(nDim != 1)  continue;;
+        
+        if(outParaType == "OfxParamTypeDouble" || outParaType == "OfxParamTypeInteger" || outParaType == "OfxParamTypeBoolean")
+        {
+            //for(int j=0; j< nDim; j++)
+            {
+                //printf("dim = %d\n", j);
+                
+                std::string outParaDefault, outParaMax, outParaMin;
+                std::vector<std::string> choise;
+                oxfHostGetParamDefaultInfo(_effectHandle, i, 0, outParaDefault, outParaMax, outParaMin, &choise);
+                
+                
+                NSTextField *titleField = [NSTextField labelWithString:[NSString stringWithUTF8String:outParaName.c_str()]];
+                [titleField setFrame:NSMakeRect(10, boundsRect.size.height - height, FILTER_PARATITLE_WIDTH, FILTER_PARATITLE_HEIGHT)];
+                //height += FILTER_PARATITLE_HEIGHT;
+
+                titleField.textColor = [NSColor whiteColor];
+                [[panel contentView] addSubview:titleField];
+                
+                if(outParaType == "OfxParamTypeDouble" || outParaType == "OfxParamTypeInteger")
+                {
+                    double dValue       = atof(outParaDefault.c_str());
+                    double dMaxValue    = atof(outParaMax.c_str());
+                    double dMinValue    = atof(outParaMin.c_str());
+                    NSSlider *slider = [[[NSSlider alloc] initWithFrame:NSMakeRect(130, boundsRect.size.height - height, FILTER_SLIDER_WIDTH, FILTER_SLIDER_HEIGHT)] autorelease];
+                    [slider setTag:i];
+                    [slider setTarget:self];
+                    [slider setAction:@selector(sliderChanged:)];
+                    
+                    height += 2*FILTER_SLIDER_HEIGHT;
+                    [slider setMaxValue:dMaxValue];
+                    [slider setMinValue:dMinValue];
+                    slider.doubleValue = dValue;
+                    [[panel contentView] addSubview:slider];
+                }
+                else if(outParaType == "OfxParamTypeBoolean")
+                {
+                    //height -= FILTER_PARATITLE_HEIGHT;
+                    NSButton *checkBtn = [[[NSButton alloc] initWithFrame:NSMakeRect(130, boundsRect.size.height - height, FILTER_SLIDER_WIDTH, FILTER_SLIDER_HEIGHT)] autorelease];
+                    [checkBtn setButtonType:NSButtonTypeSwitch];
+                    [checkBtn setTitle:@""];
+                    if(outParaDefault == "0")
+                        [checkBtn setState:0];
+                    else [checkBtn setState:1];
+                    
+                    [checkBtn setTag:i];
+                    [checkBtn setTarget:self];
+                    [checkBtn setAction:@selector(checkChanged:)];
+                    
+                    height += 2*FILTER_PARATITLE_HEIGHT;
+                    [[panel contentView] addSubview:checkBtn];
+                }
+            }
+        }
+    }
+    [panel setTitle:_strPluginId];
+    [panel setFrame:boundsRect display:YES];
+}
+- (void)run
+{
     
 	PluginData *pluginData;
-	/*
-	if ([gUserDefaults objectForKey:@"AIPortraitMatting.radius"])
-		radius = [gUserDefaults integerForKey:@"AIPortraitMatting.radius"];
-	else
-		radius = 10;
-	
-	
-	if (radius < 1 || radius > 100)
-		radius = 10;
-	
-	[radiusLabel setStringValue:[NSString stringWithFormat:@"%d", radius]];
-	
-	[radiusSlider setIntValue:radius];
-	*/
+    
     refresh = YES;
 	success = NO;
 	pluginData = [(PSPlugins *)seaPlugins data];

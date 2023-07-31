@@ -796,6 +796,21 @@
                   endingLineNumber = "840"
                   offsetFromSymbolStart = "68">
                </Location>
+               <Location
+                  uuid = "94A4DC0C-7597-4308-8A38-DE458E3361C8 - d2b213b5cfa8b53f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CurvesClass updateOverlayAfterChangedInThread]"
+                  moduleName = "Curves"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/Plug-ins/Curves/CurvesClass.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "840"
+                  endingLineNumber = "840"
+                  offsetFromSymbolStart = "4">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -829,6 +844,38 @@
             endingLineNumber = "172"
             landmarkName = "-setAndExecuteUniformStateCallbackAtIndex:forProgram:toBlock:"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "018469CB-F3AA-400A-9F30-A5AA304E98B8 - bfa4b9f8c6fee529"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[GPUImageTwoPassFilter setAndExecuteUniformStateCallbackAtIndex:forProgram:toBlock:]"
+                  moduleName = "GPUImage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/PixelStyle/source/GPUImage/Source/GPUImageTwoPassFilter.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "172"
+                  endingLineNumber = "172"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "018469CB-F3AA-400A-9F30-A5AA304E98B8 - bfa4b9f8c6fee529"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[GPUImageTwoPassFilter setAndExecuteUniformStateCallbackAtIndex:forProgram:toBlock:]"
+                  moduleName = "GPUImage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/PixelStyle/source/GPUImage/Source/GPUImageTwoPassFilter.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "172"
+                  endingLineNumber = "172"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -940,6 +987,22 @@
             startingLineNumber = "1223"
             endingLineNumber = "1223"
             landmarkName = "-printableImage"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E7B220AD-657E-4F9A-B119-41151B3C8A41"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/document/PSDocument.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "684"
+            endingLineNumber = "684"
+            landmarkName = "-prepareSavePanel:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

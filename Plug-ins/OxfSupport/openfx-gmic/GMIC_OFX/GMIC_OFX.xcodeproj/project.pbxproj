@@ -41,6 +41,8 @@
 		1E31F007205EEEC90025144C /* GMIC.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1E31EFB1205EA3340025144C /* GMIC.png */; };
 		1E31F009205EF1A60025144C /* RFX_FileUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E31F008205EF1A60025144C /* RFX_FileUtils.cpp */; };
 		1EE9B0A01A4B300700869861 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E551F5A179950EC00A4135C /* OpenGL.framework */; };
+		4BFC36742A656F2B0040886B /* libfftw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFC36732A656F2B0040886B /* libfftw3.a */; };
+		4BFC36792A6571E90040886B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFC36782A6571E90040886B /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +127,8 @@
 		1ED12E481A4B316900ABA348 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		1EDE1BE8182D8B18002392CB /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		1EE9B0A51A4B300700869861 /* GMIC.ofx.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GMIC.ofx.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BFC36732A656F2B0040886B /* libfftw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3.a; path = "../fftw-3.3.10/Release/libfftw3.a"; sourceTree = "<group>"; };
+		4BFC36782A6571E90040886B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +136,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BFC36792A6571E90040886B /* libz.tbd in Frameworks */,
 				18E5C33C2864B2B1002B1E04 /* libomp.dylib in Frameworks */,
 				1EE9B0A01A4B300700869861 /* OpenGL.framework in Frameworks */,
+				4BFC36742A656F2B0040886B /* libfftw3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +243,8 @@
 		1E551EDA17994E8100A4135C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4BFC36782A6571E90040886B /* libz.tbd */,
+				4BFC36732A656F2B0040886B /* libfftw3.a */,
 				18E5C33B2864B2B1002B1E04 /* libomp.dylib */,
 				1E398DAA1B99008E00C98B28 /* libMangledGLU.a */,
 				1E2868D41B832BB400B18774 /* libMangledOSMesa32.a */,
@@ -507,27 +515,26 @@
 					"$(inherited)",
 					"$(ZLIB_PATH)/include",
 					"$(FFTW3_PATH)/include",
+					../helper,
+					"$(PROJECT_DIR)/../fftw-3.3.10/api",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/OFX/Plugins/$(PROJECT_NAME)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../fftw-3.3.10/Release/",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-Xclang",
 					"-fopenmp",
 				);
-				OTHER_LDFLAGS = (
-					"-L$(FFTW3_PATH)/lib",
-					"-lfftw3",
-					"-lfftw3_threads",
-					"-L$(ZLIB_PATH)/lib",
-					"-lz",
-				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.effectmatrix.gmicofx;
 				PRODUCT_NAME = GMIC.ofx;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -553,31 +560,60 @@
 					OFX_PLUGIN,
 					"cimg_use_openmp=1",
 				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=arm64]" = (
+					"$(inherited)",
+					cimg_use_abort,
+					cimg_use_zlib,
+					cimg_use_fftw3,
+					"cimg_display=0",
+					"cimg_verbosity=0",
+					"cimg_appname=\\\"gmic\\\"",
+					"cimg_namespace_suffix=openfx_gmic",
+					gmic_build,
+					"gmic_is_parallel=1",
+					"cimg_library=cimg_library_openfx_gmic",
+					OFX_PLUGIN,
+					"cimg_use_openmp=0",
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=x86_64]" = (
+					"$(inherited)",
+					cimg_use_abort,
+					cimg_use_zlib,
+					cimg_use_fftw3,
+					"cimg_display=0",
+					"cimg_verbosity=0",
+					"cimg_appname=\\\"gmic\\\"",
+					"cimg_namespace_suffix=openfx_gmic",
+					gmic_build,
+					"gmic_is_parallel=1",
+					"cimg_library=cimg_library_openfx_gmic",
+					OFX_PLUGIN,
+					"cimg_use_openmp=0",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(ZLIB_PATH)/include",
 					"$(FFTW3_PATH)/include",
+					../helper,
+					"$(PROJECT_DIR)/../fftw-3.3.10/api",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/OFX/Plugins/$(PROJECT_NAME)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../fftw-3.3.10/Release/",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-Xclang",
 					"-fopenmp",
 				);
-				OTHER_LDFLAGS = (
-					"-L$(FFTW3_PATH)/lib",
-					"-lfftw3",
-					"-lfftw3_threads",
-					"-L$(ZLIB_PATH)/lib",
-					"-lz",
-				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.effectmatrix.gmicofx;
 				PRODUCT_NAME = GMIC.ofx;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
