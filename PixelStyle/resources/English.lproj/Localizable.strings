@@ -912,13 +912,17 @@
 
 "Auto Selection" = "Auto Selection";
 
+"AI" = "AI";
 "Auto Portrait Matting" = "Auto Portrait Matting";
 "Bilateral Smooth" = "Auto Smooth (e.g. skin etc.)";
 "SeamCaving" = "Intelligent Resize";
+"AI 4x Super Resolution" = "AI 4x Super Resolution";
 
 "Alpha Channel to RGB channels" = "Alpha Channel to RGB channels";
 "Luminance to Alpha Channel" = "Luminance to Alpha Channel";
 "Selection to Alpha Channel" = "Selection to Alpha Channel";
+
+"Use the latest AI Super Resolution technology to magnify the image of this layer by four times" = "Use the latest AI Super Resolution technology to magnify the image of this layer by four times";
 
 "No Fill" = "No Fill";
 "Auto Fill" = "Auto Fill";

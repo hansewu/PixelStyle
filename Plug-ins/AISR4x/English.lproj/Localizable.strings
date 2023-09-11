@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>Wuzq</string>
+	<key>copyright</key>
+	<string>EffectMatrix 2022</string>
+	<key>description</key>
+	<string>Applies AI 4x Super Resolution.</string>
+	<key>groupName</key>
+	<string>AI</string>
+	<key>license</key>
+	<string>Public Domain</string>
+	<key>name</key>
+	<string>AI 4x Super Resolution</string>
+</dict>
+</plist>
+

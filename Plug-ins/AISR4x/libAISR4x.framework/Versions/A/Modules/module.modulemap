@@ -1,0 +1,6 @@
+framework module libAISR4x {
+  umbrella header "libAISR4x.h"
+
+  export *
+  module * { export * }
+}

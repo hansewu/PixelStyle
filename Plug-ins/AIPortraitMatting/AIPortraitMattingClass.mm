@@ -67,11 +67,11 @@ static cv::Mat matFromPixelBuffer(CVPixelBufferRef buffer)
 - (id)initWithManager:(PSPlugins *)manager
 {
 	seaPlugins = manager;
-	[NSBundle loadNibNamed:@"MattingInfo" owner:self];
+//	[NSBundle loadNibNamed:@"MattingInfo" owner:self];
 	newdata = NULL;
     
-    m_rvmProcess = [[robustVideoMatting alloc] init];
-    [m_rvmProcess loadModel];
+    m_rvmProcess = nil; //[[robustVideoMatting alloc] init];
+//    [m_rvmProcess loadModel];
 	
 	return self;
 }
@@ -96,10 +96,24 @@ static cv::Mat matFromPixelBuffer(CVPixelBufferRef buffer)
 	return @"PixelStyle Approved (Bobo)";
 }
 
+- (void) initFisrt
+{
+    if(m_rvmProcess == nil)
+    {
+        [NSBundle loadNibNamed:@"MattingInfo" owner:self];
+            newdata = NULL;
+            
+        m_rvmProcess = [[robustVideoMatting alloc] init];
+        [m_rvmProcess loadModel];
+    }
+}
+
 - (void)run
 {
 	PluginData *pluginData;
 	
+    [self initFisrt];
+    
 	if ([gUserDefaults objectForKey:@"AIPortraitMatting.radius"])
 		radius = [gUserDefaults integerForKey:@"AIPortraitMatting.radius"];
 	else

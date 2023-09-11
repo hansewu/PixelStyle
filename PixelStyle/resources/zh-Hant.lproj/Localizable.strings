@@ -752,10 +752,14 @@
 "Fast Auto Fill" = "快速自動填充";
 "Slow Auto Fill" = "慢速自動填充";
 
+"AI" = "人工智慧";
 "Auto Selection" = "自動選擇";
 "Auto Portrait Matting" = "自動扣人像";
 "Bilateral Smooth" = "自動平滑(例如皮膚)";
 "SeamCaving" = "智能縮放";
+"AI 4x Super Resolution" = "AI四倍超分辯率放大";
+
+"Use the latest AI Super Resolution technology to magnify the image of this layer by four times" = "採用最新AI Super Resolution科技對此層影像放大四倍";
 
 "Alpha Channel to RGB channels" = "拷貝alpha通道到rgb通道";
 "Luminance to Alpha Channel" = "拷貝亮度到alpha通道";

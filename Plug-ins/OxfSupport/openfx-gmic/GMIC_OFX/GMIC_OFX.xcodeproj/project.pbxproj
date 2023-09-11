@@ -495,6 +495,8 @@
 		1EE9B0A31A4B300700869861 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				COMPILER_INDEX_STORE_ENABLE = NO;
 				EXPORTED_SYMBOLS_FILE = "$(OFX_PATH)/Support/include/osxSymbols";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -544,6 +546,8 @@
 		1EE9B0A41A4B300700869861 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				COMPILER_INDEX_STORE_ENABLE = NO;
 				EXPORTED_SYMBOLS_FILE = "$(OFX_PATH)/Support/include/osxSymbols";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
