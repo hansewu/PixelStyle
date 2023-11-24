@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		18CAD7C728654DFD00E495E2 /* libimofxhost.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CAD7BB2865428400E495E2 /* libimofxhost.dylib */; };
 		18E68B2B28113092009AD2FF /* OfxSupportClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18E68B2A28113092009AD2FF /* OfxSupportClass.mm */; };
+		75274FE22AB0931B00811C42 /* libimofxhost.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75274FDE2AB0931B00811C42 /* libimofxhost.dylib */; };
 		75DFB25C2A68F287007F8A94 /* libimofxhost.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18CAD7BB2865428400E495E2 /* libimofxhost.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 		A8080AF10C07BF8D0026D06E /* OxfPluginInfo.nib in Resources */ = {isa = PBXBuildFile; fileRef = A8080AEF0C07BF8D0026D06E /* OxfPluginInfo.nib */; };
@@ -86,6 +87,7 @@
 		18CAD7AC2865428400E495E2 /* HostSupport.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HostSupport.xcodeproj; path = "openfx-gmic/openfx/OfxHostSupport/HostSupport.xcodeproj"; sourceTree = "<group>"; };
 		18E68B2928113092009AD2FF /* OfxSupportClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfxSupportClass.h; sourceTree = "<group>"; };
 		18E68B2A28113092009AD2FF /* OfxSupportClass.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OfxSupportClass.mm; sourceTree = "<group>"; };
+		75274FDE2AB0931B00811C42 /* libimofxhost.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libimofxhost.dylib; path = "openfx-gmic/openfx/OfxHostSupport/libimofxhost.dylib"; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* OfxSupport.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OfxSupport.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8080AF00C07BF8D0026D06E /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/OxfPluginInfo.nib; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75274FE22AB0931B00811C42 /* libimofxhost.dylib in Frameworks */,
 				18CAD7C728654DFD00E495E2 /* libimofxhost.dylib in Frameworks */,
 				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
 				A89CC2C409A9DF410072B19D /* QuartzCore.framework in Frameworks */,
@@ -180,6 +183,7 @@
 		18A38CCA280955EF00FACD25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75274FDE2AB0931B00811C42 /* libimofxhost.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -363,7 +367,10 @@
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../opencv/include";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../../opencv/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../../opencv/lib",
+					"$(PROJECT_DIR)/openfx-gmic/openfx/OfxHostSupport",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_CFLAGS = "-DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = net.photoart.OfxSupport;
@@ -395,7 +402,10 @@
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../opencv/include";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../../opencv/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../../opencv/lib",
+					"$(PROJECT_DIR)/openfx-gmic/openfx/OfxHostSupport",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = net.photoart.OfxSupport;

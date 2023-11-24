@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18CAD77A286534D700E495E2 /* libomp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CAD779286534D700E495E2 /* libomp.dylib */; };
 		75EC10E51DA8D5BF008D4C5E /* PSjfdt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EC10E41DA8D5BF008D4C5E /* PSjfdt.cpp */; };
 		AB499D591BA27D1A00F66C41 /* PSvxldt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB499D571BA27D1A00F66C41 /* PSvxldt.cpp */; };
 		AB49A7E01BA2816500F66C41 /* omp_lib.h in Headers */ = {isa = PBXBuildFile; fileRef = AB49A7DB1BA280D900F66C41 /* omp_lib.h */; };
@@ -30,7 +29,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18CAD77A286534D700E495E2 /* libomp.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

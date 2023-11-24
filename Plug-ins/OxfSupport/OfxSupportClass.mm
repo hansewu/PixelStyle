@@ -27,36 +27,77 @@ int oxfHostProcess(OFX_HOST_HANDLE ofxHandle, unsigned char *pRGBABufOut, int nB
 
 #define make_128(x) (x + 16 - (x % 16))
 
-static char *s_enabledFilterId[] =
+typedef struct
 {
-    (char *)"eu.gmic.LocalConstrast", //color
-    (char *)"eu.gmic.GradientRGB",//3 slider 2 check
-    (char *)"eu.gmic.HardSketch",
-    (char *)"eu.gmic.ColorBalance",
-    (char *)"eu.gmic.ColorBlindness",
-    (char *)"eu.gmic.Sketch",
-    (char *)"eu.gmic.VectorPainting",
-    (char *)"eu.gmic.Charcoal",
-    (char *)"eu.gmic.Pencil", //4 slider
-    (char *)"eu.gmic.Retinex",
-    (char *)"eu.gmic.Edges",
-    (char *)"eu.gmic.Ripple",
-    (char *)"eu.gmic.Wind",
-    (char *)"eu.gmic.Wave",
-  //  (char *)"eu.gmic.Water",
-    (char *)"eu.gmic.RainSnow",
-  //  (char *)"eu.gmic.DetailsEqualizer",
-    (char *)"eu.gmic.EqualizeLocalHistograms",//(slow)
-  //  (char *)"eu.gmic.FreakyDetails",
-    (char *)"eu.gmic.LocalNormalization",
-    (char *)"eu.gmic.BlurAngular",
-    (char *)"eu.gmic.BlurBloom",
-    (char *)"eu.gmic.BlurDepthofField",
-    (char *)"eu.gmic.BlurGlow",
-    (char *)"eu.gmic.BlurLinear",
-    (char *)"eu.gmic.BlurRadial",
+    char *filter_name;
+    char *type;
+    char *show_name;
+}FILTER_INFO;
+
+static FILTER_INFO s_enabledFilterId[] =
+{
+    {(char *)"eu.gmic.3DRandomObjects", (char *)"Generate",  (char *)"3D Random Objects"},
+    {(char *)"eu.gmic.ArrayFaded",(char *)"Tile",  (char *)"Array Faded"},
+    {(char *)"eu.gmic.ArrayMirrored",(char *)"Tile",  (char *)"Array Mirrored"},
+    {(char *)"eu.gmic.ArrayRandom",(char *)"Tile",  (char *)"Array Random"},
+    {(char *)"eu.gmic.ArrayRandomColors",(char *)"Tile",  (char *)"Array Random Colors"},
+    {(char *)"eu.gmic.ArrayRegular",(char *)"Tile",  (char *)"Array Regular"},
+  //  {(char *)"eu.gmic.BlackWhite",(char *)"Color Adjust",  (char *)"Black White"}, 暂时不要
+
+   // (char *)"eu.gmic.BoostChromaticity", 暂时不要
+    {(char *)"eu.gmic.Burn",(char *)"Artistic",  (char *)"Burn"},
+    //(char *)"eu.gmic.Canvas",
+    {(char *)"eu.gmic.Cartoon",(char *)"Artistic",  (char *)"Cartoon"},
+    //{(char *)"eu.gmic.ChannelProcessing",(char *)"Generate",  (char *)""},
+    {(char *)"eu.gmic.Charcoal",(char *)"Artistic",  (char *)"Charcoal"},
+    {(char *)"eu.gmic.Chessboard",(char *)"Generate",  (char *)"Chessboard"},
+    //{(char *)"eu.gmic.ChromaticAberrations",(char *)"Generate",  (char *)""},
+    {(char *)"eu.gmic.CircleArt",(char *)"Generate",  (char *)"Circle Art"},
+    {(char *)"eu.gmic.CircleTransform",(char *)"Distort",  (char *)"Circle Transform"},
+    //(char *)"eu.gmic.ColorBlindess",(char *)"Generate",  (char *)""},
+   // (char *)"eu.gmic.ColorizewithColormap",(char *)"Generate",  (char *)""},
+    //(char *)"eu.gmic.Colormap",(char *)"Generate",  (char *)""},
     
+ //   (char *)"eu.gmic.ColorPresets",
+    {(char *)"eu.gmic.SelectReplaceColor",(char *)"Color Adjust",  (char *)"Replace Color"},
+  //  (char *)"eu.gmic.ColorfulBlobs",
+   // (char *)"eu.gmic.ChannelstoLayers",
+  //  (char *)"eu.gmic.ColorBalance",
+  //  (char *)"eu.gmic.ColorBlindness",
+  //  (char *)"eu.gmic.Retinex",
+
+    {(char *)"eu.gmic.LocalConstrast",(char *)"Enhance",  (char *)"Local Constrast"}, //color
+        
+    {(char *)"eu.gmic.HardSketch",(char *)"Artistic",  (char *)"Hard Sketch"},
+    {(char *)"eu.gmic.Sketch",(char *)"Artistic",  (char *)"Sketch"},
+    {(char *)"eu.gmic.VectorPainting",(char *)"Artistic",  (char *)"Vector Painting"},
+    {(char *)"eu.gmic.Pencil", (char *)"Artistic",  (char *)"Pencil"},//4 slider
+    {(char *)"eu.gmic.Edges",(char *)"Stylize",  (char *)"Edges"},
+    {(char *)"eu.gmic.GradientRGB",(char *)"Stylize",  (char *)"Gradient Edges"},//3 slider 2 check
+
+    {(char *)"eu.gmic.Ripple",(char *)"Distort",  (char *)"Ripple"},
+    {(char *)"eu.gmic.Wind",(char *)"Blur",  (char *)"Wind"},
+    {(char *)"eu.gmic.Wave",(char *)"Distort",  (char *)"Wave"},
+   // (char *)"eu.gmic.Water",
+   
+   // {(char *)"eu.gmic.RainSnow",(char *)"Generate",  (char *)"RainSnow"},
+   // (char *)"eu.gmic.DetailsEqualizer",出错
+    //(char *)"eu.gmic.EqualizeLocalHistograms",//(slow)
+  //  (char *)"eu.gmic.FreakyDetails",出错
+    {(char *)"eu.gmic.LocalNormalization",(char *)"Enhance",  (char *)"Local Normalization"},
+    {(char *)"eu.gmic.BlurAngular",(char *)"Blur",  (char *)"Blur Angular"},
+    {(char *)"eu.gmic.BlurBloom",(char *)"Blur",  (char *)"Blur Bloom"},
+    {(char *)"eu.gmic.BlurDepthofField",(char *)"Blur",  (char *)"Blur Depth of Field"},
+    {(char *)"eu.gmic.BlurGlow",(char *)"Blur",  (char *)"Blur Glow"},
+    {(char *)"eu.gmic.BlurLinear",(char *)"Blur",  (char *)"Blur Linear"},
+    {(char *)"eu.gmic.BlurRadial",(char *)"Blur",  (char *)"Blur Radial"},
+    //{(char *)"eu.gmic.BlurGaussian",(char *)"Generate",  (char *)""},
+    
+    {(char *)"cn.co.effectmatrix.OfxColor", (char *)"Color Adjust", (char *)"Color Balance"},
+    {(char *)"cn.co.effectmatrix.levels", (char *)"Color Adjust", (char *)"Color Levels"},
 };
+
+
 @implementation OfxSupportClass
 - (id)initWithManager:(PSPlugins *)manager
 {
@@ -69,18 +110,22 @@ static char *s_enabledFilterId[] =
     
     std::string PluginLabel, PluginIdentifier;
     
-    _arrPlugins = [[[NSMutableArray alloc] init] autorelease];
+    _arrPlugins = [[NSMutableArray alloc] init];// autorelease];
     for(int i=0; i< count; i++)
     {
         int nret = getPluginInfo(hFilters, i, PluginLabel, PluginIdentifier);
         printf("Filter label = %s, id = %s\n", PluginLabel.c_str(), PluginIdentifier.c_str());
-        for(int j=0; j< sizeof(s_enabledFilterId)/sizeof(char *); j++)
+        for(int j=0; j< sizeof(s_enabledFilterId)/sizeof(FILTER_INFO); j++)
         {
-            if(PluginIdentifier == std::string(s_enabledFilterId[j]))
+            if(PluginIdentifier == std::string(s_enabledFilterId[j].filter_name))
             {
                 OfxSupportClassItem *plugin = [[OfxSupportClassItem alloc] init];
                 
-                [plugin initWithManagerOxf:manager oxfHostHandle:hFilters stringId:[NSString stringWithUTF8String:s_enabledFilterId[j]]];
+                [plugin initWithManagerOxf:manager oxfHostHandle:hFilters
+                    stringId:[NSString stringWithUTF8String:s_enabledFilterId[j].filter_name]
+                    stringType:[NSString stringWithUTF8String:s_enabledFilterId[j].type]
+                    stringName:[NSString stringWithUTF8String:s_enabledFilterId[j].show_name]
+                ];
                 [_arrPlugins addObject:plugin];
             }
         }
@@ -97,32 +142,61 @@ static char *s_enabledFilterId[] =
 
 @implementation OfxSupportClassItem
 
-- (id)initWithManagerOxf:(PSPlugins *)manager oxfHostHandle:(void *)hostHandle stringId:(NSString *)strPluginId
+- (id)initWithManagerOxf:(PSPlugins *)manager oxfHostHandle:(void *)hostHandle stringId:(NSString *)strPluginId stringType:(NSString *)strPluginType  stringName:(NSString *)strPluginName
 {
 	seaPlugins = manager;
-	[NSBundle loadNibNamed:@"OxfPluginInfo" owner:self];
+	//[NSBundle loadNibNamed:@"OxfPluginInfo" owner:self];
 	newdata = NULL;
     _hostHandle = hostHandle;
-    _strPluginId = strPluginId;
+    _strPluginId = [NSString stringWithString:strPluginId];
+    [_strPluginId retain];
+    _strPluginType = [NSString stringWithString:strPluginType];
+    [_strPluginType retain];
+    _strPluginName = [NSString stringWithString:strPluginName];
+    [_strPluginName retain];
+    
     _effectHandle = nil;
 	
-    [self constructParasUI];
+  //  [self constructParasUI];
 	return self;
+}
+
+- (void) initFisrt
+{
+    if(_effectHandle == nil)
+    {
+        [NSBundle loadNibNamed:@"OxfPluginInfo" owner:self];
+        newdata = NULL;
+        [self constructParasUI];
+    }
 }
 
 - (int)type
 {
-	return 0;
+    if([_strPluginType isEqual:@"Color Adjust"])
+        return 3;
+    else return 0;
 }
 
 - (NSString *)name
 {
-    return _strPluginId;//[gOurBundle localizedStringForKey:@"name" value:@"OfxSupport" table:NULL];
+    return _strPluginName;
+   /* if([_strPluginId isEqualToString:@"cn.co.effectmatrix.OfxColor"])
+        return @"Color Balance";
+    else if([_strPluginId isEqualToString:@"cn.co.effectmatrix.levels"])
+        return @"Color Levels";
+    else
+        return _strPluginId;//[gOurBundle localizedStringForKey:@"name" value:@"OfxSupport" table:NULL];*/
 }
 
 - (NSString *)groupName
 {
-    return @"OfxPlugins";//[gOurBundle localizedStringForKey:@"groupName" value:@"AI" table:NULL];
+    return _strPluginType;
+    //if([_strPluginId isEqualToString:@"cn.co.effectmatrix.OfxColor"]
+    //   || [_strPluginId isEqualToString:@"cn.co.effectmatrix.levels"])
+    //    return @"Color Adjust";
+    //else
+    //    return @"OfxPlugins";//[gOurBundle localizedStringForKey:@"groupName" value:@"AI" table:NULL];
 }
 
 - (NSString *)sanity
@@ -156,14 +230,21 @@ static char *s_enabledFilterId[] =
         int nDim = oxfHostGetParamInfo(_effectHandle, i, outParaName, outParaType);
         
         if(outParaName == "Preview Type" || outParaName == "Advanced Options")  break;
-        if(nDim != 1)  continue;;
+        if(nDim < 0)  continue;
+        if(nDim >1 && outParaType != "OfxParamTypeRGBA" && outParaType != "OfxParamTypeRGB"
+           && outParaType != "OfxParamTypeDouble2D")  continue;
         
-        if(outParaType == "OfxParamTypeDouble"|| outParaType == "OfxParamTypeInteger" || outParaType == "OfxParamTypeBoolean") //OfxParamTypeChoice
+        if(outParaType == "OfxParamTypeDouble"|| outParaType == "OfxParamTypeInteger" || outParaType == "OfxParamTypeBoolean"|| outParaType == "OfxParamTypeChoice" || outParaType == "OfxParamTypeRGBA" || outParaType == "OfxParamTypeRGB")
         {
             height += FILTER_PARATITLE_HEIGHT;
             height += FILTER_SLIDER_HEIGHT;
         }
-
+        
+        if(outParaType == "OfxParamTypeDouble2D")
+        {
+               height += 2*FILTER_PARATITLE_HEIGHT;
+               height += 2*FILTER_SLIDER_HEIGHT;
+        }
     }
     
     return height;
@@ -175,20 +256,31 @@ static char *s_enabledFilterId[] =
     int nIndex = [slider tag];
     
     std::string outParaName, outParaType;
-    int nDim = oxfHostGetParamInfo(_effectHandle, nIndex, outParaName, outParaType);
+    int nDim = oxfHostGetParamInfo(_effectHandle, nIndex&0xffff, outParaName, outParaType);
     if(nDim < 0)  return;
     double value = slider.doubleValue;
     char cStrValue[512];
-    if(outParaType == "OfxParamTypeDouble")
+    
+    if(outParaType == "OfxParamTypeDouble" )//||(outParaType == "OfxParamTypeDouble2D" && outParaName == "center"))
     {
-        sprintf(cStrValue, "%.5f", value);
+        snprintf(cStrValue, 512, "%.5f", value);
+    }
+    else if(outParaType == "OfxParamTypeDouble2D")
+    {
+        PluginData *pluginData = [(PSPlugins *)seaPlugins data];
+        if(!(nIndex>>16))
+        {
+            snprintf(cStrValue, 512, "%.5f", value*[pluginData width]);
+        }
+        else
+            snprintf(cStrValue, 512, "%.5f", value*[pluginData height]);
     }
     else if(outParaType == "OfxParamTypeInteger")
     {
-        sprintf(cStrValue, "%d", (int)value);
+        snprintf(cStrValue, 512, "%d", (int)value);
     }
     const std::string paraValue = std::string(cStrValue);
-    oxfHostSetParamValue(_effectHandle, nIndex, 0, paraValue);
+    oxfHostSetParamValue(_effectHandle, nIndex&0xffff, (nIndex>>16), paraValue);
     
     refresh = YES;
     [self preview:self];
@@ -207,7 +299,7 @@ static char *s_enabledFilterId[] =
     char cStrValue[512];
     if(nState == 0)
     {
-        sprintf(cStrValue, "%d", nState);
+        snprintf(cStrValue, 512, "%d", nState);
     }
     else
     {
@@ -220,17 +312,99 @@ static char *s_enabledFilterId[] =
     [self preview:self];
 }
 
+- (void)choiseChanged:(id)sender
+{
+    NSPopUpButton *btnPop = (NSButton *)sender;
+    int nIndex = [btnPop tag];
+    
+    std::string outParaName, outParaType;
+    int nDim = oxfHostGetParamInfo(_effectHandle, nIndex, outParaName, outParaType);
+    if(nDim < 0)  return;
+    
+    int index =btnPop.indexOfSelectedItem;
+    btnPop.title = btnPop.selectedItem.title;
+    
+    char cStrValue[512];
+    snprintf(cStrValue, 512, "%d", index);
+
+    const std::string paraValue = std::string(cStrValue);
+    oxfHostSetParamValue(_effectHandle, nIndex, 0, paraValue);
+    
+    refresh = YES;
+    [self preview:self];
+}
+
+- (void)colorChanged:(id)sender
+{
+    NSColorWell *colorWell = (NSColorWell *)sender;
+    int nIndex = [colorWell tag];
+    
+    std::string outParaName, outParaType;
+    int nDim = oxfHostGetParamInfo(_effectHandle, nIndex, outParaName, outParaType);
+    if(nDim < 0)  return;
+    
+    NSColor *color = colorWell.color;
+    for(int i=0; i<nDim; i++)
+    {
+        char cStrValue[512];
+        switch(i)
+        {
+            case 0:                 snprintf(cStrValue, 512, "%f", color.redComponent);  break;
+            case 1:                 snprintf(cStrValue, 512, "%f", color.greenComponent);  break;
+            case 2:                 snprintf(cStrValue, 512, "%f", color.blueComponent);  break;
+            case 3:                 snprintf(cStrValue, 512, "%f", color.alphaComponent);  break;
+        }
+    
+        const std::string paraValue = std::string(cStrValue);
+        oxfHostSetParamValue(_effectHandle, nIndex, i, paraValue);
+    }
+    
+    refresh = YES;
+    [self preview:self];
+}
+
 - (void)constructParasUI
 {
+    _contentView = nil;
     _effectHandle = oxfHostLoad(_hostHandle, std::string(_strPluginId.UTF8String));
     if(!_effectHandle) return;
 
-    
+    [_btShowOriginal sendActionOn: NSEventMaskLeftMouseDown];//
+     
     int nParamCount = oxfHostGetParamsCount(_effectHandle);
     int ParaHeight = [self getFrameHeight];
     
     NSRect boundsRect = [panel  frame];
-    boundsRect.size.height += ParaHeight;
+    NSView *pareatView = [panel contentView];
+    NSScrollView *scrollView = nil;
+    
+    int viewHeight = boundsRect.size.height;
+    if(ParaHeight > 600)
+    {
+        //ParaHeight -= 80;
+         scrollView = [[NSScrollView alloc] initWithFrame:NSMakeRect(10, 50, (boundsRect.size.width -20), 600)];
+        [scrollView autorelease];
+        NSView *contentView = [[NSView alloc] initWithFrame:NSMakeRect(0, 0, boundsRect.size.width, ParaHeight)];
+        scrollView.backgroundColor = [NSColor colorWithWhite:0.3 alpha:1];;
+        [contentView autorelease];
+        [scrollView setDocumentView:contentView];
+        [scrollView setHasVerticalScroller:YES];
+        
+        [pareatView addSubview:scrollView];
+        pareatView = contentView;
+        boundsRect.size.height += 600;
+        viewHeight = ParaHeight;
+        [[scrollView contentView] scrollToPoint:NSMakePoint(0, ParaHeight-600)];
+        //scrollView.documentVisibleRect.origin.y = ParaHeight-600;
+        _contentView = pareatView;
+        [_contentView retain];
+    }
+    else
+    {
+        boundsRect.size.height += ParaHeight;
+        viewHeight = boundsRect.size.height;
+        _contentView = [panel contentView];
+    }
     
     int height = 80;
     for(int i=0; i< nParamCount; i++)
@@ -240,46 +414,73 @@ static char *s_enabledFilterId[] =
         
         if(outParaName == "Preview Type" || outParaName == "Advanced Options")  break;
 
-        if(nDim != 1)  continue;;
+        if(nDim < 1) continue;
+        if(nDim >1 && outParaType != "OfxParamTypeRGBA" && outParaType != "OfxParamTypeRGB"
+           && outParaType != "OfxParamTypeDouble2D")  continue;
         
-        if(outParaType == "OfxParamTypeDouble" || outParaType == "OfxParamTypeInteger" || outParaType == "OfxParamTypeBoolean")
+        if(outParaType == "OfxParamTypeDouble" || outParaType == "OfxParamTypeInteger" || outParaType == "OfxParamTypeBoolean" || outParaType == "OfxParamTypeChoice"|| outParaType == "OfxParamTypeRGBA" || outParaType == "OfxParamTypeRGB"
+           || outParaType == "OfxParamTypeDouble2D")
         {
-            //for(int j=0; j< nDim; j++)
+            for(int j=0; j< nDim; j++)
             {
+                if(j>=1 && outParaType != "OfxParamTypeDouble2D")
+                    continue;
                 //printf("dim = %d\n", j);
                 
                 std::string outParaDefault, outParaMax, outParaMin;
                 std::vector<std::string> choise;
-                oxfHostGetParamDefaultInfo(_effectHandle, i, 0, outParaDefault, outParaMax, outParaMin, &choise);
+                oxfHostGetParamDefaultInfo(_effectHandle, i, j, outParaDefault, outParaMax, outParaMin, &choise);
                 
                 
                 NSTextField *titleField = [NSTextField labelWithString:[NSString stringWithUTF8String:outParaName.c_str()]];
-                [titleField setFrame:NSMakeRect(10, boundsRect.size.height - height, FILTER_PARATITLE_WIDTH, FILTER_PARATITLE_HEIGHT)];
+                [titleField setFrame:NSMakeRect(10, viewHeight - height, FILTER_PARATITLE_WIDTH+20, FILTER_PARATITLE_HEIGHT)];
                 //height += FILTER_PARATITLE_HEIGHT;
 
                 titleField.textColor = [NSColor whiteColor];
-                [[panel contentView] addSubview:titleField];
+                if([_strPluginId isEqualToString:@"cn.co.effectmatrix.OfxColor"])
+                    titleField.font = [NSFont systemFontOfSize:8];
+                else
+                    titleField.font = [NSFont systemFontOfSize:10];
+                [titleField setTag:-1];
+                [pareatView addSubview:titleField];
                 
-                if(outParaType == "OfxParamTypeDouble" || outParaType == "OfxParamTypeInteger")
+                if(outParaType == "OfxParamTypeDouble" || outParaType == "OfxParamTypeInteger"
+                   || outParaType == "OfxParamTypeDouble2D")
                 {
                     double dValue       = atof(outParaDefault.c_str());
                     double dMaxValue    = atof(outParaMax.c_str());
                     double dMinValue    = atof(outParaMin.c_str());
-                    NSSlider *slider = [[[NSSlider alloc] initWithFrame:NSMakeRect(130, boundsRect.size.height - height, FILTER_SLIDER_WIDTH, FILTER_SLIDER_HEIGHT)] autorelease];
-                    [slider setTag:i];
+                    NSSlider *slider = [[[NSSlider alloc] initWithFrame:NSMakeRect(130, viewHeight - height, FILTER_SLIDER_WIDTH, FILTER_SLIDER_HEIGHT)] autorelease];
+                    [slider setTag:(i|(j<<16))];
                     [slider setTarget:self];
                     [slider setAction:@selector(sliderChanged:)];
                     
                     height += 2*FILTER_SLIDER_HEIGHT;
+                    if(outParaType == "OfxParamTypeDouble2D")
+                    {
+                        dMinValue = -1.0;
+                        dMaxValue = 2.0;
+                    }
+                    else
+                    {
+                        if(dMaxValue > 10000.0)
+                        {
+                            dMaxValue = 10000.0;
+                        }
+                        if(dMinValue < -10000.0)
+                        {
+                            dMinValue = -10000.0;
+                        }
+                    }
                     [slider setMaxValue:dMaxValue];
                     [slider setMinValue:dMinValue];
                     slider.doubleValue = dValue;
-                    [[panel contentView] addSubview:slider];
+                    [pareatView addSubview:slider];
                 }
                 else if(outParaType == "OfxParamTypeBoolean")
                 {
                     //height -= FILTER_PARATITLE_HEIGHT;
-                    NSButton *checkBtn = [[[NSButton alloc] initWithFrame:NSMakeRect(130, boundsRect.size.height - height, FILTER_SLIDER_WIDTH, FILTER_SLIDER_HEIGHT)] autorelease];
+                    NSButton *checkBtn = [[[NSButton alloc] initWithFrame:NSMakeRect(130, viewHeight - height, FILTER_SLIDER_WIDTH, FILTER_SLIDER_HEIGHT)] autorelease];
                     [checkBtn setButtonType:NSButtonTypeSwitch];
                     [checkBtn setTitle:@""];
                     if(outParaDefault == "0")
@@ -291,21 +492,66 @@ static char *s_enabledFilterId[] =
                     [checkBtn setAction:@selector(checkChanged:)];
                     
                     height += 2*FILTER_PARATITLE_HEIGHT;
-                    [[panel contentView] addSubview:checkBtn];
+                    [pareatView addSubview:checkBtn];
                 }
+                else if(outParaType == "OfxParamTypeChoice")
+                {
+                    
+                    NSPopUpButton *choiseCmb =  [[[NSPopUpButton alloc] initWithFrame:NSMakeRect(130, viewHeight - height, FILTER_SLIDER_WIDTH, FILTER_SLIDER_HEIGHT) pullsDown:NO] autorelease];
+                    
+                    for(int i=0; i< choise.size(); i++)
+                    {
+                        NSString *strItem = [NSString stringWithUTF8String:choise[i].c_str()];
+                        [choiseCmb addItemWithTitle:strItem];
+                    }
+                    int nDefaultIndex = atoi(outParaDefault.c_str());
+                    if(nDefaultIndex >= 0 && nDefaultIndex < choise.size())
+                        choiseCmb.title = [NSString stringWithUTF8String:choise[atoi(outParaDefault.c_str())].c_str()];
+                    
+                    [choiseCmb setTag:i];
+                    [choiseCmb setTarget:self];
+                    [choiseCmb setAction:@selector(choiseChanged:)];
+                    
+                    height += 2*FILTER_PARATITLE_HEIGHT;
+                    [pareatView addSubview:choiseCmb];
+                }
+                else if(outParaType == "OfxParamTypeRGBA" || outParaType == "OfxParamTypeRGB")
+                {
+                    NSColorWell* colorWell = [[[NSColorWell alloc] initWithFrame:NSMakeRect(130, viewHeight - height, FILTER_SLIDER_WIDTH, FILTER_SLIDER_HEIGHT)] autorelease];
+                    [colorWell setTag:i];
+                    [colorWell setTarget:self];
+                    [colorWell setAction:@selector(colorChanged:)];
+                    
+                    height += 2*FILTER_PARATITLE_HEIGHT;
+                    [pareatView addSubview:colorWell];
+                    
+                    double dcolor[4];
+                    for(int k=0; k<nDim; k++)
+                    {
+                        oxfHostGetParamDefaultInfo(_effectHandle, i, k, outParaDefault, outParaMax, outParaMin, &choise);
+                        dcolor[k] = atof(outParaDefault.c_str());
+                    }
+                    if(nDim <4) dcolor[3] = 255;
+                    NSColor *nColor = [NSColor colorWithRed:dcolor[0] green:dcolor[1] blue:dcolor[2] alpha:dcolor[3]];
+                    [colorWell setColor:nColor];
+                }
+                
             }
         }
     }
-    [panel setTitle:_strPluginId];
+    
+    [panel setTitle:[self name]];
     [panel setFrame:boundsRect display:YES];
+
 }
 - (void)run
 {
-    
+    [self initFisrt];
 	PluginData *pluginData;
     
     refresh = YES;
 	success = NO;
+    _needCalc = 0;
 	pluginData = [(PSPlugins *)seaPlugins data];
     if(!pluginData)  return;
 	//if ([pluginData spp] == 2 || [pluginData channel] != kAllChannels){
@@ -315,6 +561,8 @@ static char *s_enabledFilterId[] =
 	[NSApp runModalForWindow:panel];
 }
 
+static dispatch_queue_t  s_queue;
+
 - (IBAction)apply:(id)sender
 {
 	PluginData *pluginData;
@@ -322,6 +570,7 @@ static char *s_enabledFilterId[] =
 	pluginData = [(PSPlugins *)seaPlugins data];
     if(!pluginData)  return;
     
+    dispatch_barrier_sync(s_queue, ^{});
 	if (refresh) [self execute];
 	[pluginData apply];
 	
@@ -342,6 +591,8 @@ static char *s_enabledFilterId[] =
 	
 	pluginData = [(PSPlugins *)seaPlugins data];
     if(!pluginData)  return;
+    
+    dispatch_barrier_sync(s_queue, ^{});
 	//if ([pluginData spp] == 2 || [pluginData channel] != kAllChannels){
 	newdata = (unsigned char *)malloc(make_128([pluginData width] * [pluginData height] * 4));
 	//}
@@ -355,15 +606,35 @@ static char *s_enabledFilterId[] =
 	return success;
 }
 
+
 - (IBAction)preview:(id)sender
 {
 	PluginData *pluginData;
 	
 	pluginData = [(PSPlugins *)seaPlugins data];
     if(!pluginData) return;
-	if (refresh) [self execute];
-	[pluginData preview];
-	refresh = NO;
+	if (refresh)
+    {
+        if(!s_queue)
+        s_queue = dispatch_queue_create("com.effectmatrix.ofxprocess.queue", NULL);
+        _needCalc++;
+        if(_needCalc > 2)  _needCalc=2;
+        else
+            dispatch_async(s_queue,
+                           ^{[self execute];
+                            dispatch_async(dispatch_get_main_queue(),
+                                ^{
+                                    [pluginData preview];
+                                    refresh = NO;
+                                    _needCalc--;
+            });});
+    }
+    else
+    {
+        [pluginData preview];
+        refresh = NO;
+    }
+	
 }
 
 - (IBAction)cancel:(id)sender
@@ -373,7 +644,6 @@ static char *s_enabledFilterId[] =
 	pluginData = [(PSPlugins *)seaPlugins data];
     if(!pluginData) return;
 	[pluginData cancel];
-	if (newdata) { free(newdata); newdata = NULL; }
 	
 	[panel setAlphaValue:1.0];
 	
@@ -381,6 +651,129 @@ static char *s_enabledFilterId[] =
 	[NSApp endSheet:panel];
 	[panel orderOut:self];
 	success = NO;
+    
+    dispatch_barrier_sync(s_queue, ^{});
+
+    if (newdata) { free(newdata); newdata = NULL; }
+
+}
+
+- (NSView *)getSubView:(int)tagId
+{
+    for (NSView *view in _contentView.subviews)
+    {
+        if(tagId == view.tag)
+            return view;
+    }
+    return nil;
+}
+
+- (IBAction)reset:(id)sender
+{
+    if(!_effectHandle) return;
+     
+    int nParamCount = oxfHostGetParamsCount(_effectHandle);
+    for(int i=0; i< nParamCount; i++)
+    {
+        std::string outParaName, outParaType;
+        int nDim = oxfHostGetParamInfo(_effectHandle, i, outParaName, outParaType);
+        
+        if(outParaName == "Preview Type" || outParaName == "Advanced Options")  break;
+
+        if(nDim < 1)  continue;
+        
+        if(outParaType == "OfxParamTypeDouble" || outParaType == "OfxParamTypeInteger" || outParaType == "OfxParamTypeBoolean" || outParaType == "OfxParamTypeChoice"|| outParaType == "OfxParamTypeDouble2D" || outParaType == "OfxParamTypeRGBA" || outParaType == "OfxParamTypeRGB")
+        {
+            //for(int j=0; j< nDim; j++)
+            {
+                //printf("dim = %d\n", j);
+                
+                std::string outParaDefault, outParaMax, outParaMin;
+                std::vector<std::string> choise;
+                oxfHostGetParamDefaultInfo(_effectHandle, i, 0, outParaDefault, outParaMax, outParaMin, &choise);
+                oxfHostSetParamValue(_effectHandle, i, 0, outParaDefault);
+                
+                if(outParaType == "OfxParamTypeDouble" || outParaType == "OfxParamTypeInteger")
+                {
+                    double dValue       = atof(outParaDefault.c_str());
+                    NSSlider *slider = (NSSlider *)[self getSubView:i];
+                    slider.doubleValue = dValue;
+                }
+                else if(outParaType == "OfxParamTypeDouble2D")
+                {
+                    double dValue       = atof(outParaDefault.c_str());
+                    NSSlider *slider = (NSSlider *)[self getSubView:i];
+                    slider.doubleValue = dValue;
+                    oxfHostGetParamDefaultInfo(_effectHandle, i, 1, outParaDefault, outParaMax, outParaMin, &choise);
+                    oxfHostSetParamValue(_effectHandle, i, 1, outParaDefault);
+                    dValue       = atof(outParaDefault.c_str());
+                    slider = (NSSlider *)[self getSubView:i|(1<<16)];
+                    slider.doubleValue = dValue;
+                }
+                else if(outParaType == "OfxParamTypeBoolean")
+                {
+                    NSButton *checkBtn = (NSButton *)[self getSubView:i];
+                    if(outParaDefault == "0")
+                        [checkBtn setState:0];
+                    else [checkBtn setState:1];
+                }
+                else if(outParaType == "OfxParamTypeChoice")
+                {
+                    
+                    NSPopUpButton *choiseCmb =  (NSPopUpButton *)[self getSubView:i];
+
+                    int nDefaultIndex = atoi(outParaDefault.c_str());
+                    if(nDefaultIndex >= 0 && nDefaultIndex < choise.size())
+                        choiseCmb.title = [NSString stringWithUTF8String:choise[atoi(outParaDefault.c_str())].c_str()];
+                }
+                else if(outParaType == "OfxParamTypeRGBA" || outParaType == "OfxParamTypeRGB")
+                {
+                    for(int k=0; k< nDim; k++)
+                    {
+                        oxfHostGetParamDefaultInfo(_effectHandle, i, k, outParaDefault, outParaMax, outParaMin, &choise);
+                        oxfHostSetParamValue(_effectHandle, i, k, outParaDefault);
+                    }
+                }
+                
+            }
+        }
+    }
+    refresh = YES;
+    [self preview:self];
+}
+
+- (IBAction)showOriginal:(id)sender
+{
+    dispatch_barrier_sync(s_queue, ^{});
+    static int flag = 0;
+    PluginData *pluginData = [(PSPlugins *)seaPlugins data];
+    if(!pluginData) return;
+    int width = [pluginData width];
+    int height = [pluginData height];
+    unsigned char *replace = [pluginData replace];
+    unsigned char *overlay = [pluginData overlay];
+    
+    if(flag == 0)
+    {
+        [_btShowOriginal sendActionOn: NSEventMaskLeftMouseUp];//
+
+        memset(replace, 0xFF, width * height);
+        [pluginData setOverlayOpacity:0];
+        [pluginData setOverlayBehaviour:kReplacingBehaviour];
+        [pluginData preview];
+        flag = 1;
+    }
+    else
+    {
+        [_btShowOriginal sendActionOn: NSEventMaskLeftMouseDown];
+        memset(replace, 0xFF, width * height);
+        [pluginData setOverlayOpacity:255];
+        [pluginData setOverlayBehaviour:kReplacingBehaviour];
+        [pluginData preview];
+        flag = 0;
+
+    }
+    
 }
 
 - (IBAction)update:(id)sender

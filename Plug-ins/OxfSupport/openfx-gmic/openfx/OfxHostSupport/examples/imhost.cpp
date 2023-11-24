@@ -519,9 +519,14 @@ int oxfHostProcess(OFX_HOST_HANDLE ofxHandle, unsigned char *pRGBABufOut, int nB
     MyHost::MyImage *outputImage = outputClip->getOutputImage();
     OfxRGBAColourB* pOutBuf = outputImage->pixel(0, 0);
     
+    std::string ident = instance->getPlugin()->getIdentifier();
+    ident.erase(strlen("eu.gmic."));
+    
+    if(ident == "eu.gmic.")
     for(int y=0;y<nBufHeight; y++)
         memcpy(pRGBABufOut+y*nBufWidth*4, (unsigned char *)pOutBuf +(nBufHeight-y-1)*nBufWidth*4, nBufWidth  *4);
-    //memcpy(pRGBABufOut, pOutBuf, nBufWidth * nBufHeight *4);
+    else
+        memcpy(pRGBABufOut, pOutBuf, nBufWidth * nBufHeight *4);
     
     instance->endRenderAction(0, numFramesToRender, 1.0, false, renderScale, /*sequential=*/true, /*interactive=*/false,
 #                               ifdef OFX_SUPPORTS_OPENGLRENDER

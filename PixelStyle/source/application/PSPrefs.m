@@ -196,10 +196,10 @@ CGDisplayErr GetMainDisplayDPI(float *horizontalDPI, float *verticalDPI)
 	}
 	
 	// Get the default document size
-	m_nWidth = 1024;
+	m_nWidth = 2048;
 	if ([gUserDefaults objectForKey:@"width"])
 		m_nWidth = [gUserDefaults integerForKey:@"width"];
-	m_nHeight = 768;
+	m_nHeight = 1152;
 	if ([gUserDefaults objectForKey:@"height"])
 		m_nHeight = [gUserDefaults integerForKey:@"height"];
 	

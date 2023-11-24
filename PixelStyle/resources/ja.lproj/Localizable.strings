@@ -1,0 +1,981 @@
+"Move and Align Tool" = "移動して整列ツール";
+"Transform Tool" = "変形ツール";
+"Rectangular Marquee Tool" = "長方形マーキー ツール";
+"Elliptical Marquee Tool" = "楕円マーキー ツール";
+"Lasso Tool" = "なげなわツール";
+"Polygonal Lasso Tool" = "多角形なげなわツール";
+"Magic Wand Tool" = "魔法の杖ツール";
+"Crop Tool" = "切り抜きツール";
+"Art Brush Tool" = "アート ブラシ ツール";
+"Pencil Tool" = "鉛筆ツール";
+"Brush Tool" = "ブラシ ツール";
+"Eraser Tool" = "消しゴムツール";
+"Eyedropper Tool" = "スポイト ツール";
+"Clone Stamp Tool" = "クローン スタンプ ツール";
+"Paint Bucket Tool" = "ペイントバケツツール";
+"Gradient Tool" = "グラデーション ツール";
+"Text Tool" = "テキスト ツール";
+"Zoom Tool" = "ズーム ツール";
+"Shape Tool" = "シェイプツール";
+"Path Selection Tool" = "パス選択ツール";
+"Pen Tool" = "ペンツール";
+"Path Eraser Tool" = "パス消しゴムツール";
+"Red Eye Remove Tool" = "赤目除去ツール";
+"Smudge Tool" = "スマッジツール";
+"Burn Tool" = "深化ツール";
+"Dodge Tool" = "減光ツール";
+"Sponge Tool" = "スポンジ ツール";
+"Inpaint Tool" = "消去後の自動入力ツール";
+
+"Set the Foreground Color" = "前景色を設定する";
+"Set the Background Color" = "背景色の設定";
+"Switch Foreground/Background Colors" = "前景色と背景色の切り替え (X)";
+"Align top edges" = "上端を揃える";
+"Vertical align center" = "垂直方向の中心揃え";
+"Align bottom edges" = "下端を揃える";
+"Align left edges" = "左端を揃える";
+"Horizontal align center" = "水平方向の中心揃え";
+"Align right edges" = "右端を揃える";
+"Scale" = "スケール";
+"Rotate" = "回転";
+"Skew" = "スキュー";
+"Perspective" = "パース";
+"Adjust horizontal scale" = "水平スケールを設定する";
+"Adjust vertical scale" = "垂直スケールを設定する";
+"Set horizontal position of reference point" = "基準点の水平位置を設定";
+"Set vertical position of reference point" = "基準点の垂直位置を設定";
+"Set rotation" = "回転を設定";
+"Cancel transform" = "変換をキャンセル";
+"Apply transform" = "変換の確認";
+"New selection" = "新しい選択";
+"Add to selection" = "選択に追加";
+"Subtract from selection" = "選択範囲から減算";
+"Intersect with selection" = "選択範囲と交差する";
+"Invert the intersected selections" = "重複する選択範囲を除外";
+"Soften the edge of a selection" = "選択範囲のエッジを柔らかくする";
+"Set the drawing shape of marquee tool" = "マーキーツールの描画形状を設定する";
+"Set the fillet radius" = "フィレット半径を設定します";
+"Tolerance" = "許容値";
+"Set the sampling range for color" = "色のサンプリング範囲を設定します";
+"Set the number of sample points" = "サンプルポイント数を設定する";
+"Crop" = "現在のトリミング操作を送信します";
+"Display the current brush" = "現在選択されているブラシを表示";
+"Adjust brush size" = "ブラシ サイズを設定する";
+"Adjust brush transparency" = "ブラシの透明度を設定する";
+"Adjust brush hardness" = "ブラシの硬さを設定する";
+"Adjust brush smoothness" = "ブラシの滑らかさを設定する";
+"Adjust/Show brush pressure" = "ブラシ圧を設定/表示";
+"Size of drawing square" = "描画正方形のサイズ";
+"Display the current texture" = "現在選択されているテクスチャを表示";
+"Set the texture" = "テクスチャを設定する";
+"Adjust texture transparency" = "テクスチャの透明度を設定";
+"Design the painting way for connecting the previous drawing stroke" = "前の描画ストロークを接続するための塗り方を設計する";
+"Tap to open the “Art Brush” Selector" = "タップして「アート ブラシ」セレクターを開きます";
+"Tap to open the “Brush Preset” Selector" = "タップして「ブラシ プリセット」セレクターを開きます";
+"Tap to open the “Texture Preset” Selector" = "タップして「テクスチャ プリセット」セレクターを開きます";
+"Choose the brush category" = "ブラシ カテゴリを選択してください";
+"Choose the pen category" = "ペンのカテゴリを選択してください";
+"Choose the pencil category" = "鉛筆のカテゴリを選択してください";
+"Choose the airbrush category" = "エアブラシ カテゴリを選択してください";
+"Choose the scrawl category" = "走り書きのカテゴリを選択してください";
+"Choose the special category" = "特殊効果ペンのカテゴリを選択してください";
+"Adjust eraser transparency" = "消しゴムの透明度を設定する";
+"Adjust the sample quantity of sample colors picked by eyedropper tool" = "スポイト ツールで選択したサンプル色のサンプル量を調整します";
+"Define the selection mode for the sample point of eyedropper tool" = "スポイト ツールのサンプル ポイントの選択モードを定義します";
+"Define the selection mode for the sample point of clone tool" = "クローン ツールのサンプル ポイントの選択モードを定義します";
+"Designate the sampling color as the foreground/background" = "サンプリング カラーを前景/背景として指定します";
+"Set the source point for the clone stamp tool" = "クローン スタンプ ツールのソース ポイントを設定します";
+"Set the fill-mode" = "フィルモードを設定します";
+"Check the box to preview the filling effects" = "塗りつぶし効果をプレビューするにはボックスをチェックしてください";
+"Radial gradient" = "放射状グラデーション";
+"Diamond gradient" = "ダイヤモンド グラデーション";
+"Clockwise spiral gradient" = "時計回りの螺旋グラデーション";
+"Counterclockwise spiral gradient" = "反時計回りの螺旋グラデーション";
+"Reflected gradient" = "対称グラデーション";
+"Conical gradient" = "円錐形のグラデーション";
+"Angular gradient" = "角度グラデーション";
+"Linear gradient" = "線形グラデーション";
+"Set gradient with a tiled image" = "タイル状の画像でグラデーションを設定";
+"Set gradient with a symmetrical tiling image" = "対称タイリング イメージでグラデーションを設定";
+"Set the gradient direction" = "塗りつぶし角度を設定します";
+"Design font family" = "デザインフォントファミリー";
+"Design font style" = "デザインフォントスタイル";
+"Design font size" = "デザインフォントサイズ";
+"Design text color" = "文字の色をデザインする";
+"Faux bold" = "擬似太字";
+"Faux italic" = "擬似斜体";
+"Underlined" = "下線付き";
+"Strikethrough" = "取り消し線";
+"Design text kerning" = "文字間隔を設定する";
+"Design text deformation" = "テキストの変形を設定する";
+"Style :" = "スタイル:";
+"Bending :" = "曲げ:";
+"Zoom In" = "ズームイン";
+"Zoom Out" = "ズームアウト";
+"Display/Adjust Canvas Scale" = "キャンバススケールの表示/調整";
+"Zoom to the Actual Size" = "実際のサイズにズーム";
+"Display Canvas Scale" = "表示キャンバス スケール放";
+"Adjust Canvas Scale" = "キャンバス スケールの調整";
+"The selection boundaries will not be visible if any pixel is less than 50%." = "いずれかのピクセルが 50% 未満の場合、選択範囲の境界は表示されません。";
+"Change Layer Blending Modes" = "レイヤーのブレンド モードを設定します";
+"Change Layer Opacity" = "レイヤーの不透明度を設定します";
+"Show/Hide Layers" = "レイヤーの表示/非表示";
+"Add Layer Effects" = "レイヤースタイルを追加";
+"Layer Thumbnail" = "レイヤーのサムネイル";
+"Indicate Text Layers" = "テキストレイヤーを指定";
+"Create a New Layer" = "新しいレイヤーを作成";
+"Output the Selected Layer" = "選択したレイヤーを出";
+"Duplicate the Selected Layer" = "選択したレイヤーを複製";
+"Delete the Selected Layer" = "選択したレイヤーを削除";
+"Color :" = "色:";
+"Opacity :" = "不透明度:";
+"Position :" = "位置:";
+"Angle :" = "角度:";
+"Distance :" = "距離:";
+"Size :" = "サイズ:";
+"Outer" = "外側";
+"Central" = "中心";
+"Inner" = "内側";
+"Show/Hide Channels" = "チャンネルの表示/非表示";
+"Will apply the transform ?" = "変換を適用しますか";
+"Don't Apply" = "適用しない";
+"Are you sure to apply the transform?" = "変換を適用してもよろしいですか。";
+"Preview the output effect of the central portion of the canvas" = "キャンバスの中央部分の出力効果をプレビュー";
+"“Save” and “Export” functions are not available." = "「保存」および「エクスポート」機能は使用できません。";
+"Operations that are outside the current layer will not be visible." = "現在のレイヤーの外側にある操作は表示されません。";
+"Notice:“Save” and “Export” functions are not available!\n" = "注意:「保存」および「エクスポート」機能は使用できません。\n";
+"warning" = "警告";
+"ok" = "OK";
+"error_code" = "登録失敗情報。\n\n登録失敗の考えられる理由:\n\n1. 入力エラー - 登録コードをコピーし、スペースが含まれていないことを確認してください。\n\n2. バージョン エラー - 登録コード最新バージョンに対応しています。\n\nそれでも問題が解決しない場合は、market@effectmatrix.com までお問い合わせください。";
+"Congratulations. You have successfully registered." = "おめでとうございます。正常に登録されました。";
+"Registered successfully" = "登録に成功しました";
+"Purchase the full version to export your projects now." = "今すぐプロジェクトをエクスポートするにはフルバージョンを購入してください。";
+"Command - Select multiple shapes"             = "コマンド - 複数の図形を選択";
+"Command+Shift - Select all shapes"     = "Command+Shift - すべての図形を選択";
+"Alt - Operate control handles independently"    = "Opt - コントロール ハンドルを個別に操作します";
+"Double-Click could finish bezier path"= "ダブルクリックするとベジェ パスを終了できます";
+"Command+Ctrl - Close a bezier path" = "Command+Ctrl - ベジェ パスを閉じる";
+"Double-Click could reset bezier control points" = "ダブルクリックするとベジェ コントロール ポイントをリセットできます";
+"Alt - Lock gradients to 45" = "Alt - グラデーションを 45 度にロック";
+"No shape is selected" = "図形が選択されていません";
+"Mail" = "メール";
+"Bravo" = "素晴らしい";
+"Bug" = "バグ";
+"Idea" = "アイデア";
+"Like this app ?" = "このアプリが好きですか。";
+"Feedback Type ?" = "フィードバック タイプ ?";
+"To :" = "宛先：";
+"Subject :" = "件名:";
+"Send" = "送信";
+"Feedback" = "フィードバック";
+"Like" = "いいね";
+"Do not like" = "好きではない";
+"Error" = "エラー";
+"Supported formats :" = "サポートされている形式:";
+"The maximum number of attachments :" = "添付ファイルの最大数:";
+"The maximum size of single file :" = "単一ファイルの最大サイズ:";
+
+"Select and move" = "選択して移動";
+"Add and delete anchor" = "アンカーの追加と削除";
+"Closed freeform pen" = "閉じたフリーフォーム ペン";
+"Freeform pen" = "フリーフォーム ペン";
+"Pen" = "ペン";
+
+
+"Color Adjustment" = "色調整";
+"Color Effect" = "カラー効果";
+"Edge Detection" = "エッジ検出";
+"Sharpen" = "シャープにする";
+"Effect" = "特殊効果";
+
+
+"About" = "約";
+"Preferences" = "設定";
+"Services" = "サービス";
+"NO Services Apply" = "サービスは適用されません";
+"System Preferences" = "システム設定";
+"Hide" = "隠す";
+"Hide Others" = "他のものを隠す";
+"Show All" = "すべて表示";
+"Quit" = "やめる";
+"File" = "ファイル";
+"New" = "新しい";
+"New from Clipboard" = "クリップボードから新規";
+"Open" = "開く";
+"Open Recent" = "最近開いたファイル";
+"Clear Menu" = "メニューをクリア";
+"Close" = "閉じる";
+"Save" = "保存";
+"Save As" = "名前を付けて保存";
+"Revert" = "元に戻す";
+"Import" = "インポート";
+"Import as a new layer" = "新しいレイヤーとしてインポート";
+"Export" = "エクスポート";
+"Page Setup" = "ページ設定";
+"Print" = "印刷";
+"Edit" = "編集";
+"Undo" = "戻る";
+"Redo" = "やり直し";
+"Cut" = "カット";
+"Copy1" = "コピー";
+"Copy Merged" = "コピーを結合";
+"Paste" = "貼り付け";
+"Duplicate" = "重複";
+"Fill" = "塗りつぶし";
+"Transform" = "変換パス";
+"Start Dictation" = "Start Dictation";
+"Emoji & Symbols" = "絵文字と記号";
+"Image" = "画像";
+"Resize Image" = "画像のサイズ変更";
+"Resolution" = "解像度";
+"Image Boundaries" = "画像の境界線";
+"Rotate 90° Clockwise" = "時計回りに 90 度回転";
+"Rotate 90° Anticlockwise" = "反時計回りに 90 度回転";
+"Flip Horizontal" = "水平方向に反転";
+"Flip Vertical" = "垂直方向に反転";
+"Export as Texture" = "テクスチャをエクスポート";
+"Layer" = "レイヤー";
+"Resize Layer" = "レイヤーのサイズ";
+"Rotate Layer" = "レイヤーの回転";
+"Layer Boundaries" = "レイヤー境界";
+"Trim to Edges" = "エッジまでトリム";
+"Condense to Content" = "コンテンツにトリミング";
+"Condense to Selection" = "選択範囲までクロップ";
+"Expand to Document" = "ドキュメントのサイズに拡張";
+"New Layer" = "新しいレイヤー";
+"New Shape Layer" = "新しいシェイプ レイヤー";
+"Duplicate" = "レイヤーの複製";
+"Delete" = "削除";
+"Bring to Front" = "前面に移動";
+"Bring Forward" = "1 レベル前へ";
+"Send Backward" = "レイヤーを後ろに移動";
+"Send to Back" = "レイヤーを一番下に配置";
+"Alignment" = "整列";
+"Align Left" = "左揃え";
+"Align Right" = "右揃え";
+"Align Horizontal Center" = "水平方向の中心を揃える";
+"Align Top" = "上揃え";
+"Align Bottom" = "下揃え";
+"Align Vertical Center" = "垂直方向の中心を揃える";
+"Center Horizontally" = "水平方向の中央揃え";
+"Center Vertically" = "垂直方向の中央揃え";
+"Rasterise" = "ラスタライズ";
+"Convert to Shape" = "シェイプに変換";
+"Merge Down" = "下にマージ";
+"Merge Selected Layers" = "選択したレイヤーを結合";
+"Flatten Image" = "画像を平坦化";
+"Shape" = "形状";
+"Alignment" = "整列";
+"Arrange" = "アレンジ";
+"Flip Horizontally" = "水平方向に反転";
+"Flip Vertically" = "垂直方向に反転";
+"Unite Paths" = "パスを結合する";
+"Intersect Paths" = "パスの交差";
+"Subtract From Paths" = "パスから減算";
+"Exclude Paths" = "重複するパスを除外する";
+"Combine Paths" = "パス コンポーネントを結合";
+"Separate Paths" = "別々のパス";
+"Delete Paths" = "パスの削除";
+"Select" = "選択";
+"Select All" = "すべて選択";
+"Select From Alpha Channel" = "アルファ チャネルから選択";
+"Deselect" = "選択を解除";
+"Inverse" = "反転";
+"Layers" = "レイヤー";
+"Filter" = "フィルター";
+"Blur" = "ぼかし";
+"Gaussian Blur" = "ガウスぼかし";
+"Motion Blur" = "モーション ブラー";
+"Zoom Blur" = "ズームブラー";
+"Color Adjust" = "カラー調整";
+"Color Balance" = "カラーバランス";
+"Brightness and Contrast" = "明るさ/コントラスト";
+"Curves" = "曲線";
+"Gamma" = "ガンマ線";
+"Adjustment" = "調整";
+"Hue, Saturation and Value" = "色相/彩度";
+"White Point" = "白色点";
+"Color Ramp" = "カラー ランプ";
+"Convert to CMYK" = "CMYK に変換";
+"Convert to Grayscale" = "グレースケールに変換";
+"Invert" = "反転";
+"Monochrome" = "モノクロ";
+"Posterize" = "ポスタライズ";
+"Sepia" = "ノスタルジー";
+"Threshold" = "しきい値";
+"Distort" = "歪み";
+"Bump" = "バンプ";
+"Circle Splash" = "サークル スプラッシュ";
+"Circular Wrap" = "円形ラップ";
+"Glass Lozenge" = "ひし形";
+"Hole" = "穴";
+"Pinch" = "つまむ";
+"Torus Lens" = "トーラス レンズ";
+"Twirl" = "くるくる";
+"Vortex" = "渦";
+
+"Enhance" = "強化";
+"Contrast Sharpen" = "コントラストシャープ";
+"Exposure" = "露出";
+"Median" = "中間値";
+"Noise Reduction" = "ノイズリダクション";
+"Generate" = "生成";
+"Checkerboard" = "チェッカーボード";
+"Halo" = "ヘイロー";
+"Horizontal Stripes" = "横縞";
+"Random Generator" = "ノイズを追加";
+"Spotlight" = "スポットライト";
+"Starshine" = "スターライト";
+"Sunbeams" = "太陽の光";
+"Vertical Stripes" = "縦縞";
+"Halftone" = "ハーフトーン";
+"Circular Screen" = "円形スクリーン";
+"CMYK Halftone" = "CMYK ハーフトーン";
+"Dot Screen" = "ドット スクリーン";
+"Hatched Screen" = "ハッチングされたスクリーン";
+"Line Screen" = "ラインスクリーン";
+"Stylize" = "スタイル化";
+"Bloom" = "明るい部分を強調する";
+"Color Edges" = "カラーエッジ";
+"Crystallize" = "結晶化";
+"Displacement Distortion" = "変位歪み";
+"Edges" = "エッジ";
+"Glass Distortion" = "ガラスの歪み";
+"Gloom" = "グルームダークゾーン";
+"Pixellate" = "ピクセル化";
+"Pointillize" = "点描画";
+"Tile" = "タイル";
+"Kaleidoscope" = "対称性";
+"Parallelogram" = "平行線";
+"Scale and Rotate" = "拡大縮小と回転";
+"Squares" = "正方形";
+"Triangle" = "三角形";
+"Last Filter" = "最後のフィルター操作";
+"View" = "ビュー";
+"Hide Rulers" = "ルーラーを非表示";
+"Hide Guides" = "ガイドを非表示";
+"Hide Layers" = "レイヤーを非表示";
+"Hide Point Information" = "ポイント情報バーを非表示";
+"Hide Options Bar" = "オプション バーを非表示";
+"Hide Status Bar" = "ステータス バーを非表示";
+"Show Rulers" = "ルーラーを表示";
+"Show Guides" = "ショーガイド";
+"Show Layers" = "レイヤーを表示";
+"Show Point Information" = "ポイント情報を表示";
+"Show Options Bar" = "オプション バーを表示";
+"Show Status Bar" = "ステータス バーを表示";
+"Colors" = "色";
+"Foreground Color" = "前景色";
+"Background Color" = "背景色";
+"Swap Colors" = "前景色と背景色を入れ替えます";
+"Default Colors" = "デフォルトの色";
+"Rotate Selection Shading" = "選択範囲のシェーディングを回転";
+"Press Ctrl to select new area; Shift to add to selection; Opt to subtract from selection; Shift + Opt to intersect with selection; Shift + Ctrl to inverse intersect of selection." = "新しい選択範囲を作成するには Ctrl キーを押し、選択範囲を Shift キーを押してください。選択範囲を追加します。Opt は既存の選択範囲から減算します。Shift + Opt は選択範囲と交差します。Shift + Ctrl は重複する選択範囲を除外します。";
+"Press Shift to keep 1:1 aspect ration." = "1:1 の縦横比を維持するには Shift キーを押してください。";
+"Press Opt to erase. Press Shift to draw straight lines. Press Shift & Ctrl to draw lies at 45 degrees." = "消去するには Opt を押します。直線を描くには Shift を押します。45 度のライを描くには Shift と Ctrl を押します。";
+"Press Opt to flood all selection. Press Shift to preview flood." = "すべての選択を塗りつぶすには Opt を押してください。塗りつぶし効果をプレビューするには Shift を押してください。";
+"Opt - Define a source" = "オプション - ソースを定義します";
+"Press Shift to draw straight lines. Press Shift & Ctrl to draw lies at 45 degrees." = "直線を描くには Shift キーを押します。 Shift キーと Ctrl キーを押して 45 度の線を描きます。";
+"Press '[' to decrease radius. Press ']' to increase radius." = "「半径を小さくするには「[」を押してください。半径を大きくするには「]」を押してください。";
+"Press Opt to erase. Press Shift to draw straight lines. Press Shift & Ctrl to draw lies at 45 degrees." = "Opt を押して消去します。 直線を描くには Shift キーを押します。 Shift キーと Ctrl キーを押して 45 度のライを描きます。";
+"Press Opt & Drag the selected object to copy. Press Command & Shift to select all shapes. Press Command to select multiple shapes. Press Shift & Drag to select multiple shapes." = "Opt を押して、選択したオブジェクトをドラッグしてコピーします。 Command と Shift を押してすべての図形を選択します。 コマンドを押して複数の図形を選択します。 複数の図形を選択するには、Shift キーを押しながらドラッグします。";
+"Double Click to convert the selected point. Press Command to select multiple nodes. Press Opt to operate control handles independently." = "ダブルクリックして選択した点を変換します。 コマンドを押して複数のノードを選択します。 Opt を押すと、コントロール ハンドルを個別に操作できます。";
+"Press Opt to switch scaling mode." = "Opt を押してスケーリング モードを切り替えます。";
+"Window" = "ウィンドウ";
+"Minimize" = "最小化";
+"Zoom" = "ズーム";
+"Bring All to Front" = "すべてを前面に表示";
+
+"Help" = "ヘルプ";
+"Search" = "検索";
+"Forum" = "フォーラム";
+"Feedback with email" = "電子メールによるフィードバック";
+"Pupil Size" = "瞳孔サイズ";
+"Feather" = "境界をぼかす";
+"Aspect ratio" = "アスペクト比";
+"Normal" = "通常";
+"Custom" = "カスタム";
+"Corner radius" = "コーナー半径";
+"Intervals" = "間隔";
+
+
+"Radius" = "半径";
+"Opacity" = "不透明度";
+"Hardness" = "硬さ";
+"Smooth" = "スムーズ";
+"Pressure" = "压力";
+
+"Textures" = "テクスチャ";
+"Fade-out" = "フェードアウト";
+"Fades brush with drawing" = "描画とともにブラシをフェードします";
+"Pressure sensitive" = "感圧式";
+"enable tablet support" = "タブレットのサポートを有効にする";
+"Darker" = "より暗い";
+"Lighter" = "ライター";
+"Brush scaling" = "ブラシ スケーリング";
+"Scales brush with fading or drawing" = "缩放随着减淡或绘制";
+"Size" = "サイズ";
+"Erase" = "消去";
+
+"Draw straight lines" = "直線を描く";
+"Draw straight lines at 45°" = "45°で直線を描く";
+"Mimic paintbrush fading" = "絵筆の退色を模倣する";
+"Sample size" = "サンプルサイズ";
+"Use sample from all layer" = "すべてのレイヤーのサンプルを使用";
+"Select background color" = "背景色の選択";
+"Flood all selection" = "すべての選択を塗りつぶす";
+"Preview flood" = "プレビュー フラッド";
+"Sawtooth Wave" = "ノコギリ波";
+"Triangular Wave" = "三角波";
+"Strength" = "強さ";
+"Set strength for the stroke" = "ストロークの強さを設定";
+"Range" = "範囲";
+"Midtones" = "中間色";
+"Highlights" = "ハイライト";
+"Shadows" = "影";
+"Exposure" = "露出度";
+"Set range" = "設定範囲";
+"Set exposure" = "露出度の設定";
+"Mode" = "モード";
+"Desaturate" = "彩度を下げる";
+"Saturate" = "飽和";
+"Set mode" = "ペイントモード";
+"Flow" = "流れ";
+"Set flow rate" = "飽和変化率設定";
+"Fill" = "塗りつぶし";
+"Set shape fill type" = "形状の塗りつぶしタイプを設定";
+"Stroke" = "ストローク";
+"Set shape stroke type" = "シェイプ ストローク タイプの設定";
+"Set shape arrowheads type" = "形状の矢印のタイプを設定";
+"Draw a path in a new layer" = "新しいレイヤーにパスを描く";
+"Number of Points" = "ポイント数";
+"Decay" = "衰退";
+"Number of Sides" = "辺の数";
+
+
+"Rectangle" = "長方形";
+"Ellipse" = "楕円";
+"Star" = "スター";
+"Polygon" = "多角形";
+"Line" = "直線";
+"Clockwise spiral" = "時計回りのスパイラル";
+"Corner Radius" = "コーナー半径";
+
+"Font Name" = "フォント名";
+"Arc Warp" = "アーク ワープ";
+"Arc lower Warp" = "円弧下部ワープ";
+"Arc upper Warp" = "円弧上部ワープ";
+"Arch Warp" = "アーチ ワープ";
+"Buldge Warp" = "バルジ ワープ";
+"Shell lower Warp" = "シェル下部ワープ";
+"Shell upper Warp" = "シェル上部ワープ";
+
+"Change the zoom of the document" = "キャンバスをズームする";
+
+"Item1" = "オプション 1";
+"Item2" = "オプション 2";
+"Item3" = "オプション 3";
+
+"Foreground" = "前景";
+"Background" = "背景";
+
+"Untitled" = "無題";
+
+"Info" = "情報";
+"Histogram" = "ヒストグラム";
+"Sample" = "サンプル";
+"Channels" = "チャンネル";
+"Red" = "红";
+"Green" = "緑";
+"Blue" = "青";
+"Alpha" = "アルファ";
+"Multiply" = "乗算";
+"Screen" = "フィルターの色";
+"Overlay" = "オーバーレイ";
+"Darken" = "暗くする";
+"Lighten" = "明るくする";
+"Color Dodge" = "カラー覆い焼き";
+"Color Burn" = "カラー焼き込み";
+"Soft Light" = "やわらかい光";
+"Hard Light" = "まぶしさ";
+"Difference" = "違い";
+"Exclusion" = "除外";
+"Hue" = "色相";
+"Saturation" = "彩度";
+"Color" = "色";
+"Luminosity" = "明るさ";
+"Clear" = "クリア";
+"Copy" = "コピー";
+"Source In" = "Source In";
+"Source Out" = "Source Out";
+"Source Atop" = "Source Atop";
+"Destination Over" = "Destination Over";
+"Destination In" = "Destination In";
+"Destination Out" = "Destination Out";
+"Destination Atop" = "Destination Atop";
+"XOR" = "XOR";
+"Plus Darker" = "Plus Darker";
+"Plus Lighter" = "Plus Lighter";
+"Outline" = "輪郭";
+"Fill" = "塗りつぶし";
+"Outer Glow" = "外側の輝き";
+"Inner Glow" = "内部の輝き";
+"Shadow" = "影";
+
+"Layer Effects" = "レイヤー効果";
+"Add Effects" = "レイヤースタイルを追加";
+"Flattern" = "平らにする";
+"Cancel" = "キャンセル";
+"OK" = "OK";
+"Blend Mode" = "ブレンド モード";
+"Blend Mode :" = "ブレンド モード :";
+"Angle :" = "角度:";
+"Style :" = "スタイル:";
+"Scale :" = "スケール:";
+"Gradient" = "グラデーション";
+"Linear" = "線形";
+"Angle" = "角度";
+"Scale" = "スケール";
+"Radial" = "ラジアル";
+"pixels" = "ピクセル";
+"Size" = "サイズ";
+"Distance" = "距離";
+"Positon" = "位置";
+"Shape Burst" = "シェイプバースト";
+"Reverse" = "リバース";
+"Screen size" = "画面サイズ";
+"Preset" = "プリセット";
+"Widht" = "幅";
+"Height" = "高い";
+"Default" = "デフォルト";
+"Clipboard" = "クリップボード";
+"Page size(A4)" = "用紙サイズ(A4)";
+"Transparent background" = "透明な背景";
+"Create" = "作成";
+"New Image" = "新しいイメージ";
+"Do you want to reopen the last edited file ?" = "最後に編集したファイルを再度開きますか。";
+"Your changes will be lost if you don’t save them." = "保存しないと変更は失われます。";
+"Don't Save" = "保存しない";
+"Save" = "保存";
+"Image Default Settings" = "画像のデフォルト設定";
+"Selection empty" = "選択が空です";
+"The selection cannot be copied since it is empty." = "選択範囲は空であるためコピーできません。";
+"Could not use the tool because the target layer is hidden." = "対象のレイヤーが非表示になっているため、ツールを使用できませんでした。";
+"Horizontal" = "水平";
+"Vertical" = "垂直";
+"Set" = "セット";
+"Scale to preserve size" = "サイズを維持するために拡大縮小する";
+"Cubic Interpolation" = "3次補間";
+"No Interpolation" = "補間なし";
+"Linear Interpolation" = "線形補間";
+"Current Selection" = "現在の選択";
+"Presets" = "プリセット";
+"Top" = "トップ";
+"Bottom" = "底";
+"Left" = "左";
+"Right" = "右";
+"Width" = "幅";
+"Height" = "高い";
+"Do not clip any content" = "コンテンツをクリップしない";
+"Clip full-image layers only" = "フル画像レイヤーのみをクリップ";
+"Clip all layers" = "すべてのレイヤーをクリップ";
+"Texture opacity" = "テクスチャの不透明度";
+"Texture group" = "テクスチャ グループ";
+"Spacing" = "間隔";
+"Space between brush plots" = "ブラシ プロット間のスペース";
+"Brush group" = "ブラシグループ";
+"Name" = "名前";
+"All" = "すべて";
+"Color Paper Texture" = "カラー ペーパー テクスチャ";
+"Gyrosigma" = "ジャイロシグマ";
+"Lattice Shading" = "格子シェーディング";
+"Paper Texture" = "紙のテクスチャ";
+"Favourites" = "お気に入り";
+"Calligraphy" = "カリグラフィー";
+"Decorative" = "装飾";
+"Full Circles" = "ハードエッジの円";
+"Galaxy" = "ギャラクシー";
+"Partial Circles" = "ソフトエッジ円";
+"Squares" = "正方形";
+"Stars" = "星";
+"Add to existing category" = "既存のカテゴリに追加";
+"Add to new category" = "新しいカテゴリに追加";
+"Export" = "エクスポート";
+"Information will be lost" = "情報が失われます";
+"Parts of the document that are not currently visible will be lost. Are you sure you wish to continue?" = "現在表示されていないドキュメントの部分が失われます。続行してもよろしいですか.";
+"Brightness" = "明るさ";
+"Contrast" = "コントラスト";
+"Curve" = "曲線";
+"Apply" = "適用";
+"Auto" = "自動";
+"Reset" = "リセット";
+"Preview" = "プレビュー";
+"set the blackeset position" = "ブラックポイントを設定します";
+"Sample in image to set black point" = "黒点を設定する画像のサンプル";
+"set the whitest position" = "最も白い位置を設定します";
+"Sample in image to set white point" = "白色点を設定するための画像内のサンプル";
+"set the mid-gray position" = "中間グレーの位置を設定します";
+"Sample in image to set gray point" = "グレー ポイントを設定する画像のサンプル";
+"Gamma Adjust" = "ガンマ調整";
+"Value" = "値";
+"Paper size" = "用紙サイズ";
+"Point1X" = "ポイント1X";
+"Point1Y" = "ポイント1Y";
+"Point2X" = "ポイント 2X";
+"Point2Y" = "ポイント 2Y";
+"Refraction" = "Refraction";
+"Center X" = "Center X";
+"Center Y" = "Center Y";
+"Reverse direction" = "Reverse direction";
+"Intensity" = "Intensity";
+"Exposure value" = "Exposure value";
+"Noise" = "ノイズ";
+"Sharpness" = "Sharpness";
+"Overlap" = "Overlap";
+"Light Position X" = "Light Position X";
+"Light Position Y" = "Light Position Y";
+"Light Position At X" = "Light Position At X";
+"Light Position At Y" = "Light Position At Y";
+"Source Height" = "Source Height";
+"Destination Height" = "Destination Height";
+"Concentration" = "Concentration";
+"Sample1" = "例";
+"degress" = "度";
+"Grey Component Repalcement" = "Grey Component Repalcement";
+"Under Colour Removal" = "Under Colour Removal";
+"Texture: Default" = "Texture: Default";
+"Emphasis" = "Emphasis";
+"Top-left based" = "Top-left based";
+"Centre based" = "Centre based";
+"Auto Angle" = "Auto Angle";
+
+"Left top point X" = "Left top point X";
+"Left top point Y" = "Left top point Y";
+"Right top point X" = "Right top point X";
+"Right top point Y" = "Right top point Y";
+"Left bottom point X" = "Left bottom point X";
+"Left bottom point Y" = "Left bottom point Y";
+"Right bottom point X" = "Right bottom point X";
+"Right bottom point Y" = "Right bottom point Y";
+"Offset X" = "Offset X";
+"Offset Y" = "Offset Y";
+"Affine Tile (Scale and Rotate)" = "Affine Tile (Scale and Rotate)";
+
+
+"Hue Adjustment" = "色相調整";
+"RGB Adjustment" = "RGB 調整";
+"red" = "红";
+"green" = "緑";
+"blue" = "青";
+
+"Saturation Adjustment" = "彩度調整";
+"saturation" = "彩度";
+"Contrast Adjustment" = "コントラスト調整";
+"contrast" = "コントラスト";
+"Brightness Adjustment" = "明るさ調整";
+"brightness" = "明るさ";
+
+"Exposure Adjustment" = "露出度調整";
+"exposure" = "露出度";
+"White Balance" = "ホワイトバランス";
+"temperature" = "温度";
+"tint" = "色合い";
+"Grayscale" = "グレースケール";
+"Gamma Adjustment" = "ガンマ調整";
+"gamma" = "ガンマ線";
+
+"Highlight Shadow" = "ハイライトシャドウ";
+"shadows" = "影";
+"highlights" = "ハイライト";
+"Haze" = "霞んで暗くなる";
+"distance" = "距離";
+"slope" = "勾配";
+"intensity" = "強度";
+"color" = "色";
+"Color Monochrome" = "カラーモノクロ";
+"False Color" = "色の置換";
+"firstColor" = "最初の色";
+"secondColor" = "2 番目の色";
+"Color Invert" = "色反転";
+"Luminance Threshold" = "輝度のしきい値";
+"Pixelation" = "ピクセル化";
+"Polar Pixellate" = "同心円ピクセル化";
+"Polka Dot" = "水玉模様";
+"Cross Hatch" = "クロスハッチ";
+"CGA Color Space" = "CGA カラー フィルター";
+
+"threshold" = "しきい値";
+"center" = "中心";
+"pixelSize" = "pixelSize";
+
+"dotScaling" = "dotScaling";
+"crossHatchSpacin" = "crossHatchSpacin";
+"lineWidth" = "lineWidth";
+
+"Laplacian" = "Laplacian(ラプラシアン)";
+"Sobel" = "Sobel(ソーベル)";
+"Prewitt" = "Prewitt(プレウィット)";
+"Canny" = "Canny(キャニー)";
+"Weak Pixel Inclusion" = "弱いピクセルの包含";
+"Sketch" = "スケッチ";
+"Threshold Sketch" = "しきい値スケッチ";
+"Edge Strength" = "エッジ強度";
+"Blur Radius" = "ぼかし半径";
+"blurTexelSpacing" = "ぼかしテクセル間隔";
+"upperThreshold" = "上限しきい値";
+"lowerThreshold" = "下限しきい値";
+"radius" = "半径";
+"Box Blur" = "ボックスブラー";
+"Bilateral" = "両側ぼやけ";
+"Unsharp Mask" = "アンシャープマスク";
+"Shapen" = "シャープにする";
+"Toon" = "漫画";
+"Smooth Toon" = "スムーズトゥーン";
+"Tilt Shift" = "ぼやけたストライプ" ;
+"Emboss" = "エンボス";
+"Chroma Key" = "クロマキー";
+"Kuwahara" = "ぼかしたガッシュ画" ;
+"Posterize" = "ポスタライズ";
+"Perlin Noise" = "パーリンノイズ（レースノイズ）";
+"Threshold" = "しきい値";
+"Quantization" = "量子化";
+"Top Level" = "トップレベル";
+"Bottom Level" = "最下位レベル";
+"Falloff Rate" = "減衰率";
+"Sensitivity" = "感度";
+"Smoothing" = "スムーズ";
+"Start Color" = "初期カラー";
+"Finish Color" = "最終色";
+
+"No Fill" = "塗りつぶしなし";
+"Auto Fill" = "オートフィル";
+"Fast Auto Fill" = "高速オートフィル";
+"Slow Auto Fill" = "遅いオートフィル";
+
+"Auto Selection" = "自動選択";
+
+"AI" = "人工知能";
+"Auto Portrait Matting" = "自動ポートレートマット化";
+"Bilateral Smooth" = "自動スムージング（肌など）";
+"SeamCaving" = "スマート ズーム";
+"AI 4x Super Resolution" = "AI 4 倍超解像増幅";
+
+"Use the latest AI Super Resolution technology to magnify the image of this layer by four times" = "最新の AI 超解像度技術を使用して、このレイヤーの画像を 4 倍に拡大します";
+
+"Alpha Channel to RGB channels" = "アルファ チャネルを RGB チャネルにコピー";
+"Luminance to Alpha Channel" = "明るさをアルファ チャネルにコピー";
+"Selection to Alpha Channel" = "アルファ チャネルへの選択";
+
+"New Document" = "新しいドキュメント";
+"New Layer" = "新しいレイヤー";
+"Open File as ..." = "ファイルを...として開く";
+
+"https://itunes.apple.com/app/id966457795" = "https://itunes.apple.com/jp/app/super-photocut/id966457795?mt=12";
+"https://itunes.apple.com/app/id1152204742" = "https://itunes.apple.com/jp/app/super-vectorizer-2-vector-trace-tool/id1152204742?mt=12";
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>16-bit message</key>
+	<string>PixelStyle does not support the editing of 16-bit images. This image has been resampled at 8-bits to be imported.</string>
+	<key>SVG message</key>
+	<string>PixelStyle is unable to open the given SVG file because the SVG Importer is not installed. The installer for this importer can be found on PixelStyle&apos;s website.</string>
+	<key>all group</key>
+	<string>All</string>
+	<key>anchor selection</key>
+	<string>Anchor Selection</string>
+	<key>background</key>
+	<string>Background</string>
+	<key>gif trans</key>
+	<string>PixelStyle does not support GIF transparency or animation.</string>
+	<key>background layer</key>
+	<string>Background</string>
+	<key>beta message</key>
+	<string>PixelStyle is still under development and may contain bugs. Please make sure to only work on copies of images as there is the potential for corruption. Also please report any bugs you find.</string>
+	<key>cancel</key>
+	<string>Cancel</string>
+	<key>channels message</key>
+	<string>This XCF file contains channels which are not currently supported by PixelStyle. These channels will be lost upon saving.</string>
+	<key>click count</key>
+	<string>Clicks remaining: %d</string>
+	<key>compatibility (gimp) message</key>
+	<string>This file contains layer modes which will not be recognized by the GIMP 1.2 series and earlier.</string>
+	<key>corner radius</key>
+	<string>Corner radius: %d</string>
+	<key>disable alpha</key>
+	<string>Disable Alpha Channel</string>
+	<key>disk space body</key>
+	<string>To allow for unlimited undos PixelStyle needs to write some data to your system disk during operation. However since your system disk now has less than 50 MB of space some or all of the data PixelStyle has written to disk will be deleted (possibly causing certain undo or redo actions to fail). As such, it is strongly advised you save all documents and quit PixelStyle. This may improve the disk space situation on your system disk however you are urged to delete some additional files from your system disk to ensure this problem does not arise again in the future.</string>
+	<key>disk space title</key>
+	<string>Disk space low</string>
+	<key>download available body</key>
+	<string>An updated version of PixelStyle is now available for download.</string>
+	<key>download available title</key>
+	<string>Update available</string>
+	<key>download error body</key>
+	<string>The file required to check if PixelStyle cannot be downloaded from the Internet. Please check your Internet connection and try again.</string>
+	<key>download error title</key>
+	<string>Download error</string>
+	<key>download later</key>
+	<string>Download later</string>
+	<key>download now</key>
+	<string>Download now</string>
+	<key>empty selection body</key>
+	<string>The selection cannot be floated since it is empty.</string>
+	<key>empty selection copy body</key>
+	<string>The selection cannot be copied since it is empty.</string>
+	<key>empty selection copy title</key>
+	<string>Selection empty</string>
+	<key>empty selection title</key>
+	<string>Selection empty</string>
+	<key>enable alpha</key>
+	<string>Enable Alpha Channel</string>
+	<key>fade-out</key>
+	<string>Fade-out: %d</string>
+	<key>feedback survey body</key>
+	<string>In order to improve the next release of PixelStyle we are asking users to participate in a survey. The survey is only one page long and can be accessed by clicking the &quot; Run Survey&quot; button. This message should not trouble you again.</string>
+	<key>feedback survey button</key>
+	<string>Run Survey</string>
+	<key>feedback survey title</key>
+	<string>PixelStyle Feedback Survey</string>
+	<key>flatten body</key>
+	<string>Parts of the document that are not currently visible will be lost. Are you sure you wish to continue?</string>
+	<key>flatten title</key>
+	<string>Information will be lost</string>
+	<key>flattened</key>
+	<string>Flattened Layer</string>
+	<key>float selection</key>
+	<string>Float Selection</string>
+	<key>floating</key>
+	<string>Floating Selection</string>
+	<key>foreground</key>
+	<string>Foreground</string>
+	<key>general</key>
+	<string>General</string>
+	<key>hide boundaries</key>
+	<string>Hide Layer Boundaries</string>
+	<key>hide brushes</key>
+	<string>Hide Brushes</string>
+	<key>hide channels</key>
+	<string>Hide Channels</string>
+	<key>hide info</key>
+	<string>Hide Point Information</string>
+	<key>hide layers</key>
+	<string>Hide Layers</string>
+	<key>hide options</key>
+	<string>Hide Options</string>
+	<key>hide rulers</key>
+	<string>Hide Rulers</string>
+	<key>hide textures</key>
+	<string>Hide Textures</string>
+	<key>hide toolbox</key>
+	<string>Hide Toolbox</string>
+	<key>hide transparent</key>
+	<string>Hide Transparent Color</string>
+	<key>high res message</key>
+	<string>This image has a high resolution. PixelStyle&apos;s performance may therefore be reduced. You can reduce the resolution using &quot; Image &gt; Resolution...&quot; (with &quot; Preserve size&quot; checked). This will result in a lower-quality image.</string>
+	<key>import failure message</key>
+	<string>The selected file was not able to be successfully imported into this document.</string>
+	<key>indexed color body</key>
+	<string>XCF files using indexed colors are only supported if they are of version 1 or greater. This is because version 0 is known to have certain problems with indexed colors.</string>
+	<key>indexed color title</key>
+	<string>Indexed color not supported</string>
+	<key>jp2 not supported</key>
+	<string>The JPEG 2000 image format is only supported on systems running Mac OS 10.4 or later.</string>
+	<key>layer title</key>
+	<string>Layer %d</string>
+	<key>locked body</key>
+	<string>The &quot; Compare to Last Saved&quot; operation failed. The most likely cause for this is that the disk the original is kept on is full or read-only.</string>
+	<key>locked title</key>
+	<string>Operation Failed</string>
+	<key>mask-to-alpha message</key>
+	<string>Some of the masks in this image have been composited to their layer&apos;s alpha channel. These masks will be lost upon saving.</string>
+	<key>new images</key>
+	<string>New Images</string>
+	<key>no</key>
+	<string>No</string>
+	<key>non-current message</key>
+	<string>This file will be deleted upon closing unless it is saved.</string>
+	<key>not available</key>
+	<string>N/A</string>
+	<key>ok</key>
+	<string>OK</string>
+	<key>old crash report message</key>
+	<string>PixelStyle has moved its old crash report to the Trash so that it will be deleted next time you empty the trash.</string>
+	<key>opacity</key>
+	<string>Opacity: %d%%</string>
+	<key>outline</key>
+	<string>Outline: %d pt</string>
+	<key>paper size</key>
+	<string>Paper size</string>
+	<key>rate</key>
+	<string>Rate: %d%%</string>
+	<key>read only message</key>
+	<string>This file is in a read-only format, as such you cannot save this file. This warning will not be displayed for subsequent files in a read-only format.</string>
+	<key>resolution no effect message</key>
+	<string>The resolution of this image has been changed and this will affect printing and saving. However this will not affect the viewing window because your Preferences are set to ignore image resolution.</string>
+	<key>revert</key>
+	<string>Revert</string>
+	<key>revert body</key>
+	<string>&quot;%@&quot; has been edited. Are you sure you want to undo changes?</string>
+	<key>revert title</key>
+	<string>Revert</string>
+	<key>show boundaries</key>
+	<string>Show Layer Boundaries</string>
+	<key>show brushes</key>
+	<string>Show Brushes</string>
+	<key>show channels</key>
+	<string>Show Channels</string>
+	<key>show info</key>
+	<string>Show Point Information</string>
+	<key>show layers</key>
+	<string>Show Layers</string>
+	<key>show options</key>
+	<string>Show Options</string>
+	<key>show rulers</key>
+	<string>Show Rulers</string>
+	<key>show textures</key>
+	<string>Show Textures</string>
+	<key>show toolbox</key>
+	<string>Show Toolbox</string>
+	<key>show transparent</key>
+	<string>Show Transparent Color</string>
+	<key>source set</key>
+	<string>Source: (%d, %d) from &quot;%@&quot;</string>
+	<key>source set document</key>
+	<string>Source: (%d, %d) from whole document</string>
+	<key>source unset</key>
+	<string>Source: Unset</string>
+	<key>spacing</key>
+	<string>Spacing: %d%%</string>
+	<key>strange res message</key>
+	<string>This image has an unusual resolution. As such, it may look different to what is expected at 100% zoom. To fix this use &quot; Image &gt; Resolution...&quot; and set to 72 x 72 dpi.</string>
+	<key>tablet bug message</key>
+	<string>There is a bug in Mac OS 10.4 that causes some tablets to incorrectly register their first touch at full strength. A workaround is provided in the &quot; Preferences&quot; dialog however the best solution is to upgrade to Mac OS 10.4.6 or later.</string>
+	<key>tolerance</key>
+	<string>Tolerance: %d</string>
+	<key>transparent</key>
+	<string>Transparent</string>
+	<key>untitled</key>
+	<string>Untitled</string>
+	<key>up-to-date body</key>
+	<string>PixelStyle is up-to-date.</string>
+	<key>up-to-date title</key>
+	<string>PixelStyle up-to-date</string>
+	<key>user guide message</key>
+	<string>PixelStyle is distributed with a user guide to help you understand its features. Simply select &quot; PixelStyle Help&quot; from the &quot;Help&quot; menu to read it.</string>
+	<key>whole document</key>
+	<string>Whole Document</string>
+	<key>window back</key>
+	<string>Window Frame</string>
+	<key>xcf version body</key>
+	<string>The version of the XCF file you are trying to load is not supported by this program, every attempt will be made to load the file in its current state but loading may fail.</string>
+	<key>xcf version title</key>
+	<string>XCF version not supported</string>
+	<key>yes</key>
+	<string>Yes</string>
+	<key>zoom</key>
+	<string>Zoom: %.0f%%</string>
+</dict>
+</plist>

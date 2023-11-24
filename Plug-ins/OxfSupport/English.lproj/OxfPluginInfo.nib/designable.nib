@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment version="101000" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="OCBilaterClass">
+        <customObject id="-2" userLabel="File's Owner" customClass="OfxSupportClassItem">
             <connections>
+                <outlet property="_btShowOriginal" destination="tJr-Zc-eUC" id="9WH-mR-zAr"/>
                 <outlet property="panel" destination="6" id="32"/>
                 <outlet property="radiusLabel" destination="21" id="29"/>
                 <outlet property="radiusSlider" destination="14" id="30"/>
@@ -18,15 +19,15 @@
         <window title="Parameter Info" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="6" userLabel="Panel" customClass="PSWindow">
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="396" y="387" width="365" height="53"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="697"/>
+            <rect key="contentRect" x="396" y="387" width="470" height="53"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="695"/>
             <view key="contentView" id="5">
-                <rect key="frame" x="0.0" y="0.0" width="365" height="53"/>
+                <rect key="frame" x="0.0" y="0.0" width="470" height="53"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7">
-                        <rect key="frame" x="249" y="12" width="92" height="32"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                        <rect key="frame" x="353" y="5" width="92" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="34" customClass="PSButtonImageCell">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -47,8 +48,8 @@ DQ
                         </connections>
                     </slider>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="16">
-                        <rect key="frame" x="138" y="12" width="92" height="32"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                        <rect key="frame" x="250" y="5" width="92" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="37" customClass="PSButtonImageCell">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -56,11 +57,11 @@ DQ
                             <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                         </buttonCell>
                         <connections>
-                            <action selector="cancel:" target="-2" id="25"/>
+                            <action selector="cancel:" target="-2" id="8wX-MB-qB5"/>
                         </connections>
                     </button>
                     <textField hidden="YES" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21">
-                        <rect key="frame" x="295" y="19" width="42" height="14"/>
+                        <rect key="frame" x="365" y="39" width="42" height="14"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="left" title="10" id="38" customClass="PSTextFieldLabelCell">
                             <font key="font" metaFont="smallSystem"/>
@@ -69,7 +70,7 @@ DQ
                         </textFieldCell>
                     </textField>
                     <textField hidden="YES" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c66-8R-huX">
-                        <rect key="frame" x="19" y="26" width="331" height="14"/>
+                        <rect key="frame" x="6" y="39" width="331" height="14"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="left" title="Radius:" id="0J9-oB-ltQ" customClass="PSTextFieldLabelCell">
                             <font key="font" metaFont="smallSystem"/>
@@ -77,9 +78,31 @@ DQ
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EY4-3X-JvV">
+                        <rect key="frame" x="161" y="6" width="69" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <buttonCell key="cell" type="push" title="Reset" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cBq-lm-4bm">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="reset:" target="-2" id="AYc-Vd-7LE"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tJr-Zc-eUC">
+                        <rect key="frame" x="65" y="6" width="81" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <buttonCell key="cell" type="push" title="Original" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ykl-9r-RwO">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showOriginal:" target="-2" id="Xgw-ET-PbO"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="-28.5" y="81.5"/>
+            <point key="canvasLocation" x="24" y="81.5"/>
         </window>
     </objects>
 </document>

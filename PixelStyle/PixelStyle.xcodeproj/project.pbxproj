@@ -5037,6 +5037,7 @@
 		4BFC37CB2A6585340040886B /* OfxSupport.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18CAD7D62865505A00E495E2 /* OfxSupport.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		56C8A64D1055A1DA0056E36F /* normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 56C8A64C1055A1DA0056E36F /* normal.png */; };
 		75046F332750B0DB008BEF99 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75046F2F2750B0DB008BEF99 /* libstdc++.6.0.9.dylib */; };
+		75274FF32AB0951B00811C42 /* color.ofx.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75274FF22AB0951B00811C42 /* color.ofx.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		752D7F2127605B2000FC5299 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75046F2F2750B0DB008BEF99 /* libstdc++.6.0.9.dylib */; };
 		75710D1A1D898F0700A61C61 /* Rotate0.png in Resources */ = {isa = PBXBuildFile; fileRef = 75710D121D898F0700A61C61 /* Rotate0.png */; };
 		75710D1B1D898F0700A61C61 /* Rotate0.png in Resources */ = {isa = PBXBuildFile; fileRef = 75710D121D898F0700A61C61 /* Rotate0.png */; };
@@ -10631,6 +10632,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				4BF38E632A68E148004D88BD /* GMIC.ofx.bundle in CopyFiles */,
+				75274FF32AB0951B00811C42 /* color.ofx.bundle in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -11422,6 +11424,7 @@
 		4BF38E622A68E148004D88BD /* GMIC.ofx.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GMIC.ofx.bundle; path = "../Plug-ins/OxfSupport/openfx-gmic/GMIC_OFX/release/GMIC.ofx.bundle"; sourceTree = "<group>"; };
 		56C8A64C1055A1DA0056E36F /* normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal.png; sourceTree = "<group>"; };
 		75046F2F2750B0DB008BEF99 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "../Extralibs/libstdc++.6.0.9.dylib"; sourceTree = "<group>"; };
+		75274FF22AB0951B00811C42 /* color.ofx.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = color.ofx.bundle; path = "../Plug-ins/OxfSupport/openfx-gmic/openfx/MyPlugins/color.ofx.bundle"; sourceTree = "<group>"; };
 		75710D121D898F0700A61C61 /* Rotate0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rotate0.png; sourceTree = "<group>"; };
 		75710D131D898F0700A61C61 /* Rotate1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rotate1.png; sourceTree = "<group>"; };
 		75710D141D898F0700A61C61 /* Rotate2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rotate2.png; sourceTree = "<group>"; };
@@ -11447,6 +11450,7 @@
 		75DE01312A9EC47300ED2298 /* AISR4x.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AISR4x.xcodeproj; path = "../Plug-ins/AISR4x/AISR4x.xcodeproj"; sourceTree = "<group>"; };
 		75DE01482A9ED3B900ED2298 /* libAISR4x.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libAISR4x.framework; path = "../Plug-ins/AISR4x/libAISR4x.framework"; sourceTree = "<group>"; };
 		75DFB26D2A68FC18007F8A94 /* libimofxhost.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libimofxhost.dylib; path = "../Plug-ins/OxfSupport/libimofxhost.dylib"; sourceTree = "<group>"; };
+		75EB23192AB81963001C8F11 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		75EC11881DA8ED87008D4C5E /* GPUImageDTFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageDTFilter.h; sourceTree = "<group>"; };
 		75EC11891DA8ED87008D4C5E /* GPUImageDTFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageDTFilter.m; sourceTree = "<group>"; };
 		A801004B0BF96F130048FCD7 /* CIKaleidoscope.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CIKaleidoscope.xcodeproj; path = "../CoreImage Plug-ins/CIKaleidoscope/CIKaleidoscope.xcodeproj"; sourceTree = SOURCE_ROOT; };
@@ -12428,6 +12432,7 @@
 		2A37F4AAFDCFA73011CA2CEA /* Seashore */ = {
 			isa = PBXGroup;
 			children = (
+				75274FF22AB0951B00811C42 /* color.ofx.bundle */,
 				75DE01482A9ED3B900ED2298 /* libAISR4x.framework */,
 				75DFB26D2A68FC18007F8A94 /* libimofxhost.dylib */,
 				4BF38E622A68E148004D88BD /* GMIC.ofx.bundle */,
@@ -24780,6 +24785,7 @@
 				A8CA47A406D82C10006F0681 /* English */,
 				3974D66C1D8927970017F834 /* zh-Hans */,
 				3974D66D1D8927FC0017F834 /* zh-Hant */,
+				75EB23192AB81963001C8F11 /* ja */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -25649,7 +25655,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 20230901.0;
+				CURRENT_PROJECT_VERSION = 20231024.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = VA2XE4K2T9;
 				ENABLE_HARDENED_RUNTIME = NO;
@@ -25689,7 +25695,7 @@
 					"$(PROJECT_DIR)/source/ComputeDistance/ComputeDistance",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 4.2.0;
+				MARKETING_VERSION = 4.3.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
@@ -25721,7 +25727,7 @@
 				CODE_SIGN_ENTITLEMENTS = PixelStyle/PixelStyle.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20230901.0;
+				CURRENT_PROJECT_VERSION = 20231024.0;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = VA2XE4K2T9;
 				ENABLE_HARDENED_RUNTIME = NO;
@@ -25760,7 +25766,7 @@
 					"$(PROJECT_DIR)/source/ComputeDistance/ComputeDistance",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 4.2.0;
+				MARKETING_VERSION = 4.3.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
 				OTHER_CODE_SIGN_FLAGS = "--deep";

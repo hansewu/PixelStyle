@@ -33,6 +33,10 @@ typedef void * OFX_HOST_HANDLE;
 
 	// The panel for the plug-in
 	IBOutlet id panel;
+    
+    IBOutlet NSButton* _btShowOriginal;
+    
+    NSView *_contentView;
 
 	// The radius of the crystallize
 	int radius;
@@ -48,7 +52,11 @@ typedef void * OFX_HOST_HANDLE;
 
     void * _hostHandle;
     NSString *_strPluginId;
+    NSString *_strPluginType;
+    NSString *_strPluginName;
     OFX_HOST_HANDLE _effectHandle;
+    
+    volatile int _needCalc;
     //robustVideoMatting *m_rvmProcess;
 }
 
@@ -59,7 +67,7 @@ typedef void * OFX_HOST_HANDLE;
 				The PSPlugins instance responsible for managing the plug-ins.
 	@result		Returns instance upon success (or NULL otherwise).
 */
-- (id)initWithManagerOxf:(PSPlugins *)manager  oxfHostHandle:(void *)hostHandle stringId:(NSString *)strPluginId;
+- (id)initWithManagerOxf:(PSPlugins *)manager  oxfHostHandle:(void *)hostHandle stringId:(NSString *)strPluginId stringType:(NSString *)strPluginType stringName:(NSString *)strPluginName;
 
 /*!
 	@method		type
@@ -194,5 +202,8 @@ typedef void * OFX_HOST_HANDLE;
 	@result		YES if the menu item should be enabled, NO otherwise.
 */
 - (BOOL)validateMenuItem:(id)menuItem;
+
+- (IBAction)reset:(id)sender;
+- (IBAction)showOriginal:(id)sender;
 
 @end
