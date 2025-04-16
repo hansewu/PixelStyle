@@ -263,6 +263,8 @@ int GetImageBuffer(NSImage *Image, int nWidth, int nHeight, unsigned char *pBufR
     
     typePath                = [WDTextPath textPathWithPath:pathRect2];
     
+    [typePath setBaseBounds:CGRectMake(pointStart.x, pointStart.y, 1000, 500)];
+    
     [typePath setBlinkCursor:2 batvie:NO];
     CUSTOM_TRANSFORM transformCustom1 = {0, 0, 0, 0, 0};
     typePath.transformCustom        =  transformCustom1;

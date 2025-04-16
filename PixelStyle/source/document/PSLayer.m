@@ -1826,7 +1826,9 @@ extern IntPoint gScreenResolution;
     if (srcType == XCF_RGB_IMAGE && destType == XCF_GRAY_IMAGE)
     {
         if (m_pImageData == NULL) return;
-        
+    
+        assert(false);
+        /*
         IMAGE_DATA data = [m_pImageData lockDataForRead];
         unsigned char *pData = data.pBuffer;
         
@@ -1868,12 +1870,13 @@ extern IntPoint gScreenResolution;
         // Get rid of the colour world - we no longer need it
         CWDisposeColorWorld(cw);
         CloseDisplayProfile(srcProf);
-        
+        */
     }
     else if (srcType == XCF_GRAY_IMAGE && destType == XCF_RGB_IMAGE)
     {
         if (m_pImageData == NULL) return;
-        
+        assert(false);
+        /*
         IMAGE_DATA data = [m_pImageData lockDataForRead];
         unsigned char *pData = data.pBuffer;
         
@@ -1915,7 +1918,7 @@ extern IntPoint gScreenResolution;
         // Get rid of the colour world - we no longer need it
         CWDisposeColorWorld(cw);
         CloseDisplayProfile(destProf);
-        
+        */
     }
     
     [self refreshTotalToRender];

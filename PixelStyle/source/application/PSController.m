@@ -37,7 +37,7 @@ id idPSController;
 	// Specify ourselves as NSApp's delegate
 	[NSApp setDelegate:self];
     if ( IS_MACOS_AVAILABLE(10, 14) )
-        [NSApp setAppearance:[NSAppearance appearanceNamed:NSAppearanceNameDarkAqua]];// darm mode
+        [NSApp setAppearance:[NSAppearance appearanceNamed:NSAppearanceNameDarkAqua]];// dark mode
     
 	// We want to know when ColorSync changes
 	[[NSDistributedNotificationCenter defaultCenter] addObserver:self selector:@selector(colorSyncChanged:) name:@"AppleColorSyncPreferencesChangedNotification" object:NULL];

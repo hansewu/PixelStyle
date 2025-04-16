@@ -204,6 +204,7 @@
 				GCC_VERSION_ppc = 4.0;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = Greyscale;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
@@ -222,6 +223,7 @@
 				GCC_VERSION_ppc = 4.0;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PREBINDING = NO;
 				PRODUCT_NAME = Greyscale;
 				SKIP_INSTALL = YES;

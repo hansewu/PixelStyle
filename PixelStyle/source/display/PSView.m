@@ -675,15 +675,21 @@ static float s_Zoom[] = {0.05, 0.10, 0.15, 0.25, 0.5, 0.75, 1.0, 1.5, 2.0, 3.0, 
 
 -(void)drawBackground:(NSRect)rect
 {
+    NSRect rectLimit = self.bounds;
+    rect = NSIntersectionRect(rect, rectLimit);
     // Set the background color
-    if ([[m_idDocument whiteboard] whiteboardIsLayerSpecific]) {
+    if ([[m_idDocument whiteboard] whiteboardIsLayerSpecific])
+    {
         [[NSColor colorWithCalibratedWhite:0.6667 alpha:1.0] set];
         [[NSBezierPath bezierPathWithRect:rect] fill];
     }
     else {
-        if([(PSPrefs *)[PSController m_idPSPrefs] useCheckerboard]){
+        if([(PSPrefs *)[PSController m_idPSPrefs] useCheckerboard])
+        {
             [[NSColor colorWithPatternImage: [NSImage imageNamed:@"checkerboard"] ] set];
-        }else{
+        }
+        else
+       {
             [[[[PSController utilitiesManager] transparentUtility] color] set];
         }
         [[NSBezierPath bezierPathWithRect:rect] fill];

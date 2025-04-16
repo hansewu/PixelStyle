@@ -153,8 +153,9 @@ extern IntPoint gScreenResolution;
 	OpenDisplayProfile(&m_cpDisplayProf);
 	m_ccsDisplayProf = CGColorSpaceCreateWithPlatformColorSpace(m_cpDisplayProf);
 	CMGetDefaultProfileBySpace(cmCMYKData, &destProf);
-	NCWNewColorWorld(&m_cwColourSpace, m_cpDisplayProf, destProf);
-	
+	//NCWNewColorWorld(&m_cwColourSpace, m_cpDisplayProf, destProf);
+    m_cwColourSpace = nil;
+    
 	// Set the locking thread to NULL
 	m_thrLockingThread = NULL;
 	
@@ -1119,7 +1120,8 @@ extern IntPoint gScreenResolution;
 	OpenDisplayProfile(&m_cpDisplayProf);
 	m_ccsDisplayProf = CGColorSpaceCreateWithPlatformColorSpace(m_cpDisplayProf);
 	CMGetDefaultProfileBySpace(cmCMYKData, &destProf);
-	NCWNewColorWorld(&m_cwColourSpace, m_cpDisplayProf, destProf);
+	//NCWNewColorWorld(&m_cwColourSpace, m_cpDisplayProf, destProf);
+    m_cwColourSpace = nil;
     
 	if ([self CMYKPreview])
 		[self update];

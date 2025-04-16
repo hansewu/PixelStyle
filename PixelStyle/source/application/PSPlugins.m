@@ -13,9 +13,9 @@ extern BOOL useAltiVec;
 
 @implementation PSPlugins
 
-int plugin_sort(id obj1, id obj2, void *context)
+NSInteger plugin_sort(id obj1, id obj2, void *context)
 {
-	int result;
+    NSInteger result;
 	
 	result = [[obj1 groupName] caseInsensitiveCompare:[obj2 groupName]];
 	if (result == NSOrderedSame) {

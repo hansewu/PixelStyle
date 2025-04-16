@@ -172,7 +172,10 @@
 	
 	// Otherwise select the current options are up-to-date with the current tool
 	if (m_nCurrentTool != [m_idToolboxUtility tool]) {
-        [[(AbstractOptions *)currentOptions view] setFrameSize:[m_idView frame].size];
+        CGRect viewRect = [m_idView frame];
+        CGRect  oldRect = [[(AbstractOptions *)currentOptions view] frame];
+        [[(AbstractOptions *)currentOptions view] setFrameSize:viewRect.size];
+        //[[(AbstractOptions *)currentOptions view] setFrame:viewRect];
         [m_idView replaceSubview:m_idLastView with:[(AbstractOptions *)currentOptions view]];
 		m_idLastView = [(AbstractOptions *)currentOptions view];
 		m_nCurrentTool = [m_idToolboxUtility tool];

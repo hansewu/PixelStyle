@@ -16,7 +16,7 @@
 #import "UIKitOS.h"
 
 #import <CoreText/CoreText.h>
-#import <VideoToolBox/VTCompressionProperties.h>
+//#import <VideoToolBox/VTCompressionProperties.h>
 #import "NSString+Additions.h"
 #import "UIColor+Additions.h"
 #import "WDBezierNode.h"
@@ -95,7 +95,7 @@ NSString *WDTextPathAlignmentKey = @"WDTextPathAlignmentKey";
     nFontUnderlineValue_        = 0;
     nFontStrikethroughValue_    = 0;
     nFontCharacterSpace_        = 0;
-
+    baseBounds_                 = CGRectZero;
     
     m_indexSpace = [[NSMutableIndexSet alloc] init];
     
@@ -120,7 +120,8 @@ NSString *WDTextPathAlignmentKey = @"WDTextPathAlignmentKey";
     [coder encodeFloat:startOffset_ forKey:WDTextPathStartOffsetKey];
 #if TARGET_OS_IPHONE
     [coder encodeCGAffineTransform:transform_ forKey:WDTransformKey];
-#else
+//#else
+#endif
     NSValue *vlTransform = [NSValue valueWithBytes:&transform_ objCType:@encode(CGAffineTransform)];
     
     [coder encodeObject:vlTransform forKey:WDTransformKey];
@@ -135,9 +136,11 @@ NSString *WDTextPathAlignmentKey = @"WDTextPathAlignmentKey";
     [coder encodeInt32:nFontStrikethroughValue_ forKey:@"PSFontStrikethroughValue"];
     [coder encodeInt32:nFontCharacterSpace_ forKey:@"PSFontCharacterSpace"];
 
-    
     [coder encodeObject:m_indexSpace forKey:@"PSIndexSpace"];
-#endif
+    
+    if(!CGRectEqualToRect(baseBounds_, CGRectZero))
+        [coder encodeObject:NSStringFromRect(NSRectFromCGRect(baseBounds_)) forKey:@"PSTextBaseBounds"];
+//#endif
 }
 
 - (id)initWithCoder:(NSCoder *)coder
@@ -178,9 +181,28 @@ NSString *WDTextPathAlignmentKey = @"WDTextPathAlignmentKey";
     
     m_indexSpace = [coder decodeObjectForKey:@"PSIndexSpace"];
     
+    NSString *rectString = [coder decodeObjectForKey:@"PSTextBaseBounds"];
+    if(rectString)
+    {
+        NSRect rect = NSRectFromString(rectString);
+        baseBounds_                 = NSRectToCGRect(rect);
+    }
+    else
+        baseBounds_                 = CGRectZero;
+    
     needsLayout_ = YES;
     
     return self; 
+}
+
+- (void) setBaseBounds:(CGRect)rect
+{
+    baseBounds_ = rect;
+}
+
+- (CGRect) getBaseBounds
+{
+    return baseBounds_;
 }
 
 - (CGRect) styleBounds 
@@ -701,9 +723,46 @@ static CGPathRef createStrikethroghPath(CGRect rect, CGFloat fHeightOffset )
     CGPathRelease(path2);
 }
 
+- (NSMutableArray *) customTransformArray:(NSMutableArray *)pathArray
+{
+    NSMutableArray          *textAuxTransed;
+    textAuxTransed = [[NSMutableArray alloc] init];
+    for( id pathRef in pathArray)
+    {
+        CGPathRef Path1 = (__bridge CGPathRef) pathRef;
+        CGPathRef Path2 = WDCreateCustomTransformedCGPathRef(Path1, &transformCustom_, styleBounds_);
+        [textAuxTransed addObject:(__bridge id)Path2];
+        
+        CGPathRelease(Path2);
+    }
+    
+    [pathArray removeAllObjects];
+    return textAuxTransed;
+}
+
+- (NSMutableArray *) perspectiveTransformArray:(NSMutableArray *)pathArray
+{
+    NSMutableArray          *textAuxTransed;
+    textAuxTransed = [[NSMutableArray alloc] init];
+    for( id pathRef in pathArray)
+    {
+        CGPathRef Path1 = (__bridge CGPathRef) pathRef;
+        CGPathRef Path2 = WDCreateCustomPerspectiveTransformedCGPathRef(Path1, perspectiveTransform_, styleBounds_);
+        [textAuxTransed addObject:(__bridge id)Path2];
+        
+        CGPathRelease(Path2);
+    }
+    
+    [pathArray removeAllObjects];
+    return textAuxTransed;
+}
+
 - (void) customTransform
 {
     [self addTextAux];
+    
+    arrayUnderline_ = [self customTransformArray:arrayUnderline_];
+    arrayStrikethrough_ = [self customTransformArray:arrayStrikethrough_];
     
     if(transformCustom_.nTransformStyleID >= 0)
     {
@@ -768,6 +827,9 @@ static CGPathRef createStrikethroghPath(CGRect rect, CGFloat fHeightOffset )
 - (void) customPerspectiveTransform
 {
     [self addTextAux];
+    
+    arrayUnderline_ = [self perspectiveTransformArray:arrayUnderline_];
+    arrayStrikethrough_ = [self perspectiveTransformArray:arrayStrikethrough_];
     
     if(YES)
     {
@@ -875,8 +937,353 @@ CGPathRef createCursorPath(CGPoint origin, CGFloat fheight)
     CGPathRelease(path);
 }
 
+- (void) addBaseAuxBoundPoints:(CGMutablePathRef)baseGlyphPath ymin:(CGFloat)yMin ymax:(CGFloat)yMax  transform:(CGAffineTransform)tX pointsUnderline:(NSMutableArray *)arrayPointsUnderline pointsStrikethrough:(NSMutableArray *)arrayPointsStrikethrough
+{
+    CGRect rectBaseGlyph = CGPathGetPathBoundingBox(baseGlyphPath);
+    rectBaseGlyph.origin.y = yMin;
+    rectBaseGlyph.size.height = yMax - yMin;
+    
+    NSPoint point;
+    point.x = rectBaseGlyph.origin.x;
+    point.y = rectBaseGlyph.origin.y+10;
+    point = CGPointApplyAffineTransform(point, tX);
+    
+    [arrayPointsUnderline  addObject:[NSValue valueWithPoint:point]];
+    
+    point.x = rectBaseGlyph.origin.x+rectBaseGlyph.size.width;
+    point.y = rectBaseGlyph.origin.y+10;
+    point = CGPointApplyAffineTransform(point, tX);
+    
+    [arrayPointsUnderline  addObject:[NSValue valueWithPoint:point]];
+    
+    point.x = rectBaseGlyph.origin.x+rectBaseGlyph.size.width;
+    point.y = rectBaseGlyph.origin.y +7;
+    point = CGPointApplyAffineTransform(point, tX);
+    
+    [arrayPointsUnderline  addObject:[NSValue valueWithPoint:point]];
+    
+    point.x = rectBaseGlyph.origin.x;
+    point.y = rectBaseGlyph.origin.y +7;
+    point = CGPointApplyAffineTransform(point, tX);
+    
+    [arrayPointsUnderline  addObject:[NSValue valueWithPoint:point]];
+    
+    
+    
+    point.x = rectBaseGlyph.origin.x;
+    point.y = rectBaseGlyph.origin.y + rectBaseGlyph.size.height/2;
+    point = CGPointApplyAffineTransform(point, tX);
+    
+    [arrayPointsStrikethrough  addObject:[NSValue valueWithPoint:point]];
+    
+    point.x = rectBaseGlyph.origin.x+rectBaseGlyph.size.width;
+    point.y = rectBaseGlyph.origin.y+ rectBaseGlyph.size.height/2;
+    point = CGPointApplyAffineTransform(point, tX);
+    
+    [arrayPointsStrikethrough  addObject:[NSValue valueWithPoint:point]];
+    
+    point.x = rectBaseGlyph.origin.x+rectBaseGlyph.size.width;
+    point.y = rectBaseGlyph.origin.y+ rectBaseGlyph.size.height/2 - 3;
+    point = CGPointApplyAffineTransform(point, tX);
+    
+    [arrayPointsStrikethrough  addObject:[NSValue valueWithPoint:point]];
+    
+    point.x = rectBaseGlyph.origin.x;
+    point.y = rectBaseGlyph.origin.y+ rectBaseGlyph.size.height/2 - 3;
+    point = CGPointApplyAffineTransform(point, tX);
+    
+    [arrayPointsStrikethrough  addObject:[NSValue valueWithPoint:point]];
+    
+}
+
+- (void) createAuxPath: (NSMutableArray *)arrayPointsUnderline
+                        lineCharacterCount:(NSMutableArray *)arrayLineCharacterCount
+                        saveToPathArray:(NSMutableArray *)arrayPath
+{
+    int offset = 0;
+    for(int i = 0; i< [arrayLineCharacterCount count]; i++)
+    {
+        CGMutablePathRef path = CGPathCreateMutable();
+        
+        NSNumber *count = [arrayLineCharacterCount objectAtIndex:i];
+        
+        for(int j=0; j< count.longValue; j++)
+        {
+            
+            NSValue *value = [arrayPointsUnderline objectAtIndex:j*4+offset];
+            NSPoint point = value.pointValue;
+            if(j == 0)
+                CGPathMoveToPoint(path, NULL, point.x, point.y);
+            else
+                CGPathAddLineToPoint(path, NULL, point.x, point.y);
+            
+            value = [arrayPointsUnderline objectAtIndex:j*4+1+offset];
+            point = value.pointValue;
+            CGPathAddLineToPoint(path, NULL, point.x, point.y);
+        }
+        
+        for(long j = count.longValue - 1l; j>=0 ; j--)
+        {
+            
+            NSValue *value = [arrayPointsUnderline objectAtIndex:j*4+2+offset];
+            NSPoint point = value.pointValue;
+            CGPathAddLineToPoint(path, NULL, point.x, point.y);
+            
+            value = [arrayPointsUnderline objectAtIndex:j*4+3+offset];
+            point = value.pointValue;
+            CGPathAddLineToPoint(path, NULL, point.x, point.y);
+        }
+        
+        CGPathCloseSubpath(path);
+        
+        [arrayPath addObject: (__bridge id)path];
+        CGPathRelease(path);
+        
+        offset += count.longValue*4;
+    }
+    
+}
+
+- (void) mylayout
+{
+    if (!needsLayout_)
+    {
+        return;
+    }
+    
+    // compute glyph positions and angles and determine style bounds
+    if (!glyphs_)
+    {
+        glyphs_ = [[NSMutableArray alloc] init];
+    }
+    if (!arrayCharacterBounds_)
+    {
+        arrayCharacterBounds_ = [[NSMutableArray alloc] init];
+    }
+    if (!arrayBlinkCursor_)
+    {
+        arrayBlinkCursor_ = [[NSMutableArray alloc] init];
+    }
+    if (!arrayUnderline_)
+    {
+        arrayUnderline_ = [[NSMutableArray alloc] init];
+    }
+    if (!arrayStrikethrough_)
+    {
+        arrayStrikethrough_ = [[NSMutableArray alloc] init];
+    }
+    
+    [glyphs_ removeAllObjects];
+    [arrayCharacterBounds_ removeAllObjects];
+    [arrayBlinkCursor_ removeAllObjects];
+    [arrayUnderline_ removeAllObjects];
+    [arrayStrikethrough_ removeAllObjects];
+    
+    styleBounds_ = CGRectNull;
+    overflow_ = NO;
+    
+    NSMutableArray          *arrayPointsUnderline       = [[NSMutableArray alloc] init];
+    NSMutableArray          *arrayPointsStrikethrough   = [[NSMutableArray alloc] init];
+    NSMutableArray          *arrayLineCharacterCount    = [[NSMutableArray alloc] init];
+    
+     CGMutablePathRef path = CGPathCreateMutable();
+     CGPathAddRect(path, NULL, baseBounds_);
+     
+     CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((CFAttributedStringRef) self.attributedString);
+    if(!framesetter)
+    {
+        CFRelease(path);
+        return;
+    }
+     CTFrameRef frame = CTFramesetterCreateFrame(framesetter, CFRangeMake(0, 0), path, NULL);
+     CFRelease(framesetter);
+     CFRelease(path);
+     
+     NSArray *lines = (NSArray *) CTFrameGetLines(frame);
+     CGPoint origins[lines.count];
+     CTFrameGetLineOrigins(frame, CFRangeMake(0, lines.count), origins);
+     
+    for (int il = 0; il < lines.count; il++)
+    {
+        CGRect lineRectBounds;
+        CTLineRef line = (__bridge CTLineRef) lines[il];
+        
+        // Get bounding information of line
+        CGFloat ascent = 0.0f, descent = 0.0f, leading = 0.0f;
+        CGFloat width = (CGFloat)CTLineGetTypographicBounds(line, &ascent, &descent, &leading);
+        CGFloat yMin = - descent;//(CGFloat)floor(origins[il].y - descent);
+        CGFloat yMax = ascent;//(CGFloat)ceil(origins[il].y + ascent);
+    //CTLineRef line = CTLineCreateWithAttributedString(attrString);
+    
+    // see if we have any glyphs to render
+    CFIndex glyphCount = CTLineGetGlyphCount(line);
+    if (glyphCount == 0)
+    {
+        //CFRelease(line);
+        return;
+    }
+        [arrayLineCharacterCount addObject:[NSNumber numberWithLong:glyphCount]];
+     
+    NSInteger           numSegments = [self segmentCount];
+    WDBezierSegment     segments[numSegments];
+    float               lengths[numSegments];
+    float               totalLength = 0;
+    WDQuad              glyphQuad, prevGlyphQuad = WDQuadNull();
+    
+    // precalculate the segments and their arc lengths
+    totalLength = [self getSegments:segments andLengths:lengths naturalSpace:YES];
+    
+    CFArrayRef  runArray = CTLineGetGlyphRuns(line);
+    CFIndex     runCount = CFArrayGetCount(runArray);
+    int         currentSegment = 0; // increment this as the distance accumulates
+    float       cumulativeSegmentLength = 0;
+    float       kern = 0;
+    
+    // find the segment that contains the start offset
+    for (int i = 0; i < numSegments; i++)
+    {
+        if (cumulativeSegmentLength + lengths[i] > startOffset_)
+        {
+            currentSegment = i;
+            break;
+        }
+        cumulativeSegmentLength += lengths[i];
+    }
+    
+    for (CFIndex runIndex = 0; runIndex < runCount; runIndex++)
+    {
+        CTRunRef    run = (CTRunRef)CFArrayGetValueAtIndex(runArray, runIndex);
+        CFIndex     runGlyphCount = CTRunGetGlyphCount(run);
+        CTFontRef   runFont = CFDictionaryGetValue(CTRunGetAttributes(run), kCTFontAttributeName);
+        CGGlyph     buffer[glyphCount];
+        CGPoint     positions[glyphCount];
+        BOOL        avoidPreviousGlyph = NO;
+        CGPoint     tangent;
+        float       curvature, start, end, midGlyph=0.0;
+        
+        CTRunGetGlyphs(run, CFRangeMake(0, 0), buffer);
+        CTRunGetPositions(run, CFRangeMake(0,0), positions);
+        
+        for (CFIndex runGlyphIndex = 0; runGlyphIndex < runGlyphCount; runGlyphIndex++)
+        {
+            CGMutablePathRef baseGlyphPath = CGPathCreateMutable();
+            CGPathRef baseGlyphPath1 = CTFontCreatePathForGlyph(runFont, buffer[runGlyphIndex], NULL);
+            CGPathAddPath(baseGlyphPath, NULL, baseGlyphPath1);
+            
+            CGFloat glyphWidth = CTRunGetTypographicBounds(run, CFRangeMake(runGlyphIndex, 1), NULL, NULL, NULL);
+            BOOL fits = NO;
+            
+            while (!fits)
+            {
+                start = startOffset_ + positions[runGlyphIndex].x + kern;
+                end = start + glyphWidth;
+                midGlyph = (start + end) / 2;
+                
+                if (end > (totalLength + (closed_ ? startOffset_ : 0)))
+                {
+                    // we've run out of room for glyphs
+                    overflow_ = YES;
+                    if(baseGlyphPath)
+                        CGPathRelease(baseGlyphPath);
+                    goto done;
+                }
+                
+                // find the segment where the current mid glyph falls
+                while (midGlyph >= (cumulativeSegmentLength + lengths[currentSegment % numSegments]))
+                {
+                    // we're advancing to the next segment, see if we've got a corner
+                    if ([self cornerAtEndOfSegment:currentSegment segments:segments count:numSegments])
+                    {
+                        avoidPreviousGlyph = YES;
+                    }
+                    
+                    cumulativeSegmentLength += lengths[currentSegment % numSegments];
+                    currentSegment++;
+                }
+                
+                if (end > (cumulativeSegmentLength + lengths[currentSegment % numSegments]) && [self cornerAtEndOfSegment:currentSegment segments:segments count:numSegments])
+                {
+                    // if the end is overshooting a corner, we need to adjust the kern to move onto the next segment
+                    kern = (cumulativeSegmentLength + lengths[currentSegment % numSegments]) - (startOffset_ + positions[runGlyphIndex].x);
+                }
+                else
+                {
+                    // otherwise, we're good to go
+                    fits =  YES;
+                }
+            }
+
+            CGPoint result = WDBezierSegmentPointAndTangentAtDistance(segments[currentSegment % numSegments], (midGlyph - cumulativeSegmentLength), &tangent, &curvature);
+            
+            if (curvature > 0)
+            {
+                avoidPreviousGlyph = YES;
+            }
+            else if (!avoidPreviousGlyph)
+            {
+                kern += MAX(curvature * 5, kMaxOutwardKernAdjustment) * glyphWidth;
+            }
+
+            result.y -= (origins[il].y - origins[0].y);
+            CGAffineTransform tX = CGAffineTransformMakeTranslation(result.x, result.y);
+            tX = CGAffineTransformScale(tX, 1, -1);  // wzq
+            tX = CGAffineTransformRotate(tX, atan2(-tangent.y, tangent.x));
+            tX = CGAffineTransformTranslate(tX, -(glyphWidth / 2), 0);
+            tX = CGAffineTransformConcat(tX, transform_);
+                  
+            CGPathRef glyphPath = WDCreateTransformedCGPathRef(baseGlyphPath, tX);
+            
+            CGRect rectBaseGlyphPath = CGPathGetPathBoundingBox(baseGlyphPath);
+            glyphQuad = WDQuadWithRect(WDShrinkRect(rectBaseGlyphPath, 0.01f), tX);
+            
+            [self addCursorPosPath:rectBaseGlyphPath transform: tX];
+            [self addBaseAuxBoundPoints:baseGlyphPath ymin:yMin ymax:yMax  transform: tX pointsUnderline:arrayPointsUnderline pointsStrikethrough:arrayPointsStrikethrough];
+                
+            if (avoidPreviousGlyph && WDQuadIntersectsQuad(glyphQuad, prevGlyphQuad))
+            {
+                // advance slightly and try to lay out this glyph again
+                runGlyphIndex--;
+                kern += (glyphWidth / 8); // step by 1/8 glyph width
+            }
+            else
+            {
+                [glyphs_ addObject:(__bridge id) glyphPath];
+                CGRect rectGlyphPath = WDStrokeBoundsForPath(glyphPath, self.strokeStyle);
+                styleBounds_ = CGRectUnion(styleBounds_, rectGlyphPath);
+                avoidPreviousGlyph = NO;
+                prevGlyphQuad = glyphQuad;
+                
+                [arrayCharacterBounds_ addObject:[NSValue valueWithCGRect:rectGlyphPath]];
+            }
+                
+            CGPathRelease(glyphPath);
+            CGPathRelease(baseGlyphPath);
+        }
+    }
+        //CFRelease(line);
+    }
+done:
+    [self createAuxPath:arrayPointsUnderline lineCharacterCount:arrayLineCharacterCount saveToPathArray:arrayUnderline_];
+    [self createAuxPath:arrayPointsStrikethrough lineCharacterCount:arrayLineCharacterCount saveToPathArray:arrayStrikethrough_];
+
+    [self customTransform];
+    [self customPerspectiveTransform];
+    
+    
+    
+    needsLayout_ = NO;
+}
+
+
 - (void) layout
 {
+    
+    if(!CGRectEqualToRect(baseBounds_, CGRectZero))
+    {
+        [self mylayout];
+        return;
+    }
+    
     if (!needsLayout_)
     {
         return;
@@ -910,6 +1317,7 @@ CGPathRef createCursorPath(CGPoint origin, CGFloat fheight)
         return;
     }
     
+
     CTLineRef line = CTLineCreateWithAttributedString(attrString);
     
     // see if we have any glyphs to render
@@ -1235,7 +1643,7 @@ done:
         NSColor *nsColor = [NSColor colorWithDeviceRed:colorFill.red green:colorFill.green blue:colorFill.blue alpha:colorFill.alpha];
         [nsColor set];
     }
-    
+    /*
     if(nFontUnderlineValue_)
     {
         CGPathRef path = (__bridge CGPathRef) [arrayTextAux_ objectAtIndex: 0];
@@ -1246,8 +1654,26 @@ done:
     {
         CGPathRef path = (__bridge CGPathRef) [arrayTextAux_ objectAtIndex: 1];
         CGContextAddPath(ctx, path);
+    }*/
+    if(nFontUnderlineValue_)
+    {
+        for (id pathRef in arrayUnderline_)
+        {
+            CGPathRef glyphPath = (__bridge CGPathRef) pathRef;
+            
+            CGContextAddPath(ctx, glyphPath);
+        }
     }
     
+    if(nFontStrikethroughValue_)
+    {
+        for (id pathRef in arrayStrikethrough_)
+        {
+            CGPathRef glyphPath = (__bridge CGPathRef) pathRef;
+            
+            CGContextAddPath(ctx, glyphPath);
+        }
+    }
     CGContextFillPath(ctx);
 }
 
@@ -1689,9 +2115,13 @@ done:
     text->arrayBlinkCursor_ = [arrayBlinkCursor_ mutableCopy];
     text->arrayTextAux_ = [arrayTextAux_ mutableCopy];
     
+    text->arrayUnderline_ = [arrayUnderline_ mutableCopy];
+    text->arrayStrikethrough_ = [arrayStrikethrough_ mutableCopy];
+    
 //    NSMutableIndexSet *copySet = [[NSMutableIndexSet alloc] initWithIndexSet:m_indexSpace];
 //    text->m_indexSpace = copySet;
     text->m_indexSpace =  [m_indexSpace mutableCopy];
+    text->baseBounds_   = baseBounds_;
     //text->attributedString_ = attributedString_;
     
     return text;
@@ -1700,7 +2130,8 @@ done:
 
 /*
  http://www.cnblogs.com/qingche/p/3574995.html
- 
+ https://www.cnblogs.com/sunfuyou/p/15143236.html
+ https://www.cnblogs.com/Jenaral/p/5298912.html
  //关于粗体
  UIFont *baseFont = [UIFont systemFontOfSize:fontSize];//设置字体
  [attrString addAttribute:NSFontAttributeName value:baseFont

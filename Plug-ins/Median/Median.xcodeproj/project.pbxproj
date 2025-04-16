@@ -199,6 +199,7 @@
 				GCC_VERSION_ppc = 4.0;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PREBINDING = NO;
 				PRODUCT_NAME = Median;
 				SKIP_INSTALL = YES;
@@ -218,6 +219,7 @@
 				GCC_VERSION_ppc = 4.0;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PREBINDING = NO;
 				PRODUCT_NAME = Median;
 				SKIP_INSTALL = YES;

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -24833,7 +24833,10 @@
 				);
 				INFOPLIST_FILE = "PixelStyle Free copy-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path",
+					"@loader_path/../Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../Extralibs",
@@ -24901,7 +24904,10 @@
 				);
 				INFOPLIST_FILE = "PixelStyle Free copy-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path",
+					"@loader_path/../Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../Extralibs",
@@ -24971,7 +24977,10 @@
 				);
 				INFOPLIST_FILE = "PixelStyle Free copy2-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path",
+					"@loader_path/../Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../Extralibs",
@@ -25040,7 +25049,10 @@
 				);
 				INFOPLIST_FILE = "PixelStyle Free copy2-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path",
+					"@loader_path/../Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../Extralibs",
@@ -25655,7 +25667,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 20231024.0;
+				CURRENT_PROJECT_VERSION = 20250416.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = VA2XE4K2T9;
 				ENABLE_HARDENED_RUNTIME = NO;
@@ -25686,7 +25698,10 @@
 				INFOPLIST_FILE = "PixelStyle copy-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path",
+					"@loader_path/../Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../Extralibs",
@@ -25694,8 +25709,10 @@
 					"$(PROJECT_DIR)/../opencv/lib",
 					"$(PROJECT_DIR)/source/ComputeDistance/ComputeDistance",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 4.3.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				"MACOSX_DEPLOYMENT_TARGET[arch=*]" = 10.13;
+				"MACOSX_DEPLOYMENT_TARGET[arch=arm64]" = 11.0;
+				MARKETING_VERSION = 4.3.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
@@ -25727,7 +25744,7 @@
 				CODE_SIGN_ENTITLEMENTS = PixelStyle/PixelStyle.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20231024.0;
+				CURRENT_PROJECT_VERSION = 20250416.0;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = VA2XE4K2T9;
 				ENABLE_HARDENED_RUNTIME = NO;
@@ -25757,7 +25774,10 @@
 				INFOPLIST_FILE = "PixelStyle copy-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path",
+					"@loader_path/../Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../Extralibs",
@@ -25765,8 +25785,8 @@
 					"$(PROJECT_DIR)/../opencv/lib",
 					"$(PROJECT_DIR)/source/ComputeDistance/ComputeDistance",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 4.3.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 4.3.1;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
 				OTHER_CODE_SIGN_FLAGS = "--deep";

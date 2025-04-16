@@ -88,6 +88,7 @@ CMCloseProfile(CMProfileRef prof)                             DEPRECATED_IN_MAC_
 
 - (void)run
 {
+    return;
 	PluginData *pluginData;
 	IntRect selection;
 	unsigned char *data, *overlay, *replace;

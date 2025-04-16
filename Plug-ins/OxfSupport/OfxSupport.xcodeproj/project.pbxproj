@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -371,7 +371,7 @@
 					"$(PROJECT_DIR)/../../opencv/lib",
 					"$(PROJECT_DIR)/openfx-gmic/openfx/OfxHostSupport",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CFLAGS = "-DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = net.photoart.OfxSupport;
 				PRODUCT_NAME = OfxSupport;
@@ -406,7 +406,7 @@
 					"$(PROJECT_DIR)/../../opencv/lib",
 					"$(PROJECT_DIR)/openfx-gmic/openfx/OfxHostSupport",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = net.photoart.OfxSupport;
 				PRODUCT_NAME = OfxSupport;

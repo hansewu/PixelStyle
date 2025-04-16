@@ -45,8 +45,10 @@ struct CUSTOM_TRANSFORM_;
     NSMutableArray          *arrayCharacterAffineTransform_;
     NSMutableArray          *arrayCharacterBounds_;
     NSMutableArray          *arrayBlinkCursor_;
-    
     NSMutableArray          *arrayTextAux_;
+
+    NSMutableArray          *arrayUnderline_;
+    NSMutableArray          *arrayStrikethrough_;
     
     BOOL                    bActiveForEdit_;
     int                     posBlinkCursor_;
@@ -58,6 +60,8 @@ struct CUSTOM_TRANSFORM_;
     int                     nFontCharacterSpace_;
     
     NSMutableIndexSet       *m_indexSpace;
+    
+    CGRect                  baseBounds_;
 }
 
 @property (nonatomic, strong) NSString *text;
@@ -103,4 +107,6 @@ struct CUSTOM_TRANSFORM_;
 - (CGPathRef) getBlinkCursor:(int)nIndex;
 - (CGRect) textBounds;
 
+- (void) setBaseBounds:(CGRect)rect;
+- (CGRect) getBaseBounds;
 @end
