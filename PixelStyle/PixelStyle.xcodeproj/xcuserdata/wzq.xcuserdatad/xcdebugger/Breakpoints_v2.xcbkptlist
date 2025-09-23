@@ -75,23 +75,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "33BAF7B0-30FD-4E0F-9725-2EC4CEA05230"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "source/utility/EffectUtility.m"
-            timestampString = "0"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "713"
-            endingLineNumber = "713"
-            landmarkName = "-onCancel:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "1E0F1824-225F-4D0C-8985-5FA6657F027A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -259,22 +242,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7CD546A8-59B3-4233-BEEA-2D79785EBB05"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "source/application/PSDocumentController.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "201"
-            endingLineNumber = "201"
-            landmarkName = "-openNonCurrentFile:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "715B8864-F28A-4931-9B0D-83FE77461A0A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -331,8 +298,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "215"
-                  endingLineNumber = "215"
-                  offsetFromSymbolStart = "56">
+                  endingLineNumber = "215">
                </Location>
                <Location
                   uuid = "701B0A5A-C988-475D-9C14-91B0BDC80F56 - 47217faf02e3b689"
@@ -346,8 +312,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "215"
-                  endingLineNumber = "215"
-                  offsetFromSymbolStart = "32">
+                  endingLineNumber = "215">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -410,8 +375,8 @@
             filePath = "source/display/PSView.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3213"
-            endingLineNumber = "3213"
+            startingLineNumber = "3219"
+            endingLineNumber = "3219"
             landmarkName = "-draggingEntered:"
             landmarkType = "7">
          </BreakpointContent>
@@ -595,22 +560,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "00FFD6C4-6B3F-4CD6-8E7B-4F0B490BFA1F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "source/document/PSHelpers.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "212"
-            endingLineNumber = "212"
-            landmarkName = "-overlayChanged:inThread:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "53D3CF78-5E41-4529-B5FC-0042792335DD"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -634,8 +583,8 @@
             filePath = "source/display/PSWhiteboard.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1402"
-            endingLineNumber = "1402"
+            startingLineNumber = "1404"
+            endingLineNumber = "1404"
             landmarkName = "-createCGLayerTotoal"
             landmarkType = "7">
          </BreakpointContent>
@@ -650,41 +599,9 @@
             filePath = "source/display/PSWhiteboard.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1421"
-            endingLineNumber = "1421"
+            startingLineNumber = "1423"
+            endingLineNumber = "1423"
             landmarkName = "-getCGLayerTotoal"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "10398D52-99B1-40B3-AB6B-DDBFDA171ADF"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "source/document/PSLayer.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "595"
-            endingLineNumber = "595"
-            landmarkName = "-compress"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F115F161-20C5-419F-BA00-3B0DE5D117E7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "source/document/PSVecLayer.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "299"
-            endingLineNumber = "299"
-            landmarkName = "-initWithDocumentAfterCoder:layer:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -723,84 +640,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "94A4DC0C-7597-4308-8A38-DE458E3361C8"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../Plug-ins/Curves/CurvesClass.mm"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "840"
-            endingLineNumber = "840"
-            landmarkName = "-updateOverlayAfterChangedInThread"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "94A4DC0C-7597-4308-8A38-DE458E3361C8 - d2b213b5cfa8b53f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[CurvesClass updateOverlayAfterChangedInThread]"
-                  moduleName = "Curves"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/Plug-ins/Curves/CurvesClass.mm"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "840"
-                  endingLineNumber = "840"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  uuid = "94A4DC0C-7597-4308-8A38-DE458E3361C8 - d2b213b5cfa8b53f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[CurvesClass updateOverlayAfterChangedInThread]"
-                  moduleName = "Curves"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/Plug-ins/Curves/CurvesClass.mm"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "840"
-                  endingLineNumber = "840"
-                  offsetFromSymbolStart = "28">
-               </Location>
-               <Location
-                  uuid = "94A4DC0C-7597-4308-8A38-DE458E3361C8 - d2b213b5cfa8b53f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[CurvesClass updateOverlayAfterChangedInThread]"
-                  moduleName = "Curves"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/Plug-ins/Curves/CurvesClass.mm"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "840"
-                  endingLineNumber = "840"
-                  offsetFromSymbolStart = "68">
-               </Location>
-               <Location
-                  uuid = "94A4DC0C-7597-4308-8A38-DE458E3361C8 - d2b213b5cfa8b53f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[CurvesClass updateOverlayAfterChangedInThread]"
-                  moduleName = "Curves"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/Plug-ins/Curves/CurvesClass.mm"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "840"
-                  endingLineNumber = "840"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "9729E404-8E25-4CAB-A819-5C29A13A7A35"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -828,38 +667,6 @@
             endingLineNumber = "172"
             landmarkName = "-setAndExecuteUniformStateCallbackAtIndex:forProgram:toBlock:"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "018469CB-F3AA-400A-9F30-A5AA304E98B8 - bfa4b9f8c6fee529"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[GPUImageTwoPassFilter setAndExecuteUniformStateCallbackAtIndex:forProgram:toBlock:]"
-                  moduleName = "GPUImage"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/PixelStyle/source/GPUImage/Source/GPUImageTwoPassFilter.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "172"
-                  endingLineNumber = "172"
-                  offsetFromSymbolStart = "64">
-               </Location>
-               <Location
-                  uuid = "018469CB-F3AA-400A-9F30-A5AA304E98B8 - bfa4b9f8c6fee529"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[GPUImageTwoPassFilter setAndExecuteUniformStateCallbackAtIndex:forProgram:toBlock:]"
-                  moduleName = "GPUImage"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/PixelStyle/source/GPUImage/Source/GPUImageTwoPassFilter.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "172"
-                  endingLineNumber = "172"
-                  offsetFromSymbolStart = "24">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -875,22 +682,6 @@
             startingLineNumber = "49"
             endingLineNumber = "49"
             landmarkName = "-setFilterParameter:parameterCount:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4A39A9A2-1D92-4507-B308-EA8E79B393BF"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "source/display/PSView.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1072"
-            endingLineNumber = "1072"
-            landmarkName = "-drawOuterSelection:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -968,8 +759,8 @@
             filePath = "source/display/PSWhiteboard.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1223"
-            endingLineNumber = "1223"
+            startingLineNumber = "1225"
+            endingLineNumber = "1225"
             landmarkName = "-printableImage"
             landmarkType = "7">
          </BreakpointContent>
@@ -977,16 +768,424 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E7B220AD-657E-4F9A-B119-41151B3C8A41"
+            uuid = "9C58FEFF-4401-44E4-97A3-E00D17719638"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Plug-ins/OxfSupport/openfx-gmic/openfx/MyPlugins/color/color.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "gimp_hsv_to_rgb(hsv, rgb)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "9C58FEFF-4401-44E4-97A3-E00D17719638 - 8e52beb8810e9eb9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gimp_hsv_to_rgb(GimpHSV const*, GimpRGB*)"
+                  moduleName = "color.ofx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/Plug-ins/OxfSupport/openfx-gmic/openfx/MyPlugins/color/color.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150">
+               </Location>
+               <Location
+                  uuid = "9C58FEFF-4401-44E4-97A3-E00D17719638 - 8e52beb8810e9eff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gimp_hsv_to_rgb(GimpHSV const*, GimpRGB*)"
+                  moduleName = "color.ofx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/Plug-ins/OxfSupport/openfx-gmic/openfx/MyPlugins/color/color.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "152"
+                  endingLineNumber = "152">
+               </Location>
+               <Location
+                  uuid = "9C58FEFF-4401-44E4-97A3-E00D17719638 - 8e52beb8810e9eff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gimp_hsv_to_rgb(GimpHSV const*, GimpRGB*)"
+                  moduleName = "color.ofx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/Plug-ins/OxfSupport/openfx-gmic/openfx/MyPlugins/color/color.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "152"
+                  endingLineNumber = "152">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "289BD558-038F-41D7-A95C-48FBFAB68182"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Plug-ins/OxfSupport/openfx-gmic/openfx/MyPlugins/color/color.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "gimp_hsv_to_rgb(hsv, rgb)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "289BD558-038F-41D7-A95C-48FBFAB68182 - 8e52beb8810e9eb9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gimp_hsv_to_rgb(GimpHSV const*, GimpRGB*)"
+                  moduleName = "color.ofx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/Plug-ins/OxfSupport/openfx-gmic/openfx/MyPlugins/color/color.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150">
+               </Location>
+               <Location
+                  uuid = "289BD558-038F-41D7-A95C-48FBFAB68182 - 8e52beb8810e9eff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gimp_hsv_to_rgb(GimpHSV const*, GimpRGB*)"
+                  moduleName = "color.ofx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/Plug-ins/OxfSupport/openfx-gmic/openfx/MyPlugins/color/color.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "152"
+                  endingLineNumber = "152">
+               </Location>
+               <Location
+                  uuid = "289BD558-038F-41D7-A95C-48FBFAB68182 - 8e52beb8810e9eff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gimp_hsv_to_rgb(GimpHSV const*, GimpRGB*)"
+                  moduleName = "color.ofx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/osx1013/Users/Shared/project/2023/PixelStyle/Plug-ins/OxfSupport/openfx-gmic/openfx/MyPlugins/color/color.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "152"
+                  endingLineNumber = "152">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "73AAA259-11D7-487C-8805-B03338CF584C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Plug-ins/OxfSupport/openfx-gmic/openfx/OfxHostSupport/src/ofxhClip.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "786"
+            endingLineNumber = "786"
+            landmarkName = "ImageBase::releaseReference()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "28E772C6-CA61-48F9-AB9C-84A52AE0E865"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/application/PSPlugins.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
+            landmarkName = "-init"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5CE12C42-15BB-43B4-A9AE-8DF95E3047BF"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "source/document/PSDocument.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "684"
-            endingLineNumber = "684"
-            landmarkName = "-prepareSavePanel:"
+            startingLineNumber = "492"
+            endingLineNumber = "492"
+            landmarkName = "-updateWindowColor"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E688016C-71A7-4E8E-B6A7-4A0FAD968EAD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/utility/OptionsUtility.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "-update"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BED76E8B-108A-4B68-8851-0AC1F517879C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/document/PSTextLayer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "232"
+            endingLineNumber = "232"
+            landmarkName = "-setTextInfo:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "17AEB030-BDF2-44AE-9B62-6B2D90FE66B1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/Inkpad/Inkpad-Core/Model/WDTextPath.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1531"
+            endingLineNumber = "1531"
+            landmarkName = "-transform:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "62389A68-883A-424D-88EA-94A558205A4B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/Inkpad/Inkpad-Core/Model/WDText.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "283"
+            endingLineNumber = "283"
+            landmarkName = "-drawTextInContext:drawingMode:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3CB5C804-1A12-4DEE-9EC2-35B736715B4D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/Inkpad/Inkpad-Core/Model/WDText.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "288"
+            endingLineNumber = "288"
+            landmarkName = "-drawTextInContext:drawingMode:didClip:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6CB38789-491C-462F-8D68-8CFBBC071B2B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/Inkpad/Inkpad-Core/Model/WDText.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "321"
+            endingLineNumber = "321"
+            landmarkName = "-renderInContext:metaData:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EAD9A706-0408-43C8-930B-C774165D7E0F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/application/PSDocumentController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "228"
+            endingLineNumber = "228"
+            landmarkName = "-createDocument:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A409B14F-966B-4627-A5DE-949240A1957A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/application/PSDocumentController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "359"
+            endingLineNumber = "359"
+            landmarkName = "-resolution"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD7C157D-1536-433C-A9DC-EC15E17703CA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/document/PSContent.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "-initWithCoder:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "90A88C7F-3FDC-491A-87F4-4D59DCCD146D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/document/PSContent.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "-initWithCoder:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "91837BF6-2128-4985-8388-C96D2A241FFC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/document/PSContent.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "-initWithCoder:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9C0721C9-CFE4-4BAC-848C-8F329DBD6890"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/document/PSContent.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "294"
+            endingLineNumber = "294"
+            landmarkName = "-initWithDocument:type:width:height:res:opaque:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "37802CCC-0D7A-4F1E-AAAC-F59B4A66D8E3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/document/PSContent.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "572"
+            endingLineNumber = "572"
+            landmarkName = "-setResolution:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E8624321-3199-4438-B7ED-06811DFDAB10"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/document/XCFContent.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "-readProperties:sharedInfo:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "206A1DB6-9B95-48C2-AC96-8F535744BFA8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/document/CocoaContent.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "-initWithDocument:contentsOfFile:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F93B20A9-EA57-4F02-A9ED-96C5BCF3EFD1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Plug-ins/AISeg/AISegClass.mm"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "366"
+            endingLineNumber = "366"
+            landmarkName = "-aiSegment:withBitmap:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

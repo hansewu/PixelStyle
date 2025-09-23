@@ -5057,6 +5057,7 @@
 		75710D291D898F0700A61C61 /* Rotate7.png in Resources */ = {isa = PBXBuildFile; fileRef = 75710D191D898F0700A61C61 /* Rotate7.png */; };
 		7574A8A91C0DA1E20001CD9B /* ThressPointsAffine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7574A8A81C0DA1E20001CD9B /* ThressPointsAffine.m */; };
 		757D583E285FEF7D0042F294 /* Brightness+.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A8E1369D0C40751800C8A848 /* Brightness+.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75896A2D2E82195D0018D6F7 /* AISeg.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7557E4EE2E6FB53C00AAFA81 /* AISeg.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		759E7D3F1C0C386400D7FFDD /* PSVecLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 759E7D3E1C0C386400D7FFDD /* PSVecLayer.m */; };
 		75B8CECA1BFFFD7F00C8D997 /* PSRenderSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B8CEC91BFFFD7F00C8D997 /* PSRenderSlice.m */; };
 		75CFC54D2761A216008EEBC2 /* libpsgvector.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0087B42E1B79FFF70033CA57 /* libpsgvector.dylib */; };
@@ -5068,6 +5069,7 @@
 		75DFB26E2A68FC19007F8A94 /* libimofxhost.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75DFB26D2A68FC18007F8A94 /* libimofxhost.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		75EC118A1DA8ED87008D4C5E /* GPUImageDTFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EC11891DA8ED87008D4C5E /* GPUImageDTFilter.m */; };
 		75EC118B1DA8ED87008D4C5E /* GPUImageDTFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EC11891DA8ED87008D4C5E /* GPUImageDTFilter.m */; };
+		75FC33582E80C10E00AA2F4C /* libonnxruntime.1.22.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75FC33572E80C10D00AA2F4C /* libonnxruntime.1.22.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A80EB8A6086F05E300369324 /* JP2 Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = A80EB8A5086F05E300369324 /* JP2 Icon.icns */; };
 		A81240C707E81A7A00F275BF /* SVGContent.nib in Resources */ = {isa = PBXBuildFile; fileRef = A81240C507E81A7A00F275BF /* SVGContent.nib */; };
 		A81EC6B0094A6C5C00F7D365 /* GIF Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = A81EC6AF094A6C5C00F7D365 /* GIF Icon.icns */; };
@@ -8689,6 +8691,13 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = OfxSupport;
 		};
+		7557E4ED2E6FB53C00AAFA81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7557E4E72E6FB53B00AAFA81 /* AISeg.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
+			remoteInfo = AIPortraitMatting;
+		};
 		757D582D285FEEB80042F294 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 35B156F60A2C0116005B688F /* Brightness.xcodeproj */;
@@ -8709,6 +8718,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = AISR4x;
+		};
+		75FC33462E800FBF00AA2F4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7557E4E72E6FB53B00AAFA81 /* AISeg.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = AISeg;
 		};
 		A801004F0BF96F130048FCD7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -10708,6 +10724,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				75FC33582E80C10E00AA2F4C /* libonnxruntime.1.22.1.dylib in CopyFiles */,
 				18E68B50281179FC009AD2FF /* roboHumanMatting.framework in CopyFiles */,
 				75DE01492A9ED3B900ED2298 /* libAISR4x.framework in CopyFiles */,
 				18E68A3B280FF62C009AD2FF /* libpatchmatch.dylib in CopyFiles */,
@@ -10740,6 +10757,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				75896A2D2E82195D0018D6F7 /* AISeg.bundle in CopyFiles */,
 				75DE01472A9ED1E000ED2298 /* AISR4x.bundle in CopyFiles */,
 				4BFC37CB2A6585340040886B /* OfxSupport.bundle in CopyFiles */,
 				185B199828470876007EDEE6 /* AlphaToRGB.bundle in CopyFiles */,
@@ -11425,6 +11443,7 @@
 		56C8A64C1055A1DA0056E36F /* normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal.png; sourceTree = "<group>"; };
 		75046F2F2750B0DB008BEF99 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "../Extralibs/libstdc++.6.0.9.dylib"; sourceTree = "<group>"; };
 		75274FF22AB0951B00811C42 /* color.ofx.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = color.ofx.bundle; path = "../Plug-ins/OxfSupport/openfx-gmic/openfx/MyPlugins/color.ofx.bundle"; sourceTree = "<group>"; };
+		7557E4E72E6FB53B00AAFA81 /* AISeg.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AISeg.xcodeproj; path = "../Plug-ins/AISeg/AISeg.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		75710D121D898F0700A61C61 /* Rotate0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rotate0.png; sourceTree = "<group>"; };
 		75710D131D898F0700A61C61 /* Rotate1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rotate1.png; sourceTree = "<group>"; };
 		75710D141D898F0700A61C61 /* Rotate2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rotate2.png; sourceTree = "<group>"; };
@@ -11453,6 +11472,7 @@
 		75EB23192AB81963001C8F11 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		75EC11881DA8ED87008D4C5E /* GPUImageDTFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageDTFilter.h; sourceTree = "<group>"; };
 		75EC11891DA8ED87008D4C5E /* GPUImageDTFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageDTFilter.m; sourceTree = "<group>"; };
+		75FC33572E80C10D00AA2F4C /* libonnxruntime.1.22.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libonnxruntime.1.22.1.dylib; path = "../Plug-ins/AISeg/sam-cpp-macos/onnxruntime-osx-universal2/lib/libonnxruntime.1.22.1.dylib"; sourceTree = "<group>"; };
 		A801004B0BF96F130048FCD7 /* CIKaleidoscope.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CIKaleidoscope.xcodeproj; path = "../CoreImage Plug-ins/CIKaleidoscope/CIKaleidoscope.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		A801053106945E1E00A80207 /* GradientTool.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GradientTool.h; sourceTree = "<group>"; };
 		A801053206945E1E00A80207 /* GradientTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientTool.m; sourceTree = "<group>"; };
@@ -12432,6 +12452,7 @@
 		2A37F4AAFDCFA73011CA2CEA /* Seashore */ = {
 			isa = PBXGroup;
 			children = (
+				75FC33572E80C10D00AA2F4C /* libonnxruntime.1.22.1.dylib */,
 				75274FF22AB0951B00811C42 /* color.ofx.bundle */,
 				75DE01482A9ED3B900ED2298 /* libAISR4x.framework */,
 				75DFB26D2A68FC18007F8A94 /* libimofxhost.dylib */,
@@ -12698,6 +12719,7 @@
 		35B157F80A2C04F9005B688F /* Universal Plug-ins */ = {
 			isa = PBXGroup;
 			children = (
+				7557E4E72E6FB53B00AAFA81 /* AISeg.xcodeproj */,
 				18E68B2F28115BDD009AD2FF /* AIPortraitMatting.xcodeproj */,
 				75DE01312A9EC47300ED2298 /* AISR4x.xcodeproj */,
 				18CAD7D02865505A00E495E2 /* OfxSupport.xcodeproj */,
@@ -12923,6 +12945,14 @@
 			);
 			name = View;
 			path = source/View;
+			sourceTree = "<group>";
+		};
+		7557E4EA2E6FB53C00AAFA81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7557E4EE2E6FB53C00AAFA81 /* AISeg.bundle */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		75DE01322A9EC47300ED2298 /* Products */ = {
@@ -15302,6 +15332,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				75FC33472E800FBF00AA2F4C /* PBXTargetDependency */,
 				75DE01462A9ED1B300ED2298 /* PBXTargetDependency */,
 				4BFC36DF2A657AE10040886B /* PBXTargetDependency */,
 				185B1993284707DC007EDEE6 /* PBXTargetDependency */,
@@ -15434,6 +15465,10 @@
 				{
 					ProductGroup = 18E68B3028115BDD009AD2FF /* Products */;
 					ProjectRef = 18E68B2F28115BDD009AD2FF /* AIPortraitMatting.xcodeproj */;
+				},
+				{
+					ProductGroup = 7557E4EA2E6FB53C00AAFA81 /* Products */;
+					ProjectRef = 7557E4E72E6FB53B00AAFA81 /* AISeg.xcodeproj */;
 				},
 				{
 					ProductGroup = 75DE01322A9EC47300ED2298 /* Products */;
@@ -15999,6 +16034,13 @@
 			fileType = wrapper.application;
 			path = Pat2PNG.app;
 			remoteRef = 35B158710A2C08A4005B688F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7557E4EE2E6FB53C00AAFA81 /* AISeg.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AISeg.bundle;
+			remoteRef = 7557E4ED2E6FB53C00AAFA81 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		75DE01362A9EC47300ED2298 /* AISR4x.bundle */ = {
@@ -24009,6 +24051,11 @@
 			name = AISR4x;
 			targetProxy = 75DE01452A9ED1B300ED2298 /* PBXContainerItemProxy */;
 		};
+		75FC33472E800FBF00AA2F4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AISeg;
+			targetProxy = 75FC33462E800FBF00AA2F4C /* PBXContainerItemProxy */;
+		};
 		A80105870C3D150D00826C24 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "SpotLight+";
@@ -25667,7 +25714,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 20250416.0;
+				CURRENT_PROJECT_VERSION = 20250923.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = VA2XE4K2T9;
 				ENABLE_HARDENED_RUNTIME = NO;
@@ -25712,7 +25759,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				"MACOSX_DEPLOYMENT_TARGET[arch=*]" = 10.13;
 				"MACOSX_DEPLOYMENT_TARGET[arch=arm64]" = 11.0;
-				MARKETING_VERSION = 4.3.1;
+				MARKETING_VERSION = 4.4.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
@@ -25744,7 +25791,7 @@
 				CODE_SIGN_ENTITLEMENTS = PixelStyle/PixelStyle.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20250416.0;
+				CURRENT_PROJECT_VERSION = 20250923.0;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = VA2XE4K2T9;
 				ENABLE_HARDENED_RUNTIME = NO;
@@ -25786,7 +25833,7 @@
 					"$(PROJECT_DIR)/source/ComputeDistance/ComputeDistance",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 4.3.1;
+				MARKETING_VERSION = 4.4.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
 				OTHER_CODE_SIGN_FLAGS = "--deep";

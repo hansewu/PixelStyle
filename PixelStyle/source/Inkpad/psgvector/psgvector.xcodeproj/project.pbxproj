@@ -411,6 +411,8 @@
 		754A30DA1C0B3EA700333F22 /* WDTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WDTool.h; path = Tools/WDTool.h; sourceTree = "<group>"; };
 		754A30DD1C0B3FFC00333F22 /* WDShapeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WDShapeTool.h; path = Tools/WDShapeTool.h; sourceTree = "<group>"; };
 		754A30DE1C0B3FFC00333F22 /* WDShapeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WDShapeTool.m; path = Tools/WDShapeTool.m; sourceTree = "<group>"; };
+		7557E4E32E6EC32100AAFA81 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		7557E4E52E6EC3B200AAFA81 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		ABC9C0951C4128F1008862E0 /* PSPerspectiveTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPerspectiveTransform.h; sourceTree = "<group>"; };
 		ABC9C0971C412B10008862E0 /* PSPerspectiveTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPerspectiveTransform.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -456,6 +458,7 @@
 				0020AA8F1B787A20002268EA /* psgvectorapi.h */,
 				001317FA1B6CCA3F00AD95C1 /* Classes */,
 				00E3B1591B6A657D00D29DFA /* Inkpad-Core */,
+				7557E4E22E6EC32100AAFA81 /* Frameworks */,
 				00E3B1531B6A654000D29DFA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -840,6 +843,15 @@
 			name = Tools;
 			sourceTree = "<group>";
 		};
+		7557E4E22E6EC32100AAFA81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7557E4E52E6EC3B200AAFA81 /* Cocoa.framework */,
+				7557E4E32E6EC32100AAFA81 /* AppKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1132,6 +1144,7 @@
 				LD_DYLIB_INSTALL_NAME = "$(INSTALL_PATH)/libpsgvector.dylib";
 				MACH_O_TYPE = mh_dylib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1147,6 +1160,7 @@
 				LD_DYLIB_INSTALL_NAME = "$(INSTALL_PATH)/libpsgvector.dylib";
 				MACH_O_TYPE = mh_dylib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

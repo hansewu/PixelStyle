@@ -10,7 +10,7 @@
 //
 
 #if TARGET_OS_MAC
-#import <UIKit/UIKit.h>
+//#import <UIKit/UIKit.h>
 #endif
 
 #import "WDBezierNode.h"

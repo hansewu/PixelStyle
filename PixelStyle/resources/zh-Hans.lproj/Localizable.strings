@@ -756,6 +756,7 @@
 "Auto Selection" = "自动选择";
 
 "AI" = "人工智能";
+"Auto Segmentation" = "自动抠像";
 "Auto Portrait Matting" = "自动扣人像";
 "Bilateral Smooth" = "自动平滑(例如皮肤)";
 "SeamCaving" = "智能缩放";

@@ -914,6 +914,7 @@
 "Auto Selection" = "Auto Selection";
 
 "AI" = "AI";
+"Auto Segmentation" = "Auto Segmentation";
 "Auto Portrait Matting" = "Auto Portrait Matting";
 "Bilateral Smooth" = "Auto Smooth (e.g. skin etc.)";
 "SeamCaving" = "Intelligent Resize";

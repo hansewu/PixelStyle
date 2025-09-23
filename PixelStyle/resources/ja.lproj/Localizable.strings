@@ -755,6 +755,7 @@
 "Auto Selection" = "自動選択";
 
 "AI" = "人工知能";
+"Auto Segmentation" = "オートセグメンテーション";
 "Auto Portrait Matting" = "自動ポートレートマット化";
 "Bilateral Smooth" = "自動スムージング（肌など）";
 "SeamCaving" = "スマート ズーム";
