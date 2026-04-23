@@ -12,6 +12,8 @@
 		00396B5A1B6AEAF500D50AFF /* UIKitOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 00396B591B6AEAF500D50AFF /* UIKitOS.h */; };
 		00396B5C1B6AF04800D50AFF /* UIKitOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 00396B5B1B6AF04800D50AFF /* UIKitOS.m */; };
 		0087B4361B7A018B0033CA57 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0087B4351B7A018B0033CA57 /* libz.dylib */; };
+		00E3B9011B6A657D00D29DFA /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E3B9021B6A657D00D29DFA /* ImageIO.framework */; };
+		00E3B9041B6A657D00D29DFA /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E3B9031B6A657D00D29DFA /* UniformTypeIdentifiers.framework */; };
 		00E3B2211B6A657D00D29DFA /* NSArray+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B15B1B6A657D00D29DFA /* NSArray+Additions.h */; };
 		00E3B2221B6A657D00D29DFA /* NSArray+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3B15C1B6A657D00D29DFA /* NSArray+Additions.m */; };
 		00E3B2231B6A657D00D29DFA /* NSData+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E3B15D1B6A657D00D29DFA /* NSData+Additions.h */; };
@@ -149,6 +151,8 @@
 		00396B591B6AEAF500D50AFF /* UIKitOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKitOS.h; sourceTree = "<group>"; };
 		00396B5B1B6AF04800D50AFF /* UIKitOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIKitOS.m; sourceTree = "<group>"; };
 		0087B4351B7A018B0033CA57 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		00E3B9021B6A657D00D29DFA /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		00E3B9031B6A657D00D29DFA /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
 		00E3B1521B6A654000D29DFA /* libpsgvector.dylib */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpsgvector.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E3B15B1B6A657D00D29DFA /* NSArray+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Additions.h"; sourceTree = "<group>"; };
 		00E3B15C1B6A657D00D29DFA /* NSArray+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Additions.m"; sourceTree = "<group>"; };
@@ -423,6 +427,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0087B4361B7A018B0033CA57 /* libz.dylib in Frameworks */,
+				00E3B9011B6A657D00D29DFA /* ImageIO.framework in Frameworks */,
+				00E3B9041B6A657D00D29DFA /* UniformTypeIdentifiers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -848,6 +854,8 @@
 			children = (
 				7557E4E52E6EC3B200AAFA81 /* Cocoa.framework */,
 				7557E4E32E6EC32100AAFA81 /* AppKit.framework */,
+				00E3B9021B6A657D00D29DFA /* ImageIO.framework */,
+				00E3B9031B6A657D00D29DFA /* UniformTypeIdentifiers.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1091,7 +1099,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
@@ -1127,7 +1135,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
