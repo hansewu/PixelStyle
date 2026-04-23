@@ -44,7 +44,7 @@
     IBOutlet id m_idShadowView;//m_windowDoc
 	
 	// The exporters
-	IBOutlet id m_idPSExporter, m_idBmpExport, m_idGifExporter, m_idJpegExporter, m_idJp2Exporter, m_idPngExporter, m_idTiffExporter, m_idXcfExporter, m_idPdfExport, m_idSvgExporter;
+	IBOutlet id m_idPSExporter, m_idBmpExport, m_idGifExporter, m_idJpegExporter, m_idJp2Exporter, m_idPngExporter, m_idTiffExporter, m_idXcfExporter, m_idPdfExport, m_idSvgExporter, m_idWebpExporter;
 	
 	// The special texture exporter
 	IBOutlet id m_idTextureExporter;

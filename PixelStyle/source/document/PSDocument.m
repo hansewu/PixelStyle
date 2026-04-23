@@ -16,6 +16,7 @@
 #import "XCFExporter.h"
 #import "PNGExporter.h"
 #import "JPEGExporter.h"
+#import "WEBPExporter.h"
 #import "PSPrefs.h"
 #import "PSSelection.h"
 #import "PSLayer.h"
@@ -247,6 +248,7 @@ static void listImageCodecs(void){
                          m_idPdfExport,
                          m_idBmpExport,
                          m_idGifExporter,
+                         m_idWebpExporter,
                          m_idSvgExporter,
                          NULL];
 		[m_idExporters retain];
@@ -320,6 +322,7 @@ static void listImageCodecs(void){
                          m_idTiffExporter,
                          //					 m_idXcfExporter,
                          m_idPdfExport,
+                         m_idWebpExporter,
                          m_idSvgExporter,
                          NULL];
         [m_idExporters retain];

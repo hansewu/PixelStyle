@@ -759,6 +759,7 @@
 		1852F0E4280E34C800D028C1 /* PSPrintView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8207A3607EEFEE800ED3D38 /* PSPrintView.m */; };
 		1852F0E5280E34C800D028C1 /* JPEGExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = A89827FC07EF1B4A003E05D5 /* JPEGExporter.m */; };
 		1852F0E6280E34C800D028C1 /* PSRedEyeRemoveOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 390CA0121CC71F0C0001C075 /* PSRedEyeRemoveOptions.m */; };
+		1852F0E62A3171D60091C78B /* WEBPExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D9D1B72A3171D60091C78B /* WEBPExporter.m */; };
 		1852F0E7280E34C800D028C1 /* PSRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A845B94F07F3B5F3007A1B94 /* PSRotation.m */; };
 		1852F0E8280E34C800D028C1 /* LassoOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = A87183D9090BA6D400345EA0 /* LassoOptions.m */; };
 		1852F0E9280E34C800D028C1 /* LassoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A87183EA090BA8C400345EA0 /* LassoTool.m */; };
@@ -1696,6 +1697,7 @@
 		18F10786290B81D30022DEBF /* PSPrintView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8207A3607EEFEE800ED3D38 /* PSPrintView.m */; };
 		18F10787290B81D30022DEBF /* JPEGExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = A89827FC07EF1B4A003E05D5 /* JPEGExporter.m */; };
 		18F10788290B81D30022DEBF /* PSRedEyeRemoveOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 390CA0121CC71F0C0001C075 /* PSRedEyeRemoveOptions.m */; };
+		18F107882A3171D60091C78B /* WEBPExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D9D1B72A3171D60091C78B /* WEBPExporter.m */; };
 		18F10789290B81D30022DEBF /* PSRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A845B94F07F3B5F3007A1B94 /* PSRotation.m */; };
 		18F1078A290B81D30022DEBF /* LassoOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = A87183D9090BA6D400345EA0 /* LassoOptions.m */; };
 		18F1078B290B81D30022DEBF /* ocInpaint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1852F1BB280E4DB600D028C1 /* ocInpaint.cpp */; };
@@ -2704,6 +2706,7 @@
 		394FD6AB1D12A01500A59E8A /* PSPrintView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8207A3607EEFEE800ED3D38 /* PSPrintView.m */; };
 		394FD6AC1D12A01500A59E8A /* JPEGExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = A89827FC07EF1B4A003E05D5 /* JPEGExporter.m */; };
 		394FD6AD1D12A01500A59E8A /* PSRedEyeRemoveOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 390CA0121CC71F0C0001C075 /* PSRedEyeRemoveOptions.m */; };
+		394FD6AD2A3171D60091C78B /* WEBPExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D9D1B72A3171D60091C78B /* WEBPExporter.m */; };
 		394FD6AE1D12A01500A59E8A /* PSRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A845B94F07F3B5F3007A1B94 /* PSRotation.m */; };
 		394FD6AF1D12A01500A59E8A /* LassoOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = A87183D9090BA6D400345EA0 /* LassoOptions.m */; };
 		394FD6B01D12A01500A59E8A /* LassoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A87183EA090BA8C400345EA0 /* LassoTool.m */; };
@@ -3779,6 +3782,7 @@
 		39C786C41DAD301E00379B9B /* JPEGExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = A89827FC07EF1B4A003E05D5 /* JPEGExporter.m */; };
 		39C786C51DAD301E00379B9B /* PSRedEyeRemoveOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 390CA0121CC71F0C0001C075 /* PSRedEyeRemoveOptions.m */; };
 		39C786C61DAD301E00379B9B /* PSRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A845B94F07F3B5F3007A1B94 /* PSRotation.m */; };
+		39C786C62A3171D60091C78B /* WEBPExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D9D1B72A3171D60091C78B /* WEBPExporter.m */; };
 		39C786C71DAD301E00379B9B /* LassoOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = A87183D9090BA6D400345EA0 /* LassoOptions.m */; };
 		39C786C81DAD301E00379B9B /* LassoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A87183EA090BA8C400345EA0 /* LassoTool.m */; };
 		39C786C91DAD301E00379B9B /* PSVectorProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 390F3D661C9BA93B003F559C /* PSVectorProxy.m */; };
@@ -4661,7 +4665,7 @@
 		39C78AF31DAD302D00379B9B /* PixelStyleProjectContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DB67271BABB42800717C11 /* PixelStyleProjectContent.m */; };
 		39C78AF41DAD302D00379B9B /* PSPrintView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8207A3607EEFEE800ED3D38 /* PSPrintView.m */; };
 		39C78AF51DAD302D00379B9B /* JPEGExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = A89827FC07EF1B4A003E05D5 /* JPEGExporter.m */; };
-		39C78AF61DAD302D00379B9B /* PSRedEyeRemoveOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 390CA0121CC71F0C0001C075 /* PSRedEyeRemoveOptions.m */; };
+		39C78AF62A3171D60091C78B /* WEBPExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D9D1B72A3171D60091C78B /* WEBPExporter.m */; };
 		39C78AF71DAD302D00379B9B /* PSRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A845B94F07F3B5F3007A1B94 /* PSRotation.m */; };
 		39C78AF81DAD302D00379B9B /* LassoOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = A87183D9090BA6D400345EA0 /* LassoOptions.m */; };
 		39C78AF91DAD302D00379B9B /* LassoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A87183EA090BA8C400345EA0 /* LassoTool.m */; };
@@ -5093,6 +5097,7 @@
 		A881AC8D09EFC97700B176A8 /* CloneTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A881AC8B09EFC97700B176A8 /* CloneTool.m */; };
 		A893606D09EFC34A006DF75E /* clone.png in Resources */ = {isa = PBXBuildFile; fileRef = A893606C09EFC34A006DF75E /* clone.png */; };
 		A89827FD07EF1B4A003E05D5 /* JPEGExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = A89827FC07EF1B4A003E05D5 /* JPEGExporter.m */; };
+		A89827FE2A3171D60091C78B /* WEBPExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D9D1B72A3171D60091C78B /* WEBPExporter.m */; };
 		A899739F07C42F5200B38F38 /* TextureExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = A899739D07C42F5200B38F38 /* TextureExporter.m */; };
 		A89B83E30A426E0900AD6941 /* License.rtf in CopyFiles */ = {isa = PBXBuildFile; fileRef = A89B83DF0A426E0700AD6941 /* License.rtf */; };
 		A89B83F20A426E4800AD6941 /* Beach.xcf in CopyFiles */ = {isa = PBXBuildFile; fileRef = A89B83E60A426E3200AD6941 /* Beach.xcf */; };
@@ -6047,6 +6052,7 @@
 		AB4C96D81EC30FFA0059F605 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3938EC291C7EE43A00AE970C /* tinyxmlparser.cpp */; };
 		AB4C96D91EC30FFA0059F605 /* MovePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F984D60BEEB83600375C73 /* MovePanel.m */; };
 		AB4C96DA1EC30FFA0059F605 /* PSSmartFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F16AF1C1135110024111D /* PSSmartFilter.m */; };
+		AB4C96DA2A3171D60091C78B /* WEBPExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D9D1B72A3171D60091C78B /* WEBPExporter.m */; };
 		AB4C96DB1EC30FFA0059F605 /* PSTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D4AD281C103799004C1E4C /* PSTextFieldCell.m */; };
 		AB4C96DC1EC30FFA0059F605 /* PSGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3D38D1CECB4E50085A72C /* PSGradientButton.m */; };
 		AB4C96DD1EC30FFA0059F605 /* EffectOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = A84DAD630BEF435B00E4311A /* EffectOptions.m */; };
@@ -6364,6 +6370,8 @@
 		DCF904D60FCCBEF0001629C0 /* layer-gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = DCF904D50FCCBEF0001629C0 /* layer-gradient.png */; };
 		DCF904E20FCCC3A5001629C0 /* info-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = DCF904E10FCCC3A5001629C0 /* info-bg.png */; };
 		DCFBB7300FBC9A9C00851216 /* AbstractScaleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFBB72F0FBC9A9C00851216 /* AbstractScaleTool.m */; };
+		WBP710D1A2B3C4E5F6A7B8C9 /* libwebp.7.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = WBP700D1A2B3C4E5F6A7B8C9 /* libwebp.7.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		WBP810D1A2B3C4E5F6A7B8C9 /* libsharpyuv.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = WBP800D1A2B3C4E5F6A7B8C9 /* libsharpyuv.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -10738,6 +10746,8 @@
 				AB4C972C1EC30FFA0059F605 /* GIMPCore.framework in CopyFiles */,
 				AB4C972D1EC30FFA0059F605 /* TIFF.framework in CopyFiles */,
 				75DFB26E2A68FC19007F8A94 /* libimofxhost.dylib in CopyFiles */,
+				WBP710D1A2B3C4E5F6A7B8C9 /* libwebp.7.dylib in CopyFiles */,
+				WBP810D1A2B3C4E5F6A7B8C9 /* libsharpyuv.0.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -12119,6 +12129,8 @@
 		F5FD458F03F416ED012349CA /* warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warning.png; sourceTree = "<group>"; };
 		F5FE2C7203C43530013856BA /* duplicate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = duplicate.png; sourceTree = "<group>"; };
 		F5FE2C7303C43530013856BA /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new.png; sourceTree = "<group>"; };
+		WBP700D1A2B3C4E5F6A7B8C9 /* libwebp.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libwebp.7.dylib; path = ../Extralibs/libwebp.7.dylib; sourceTree = "<group>"; };
+		WBP800D1A2B3C4E5F6A7B8C9 /* libsharpyuv.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsharpyuv.0.dylib; path = ../Extralibs/libsharpyuv.0.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -12881,6 +12893,8 @@
 				39E610CC1BD7247D0039B546 /* libipaintlib-nl.a */,
 				1852F1BB280E4DB600D028C1 /* ocInpaint.cpp */,
 				1852F1BC280E4DB600D028C1 /* ocInpaint.h */,
+				WBP700D1A2B3C4E5F6A7B8C9 /* libwebp.7.dylib */,
+				WBP800D1A2B3C4E5F6A7B8C9 /* libsharpyuv.0.dylib */,
 			);
 			name = Extralibs;
 			path = ../Extralibs;
@@ -20732,6 +20746,7 @@
 				1852F0E3280E34C800D028C1 /* PixelStyleProjectContent.m in Sources */,
 				1852F0E4280E34C800D028C1 /* PSPrintView.m in Sources */,
 				1852F0E5280E34C800D028C1 /* JPEGExporter.m in Sources */,
+				1852F0E62A3171D60091C78B /* WEBPExporter.m in Sources */,
 				1852F0E6280E34C800D028C1 /* PSRedEyeRemoveOptions.m in Sources */,
 				1852F0E7280E34C800D028C1 /* PSRotation.m in Sources */,
 				1852F0E8280E34C800D028C1 /* LassoOptions.m in Sources */,
@@ -21012,6 +21027,7 @@
 				18F10785290B81D30022DEBF /* PixelStyleProjectContent.m in Sources */,
 				18F10786290B81D30022DEBF /* PSPrintView.m in Sources */,
 				18F10787290B81D30022DEBF /* JPEGExporter.m in Sources */,
+				18F107882A3171D60091C78B /* WEBPExporter.m in Sources */,
 				18F10788290B81D30022DEBF /* PSRedEyeRemoveOptions.m in Sources */,
 				18F10789290B81D30022DEBF /* PSRotation.m in Sources */,
 				18F1078A290B81D30022DEBF /* LassoOptions.m in Sources */,
@@ -21293,6 +21309,7 @@
 				394FD6AA1D12A01500A59E8A /* PixelStyleProjectContent.m in Sources */,
 				394FD6AB1D12A01500A59E8A /* PSPrintView.m in Sources */,
 				394FD6AC1D12A01500A59E8A /* JPEGExporter.m in Sources */,
+				394FD6AD2A3171D60091C78B /* WEBPExporter.m in Sources */,
 				394FD6AD1D12A01500A59E8A /* PSRedEyeRemoveOptions.m in Sources */,
 				394FD6AE1D12A01500A59E8A /* PSRotation.m in Sources */,
 				394FD6AF1D12A01500A59E8A /* LassoOptions.m in Sources */,
@@ -21573,6 +21590,7 @@
 				39C786C21DAD301E00379B9B /* PixelStyleProjectContent.m in Sources */,
 				39C786C31DAD301E00379B9B /* PSPrintView.m in Sources */,
 				39C786C41DAD301E00379B9B /* JPEGExporter.m in Sources */,
+				39C786C62A3171D60091C78B /* WEBPExporter.m in Sources */,
 				39C786C51DAD301E00379B9B /* PSRedEyeRemoveOptions.m in Sources */,
 				39C786C61DAD301E00379B9B /* PSRotation.m in Sources */,
 				39C786C71DAD301E00379B9B /* LassoOptions.m in Sources */,
@@ -21852,7 +21870,7 @@
 				39C78AF31DAD302D00379B9B /* PixelStyleProjectContent.m in Sources */,
 				39C78AF41DAD302D00379B9B /* PSPrintView.m in Sources */,
 				39C78AF51DAD302D00379B9B /* JPEGExporter.m in Sources */,
-				39C78AF61DAD302D00379B9B /* PSRedEyeRemoveOptions.m in Sources */,
+				39C78AF62A3171D60091C78B /* WEBPExporter.m in Sources */,
 				39C78AF71DAD302D00379B9B /* PSRotation.m in Sources */,
 				39C78AF81DAD302D00379B9B /* LassoOptions.m in Sources */,
 				39C78AF91DAD302D00379B9B /* LassoTool.m in Sources */,
@@ -22129,6 +22147,7 @@
 				39DB67281BABB42800717C11 /* PixelStyleProjectContent.m in Sources */,
 				A8207A3807EEFEE800ED3D38 /* PSPrintView.m in Sources */,
 				A89827FD07EF1B4A003E05D5 /* JPEGExporter.m in Sources */,
+				A89827FE2A3171D60091C78B /* WEBPExporter.m in Sources */,
 				390CA0131CC71F0C0001C075 /* PSRedEyeRemoveOptions.m in Sources */,
 				A845B95107F3B5F3007A1B94 /* PSRotation.m in Sources */,
 				A87183DB090BA6D400345EA0 /* LassoOptions.m in Sources */,
@@ -22409,6 +22428,7 @@
 				AB4C96B41EC30FFA0059F605 /* PixelStyleProjectContent.m in Sources */,
 				AB4C96B51EC30FFA0059F605 /* PSPrintView.m in Sources */,
 				AB4C96B61EC30FFA0059F605 /* JPEGExporter.m in Sources */,
+				AB4C96DA2A3171D60091C78B /* WEBPExporter.m in Sources */,
 				AB4C96B71EC30FFA0059F605 /* PSRedEyeRemoveOptions.m in Sources */,
 				AB4C96B81EC30FFA0059F605 /* PSRotation.m in Sources */,
 				AB4C96B91EC30FFA0059F605 /* LassoOptions.m in Sources */,
@@ -24877,6 +24897,7 @@
 					"$(PROJECT_DIR)/source/Inkpad/Classes/**",
 					"$(PROJECT_DIR)/source/EccRegisterBundle",
 					"$(PROJECT_DIR)/../opencv/include",
+					/opt/homebrew/include,
 				);
 				INFOPLIST_FILE = "PixelStyle Free copy-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
@@ -24948,6 +24969,7 @@
 					"$(PROJECT_DIR)/source/Inkpad/Classes/**",
 					"$(PROJECT_DIR)/source/EccRegisterBundle",
 					"$(PROJECT_DIR)/../opencv/include",
+					/opt/homebrew/include,
 				);
 				INFOPLIST_FILE = "PixelStyle Free copy-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
@@ -25021,6 +25043,7 @@
 					"$(PROJECT_DIR)/source/Inkpad/Classes/**",
 					"$(PROJECT_DIR)/source/EccRegisterBundle",
 					"$(PROJECT_DIR)/../opencv/include",
+					/opt/homebrew/include,
 				);
 				INFOPLIST_FILE = "PixelStyle Free copy2-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
@@ -25093,6 +25116,7 @@
 					"$(PROJECT_DIR)/source/Inkpad/Classes/**",
 					"$(PROJECT_DIR)/source/EccRegisterBundle",
 					"$(PROJECT_DIR)/../opencv/include",
+					/opt/homebrew/include,
 				);
 				INFOPLIST_FILE = "PixelStyle Free copy2-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
@@ -25576,6 +25600,7 @@
 					./source/EccRegisterBundle,
 					"./source/GraphicsMagick/**",
 					"$(PROJECT_DIR)/../opencv/include",
+					/opt/homebrew/include,
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
@@ -25647,6 +25672,7 @@
 					./source/EccRegisterBundle,
 					"./source/GraphicsMagick/**",
 					"$(PROJECT_DIR)/../opencv/include",
+					/opt/homebrew/include,
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
@@ -25711,10 +25737,10 @@
 				CODE_SIGN_ENTITLEMENTS = PixelStyle/PixelStyle.entitlements;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 20250923.0;
+				CURRENT_PROJECT_VERSION = 20260423.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = VA2XE4K2T9;
 				ENABLE_HARDENED_RUNTIME = NO;
@@ -25741,6 +25767,7 @@
 					"$(PROJECT_DIR)/source/Inkpad/Classes/**",
 					"$(PROJECT_DIR)/source/EccRegisterBundle",
 					"$(PROJECT_DIR)/../opencv/include",
+					/opt/homebrew/include,
 				);
 				INFOPLIST_FILE = "PixelStyle copy-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
@@ -25759,7 +25786,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				"MACOSX_DEPLOYMENT_TARGET[arch=*]" = 10.13;
 				"MACOSX_DEPLOYMENT_TARGET[arch=arm64]" = 11.0;
-				MARKETING_VERSION = 4.4.0;
+				MARKETING_VERSION = 4.5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
@@ -25791,10 +25818,11 @@
 				CODE_SIGN_ENTITLEMENTS = PixelStyle/PixelStyle.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20250923.0;
+				CURRENT_PROJECT_VERSION = 20260423.0;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = VA2XE4K2T9;
 				ENABLE_HARDENED_RUNTIME = NO;
+				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				GCC_AUTO_VECTORIZATION = YES;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
@@ -25817,6 +25845,7 @@
 					"$(PROJECT_DIR)/source/Inkpad/Classes/**",
 					"$(PROJECT_DIR)/source/EccRegisterBundle",
 					"$(PROJECT_DIR)/../opencv/include",
+					/opt/homebrew/include,
 				);
 				INFOPLIST_FILE = "PixelStyle copy-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
@@ -25833,7 +25862,7 @@
 					"$(PROJECT_DIR)/source/ComputeDistance/ComputeDistance",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 4.4.0;
+				MARKETING_VERSION = 4.5.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
